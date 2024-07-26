@@ -1,6 +1,9 @@
 ---
-title: "Syllabus: QTM 350 - Data Science Computing "
-subtitle: "Quantitative Theory and Methods Department, Emory University"
+title: "Syllabus: MGMT 30500: Business Statistics"
+subtitle: "Mitchell E. Daniels, Jr. School of Business, Purdue University"
+date-modified: "last-modified"
+date: "2024-08-01"
+date-format: "MMM D, YYYY"
 #listing:
 # - id: schedule
 #   contents:
@@ -17,149 +20,139 @@ subtitle: "Quantitative Theory and Methods Department, Emory University"
 #    filter-ui: false
 ---
 
+<br>
+<center>
+_IMPORTANT_
+
+_This document does not replace the official syllabus in the course brightspace page_
+
+</center>
+<br>
+
 ## Course Description
 
-This course equips students with computing skills and knowledge for data science applications. Students will gain knowledge foundations and hands-on experience with technologies such as the Commend Line, Version Control, Project Collaboration, Data Structures and Algorithms. Prospective data scientists, statisticians, and other quantitative professionals will learn computational foundations to efficiently utilize data, data structures, and algorithms for data science.
+This course is designed to introduce students to basic data analysis techniques.  Coverage will include the application of probability distributions such as the normal, the $t$, and the binomial; sampling distributions, basic statistical inference methods, analysis of variance, applied linear regression techniques, logistic regression time series analysis, statistical quality control, and decision analysis.
 
-**Course Website**: <https://davi-moreira.github.io/2024Summer1_dsc_emory_qtm_350>
+**Course Website**: <https://davi-moreira.github.io/2024F_business_statistics_purdue_MGMT305>
 
 ## Instructor 
 
 ### Instructor: [Professor Davi Moreira](https://davi-moreira.github.io)
 
--   Email: [davi.moreira\@emory.edu](mailto:davi.moreira@emory.edu)
--   Office hours: Tuesdays, 5 pm - 6 pm, or by appointment
-    -   Zoom link in your Course Canvas Page.
+-   Email: [dmoreira\@purdue.edu](mailto:dmoreira@purdue.edu)
+-   Virtual Office hours - _Zoom link in your Course Brightspace Page_: 
+    -   Section 13:  M/W from 10:45 am to 11:45 am), and by appointment.
 
 ## Learning Outcomes
 
-By the end of this course, students will be able to: 
+By the end of this course, students will be able to:
 
--   
-
-    1. Demonstrate proficiency in data science project collaboration and version control.
-
--   
-    
-    2. Utilize advanced data storage, manipulation, and querying. 
-    
--
-    
-    3. High-level understanding of data structures, and algorithms. 
-    
--
-    
-    4. Critically navigate the emergent trends in data science computing.
+1.	Understand the basic statistical principles and their applications in the area of management and business.
+2.	Understand fundamental issues in business and management.
+3.	Describe and use the commonly used statistical techniques for analyzing business data.
+4.	Understand the impacts of recent developments in big data and AI in business and management.
+5.	Be proficient in using Excel to carry out statistical and analytics methods covered in the course.
 
 ## Objectives
 
--   **Conceptual Understanding**: To provide students with a foundational grasp of data structures and algorithms.
--   **Technical Proficiency**: To equip students with practical skills in version control, Python programming, data structures, and algorithms enabling them to execute data manipulation and analysis tasks proficiently.
--   **Critical Integrated Learning**: To offer a holistic educational experience that combines theoretical learning with practice, ensuring students can apply their knowledge to real-world projects and foster an awareness of emerging trends in the data science computing landscape.
+Our main goal is to instill the basic quantitative and data analysis skills needed by managers in modern business, where Business Analytics and Data Science have become important. These skills will help managers to understand and carry out data-based decision making, risk assessments, and policy making and to work effectively with data analysis teams to improve all aspects of business performance.
+	
+Modern data analysis is done using computers and various types of sophisticated software. Therefore, to most effectively introduce management candidates to its techniques, we will also emphasize software applications (with Microsoft Excel, R, or Python) in this course.   
 
-## Course References
+### Course Materials
 
--   [**Computing Skills for Biologists**](https://computingskillsforbiologists.com/): A toolbox with basic computational skills necessary for the course.
--   [**Elements of Data Science**](https://allendowney.github.io/ElementsOfDataScience/README.html): a digital textbook by Allen Downey written in the form of Jupyter notebooks. It provides an introduction to data science in Python for students with limited programming experience.
--   [**Think Python**](https://greenteapress.com/thinkpython/html/index.html): An introduction to programming using Python.
--   [**Applied Computing**](https://runestone.academy/runestone/books/published/ac1/index.html): Applied Computing is an [online textbook](https://runestone.academy/). It provides an introduction to spreadsheets and SQL. To view the book, students need to [register](https://runestone.academy/runestone/default/user/register) using the course name.
-<!---
--   [**SQL & NoSQL Databases**](https://link.springer.com/book/10.1007/978-3-658-24549-8?source=shoppingads&locale=en-us&srsltid=AfmBOooFhPgF4FU06eeYUCeF2tELId4l3LBx1Fv8Ntb-xeUCTVUN3cUfu7o): Models, Languages, Consistency Options, and Architectures for Big Data Management: Explores relational (SQL) and non-relational (NoSQL) databases. Covers database management, modeling, languages, consistency, architecture, and more.
---->
--   [**Pro Git Book**](https://git-scm.com/book/en/v2): A comprehensive resource for learning Git, covering everything from the basics to advanced topics by Scott Chacon and Ben Straub.
-<!----   [**Overview of Cloud Computing**](https://dc.arcabc.ca/islandora/object/dc%3A54375): An introductory textbook on cloud computing by Michael Wufka and Massimo Canonico.--->
+The following are learning materials:
 
-## Additional References
+1. Text book:  Anderson, Sweeney, Williams, Camn, Cochran, Fry, and Ohlmann: Modern Business Statistics with Microsoft Excel, 7th edition, 2018, Cengage Learning, Inc. (Required)  This text is also used in STAT 30301.
+2. Handouts:  Lecture Slides and Supplementary Materials. (Posted in this page and on Brightspace: Brightspace -> Content -> Table of Contents -> ….)
 
-<!----   [**Google Cloud Computing Foundations**](https://edu.google.com/programs/cloud-computing-curriculum/?modal_active=none): Google Cloud experts develop and maintain the Computing Foundations reference material specifically for university courses such as this to ensure it keeps pace with cloud innovation and to prepare students seeking to launch or pivot to [careers](https://careers.google.com/students/) in a cloud-first world.--->
--   [**Big Data: Principles and best practices of scalable real-time data systems:**](https://www.amazon.com/exec/obidos/ASIN/1617290343/acmorg-20): It describes a scalable, easy to understand approach to big data systems that can be built and run by a small team.
--   [**Version Control with Git: Powerful Tools and Techniques for Collaborative Software Development**](https://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387): This book explains how Git works and how to use it effectively. By Jon Loeliger and Matthew McCullough.
--   [**GitHub Learning Lab**](https://lab.github.com/): Offers a variety of exercises to get hands-on experience using Git and GitHub.
-<!----   [**AWS Academy Cloud Foundations (login required)**](https://awsacademy.instructure.com/courses/976): AWS experts develop and maintain the Cloud Foundations reference material to ensure it keeps pace with cloud innovation and prepares students for real-world, industry challenges. This digital textbook with accompanying labs comes in the form of a Canvas page, separate from the class Canvas page.--->
+### Course Infra-structure
 
-## Assessment
+**Brightspace:** The Course Brightspace Page <https://purdue.brightspace.com/> should be checked on a regular basis for announcements and course material.
 
-Final grades will be based on:
+**Software:** Microsoft Excel will be used for in-class demonstrations and instruction. The main tool is Data Analysis under Tools.  If you don’t see this tool, follow the following steps to add in:
+-   File > Options -> Add-ins -> Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) -> Go -> Data -> Data Analysis (to conduct analyses)
+
+**Course Website:** This class website will be used throughout the course, but it does not replace the Course Brightspace Page.
+
+## Assessments
+
+### Grading 
+
+Following a university-wide initiative, the School has adopted an Official Grading Policy for core courses such as MGMT 30500.  Under this policy, the overall GPA for this class can be no higher than 3.0. To comply with this course policy, final course letter grades will be based on the curved class final course percentages. The final course percentage is based on a weighted percentage computed using the weights shown in the table below:
 
 | **Assignment**             | **Percentage** |
 |----------------------------|:--------------:|
-| Lecture Quizzes            |      20%       |
-| Practice Activities        |      40%       |
-| Problem Sets               |      40%       |
-<!---| Final Project Proposal     |       5%       |
-| Final Project Submission   |      25%       |
-| Final Project Presentation |      10%       |
-| Peer Review                |      10%       |--->
+| Homework*                  |      40%       |
+| Quizzes**                  |      15%       |
+| Midterms***                |      15%       |
+| Attendance/Participation   |       7%       |
+| Final****                  |      13%       |
 
-### Lecture Quizzes
+*There are eight homework assignments. No homework assignment is dropped. The final homework score is calculated using aggregated points.
+** There are three quizzes worth 5% each. Quizzes 2 and 3 are not cumulative. 
+***There are two midterms: each is worth 7.5%. Midterms are not cumulative.
+**** Final is cumulative.
 
-Each lecture will be accompanied by a set of questions, available on the course's Canvas page or Webpage to be completed individually. Students may complete these quizzes and activities either during or after class, the due dates will be posted in the course canvas page. While individual submission is mandatory, collaborative discussions are encouraged. Please note that no extensions will be granted under any circumstances, ensuring fairness and consistency in assessment for all students.
+### Homework 
 
-### Practice Activities
+There are eight Homework Assignments – see the schedule. Each Homework Assignment contains 
 
-Some lectures will be accompanied by a practice activity, available on the course's Canvas page or Webpage to be completed individually. Students may complete these quizzes and activities either during or after class, the due dates will be posted in the course canvas page. While individual submission is mandatory, collaborative discussions are encouraged. Please note that no extensions will be granted under any circumstances, ensuring fairness and consistency in assessment for all students.
+-  exercise problems from the text, and
+-  supplementary problems.
+      
+      _Please note:  Homework is accepted only by being properly and timely uploaded to Brightspace.  Homework is not accepted late or in any other way, including by email, for any reason. Also, all students must be assessed on the same work so ad-hoc extra-credit or makeup assignments will not be given._ 
+      
+Homework assignments must be submitted online through Brightspace.  Brightspace will be set to allow you 2 chances to submit the assignment.  If you submit twice, only your second submission will be graded. The first will not be looked at.
 
-### Problem Sets
+**Make sure to upload only one file (pdf) for each homework assignment**. No supplements, attachments, or appendices can be used. Do not upload Word or page documents. 
 
-Problem sets aligned with some of covered topics will be assigned to solidify your learning. These sets are to be collaboratively developed in groups of up to three members, emphasizing the importance of code collaboration. Consequently, individual submissions will not be accepted. Assignments will be distributed via Canvas, and may be formatted as either a Jupyter Notebook (`.ipynb`), Quarto documents (`.qmd`), or HTML (`.html`). Groups will be required to submit the complete source code of their assignments (`.ipynb`, `.qmd`, or `.html`). Each problem set will be meticulously evaluated, with grading based on both the accuracy and the overall quality of the work submitted. For instance, you must guarantee:
+**Important**: You must include all relevant software output that addresses the homework questions and reference it clearly where appropriate. Copy and paste all software output that addresses the homework questions into your homework papers, and reference it clearly where appropriate, but do not copy and paste any datasets into your homework papers.
 
--   **All code must run**;
+If an exercise instructs you to do a computation by hand, you do not have to include the by-hand work in your homework paper.  This makes it easier to turn your work in online to Brightspace.  However, you should make sure that you can do the by-hand computation by checking your answer against Excel’s result.  You will need to do the by-hand computations on exams so, again, make sure you know how to do them.  
 
--   **Each problem set material will have its own GitHub repository**;
+In your submissions, homework problems must be clearly identified by their respective chapter and problem numbers.
 
--   **Readable Solutions**: To facilitate effective evaluation and comprehension of the coding assignments, students must adhere to the following standards for code readability:
+Your proficiency in this course will improve if these problems are done faithfully and in a timely fashion. Try not to wait until the last minute to do your homework.  
 
--   
+You may discuss the homework problems with classmates, but DO NOT COPY. You are expected to write your homework individually. Duplicate papers are considered cheating.   
 
-    1.  **Comprehensive Commenting**: All code must include thorough comments. These comments are essential as they allow the Professor and Teaching Assistants to understand the purpose and functionality of the code solely through these annotations. It is crucial that the comments are clear and concise, providing insight into the logic and purpose behind each segment of code.
+Your homework submissions are graded by the course graders. If you have any issues about the grading, please refer to the paragraph, Grade Challenges, below.
 
--   
+### Quizzes
 
-    2.  **Structured Code Segmentation**: Solutions should be methodically organized into distinct code chunks within Jupyter or R Markdown notebooks. For clarity on this format, refer to examples provided in class or consult with the Professor or Teaching Assistants.
+To encourage students to work steadily through the materials, three quizzes are given. Quizzes 2 and 3 are not cumulative. The quizzes will each count for 5% of the final course percentage and none are dropped. Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. “Exceptional circumstances” means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies.  Except for emergencies, requests for a makeup must be made by email with supporting documentation no later than 7 days before the scheduled quiz.
 
--   
+### Exams
 
-    3.  **Detailed Documentation of Functions**: Every function defined by a student must be accompanied by a docstring. This documentation should clearly explain the function's purpose, describe each input argument, and outline what the function returns.
+Exams will test both technical ability to carry out standard calculations and your understanding of important concepts. Exams are closely based on homework exercises but do not expect the exams to be identical to homework assignments. Exams and homework are designed to assess different types and levels of understanding. There will be two Midterms and a Final, all given in-person. The second Midterm is not cumulative. The Final is cumulative.  You will need a calculator for taking exams. Calculators that have USB ports or can access the internet are not permitted nor are you allowed to use a smart phone or watch as a calculator.  You are required to take all exams.  (None are dropped.)  Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. “Exceptional circumstances” means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies.  Except for emergencies, requests for a makeup must be made by email with supporting documentation no later than 7 days before the scheduled exam.
 
-<!---### Final Project
+Attendance and Participation: Attend your classes, pay attention and participate.  If you do not attend class, you will likely not succeed. According to the University regulations (<https://catalog.purdue.edu/content.php?catoid=15&navoid=18634#classes>), “Scheduled courses allow students to avoid conflicts and reflect the University’s expectation that students should be present for every meeting of a class/laboratory for which they are registered.” The instructor will take random attendance and keep the attendance record. Your attendance/participation grade will be based on this record.
 
-At the heart of Data Science lies the critical skill of managing data effectively. This encompasses the ability to collect, organize, retrieve, filter, sort, and prepare data, forming the foundational steps before embarking on any comprehensive analysis. This project is your opportunity to demonstrate proficiency in applying the concepts and techniques learned throughout the course. In groups up to three members, you will be expected to showcase your competence in handling and preparing data for insightful analysis. Through this project, you will apply the principles and methodologies covered in the course.
+### Grade Challenges  
 
-#### Final Project Proposal
+When grades are posted in the Brightspace Grade Center, an announcement will be posted on Brightspace. Any challenge to any grade must be made within 7 calendar days of the posting of the announcement. There is one exception: to facilitate the computation of final course grades, the last homework assignment must be challenged within three days of the posting of grades.  Grade challenges must be based on good faith disputes about mathematical or statistical principles.  They cannot be based on post-hoc legalistic arguments. 
 
-Each group is required to submit a concise, yet comprehensive, two-page proposal outlining their intended project. This proposal is a crucial step in ensuring the viability and academic rigor of your planned research. Prior to its development, it is mandatory for each group to arrange a 15-minute consultation meeting with me. This meeting is intended to provide guidance, clarify objectives, and ensure alignment with course goals. To make the most of this consultation, groups must submit a draft of their project ideas in advance of the meeting. Please note that these consultation meetings will be scheduled during Week 10. It is imperative to adhere to this timeline to ensure timely feedback and guidance on your proposals.
+To challenge a homework score, quiz score or exam score, you must send the instructor an email describing your challenge.  Include your name, ID, and Assignment Number. Please note: General grade reviews for homework are not done. For homework, the challenge must cite the instructor to a specific deduction and provide a reason it is believed to be incorrect. Please check the Homework Solutions before submitting a homework grade challenge. Most often, the Homework Solutions will provide the basis for the deduction(s). Grades will not be discussed in the classroom during, between, or after classes.   
+**After the 7 day challenge period, all grades are final for purposes of calculating the final course grade.**   
 
-#### Final Project Submission
+## KEYS TO SUCCESS 
 
-Students are provided with two distinct opportunities to submit their final projects. The first submission is madatory for all groups and must be completed before the start of the presentation week. This phase allows for a preliminary assessment of your project. The subsequent submission is optional and should occur by the course's last date. This opportunity is particularly beneficial for incorporating improvements based on peer review feedback received after the first submission. The final deliverable should be a comprehensive GitHub repository and a `.zip` file encompassing the following components:
+You will succeed in this course if you adhere to the following:
 
--   **Raw Source Data**: Include the raw data utilized for your project. If the data file size exceeds GitHub's limitations, it should be exclusively contained within the `.zip` file.
+1.	Consistent Effort: Follow the schedule outlined in the Course Outline diligently.
+2.	Pre-Class Preparation: 
+    a. Read the lecture material and annotations before your scheduled class. Refer to the Course Schedule to determine the appropriate chapter to read. The readings are typically brief, especially considering the included tables and figures.
+    b. Review the homework exercises for the relevant chapter before class. These exercises will be the primary focus during class sessions.
+3.	Class Materials: 
+    a. Either print the readings, annotations, and homework exercises, or ensure you have them accessible on your laptop or tablet. This will allow you to take notes directly on the materials during class.
+4.	Engagement with Problems:
+    a. Understanding statistics and data analysis requires exposure to numerous examples and practice with many problems. It is crucial to recognize that this course may differ from others: even if you comprehend the lectures and readings, you may initially struggle with the problems.
+    b. Make an effort to solve the assigned homework problems independently. Continuously work on the chapter problems as the course progresses. Regular practice, particularly after each chapter lecture, will help you master the problems.
+5.	Active Learning:
+    a. Adhering to these procedures is essential for success in this class. Relying solely on in-class presentations without engaging with the course materials will likely result in difficulties.   
 
--   **Detailed README**: Your repository should contain a `README` file providing an in-depth description of each included file, covering:
-
-    -   **Inputs**: Detail the inputs to each file, such as raw data or files containing credentials for API access.
-    -   **Functionality**: Clearly describe the major transformations and operations performed by the file.
-    -   **Outputs**: Enumerate any outputs generated by the file (e.g. cleaned datasets).
-
--   **Data Transformation and Organization Code**: Submit all code files that are used to transform and organize your data.
-
--   **Data Query for Analysis**: Provide the set of code files that query your dataset, rendering it suitable for addressing your chosen data analysis question.
-
-Further details and specific requirements will be shared before Week 10 of the course.
-
-#### Final Project Presentation
-
-During the final week of the course, each group will have a 10 to 15-minute time slot to present their project. This presentation is a vital component of your project, providing an opportunity to showcase the depth of your analysis, the insights gained, and the skills acquired throughout the course. The scheduling of presentations will be randomly defined. Specific dates and the order of presentations for each group will be assigned and communicated in advance.
-
-Further details and specific requirements will be shared before Week 13 of the course.
-
-### Peer Review
-
-In the week of presentations, your active participation in the peer review process will be essential. Each student is expected to engage constructively in evaluating and providing feedback on their colleagues' projects. You will be asked to thoughtfully comment on various aspects of the projects, including methodology, data structure, presentation features, and the overall effectiveness of the conveyed message. This exercise is not only a crucial part of your learning experience but also an opportunity to contribute to the academic development of your peers.
-
-
---->
-
+<!---
 ## Grading
 
 Each student’s final grade will be based on the following after rounding up to the nearest point:
@@ -174,10 +167,11 @@ Each student’s final grade will be based on the following after rounding up to
 | C     | 65% -- 74%  |
 | D     | 60% -- 64%  |
 | F     | \< 60%      |
+--->
 
 ## AI policy
 
-I encourage you to use AI tools you believe will enhance your individual or group performance. Learning to use AI is a valuable and emerging skill, and I am available to provide support and assistance with these tools during office hours or by appointment.
+I encourage you to use AI tools you believe will enhance your individual or group learning performance. Learning to use AI is a valuable and emerging skill, and I am available to provide support and assistance with these tools during office hours or by appointment.
 
 Be aware of the following guidelines:
 
@@ -187,30 +181,29 @@ Be aware of the following guidelines:
 
 -   Do not blindly trust the information provided by the output. If the output contains a number, index, analysis, conclusion, or fact, assume it is incorrect and check its veracity. Any errors or omissions resulting from using the AI tool will be your responsibility. Remember, the AI tool works better for topics that you already understand.
 
--   While AI is a tool, you must acknowledge its use. Always cite! Include a paragraph or note at the end of any document to mention that you used AI on its development.
+-   While AI is a tool, you must acknowledge its use. Always cite! Include a short note at the end of any document to mention that you used AI in its development.
 
-## Academic Integrity
+## Deadlines 
 
-Upon every individual who is a part of Emory University falls the responsibility for maintaining in the life of Emory a standard of unimpeachable honor in all academic work. The [Honor Code of Emory College](http://catalog.college.emory.edu/academic/policies-regulations/honor-code.html) is based on the fundamental assumption that every loyal person of the University not only will conduct his or her own life according to the dictates of the highest honor, but will also refuse to tolerate in others action which would sully the good name of the institution. Academic misconduct is an offense generally defined as any action or inaction which is offensive to the integrity and honesty of the members of the academic community. **The typical sanction for a violation of the Emory Honor Code is an F in the course. Any suspected case of academic misconduct will be referred to the Emory Honor Council.**
+The Registrar's add, drop, and modify deadline dates for this semester are at the following website: <http://www.purdue.edu/Registrar/>
 
-## Communication
+## Academic Integrity  
 
--   Check the Course Website and Canvas Page regularly to keep yourself informed with up-to-date information about the course. Also, be sure to check the course syllabus before asking any questions about the course schedule/policies.
--   If you cannot attend the office hours due to conflicts with other course schedule or attending the university-sanctioned events (proof required), email the instructor at least two days in advance to set up an appointment. Note that each appointment will be 15-minutes long, and it may be done in a small group or individually. No appointments will be allowed nearing the exam dates.
--   When attending virtual office hours, make sure you are in a private setting with a little to no background noise. The use of headphones is strongly encouraged. This is especially true when you are discussing private matters with the instructor.
--   Do not use email for asking content-related questions, and do not use Canvas messages.
--   Do not email me your private stories. Keep your email brief, and you will receive a response from me within 48 hours, except for the weekends. Similarly, if you receive an email from me, you are also expected to respond within 48 hours. Set up an individual appointment to discuss such things.
--   Finally, if you are experiencing situations that negatively impact your overall student life, you should immediately contact the [Office of Undergraduate Education](http://college.emory.edu/oue/).
+Please refer the University Policies on Brightspace.
 
-## Regarding absences
+## Accessibility and Accommodations:
 
--   If you miss a lecture for any reasons, understand that you are still responsible for the missed course materials. First, review the missed materials, then you may attend the instructor office hours to ask specific questions.
--   Attendance is not monitored in lecture except on the exam dates.
--   [Emory College of Arts and Sciences policy](http://catalog.college.emory.edu/academic/policies-regulations/incomplete-absence.html) states, “A student who fails to take any required midterm or final examination at the scheduled time may not make up the examination without written permission from a dean in the Office for Undergraduate Education. Permission will be granted only for illness or other compelling reasons, such as participation in scheduled events off-campus as an official representative of the University.
+Purdue University strives to make learning experiences as accessible as possible. If you anticipate or experience physical or academic barriers based on disability, please let me know so that we can discuss options. You are also encouraged to contact the Disability Resource Center at: <drc@purdue.edu> or by phone: 765-494-1247.
 
-## Access and Disability Resources
+-   CAPS Information:   Purdue University is committed to advancing the mental health and well-being of its students. If you or someone you know is feeling overwhelmed, depressed, and/or in need of support, services are available. For help, such individuals should contact Counseling and Psychological Services (CAPS) at 765-494-6995 and <http://www.purdue.edu/caps/> during and after hours, on weekends and holidays, or through its counselors physically located in the Purdue University Student Health Center (PUSH) during business hours.
 
-Students with medical/health conditions that might impact academic success should visit the [Department of Accessibility Services (DAS)](http://accessibility.emory.edu/) to determine eligibility for appropriate accommodations. Students who receive accommodations must contact the instructor with an Accommodation Letter from the DAS at the beginning of the semester, or as soon as the accommodation is granted. If you have DAS accommodations, you must inform the instructor after confirming that your accommodation letter is available in the DAS web portal. The instructor will respond to your email confirming which accommodations you will receive for this class. If you wish to do so, you may request an individual meeting to further discuss the specific accommodations.
+## Non-Discrimination Statement: 
+
+Please refer to the Nondiscrimination Statement on Brightspace.
+
+## Emergency Situation(s): 
+
+Please refer to the Emergency Preparedness on Brightspace.
 
 ## Subject to Change Policy
 
