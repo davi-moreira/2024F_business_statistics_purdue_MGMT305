@@ -9,11 +9,13 @@ subtitle: "Mitchell E. Daniels, Jr. School of Business, Purdue University"
 
 This course is designed to introduce students to basic data analysis techniques.  Coverage will include the application of probability distributions such as the normal, the $t$, and the binomial; sampling distributions, basic statistical inference methods, analysis of variance, applied linear regression techniques, logistic regression time series analysis, statistical quality control, and decision analysis.
 
+**Class:** Section 13:  MWF (9:30 am – 10:20 am), RAWL 3082	
+
 ### Instructor: [Professor Davi Moreira](https://davi-moreira.github.io)
 
 -   Email: [dmoreira\@purdue.edu](mailto:dmoreira@purdue.edu)
--   Virtual Office hours - _Zoom link in your Course Brightspace Page_: 
-    -   Section 13:  M/W from 10:45 am to 11:45 am), and by appointment.
+-   Virtual Office hours - _Zoom link in your Course Brightspace Page_ 
+    -   Section 13:  M/W from 10:45 am to 11:45 am, and by appointment.
 
 ## Learning Outcomes
 
@@ -43,7 +45,8 @@ The following are learning materials:
 **Brightspace:** The Course Brightspace Page <https://purdue.brightspace.com/> should be checked on a regular basis for announcements and course material.
 
 **Software:** Microsoft Excel will be used for in-class demonstrations and instruction. The main tool is Data Analysis under Tools.  If you don’t see this tool, follow the following steps to add in:
--   File > Options -> Add-ins -> Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) -> Go -> Data -> Data Analysis (to conduct analyses)
+
+-  File -> Options -> Add-ins -> Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) -> Go -> Data -> Data Analysis (to conduct analyses)
 
 **Course Website:** This class website will be used throughout the course, but it does not replace the Course Brightspace Page.
 

@@ -33,6 +33,8 @@ _This document does not replace the official syllabus in the course brightspace 
 
 This course is designed to introduce students to basic data analysis techniques.  Coverage will include the application of probability distributions such as the normal, the $t$, and the binomial; sampling distributions, basic statistical inference methods, analysis of variance, applied linear regression techniques, logistic regression time series analysis, statistical quality control, and decision analysis.
 
+**Class:** Section 13:  MWF (9:30 am – 10:20 am), RAWL 3082	
+
 **Course Website**: <https://davi-moreira.github.io/2024F_business_statistics_purdue_MGMT305>
 
 ## Instructor 
@@ -89,14 +91,17 @@ Following a university-wide initiative, the School has adopted an Official Gradi
 | Attendance/Participation   |       7%       |
 | Final****                  |      13%       |
 
-*There are eight homework assignments. No homework assignment is dropped. The final homework score is calculated using aggregated points.
-** There are three quizzes worth 5% each. Quizzes 2 and 3 are not cumulative. 
-***There are two midterms: each is worth 7.5%. Midterms are not cumulative.
-**** Final is cumulative.
+\*There are eight homework assignments. No homework assignment is dropped. The final homework score is calculated using aggregated points.
+
+\** There are three quizzes worth 5% each. Quizzes 2 and 3 are not cumulative. 
+
+\***There are two midterms: each is worth 7.5%. Midterms are not cumulative.
+
+\**** Final is cumulative.
 
 ### Homework 
 
-There are eight Homework Assignments – see the schedule. Each Homework Assignment contains 
+There are eight Homework Assignments – check the due dates in the schedule. Each Homework Assignment contains 
 
 -  exercise problems from the text, and
 -  supplementary problems.

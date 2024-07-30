@@ -22,13 +22,13 @@ website:
       - href: syllabus.qmd
         text: Syllabus
       - href: schedule.qmd
-        text: Schedule
+        text: Schedule and Material
 #      #- href: problemset.qmd
 #      #  text: Problem Sets
 #      # - href: finalproject.qmd
 #      #  text: Final Project
-      - section: "Materials"
-        contents: 
+#      - section: "Materials"
+#        contents: 
 #          - href: topics-pages/page-topic-01.qmd
 #            text: "Topic 1: Intro"
 #          - href: topics-pages/page-topic-02.qmd
