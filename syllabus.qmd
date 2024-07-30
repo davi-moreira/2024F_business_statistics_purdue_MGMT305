@@ -35,7 +35,7 @@ This course is designed to introduce students to basic data analysis techniques.
 
 **Class:** Section 13:  MWF (9:30 am – 10:20 am), RAWL 3082	
 
-**Course Website**: <https://davi-moreira.github.io/2024F_business_statistics_purdue_MGMT305>
+**Course Website**: <https://davi-moreira.github.io/2024F_business_statistics_purdue_MGMT305>{target="_blank"}
 
 ## Instructor 
 
