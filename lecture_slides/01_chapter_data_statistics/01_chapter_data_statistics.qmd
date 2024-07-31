@@ -354,13 +354,39 @@ In experimental studies, the variable of interest is first identified. Then, the
 :::
 :::
 
+## Study Design: Random Assignment vs. Random Sampling
+
+<br>
+
+<br>
+
+
+```{r  echo=FALSE, out.width = "50%",fig.align="center"}
+knitr::include_graphics("figs/random_assignment_sampling.png") 
+```
+
+<br>
+
+<br>
+
+
+
 ## Study Design
 
 <br>
 
+<br>
+
+
 ```{r  echo=FALSE, out.width = "2%",fig.align="center"}
 knitr::include_graphics("figs/xkcd.png") 
 ```
+
+<br>
+
+<br>
+
+<br>
 
 
 # Descriptive Statistics {background-color="#cfb991"}
