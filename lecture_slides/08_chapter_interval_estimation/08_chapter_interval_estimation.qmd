@@ -1,0 +1,387 @@
+---
+title: "<span style = 'font-size: 100%;'> MGMT 30500: Business Statistics </span>"
+subtitle: "<span style = 'font-size: 100%;'> Basic Stat. & Prob. Rvw. (cont.) </span>"
+author: "Professor: Davi Moreira"
+date: "2024-08-01"
+date-format: "MMMM DD, YYYY"
+format:
+  revealjs: 
+    transition: slide
+    background-transition: fade
+    width: 1600
+    height: 900
+    center: true
+    slide-number: true
+    incremental: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    #logo: images/quarto.png
+    footer: "Business Statistics"
+    theme: [simple,custom.scss]
+---
+
+## Overview
+
+::: columns
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+
+-   XXXX
+
+    -   XXX
+    -   XXX
+
+-   XXXX
+
+    -   XXX
+    -   XXX
+
+:::
+
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+
+-   XXXX
+
+    -   XXX
+    -   XXX
+
+
+:::
+:::
+
+
+# Continuous Probability Distributions<br><br>Chapter #6 {background-color="#cfb991"}
+
+## Continuous Probability Distributions
+
+<br>
+
+- A continuous random variable can assume any value in an interval on the real line or in a collection of intervals.
+
+- We don’t normally talk about the probability of a continuous random variable assuming a particular value, because it is always 0 $P(X=x)=0$.
+
+- Instead, we talk about the probability of the random variable assuming a value within a given interval $P(X \in (a,b))$.
+
+## Continuous Probability Distributions
+
+<br>
+
+::: columns
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/normal_interval.png") 
+```
+
+<br>
+
+:::
+
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<br>
+<br>
+
+- The probability of the random variable assuming a value within some given interval from $x_1$ to $x_2$ is defined to be the area under the graph of the probability density function between $x_1$ and $x_2$.
+
+:::
+:::
+
+## Area as a Measure of Probability
+
+<br>
+
+- The area under the graph of $f(x)$ and probability are identical.
+- This is valid for all continuous random variables.
+- The probability that $x$ takes on a value between some lower value $x_1$ and some higher value $x_2$ can be found by computing the area under the graph of $f(x)$ over the interval from $x_1$ to $x_2$.
+
+
+# Normal Probability Distribution {background-color="#cfb991"}
+
+
+## Normal Probability Distribution
+
+<br>
+
+- The normal probability distribution is the most common distribution for describing a continuous random variable.
+
+- It is widely used in statistical inference, especially because of the Central Limit Theorem (CLT).
+
+- It has been used in a wide variety of applications including:
+
+    - Heights of people
+    - Test scores
+    - Rainfall amounts
+    - Scientific measurements
+
+- Abraham de Moivre, a French mathematician, published *The Doctrine of Chances* in 1733. He derived the normal distribution.
+
+<br>
+
+## Normal Probability Distribution
+
+<br>
+
+- **Normal Probability Density Function**
+
+  $$
+  f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}
+  $$
+
+  where:
+  - $\mu$= population mean
+  - $\sigma$= population standard deviation
+  - $\pi = 3.14159$
+  - $e = 2.71828$
+
+- The distribution is symmetric with respect to mean; its skewness measure is zero.
+- The graph of the distribution is a bell-shaped curve.
+
+<br>
+
+## Normal Probability Distribution
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/normal_dist.png") 
+```
+
+**Characteristics**
+
+- The entire family of normal probability distributions is defined by its mean $\mu $and its standard deviation $\sigma$. Denoted by $N(\mu, \sigma)$.
+- The highest point on the normal curve is at the mean, which is also the median and mode.
+- The mean can be any numerical value: negative, zero, or positive. The mean determines the location of the distribution.
+
+<br>
+
+## Normal Probability Distribution
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/normal_sd.png") 
+```
+
+**Characteristics**
+
+- The standard deviation determines the width of the curve: larger values result in wider, flatter curves.
+- Probabilities for the normal random variable are given by areas under the curve. The total area under the curve is 1 (.5 to the left of the mean and .5 to the right).
+
+<br>
+
+## Normal Probability Distribution
+
+<br>
+
+```{r  echo=FALSE, out.width = "50%",fig.align="center"}
+knitr::include_graphics("figs/empirical_rule.png") 
+```
+
+**Characteristics**
+
+- Empirical Rule
+
+<br>
+
+<br>
+
+# Standard Normal Probability Distribution {background-color="#cfb991"}
+
+## Standard Normal Probability Distribution 
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/normal_standard.png") 
+```
+
+**Characteristics**
+
+- A random variable having a normal distribution with a mean of 0 and a standard deviation of 1 is said to have a standard normal probability distribution.
+
+- Also called a z-distribution; Denoted by $Z$ or $N(0,1)$.
+
+<br>
+
+<br>
+
+## Standard Normal Probability Distribution
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/normal_standard_z.png") 
+```
+
+
+::: fragment
+
+::: {style="font-size: 90%;"}
+
+**Standardization: Standardize $X \sim N(\mu, \sigma)$ to standard Normal Distribution, $Z$**
+
+  $$
+  Z = \frac{X - \mu}{\sigma}
+  $$
+
+- We can think of $Z$ as a measure of the number of standard deviations $X$ is from $\mu$. (Cf. Standardization in Chapter 1.)
+  
+    - Conversely, $X = \mu + z \cdot \sigma$. If $X$ can be written as $X = \mu + z \cdot \sigma$ where $Z$ is standard normal, then $X \sim N(\mu, \sigma^2)$
+
+- The letter z is used to designate the standard normal random variable.
+
+
+:::
+:::
+
+
+# Excel to Compute Standard Normal Probabilities {background-color="#cfb991"}
+
+## Excel to Compute Standard Normal Probabilities
+
+<br>
+
+- Excel functions for standard normal probability distributions.
+
+  - `=NORM.S.DIST(z, TRUE)` function computes the cumulative probability for a given $z$ value of the standard normal distribution.
+
+  - `=NORM.S.INV(cumulative probability)` function computes the $z$ value for a given cumulative probability of the standard normal distribution.
+
+  - "S" in the function names reminds us that these functions relate to the standard normal probability distribution.
+
+  - "TRUE" or "1" indicates a cumulative probability is requested.
+
+## Excel to Compute Standard Normal Probabilities
+
+<br>
+
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/z_plot_excel.png") 
+```
+
+The standard normal distribution and the cumulative area up to a given $z$ value using the `NORM.S.DIST(z, TRUE)` function in Excel. The shaded area represents the cumulative probability up to the specified $z$ value.
+
+<br>
+
+<br>
+
+
+## Excel to Compute Standard Normal Probabilities
+
+<br>
+
+::: columns
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<br>
+<br>
+
+**Formula**
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/normal_excel_01.png") 
+```
+
+
+:::
+
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<br>
+<br>
+**Results**
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/normal_excel_02.png") 
+```
+
+:::
+:::
+
+
+
+## Excel to Compute Standard Normal Probabilities
+
+
+::: columns
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+<br>
+<br>
+
+**Formula**
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/normal_excel_03.png") 
+```
+
+
+:::
+
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<br>
+<br>
+**Results**
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/normal_excel_04.png") 
+```
+
+:::
+:::
+
+
+# $t$ Probability Distribution {background-color="#cfb991"}
+
+## $t$ Probability Distribution
+## $t$ Probability Distribution
+
+
+## Distribution Shape: Skewness
+
+::: aside
+**Note:** XXXX
+:::
+
+
+::: aside
+::: fragment
+**Note:**  XXXX
+:::
+:::
+
+::: fragment
+[Guess the correlation!](https://www.guessthecorrelation.com/)
+:::
+
+::: fragment
+::: {style="font-size: 70%;"}
+- XXX
+- XXX
+
+
+:::
+:::
+
+<br>
+
+# Summary  {background-color="#cfb991"}
+
+## Summary
+
+Some key takeaways from this session:
+
+-   **Descriptive Statistics**: help us to understand the data we have.
+
+-   **Measures of Central Location and Variability**: Central location and variability metrics help us to summarize the data.
+
+-   **Distribution Shape**: skewness can be used to understand the shape of a distribution.
+
+-   **Relative Location and z-Scores**: z-scores to determine the relative position of data points within a distribution.
+
+-   **Empirical Rule**: The 68-95-99.7 Rule for understanding data distribution in relation to the mean and standard deviation. Good for symetric distrubutions!
+
+- **Covariance and Correlation**: to understand the relationship between two numerical variables.
+
+# Thank you! {background-color="#cfb991"}
