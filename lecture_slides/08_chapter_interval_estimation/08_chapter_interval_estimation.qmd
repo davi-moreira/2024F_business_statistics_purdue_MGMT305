@@ -1,7 +1,7 @@
 ---
 title: "<span style = 'font-size: 100%;'> MGMT 30500: Business Statistics </span>"
-subtitle: "<span style = 'font-size: 100%;'> Basic Stat. & Prob. Rvw. (cont.) </span>"
-author: "Professor: Davi Moreira"
+subtitle: "<span style = 'font-size: 150%;'> Int. Est. Rvw. </span>"
+author: "Professor<br>Davi Moreira<br>"
 date: "2024-08-01"
 date-format: "MMMM DD, YYYY"
 format:
@@ -26,362 +26,610 @@ format:
 ::: columns
 ::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
 
--   XXXX
-
-    -   XXX
-    -   XXX
-
--   XXXX
-
-    -   XXX
-    -   XXX
+- Statistical Inference
+- Central Limit Theorem
+- Population Mean: $\sigma$ Known 
 
 :::
 
 ::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
 
--   XXXX
-
-    -   XXX
-    -   XXX
-
+- Population Mean: $\sigma$ Unknown
+- Population Proportion
+- Sample Size Determination
 
 :::
 :::
 
 
-# Continuous Probability Distributions<br><br>Chapter #6 {background-color="#cfb991"}
+# Interval Estimation {background-color="#cfb991"}
 
-## Continuous Probability Distributions
+# Statistical Inference {background-color="#cfb991"}
 
-<br>
-
-- A continuous random variable can assume any value in an interval on the real line or in a collection of intervals.
-
-- We don’t normally talk about the probability of a continuous random variable assuming a particular value, because it is always 0 $P(X=x)=0$.
-
-- Instead, we talk about the probability of the random variable assuming a value within a given interval $P(X \in (a,b))$.
-
-## Continuous Probability Distributions
+## Statistical Inference
 
 <br>
 
 ::: columns
-::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/normal_interval.png") 
-```
+::: {.column width="45%"}
 
-<br>
+::: {.nonincremental}
+<center>
+**Interval Estimation**
+</center>
+- Confidence level: 95% $(1-\alpha)$ (Middle area; Confidence level)
+- Confidence multipliers
+- Upper/lower tail areas
+- One- or 2-sided intervals
+- Sampling errors and Margin of Error (MOE)
+- Find range of all reasonable parameter values
+
+:::
 
 :::
 
-::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+::: {.column width="10%"}
 
-<br>
-<br>
-
-- The probability of the random variable assuming a value within some given interval from $x_1$ to $x_2$ is defined to be the area under the graph of the probability density function between $x_1$ and $x_2$.
+&nbsp;
 
 :::
+
+::: {.column width="45%"}
+
+::: {.fragment}
+::: {.nonincremental}
+
+<center>             
+**Hypothesis Testing**
+</center>
+
+- Significance level: 5% $(\alpha)$ (Tail area(s); Risk)
+- Critical values
+- p-values
+- Which side $(H_a)$ depends mostly on data
+- Strength of sample evidence against the hypothesized value (via p-value)
+- Test a specific hypothesized parameter value
+
+::: 
+:::
+:::
 :::
 
-## Area as a Measure of Probability
+## Interval Estimate and Margin of Error
 
 <br>
 
-- The area under the graph of $f(x)$ and probability are identical.
-- This is valid for all continuous random variables.
-- The probability that $x$ takes on a value between some lower value $x_1$ and some higher value $x_2$ can be found by computing the area under the graph of $f(x)$ over the interval from $x_1$ to $x_2$.
+**Parameter Estimation**
+
+::: {.nonincremental}
+
+- We are often interested in *population parameters*.
+
+- Since complete populations are difficult (or impossible) to collect data on, we use *sample statistics* as *point estimates* for the unknown population parameters of interest.
+
+- Sample statistics vary from sample to sample.
+
+- Quantifying how sample statistics vary provides a way to estimate the *margin of error* associated with our point estimate.
+
+:::
+
+<center>
+
+*Suppose we randomly sample 1,000 adults from each state in the US. Would you expect the sample means of their heights to be the same, somewhat different, or very different?*
 
 
-# Normal Probability Distribution {background-color="#cfb991"}
+::: {.fragment}
 
+**Not the same, but only somewhat different.**
 
-## Normal Probability Distribution
+:::
 
-<br>
+</center>
 
-- The normal probability distribution is the most common distribution for describing a continuous random variable.
+## Interval Estimate and Margin of Error
 
-- It is widely used in statistical inference, especially because of the Central Limit Theorem (CLT).
-
-- It has been used in a wide variety of applications including:
-
-    - Heights of people
-    - Test scores
-    - Rainfall amounts
-    - Scientific measurements
-
-- Abraham de Moivre, a French mathematician, published *The Doctrine of Chances* in 1733. He derived the normal distribution.
-
-<br>
-
-## Normal Probability Distribution
-
-<br>
-
-- **Normal Probability Density Function**
-
-  $$
-  f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}
-  $$
-
-  where:
-  - $\mu$= population mean
-  - $\sigma$= population standard deviation
-  - $\pi = 3.14159$
-  - $e = 2.71828$
-
-- The distribution is symmetric with respect to mean; its skewness measure is zero.
-- The graph of the distribution is a bell-shaped curve.
-
-<br>
-
-## Normal Probability Distribution
 
 <br>
 
 ```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/normal_dist.png") 
-```
-
-**Characteristics**
-
-- The entire family of normal probability distributions is defined by its mean $\mu $and its standard deviation $\sigma$. Denoted by $N(\mu, \sigma)$.
-- The highest point on the normal curve is at the mean, which is also the median and mode.
-- The mean can be any numerical value: negative, zero, or positive. The mean determines the location of the distribution.
-
-<br>
-
-## Normal Probability Distribution
-
-<br>
-
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/normal_sd.png") 
-```
-
-**Characteristics**
-
-- The standard deviation determines the width of the curve: larger values result in wider, flatter curves.
-- Probabilities for the normal random variable are given by areas under the curve. The total area under the curve is 1 (.5 to the left of the mean and .5 to the right).
-
-<br>
-
-## Normal Probability Distribution
-
-<br>
-
-```{r  echo=FALSE, out.width = "50%",fig.align="center"}
-knitr::include_graphics("figs/empirical_rule.png") 
-```
-
-**Characteristics**
-
-- Empirical Rule
-
-<br>
-
-<br>
-
-# Standard Normal Probability Distribution {background-color="#cfb991"}
-
-## Standard Normal Probability Distribution 
-
-<br>
-
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/normal_standard.png") 
-```
-
-**Characteristics**
-
-- A random variable having a normal distribution with a mean of 0 and a standard deviation of 1 is said to have a standard normal probability distribution.
-
-- Also called a z-distribution; Denoted by $Z$ or $N(0,1)$.
-
-<br>
-
-<br>
-
-## Standard Normal Probability Distribution
-
-<br>
-
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/normal_standard_z.png") 
+knitr::include_graphics("figs/point_interval_estimate.png") 
 ```
 
 
-::: fragment
+::: {.nonincremental}
 
-::: {style="font-size: 90%;"}
+- A plausible range of values for the population parameter is called a confidence interval.
 
-**Standardization: Standardize $X \sim N(\mu, \sigma)$ to standard Normal Distribution, $Z$**
+- Using only a sample statistic to estimate a parameter is like fishing in a murky lake with a spear, and using a confidence interval is like fishing with a net.
+
+:::
+
+## Central Limit Theorem
+
+<br>
+
+<br>
+
+<center>
+
+**Seeing Theory**
+
+<https://seeing-theory.brown.edu/>
+
+<br>
+
+<br>
+
+**Bunnies, Dragons and the 'Normal' World: Central Limit Theorem | The New York Times**
+
+[(video)](https://www.youtube.com/watch?v=jvoxEYmQHNM)
+
+</center>
+
+
+## Interval Estimate and Margin of Error
+
+- A point estimator cannot be expected to provide the exact value of the population parameter with a given level of confidence; but it is a good starting point to construct an interval estimate.
+
+- An interval estimate for mean can be computed by adding and subtracting a margin of error (MOE) to the point estimate.
 
   $$
-  Z = \frac{X - \mu}{\sigma}
+  \text{Point Estimate} \pm \text{Margin of Error}
   $$
 
-- We can think of $Z$ as a measure of the number of standard deviations $X$ is from $\mu$. (Cf. Standardization in Chapter 1.)
+- The purpose of an interval estimate is to provide information about how close the point estimate is to the true value of the unknown population parameter with a certain level of confidence.
+
+## Interval Estimate and Margin of Error
+
+<br>
+
+<center>
+
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/garfield.png") 
+```
+
+
+**Simulation**
+
+<https://rpsychologist.com/d3/ci/>
+
+
+</center>
+
+
+## Interval Estimate of a Population Mean
+
+- In order to develop an interval estimate of a population mean, the margin of error (the maximum error due to sampling in order to control the confidence level) must be computed using either:
+
+  - the population standard deviation $\sigma$ (if known), or
+  - the sample standard deviation $s$
+
+- $\sigma$ is rarely known exactly, but often a good estimate can be obtained based on historical data or other information.
+
+- We refer to such cases as the $\sigma$ known case.
+
+## Margin of Error and the Interval Estimate
+
+- The general form of an interval estimate of a population mean is
+
+  $$
+  \bar{X} \pm \text{Margin of Error}
+  $$
+
+- The Margin of Error (MOE) depends on the sampling distribution (sampling variation) of the point estimate $\bar{X}$.
+
+## Sampling Distribution of $\bar{X}$
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/sampling_dist.png") 
+```
+
+It will be symmetric if:
+
+1. $n$ is large (Central Limit Teorem) or 
+2. Population of $X$ is normal
+
+# Interval Estimate of a Population Mean: $\sigma$ Known  {background-color="#cfb991"}
+
+## Interval Estimate of a Population Mean: $\sigma$ Known
+
+::: {.nonincremental}
+
+- When the population standard deviation ($\sigma$) is known, we can compute a 95% confidence that the population parameter $(\mu)$ will fall within $1.96 \times \sigma_{\bar{X}}$ from the $\bar{X}$; i.e., $\mu$ is in the following interval
+
+$$
+\bar{X} \pm 1.96 \frac{\sigma}{\sqrt{n}}
+$$
+
+- When the quantities are replaced by numbers, the interval is called a 95% confidence interval for $\mu$.
+
+- 95% is called the confidence level ($= 1- \alpha$). What means that $\alpha = 0.05$. 
+
+- 1.96 is referred to as the 95% z-confidence multiplier, denoted by $z_{0.025}$ (or $z_{\alpha/2}$). This value represents the number of standard deviations one must move from the mean in both directions to capture the central 95% of the standard normal distribution, thereby defining the 95% confidence interval.
+
+- $\frac{\sigma}{\sqrt{n}}$ Standard Error of the Mean
+
+::: 
+
+## Confidence Multipliers
+
+<br>
+
+<center>
+
+**Values of $Z_{\alpha/2}$ for the Most Commonly Used Confidence Levels**
+
+<br>
+
+| Confidence level | $\alpha$ | $\alpha/2$ | $Z_{\alpha/2}$ |
+|:----------------:|:----------:|:------------:|:----------------:|
+| 90%              | 0.1        | 0.05         | 1.645            |
+| 95%              | 0.05       | 0.025        | 1.960            |
+| 99%              | 0.01       | 0.005        | 2.576            |
+
+</center>
+
+**Excel:** $= \text{norm.s.inv}(1 - \alpha/2)$
+
+# Interval Estimate of a Population Mean: $\sigma$ Unknown {background-color="#cfb991"}
+
+## Interval Estimate of a Population Mean: $\sigma$ Unknown
+
+- When $\sigma$ of a normal population is unknown, it is replaced by the sample standard deviation $S$ and the distribution involved will be a $t$-distribution.
+
+- The degrees of freedom of the $t$-distribution is the sample size minus 1 (i.e., $n-1$).
+
+- The $1 - \alpha$ confidence multiplier is $t_{\alpha/2, n-1}$ 
+
+- Excel: = T.INV(1-$\alpha$/2, $n-1$).
+
+## Interval Estimate of a Population Mean: $\sigma$ Unknown
+
+This formula is used to construct a confidence interval for the population mean when the population standard deviation is unknown and the sample size is relatively small.
+
+$$
+\bar{X} \pm t_{\alpha/2, n-1} \times \frac{s}{\sqrt{n}}
+$$
+
+- $\bar{X}$: The sample mean, which serves as the point estimate of the population mean.
+
+- $t_{\alpha/2, n-1}$: The t-value for the chosen confidence level with $n-1$ degrees of freedom. It represents the number of standard deviations (from the t-distribution) needed to capture the central $(1-\alpha)\%$ of the data.
+
+- $s$: The sample standard deviation, which measures the amount of variation or dispersion in the sample.
+
+- $n$: The sample size, representing the number of observations in the sample.
+
+- $\frac{s}{\sqrt{n}}$: The standard error of the mean, which estimates the standard deviation of the sampling distribution of the sample mean.
+
+
+## Interval Estimate of a Population Mean: $\sigma$ Unknown - Example
+
+<br>
+
+**Example:** Credit card debt for the population of US households
+
+<br>
+
+The credit card balances of a sample of 70 households provided a mean credit card debt of \$9,312 with a sample standard deviation of \$4,007.
+
+<br>
+
+Let us provide a 95% confidence interval estimate of the mean credit card debt for the population of US households. We will assume this population to be normally distributed.
+
+
+## Interval Estimate of a Population Mean: $\sigma$ Unknown - Example
+
+$$
+\bar{x} \pm t_{.025, 69} \times \frac{s}{\sqrt{n}}
+$$
+
+$$
+\bar{x} \pm =T.INV(1-0.025,69) \times \frac{s}{\sqrt{n}}
+$$
+
+$$
+9,312 \pm 1.995 \times \frac{4007}{\sqrt{70}} = 9,312 \pm 955 = (8,357,10,267)
+$$
+
+We are 95% confident that the mean credit card debt for the entire population of U.S. households is between \$8,357 and \$10,267. The margin of error (maximum error) of the sample mean (as an estimate of the unknown population mean) is \$955.
+
+
+## Interval Estimate of a Population Mean: $\sigma$ Unknown - Example
+
+**Adequate Sample Size**
+
+Usually, a sample size of $n \geq 30$ is adequate when using the expression
+
+$$
+\bar{x} \pm t_{\alpha/2} \frac{s}{\sqrt{n}}
+$$
+
+to develop an interval estimate of a population mean $\mu$.
+
+- If the population distribution is highly skewed or contains outliers, a sample size of 50 or more is recommended.
+- If the population is not normally distributed but is roughly symmetric, a sample size as small as 15 will suffice.
+- If the population is believed to be at least approximately normal, a sample size of less than 15 can be used.
+
+
+# Interval Estimate of a Population Proportion {background-color="#cfb991"}
+
+## Interval Estimate of a Population Proportion
+
+<br>
+
+The general form of an interval estimate of a population proportion is:
+
+<br>
+
+$$
+\bar{p} \pm \text{Margin of Error}
+$$
+
+<br>
+
+where $\bar{p}$ is the sample proportion of the event of interest.
+
+<br>
+
+## Interval Estimate of a Population Proportion
+
+- The sampling distribution of $\bar{p}$ plays a key role in computing the margin of error for this interval estimate.
+
+- The sampling distribution of $\bar{p}$ can be approximated by a normal distribution whenever $np \geq 5$ and $n(1-p) \geq 5$.This is known as success failure condition.
+
+- Unlike the population mean, there is no $t$-distribution in this case.
+
+## Interval Estimate of a Population Proportion 
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/normal_sampling_dist_proportion.png") 
+```
+
+
+## Interval Estimate of a Population Proportion
+
+This formula is used to construct a confidence interval for the population proportion.
+
+$$
+\bar{p} \pm z_{\alpha/2} \times \sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}
+$$
+
+- $\bar{p}$: The sample proportion, which serves as the point estimate of the population proportion.
+- $z_{\alpha/2}$: The z-value for the chosen confidence level. It represents the number of standard deviations (from the standard normal distribution) needed to capture the central $(1-\alpha)\%$ of the data.
+- $\sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}$: The standard error of the proportion, which estimates the standard deviation of the sampling distribution of the sample proportion.
+  - $\bar{p}(1 - \bar{p})$: The variance of the sample proportion.
+  - $n$: The sample size, representing the number of observations in the sample.
+
+
+## Interval Estimate of a Population Proportion - Example
+
+**Example: Survey of women golfers**
+
+<br>
+
+A national survey of 900 women golfers was conducted to learn how women golfers view their treatment at golf courses in United States. The survey found that 396 of the women golfers were satisfied with the availability of tee times.
+
+<br>
+
+Suppose one wants to develop a 95% confidence interval estimate for the proportion of the population of women golfers satisfied with the availability of tee times.
+
+
+## Interval Estimate of a Population Proportion - Example
+
+::: {.nonincremental}
+
+$$
+\bar{p} \pm z_{\alpha/2} \times \sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}
+$$
+
+where: 
+
+- $n = 900$,
+- $\bar{p} = \frac{396}{900} = 0.44$,
+- $z_{\alpha/2} = 1.96$
+
+$$
+0.44 \pm 1.96 \times \sqrt{\frac{0.44(1 - 0.44)}{900}} = 0.44 \pm 0.0324
+$$
+
+**Survey results enable us to state with 95% confidence that between 40.76% and 47.24% of all women golfers are satisfied with the availability of tee times.**
+
+::: 
+
+## Interval Estimate of a Population Proportion - Excel Example
+
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/confidence_interval_excel.png") 
+```
+
+
+# Sample Size for an Interval Estimate of a Population Proportion  {background-color="#cfb991"}
+
+## Sample Size for an Interval Estimate of a Population Proportion 
+
+- **Margin of Error**
   
-    - Conversely, $X = \mu + z \cdot \sigma$. If $X$ can be written as $X = \mu + z \cdot \sigma$ where $Z$ is standard normal, then $X \sim N(\mu, \sigma^2)$
+  $$
+  E = z_{\alpha/2} \times \sqrt{\frac{\bar{p}(1-\bar{p})}{n}}
+  $$
 
-- The letter z is used to designate the standard normal random variable.
+- **Solving for the necessary sample size $n$, we get:**
+  
+  $$
+  n = \left( \frac{z_{\alpha/2}^2 \times \bar{p}(1-\bar{p})}{E^2} \right)
+  $$
 
-
-:::
-:::
-
-
-# Excel to Compute Standard Normal Probabilities {background-color="#cfb991"}
-
-## Excel to Compute Standard Normal Probabilities
-
-<br>
-
-- Excel functions for standard normal probability distributions.
-
-  - `=NORM.S.DIST(z, TRUE)` function computes the cumulative probability for a given $z$ value of the standard normal distribution.
-
-  - `=NORM.S.INV(cumulative probability)` function computes the $z$ value for a given cumulative probability of the standard normal distribution.
-
-  - "S" in the function names reminds us that these functions relate to the standard normal probability distribution.
-
-  - "TRUE" or "1" indicates a cumulative probability is requested.
-
-## Excel to Compute Standard Normal Probabilities
-
-<br>
+- However, $\bar{p}$ will not be known until after we have selected the sample. We can use the planning value $p^*$ for $\bar{p}$.
 
 
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/z_plot_excel.png") 
-```
+## Sample Size for an Interval Estimate of a Population Proportion 
 
-The standard normal distribution and the cumulative area up to a given $z$ value using the `NORM.S.DIST(z, TRUE)` function in Excel. The shaded area represents the cumulative probability up to the specified $z$ value.
+- **Necessary Sample Size:**
 
-<br>
+  $$
+  n = \left( \frac{z_{\alpha/2}^2 \times p^*(1-p^*)}{E^2} \right)
+  $$
+
+- The planning value $p^*$ can be chosen by one of the following procedures:
+
+1. **Previous Studies**: Use the sample proportion from a previous study or similar survey as $p^*$.
+
+2. **Pilot Study**: Conduct a preliminary survey and use the sample proportion from that study as $p^*$.
+
+3. **Best Guess**: Use a judgment or "best guess" based on available information or expert opinion.
+
+4. **Conservative Approach**: If no prior information is available, use $p^* = 0.5$ as it maximizes the sample size and provides the most conservative estimate. This is because the product $p^*(1 - p^*)$ is maximized when $p^* = 0.5$. 
+
+## Sample Size for an Interval Estimate of a Population Proportion - Example
+
+**Example: Survey of women golfers**
 
 <br>
 
-
-## Excel to Compute Standard Normal Probabilities
-
-<br>
-
-::: columns
-::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+  A national survey of 900 women golfers was conducted to learn how women golfers view their treatment at golf courses in United States. The survey found that 396 of the women golfers were satisfied with the availability of tee times.
 
 <br>
-<br>
+  
+  Let us provide a 95% confidence interval estimate of the mean credit card debt for the population of US households. We will assume this population to be normally distributed.
 
-**Formula**
+## Sample Size for an Interval Estimate of a Population Proportion - Example
 
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/normal_excel_01.png") 
-```
+  **Calculations:**
+  
+  $$
+  E = z_{\alpha/2} \times \sqrt{\frac{p^*(1-p^*)}{n}} = .025
+  $$
+  
+  At 95% confidence $z_{0.0125} = 1.96$. Assume $p^* = 0.44$.
 
-
-:::
-
-::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
-
-<br>
-<br>
-**Results**
-
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/normal_excel_02.png") 
-```
-
-:::
-:::
+  $$
+  n = \left( \frac{z_{\alpha/2}^2 \times p^*(1-p^*)}{E^2} \right) = \left( \frac{(1.96)^2 (0.44)(0.56)}{(0.025)^2} \right) = 1,514.5
+  $$
+  
+  **Conclusion:**
+  A sample of size 1,515 is needed to reach a desired precision of $\pm$ 0.025 at 95% confidence.
 
 
+## Sample Size for an Interval Estimate of a Population Proportion - Example
 
-## Excel to Compute Standard Normal Probabilities
+- We used 0.44 as the best estimate of $p$ in the preceding expression.
 
+- If no information is available about $p$, then 0.5 is often assumed because it provides the highest possible (conservative) sample size.
 
-::: columns
-::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
-<br>
-<br>
+- If we had used $p = 0.5$, the recommended $n$ would have been 1537.
 
-**Formula**
+# Concepts  {background-color="#cfb991"}
 
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/normal_excel_03.png") 
-```
+## Concepts
 
+::: r-fit-text
 
-:::
-
-::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
-
-<br>
-<br>
-**Results**
-
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/normal_excel_04.png") 
-```
+| **Concept**          | **Definition**                                                                                 | **Purpose**                                                                                   |
+|----------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **Standard Deviation** | A measure of the amount of variation or dispersion in a set of values.                         | To quantify the dispersion of data points around the mean.                                    |
+| **Standard Error**   | The standard deviation of the sample distribution of a statistic (e.g. the sample mean).      | To estimate how much sample statistics will vary from the true population parameter.          |
+| **Margin of Error**  | A measure of the range within which the true population parameter is expected to lie, with a given level of confidence. | To quantify the uncertainty in estimates of population parameters.                            |
+| **Confidence Level** | The probability that if a random sample were taken and a confidence interval calculated, that interval would contain the true population parameter. | To indicate the degree of confidence that the interval contains the true parameter.            |
+| **Confidence Interval** | An interval estimate of a population parameter that provides an estimated range of values which is likely to include an unknown population parameter. | To provide a range in which we are *fairly confident* the true population parameter lies.      |
 
 :::
-:::
-
-
-# $t$ Probability Distribution {background-color="#cfb991"}
-
-## $t$ Probability Distribution
-## $t$ Probability Distribution
-
-
-## Distribution Shape: Skewness
-
-::: aside
-**Note:** XXXX
-:::
-
-
-::: aside
-::: fragment
-**Note:**  XXXX
-:::
-:::
-
-::: fragment
-[Guess the correlation!](https://www.guessthecorrelation.com/)
-:::
-
-::: fragment
-::: {style="font-size: 70%;"}
-- XXX
-- XXX
-
-
-:::
-:::
-
-<br>
 
 # Summary  {background-color="#cfb991"}
 
 ## Summary
 
+::: {.nonincremental}
+
+::: r-fit-text
+
+::: columns
+::: {.column width="50%"}
+
+<center>
+**CI for $\bar{p}$**
+</center>
+
+1. Check assumptions.
+   a. Randomization
+   b. Independence
+   c. The sampling distribution of $\bar{p}$ is approximately normal. (Check $n\bar{p} \geq 5$ and $n(1 - \bar{p}) \geq 5$.)
+
+2. Calculate the standard error of $\bar{p}$: 
+   $$
+   se = \sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}
+   $$
+
+3. Identify $z$ for your specified level of confidence.
+
+4. Calculate the interval: 
+   $$
+   \bar{p} \pm z \times se
+   $$
+
+:::
+::: {.column width="50%"}
+
+<center>
+**CI for $\mu$**
+</center>
+
+1. Check assumptions.
+   a. Randomization
+   b. Independence
+   c. The sampling distribution of $\bar{x}$ is approximately normal. (Check $n \geq 30$ or underlying population distribution normal.)
+
+2. Calculate the standard error of $\bar{x}$: 
+   $$
+   se = \frac{s}{\sqrt{n}}
+   $$
+
+3. Identify $t$ for your specified level of confidence 
+   $$
+   (df = n - 1)
+   $$
+
+4. Calculate the interval: 
+   $$
+   \bar{x} \pm t \times se
+   $$
+
+:::
+:::
+
+:::
+
+:::
+
+
+## Summary
+
+::: r-fit-text
+
 Some key takeaways from this session:
 
--   **Descriptive Statistics**: help us to understand the data we have.
+- **Statistical Inference**: Involves using sample data to make generalizations about a population. It includes methods like interval estimation and hypothesis testing to draw conclusions with a certain level of confidence.
 
--   **Measures of Central Location and Variability**: Central location and variability metrics help us to summarize the data.
+- **Central Limit Theorem**: States that the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the population's distribution. This theorem underpins many inferential statistics techniques.
 
--   **Distribution Shape**: skewness can be used to understand the shape of a distribution.
+- **Interval Estimation**: Provides a range of values (confidence interval) for an unknown population parameter, giving an estimate along with an associated margin of error to quantify the uncertainty.
 
--   **Relative Location and z-Scores**: z-scores to determine the relative position of data points within a distribution.
+- **Population Mean (σ Known)**: When the population standard deviation is known, a z-distribution is used to construct confidence intervals for the population mean.
 
--   **Empirical Rule**: The 68-95-99.7 Rule for understanding data distribution in relation to the mean and standard deviation. Good for symetric distrubutions!
+- **Population Mean (σ Unknown)**: When the population standard deviation is unknown, a t-distribution is used. This is common in practical applications where the sample standard deviation serves as an estimate for the population standard deviation.
 
-- **Covariance and Correlation**: to understand the relationship between two numerical variables.
+- **Population Proportion**: Involves estimating the proportion of a population that possesses a certain characteristic. Confidence intervals for population proportions can be calculated using the sample proportion and its standard error.
+
+- **Sample Size Determination**: Important for ensuring that estimates are accurate and reliable. The required sample size can be calculated based on desired margin of error, confidence level, and variability in the population.
+
+::: 
 
 # Thank you! {background-color="#cfb991"}

@@ -330,7 +330,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></h1>
-  <p class="subtitle"><span style="font-size: 150%;"> Basic Stat. &amp; Prob. Rvw. (cont.) </span></p>
+  <p class="subtitle"><span style="font-size: 150%;"> Hyp. Testing Rvw. (cont’d)</span></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -347,514 +347,576 @@ Professor<br>Davi Moreira<br>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
-<li class="fragment"><p>Continuous Probability Distributions</p>
-<ul>
-<li class="fragment">Definition</li>
-<li class="fragment">Area as a Measure of Probability</li>
-</ul></li>
-<li class="fragment"><p>Normal Probability Distribution</p>
-<ul>
-<li class="fragment">Characteristics</li>
-<li class="fragment">Applications</li>
-</ul></li>
+<li class="fragment">Inference about a Population Variance</li>
+<li class="fragment">Chi-Square Distribution</li>
+<li class="fragment">Interval Estimation of <span class="math inline">\(\sigma^2\)</span></li>
 </ul>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
-<li class="fragment"><p>Standard Normal Probability Distribution</p>
-<ul>
-<li class="fragment">Standardization</li>
-<li class="fragment">Excel Functions</li>
-</ul></li>
-<li class="fragment"><p><span class="math inline">\(t\)</span>-distribution</p>
-<ul>
-<li class="fragment">Use and comparison</li>
-<li class="fragment">Excel Functions</li>
-</ul></li>
+<li class="fragment">Hypothesis Testing about a Population Variance</li>
+<li class="fragment">Inferences about Two Population Variances</li>
+<li class="fragment">F-Test Two-Sample for Variances - Example Excel</li>
 </ul>
 </div>
 </div>
 </section>
 <section>
-<section id="continuous-probability-distributions" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Continuous Probability Distributions</h1>
+<section id="statistical-inference" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Statistical Inference</h1>
 
 </section>
-<section id="continuous-probability-distributions-1" class="slide level2 center">
-<h2>Continuous Probability Distributions</h2>
-<p><br></p>
-<ul>
-<li class="fragment"><p>A continuous random variable can assume any value in an interval on the real line or in a collection of intervals.</p></li>
-<li class="fragment"><p>We don’t normally talk about the probability of a continuous random variable assuming a particular value, because it is always 0 <span class="math inline">\(P(X=x)=0\)</span>.</p></li>
-<li class="fragment"><p>Instead, we talk about the probability of the random variable assuming a value within a given interval <span class="math inline">\(P(X \in (a,b))\)</span>.</p></li>
-</ul>
-</section>
-<section id="continuous-probability-distributions-2" class="slide level2 center">
-<h2>Continuous Probability Distributions</h2>
+<section id="statistical-inference-1" class="slide level2 center">
+<h2>Statistical Inference</h2>
 <p><br></p>
 <div class="columns">
-<div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/normal_interval.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><br></p>
-</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br> <br></p>
-<ul>
-<li class="fragment">The probability of the random variable assuming a value within some given interval from <span class="math inline">\(x_1\)</span> to <span class="math inline">\(x_2\)</span> is defined to be the area under the graph of the probability density function between <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="area-as-a-measure-of-probability" class="slide level2 center">
-<h2>Area as a Measure of Probability</h2>
-<p><br></p>
-<ul>
-<li class="fragment">The area under the graph of <span class="math inline">\(f(x)\)</span> and probability are identical.</li>
-<li class="fragment">This is valid for all continuous random variables.</li>
-<li class="fragment">The probability that <span class="math inline">\(x\)</span> takes on a value between some lower value <span class="math inline">\(x_1\)</span> and some higher value <span class="math inline">\(x_2\)</span> can be found by computing the area under the graph of <span class="math inline">\(f(x)\)</span> over the interval from <span class="math inline">\(x_1\)</span> to <span class="math inline">\(x_2\)</span>.</li>
-</ul>
-</section></section>
-<section>
-<section id="normal-probability-distribution" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Normal Probability Distribution</h1>
-
-</section>
-<section id="normal-probability-distribution-1" class="slide level2 center">
-<h2>Normal Probability Distribution</h2>
-<p><br></p>
-<ul>
-<li class="fragment"><p>The normal probability distribution is the most common distribution for describing a continuous random variable.</p></li>
-<li class="fragment"><p>It is widely used in statistical inference, especially because of the Central Limit Theorem (CLT).</p></li>
-<li class="fragment"><p>It has been used in a wide variety of applications including:</p>
-<ul>
-<li class="fragment">Heights of people</li>
-<li class="fragment">Test scores</li>
-<li class="fragment">Rainfall amounts</li>
-<li class="fragment">Scientific measurements</li>
-</ul></li>
-<li class="fragment"><p>Abraham de Moivre, a French mathematician, published <em>The Doctrine of Chances</em> in 1733. He derived the normal distribution.</p></li>
-</ul>
-<p><br></p>
-</section>
-<section id="normal-probability-distribution-2" class="slide level2 center">
-<h2>Normal Probability Distribution</h2>
-<p><br></p>
-<ul>
-<li class="fragment"><p><strong>Normal Probability Density Function</strong></p>
-<p><span class="math display">\[
-f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}
-\]</span></p>
-<p>where:</p>
-<ul>
-<li class="fragment"><span class="math inline">\(\mu\)</span>= population mean</li>
-<li class="fragment"><span class="math inline">\(\sigma\)</span>= population standard deviation</li>
-<li class="fragment"><span class="math inline">\(\pi = 3.14159\)</span></li>
-<li class="fragment"><span class="math inline">\(e = 2.71828\)</span></li>
-</ul></li>
-<li class="fragment"><p>The distribution is symmetric with respect to mean; its skewness measure is zero.</p></li>
-<li class="fragment"><p>The graph of the distribution is a bell-shaped curve.</p></li>
-</ul>
-<p><br></p>
-</section>
-<section id="normal-probability-distribution-3" class="slide level2 center">
-<h2>Normal Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/normal_dist.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><strong>Characteristics</strong></p>
-<ul>
-<li class="fragment">The entire family of normal probability distributions is defined by its mean $$and its standard deviation <span class="math inline">\(\sigma\)</span>. Denoted by <span class="math inline">\(N(\mu, \sigma)\)</span>.</li>
-<li class="fragment">The highest point on the normal curve is at the mean, which is also the median and mode.</li>
-<li class="fragment">The mean can be any numerical value: negative, zero, or positive. The mean determines the location of the distribution.</li>
-</ul>
-<p><br></p>
-</section>
-<section id="normal-probability-distribution-4" class="slide level2 center">
-<h2>Normal Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/normal_sd.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><strong>Characteristics</strong></p>
-<ul>
-<li class="fragment">The standard deviation determines the width of the curve: larger values result in wider, flatter curves.</li>
-<li class="fragment">Probabilities for the normal random variable are given by areas under the curve. The total area under the curve is 1 (.5 to the left of the mean and .5 to the right).</li>
-</ul>
-<p><br></p>
-</section>
-<section id="normal-probability-distribution-5" class="slide level2 center">
-<h2>Normal Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/empirical_rule.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><p><strong>Characteristics</strong></p>
-<ul>
-<li class="fragment">Empirical Rule</li>
-</ul>
-<p><br></p>
-<p><br></p>
-</section></section>
-<section>
-<section id="standard-normal-probability-distribution" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Standard Normal Probability Distribution</h1>
-
-</section>
-<section id="standard-normal-probability-distribution-1" class="slide level2 center">
-<h2>Standard Normal Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/normal_standard.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><strong>Characteristics</strong></p>
-<ul>
-<li class="fragment"><p>A random variable having a normal distribution with a mean of 0 and a standard deviation of 1 is said to have a standard normal probability distribution.</p></li>
-<li class="fragment"><p>Also called a z-distribution; Denoted by <span class="math inline">\(Z\)</span> or <span class="math inline">\(N(0,1)\)</span>.</p></li>
-</ul>
-<p><br></p>
-<p><br></p>
-</section>
-<section id="standard-normal-probability-distribution-2" class="slide level2 center">
-<h2>Standard Normal Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/normal_standard_z.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="fragment">
-<div style="font-size: 90%;">
-<p><strong>Standardization: Standardize <span class="math inline">\(X \sim N(\mu, \sigma)\)</span> to standard Normal Distribution, <span class="math inline">\(Z\)</span></strong></p>
-<p><span class="math display">\[
-  Z = \frac{X - \mu}{\sigma}
-  \]</span></p>
-<ul>
-<li class="fragment"><p>We can think of <span class="math inline">\(Z\)</span> as a measure of the number of standard deviations <span class="math inline">\(X\)</span> is from <span class="math inline">\(\mu\)</span>. (Cf. Standardization in Chapter 1.)</p>
-<ul>
-<li class="fragment">Conversely, <span class="math inline">\(X = \mu + z \cdot \sigma\)</span>. If <span class="math inline">\(X\)</span> can be written as <span class="math inline">\(X = \mu + z \cdot \sigma\)</span> where <span class="math inline">\(Z\)</span> is standard normal, then <span class="math inline">\(X \sim N(\mu, \sigma^2)\)</span></li>
-</ul></li>
-<li class="fragment"><p>The letter z is used to designate the standard normal random variable.</p></li>
-</ul>
-</div>
-</div>
-</section></section>
-<section>
-<section id="excel-to-compute-standard-normal-probabilities" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Excel to Compute Standard Normal Probabilities</h1>
-
-</section>
-<section id="excel-to-compute-standard-normal-probabilities-1" class="slide level2 center">
-<h2>Excel to Compute Standard Normal Probabilities</h2>
-<p><br></p>
-<ul>
-<li class="fragment"><p>Excel functions for standard normal probability distributions.</p>
-<ul>
-<li class="fragment"><p><code>=NORM.S.DIST(z, TRUE)</code> function computes the cumulative probability for a given <span class="math inline">\(z\)</span> value of the standard normal distribution.</p></li>
-<li class="fragment"><p><code>=NORM.S.INV(cumulative probability)</code> function computes the <span class="math inline">\(z\)</span> value for a given cumulative probability of the standard normal distribution.</p></li>
-<li class="fragment"><p>“S” in the function names reminds us that these functions relate to the standard normal probability distribution.</p></li>
-<li class="fragment"><p>“TRUE” or “1” indicates a cumulative probability is requested.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="excel-to-compute-standard-normal-probabilities-2" class="slide level2 center">
-<h2>Excel to Compute Standard Normal Probabilities</h2>
-<p><br></p>
-
-<img data-src="figs/z_plot_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>The standard normal distribution and the cumulative area up to a given <span class="math inline">\(z\)</span> value using the <code>NORM.S.DIST(z, TRUE)</code> function in Excel. The shaded area represents the cumulative probability up to the specified <span class="math inline">\(z\)</span> value.</p>
-<p><br></p>
-<p><br></p>
-</section>
-<section id="excel-to-compute-standard-normal-probabilities-3" class="slide level2 center">
-<h2>Excel to Compute Standard Normal Probabilities</h2>
-<p><br></p>
-<div class="columns">
-<div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br> <br></p>
-<p><strong>Formula</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/normal_excel_01.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br> <br> <strong>Results</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/normal_excel_02.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="excel-to-compute-standard-normal-probabilities-4" class="slide level2 center">
-<h2>Excel to Compute Standard Normal Probabilities</h2>
-<div class="columns">
-<div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br> <br></p>
-<p><strong>Formula</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/normal_excel_03.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br> <br> <strong>Results</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/normal_excel_04.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<p>Grear Tire company has developed a new steel-belted radial tire to be sold through a chain of discount stores. But before finalizing the tire mileage guarantee policy, Grear’s managers want probability information about the number of miles of tires will last.</p>
-<p>It was estimated from the historical data that the (population) mean tire mileage is 36,500 miles with a (population) standard deviation of 5000.</p>
-<p><strong>Question 1:</strong> The manager now wants to know the probability that the tire mileage <span class="math inline">\(x\)</span> will exceed 40,000.</p>
-</section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem-1" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<ul>
-<li class="fragment">P(x &gt; 40,000) = ?</li>
-</ul>
-<div class="fragment">
-<p><strong>Step 1</strong>: Convert x to standard normal distribution.</p>
-<p><span class="math display">\[
-z = \frac{(x - \mu)}{\sigma} \\
-z = \frac{(40,000 - 36,500)}{5,000} \\
-z = 0.7
-\]</span></p>
-</div>
-</section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem-2" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<p><br></p>
-<p><strong>Step 2</strong>: Compute the area under the standard normal curve to the right of <span class="math inline">\(z = 0.7\)</span></p>
-<p><br></p>
-
-<img data-src="figs/z-score_example_q1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="fragment">
-<p><span class="math display">\[
-P(z &gt; 0.7) = 1 - P(z \leq 0.7) \\
-= 1 - \text{=NORM.S.DIST}(0.7, \text{TRUE}) \\
-= 1 - 0.7580 \\
-= 0.2420
-\]</span></p>
-</div>
-</section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem-3" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<p><br></p>
-<p><strong>Question 2:</strong> What should be the guaranteed mileage if Grear wants no more than 10% of tires to be eligible for the discount guarantee?</p>
-<p><br></p>
-<blockquote>
-<p>(Hint: Given a probability, we can use the standard normal table in an inverse fashion to find the corresponding z-value.)</p>
-</blockquote>
-</section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem-4" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<p><br></p>
-<p><strong>Step 2:</strong> Convert <span class="math inline">\(z_{0.1}\)</span> to the corresponding value of <span class="math inline">\(x\)</span>.</p>
-<p><br></p>
-
-<img data-src="figs/z-score_example_q2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem-5" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<p><br></p>
-<p><strong>Step 2:</strong> Convert <span class="math inline">\(z_{0.1}\)</span> to the corresponding value of <span class="math inline">\(x\)</span>.</p>
-<p><br></p>
-
-<img data-src="figs/z-score_example_q2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="fragment">
-<p><span class="math display">\[
-x = \mu + z_{0.1} \cdot \sigma \\
-= 36,500 + \text{=NORM.S.INV}(0.1) \cdot (5000) \\
-= 36,500 + (-1.28155) \cdot (5000) \\
-= 30,092.24
-\]</span></p>
-<p>Thus, a guarantee of 30,100 miles will meet the requirement that approximately 10% of the tires will be eligible for the guarantee.</p>
-</div>
-</section></section>
-<section>
-<section id="t-probability-distribution" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1><span class="math inline">\(t\)</span> Probability Distribution</h1>
-
-</section>
-<section id="why-use-the-t-distribution" class="slide level2 center">
-<h2>Why use the <span class="math inline">\(t\)</span>-distribution?</h2>
-<ul>
-<li class="fragment"><p>What can we do when dealing with small sample sizes (<span class="math inline">\(n &lt; 30\)</span>)?</p></li>
-<li class="fragment"><p>What can we do when the population standard deviation (<span class="math inline">\(\sigma\)</span>) is unknown and must be estimated from the sample?</p></li>
-<li class="fragment"><p>How to obtain more accurate confidence intervals for the mean when dealing with small samples?</p></li>
-</ul>
-<p><br></p>
-<div class="fragment">
+<div class="column" style="width:50%;">
+<div>
 <center>
-<strong><span class="math inline">\(t\)</span>-distribution</strong>
+<strong>Interval Estimation</strong>
 </center>
+<ul>
+<li>Confidence level: 95% <span class="math inline">\((1-\alpha)\)</span> (Middle area; Confidence level)</li>
+<li>Confidence multipliers</li>
+<li>Upper/lower tail areas</li>
+<li>One- or 2-sided intervals</li>
+<li>Sampling errors and Margin of Error (MOE)</li>
+<li>Find range of all reasonable parameter values</li>
+</ul>
 </div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div>
+<center>
+<strong>Hypothesis Testing</strong>
+</center>
+<ul>
+<li>Significance level: 5% <span class="math inline">\((\alpha)\)</span> (Tail area(s); Risk)</li>
+<li>Critical values</li>
+<li>p-values</li>
+<li>Which side <span class="math inline">\((H_a)\)</span> depends mostly on data</li>
+<li>Strength of sample evidence against the hypothesized value (via p-value)</li>
+<li>Test a specific hypothesized parameter value</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="hypothesis-testing-framework" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Hypothesis testing framework</h1>
+
 </section>
-<section id="why-use-the-t-distribution-1" class="slide level2 center">
-<h2>Why use the <span class="math inline">\(t\)</span>-distribution?</h2>
-<div class="r-fit-text">
+<section id="hypothesis-testing-framework-1" class="slide level2 center">
+<h2>Hypothesis testing framework</h2>
 <ul>
-<li class="fragment"><strong>Sample Size Considerations</strong>
+<li class="fragment"><p><a href="https://en.wikipedia.org/wiki/Statistical_hypothesis_testing">Hypothesis testing</a> can be used to determine whether a statement about the population or a hypothesized value of the population parameter should or should not be rejected.</p></li>
+<li class="fragment"><p>We start with a <a href="https://en.wikipedia.org/wiki/Null_hypothesis"><em>null hypothesis</em></a> <em>(</em><span class="math inline">\(H_0\)</span>) that represents the status quo.</p></li>
+<li class="fragment"><p>We also have an <a href="https://en.wikipedia.org/wiki/Alternative_hypothesis"><em>alternative hypothesis</em></a> <em>(</em><span class="math inline">\(H_A\)</span>) that represents our research question, i.e.&nbsp;what we’re testing for.</p></li>
+<li class="fragment"><p>We conduct a hypothesis test under the assumption that the null hypothesis is true.</p></li>
+<li class="fragment"><p>If the test results suggest that the data do not provide convincing evidence for the alternative hypothesis, we stick with the null hypothesis. If they do, then we reject the null hypothesis in favor of the alternative.</p></li>
+<li class="fragment"><p>We will never know which hypothesis is true, unless we sample the entire population.</p></li>
+</ul>
+</section></section>
+<section id="inferences-about-population-variances" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Inferences about Population Variances</h1>
+
+</section>
+
+<section>
+<section id="inference-about-a-population-variance" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Inference about a Population Variance</h1>
+
+</section>
+<section id="inferences-about-a-population-variance" class="slide level2 center">
+<h2>Inferences about a Population Variance</h2>
 <ul>
-<li class="fragment">When the sample size is small <span class="math inline">\((n &lt; 30)\)</span>, the <span class="math inline">\(t\)</span>-distribution provides a better estimate than the normal distribution.</li>
-<li class="fragment">With small samples, the sample standard deviation (<span class="math inline">\(S\)</span>) may not be a reliable estimate of the population standard deviation (<span class="math inline">\(\sigma\)</span>).</li>
+<li class="fragment"><p>A variance can provide important decision-making information.</p></li>
+<li class="fragment"><p>Consider the production process of filling containers with a liquid detergent product.</p>
+<ul>
+<li class="fragment">The mean filling weight is important, but so too is the variance of the filling weights.</li>
+<li class="fragment">By selecting a sample of containers, we can compute a sample variance for the amount of detergent placed in a container.</li>
+<li class="fragment">If the sample variance is excessive, overfilling and underfilling may be occurring even though the mean is correct.</li>
 </ul></li>
-<li class="fragment"><strong>Unknown Population Standard Deviation</strong>
+</ul>
+</section></section>
+<section>
+<section id="chi-square-distribution" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Chi-Square Distribution</h1>
+
+</section>
+<section id="chi-square-distribution-1" class="slide level2 center">
+<h2>Chi-Square Distribution</h2>
 <ul>
-<li class="fragment">When the population standard deviation (<span class="math inline">\(\sigma\)</span>) is unknown and must be estimated from the sample, the <span class="math inline">\(t\)</span>-distribution is appropriate.</li>
-<li class="fragment">The <span class="math inline">\(t\)</span>-distribution adjusts for the additional variability introduced by using <span class="math inline">\(S\)</span> instead of <span class="math inline">\(\sigma\)</span>.</li>
-</ul></li>
-<li class="fragment"><strong>More Accurate Confidence Intervals</strong>
+<li class="fragment"><p>We can use the chi-square distribution to develop interval estimates and conduct hypothesis tests about a population variance <span class="math inline">\(\sigma^2\)</span>.</p></li>
+<li class="fragment"><p>The chi-square (<span class="math inline">\(\chi^2\)</span>) distribution is the sum of squared standardized normal random variables (a variable that follows a normal distribution) such as <span class="math inline">\((z_1)^2 + (z_2)^2 + (z_3)^2\)</span> and so on.</p></li>
+<li class="fragment"><p>The chi-square distribution is based on sampling from a normal population.</p></li>
+<li class="fragment"><p>The sampling distribution of <span class="math inline">\((n-1)S^2/\sigma^2\)</span> has a chi-square distribution with <span class="math inline">\(n-1\)</span> degrees of freedom whenever a simple random sample of size <span class="math inline">\(n\)</span> is selected from a normal population with population variance <span class="math inline">\(\sigma^2\)</span>. <span class="math inline">\(S^2\)</span> is the sample variance.</p></li>
+</ul>
+</section>
+<section id="chi-square-distributions-with-different-degrees-of-freedom" class="slide level2 center">
+<h2>Chi-Square Distributions with different degrees of Freedom</h2>
+
+<img data-src="figs/chi_square.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<section id="chi-square-distribution-2" class="slide level2 center">
+<h2>Chi-Square Distribution</h2>
+<p>We will use the notation <span class="math inline">\(\chi^2_{\alpha}\)</span> to denote the value for the chi-square distribution that provides an area of <span class="math inline">\(\alpha\)</span> to the right of the stated <span class="math inline">\(\chi^2_{\alpha}\)</span> value.</p>
+
+<img data-src="figs/chi_square_df9.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<section id="chi-square-distribution-3" class="slide level2 center">
+<h2>Chi-Square Distribution</h2>
+
+<img data-src="figs/chi_square_two_tail.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section></section>
+<section>
+<section id="interval-estimation-of-sigma2" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Interval Estimation of <span class="math inline">\(\sigma^2\)</span></h1>
+
+</section>
+<section id="interval-estimation-of-sigma2-1" class="slide level2 center">
+<h2>Interval Estimation of <span class="math inline">\(\sigma^2\)</span></h2>
 <ul>
-<li class="fragment">Provides more accurate confidence intervals for the mean when dealing with small samples.</li>
-<li class="fragment">Reflects the increased uncertainty in estimates due to small sample sizes and unknown <span class="math inline">\(\sigma\)</span>.</li>
+<li class="fragment"><p>There is a <span class="math inline">\((1-\alpha)\)</span> probability of obtaining a <span class="math inline">\((n-1)S^2/\sigma^2\)</span> value such that</p>
+<p><span class="math display">\[
+\chi^2_{(1-\alpha/2)} \leq \frac{(n-1)S^2}{\sigma^2} \leq \chi^2_{\alpha/2}
+\]</span></p></li>
+<li class="fragment"><p>Performing algebraic manipulation, we obtain an <span class="math inline">\(1-\alpha\)</span> interval estimate of the population variance <span class="math display">\[
+\frac{(n-1)S^2}{\chi^2_{\alpha/2}} \leq \sigma^2 \leq \frac{(n-1)S^2}{\chi^2_{(1-\alpha/2)}}
+\]</span></p></li>
+<li class="fragment"><p>Taking the square root of the upper and lower limits of the variance interval provides the confidence interval for the population standard deviation. <span class="math display">\[
+\sqrt{\frac{(n-1)S^2}{\chi^2_{\alpha/2}}} \leq \sigma \leq \sqrt{\frac{(n-1)S^2}{\chi^2_{(1-\alpha/2)}}}
+\]</span></p></li>
+</ul>
+</section>
+<section id="interval-estimation-of-sigma2---example" class="slide level2 center">
+<h2>Interval Estimation of <span class="math inline">\(\sigma^2\)</span> - Example</h2>
+<p><strong>Example:</strong> Liquid detergent product filling process</p>
+<p>The filling mechanism for the process of filling liquid detergent product in a container is adjusted such that mean filling weight is 16 ounces per container. A sample of 20 containers was taken to test this. If the sample variance is modest, the production process will be continued. If the sample variance is excessive, the filling mechanism will be readjusted to reduce the filling variance.</p>
+<p>The sample variance for the filling quantities is found to be <span class="math inline">\(s^2 = .0025\)</span>.</p>
+<p>Choose <span class="math inline">\(\alpha = .05\)</span>.</p>
+</section>
+<section id="interval-estimation-of-sigma2---example-1" class="slide level2 center">
+<h2>Interval Estimation of <span class="math inline">\(\sigma^2\)</span> - Example</h2>
+<ul>
+<li class="fragment">Two confidence multipliers: (df = n-1 = 20-1 = 19) <span class="math display">\[
+\chi^2_{0.025} = \text{CHISQ.INV}(0.975, 19) = 32.852
+\]</span> <span class="math display">\[
+\chi^2_{0.975} = \text{CHISQ.INV}(0.025, 19) = 8.907
+\]</span></li>
+</ul>
+</section>
+<section id="interval-estimation-of-sigma2---example-2" class="slide level2 center">
+<h2>Interval Estimation of <span class="math inline">\(\sigma^2\)</span> - Example</h2>
+<ul>
+<li class="fragment"><p>A 95% confidence interval for the population variance is given by: <span class="math display">\[
+\frac{(20-1)0.0025}{32.852} \leq \sigma^2 \leq \frac{(20-1)0.0025}{8.907}
+\]</span></p>
+<p><span class="math display">\[
+0.0014 \leq \sigma^2 \leq 0.0053
+\]</span></p></li>
+<li class="fragment"><p>Taking the square root of these values provides a 95% confidence interval for the population standard deviation.</p>
+<p><span class="math display">\[
+0.0380 \leq \sigma \leq 0.0730
+\]</span></p></li>
+<li class="fragment"><p>We are 95% confident that the process standard deviation of the filling weight per container is between 0.0380 ounces and 0.0730 ounces.</p></li>
+</ul>
+</section>
+<section id="interval-estimation-of-sigma2---example-excel" class="slide level2 center">
+<h2>Interval Estimation of <span class="math inline">\(\sigma^2\)</span> - Example Excel</h2>
+
+<img data-src="figs/interval_estimation_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section></section>
+<section>
+<section id="hypothesis-testing-about-a-population-variance" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Hypothesis Testing about a Population Variance</h1>
+
+</section>
+<section id="hypothesis-testing-about-a-population-variance-1" class="slide level2 center">
+<h2>Hypothesis Testing about a Population Variance</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div>
+<p><strong>Hypotheses</strong></p>
+<ul>
+<li><span class="math inline">\(H_0: \sigma^2 \geq \sigma_0^2\)</span></li>
+<li><span class="math inline">\(H_a: \sigma^2 &lt; \sigma_0^2\)</span> (Left-tailed)</li>
+</ul>
+<p>where <span class="math inline">\(\sigma_0^2\)</span> is the hypothesized value for the population variance.</p>
+<div class="fragment">
+<p><strong>Test Statistic</strong></p>
+<p><span class="math display">\[
+\chi^2 = \frac{(n-1)S^2}{\sigma_0^2}
+\]</span></p>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="fragment">
+<div>
+<p><strong>Rejection Rule (Left-tailed test)</strong></p>
+<ul>
+<li><p>Critical-value approach:</p>
+<ul>
+<li>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(\chi^2 \leq \chi^2_{(1-\alpha)}\)</span></li>
 </ul></li>
 </ul>
 </div>
-</section>
-<section id="t-probability-distribution-1" class="slide level2 center">
-<h2><span class="math inline">\(t\)</span> Probability Distribution</h2>
+<div class="fragment">
 <div>
 <ul>
-<li>Standardize <span class="math inline">\(N(\mu, \sigma)\)</span> using sample mean and sample standard deviation:</li>
-</ul>
-<p><span class="math display">\[
-t = \frac{X - \bar{X}}{S}
-\]</span></p>
+<li><p>p-value approach:</p>
 <ul>
-<li><p>This t-statistic has a <span class="math inline">\(t\)</span>-distribution with <strong>degrees of freedom (df)</strong> = <span class="math inline">\(n-1\)</span>, which is the degrees of freedom of the sample standard deviation <span class="math inline">\(S\)</span>.</p></li>
-<li><p>When using sample mean and sample standard deviation to standardize a normal distribution, we will always have a <span class="math inline">\(t\)</span>-distribution, <strong>approximately</strong>.</p></li>
+<li>Reject <span class="math inline">\(H_0\)</span> if p-value <span class="math inline">\(\leq \alpha\)</span></li>
+</ul></li>
 </ul>
+<p>where <span class="math inline">\(\chi^2_{(1-\alpha)}\)</span> is based on a chi-square distribution with <span class="math inline">\(n-1\)</span> df.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="t-probability-distribution-2" class="slide level2 center">
-<h2><span class="math inline">\(t\)</span> Probability Distribution</h2>
+<section id="hypothesis-testing-about-a-population-variance-2" class="slide level2 center">
+<h2>Hypothesis Testing about a Population Variance</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div>
+<p><strong>Hypotheses</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+H_0 &amp;: \sigma^2 \leq \sigma^2_0 \\
+H_a &amp;: \sigma^2 &gt; \sigma^2_0 \quad \text{(Right-tailed)}
+\end{aligned}
+\]</span></p>
+<p>where <span class="math inline">\(\sigma^2_0\)</span> is the hypothesized value for the population variance.</p>
+<div class="fragment">
+<p><strong>Test Statistic</strong></p>
+<p><span class="math display">\[
+\chi^2 = \frac{(n-1)S^2}{\sigma^2_0}
+\]</span></p>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="fragment">
+<div>
+<p><strong>Rejection Rule (Right-tailed test)</strong></p>
 <ul>
-<li class="fragment"><p><strong>Similar to</strong> the standard normal.</p></li>
-<li class="fragment"><p>Symmetric with mean 0 and a shape parameter (the degrees of freedom, df).</p></li>
-<li class="fragment"><p>The standard deviation is <span class="math inline">\(\sqrt{\frac{df}{(df - 2)}}\)</span> and is always larger than 1 (Recall: 1 is the standard deviation of Z-distribution):</p>
-<ul>
-<li class="fragment"><p><span class="math inline">\(t(df)\)</span> has more variability than Z.</p></li>
-<li class="fragment"><p><span class="math inline">\(t(df)\)</span> has heavier tails than Z: More probability (area) in the tails than Z. (Heavier tails.)</p></li>
-<li class="fragment"><p><span class="math inline">\(t(df)\)</span> approaches Z if <span class="math inline">\(df\)</span> increases. Empirical rules can be used when <span class="math inline">\(df \geq 5\)</span>.</p></li>
-</ul></li>
+<li><p>Critical-value approach:</p>
+<p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(\chi^2 \geq \chi^2_\alpha\)</span></p></li>
 </ul>
+</div>
+<div class="fragment">
+<div>
+<ul>
+<li><p>p-value approach:</p>
+<p>Reject <span class="math inline">\(H_0\)</span> if p-value <span class="math inline">\(\leq \alpha\)</span></p></li>
+</ul>
+<p>where <span class="math inline">\(\chi^2_\alpha\)</span> is based on a chi-square distribution with <span class="math inline">\(n-1\)</span> df.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="t-probability-distribution-3" class="slide level2 center">
-<h2><span class="math inline">\(t\)</span> Probability Distribution</h2>
+<section id="hypothesis-testing-about-a-population-variance-3" class="slide level2 center">
+<h2>Hypothesis Testing about a Population Variance</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div>
+<p><strong>Hypotheses</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+H_0 &amp;: \sigma^2 = \sigma^2_0 \\
+H_a &amp;: \sigma^2 \neq \sigma^2_0 \quad \text{(Two-tailed)}
+\end{aligned}
+\]</span></p>
+<p>where <span class="math inline">\(\sigma^2_0\)</span> is the hypothesized value for the population variance.</p>
+<div class="fragment">
+<p><strong>Test Statistic</strong></p>
+<p><span class="math display">\[
+\chi^2 = \frac{(n-1)S^2}{\sigma^2_0}
+\]</span></p>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="fragment">
+<div>
+<p><strong>Rejection Rule (Two-tailed test)</strong></p>
+<ul>
+<li><p>Critical-value approach:</p>
+<p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(\chi^2 \leq \chi^2_{(1-\alpha/2)}\)</span> or <span class="math inline">\(\chi^2 \geq \chi^2_{\alpha/2}\)</span></p></li>
+</ul>
+</div>
+<div class="fragment">
+<div>
+<ul>
+<li><p>p-value approach:</p>
+<p>Reject <span class="math inline">\(H_0\)</span> if p-value <span class="math inline">\(\leq \alpha\)</span></p></li>
+</ul>
+<p>where <span class="math inline">\(\chi^2_{(1-\alpha/2)}\)</span> and <span class="math inline">\(\chi^2_{\alpha/2}\)</span> are based on a chi-square distribution with <span class="math inline">\(n-1\)</span> df.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="hypothesis-testing-about-a-population-variance---example" class="slide level2 center">
+<h2>Hypothesis Testing about a Population Variance - Example</h2>
+<p><strong>Example:</strong> St.&nbsp;Louis Metro Bus Company</p>
+<p>St.&nbsp;Louis Metro Bus Company wants to promote an image of reliability by encouraging its drivers to maintain consistent schedules. The company specifies an arrival time variance of 4 or less when arrival times are measured in minutes.</p>
+<p>We will conduct a hypothesis test (with <span class="math inline">\(\alpha = 0.05\)</span>) to determine whether the arrival time population variance is excessive.</p>
+</section>
+<section id="hypothesis-testing-about-a-population-variance---example-1" class="slide level2 center">
+<h2>Hypothesis Testing about a Population Variance - Example</h2>
+<p><strong>Hypotheses:</strong> <span class="math display">\[
+H_0: \sigma^2 \leq 4
+\]</span> <span class="math display">\[
+H_a: \sigma^2 &gt; 4
+\]</span></p>
+<p>A random sample of 24 bus arrivals taken at a downtown intersection provided a sample variance of <span class="math inline">\(s^2 = 4.9\)</span>.</p>
+<p><strong>Test Statistic</strong></p>
+<p><span class="math display">\[
+\chi^2 = \frac{(n-1)S^2}{\sigma_0^2} = \frac{(24-1)(4.9)}{4} = 28.18
+\]</span></p>
+</section>
+<section id="hypothesis-testing-about-a-population-variance---example-2" class="slide level2 center">
+<h2>Hypothesis Testing about a Population Variance - Example</h2>
 <p><br></p>
+<p><strong><span class="math inline">\(p\)</span>-value Approach:</strong></p>
 
-<img data-src="figs/z_t_dist_comparison.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>The standard normal distribution and two <span class="math inline">\(t\)</span> distributions with different degrees of freedom.</p>
-<p><br></p>
+<img data-src="figs/chi_square_pvalue.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><br>
+<center>
+<span class="math inline">\(p\)</span>-value = <code>1-CHISQ.DIST(28.18, 23, TRUE)</code> = 0.209 &gt; 5%. Fail to reject <span class="math inline">\(H_0\)</span>.
+</center>
 <p><br></p>
 </section>
-<section id="comparing-normal-and-t-distributions" class="slide level2 center">
-<h2>Comparing Normal and <span class="math inline">\(t\)</span>-Distributions</h2>
+<section id="hypothesis-testing-about-a-population-variance---example-3" class="slide level2 center">
+<h2>Hypothesis Testing about a Population Variance - Example</h2>
+<div>
 <ul>
-<li class="fragment"><strong>Shape and Symmetry</strong>
+<li><p>5% Critical Value = CHI.INV(0.95, 23) = 35.172</p>
 <ul>
-<li class="fragment">Both distributions are symmetric and bell-shaped.</li>
-<li class="fragment">The <span class="math inline">\(t\)</span>-distribution has heavier tails compared to the normal distribution, reflecting more variability.</li>
+<li><p>Rejection Rule:</p></li>
+<li><p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(\chi^2 \geq 35.172\)</span></p></li>
 </ul></li>
-<li class="fragment"><strong>Dependence on Sample Size</strong>
+</ul>
+<p>Because <span class="math inline">\(\chi^2 = 28.18\)</span>, we fail to reject the null hypothesis.</p>
+<p><br></p>
+<p><strong>Conclusion:</strong> Based on the current sample, we do not have significant statistical evidence to conclude that the arrival time variance is greater than 4. The significance level is 5%.</p>
+</div>
+</section>
+<section id="hypothesis-testing-about-a-population-variance---example-excel" class="slide level2 center">
+<h2>Hypothesis Testing about a Population Variance - Example Excel</h2>
+
+<img data-src="figs/chi_square_hip_test_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section></section>
+<section>
+<section id="inferences-about-two-population-variances" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Inferences about Two Population Variances</h1>
+
+</section>
+<section id="inferences-about-two-population-variances-1" class="slide level2 center">
+<h2>Inferences about Two Population Variances</h2>
 <ul>
-<li class="fragment">The normal distribution does not depend on sample size.</li>
-<li class="fragment">The <span class="math inline">\(t\)</span>-distribution varies with degrees of freedom (<span class="math inline">\(df = n - 1\)</span>).</li>
-<li class="fragment">As the degrees of freedom increase, the <span class="math inline">\(t\)</span>-distribution approaches the normal distribution.</li>
+<li class="fragment"><p>We may want to compare the population variances (variation) in:</p>
+<ul>
+<li class="fragment">product quality resulting from two different production processes,</li>
+<li class="fragment">temperatures for two heating devices, or</li>
+<li class="fragment">assembly times for two assembly methods.</li>
+</ul></li>
+<li class="fragment"><p>We use sample data collected from two <strong>independent normal populations</strong>.</p></li>
+<li class="fragment"><p>The two sample variances will be the basis for making inferences about the two <strong>normal</strong> population variances.</p></li>
+</ul>
+</section>
+<section id="hypothesis-testing-about-the-variances-of-two-populations" class="slide level2 center">
+<h2>Hypothesis Testing about the Variances of Two Populations</h2>
+<p><strong>One-Tailed Test: (Right tail)</strong></p>
+<p><strong>Hypotheses:</strong> <span class="math display">\[
+  H_0: \sigma_1^2 \leq \sigma_2^2 \quad \left( \frac{\sigma_1^2}{\sigma_2^2} \leq 1 \right)
+  \]</span> <span class="math display">\[
+  H_a: \sigma_1^2 &gt; \sigma_2^2 \quad \left( \frac{\sigma_1^2}{\sigma_2^2} &gt; 1 \right)
+  \]</span></p>
+<ul>
+<li class="fragment"><p>The population providing the larger sample variance is designated as Population 1.</p></li>
+<li class="fragment"><p>The Null Hypothesis is based on the assumption that the variances are equal.</p>
+<p><strong>Test Statistic:</strong></p>
+<p><span class="math display">\[
+F = \frac{S_1^2}{S_2^2} \quad \text{follows F-distribution } (n_1-1, n_2-1), \text{ if } H_0(=) \text{ is true}.
+\]</span></p></li>
+</ul>
+</section>
+<section id="hypothesis-testing-about-the-variances-of-two-populations-1" class="slide level2 center">
+<h2>Hypothesis Testing about the Variances of Two Populations</h2>
+<p><strong>Rejection Rule:</strong></p>
+<ul>
+<li class="fragment"><p><strong>Critical-value approach</strong>:</p>
+<ul>
+<li class="fragment">Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F \geq F_{\alpha, n_1-1, n_2-1}\)</span>.</li>
+<li class="fragment">where the value of <span class="math inline">\(F_{\alpha, n_1-1, n_2-1}\)</span> is based on an <span class="math inline">\(F\)</span> distribution with <span class="math inline">\(n_1 - 1\)</span> (numerator) and <span class="math inline">\(n_2 - 1\)</span> (denominator) d.f., such that the upper tail area is <span class="math inline">\(\alpha\)</span>.</li>
+</ul></li>
+<li class="fragment"><p><strong>p-value approach</strong>:</p>
+<ul>
+<li class="fragment">Reject <span class="math inline">\(H_0\)</span> if p-value <span class="math inline">\(\leq\alpha\)</span>.</li>
 </ul></li>
 </ul>
 </section>
-<section id="t-probability-distribution---example-grear-tire-company-problem" class="slide level2 center">
-<h2><span class="math inline">\(t\)</span> Probability Distribution - Example: Grear Tire Company Problem</h2>
-<p>Grear Tire company has developed a new steel-belted radial tire to be sold through a chain of discount stores. But before finalizing the tire mileage guarantee policy, Grear’s managers want probability information about the number of miles tires will last.</p>
-<p>It was estimated from a sample of size 28 that the sample mean tire mileage is 36,500 miles with a sample standard deviation of 5000.</p>
-<p>The manager now wants to know:</p>
+<section id="hypothesis-testing-about-the-variances-of-two-populations-2" class="slide level2 center">
+<h2>Hypothesis Testing about the Variances of Two Populations</h2>
+<div>
+<p><strong>Two-Tailed Test</strong></p>
+<p><strong>Hypotheses:</strong></p>
+<p><span class="math display">\[ H_0 : \sigma^2_1 = \sigma^2_2 \]</span> <span class="math display">\[ H_a : \sigma^2_1 \neq \sigma^2_2 \]</span></p>
 <ul>
-<li class="fragment"><strong>Question 1:</strong> What is the probability that the tire mileage <span class="math inline">\(X\)</span> will exceed 40,000 miles?</li>
-<li class="fragment"><strong>Question 2:</strong> What is the 10th percentile tire mileage for the new tires?</li>
+<li>Denote the population providing the larger sample variance as population 1.</li>
+<li>The Null Hypothesis is based on the assumption that the variances are equal.</li>
+</ul>
+<p><strong>Test Statistic:</strong></p>
+<p><span class="math display">\[ F = \frac{S^2_1}{S^2_2} \]</span></p>
+<p>follows F-distribution <span class="math inline">\((n_1-1, n_2-1)\)</span>, if <span class="math inline">\(H_0 ( =)\)</span> is true.</p>
+</div>
+</section>
+<section id="hypothesis-testing-about-the-variances-of-two-populations-3" class="slide level2 center">
+<h2>Hypothesis Testing about the Variances of Two Populations</h2>
+<p><strong>Decision Rule:</strong></p>
+<ul>
+<li class="fragment"><p><strong>Critical-value approach</strong>:</p>
+<ul>
+<li class="fragment">Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F \geq F_{\alpha/2, n_1-1, n_2-1}\)</span>.</li>
+<li class="fragment">where the value of <span class="math inline">\(F_{\alpha/2, n_1-1, n_2-1}\)</span> is based on an <span class="math inline">\(F\)</span> distribution with <span class="math inline">\(n_1 - 1\)</span> (numerator) and <span class="math inline">\(n_2 - 1\)</span> (denominator) d.f.</li>
+</ul></li>
+<li class="fragment"><p><strong>p-value approach</strong>:</p>
+<ul>
+<li class="fragment">Reject <span class="math inline">\(H_0\)</span> if p-value <span class="math inline">\(\leq \alpha\)</span>.</li>
+</ul></li>
 </ul>
 </section>
-<section id="t-probability-distribution---example-grear-tire-company-problem-1" class="slide level2 center">
-<h2><span class="math inline">\(t\)</span> Probability Distribution - Example: Grear Tire Company Problem</h2>
-<p><strong>Solution</strong></p>
+<section id="hypothesis-testing-about-the-variances-of-two-populations---example" class="slide level2 center">
+<h2>Hypothesis Testing about the Variances of Two Populations - Example</h2>
+<p><strong>Example: Dullus County School</strong></p>
+<p>Dullus County school wants to select one among the Milbank Company and Gulf Park Company for the bus service contract for the coming year. The variance of arrival/pickup time will be used as a primary measure of the quality of service.</p>
+<p>We will conduct a hypothesis test with <span class="math inline">\(\alpha = 10\%\)</span> to see if the variances are equal for Milbank Company and Gulf Park Company.</p>
+</section>
+<section id="hypothesis-testing-about-the-variances-of-two-populations---example-1" class="slide level2 center">
+<h2>Hypothesis Testing about the Variances of Two Populations - Example</h2>
+<div>
+<p><strong>Hypotheses:</strong></p>
 <ul>
-<li class="fragment"><p><strong>Question 1:</strong> What is the probability that the tire mileage <span class="math inline">\(X\)</span> will exceed 40,000 miles?</p>
-<p><span class="math inline">\(P(X &gt; 40,000) = P(t_{27} &gt; 0.7) = 1 - P(t_{27} \leq 0.7)\)</span></p>
-<p><span class="math display">\[
-= 1 - \text{T.DIST}(0.7, 27, \text{TRUE}) \\
-= 1 - 0.7550 \\
-= 0.250
-\]</span></p></li>
-<li class="fragment"><p><strong>Question 2:</strong> What is the 10th percentile tire mileage for the new tires?</p>
-<p><span class="math display">\[
-x_{0.1} = \bar{X} + t_{0.1,27} \cdot s \\
-= 36,500 + \text{T.INV}(0.1, 27) \cdot (5000) \\
-= 36,500 + (-1.314) \cdot (5000) \\
-= 29,903 \text{ miles}
-\]</span></p></li>
+<li><span class="math inline">\(H_0\)</span>: Milbank and Gulf Park have same arrival time variance</li>
+<li><span class="math inline">\(H_a\)</span>: Their variances are not equal- Two-Tailed</li>
+</ul>
+<p><span class="math display">\[ H_0 : \sigma^2_1 = \sigma^2_2\]</span></p>
+<p><span class="math display">\[ H_a : \sigma^2_1 \neq \sigma^2_2 \]</span></p>
+<p>A sample of 26 arrival times for the Milbank service provided a sample variance of 48 and a sample of 16 arrival times for the Gulf Park service provided a sample variance of 20.</p>
+<p>Because the Milbank sample provided a larger sample variance, we will denote Milbank as Population 1.</p>
+<p>Hence, <span class="math inline">\(n_1 = 26, n_2 = 16\)</span>.</p>
+<p>Recall <span class="math inline">\(\alpha = 10\%\)</span>.</p>
+</div>
+</section>
+<section id="hypothesis-testing-about-the-variances-of-two-populations---example-2" class="slide level2 center">
+<h2>Hypothesis Testing about the Variances of Two Populations - Example</h2>
+<p>Test statistic <span class="math inline">\(F\)</span> has 25 d.f. (numerator), and 15 d.f. (denominator)</p>
+<p><span class="math display">\[ F = \frac{S^2_1}{S^2_2} = \frac{48}{20} = 2.40 \]</span></p>
+<p><strong>Critical Value</strong></p>
+
+<img data-src="figs/f_dist_critical_value.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<section id="hypothesis-testing-about-the-variances-of-two-populations---example-3" class="slide level2 center">
+<h2>Hypothesis Testing about the Variances of Two Populations - Example</h2>
+<p><strong>Critical-value approach:</strong></p>
+<p><span class="math display">\[\alpha / 2 = 0.05\]</span></p>
+<ul>
+<li class="fragment"><p>Upper-tailed critical value <code>= F.INV(0.95, 25, 15)</code> = 2.28</p></li>
+<li class="fragment"><p>Decision rule:</p>
+<ul>
+<li class="fragment">Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F \geq 2.28\)</span>.</li>
+</ul></li>
+<li class="fragment"><p>Because <span class="math inline">\(F = 2.40\)</span> is greater than 2.28, we reject null hypothesis.</p></li>
+</ul>
+</section>
+<section id="hypothesis-testing-about-the-variances-of-two-populations---example-4" class="slide level2 center">
+<h2>Hypothesis Testing about the Variances of Two Populations - Example</h2>
+<p><strong>p-value approach:</strong></p>
+
+<img data-src="figs/f_dist_pvalue.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><ul>
+<li class="fragment"><p>25 d.f. (numerator), and 15 d.f. (denominator),</p></li>
+<li class="fragment"><p>p-value <code>= 2*(1- F.DIST(2.40, 25,15, TRUE))</code> = 2*0.041 = 0.082.</p></li>
+<li class="fragment"><p>Because <span class="math inline">\(\alpha = 0.10\)</span>, we have p-value <span class="math inline">\(&lt; \alpha\)</span> and therefore, null hypothesis is rejected.</p></li>
 </ul>
 </section></section>
+<section id="f-test-two-sample-for-variances---example-excel" class="title-slide slide level1 center">
+<h1>F-Test Two-Sample for Variances - Example Excel</h1>
+<p><strong>Example: Dullus County School</strong></p>
+<ul>
+<li class="fragment"><p>Step 1: Click the <strong>Data</strong> tab on the Ribbon.</p></li>
+<li class="fragment"><p>Step 2: In the <strong>Analysis</strong> group, click <strong>Data Analysis</strong>.</p></li>
+<li class="fragment"><p>Step 3: When the Data Analysis dialog box appears: Choose <strong>F-Test Two-Sample for Variances</strong>.</p></li>
+<li class="fragment"><p>Step 4: When the F-Test Two-Sample for Variances dialog box appears: (see details on next slide).</p></li>
+</ul>
+</section>
+
 <section>
-<section id="summary" class="title-slide slide level1 center" data-background-color="#cfb991">
+<section id="f-test-two-sample-for-variances---example-excel-1" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>F-Test Two-Sample for Variances - Example Excel</h1>
+
+</section>
+<section id="f-test-two-sample-for-variances---example-excel-2" class="slide level2 center">
+<h2>F-Test Two-Sample for Variances - Example Excel</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div>
+<p>Example: Dullus County School</p>
+<ul>
+<li><p>Enter A1: A27 in the Variable 1</p>
+<p>Range box.</p></li>
+<li><p>Enter B1:B17 in the Variable 2</p>
+<p>Range box.</p></li>
+<li><p>Select Labels.</p></li>
+<li><p>Enter .05 in the Alpha box.</p></li>
+<li><p>Select Output Range and enter</p>
+<p>D1 in the box.</p></li>
+<li><p>Click OK.</p></li>
+</ul>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/f_test_excel.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="f-test-two-sample-for-variances---example-excel-3" class="slide level2 center">
+<h2>F-Test Two-Sample for Variances - Example Excel</h2>
+<p><strong>Result:</strong></p>
+
+<img data-src="figs/f_test_excel_result.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><p><br> <br></p>
+</section></section>
+<section>
+<section id="summary" class="title-slide slide level1 center">
 <h1>Summary</h1>
 
 </section>
 <section id="summary-1" class="slide level2 center">
 <h2>Summary</h2>
-<div class="columns">
-<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="r-fit-text">
 <p>Some key takeaways from this session:</p>
 <ul>
-<li class="fragment"><strong>Continuous Probability Distributions</strong>:
+<li class="fragment"><p>Chi-Square Distribution</p>
 <ul>
-<li class="fragment">Continuous random variables can assume any value in an interval.</li>
-<li class="fragment">Probability is defined as the area under the probability density function.</li>
+<li class="fragment">The chi-square distribution is used for interval estimation and hypothesis testing about a population variance.</li>
+<li class="fragment">It is the sum of squared standardized normal random variables.</li>
+<li class="fragment">Understanding its dependence on sampling from a normal population and degrees of freedom.</li>
 </ul></li>
-<li class="fragment"><strong>Normal Probability Distribution</strong>:
+<li class="fragment"><p>Interval Estimation of <span class="math inline">\(\sigma^2\)</span></p>
 <ul>
-<li class="fragment">Most common distribution for describing a continuous random variable.</li>
-<li class="fragment">Defined by its mean and standard deviation.</li>
-<li class="fragment">Widely used due to the Central Limit Theorem.</li>
+<li class="fragment">It is easy to convert the interval estimate of variance to an interval estimate of standard deviation.</li>
 </ul></li>
-</ul>
-</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<div class="r-fit-text">
+<li class="fragment"><p>Hypothesis Testing about a Population Variance</p>
 <ul>
-<li class="fragment"><strong>Standard Normal Probability Distribution</strong>:
-<ul>
-<li class="fragment">A normal distribution with a mean of 0 and a standard deviation of 1.</li>
-<li class="fragment">Standardization helps in comparing different normal distributions.</li>
-</ul></li>
-<li class="fragment"><strong><span class="math inline">\(t\)</span>-distribution</strong>
-<ul>
-<li class="fragment">Use when the sample size is small <span class="math inline">\((n &lt; 30)\)</span></li>
-<li class="fragment">Use when the population standard deviation is unknown</li>
-</ul></li>
-<li class="fragment"><strong>Excel Functions</strong>:
-<ul>
-<li class="fragment"><code>=NORM.S.DIST(z, TRUE)</code> computes the cumulative probability for a given z-value.</li>
-<li class="fragment"><code>=NORM.S.INV(cumulative probability)</code> computes the z-value for a given cumulative probability.</li>
-<li class="fragment"><code>=T.DIST(X, DF, TRUE)</code> computes the cumulative probability for a given t-value.<br>
-</li>
-<li class="fragment"><code>=T.INV(cumulative probability)</code> computes the t-value for a given cumulative probability.</li>
+<li class="fragment">We use the chi-square distribution for the test statistic.</li>
+<li class="fragment">We can interpret results using both the critical value approach and the p-value approach.</li>
 </ul></li>
 </ul>
-</div>
-</div>
 </div>
 </section></section>
 <section id="thank-you" class="title-slide slide level1 center" data-background-color="#cfb991">

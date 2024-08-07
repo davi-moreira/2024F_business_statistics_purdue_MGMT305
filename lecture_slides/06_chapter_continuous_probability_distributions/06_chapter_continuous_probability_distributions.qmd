@@ -1,7 +1,7 @@
 ---
 title: "<span style = 'font-size: 100%;'> MGMT 30500: Business Statistics </span>"
-subtitle: "<span style = 'font-size: 100%;'> Basic Stat. & Prob. Rvw. (cont.) </span>"
-author: "Professor: Davi Moreira"
+subtitle: "<span style = 'font-size: 150%;'> Basic Stat. & Prob. Rvw. (cont.) </span>"
+author: "Professor<br>Davi Moreira<br>"
 date: "2024-08-01"
 date-format: "MMMM DD, YYYY"
 format:
@@ -54,7 +54,7 @@ format:
 :::
 
 
-# Continuous Probability Distributions<br><br>Chapter #6 {background-color="#cfb991"}
+# Continuous Probability Distributions {background-color="#cfb991"}
 
 ## Continuous Probability Distributions
 

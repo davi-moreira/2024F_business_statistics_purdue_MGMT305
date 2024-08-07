@@ -330,7 +330,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></h1>
-  <p class="subtitle"><span style="font-size: 150%;"> Basic Stat. &amp; Prob. Rvw. (cont.) </span></p>
+  <p class="subtitle"><span style="font-size: 150%;"> Int. Est. Rvw. </span></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -347,466 +347,486 @@ Professor<br>Davi Moreira<br>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
-<li class="fragment"><p>Continuous Probability Distributions</p>
-<ul>
-<li class="fragment">Definition</li>
-<li class="fragment">Area as a Measure of Probability</li>
-</ul></li>
-<li class="fragment"><p>Normal Probability Distribution</p>
-<ul>
-<li class="fragment">Characteristics</li>
-<li class="fragment">Applications</li>
-</ul></li>
+<li class="fragment">Statistical Inference</li>
+<li class="fragment">Central Limit Theorem</li>
+<li class="fragment">Population Mean: <span class="math inline">\(\sigma\)</span> Known</li>
 </ul>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
-<li class="fragment"><p>Standard Normal Probability Distribution</p>
-<ul>
-<li class="fragment">Standardization</li>
-<li class="fragment">Excel Functions</li>
-</ul></li>
-<li class="fragment"><p><span class="math inline">\(t\)</span>-distribution</p>
-<ul>
-<li class="fragment">Use and comparison</li>
-<li class="fragment">Excel Functions</li>
-</ul></li>
+<li class="fragment">Population Mean: <span class="math inline">\(\sigma\)</span> Unknown</li>
+<li class="fragment">Population Proportion</li>
+<li class="fragment">Sample Size Determination</li>
 </ul>
 </div>
 </div>
 </section>
-<section>
-<section id="continuous-probability-distributions" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Continuous Probability Distributions</h1>
+<section id="interval-estimation" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Interval Estimation</h1>
 
 </section>
-<section id="continuous-probability-distributions-1" class="slide level2 center">
-<h2>Continuous Probability Distributions</h2>
-<p><br></p>
-<ul>
-<li class="fragment"><p>A continuous random variable can assume any value in an interval on the real line or in a collection of intervals.</p></li>
-<li class="fragment"><p>We don’t normally talk about the probability of a continuous random variable assuming a particular value, because it is always 0 <span class="math inline">\(P(X=x)=0\)</span>.</p></li>
-<li class="fragment"><p>Instead, we talk about the probability of the random variable assuming a value within a given interval <span class="math inline">\(P(X \in (a,b))\)</span>.</p></li>
-</ul>
+
+<section>
+<section id="statistical-inference" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Statistical Inference</h1>
+
 </section>
-<section id="continuous-probability-distributions-2" class="slide level2 center">
-<h2>Continuous Probability Distributions</h2>
+<section id="statistical-inference-1" class="slide level2 center">
+<h2>Statistical Inference</h2>
 <p><br></p>
 <div class="columns">
-<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="column" style="width:45%;">
+<div>
+<center>
+<strong>Interval Estimation</strong>
+</center>
+<ul>
+<li>Confidence level: 95% <span class="math inline">\((1-\alpha)\)</span> (Middle area; Confidence level)</li>
+<li>Confidence multipliers</li>
+<li>Upper/lower tail areas</li>
+<li>One- or 2-sided intervals</li>
+<li>Sampling errors and Margin of Error (MOE)</li>
+<li>Find range of all reasonable parameter values</li>
+</ul>
+</div>
+</div><div class="column" style="width:10%;">
+<p>&nbsp;</p>
+</div><div class="column" style="width:45%;">
+<div class="fragment">
+<div>
+<center>
+<strong>Hypothesis Testing</strong>
+</center>
+<ul>
+<li>Significance level: 5% <span class="math inline">\((\alpha)\)</span> (Tail area(s); Risk)</li>
+<li>Critical values</li>
+<li>p-values</li>
+<li>Which side <span class="math inline">\((H_a)\)</span> depends mostly on data</li>
+<li>Strength of sample evidence against the hypothesized value (via p-value)</li>
+<li>Test a specific hypothesized parameter value</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="interval-estimate-and-margin-of-error" class="slide level2 center">
+<h2>Interval Estimate and Margin of Error</h2>
+<p><br></p>
+<p><strong>Parameter Estimation</strong></p>
+<div>
+<ul>
+<li><p>We are often interested in <em>population parameters</em>.</p></li>
+<li><p>Since complete populations are difficult (or impossible) to collect data on, we use <em>sample statistics</em> as <em>point estimates</em> for the unknown population parameters of interest.</p></li>
+<li><p>Sample statistics vary from sample to sample.</p></li>
+<li><p>Quantifying how sample statistics vary provides a way to estimate the <em>margin of error</em> associated with our point estimate.</p></li>
+</ul>
+</div>
+<center>
+<p><em>Suppose we randomly sample 1,000 adults from each state in the US. Would you expect the sample means of their heights to be the same, somewhat different, or very different?</em></p>
+<div class="fragment">
+<p><strong>Not the same, but only somewhat different.</strong></p>
+</div>
+</center>
+</section>
+<section id="interval-estimate-and-margin-of-error-1" class="slide level2 center">
+<h2>Interval Estimate and Margin of Error</h2>
+<p><br></p>
+
+<img data-src="figs/point_interval_estimate.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div>
+<ul>
+<li><p>A plausible range of values for the population parameter is called a confidence interval.</p></li>
+<li><p>Using only a sample statistic to estimate a parameter is like fishing in a murky lake with a spear, and using a confidence interval is like fishing with a net.</p></li>
+</ul>
+</div>
+</section>
+<section id="central-limit-theorem" class="slide level2 center">
+<h2>Central Limit Theorem</h2>
+<p><br></p>
+<p><br></p>
+<center>
+<p><strong>Seeing Theory</strong></p>
+<p><a href="https://seeing-theory.brown.edu/" class="uri">https://seeing-theory.brown.edu/</a></p>
+<p><br></p>
+<p><br></p>
+<p><strong>Bunnies, Dragons and the ‘Normal’ World: Central Limit Theorem | The New York Times</strong></p>
+<p><a href="https://www.youtube.com/watch?v=jvoxEYmQHNM">(video)</a></p>
+</center>
+</section>
+<section id="interval-estimate-and-margin-of-error-2" class="slide level2 center">
+<h2>Interval Estimate and Margin of Error</h2>
+<ul>
+<li class="fragment"><p>A point estimator cannot be expected to provide the exact value of the population parameter with a given level of confidence; but it is a good starting point to construct an interval estimate.</p></li>
+<li class="fragment"><p>An interval estimate for mean can be computed by adding and subtracting a margin of error (MOE) to the point estimate.</p>
+<p><span class="math display">\[
+\text{Point Estimate} \pm \text{Margin of Error}
+\]</span></p></li>
+<li class="fragment"><p>The purpose of an interval estimate is to provide information about how close the point estimate is to the true value of the unknown population parameter with a certain level of confidence.</p></li>
+</ul>
+</section>
+<section id="interval-estimate-and-margin-of-error-3" class="slide level2 center">
+<h2>Interval Estimate and Margin of Error</h2>
+<p><br></p>
+<center>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figs/normal_interval.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+<p><img data-src="figs/garfield.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-<p><br></p>
-</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br> <br></p>
+<p><strong>Simulation</strong></p>
+<p><a href="https://rpsychologist.com/d3/ci/" class="uri">https://rpsychologist.com/d3/ci/</a></p>
+</center>
+</section>
+<section id="interval-estimate-of-a-population-mean" class="slide level2 center">
+<h2>Interval Estimate of a Population Mean</h2>
 <ul>
-<li class="fragment">The probability of the random variable assuming a value within some given interval from <span class="math inline">\(x_1\)</span> to <span class="math inline">\(x_2\)</span> is defined to be the area under the graph of the probability density function between <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>.</li>
+<li class="fragment"><p>In order to develop an interval estimate of a population mean, the margin of error (the maximum error due to sampling in order to control the confidence level) must be computed using either:</p>
+<ul>
+<li class="fragment">the population standard deviation <span class="math inline">\(\sigma\)</span> (if known), or</li>
+<li class="fragment">the sample standard deviation <span class="math inline">\(s\)</span></li>
+</ul></li>
+<li class="fragment"><p><span class="math inline">\(\sigma\)</span> is rarely known exactly, but often a good estimate can be obtained based on historical data or other information.</p></li>
+<li class="fragment"><p>We refer to such cases as the <span class="math inline">\(\sigma\)</span> known case.</p></li>
+</ul>
+</section>
+<section id="margin-of-error-and-the-interval-estimate" class="slide level2 center">
+<h2>Margin of Error and the Interval Estimate</h2>
+<ul>
+<li class="fragment"><p>The general form of an interval estimate of a population mean is</p>
+<p><span class="math display">\[
+\bar{X} \pm \text{Margin of Error}
+\]</span></p></li>
+<li class="fragment"><p>The Margin of Error (MOE) depends on the sampling distribution (sampling variation) of the point estimate <span class="math inline">\(\bar{X}\)</span>.</p></li>
+</ul>
+</section>
+<section id="sampling-distribution-of-barx" class="slide level2 center">
+<h2>Sampling Distribution of <span class="math inline">\(\bar{X}\)</span></h2>
+<p><br></p>
+
+<img data-src="figs/sampling_dist.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>It will be symmetric if:</p>
+<ol type="1">
+<li class="fragment"><span class="math inline">\(n\)</span> is large (Central Limit Teorem) or</li>
+<li class="fragment">Population of <span class="math inline">\(X\)</span> is normal</li>
+</ol>
+</section></section>
+<section>
+<section id="interval-estimate-of-a-population-mean-sigma-known" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Interval Estimate of a Population Mean: <span class="math inline">\(\sigma\)</span> Known</h1>
+
+</section>
+<section id="interval-estimate-of-a-population-mean-sigma-known-1" class="slide level2 center">
+<h2>Interval Estimate of a Population Mean: <span class="math inline">\(\sigma\)</span> Known</h2>
+<div>
+<ul>
+<li>When the population standard deviation (<span class="math inline">\(\sigma\)</span>) is known, we can compute a 95% confidence that the population parameter <span class="math inline">\((\mu)\)</span> will fall within <span class="math inline">\(1.96 \times \sigma_{\bar{X}}\)</span> from the <span class="math inline">\(\bar{X}\)</span>; i.e., <span class="math inline">\(\mu\)</span> is in the following interval</li>
+</ul>
+<p><span class="math display">\[
+\bar{X} \pm 1.96 \frac{\sigma}{\sqrt{n}}
+\]</span></p>
+<ul>
+<li><p>When the quantities are replaced by numbers, the interval is called a 95% confidence interval for <span class="math inline">\(\mu\)</span>.</p></li>
+<li><p>95% is called the confidence level (<span class="math inline">\(= 1- \alpha\)</span>). What means that <span class="math inline">\(\alpha = 0.05\)</span>.</p></li>
+<li><p>1.96 is referred to as the 95% z-confidence multiplier, denoted by <span class="math inline">\(z_{0.025}\)</span> (or <span class="math inline">\(z_{\alpha/2}\)</span>). This value represents the number of standard deviations one must move from the mean in both directions to capture the central 95% of the standard normal distribution, thereby defining the 95% confidence interval.</p></li>
+<li><p><span class="math inline">\(\frac{\sigma}{\sqrt{n}}\)</span> Standard Error of the Mean</p></li>
 </ul>
 </div>
-</div>
 </section>
-<section id="area-as-a-measure-of-probability" class="slide level2 center">
-<h2>Area as a Measure of Probability</h2>
+<section id="confidence-multipliers" class="slide level2 center">
+<h2>Confidence Multipliers</h2>
 <p><br></p>
+<center>
+<p><strong>Values of <span class="math inline">\(Z_{\alpha/2}\)</span> for the Most Commonly Used Confidence Levels</strong></p>
+<p><br></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Confidence level</th>
+<th style="text-align: center;"><span class="math inline">\(\alpha\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\alpha/2\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(Z_{\alpha/2}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">90%</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">1.645</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">95%</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">0.025</td>
+<td style="text-align: center;">1.960</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">99%</td>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;">0.005</td>
+<td style="text-align: center;">2.576</td>
+</tr>
+</tbody>
+</table>
+</center>
+<p><strong>Excel:</strong> <span class="math inline">\(= \text{norm.s.inv}(1 - \alpha/2)\)</span></p>
+</section></section>
+<section>
+<section id="interval-estimate-of-a-population-mean-sigma-unknown" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Interval Estimate of a Population Mean: <span class="math inline">\(\sigma\)</span> Unknown</h1>
+
+</section>
+<section id="interval-estimate-of-a-population-mean-sigma-unknown-1" class="slide level2 center">
+<h2>Interval Estimate of a Population Mean: <span class="math inline">\(\sigma\)</span> Unknown</h2>
 <ul>
-<li class="fragment">The area under the graph of <span class="math inline">\(f(x)\)</span> and probability are identical.</li>
-<li class="fragment">This is valid for all continuous random variables.</li>
-<li class="fragment">The probability that <span class="math inline">\(x\)</span> takes on a value between some lower value <span class="math inline">\(x_1\)</span> and some higher value <span class="math inline">\(x_2\)</span> can be found by computing the area under the graph of <span class="math inline">\(f(x)\)</span> over the interval from <span class="math inline">\(x_1\)</span> to <span class="math inline">\(x_2\)</span>.</li>
+<li class="fragment"><p>When <span class="math inline">\(\sigma\)</span> of a normal population is unknown, it is replaced by the sample standard deviation <span class="math inline">\(S\)</span> and the distribution involved will be a <span class="math inline">\(t\)</span>-distribution.</p></li>
+<li class="fragment"><p>The degrees of freedom of the <span class="math inline">\(t\)</span>-distribution is the sample size minus 1 (i.e., <span class="math inline">\(n-1\)</span>).</p></li>
+<li class="fragment"><p>The <span class="math inline">\(1 - \alpha\)</span> confidence multiplier is <span class="math inline">\(t_{\alpha/2, n-1}\)</span></p></li>
+<li class="fragment"><p>Excel: = T.INV(1-<span class="math inline">\(\alpha\)</span>/2, <span class="math inline">\(n-1\)</span>).</p></li>
+</ul>
+</section>
+<section id="interval-estimate-of-a-population-mean-sigma-unknown-2" class="slide level2 center">
+<h2>Interval Estimate of a Population Mean: <span class="math inline">\(\sigma\)</span> Unknown</h2>
+<p>This formula is used to construct a confidence interval for the population mean when the population standard deviation is unknown and the sample size is relatively small.</p>
+<p><span class="math display">\[
+\bar{X} \pm t_{\alpha/2, n-1} \times \frac{s}{\sqrt{n}}
+\]</span></p>
+<ul>
+<li class="fragment"><p><span class="math inline">\(\bar{X}\)</span>: The sample mean, which serves as the point estimate of the population mean.</p></li>
+<li class="fragment"><p><span class="math inline">\(t_{\alpha/2, n-1}\)</span>: The t-value for the chosen confidence level with <span class="math inline">\(n-1\)</span> degrees of freedom. It represents the number of standard deviations (from the t-distribution) needed to capture the central <span class="math inline">\((1-\alpha)\%\)</span> of the data.</p></li>
+<li class="fragment"><p><span class="math inline">\(s\)</span>: The sample standard deviation, which measures the amount of variation or dispersion in the sample.</p></li>
+<li class="fragment"><p><span class="math inline">\(n\)</span>: The sample size, representing the number of observations in the sample.</p></li>
+<li class="fragment"><p><span class="math inline">\(\frac{s}{\sqrt{n}}\)</span>: The standard error of the mean, which estimates the standard deviation of the sampling distribution of the sample mean.</p></li>
+</ul>
+</section>
+<section id="interval-estimate-of-a-population-mean-sigma-unknown---example" class="slide level2 center">
+<h2>Interval Estimate of a Population Mean: <span class="math inline">\(\sigma\)</span> Unknown - Example</h2>
+<p><br></p>
+<p><strong>Example:</strong> Credit card debt for the population of US households</p>
+<p><br></p>
+<p>The credit card balances of a sample of 70 households provided a mean credit card debt of $9,312 with a sample standard deviation of $4,007.</p>
+<p><br></p>
+<p>Let us provide a 95% confidence interval estimate of the mean credit card debt for the population of US households. We will assume this population to be normally distributed.</p>
+</section>
+<section id="interval-estimate-of-a-population-mean-sigma-unknown---example-1" class="slide level2 center">
+<h2>Interval Estimate of a Population Mean: <span class="math inline">\(\sigma\)</span> Unknown - Example</h2>
+<p><span class="math display">\[
+\bar{x} \pm t_{.025, 69} \times \frac{s}{\sqrt{n}}
+\]</span></p>
+<p><span class="math display">\[
+\bar{x} \pm =T.INV(1-0.025,69) \times \frac{s}{\sqrt{n}}
+\]</span></p>
+<p><span class="math display">\[
+9,312 \pm 1.995 \times \frac{4007}{\sqrt{70}} = 9,312 \pm 955 = (8,357,10,267)
+\]</span></p>
+<p>We are 95% confident that the mean credit card debt for the entire population of U.S. households is between $8,357 and $10,267. The margin of error (maximum error) of the sample mean (as an estimate of the unknown population mean) is $955.</p>
+</section>
+<section id="interval-estimate-of-a-population-mean-sigma-unknown---example-2" class="slide level2 center">
+<h2>Interval Estimate of a Population Mean: <span class="math inline">\(\sigma\)</span> Unknown - Example</h2>
+<p><strong>Adequate Sample Size</strong></p>
+<p>Usually, a sample size of <span class="math inline">\(n \geq 30\)</span> is adequate when using the expression</p>
+<p><span class="math display">\[
+\bar{x} \pm t_{\alpha/2} \frac{s}{\sqrt{n}}
+\]</span></p>
+<p>to develop an interval estimate of a population mean <span class="math inline">\(\mu\)</span>.</p>
+<ul>
+<li class="fragment">If the population distribution is highly skewed or contains outliers, a sample size of 50 or more is recommended.</li>
+<li class="fragment">If the population is not normally distributed but is roughly symmetric, a sample size as small as 15 will suffice.</li>
+<li class="fragment">If the population is believed to be at least approximately normal, a sample size of less than 15 can be used.</li>
 </ul>
 </section></section>
 <section>
-<section id="normal-probability-distribution" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Normal Probability Distribution</h1>
+<section id="interval-estimate-of-a-population-proportion" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Interval Estimate of a Population Proportion</h1>
 
 </section>
-<section id="normal-probability-distribution-1" class="slide level2 center">
-<h2>Normal Probability Distribution</h2>
+<section id="interval-estimate-of-a-population-proportion-1" class="slide level2 center">
+<h2>Interval Estimate of a Population Proportion</h2>
 <p><br></p>
-<ul>
-<li class="fragment"><p>The normal probability distribution is the most common distribution for describing a continuous random variable.</p></li>
-<li class="fragment"><p>It is widely used in statistical inference, especially because of the Central Limit Theorem (CLT).</p></li>
-<li class="fragment"><p>It has been used in a wide variety of applications including:</p>
-<ul>
-<li class="fragment">Heights of people</li>
-<li class="fragment">Test scores</li>
-<li class="fragment">Rainfall amounts</li>
-<li class="fragment">Scientific measurements</li>
-</ul></li>
-<li class="fragment"><p>Abraham de Moivre, a French mathematician, published <em>The Doctrine of Chances</em> in 1733. He derived the normal distribution.</p></li>
-</ul>
+<p>The general form of an interval estimate of a population proportion is:</p>
+<p><br></p>
+<p><span class="math display">\[
+\bar{p} \pm \text{Margin of Error}
+\]</span></p>
+<p><br></p>
+<p>where <span class="math inline">\(\bar{p}\)</span> is the sample proportion of the event of interest.</p>
 <p><br></p>
 </section>
-<section id="normal-probability-distribution-2" class="slide level2 center">
-<h2>Normal Probability Distribution</h2>
-<p><br></p>
+<section id="interval-estimate-of-a-population-proportion-2" class="slide level2 center">
+<h2>Interval Estimate of a Population Proportion</h2>
 <ul>
-<li class="fragment"><p><strong>Normal Probability Density Function</strong></p>
+<li class="fragment"><p>The sampling distribution of <span class="math inline">\(\bar{p}\)</span> plays a key role in computing the margin of error for this interval estimate.</p></li>
+<li class="fragment"><p>The sampling distribution of <span class="math inline">\(\bar{p}\)</span> can be approximated by a normal distribution whenever <span class="math inline">\(np \geq 5\)</span> and <span class="math inline">\(n(1-p) \geq 5\)</span>.This is known as success failure condition.</p></li>
+<li class="fragment"><p>Unlike the population mean, there is no <span class="math inline">\(t\)</span>-distribution in this case.</p></li>
+</ul>
+</section>
+<section id="interval-estimate-of-a-population-proportion-3" class="slide level2 center">
+<h2>Interval Estimate of a Population Proportion</h2>
+<p><br></p>
+
+<img data-src="figs/normal_sampling_dist_proportion.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="interval-estimate-of-a-population-proportion-4" class="slide level2 center">
+<h2>Interval Estimate of a Population Proportion</h2>
+<p>This formula is used to construct a confidence interval for the population proportion.</p>
 <p><span class="math display">\[
-f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}
+\bar{p} \pm z_{\alpha/2} \times \sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}
+\]</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(\bar{p}\)</span>: The sample proportion, which serves as the point estimate of the population proportion.</li>
+<li class="fragment"><span class="math inline">\(z_{\alpha/2}\)</span>: The z-value for the chosen confidence level. It represents the number of standard deviations (from the standard normal distribution) needed to capture the central <span class="math inline">\((1-\alpha)\%\)</span> of the data.</li>
+<li class="fragment"><span class="math inline">\(\sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}\)</span>: The standard error of the proportion, which estimates the standard deviation of the sampling distribution of the sample proportion.
+<ul>
+<li class="fragment"><span class="math inline">\(\bar{p}(1 - \bar{p})\)</span>: The variance of the sample proportion.</li>
+<li class="fragment"><span class="math inline">\(n\)</span>: The sample size, representing the number of observations in the sample.</li>
+</ul></li>
+</ul>
+</section>
+<section id="interval-estimate-of-a-population-proportion---example" class="slide level2 center">
+<h2>Interval Estimate of a Population Proportion - Example</h2>
+<p><strong>Example: Survey of women golfers</strong></p>
+<p><br></p>
+<p>A national survey of 900 women golfers was conducted to learn how women golfers view their treatment at golf courses in United States. The survey found that 396 of the women golfers were satisfied with the availability of tee times.</p>
+<p><br></p>
+<p>Suppose one wants to develop a 95% confidence interval estimate for the proportion of the population of women golfers satisfied with the availability of tee times.</p>
+</section>
+<section id="interval-estimate-of-a-population-proportion---example-1" class="slide level2 center">
+<h2>Interval Estimate of a Population Proportion - Example</h2>
+<div>
+<p><span class="math display">\[
+\bar{p} \pm z_{\alpha/2} \times \sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}
 \]</span></p>
 <p>where:</p>
 <ul>
-<li class="fragment"><span class="math inline">\(\mu\)</span>= population mean</li>
-<li class="fragment"><span class="math inline">\(\sigma\)</span>= population standard deviation</li>
-<li class="fragment"><span class="math inline">\(\pi = 3.14159\)</span></li>
-<li class="fragment"><span class="math inline">\(e = 2.71828\)</span></li>
-</ul></li>
-<li class="fragment"><p>The distribution is symmetric with respect to mean; its skewness measure is zero.</p></li>
-<li class="fragment"><p>The graph of the distribution is a bell-shaped curve.</p></li>
+<li><span class="math inline">\(n = 900\)</span>,</li>
+<li><span class="math inline">\(\bar{p} = \frac{396}{900} = 0.44\)</span>,</li>
+<li><span class="math inline">\(z_{\alpha/2} = 1.96\)</span></li>
 </ul>
-<p><br></p>
-</section>
-<section id="normal-probability-distribution-3" class="slide level2 center">
-<h2>Normal Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/normal_dist.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><strong>Characteristics</strong></p>
-<ul>
-<li class="fragment">The entire family of normal probability distributions is defined by its mean $$and its standard deviation <span class="math inline">\(\sigma\)</span>. Denoted by <span class="math inline">\(N(\mu, \sigma)\)</span>.</li>
-<li class="fragment">The highest point on the normal curve is at the mean, which is also the median and mode.</li>
-<li class="fragment">The mean can be any numerical value: negative, zero, or positive. The mean determines the location of the distribution.</li>
-</ul>
-<p><br></p>
-</section>
-<section id="normal-probability-distribution-4" class="slide level2 center">
-<h2>Normal Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/normal_sd.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><strong>Characteristics</strong></p>
-<ul>
-<li class="fragment">The standard deviation determines the width of the curve: larger values result in wider, flatter curves.</li>
-<li class="fragment">Probabilities for the normal random variable are given by areas under the curve. The total area under the curve is 1 (.5 to the left of the mean and .5 to the right).</li>
-</ul>
-<p><br></p>
-</section>
-<section id="normal-probability-distribution-5" class="slide level2 center">
-<h2>Normal Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/empirical_rule.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><p><strong>Characteristics</strong></p>
-<ul>
-<li class="fragment">Empirical Rule</li>
-</ul>
-<p><br></p>
-<p><br></p>
-</section></section>
-<section>
-<section id="standard-normal-probability-distribution" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Standard Normal Probability Distribution</h1>
-
-</section>
-<section id="standard-normal-probability-distribution-1" class="slide level2 center">
-<h2>Standard Normal Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/normal_standard.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><strong>Characteristics</strong></p>
-<ul>
-<li class="fragment"><p>A random variable having a normal distribution with a mean of 0 and a standard deviation of 1 is said to have a standard normal probability distribution.</p></li>
-<li class="fragment"><p>Also called a z-distribution; Denoted by <span class="math inline">\(Z\)</span> or <span class="math inline">\(N(0,1)\)</span>.</p></li>
-</ul>
-<p><br></p>
-<p><br></p>
-</section>
-<section id="standard-normal-probability-distribution-2" class="slide level2 center">
-<h2>Standard Normal Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/normal_standard_z.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="fragment">
-<div style="font-size: 90%;">
-<p><strong>Standardization: Standardize <span class="math inline">\(X \sim N(\mu, \sigma)\)</span> to standard Normal Distribution, <span class="math inline">\(Z\)</span></strong></p>
 <p><span class="math display">\[
-  Z = \frac{X - \mu}{\sigma}
+0.44 \pm 1.96 \times \sqrt{\frac{0.44(1 - 0.44)}{900}} = 0.44 \pm 0.0324
+\]</span></p>
+<p><strong>Survey results enable us to state with 95% confidence that between 40.76% and 47.24% of all women golfers are satisfied with the availability of tee times.</strong></p>
+</div>
+</section>
+<section id="interval-estimate-of-a-population-proportion---excel-example" class="slide level2 center">
+<h2>Interval Estimate of a Population Proportion - Excel Example</h2>
+<p><br></p>
+
+<img data-src="figs/confidence_interval_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section></section>
+<section>
+<section id="sample-size-for-an-interval-estimate-of-a-population-proportion" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Sample Size for an Interval Estimate of a Population Proportion</h1>
+
+</section>
+<section id="sample-size-for-an-interval-estimate-of-a-population-proportion-1" class="slide level2 center">
+<h2>Sample Size for an Interval Estimate of a Population Proportion</h2>
+<ul>
+<li class="fragment"><p><strong>Margin of Error</strong></p>
+<p><span class="math display">\[
+E = z_{\alpha/2} \times \sqrt{\frac{\bar{p}(1-\bar{p})}{n}}
+\]</span></p></li>
+<li class="fragment"><p><strong>Solving for the necessary sample size <span class="math inline">\(n\)</span>, we get:</strong></p>
+<p><span class="math display">\[
+n = \left( \frac{z_{\alpha/2}^2 \times \bar{p}(1-\bar{p})}{E^2} \right)
+\]</span></p></li>
+<li class="fragment"><p>However, <span class="math inline">\(\bar{p}\)</span> will not be known until after we have selected the sample. We can use the planning value <span class="math inline">\(p^*\)</span> for <span class="math inline">\(\bar{p}\)</span>.</p></li>
+</ul>
+</section>
+<section id="sample-size-for-an-interval-estimate-of-a-population-proportion-2" class="slide level2 center">
+<h2>Sample Size for an Interval Estimate of a Population Proportion</h2>
+<ul>
+<li class="fragment"><p><strong>Necessary Sample Size:</strong></p>
+<p><span class="math display">\[
+n = \left( \frac{z_{\alpha/2}^2 \times p^*(1-p^*)}{E^2} \right)
+\]</span></p></li>
+<li class="fragment"><p>The planning value <span class="math inline">\(p^*\)</span> can be chosen by one of the following procedures:</p></li>
+</ul>
+<ol type="1">
+<li class="fragment"><p><strong>Previous Studies</strong>: Use the sample proportion from a previous study or similar survey as <span class="math inline">\(p^*\)</span>.</p></li>
+<li class="fragment"><p><strong>Pilot Study</strong>: Conduct a preliminary survey and use the sample proportion from that study as <span class="math inline">\(p^*\)</span>.</p></li>
+<li class="fragment"><p><strong>Best Guess</strong>: Use a judgment or “best guess” based on available information or expert opinion.</p></li>
+<li class="fragment"><p><strong>Conservative Approach</strong>: If no prior information is available, use <span class="math inline">\(p^* = 0.5\)</span> as it maximizes the sample size and provides the most conservative estimate. This is because the product <span class="math inline">\(p^*(1 - p^*)\)</span> is maximized when <span class="math inline">\(p^* = 0.5\)</span>.</p></li>
+</ol>
+</section>
+<section id="sample-size-for-an-interval-estimate-of-a-population-proportion---example" class="slide level2 center">
+<h2>Sample Size for an Interval Estimate of a Population Proportion - Example</h2>
+<p><strong>Example: Survey of women golfers</strong></p>
+<p><br></p>
+<p>A national survey of 900 women golfers was conducted to learn how women golfers view their treatment at golf courses in United States. The survey found that 396 of the women golfers were satisfied with the availability of tee times.</p>
+<p><br></p>
+<p>Let us provide a 95% confidence interval estimate of the mean credit card debt for the population of US households. We will assume this population to be normally distributed.</p>
+</section>
+<section id="sample-size-for-an-interval-estimate-of-a-population-proportion---example-1" class="slide level2 center">
+<h2>Sample Size for an Interval Estimate of a Population Proportion - Example</h2>
+<p><strong>Calculations:</strong></p>
+<p><span class="math display">\[
+  E = z_{\alpha/2} \times \sqrt{\frac{p^*(1-p^*)}{n}} = .025
   \]</span></p>
+<p>At 95% confidence <span class="math inline">\(z_{0.0125} = 1.96\)</span>. Assume <span class="math inline">\(p^* = 0.44\)</span>.</p>
+<p><span class="math display">\[
+  n = \left( \frac{z_{\alpha/2}^2 \times p^*(1-p^*)}{E^2} \right) = \left( \frac{(1.96)^2 (0.44)(0.56)}{(0.025)^2} \right) = 1,514.5
+  \]</span></p>
+<p><strong>Conclusion:</strong> A sample of size 1,515 is needed to reach a desired precision of <span class="math inline">\(\pm\)</span> 0.025 at 95% confidence.</p>
+</section>
+<section id="sample-size-for-an-interval-estimate-of-a-population-proportion---example-2" class="slide level2 center">
+<h2>Sample Size for an Interval Estimate of a Population Proportion - Example</h2>
 <ul>
-<li class="fragment"><p>We can think of <span class="math inline">\(Z\)</span> as a measure of the number of standard deviations <span class="math inline">\(X\)</span> is from <span class="math inline">\(\mu\)</span>. (Cf. Standardization in Chapter 1.)</p>
-<ul>
-<li class="fragment">Conversely, <span class="math inline">\(X = \mu + z \cdot \sigma\)</span>. If <span class="math inline">\(X\)</span> can be written as <span class="math inline">\(X = \mu + z \cdot \sigma\)</span> where <span class="math inline">\(Z\)</span> is standard normal, then <span class="math inline">\(X \sim N(\mu, \sigma^2)\)</span></li>
-</ul></li>
-<li class="fragment"><p>The letter z is used to designate the standard normal random variable.</p></li>
+<li class="fragment"><p>We used 0.44 as the best estimate of <span class="math inline">\(p\)</span> in the preceding expression.</p></li>
+<li class="fragment"><p>If no information is available about <span class="math inline">\(p\)</span>, then 0.5 is often assumed because it provides the highest possible (conservative) sample size.</p></li>
+<li class="fragment"><p>If we had used <span class="math inline">\(p = 0.5\)</span>, the recommended <span class="math inline">\(n\)</span> would have been 1537.</p></li>
 </ul>
-</div>
-</div>
 </section></section>
 <section>
-<section id="excel-to-compute-standard-normal-probabilities" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Excel to Compute Standard Normal Probabilities</h1>
+<section id="concepts" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Concepts</h1>
 
 </section>
-<section id="excel-to-compute-standard-normal-probabilities-1" class="slide level2 center">
-<h2>Excel to Compute Standard Normal Probabilities</h2>
-<p><br></p>
-<ul>
-<li class="fragment"><p>Excel functions for standard normal probability distributions.</p>
-<ul>
-<li class="fragment"><p><code>=NORM.S.DIST(z, TRUE)</code> function computes the cumulative probability for a given <span class="math inline">\(z\)</span> value of the standard normal distribution.</p></li>
-<li class="fragment"><p><code>=NORM.S.INV(cumulative probability)</code> function computes the <span class="math inline">\(z\)</span> value for a given cumulative probability of the standard normal distribution.</p></li>
-<li class="fragment"><p>“S” in the function names reminds us that these functions relate to the standard normal probability distribution.</p></li>
-<li class="fragment"><p>“TRUE” or “1” indicates a cumulative probability is requested.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="excel-to-compute-standard-normal-probabilities-2" class="slide level2 center">
-<h2>Excel to Compute Standard Normal Probabilities</h2>
-<p><br></p>
-
-<img data-src="figs/z_plot_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>The standard normal distribution and the cumulative area up to a given <span class="math inline">\(z\)</span> value using the <code>NORM.S.DIST(z, TRUE)</code> function in Excel. The shaded area represents the cumulative probability up to the specified <span class="math inline">\(z\)</span> value.</p>
-<p><br></p>
-<p><br></p>
-</section>
-<section id="excel-to-compute-standard-normal-probabilities-3" class="slide level2 center">
-<h2>Excel to Compute Standard Normal Probabilities</h2>
-<p><br></p>
-<div class="columns">
-<div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br> <br></p>
-<p><strong>Formula</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/normal_excel_01.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br> <br> <strong>Results</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/normal_excel_02.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="excel-to-compute-standard-normal-probabilities-4" class="slide level2 center">
-<h2>Excel to Compute Standard Normal Probabilities</h2>
-<div class="columns">
-<div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br> <br></p>
-<p><strong>Formula</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/normal_excel_03.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br> <br> <strong>Results</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/normal_excel_04.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<p>Grear Tire company has developed a new steel-belted radial tire to be sold through a chain of discount stores. But before finalizing the tire mileage guarantee policy, Grear’s managers want probability information about the number of miles of tires will last.</p>
-<p>It was estimated from the historical data that the (population) mean tire mileage is 36,500 miles with a (population) standard deviation of 5000.</p>
-<p><strong>Question 1:</strong> The manager now wants to know the probability that the tire mileage <span class="math inline">\(x\)</span> will exceed 40,000.</p>
-</section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem-1" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<ul>
-<li class="fragment">P(x &gt; 40,000) = ?</li>
-</ul>
-<div class="fragment">
-<p><strong>Step 1</strong>: Convert x to standard normal distribution.</p>
-<p><span class="math display">\[
-z = \frac{(x - \mu)}{\sigma} \\
-z = \frac{(40,000 - 36,500)}{5,000} \\
-z = 0.7
-\]</span></p>
-</div>
-</section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem-2" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<p><br></p>
-<p><strong>Step 2</strong>: Compute the area under the standard normal curve to the right of <span class="math inline">\(z = 0.7\)</span></p>
-<p><br></p>
-
-<img data-src="figs/z-score_example_q1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="fragment">
-<p><span class="math display">\[
-P(z &gt; 0.7) = 1 - P(z \leq 0.7) \\
-= 1 - \text{=NORM.S.DIST}(0.7, \text{TRUE}) \\
-= 1 - 0.7580 \\
-= 0.2420
-\]</span></p>
-</div>
-</section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem-3" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<p><br></p>
-<p><strong>Question 2:</strong> What should be the guaranteed mileage if Grear wants no more than 10% of tires to be eligible for the discount guarantee?</p>
-<p><br></p>
-<blockquote>
-<p>(Hint: Given a probability, we can use the standard normal table in an inverse fashion to find the corresponding z-value.)</p>
-</blockquote>
-</section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem-4" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<p><br></p>
-<p><strong>Step 2:</strong> Convert <span class="math inline">\(z_{0.1}\)</span> to the corresponding value of <span class="math inline">\(x\)</span>.</p>
-<p><br></p>
-
-<img data-src="figs/z-score_example_q2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
-<section id="standard-normal-probabilities---example-grear-tire-company-problem-5" class="slide level2 center">
-<h2>Standard Normal Probabilities - Example: Grear Tire Company Problem</h2>
-<p><br></p>
-<p><strong>Step 2:</strong> Convert <span class="math inline">\(z_{0.1}\)</span> to the corresponding value of <span class="math inline">\(x\)</span>.</p>
-<p><br></p>
-
-<img data-src="figs/z-score_example_q2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="fragment">
-<p><span class="math display">\[
-x = \mu + z_{0.1} \cdot \sigma \\
-= 36,500 + \text{=NORM.S.INV}(0.1) \cdot (5000) \\
-= 36,500 + (-1.28155) \cdot (5000) \\
-= 30,092.24
-\]</span></p>
-<p>Thus, a guarantee of 30,100 miles will meet the requirement that approximately 10% of the tires will be eligible for the guarantee.</p>
-</div>
-</section></section>
-<section>
-<section id="t-probability-distribution" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1><span class="math inline">\(t\)</span> Probability Distribution</h1>
-
-</section>
-<section id="why-use-the-t-distribution" class="slide level2 center">
-<h2>Why use the <span class="math inline">\(t\)</span>-distribution?</h2>
-<ul>
-<li class="fragment"><p>What can we do when dealing with small sample sizes (<span class="math inline">\(n &lt; 30\)</span>)?</p></li>
-<li class="fragment"><p>What can we do when the population standard deviation (<span class="math inline">\(\sigma\)</span>) is unknown and must be estimated from the sample?</p></li>
-<li class="fragment"><p>How to obtain more accurate confidence intervals for the mean when dealing with small samples?</p></li>
-</ul>
-<p><br></p>
-<div class="fragment">
-<center>
-<strong><span class="math inline">\(t\)</span>-distribution</strong>
-</center>
-</div>
-</section>
-<section id="why-use-the-t-distribution-1" class="slide level2 center">
-<h2>Why use the <span class="math inline">\(t\)</span>-distribution?</h2>
+<section id="concepts-1" class="slide level2 center">
+<h2>Concepts</h2>
 <div class="r-fit-text">
-<ul>
-<li class="fragment"><strong>Sample Size Considerations</strong>
-<ul>
-<li class="fragment">When the sample size is small <span class="math inline">\((n &lt; 30)\)</span>, the <span class="math inline">\(t\)</span>-distribution provides a better estimate than the normal distribution.</li>
-<li class="fragment">With small samples, the sample standard deviation (<span class="math inline">\(S\)</span>) may not be a reliable estimate of the population standard deviation (<span class="math inline">\(\sigma\)</span>).</li>
-</ul></li>
-<li class="fragment"><strong>Unknown Population Standard Deviation</strong>
-<ul>
-<li class="fragment">When the population standard deviation (<span class="math inline">\(\sigma\)</span>) is unknown and must be estimated from the sample, the <span class="math inline">\(t\)</span>-distribution is appropriate.</li>
-<li class="fragment">The <span class="math inline">\(t\)</span>-distribution adjusts for the additional variability introduced by using <span class="math inline">\(S\)</span> instead of <span class="math inline">\(\sigma\)</span>.</li>
-</ul></li>
-<li class="fragment"><strong>More Accurate Confidence Intervals</strong>
-<ul>
-<li class="fragment">Provides more accurate confidence intervals for the mean when dealing with small samples.</li>
-<li class="fragment">Reflects the increased uncertainty in estimates due to small sample sizes and unknown <span class="math inline">\(\sigma\)</span>.</li>
-</ul></li>
-</ul>
+<table class="caption-top">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 44%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Concept</strong></th>
+<th><strong>Definition</strong></th>
+<th><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Standard Deviation</strong></td>
+<td>A measure of the amount of variation or dispersion in a set of values.</td>
+<td>To quantify the dispersion of data points around the mean.</td>
+</tr>
+<tr class="even">
+<td><strong>Standard Error</strong></td>
+<td>The standard deviation of the sample distribution of a statistic (e.g.&nbsp;the sample mean).</td>
+<td>To estimate how much sample statistics will vary from the true population parameter.</td>
+</tr>
+<tr class="odd">
+<td><strong>Margin of Error</strong></td>
+<td>A measure of the range within which the true population parameter is expected to lie, with a given level of confidence.</td>
+<td>To quantify the uncertainty in estimates of population parameters.</td>
+</tr>
+<tr class="even">
+<td><strong>Confidence Level</strong></td>
+<td>The probability that if a random sample were taken and a confidence interval calculated, that interval would contain the true population parameter.</td>
+<td>To indicate the degree of confidence that the interval contains the true parameter.</td>
+</tr>
+<tr class="odd">
+<td><strong>Confidence Interval</strong></td>
+<td>An interval estimate of a population parameter that provides an estimated range of values which is likely to include an unknown population parameter.</td>
+<td>To provide a range in which we are <em>fairly confident</em> the true population parameter lies.</td>
+</tr>
+</tbody>
+</table>
 </div>
-</section>
-<section id="t-probability-distribution-1" class="slide level2 center">
-<h2><span class="math inline">\(t\)</span> Probability Distribution</h2>
-<div>
-<ul>
-<li>Standardize <span class="math inline">\(N(\mu, \sigma)\)</span> using sample mean and sample standard deviation:</li>
-</ul>
-<p><span class="math display">\[
-t = \frac{X - \bar{X}}{S}
-\]</span></p>
-<ul>
-<li><p>This t-statistic has a <span class="math inline">\(t\)</span>-distribution with <strong>degrees of freedom (df)</strong> = <span class="math inline">\(n-1\)</span>, which is the degrees of freedom of the sample standard deviation <span class="math inline">\(S\)</span>.</p></li>
-<li><p>When using sample mean and sample standard deviation to standardize a normal distribution, we will always have a <span class="math inline">\(t\)</span>-distribution, <strong>approximately</strong>.</p></li>
-</ul>
-</div>
-</section>
-<section id="t-probability-distribution-2" class="slide level2 center">
-<h2><span class="math inline">\(t\)</span> Probability Distribution</h2>
-<ul>
-<li class="fragment"><p><strong>Similar to</strong> the standard normal.</p></li>
-<li class="fragment"><p>Symmetric with mean 0 and a shape parameter (the degrees of freedom, df).</p></li>
-<li class="fragment"><p>The standard deviation is <span class="math inline">\(\sqrt{\frac{df}{(df - 2)}}\)</span> and is always larger than 1 (Recall: 1 is the standard deviation of Z-distribution):</p>
-<ul>
-<li class="fragment"><p><span class="math inline">\(t(df)\)</span> has more variability than Z.</p></li>
-<li class="fragment"><p><span class="math inline">\(t(df)\)</span> has heavier tails than Z: More probability (area) in the tails than Z. (Heavier tails.)</p></li>
-<li class="fragment"><p><span class="math inline">\(t(df)\)</span> approaches Z if <span class="math inline">\(df\)</span> increases. Empirical rules can be used when <span class="math inline">\(df \geq 5\)</span>.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="t-probability-distribution-3" class="slide level2 center">
-<h2><span class="math inline">\(t\)</span> Probability Distribution</h2>
-<p><br></p>
-
-<img data-src="figs/z_t_dist_comparison.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>The standard normal distribution and two <span class="math inline">\(t\)</span> distributions with different degrees of freedom.</p>
-<p><br></p>
-<p><br></p>
-</section>
-<section id="comparing-normal-and-t-distributions" class="slide level2 center">
-<h2>Comparing Normal and <span class="math inline">\(t\)</span>-Distributions</h2>
-<ul>
-<li class="fragment"><strong>Shape and Symmetry</strong>
-<ul>
-<li class="fragment">Both distributions are symmetric and bell-shaped.</li>
-<li class="fragment">The <span class="math inline">\(t\)</span>-distribution has heavier tails compared to the normal distribution, reflecting more variability.</li>
-</ul></li>
-<li class="fragment"><strong>Dependence on Sample Size</strong>
-<ul>
-<li class="fragment">The normal distribution does not depend on sample size.</li>
-<li class="fragment">The <span class="math inline">\(t\)</span>-distribution varies with degrees of freedom (<span class="math inline">\(df = n - 1\)</span>).</li>
-<li class="fragment">As the degrees of freedom increase, the <span class="math inline">\(t\)</span>-distribution approaches the normal distribution.</li>
-</ul></li>
-</ul>
-</section>
-<section id="t-probability-distribution---example-grear-tire-company-problem" class="slide level2 center">
-<h2><span class="math inline">\(t\)</span> Probability Distribution - Example: Grear Tire Company Problem</h2>
-<p>Grear Tire company has developed a new steel-belted radial tire to be sold through a chain of discount stores. But before finalizing the tire mileage guarantee policy, Grear’s managers want probability information about the number of miles tires will last.</p>
-<p>It was estimated from a sample of size 28 that the sample mean tire mileage is 36,500 miles with a sample standard deviation of 5000.</p>
-<p>The manager now wants to know:</p>
-<ul>
-<li class="fragment"><strong>Question 1:</strong> What is the probability that the tire mileage <span class="math inline">\(X\)</span> will exceed 40,000 miles?</li>
-<li class="fragment"><strong>Question 2:</strong> What is the 10th percentile tire mileage for the new tires?</li>
-</ul>
-</section>
-<section id="t-probability-distribution---example-grear-tire-company-problem-1" class="slide level2 center">
-<h2><span class="math inline">\(t\)</span> Probability Distribution - Example: Grear Tire Company Problem</h2>
-<p><strong>Solution</strong></p>
-<ul>
-<li class="fragment"><p><strong>Question 1:</strong> What is the probability that the tire mileage <span class="math inline">\(X\)</span> will exceed 40,000 miles?</p>
-<p><span class="math inline">\(P(X &gt; 40,000) = P(t_{27} &gt; 0.7) = 1 - P(t_{27} \leq 0.7)\)</span></p>
-<p><span class="math display">\[
-= 1 - \text{T.DIST}(0.7, 27, \text{TRUE}) \\
-= 1 - 0.7550 \\
-= 0.250
-\]</span></p></li>
-<li class="fragment"><p><strong>Question 2:</strong> What is the 10th percentile tire mileage for the new tires?</p>
-<p><span class="math display">\[
-x_{0.1} = \bar{X} + t_{0.1,27} \cdot s \\
-= 36,500 + \text{T.INV}(0.1, 27) \cdot (5000) \\
-= 36,500 + (-1.314) \cdot (5000) \\
-= 29,903 \text{ miles}
-\]</span></p></li>
-</ul>
 </section></section>
 <section>
 <section id="summary" class="title-slide slide level1 center" data-background-color="#cfb991">
@@ -815,46 +835,67 @@ x_{0.1} = \bar{X} + t_{0.1,27} \cdot s \\
 </section>
 <section id="summary-1" class="slide level2 center">
 <h2>Summary</h2>
+<div>
+<div class="r-fit-text">
 <div class="columns">
-<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="column" style="width:50%;">
+<center>
+<strong>CI for <span class="math inline">\(\bar{p}\)</span></strong>
+</center>
+<ol type="1">
+<li><p>Check assumptions.</p>
+<ol type="a">
+<li>Randomization</li>
+<li>Independence</li>
+<li>The sampling distribution of <span class="math inline">\(\bar{p}\)</span> is approximately normal. (Check <span class="math inline">\(n\bar{p} \geq 5\)</span> and <span class="math inline">\(n(1 - \bar{p}) \geq 5\)</span>.)</li>
+</ol></li>
+<li><p>Calculate the standard error of <span class="math inline">\(\bar{p}\)</span>: <span class="math display">\[
+se = \sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}
+\]</span></p></li>
+<li><p>Identify <span class="math inline">\(z\)</span> for your specified level of confidence.</p></li>
+<li><p>Calculate the interval: <span class="math display">\[
+\bar{p} \pm z \times se
+\]</span></p></li>
+</ol>
+</div><div class="column" style="width:50%;">
+<center>
+<strong>CI for <span class="math inline">\(\mu\)</span></strong>
+</center>
+<ol type="1">
+<li><p>Check assumptions.</p>
+<ol type="a">
+<li>Randomization</li>
+<li>Independence</li>
+<li>The sampling distribution of <span class="math inline">\(\bar{x}\)</span> is approximately normal. (Check <span class="math inline">\(n \geq 30\)</span> or underlying population distribution normal.)</li>
+</ol></li>
+<li><p>Calculate the standard error of <span class="math inline">\(\bar{x}\)</span>: <span class="math display">\[
+se = \frac{s}{\sqrt{n}}
+\]</span></p></li>
+<li><p>Identify <span class="math inline">\(t\)</span> for your specified level of confidence <span class="math display">\[
+(df = n - 1)
+\]</span></p></li>
+<li><p>Calculate the interval: <span class="math display">\[
+\bar{x} \pm t \times se
+\]</span></p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="summary-2" class="slide level2 center">
+<h2>Summary</h2>
+<div class="r-fit-text">
 <p>Some key takeaways from this session:</p>
 <ul>
-<li class="fragment"><strong>Continuous Probability Distributions</strong>:
-<ul>
-<li class="fragment">Continuous random variables can assume any value in an interval.</li>
-<li class="fragment">Probability is defined as the area under the probability density function.</li>
-</ul></li>
-<li class="fragment"><strong>Normal Probability Distribution</strong>:
-<ul>
-<li class="fragment">Most common distribution for describing a continuous random variable.</li>
-<li class="fragment">Defined by its mean and standard deviation.</li>
-<li class="fragment">Widely used due to the Central Limit Theorem.</li>
-</ul></li>
+<li class="fragment"><p><strong>Statistical Inference</strong>: Involves using sample data to make generalizations about a population. It includes methods like interval estimation and hypothesis testing to draw conclusions with a certain level of confidence.</p></li>
+<li class="fragment"><p><strong>Central Limit Theorem</strong>: States that the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the population’s distribution. This theorem underpins many inferential statistics techniques.</p></li>
+<li class="fragment"><p><strong>Interval Estimation</strong>: Provides a range of values (confidence interval) for an unknown population parameter, giving an estimate along with an associated margin of error to quantify the uncertainty.</p></li>
+<li class="fragment"><p><strong>Population Mean (σ Known)</strong>: When the population standard deviation is known, a z-distribution is used to construct confidence intervals for the population mean.</p></li>
+<li class="fragment"><p><strong>Population Mean (σ Unknown)</strong>: When the population standard deviation is unknown, a t-distribution is used. This is common in practical applications where the sample standard deviation serves as an estimate for the population standard deviation.</p></li>
+<li class="fragment"><p><strong>Population Proportion</strong>: Involves estimating the proportion of a population that possesses a certain characteristic. Confidence intervals for population proportions can be calculated using the sample proportion and its standard error.</p></li>
+<li class="fragment"><p><strong>Sample Size Determination</strong>: Important for ensuring that estimates are accurate and reliable. The required sample size can be calculated based on desired margin of error, confidence level, and variability in the population.</p></li>
 </ul>
-</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<div class="r-fit-text">
-<ul>
-<li class="fragment"><strong>Standard Normal Probability Distribution</strong>:
-<ul>
-<li class="fragment">A normal distribution with a mean of 0 and a standard deviation of 1.</li>
-<li class="fragment">Standardization helps in comparing different normal distributions.</li>
-</ul></li>
-<li class="fragment"><strong><span class="math inline">\(t\)</span>-distribution</strong>
-<ul>
-<li class="fragment">Use when the sample size is small <span class="math inline">\((n &lt; 30)\)</span></li>
-<li class="fragment">Use when the population standard deviation is unknown</li>
-</ul></li>
-<li class="fragment"><strong>Excel Functions</strong>:
-<ul>
-<li class="fragment"><code>=NORM.S.DIST(z, TRUE)</code> computes the cumulative probability for a given z-value.</li>
-<li class="fragment"><code>=NORM.S.INV(cumulative probability)</code> computes the z-value for a given cumulative probability.</li>
-<li class="fragment"><code>=T.DIST(X, DF, TRUE)</code> computes the cumulative probability for a given t-value.<br>
-</li>
-<li class="fragment"><code>=T.INV(cumulative probability)</code> computes the t-value for a given cumulative probability.</li>
-</ul></li>
-</ul>
-</div>
-</div>
 </div>
 </section></section>
 <section id="thank-you" class="title-slide slide level1 center" data-background-color="#cfb991">
