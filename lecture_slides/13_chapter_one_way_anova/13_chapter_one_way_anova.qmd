@@ -1,0 +1,64 @@
+---
+title: "<span style = 'font-size: 100%;'> MGMT 30500: Business Statistics </span>"
+subtitle: "<span style = 'font-size: 150%;'> Analysis of Variance </span>"
+author: "Professor<br>Davi Moreira<br>"
+date: "2024-08-01"
+date-format: "MMMM DD, YYYY"
+format:
+  revealjs: 
+    transition: slide
+    background-transition: fade
+    width: 1600
+    height: 900
+    center: true
+    slide-number: true
+    incremental: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    #logo: images/quarto.png
+    footer: "Business Statistics"
+    theme: [simple,custom.scss]
+---
+
+## Overview
+
+::: columns
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+-   XXX
+-   XXX
+-   XXX
+:::
+
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+-   XXX
+-   XXX
+-   XXX
+:::
+:::
+
+# Statistical Inference {background-color="#cfb991"}
+
+## Statistical Inference
+
+
+# Summary
+
+## Summary
+
+::: r-fit-text
+Some key takeaways from this session:
+
+-   XXX
+
+    -   XXX
+    -   XXX
+
+-   XXX
+
+    -   XXX
+    -   XXX
+
+:::
+
+# Thank you! {background-color="#cfb991"}

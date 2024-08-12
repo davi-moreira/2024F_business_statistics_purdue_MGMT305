@@ -15,7 +15,7 @@ _syllabus_docx/
 _adm_stuff/
 _test_ignore/
 _00_py4ps_install_guide/
-figs/
+# figs/
 images/
 _homework/
 _lecture_notes/
