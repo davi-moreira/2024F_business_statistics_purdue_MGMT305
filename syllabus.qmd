@@ -42,8 +42,8 @@ This course is designed to introduce students to basic data analysis techniques.
 ### Instructor: [Professor Davi Moreira](https://davi-moreira.github.io)
 
 -   Email: [dmoreira\@purdue.edu](mailto:dmoreira@purdue.edu)
+
 -   Virtual Office hours - _Zoom link in your Course Brightspace Page_: 
-    -   Section 13:  M/W from 10:45 am to 11:45 am), and by appointment.
 
 ## Learning Outcomes
 
@@ -66,6 +66,7 @@ Modern data analysis is done using computers and various types of sophisticated 
 The following are learning materials:
 
 1. Text book:  Anderson, Sweeney, Williams, Camn, Cochran, Fry, and Ohlmann: Modern Business Statistics with Microsoft Excel, 7th edition, 2018, Cengage Learning, Inc. (Required)  This text is also used in STAT 30301.
+
 2. Handouts:  Lecture Slides and Supplementary Materials. (Posted in this page and on Brightspace: Brightspace -> Content -> Table of Contents -> ….)
 
 ### Course Infra-structure
@@ -103,14 +104,15 @@ Following a university-wide initiative, the School has adopted an Official Gradi
 
 There are eight Homework Assignments – check the due dates in the schedule. Each Homework Assignment contains 
 
--  exercise problems from the text, and
--  supplementary problems.
+- Part A: Exercise problems from the text;
+
+- Part B: Supplementary problems.
       
       _Please note:  Homework is accepted only by being properly and timely uploaded to Brightspace.  Homework is not accepted late or in any other way, including by email, for any reason. Also, all students must be assessed on the same work so ad-hoc extra-credit or makeup assignments will not be given._ 
       
-Homework assignments must be submitted online through Brightspace.  Brightspace will be set to allow you 2 chances to submit the assignment.  If you submit twice, only your second submission will be graded. The first will not be looked at.
+Brightspace will be set to allow you 2 chances to submit the assignment.  If you submit twice, only your second submission will be graded.  The first will not be looked at. 
 
-**Make sure to upload only one file (pdf) for each homework assignment**. No supplements, attachments, or appendices can be used. Do not upload Word or page documents. 
+**Make sure to upload only one file (pdf) for each homework assignment**. No supplements, attachments, or appendices can be used.  
 
 **Important**: You must include all relevant software output that addresses the homework questions and reference it clearly where appropriate. Copy and paste all software output that addresses the homework questions into your homework papers, and reference it clearly where appropriate, but do not copy and paste any datasets into your homework papers.
 
@@ -130,15 +132,16 @@ To encourage students to work steadily through the materials, three quizzes are 
 
 ### Exams
 
-Exams will test both technical ability to carry out standard calculations and your understanding of important concepts. Exams are closely based on homework exercises but do not expect the exams to be identical to homework assignments. Exams and homework are designed to assess different types and levels of understanding. There will be two Midterms and a Final, all given in-person. The second Midterm is not cumulative. The Final is cumulative.  You will need a calculator for taking exams. Calculators that have USB ports or can access the internet are not permitted nor are you allowed to use a smart phone or watch as a calculator.  You are required to take all exams.  (None are dropped.)  Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. “Exceptional circumstances” means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies.  Except for emergencies, requests for a makeup must be made by email with supporting documentation no later than 7 days before the scheduled exam.
+Exams will test both technical abilities to carry out standard calculations and your understanding of important concepts. Exams are closely based on homework exercises and sample exams. Exams and homework are designed to assess different types and levels of understanding. There will be two Midterms (each is worth 7.5% of the total grade) and a Final (23% of the total grade), all given in-person. The second Midterm is not cumulative. The Final is cumulative.  You will need a calculator for taking exams. Calculators that have USB ports or can access the internet are not permitted nor are you allowed to use a smart phone or watch as a calculator.  You are required to take all exams.  (None are dropped.)  Only under exceptional circumstances, when legitimate and verifiable reasons are provided, will make-ups be given. “Exceptional circumstances” means a death in the family, a serious personal medical emergency, participation in a conflicting NCAA athletic event, or as otherwise required by University policies.  Except for emergencies, requests for a makeup must be made by email with supporting documentation no later than 7 days before the scheduled exam.
 
 Attendance and Participation: Attend your classes, pay attention and participate.  If you do not attend class, you will likely not succeed. According to the University regulations (<https://catalog.purdue.edu/content.php?catoid=15&navoid=18634#classes>), “Scheduled courses allow students to avoid conflicts and reflect the University’s expectation that students should be present for every meeting of a class/laboratory for which they are registered.” The instructor will take random attendance and keep the attendance record. Your attendance/participation grade will be based on this record.
 
 ### Grade Challenges  
 
-When grades are posted in the Brightspace Grade Center, an announcement will be posted on Brightspace. Any challenge to any grade must be made within 7 calendar days of the posting of the announcement. There is one exception: to facilitate the computation of final course grades, the last homework assignment must be challenged within three days of the posting of grades.  Grade challenges must be based on good faith disputes about mathematical or statistical principles.  They cannot be based on post-hoc legalistic arguments. 
+When grades are posted in the Brightspace Grade Center, an announcement will be posted on Brightspace. Any challenge to any grade must be made within 7 calendar days of the posting of the announcement. There is one exception: to facilitate the computation of final course grades, the last homework assignment must be challenged within three days of the posting of grades.  Grade challenges must be based on good faith disputes about mathematical or statistical principles.  They cannot be based on post-hoc legalistic arguments.
 
-To challenge a homework score, quiz score or exam score, you must send the instructor an email describing your challenge.  Include your name, ID, and Assignment Number. Please note: General grade reviews for homework are not done. For homework, the challenge must cite the instructor to a specific deduction and provide a reason it is believed to be incorrect. Please check the Homework Solutions before submitting a homework grade challenge. Most often, the Homework Solutions will provide the basis for the deduction(s). Grades will not be discussed in the classroom during, between, or after classes.   
+To challenge a homework score, quiz score or exam score, you must send the instructor an email describing your challenge.  Include your name, ID, and Assignment Number. Please note: General grade reviews for homework are not done. For homework, the challenge must cite the instructor to a specific deduction and provide a reason it is believed to be incorrect. Please check the Homework Solutions on Brightspace before submitting a homework grade challenge. Most often, the Homework Solutions will provide the basis for the deduction(s). Grades will not be discussed in the classroom during, between, or after classes.   
+
 **After the 7 day challenge period, all grades are final for purposes of calculating the final course grade.**   
 
 ## KEYS TO SUCCESS 
@@ -180,13 +183,15 @@ I encourage you to use AI tools you believe will enhance your individual or grou
 
 Be aware of the following guidelines:
 
--   You are **not** allowed to use AI tools during the exams.
+- You are **not** allowed to use AI tools during the exams.
 
--   Providing low-effort prompts will result in low-quality outputs. You must refine your prompts to achieve desirable outcomes. Use the course knowledge for that!
+- Providing low-effort prompts will result in low-quality outputs. You must refine your prompts to achieve desirable outcomes. Use the course knowledge for that!
 
--   Do not blindly trust the information provided by the output. If the output contains a number, index, analysis, conclusion, or fact, assume it is incorrect and check its veracity. Any errors or omissions resulting from using the AI tool will be your responsibility. Remember, the AI tool works better for topics that you already understand.
+- Make the AI tool help you in your learning process. Do not ask for solutions, ask for explanations, for examples, present your doubts about a topic, and interact and with it!
 
--   While AI is a tool, you must acknowledge its use. Always cite! Include a short note at the end of any document to mention that you used AI in its development.
+- Do not blindly trust the information provided by the output. Any errors or omissions resulting from using the AI tool will be your responsibility. Remember, the AI tool works better for topics that you already understand.
+
+- While AI is a tool, you must acknowledge its use. Always cite! Include a short note at the end of any document to mention that you used AI in its development.
 
 ## Deadlines 
 

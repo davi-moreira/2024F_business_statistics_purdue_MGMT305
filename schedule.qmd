@@ -47,7 +47,7 @@ editor: visual
 | Sep 20 | Simple Regression (cont’d)              | Applications                                      |.  |.  |.  |
 | **Sep 22** | **Homework 3 due date**                     | **Simple Regression**                                 |.  |.  |.  |
 | **Sep 23** | **Midterm 1 Review**                        | **Analysis of Variance and Simple Regression**        |.  |.  |.  |
-| **TBD**          | **Midterm 1**                               | **Analysis of Variance and Simple Regression**        |.  |.  |.  |
+| **30**          | **Midterm 1 (6:30 pm – 7:30 pm, UC 114)**                               | **Analysis of Variance and Simple Regression**        |.  |.  |.  |
 | Sep 27 | Multiple Regression                     | 15.1, 15.2                                         |.  |.  |.  |
 | Sep 30 | Multiple Regression (cont’d)            | 15.3, 15.4                                         |.  |.  |.  |
 | Oct 2    | Multiple Regression (cont’d)            | 15.5, 15.6                                         |.  |.  |.  |
@@ -65,7 +65,7 @@ editor: visual
 | Oct 25   | Logistic Regression (cont’d)            | Supplement XXX Chap 18? XXX                       |.  |.  |.  |
 | **Oct 27**   | **Homework 6 due date**                     | **Logistic Regression**                               |.  |.  |.  |
 | **Oct 28**   | **Midterm 2 Review**                        | **Mult. Regr. Model Bldg Log. Regr.**                 |.  |.  |.  |
-| **TBD**          | **Midterm 2**                               | **Mult. Regr. Model Bldg Log. Regr.**                 |.  |.  |.  |
+| **31**          | **Midterm 2 (6:30 pm – 7:30 pm, UC 114)**                               | **Mult. Regr. Model Bldg Log. Regr.**                 |.  |.  |.  |
 | Nov 1   | Time Series                             | 17.1, 17.2                                         |.  |.  |.  |
 | Nov 4   | Time Series (cont’d)                    | 17.3, 17.4                                         |.  |.  |.  |
 | Nov 6   | Time Series (cont’d)                    | 17.5, 17.6                                         |.  |.  |.  |
