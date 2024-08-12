@@ -23,6 +23,8 @@ format:
 
 ## Overview
 
+::: {.nonincremental}
+
 ::: columns
 ::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
 
@@ -56,6 +58,8 @@ format:
 
 
 :::
+:::
+
 :::
 
 
@@ -867,6 +871,8 @@ knitr::include_graphics("figs/covariance_excel.png")
 
 ## Summary
 
+::: {.nonincremental}
+
 Some key takeaways from this session:
 
 -   **Descriptive Statistics**: help us to understand the data we have.
@@ -880,5 +886,7 @@ Some key takeaways from this session:
 -   **Empirical Rule**: The 68-95-99.7 Rule for understanding data distribution in relation to the mean and standard deviation. Good for symetric distrubutions!
 
 - **Covariance and Correlation**: to understand the relationship between two numerical variables.
+
+:::
 
 # Thank you! {background-color="#cfb991"}

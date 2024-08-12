@@ -23,6 +23,8 @@ format:
 
 ## Overview
 
+::: {.nonincremental}
+
 ::: columns
 ::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
 
@@ -38,6 +40,7 @@ format:
 - Hypothesis Testing for Proportions
 - Using Excel for Hypothesis Testing
 
+:::
 :::
 :::
 
@@ -495,7 +498,8 @@ knitr::include_graphics("figs/p_value_excel.png")
 
 ## Summary
 
-::: r-fit-text
+::: {.nonincremental}
+
 Some key takeaways from this session:
 
 - Developing a null hypothesis involves stating the parameter of interest, its hypothesized value, and forming $H_0$ to reflect no change or effect.

@@ -23,6 +23,8 @@ format:
 
 ## Overview
 
+::: {.nonincremental}
+
 ::: columns
 ::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
 
@@ -41,6 +43,7 @@ format:
 :::
 :::
 
+:::
 
 # Interval Estimation {background-color="#cfb991"}
 
@@ -531,7 +534,7 @@ knitr::include_graphics("figs/confidence_interval_excel.png")
 
 ## Concepts
 
-::: r-fit-text
+::: {style="font-size: 50%;"}
 
 | **Concept**          | **Definition**                                                                                 | **Purpose**                                                                                   |
 |----------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -561,7 +564,8 @@ knitr::include_graphics("figs/confidence_interval_excel.png")
 1. Check assumptions.
    a. Randomization
    b. Independence
-   c. The sampling distribution of $\bar{p}$ is approximately normal. (Check $n\bar{p} \geq 5$ and $n(1 - \bar{p}) \geq 5$.)
+   c. The sampling distribution of $\bar{p}$ is approximately normal. (
+      i. Check $n\bar{p} \geq 5$ and $n(1 - \bar{p}) \geq 5$.
 
 2. Calculate the standard error of $\bar{p}$: 
    $$
@@ -585,7 +589,8 @@ knitr::include_graphics("figs/confidence_interval_excel.png")
 1. Check assumptions.
    a. Randomization
    b. Independence
-   c. The sampling distribution of $\bar{x}$ is approximately normal. (Check $n \geq 30$ or underlying population distribution normal.)
+   c. The sampling distribution of $\bar{x}$ is approximately normal. 
+      i. Check $n \geq 30$ or underlying population distribution normal.
 
 2. Calculate the standard error of $\bar{x}$: 
    $$
@@ -612,24 +617,55 @@ knitr::include_graphics("figs/confidence_interval_excel.png")
 
 ## Summary
 
-::: r-fit-text
+::: {.nonincremental}
+
 
 Some key takeaways from this session:
 
-- **Statistical Inference**: Involves using sample data to make generalizations about a population. It includes methods like interval estimation and hypothesis testing to draw conclusions with a certain level of confidence.
+- **Statistical Inference**: 
+    
+    Involves using sample data to make generalizations about a population. It includes methods like interval estimation and hypothesis testing to draw conclusions with a certain level of confidence.
 
-- **Central Limit Theorem**: States that the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the population's distribution. This theorem underpins many inferential statistics techniques.
+- **Central Limit Theorem**: 
+    
+    States that the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the population's distribution. This theorem underpins many inferential statistics techniques.
 
-- **Interval Estimation**: Provides a range of values (confidence interval) for an unknown population parameter, giving an estimate along with an associated margin of error to quantify the uncertainty.
+- **Interval Estimation**: 
+    
+    Provides a range of values (confidence interval) for an unknown population parameter, giving an estimate along with an associated margin of error to quantify the uncertainty.
 
-- **Population Mean (σ Known)**: When the population standard deviation is known, a z-distribution is used to construct confidence intervals for the population mean.
 
-- **Population Mean (σ Unknown)**: When the population standard deviation is unknown, a t-distribution is used. This is common in practical applications where the sample standard deviation serves as an estimate for the population standard deviation.
+:::
 
-- **Population Proportion**: Involves estimating the proportion of a population that possesses a certain characteristic. Confidence intervals for population proportions can be calculated using the sample proportion and its standard error.
+## Summary
 
-- **Sample Size Determination**: Important for ensuring that estimates are accurate and reliable. The required sample size can be calculated based on desired margin of error, confidence level, and variability in the population.
 
-::: 
+::: {.nonincremental}
+
+::: {style="font-size: 75%;"}
+
+Some key takeaways from this session:
+
+
+- **Population Mean ($\sigma$ Known)**: 
+    
+    When the population standard deviation is known, a z-distribution is used to construct confidence intervals for the population mean.
+
+- **Population Mean ($\sigma$ Unknown)**: 
+    
+    When the population standard deviation is unknown, a t-distribution is used. This is common in practical applications where the sample standard deviation serves as an estimate for the population standard deviation.
+
+- **Population Proportion**: 
+    
+    Involves estimating the proportion of a population that possesses a certain characteristic. Confidence intervals for population proportions can be calculated using the sample proportion and its standard error.
+
+- **Sample Size Determination**: 
+    
+    Important for ensuring that estimates are accurate and reliable. The required sample size can be calculated based on desired margin of error, confidence level, and variability in the population.
+
+:::
+
+:::
+
 
 # Thank you! {background-color="#cfb991"}

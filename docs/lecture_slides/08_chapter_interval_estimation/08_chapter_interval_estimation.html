@@ -344,19 +344,21 @@ Professor<br>Davi Moreira<br>
 </section>
 <section id="overview" class="slide level2 center">
 <h2>Overview</h2>
+<div>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
-<li class="fragment">Statistical Inference</li>
-<li class="fragment">Central Limit Theorem</li>
-<li class="fragment">Population Mean: <span class="math inline">\(\sigma\)</span> Known</li>
+<li>Statistical Inference</li>
+<li>Central Limit Theorem</li>
+<li>Population Mean: <span class="math inline">\(\sigma\)</span> Known</li>
 </ul>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
-<li class="fragment">Population Mean: <span class="math inline">\(\sigma\)</span> Unknown</li>
-<li class="fragment">Population Proportion</li>
-<li class="fragment">Sample Size Determination</li>
+<li>Population Mean: <span class="math inline">\(\sigma\)</span> Unknown</li>
+<li>Population Proportion</li>
+<li>Sample Size Determination</li>
 </ul>
+</div>
 </div>
 </div>
 </section>
@@ -784,7 +786,7 @@ n = \left( \frac{z_{\alpha/2}^2 \times p^*(1-p^*)}{E^2} \right)
 </section>
 <section id="concepts-1" class="slide level2 center">
 <h2>Concepts</h2>
-<div class="r-fit-text">
+<div style="font-size: 50%;">
 <table class="caption-top">
 <colgroup>
 <col style="width: 10%">
@@ -847,7 +849,10 @@ n = \left( \frac{z_{\alpha/2}^2 \times p^*(1-p^*)}{E^2} \right)
 <ol type="a">
 <li>Randomization</li>
 <li>Independence</li>
-<li>The sampling distribution of <span class="math inline">\(\bar{p}\)</span> is approximately normal. (Check <span class="math inline">\(n\bar{p} \geq 5\)</span> and <span class="math inline">\(n(1 - \bar{p}) \geq 5\)</span>.)</li>
+<li>The sampling distribution of <span class="math inline">\(\bar{p}\)</span> is approximately normal. (
+<ol type="i">
+<li>Check <span class="math inline">\(n\bar{p} \geq 5\)</span> and <span class="math inline">\(n(1 - \bar{p}) \geq 5\)</span>.</li>
+</ol></li>
 </ol></li>
 <li><p>Calculate the standard error of <span class="math inline">\(\bar{p}\)</span>: <span class="math display">\[
 se = \sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}
@@ -866,7 +871,10 @@ se = \sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}
 <ol type="a">
 <li>Randomization</li>
 <li>Independence</li>
-<li>The sampling distribution of <span class="math inline">\(\bar{x}\)</span> is approximately normal. (Check <span class="math inline">\(n \geq 30\)</span> or underlying population distribution normal.)</li>
+<li>The sampling distribution of <span class="math inline">\(\bar{x}\)</span> is approximately normal.
+<ol type="i">
+<li>Check <span class="math inline">\(n \geq 30\)</span> or underlying population distribution normal.</li>
+</ol></li>
 </ol></li>
 <li><p>Calculate the standard error of <span class="math inline">\(\bar{x}\)</span>: <span class="math display">\[
 se = \frac{s}{\sqrt{n}}
@@ -885,17 +893,34 @@ se = \frac{s}{\sqrt{n}}
 </section>
 <section id="summary-2" class="slide level2 center">
 <h2>Summary</h2>
-<div class="r-fit-text">
+<div>
 <p>Some key takeaways from this session:</p>
 <ul>
-<li class="fragment"><p><strong>Statistical Inference</strong>: Involves using sample data to make generalizations about a population. It includes methods like interval estimation and hypothesis testing to draw conclusions with a certain level of confidence.</p></li>
-<li class="fragment"><p><strong>Central Limit Theorem</strong>: States that the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the population’s distribution. This theorem underpins many inferential statistics techniques.</p></li>
-<li class="fragment"><p><strong>Interval Estimation</strong>: Provides a range of values (confidence interval) for an unknown population parameter, giving an estimate along with an associated margin of error to quantify the uncertainty.</p></li>
-<li class="fragment"><p><strong>Population Mean (σ Known)</strong>: When the population standard deviation is known, a z-distribution is used to construct confidence intervals for the population mean.</p></li>
-<li class="fragment"><p><strong>Population Mean (σ Unknown)</strong>: When the population standard deviation is unknown, a t-distribution is used. This is common in practical applications where the sample standard deviation serves as an estimate for the population standard deviation.</p></li>
-<li class="fragment"><p><strong>Population Proportion</strong>: Involves estimating the proportion of a population that possesses a certain characteristic. Confidence intervals for population proportions can be calculated using the sample proportion and its standard error.</p></li>
-<li class="fragment"><p><strong>Sample Size Determination</strong>: Important for ensuring that estimates are accurate and reliable. The required sample size can be calculated based on desired margin of error, confidence level, and variability in the population.</p></li>
+<li><p><strong>Statistical Inference</strong>:</p>
+<p>Involves using sample data to make generalizations about a population. It includes methods like interval estimation and hypothesis testing to draw conclusions with a certain level of confidence.</p></li>
+<li><p><strong>Central Limit Theorem</strong>:</p>
+<p>States that the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the population’s distribution. This theorem underpins many inferential statistics techniques.</p></li>
+<li><p><strong>Interval Estimation</strong>:</p>
+<p>Provides a range of values (confidence interval) for an unknown population parameter, giving an estimate along with an associated margin of error to quantify the uncertainty.</p></li>
 </ul>
+</div>
+</section>
+<section id="summary-3" class="slide level2 center">
+<h2>Summary</h2>
+<div>
+<div style="font-size: 75%;">
+<p>Some key takeaways from this session:</p>
+<ul>
+<li><p><strong>Population Mean (<span class="math inline">\(\sigma\)</span> Known)</strong>:</p>
+<p>When the population standard deviation is known, a z-distribution is used to construct confidence intervals for the population mean.</p></li>
+<li><p><strong>Population Mean (<span class="math inline">\(\sigma\)</span> Unknown)</strong>:</p>
+<p>When the population standard deviation is unknown, a t-distribution is used. This is common in practical applications where the sample standard deviation serves as an estimate for the population standard deviation.</p></li>
+<li><p><strong>Population Proportion</strong>:</p>
+<p>Involves estimating the proportion of a population that possesses a certain characteristic. Confidence intervals for population proportions can be calculated using the sample proportion and its standard error.</p></li>
+<li><p><strong>Sample Size Determination</strong>:</p>
+<p>Important for ensuring that estimates are accurate and reliable. The required sample size can be calculated based on desired margin of error, confidence level, and variability in the population.</p></li>
+</ul>
+</div>
 </div>
 </section></section>
 <section id="thank-you" class="title-slide slide level1 center" data-background-color="#cfb991">

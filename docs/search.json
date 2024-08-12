@@ -347,7 +347,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summary-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
-    "text": "Summary\nSome key takeaways from this session:\n\nCourse Overview:\n\nMaterials and resources available on Brightspace and the course webpage.\nYou are welcome to join virtual office hours!\nIf you need an individual appointment, e-mail me!\n\nKey Concepts:\n\nImportance of statistics in business decision-making.\nStudy Design.\nData summary and visualization good practices.\nDistinction between Descriptive and Inferential Statistics.\nData Science, Big Data, and Data Mining"
+    "text": "Summary\n\nSome key takeaways from this session:\n\nCourse Overview:\n\nMaterials and resources available on Brightspace and the course webpage.\nYou are welcome to join virtual office hours!\nIf you need an individual appointment, e-mail me!\n\nKey Concepts:\n\nImportance of statistics in business decision-making.\nStudy Design.\nData summary and visualization good practices.\nDistinction between Descriptive and Inferential Statistics.\nData Science, Big Data, and Data Mining"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#material-overview",
@@ -361,7 +361,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#overview",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Overview",
-    "text": "Overview\n\n\n\nIntroductions\nCourse Overview and Logistics\nMotivation\nCourse Objectives\n\nUnderstand basic statistical concepts\nApply statistical methods to business problems\n\n\n\n\nKey Topics\n\nDescriptive Statistics\nInferential Statistics\nExcel4stats"
+    "text": "Overview\n\n\n\n\nIntroductions\nCourse Overview and Logistics\nMotivation\nCourse Objectives\n\nUnderstand basic statistical concepts\nApply statistical methods to business problems\n\n\n\n\nKey Topics\n\nDescriptive Statistics\nInferential Statistics\nExcel4stats"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#section-1",
@@ -452,7 +452,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#data-types",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Data Types",
-    "text": "Data Types\n\n\nCategorical Data\n\nLabels or names used to identify an attribute of each element\nOften referred to as qualitative data\nUse either the nominal or ordinal scale of measurement\nCan be either numeric or nonnumeric\nAppropriate statistical analysis is rather limited\n\n\nQuantitative Data\n\nQuantitative data indicate how many or how much:\n-  discrete, if measuring how many\n- continuous, if measuring how much\nQuantitative data are always numeric.\nOrdinary arithmetic operations (+, -, ×, ÷) are meaningful for quantitative data"
+    "text": "Data Types\n\n\n\nCategorical Data\n\nLabels or names used to identify an attribute of each element\nOften referred to as qualitative data\nUse either the nominal or ordinal scale of measurement\nCan be either numeric or nonnumeric\nAppropriate statistical analysis is rather limited\n\n\n\n\nQuantitative Data\n\nQuantitative data indicate how many or how much:\n-  discrete, if measuring how many\n- continuous, if measuring how much\nQuantitative data are always numeric.\nOrdinary arithmetic operations (+, -, ×, ÷) are meaningful for quantitative data"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#examples",
@@ -473,7 +473,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#scales-of-measurement-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Scales of Measurement",
-    "text": "Scales of Measurement\n\n\n\n\nCategorical Data\n\nDefinition: Data that can be sorted into categories or groups.\nSubcategories:\n\nNumeric: Categorical data represented by numbers, but the numbers do not have inherent numerical value.\n\nNominal: Categories that have no inherent order. Examples include gender, type of car, and nationality.\nOrdinal: Categories that have a specific order or ranking. Examples include satisfaction levels (e.g., satisfied, neutral, dissatisfied) and education levels (e.g., high school, bachelor’s, master’s).\n\nNon-numeric: Categorical data not represented by numbers.\n\nNominal: Similar to numeric nominal data but represented with non-numeric labels. Examples include types of cuisine (e.g., Italian, Chinese, Indian).\nOrdinal: Similar to numeric ordinal data but represented with non-numeric labels. Examples include rankings such as job positions (e.g., intern, junior, senior).\n\n\n\n\n\n\n\nQuantitative Data\n\nDefinition: Data that can be measured and expressed numerically.\nSubcategories:\n\nNumeric: Quantitative data always represented by numbers.\n\nInterval: Numerical data with meaningful differences between values but no true zero point. Examples include temperature in Celsius or Fahrenheit.\nRatio: Numerical data with meaningful differences between values and a true zero point. Examples include height, weight, and sales figures."
+    "text": "Scales of Measurement\n\n\n\n\n\nCategorical Data\n\nDefinition: Data that can be sorted into categories or groups.\nSubcategories:\n\nNumeric: Categorical data represented by numbers, but the numbers do not have inherent numerical value.\n\nNominal: Categories that have no inherent order. Examples include gender, type of car, and nationality.\nOrdinal: Categories that have a specific order or ranking. Examples include satisfaction levels (e.g., satisfied, neutral, dissatisfied) and education levels (e.g., high school, bachelor’s, master’s).\n\nNon-numeric: Categorical data not represented by numbers.\n\nNominal: Similar to numeric nominal data but represented with non-numeric labels. Examples include types of cuisine (e.g., Italian, Chinese, Indian).\nOrdinal: Similar to numeric ordinal data but represented with non-numeric labels. Examples include rankings such as job positions (e.g., intern, junior, senior).\n\n\n\n\n\n\n\n\n\nQuantitative Data\n\nDefinition: Data that can be measured and expressed numerically.\nSubcategories:\n\nNumeric: Quantitative data always represented by numbers.\n\nInterval: Numerical data with meaningful differences between values but no true zero point. Examples include temperature in Celsius or Fahrenheit.\nRatio: Numerical data with meaningful differences between values and a true zero point. Examples include height, weight, and sales figures."
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#statistical-studies",
@@ -592,14 +592,14 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#numerical-descriptive-statistics---example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Numerical Descriptive Statistics - Example",
-    "text": "Numerical Descriptive Statistics - Example\n\n\n\nOpen Data Analysis Add-in and select the Descriptive Statistics analysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInput the ranges (data, bin limits, output cell) and options"
+    "text": "Numerical Descriptive Statistics - Example\n\n\n\n\nOpen Data Analysis Add-in and select the Descriptive Statistics analysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInput the ranges (data, bin limits, output cell) and options"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#numerical-descriptive-statistics---example-1",
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#numerical-descriptive-statistics---example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Numerical Descriptive Statistics - Example",
-    "text": "Numerical Descriptive Statistics - Example\n\n\n\nResult\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLet’s check the result\n\n\n\n\n\n\n\n\n\n\n\n\nFor percentiles: = percentile.exc(Data Array, %)"
+    "text": "Numerical Descriptive Statistics - Example\n\n\n\n\nResult\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLet’s check the result\n\n\n\n\n\n\n\n\n\n\n\nFor percentiles: = percentile.exc(Data Array, %)"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#tabular-summary-frequency-and-percent-frequency---example",
@@ -620,14 +620,14 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#graphical-summary-bar-chart-or-histogram---example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Graphical Summary: Bar Chart or Histogram - Example",
-    "text": "Graphical Summary: Bar Chart or Histogram - Example\n \n\n\n\nOpen Data Analysis Add-in\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect Histogram"
+    "text": "Graphical Summary: Bar Chart or Histogram - Example\n \n\n\n\n\nOpen Data Analysis Add-in\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect Histogram"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#graphical-summary-bar-chart-or-histogram---example-2",
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#graphical-summary-bar-chart-or-histogram---example-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Graphical Summary: Bar Chart or Histogram - Example",
-    "text": "Graphical Summary: Bar Chart or Histogram - Example\n\n\n\nInput the ranges (data, bin limits, output cell)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResult"
+    "text": "Graphical Summary: Bar Chart or Histogram - Example\n\n\n\n\nInput the ranges (data, bin limits, output cell)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResult"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#data-types-examples",
@@ -655,21 +655,21 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#data-science-big-data-and-data-mining---definitions",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Data Science, Big Data, and Data Mining - Definitions",
-    "text": "Data Science, Big Data, and Data Mining - Definitions\n\nData Science:\n\nThe interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data.\n\nBig Data:\n\nExtremely large datasets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.\n\nData Mining:\n\nThe practice of examining large databases to generate new information, involving methods at the intersection of machine learning, statistics, and database systems."
+    "text": "Data Science, Big Data, and Data Mining - Definitions\n\n\nData Science:\n\nThe interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data.\n\nBig Data:\n\nExtremely large datasets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.\n\nData Mining:\n\nThe practice of examining large databases to generate new information, involving methods at the intersection of machine learning, statistics, and database systems."
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#how-data-science-big-data-and-data-mining-are-used",
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#how-data-science-big-data-and-data-mining-are-used",
     "title": " MGMT 30500: Business Statistics ",
     "section": "How Data Science, Big Data, and Data Mining are Used",
-    "text": "How Data Science, Big Data, and Data Mining are Used\n\nData Science:\n\nPersonalizing marketing efforts by analyzing customer data to predict preferences and buying behavior.\nOptimizing supply chain management through predictive analytics.\n\nBig Data:\n\nAnalyzing customer feedback and social media interactions to improve customer service and develop new products.\nEnhancing risk management in financial institutions by monitoring transaction patterns and detecting fraudulent activities.\n\nData Mining:\n\nIdentifying potential leads and sales opportunities by analyzing past sales data and customer demographics.\nEnhancing customer retention by understanding churn patterns and developing targeted retention strategies."
+    "text": "How Data Science, Big Data, and Data Mining are Used\n\n\n\nData Science:\n\nPersonalizing marketing efforts by analyzing customer data to predict preferences and buying behavior.\nOptimizing supply chain management through predictive analytics.\n\nBig Data:\n\nAnalyzing customer feedback and social media interactions to improve customer service and develop new products.\nEnhancing risk management in financial institutions by monitoring transaction patterns and detecting fraudulent activities.\n\nData Mining:\n\nIdentifying potential leads and sales opportunities by analyzing past sales data and customer demographics.\nEnhancing customer retention by understanding churn patterns and developing targeted retention strategies."
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#overview",
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#overview",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Overview",
-    "text": "Overview\n\n\n\nDescriptive Statistics\nMeasures of Central Location and Variability\nDistribution Shape\n\nSkewness\nSymmetry\n\nRelative Location and z-Scores\n\nCalculation and Interpretation\nExamples\n\nEmpirical Rule\n\n68-95-99.7 Rule\nDetecting Outliers\n\n\n\n\nFive-Number Summaries and Boxplots\nMeasures of Association Between Two Variables\n\nCovariance\nCorrelation"
+    "text": "Overview\n\n\n\n\nDescriptive Statistics\nMeasures of Central Location and Variability\nDistribution Shape\n\nSkewness\nSymmetry\n\nRelative Location and z-Scores\n\nCalculation and Interpretation\nExamples\n\nEmpirical Rule\n\n68-95-99.7 Rule\nDetecting Outliers\n\n\n\n\nFive-Number Summaries and Boxplots\nMeasures of Association Between Two Variables\n\nCovariance\nCorrelation"
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#central-location",
@@ -725,7 +725,7 @@
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#summary-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
-    "text": "Summary\nSome key takeaways from this session:\n\nDescriptive Statistics: help us to understand the data we have.\nMeasures of Central Location and Variability: Central location and variability metrics help us to summarize the data.\nDistribution Shape: skewness can be used to understand the shape of a distribution.\nRelative Location and z-Scores: z-scores to determine the relative position of data points within a distribution.\nEmpirical Rule: The 68-95-99.7 Rule for understanding data distribution in relation to the mean and standard deviation. Good for symetric distrubutions!\nCovariance and Correlation: to understand the relationship between two numerical variables."
+    "text": "Summary\n\nSome key takeaways from this session:\n\nDescriptive Statistics: help us to understand the data we have.\nMeasures of Central Location and Variability: Central location and variability metrics help us to summarize the data.\nDistribution Shape: skewness can be used to understand the shape of a distribution.\nRelative Location and z-Scores: z-scores to determine the relative position of data points within a distribution.\nEmpirical Rule: The 68-95-99.7 Rule for understanding data distribution in relation to the mean and standard deviation. Good for symetric distrubutions!\nCovariance and Correlation: to understand the relationship between two numerical variables."
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#distribution-shape-skewness-5",
@@ -1005,7 +1005,7 @@
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#overview",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Overview",
-    "text": "Overview\n\n\n\nContinuous Probability Distributions\n\nDefinition\nArea as a Measure of Probability\n\nNormal Probability Distribution\n\nCharacteristics\nApplications\n\n\n\n\nStandard Normal Probability Distribution\n\nStandardization\nExcel Functions\n\n\\(t\\)-distribution\n\nUse and comparison\nExcel Functions"
+    "text": "Overview\n\n\n\n\nContinuous Probability Distributions\n\nDefinition\nArea as a Measure of Probability\n\nNormal Probability Distribution\n\nCharacteristics\nApplications\n\n\n\n\nStandard Normal Probability Distribution\n\nStandardization\nExcel Functions\n\n\\(t\\)-distribution\n\nUse and comparison\nExcel Functions"
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#continuous-probability-distributions",
@@ -1089,7 +1089,7 @@
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#summary-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
-    "text": "Summary\n\n\nSome key takeaways from this session:\n\nContinuous Probability Distributions:\n\nContinuous random variables can assume any value in an interval.\nProbability is defined as the area under the probability density function.\n\nNormal Probability Distribution:\n\nMost common distribution for describing a continuous random variable.\nDefined by its mean and standard deviation.\nWidely used due to the Central Limit Theorem.\n\n\n\n\n\nStandard Normal Probability Distribution:\n\nA normal distribution with a mean of 0 and a standard deviation of 1.\nStandardization helps in comparing different normal distributions.\n\n\\(t\\)-distribution\n\nUse when the sample size is small \\((n &lt; 30)\\)\nUse when the population standard deviation is unknown\n\nExcel Functions:\n\n=NORM.S.DIST(z, TRUE) computes the cumulative probability for a given z-value.\n=NORM.S.INV(cumulative probability) computes the z-value for a given cumulative probability.\n=T.DIST(X, DF, TRUE) computes the cumulative probability for a given t-value.\n\n=T.INV(cumulative probability) computes the t-value for a given cumulative probability."
+    "text": "Summary\n\n\n\nSome key takeaways from this session:\n\nContinuous Probability Distributions:\n\nContinuous random variables can assume any value in an interval.\nProbability is defined as the area under the probability density function.\n\nNormal Probability Distribution:\n\nMost common distribution for describing a continuous random variable.\nDefined by its mean and standard deviation.\nWidely used due to the Central Limit Theorem.\n\n\n\n\n\nStandard Normal Probability Distribution:\n\nA normal distribution with a mean of 0 and a standard deviation of 1.\nStandardization helps in comparing different normal distributions.\n\n\\(t\\)-distribution\n\nUse when the sample size is small \\((n &lt; 30)\\)\nUse when the population standard deviation is unknown\n\nExcel Functions:\n\n=NORM.S.DIST(z, TRUE) computes the cumulative probability for a given z-value.\n=NORM.S.INV(cumulative probability) computes the z-value for a given cumulative probability.\n=T.DIST(X, DF, TRUE) computes the cumulative probability for a given t-value.\n\n=T.INV(cumulative probability) computes the t-value for a given cumulative probability."
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#normal-probability-distribution-5",
@@ -1257,7 +1257,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#overview",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Overview",
-    "text": "Overview\n\n\n\nStatistical Inference\nCentral Limit Theorem\nPopulation Mean: \\(\\sigma\\) Known\n\n\n\nPopulation Mean: \\(\\sigma\\) Unknown\nPopulation Proportion\nSample Size Determination"
+    "text": "Overview\n\n\n\n\nStatistical Inference\nCentral Limit Theorem\nPopulation Mean: \\(\\sigma\\) Known\n\n\n\nPopulation Mean: \\(\\sigma\\) Unknown\nPopulation Proportion\nSample Size Determination"
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#statistical-inference-interval-estimation-and-hypothesis-testing",
@@ -1278,7 +1278,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#summary-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
-    "text": "Summary\n\n\n\n\n\nCI for \\(\\bar{p}\\)\n\n\nCheck assumptions.\n\nRandomization\nIndependence\nThe sampling distribution of \\(\\bar{p}\\) is approximately normal. (Check \\(n\\bar{p} \\geq 5\\) and \\(n(1 - \\bar{p}) \\geq 5\\).)\n\nCalculate the standard error of \\(\\bar{p}\\): \\[\nse = \\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}\n\\]\nIdentify \\(z\\) for your specified level of confidence.\nCalculate the interval: \\[\n\\bar{p} \\pm z \\times se\n\\]\n\n\n\nCI for \\(\\mu\\)\n\n\nCheck assumptions.\n\nRandomization\nIndependence\nThe sampling distribution of \\(\\bar{x}\\) is approximately normal. (Check \\(n \\geq 30\\) or underlying population distribution normal.)\n\nCalculate the standard error of \\(\\bar{x}\\): \\[\nse = \\frac{s}{\\sqrt{n}}\n\\]\nIdentify \\(t\\) for your specified level of confidence \\[\n(df = n - 1)\n\\]\nCalculate the interval: \\[\n\\bar{x} \\pm t \\times se\n\\]"
+    "text": "Summary\n\n\n\n\n\nCI for \\(\\bar{p}\\)\n\n\nCheck assumptions.\n\nRandomization\nIndependence\nThe sampling distribution of \\(\\bar{p}\\) is approximately normal. (\n\nCheck \\(n\\bar{p} \\geq 5\\) and \\(n(1 - \\bar{p}) \\geq 5\\).\n\n\nCalculate the standard error of \\(\\bar{p}\\): \\[\nse = \\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}\n\\]\nIdentify \\(z\\) for your specified level of confidence.\nCalculate the interval: \\[\n\\bar{p} \\pm z \\times se\n\\]\n\n\n\nCI for \\(\\mu\\)\n\n\nCheck assumptions.\n\nRandomization\nIndependence\nThe sampling distribution of \\(\\bar{x}\\) is approximately normal.\n\nCheck \\(n \\geq 30\\) or underlying population distribution normal.\n\n\nCalculate the standard error of \\(\\bar{x}\\): \\[\nse = \\frac{s}{\\sqrt{n}}\n\\]\nIdentify \\(t\\) for your specified level of confidence \\[\n(df = n - 1)\n\\]\nCalculate the interval: \\[\n\\bar{x} \\pm t \\times se\n\\]"
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#statistical-inference",
@@ -1656,14 +1656,14 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#summary-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
-    "text": "Summary\n\nSome key takeaways from this session:\n\nStatistical Inference: Involves using sample data to make generalizations about a population. It includes methods like interval estimation and hypothesis testing to draw conclusions with a certain level of confidence.\nCentral Limit Theorem: States that the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the population’s distribution. This theorem underpins many inferential statistics techniques.\nInterval Estimation: Provides a range of values (confidence interval) for an unknown population parameter, giving an estimate along with an associated margin of error to quantify the uncertainty.\nPopulation Mean (σ Known): When the population standard deviation is known, a z-distribution is used to construct confidence intervals for the population mean.\nPopulation Mean (σ Unknown): When the population standard deviation is unknown, a t-distribution is used. This is common in practical applications where the sample standard deviation serves as an estimate for the population standard deviation.\nPopulation Proportion: Involves estimating the proportion of a population that possesses a certain characteristic. Confidence intervals for population proportions can be calculated using the sample proportion and its standard error.\nSample Size Determination: Important for ensuring that estimates are accurate and reliable. The required sample size can be calculated based on desired margin of error, confidence level, and variability in the population."
+    "text": "Summary\n\nSome key takeaways from this session:\n\nStatistical Inference:\nInvolves using sample data to make generalizations about a population. It includes methods like interval estimation and hypothesis testing to draw conclusions with a certain level of confidence.\nCentral Limit Theorem:\nStates that the distribution of the sample mean will approximate a normal distribution as the sample size becomes large, regardless of the population’s distribution. This theorem underpins many inferential statistics techniques.\nInterval Estimation:\nProvides a range of values (confidence interval) for an unknown population parameter, giving an estimate along with an associated margin of error to quantify the uncertainty."
   },
   {
     "objectID": "lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html#overview",
     "href": "lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html#overview",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Overview",
-    "text": "Overview\n\n\n\nIntroduction to Hypothesis Testing\nFramework of Hypothesis Testing\nType I and Type II Errors\n\n\n\nHypothesis Testing for Means\nHypothesis Testing for Proportions\nUsing Excel for Hypothesis Testing"
+    "text": "Overview\n\n\n\n\nIntroduction to Hypothesis Testing\nFramework of Hypothesis Testing\nType I and Type II Errors\n\n\n\nHypothesis Testing for Means\nHypothesis Testing for Proportions\nUsing Excel for Hypothesis Testing"
   },
   {
     "objectID": "lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html#statistical-inference-1",
@@ -1908,7 +1908,7 @@
     "href": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#overview",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Overview",
-    "text": "Overview\n\n\n\nInference about a Population Variance\nChi-Square Distribution\nInterval Estimation of \\(\\sigma^2\\)\n\n\n\nHypothesis Testing about a Population Variance\nInferences about Two Population Variances\nF-Test Two-Sample for Variances - Example Excel"
+    "text": "Overview\n\n\n\n\nInference about a Population Variance\nChi-Square Distribution\nInterval Estimation of \\(\\sigma^2\\)\n\n\n\nHypothesis Testing about a Population Variance\nInferences about Two Population Variances\nF-Test Two-Sample for Variances - Example Excel"
   },
   {
     "objectID": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#statistical-inference-1",
@@ -2336,5 +2336,12 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
     "text": "Summary\n\nSome key takeaways from this session:\n\nXXX\n\nXXX\nXXX\n\nXXX\n\nXXX\nXXX"
+  },
+  {
+    "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#summary-3",
+    "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#summary-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary",
+    "text": "Summary\n\n\nSome key takeaways from this session:\n\nPopulation Mean (\\(\\sigma\\) Known):\nWhen the population standard deviation is known, a z-distribution is used to construct confidence intervals for the population mean.\nPopulation Mean (\\(\\sigma\\) Unknown):\nWhen the population standard deviation is unknown, a t-distribution is used. This is common in practical applications where the sample standard deviation serves as an estimate for the population standard deviation.\nPopulation Proportion:\nInvolves estimating the proportion of a population that possesses a certain characteristic. Confidence intervals for population proportions can be calculated using the sample proportion and its standard error.\nSample Size Determination:\nImportant for ensuring that estimates are accurate and reliable. The required sample size can be calculated based on desired margin of error, confidence level, and variability in the population."
   }
 ]

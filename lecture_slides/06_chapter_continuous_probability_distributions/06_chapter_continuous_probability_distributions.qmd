@@ -23,6 +23,8 @@ format:
 
 ## Overview
 
+::: {.nonincremental}
+
 ::: columns
 ::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
 
@@ -50,6 +52,7 @@ format:
     -   Use and comparison
     -   Excel Functions
 
+:::
 :::
 :::
 
@@ -568,6 +571,8 @@ The manager now wants to know:
 
 ## Summary
 
+::: {.nonincremental}
+
 ::: columns
 ::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
 
@@ -603,6 +608,7 @@ Some key takeaways from this session:
     -   `=T.DIST(X, DF, TRUE)` computes the cumulative probability for a given t-value.  
     -   `=T.INV(cumulative probability)` computes the t-value for a given cumulative probability.
 
+:::
 :::
 :::
 

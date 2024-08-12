@@ -23,6 +23,8 @@ format:
 
 ## Overview
 
+::: {.nonincremental}
+
 ::: columns
 ::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
 
@@ -40,6 +42,9 @@ format:
 
 :::
 :::
+
+:::
+
 
 # Statistical Inference {background-color="#cfb991"}
 
@@ -692,7 +697,8 @@ knitr::include_graphics("figs/f_test_excel_result.png")
 
 ## Summary
 
-::: r-fit-text
+::: {.nonincremental}
+
 Some key takeaways from this session:
 
 -   Chi-Square Distribution
@@ -709,7 +715,6 @@ Some key takeaways from this session:
 
     - We use the chi-square distribution for the test statistic.
     - We can interpret results using both the critical value approach and the p-value approach.
-
 
 :::
 
