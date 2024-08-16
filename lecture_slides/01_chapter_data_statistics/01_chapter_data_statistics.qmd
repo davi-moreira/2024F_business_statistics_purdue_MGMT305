@@ -1,6 +1,6 @@
 ---
 title: "<span style = 'font-size: 100%;'> MGMT 30500: Business Statistics </span>"
-subtitle: "<span style = 'font-size: 100%;'> Intro. & Basic Stat. & Prob. Rvw. </span>"
+subtitle: "<span style = 'font-size: 150%;'> Intro. & Basic Stat. & Prob. Rvw. </span>"
 author: "Professor: Davi Moreira"
 date: "2024-08-01"
 date-format: "MMMM DD, YYYY"
@@ -128,6 +128,16 @@ knitr::include_graphics("figs/carnaval_olinda.jpg")
 -   [**Syllabus**](https://davi-moreira.github.io/2024F_business_statistics_purdue_MGMT305){target="_blank"}
 
 -   [**Schedule**](https://davi-moreira.github.io/2024F_business_statistics_purdue_MGMT305){target="_blank"}
+
+# Survey {background-color="#cfb991"}
+
+## Survey {background-color="#cfb991"}
+
+```{r  echo=FALSE, out.width = "25%", fig.align="center"}
+knitr::include_graphics("figs/qrcode_introduction.png") 
+```
+
+<center>Attendance and Participation<br>10 min</center>
 
 # Motivation {background-color="#cfb991"}
 

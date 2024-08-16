@@ -2343,5 +2343,12 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
     "text": "Summary\n\n\nSome key takeaways from this session:\n\nPopulation Mean (\\(\\sigma\\) Known):\nWhen the population standard deviation is known, a z-distribution is used to construct confidence intervals for the population mean.\nPopulation Mean (\\(\\sigma\\) Unknown):\nWhen the population standard deviation is unknown, a t-distribution is used. This is common in practical applications where the sample standard deviation serves as an estimate for the population standard deviation.\nPopulation Proportion:\nInvolves estimating the proportion of a population that possesses a certain characteristic. Confidence intervals for population proportions can be calculated using the sample proportion and its standard error.\nSample Size Determination:\nImportant for ensuring that estimates are accurate and reliable. The required sample size can be calculated based on desired margin of error, confidence level, and variability in the population."
+  },
+  {
+    "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#survey-1",
+    "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#survey-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Survey",
+    "text": "Survey\n\n\nAttendance and Participation10 min"
   }
 ]
