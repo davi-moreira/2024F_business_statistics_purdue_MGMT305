@@ -59,7 +59,7 @@ knitr::include_graphics("figs/davi_moreira_photo.JPG")
 
 [dmoreira\@purdue.edu](dmoreira@purdue.edu)
 
-[https://davi- moreira.github.io/](https://davi-%20moreira.github.io/)
+[https://davi- moreira.github.io/](https://davi-moreira.github.io/)
 :::
 
 ::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
