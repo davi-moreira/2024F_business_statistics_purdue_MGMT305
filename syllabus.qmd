@@ -31,7 +31,7 @@ _This document does not replace the official syllabus in the course brightspace 
 
 ## Course Description
 
-This course is designed to introduce students to basic data analysis techniques.  Coverage will include the application of probability distributions such as the normal, the $t$, and the binomial; sampling distributions, basic statistical inference methods, analysis of variance, applied linear regression techniques, logistic regression time series analysis, statistical quality control, and decision analysis.
+The course is designed to introduce students to basic data analysis techniques.  Coverage will include the application of probability distributions such as the normal, the $t$, and the binomial; sampling distributions, basic statistical inference methods, analysis of variance, applied linear regression techniques, logistic regression time series analysis, statistical quality control, and decision analysis.
 
 **Class:** Section 13:  MWF (9:30 am – 10:20 am), RAWL 3082	
 
