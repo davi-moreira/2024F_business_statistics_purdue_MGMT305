@@ -1,7 +1,7 @@
 ---
 title: "Syllabus: MGMT 30500: Business Statistics"
 subtitle: "Mitchell E. Daniels, Jr. School of Business, Purdue University"
-date-modified: "last-modified"
+# date-modified: "last-modified"
 date: "2024-08-01"
 date-format: "MMM D, YYYY"
 #listing:
