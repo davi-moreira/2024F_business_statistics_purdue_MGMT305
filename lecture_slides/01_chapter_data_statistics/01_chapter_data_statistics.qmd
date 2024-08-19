@@ -129,6 +129,17 @@ knitr::include_graphics("figs/carnaval_olinda.jpg")
 
 -   [**Schedule**](https://davi-moreira.github.io/2024F_business_statistics_purdue_MGMT305){target="_blank"}
 
+# Business Statistics {background-color="#cfb991"}
+
+# Text Book
+
+<br>
+
+```{r  echo=FALSE, out.width = "50%",fig.align="center"}
+knitr::include_graphics("figs/mbs_book.png") 
+```
+
+
 # Survey {background-color="#cfb991"}
 
 ## Survey {background-color="#cfb991"}
@@ -191,15 +202,6 @@ Statistics can be defined as the **science of collecting, analyzing, interpretin
 
     -   Risk analysts to assess the probability of default on loans or bonds, aiding in the pricing of financial instruments and risk management strategies.
 
-# Business Statistics {background-color="#cfb991"}
-
-# Text Book
-
-<br>
-
-```{r  echo=FALSE, out.width = "50%",fig.align="center"}
-knitr::include_graphics("figs/mbs_book.png") 
-```
 
 # Data and Statistics {background-color="#cfb991"}
 
