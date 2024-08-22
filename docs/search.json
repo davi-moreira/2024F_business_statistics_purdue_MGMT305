@@ -683,7 +683,7 @@
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#variability-sampling-variation",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Variability (Sampling Variation)",
-    "text": "Variability (Sampling Variation)\n\nSample Variance: “Average” squared deviation of observations from the mean of all observations (\\(n-1\\) is called the degrees of freedom, df):\n\\[\nS^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n - 1}\n\\]\n\nWhy do we compute the sample variance using \\(n-1\\) instead of \\(n\\)?\nTo not underestimate the True Population Variance \\(\\sigma^2\\)\nVideo and Simulation\n\nSample Standard Deviation:\n\\[\nS = \\sqrt{S^2}\n\\]\nRange = Maximum – Minimum.\nInterquartile Range (IQR) = 3rd Quartile – 1st Quartile\n(Range of the middle 50% of data.)"
+    "text": "Variability (Sampling Variation)\n\nSample Variance: “Average” squared deviation of observations from the mean of all observations (\\(n-1\\) is called the degrees of freedom, df):\n\\[\nS^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n - 1}\n\\]\n\nWhy do we compute the sample variance using \\(n-1\\) instead of \\(n\\)?\nTo not underestimate the True Population Variance \\(\\sigma^2\\)\nWhat is an unbiased estimator? Video\nVideo and Simulation\n\nSample Standard Deviation:\n\\[\nS = \\sqrt{S^2}\n\\]\nRange = Maximum – Minimum.\nInterquartile Range (IQR) = 3rd Quartile – 1st Quartile\n(Range of the middle 50% of data.)"
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#distribution-shape-skewness",
@@ -991,7 +991,7 @@
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#correlation-coefficient-5",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Correlation Coefficient",
-    "text": "Correlation Coefficient\n\n\n\n\n\n\nThe correlation reflects the strength and direction of a linear relationship (top row)\nThe correlation does not reflect the slope of that relationship (middle)\nNor many aspects of nonlinear relationships (bottom).\nN.B.: the figure in the center has a slope of 0 but in that case the correlation coefficient is undefined because the variance of Y is zero.\n\n\nWiki"
+    "text": "Correlation Coefficient\n\n\n\n\n\n\n\nThe correlation reflects the strength and direction of a linear relationship (top row)\nThe correlation does not reflect the slope of that relationship (middle)\nNor many aspects of nonlinear relationships (bottom).\nN.B.: the figure in the center has a slope of 0 but in that case the correlation coefficient is undefined because the variance of Y is zero.\n\n\nWiki"
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#correlation-coefficient-6",

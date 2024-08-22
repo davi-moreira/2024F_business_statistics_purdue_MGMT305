@@ -91,8 +91,8 @@ format:
 
     - Why do we compute the sample variance using $n-1$ instead of $n$? 
     - To not underestimate the True Population Variance $\sigma^2$
+    - What is an unbiased estimator? [Video](https://www.youtube.com/watch?v=xJlwSkyeP0k)
     - [Video](https://www.khanacademy.org/math/ap-statistics/summarizing-quantitative-data-ap/more-standard-deviation/v/review-and-intuition-why-we-divide-by-n-1-for-the-unbiased-sample-variance) and [Simulation](https://www.khanacademy.org/computer-programming/unbiased-variance-visualization/1167453164)
-
 
 - **Sample Standard Deviation**:
   
@@ -706,6 +706,8 @@ knitr::include_graphics("figs/correlation_linear.png")
 
 <br>
 
+::: {.nonincremental}
+
 ::: fragment
 ::: {style="font-size: 70%;"}
 - The correlation reflects the strength and direction of a linear relationship (top row)
@@ -717,6 +719,7 @@ knitr::include_graphics("figs/correlation_linear.png")
 [Wiki](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)
 </center>
 
+:::
 :::
 :::
 
