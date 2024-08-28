@@ -401,8 +401,8 @@ Professor<br>Davi Moreira<br>
 <li>Critical values</li>
 <li>p-values</li>
 <li>Which side <span class="math inline">\((H_a)\)</span> depends mostly on data</li>
-<li>Strength of sample evidence against the hypothesized value (via p-value)</li>
 <li>Test a specific hypothesized parameter value</li>
+<li>Strength of sample evidence against the hypothesized value of the null hypothesis</li>
 </ul>
 </div>
 </div>
@@ -461,6 +461,37 @@ Professor<br>Davi Moreira<br>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="building-a-null-hypothesis" class="slide level2 center">
+<h2>Building a Null Hypothesis</h2>
+<ul>
+<li class="fragment"><p>Formulate the null hypothesis by stating that there is no effect, no difference, or that the effect is equal to a specific value. The null hypothesis is often a statement of equality (e.g., no difference or no association).</p></li>
+<li class="fragment"><p><strong>Key Phrases for Null Hypothesis:</strong></p>
+<ul>
+<li class="fragment">“There is no difference…”</li>
+<li class="fragment">“There is no effect…”</li>
+<li class="fragment">“The population mean is equal to…”</li>
+<li class="fragment">“The proportion is equal to…”</li>
+</ul></li>
+<li class="fragment"><p><strong>Examples:</strong></p>
+<ul>
+<li class="fragment"><p><strong>Single-Sample Test (Mean):</strong><br>
+<span class="math inline">\(H_0: \mu = \mu_0\)</span><br>
+(The mean blood pressure reduction with the new drug is equal to a standard value.)</p></li>
+<li class="fragment"><p><strong>Proportion Test:</strong><br>
+<span class="math inline">\(H_0: p = p_0\)</span><br>
+(The proportion of patients responding to the treatment is equal to 50%.)</p></li>
+</ul></li>
+</ul>
+<!---
+    - **Two-Sample Test (Comparison of Means):**  
+      $H_0: \mu_1 = \mu_2$  
+      (There is no difference in mean blood pressure reduction between the two drugs.)
+
+    - **Correlation Test:**  
+      $H_0: \rho = 0$  
+      (There is no correlation between hours studied and test scores.)
+--->
 </section></section>
 <section>
 <section id="type-i-and-type-ii-errors" class="title-slide slide level1 center" data-background-color="#cfb991">
@@ -709,15 +740,15 @@ z = \frac{\bar{p} - p_0}{\sigma_{\bar{p}}}
 <section>
 <section id="tests-about-a-population-proportion-2" class="title-slide slide level1 center">
 <h1>Tests about a Population Proportion</h1>
-<p>::: {.nonincremental}</p>
+<div>
 <ul>
-<li class="fragment"><strong>p-value Approach</strong></li>
+<li><strong>p-value Approach</strong></li>
 </ul>
 <p><span class="math display">\[
 \text{Reject } H_0 \text{ if } p\text{-value} \leq \alpha
 \]</span></p>
 <ul>
-<li class="fragment"><strong>Critical Value Approach</strong></li>
+<li><strong>Critical Value Approach</strong></li>
 </ul>
 <p><span class="math display">\[
 \begin{aligned}
@@ -726,6 +757,7 @@ H_0 &amp;: p \geq p_0 &amp;\text{Reject } H_0 \text{ if } z \leq -z_{\alpha} \\
 H_0 &amp;: p = p_0 &amp;\text{Reject } H_0 \text{ if } z \leq -z_{\alpha/2} \text{ or } z \geq z_{\alpha/2}
 \end{aligned}
 \]</span></p>
+</div>
 </section>
 <section id="tests-about-a-population-proportion---example" class="slide level2 center">
 <h2>Tests About a Population Proportion - Example</h2>

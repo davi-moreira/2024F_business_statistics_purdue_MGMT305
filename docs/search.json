@@ -1670,7 +1670,7 @@
     "href": "lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html#statistical-inference-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Statistical Inference",
-    "text": "Statistical Inference\n\n\n\n\n\nInterval Estimation\n\n\nConfidence level: 95% \\((1-\\alpha)\\) (Middle area; Confidence level)\nConfidence multipliers\nUpper/lower tail areas\nOne- or 2-sided intervals\nSampling errors and Margin of Error (MOE)\nFind range of all reasonable parameter values\n\n\n\n\n\n\nHypothesis Testing\n\n\nSignificance level: 5% \\((\\alpha)\\) (Tail area(s); Risk)\nCritical values\np-values\nWhich side \\((H_a)\\) depends mostly on data\nStrength of sample evidence against the hypothesized value (via p-value)\nTest a specific hypothesized parameter value"
+    "text": "Statistical Inference\n\n\n\n\n\nInterval Estimation\n\n\nConfidence level: 95% \\((1-\\alpha)\\) (Middle area; Confidence level)\nConfidence multipliers\nUpper/lower tail areas\nOne- or 2-sided intervals\nSampling errors and Margin of Error (MOE)\nFind range of all reasonable parameter values\n\n\n\n\n\n\nHypothesis Testing\n\n\nSignificance level: 5% \\((\\alpha)\\) (Tail area(s); Risk)\nCritical values\np-values\nWhich side \\((H_a)\\) depends mostly on data\nTest a specific hypothesized parameter value\nStrength of sample evidence against the hypothesized value of the null hypothesis"
   },
   {
     "objectID": "lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html#hypothesis-testing-framework-1",
@@ -2055,7 +2055,7 @@
     "href": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#inference-about-a-population-variance-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Inference about a Population Variance",
-    "text": "Inference about a Population Variance"
+    "text": "Inference about a Population Variance\n\nA variance can provide important decision-making information.\nConsider the production process of filling containers with a liquid detergent product.\n\nThe mean filling weight is important, but so too is the variance of the filling weights.\nBy selecting a sample of containers, we can compute a sample variance for the amount of detergent placed in a container.\nIf the sample variance is excessive, overfilling and underfilling may be occurring even though the mean is correct."
   },
   {
     "objectID": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#inference-about-a-population-variance-2",
@@ -2320,8 +2320,8 @@
     "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#overview",
     "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#overview",
     "title": " MGMT 30500: Business Statistics ",
-    "section": "",
-    "text": "XXX\nXXX\nXXX\n\n\n\nXXX\nXXX\nXXX"
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nIntroducion to Experimental Design\nAnalysis of Variance (ANOVA)"
   },
   {
     "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#statistical-inference-1",
@@ -2335,7 +2335,7 @@
     "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#summary-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
-    "text": "Summary\n\nSome key takeaways from this session:\n\nXXX\n\nXXX\nXXX\n\nXXX\n\nXXX\nXXX"
+    "text": "Summary\n\nSome key takeaways from this session:\n\nExperimental Design: allow for control over variables, enabling the establishment of cause-and-effect relationships.\n\nObservational studies do not control variables, limiting conclusions about causality.\n\nANOVA: Is a statistical method used to test for differences in means across multiple groups.\n\nIt partitions the variance into components due to treatments and error, facilitating hypothesis testing.\n\nANOVA Assumptions and Decision Making:\n\nAssumptions include normal distribution, equal variances, and independence of observations.\nDecision rules are based on comparing the calculated F-statistic to a critical value or p-value to accept or reject the null hypothesis."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#summary-3",
@@ -2350,5 +2350,264 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Survey",
     "text": "Survey\n\n\nAttendance and Participation10 min"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design-1",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Experimental Design",
+    "text": "Experimental Design\n\n\nStatistical studies can be classified as being either experimental or observational.\nIn an experimental study, the levels of one or more factors are controlled so that data can be obtained about how the factors influence the response variables of interest.\n\nCause-and-effect relationships are easier to establish in experimental studies.\nAnalysis of variance (ANOVA) can be used to analyze the data obtained from experimental studies.\n\nIn an observational study, no attempt is made to control levels of the factors."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Experimental Design - Example: Chemitech Experiment",
+    "text": "Experimental Design - Example: Chemitech Experiment\n\nChemitech developed a new filtration system for municipal water supplies. There are different methods that can be used to assemble the system.\nChemitech has narrowed down to three methods: A, B, and C and wants to determine which assembly method can produce the greatest mean number of filtration systems per week."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment-1",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Experimental Design - Example: Chemitech Experiment",
+    "text": "Experimental Design - Example: Chemitech Experiment\n\nRandomization and Replications\nFor the purpose, the company randomly selected 15 workers and randomly divided them into 3 groups, and then randomly assigned one of the three treatments to each group 5 of the workers.\n\n\n\nFactor\nAssembly method\n\n\n\n\nTreatments/Levels/Values\nA, B, and C\n\n\nResponse\nNumber of units produced\n\n\nExperimental units\nEmployees"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment-2",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Experimental Design - Example: Chemitech Experiment",
+    "text": "Experimental Design - Example: Chemitech Experiment\n\nTerminology\n\nA factor is a variable that the experimenter has selected for investigation.\nA treatment is a level (value) of a factor.\nResponse or performance variable is a dependent/outcome variable affected by the factor.\nExperimental units are the objects of interest in the experiment.\nA completely randomized design is an experimental design in which the treatments are randomly assigned to the experimental units."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment-3",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Experimental Design - Example: Chemitech Experiment",
+    "text": "Experimental Design - Example: Chemitech Experiment\n\n\n\n\nObservation\nA\nB\nC\n\n\n\n\n1\n58\n58\n48\n\n\n2\n64\n69\n57\n\n\n3\n55\n71\n59\n\n\n4\n66\n64\n47\n\n\n5\n67\n68\n49\n\n\nSample mean \\(\\bar{x}_j\\)\n62\n66\n52\n\n\nSample variance \\(s_j^2\\)\n27.5\n26.5\n31.0\n\n\nSample standard deviation \\(s_j\\)\n5.244\n5.148\n5.568\n\n\n\n\n\nGrand sample mean \\(\\bar{x}\\) = 60"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment-4",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Experimental Design - Example: Chemitech Experiment",
+    "text": "Experimental Design - Example: Chemitech Experiment\n\n\n\nOne-way Analysis of Variance (ANOVA) can be used to test for the equality of means (mean responses) of two or more normal populations.\n\n\n\nThe hypotheses:\n\\(H_0: \\mu_1 = \\mu_2 = \\mu_3 = ... = \\mu_k\\)\n\\(H_a:\\) Not all population means are equal.\n\n where,\n\\((\\mu_1, \\mu_2, \\mu_3, ..., \\mu_k\\) are mean responses for the \\(k\\) populations.)\n\\((k = 3\\) for the motivating example.)"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment-5",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design---example-chemitech-experiment-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Experimental Design - Example: Chemitech Experiment",
+    "text": "Experimental Design - Example: Chemitech Experiment\n\n\nIf \\(H_0\\) is rejected, we cannot conclude that all population means are different.\n\n\n\nRejecting \\(H_0\\) means that at least two population means have different values, or not all means are equal."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-and-model-assumptions",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-and-model-assumptions",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA and Model Assumptions",
+    "text": "One-way ANOVA and Model Assumptions\n\nFor each population:\n\nThe response variable is normally distributed.\nThe mean of \\(i\\)-th population is \\(\\mu_i\\).\nThe variance of the response variable is the same for all of the populations; denoted \\(\\sigma^2\\) (unknown).\nThe observations must be independent."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-analysis-method",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-analysis-method",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Analysis Method",
+    "text": "One-way ANOVA: Analysis Method\n\n\n\nIf the variation of the sample means is large, then not all population means are equal."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-analysis-method-1",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-analysis-method-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Analysis Method",
+    "text": "One-way ANOVA: Analysis Method\n\nThere are two types of variation:\n\nBetween-treatments variation of sample means (\\(\\bar{x}_j\\)): Variation due to different treatments. (Explained variation)\nWithin-treatments variation of observations from their respective treatment means (Unexplained variation).\n\n\n\nThe F Test for \\(H_0\\) vs \\(H_a\\):\n\nIf Between-treatments variation is significantly larger than the Within-treatment variation, reject \\(H_0\\)."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-explained-between-treatments-variation",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-explained-between-treatments-variation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Explained Between-Treatments Variation",
+    "text": "One-way ANOVA: Explained Between-Treatments Variation\n\n\n\nThe variation in the sample means is measured by the mean square due to treatments and is denoted by MSTR.\n\n\\[\n\\text{MSTR} = \\frac{\\text{Sum of squares due to treatments (SSTR)}}{\\text{Degrees of freedom of SSTR}} = \\frac{\\sum_{j=1}^k n_j(\\bar{x}_j - \\bar{x})^2}{k - 1}\n\\]\n\\[\n= \\frac{5(62 - 60)^2 + 5(66 - 60)^2 + 5(52 - 60)^2}{3 - 1} = \\frac{520}{2} = 260\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-unexplained-within-treatments-variation",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-unexplained-within-treatments-variation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Unexplained Within-Treatments Variation",
+    "text": "One-way ANOVA: Unexplained Within-Treatments Variation\n\n\nThe variation of the sample observations within each sample is called the mean square error (MSE).\nA measure of sampling variation.\n\n\\[\n\\text{MSE} = \\frac{\\text{Sum of squares due to unexplained error (SSE)}}{\\text{Degrees of freedom of SSE}} = \\frac{\\sum_{j=1}^k (n_j - 1) s_j^2}{n_T - k}\n\\]\n\\[\n= \\frac{(5-1)(27.5) + (5-1)(26.5) + (5-1)(31)}{15-3} = \\frac{340}{12} = 28.33\n\\]\n\\((n_T = 15 \\text{ is the total sample size.})\\)"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-test-statistic-and-decision-rule",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-test-statistic-and-decision-rule",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Test Statistic and Decision Rule",
+    "text": "One-way ANOVA: Test Statistic and Decision Rule\n\n\nTest statistic:\n\nIf MSTR is large, we will reject \\(H_0\\); but we need to take the sampling variation (MSE) into account.\nF statistic: \\(F = \\frac{MSTR}{MSE}\\)\n\nDecision rule:\n\nMSE is always a good estimate of the common population variance \\(\\sigma^2\\).\nIf \\(H_0\\) is false (not all means are equal), MSTR overestimates \\(\\sigma^2\\) and is expected to be much larger than MSE.\nReject \\(H_0\\) if \\(F = \\frac{MSTR}{MSE}\\) is too large."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-the-f-test",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-the-f-test",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: The F Test",
+    "text": "One-way ANOVA: The F Test\n\n\nThe distribution of the test statistic:\n\n\\[\nF = \\frac{MSTR}{MSE}\n\\]\n\nIf the null hypothesis is true and the ANOVA assumptions are valid, the sampling distribution of the test statistic is an F distribution with \\(k-1\\) (numerator) and \\(n_T - k\\) (denominator) degrees of freedom.\n\n\n\nDecision Rule: Reject \\(H_0\\) if the observed \\(F &gt; F_{\\alpha, k-1, n_T-1}\\) (right-tail),\n\nwhere \\(F_{\\alpha, k-1, n_T-1} = \\text{F.INV}(1-\\alpha, k-1, n_T-1)\\)."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-the-f-test-1",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-the-f-test-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: The F Test",
+    "text": "One-way ANOVA: The F Test\n\n\n\n\n\n\n\n\n\n\n\n\nObserved F-ratio = 9.18\np-value = 1–F.DIST(9.18,2,12,TRUE) \\(\\approx\\) 0.004"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-decision-rules",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-decision-rules",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Decision Rules",
+    "text": "One-way ANOVA: Decision Rules\n\n\n\np-value approach: Reject \\(H_0\\) if \\(p\\)-value \\(\\leq \\alpha\\)\n\n\n\nCritical-value approach: Reject \\(H_0\\) if \\(F \\geq F_{\\alpha}\\)\n\nwhere the critical value \\(F_{\\alpha}\\) is based on an F distribution with \\(k-1\\) numerator d.f. and \\(n_T - k\\) denominator d.f.\n\nIn our example, \\(F_{0.05,1,12} = \\text{F.inv}(0.95,2,12) = 3.89\\), and \\(9.18 &gt; 3.89\\).\n\nConclusion: We have statistically significant evidence that at least one pair of the assembly methods produced different mean numbers of filtration systems per week. The significance level is 5%."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-2-of-3",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-2-of-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: ANOVA Table (2 of 3)",
+    "text": "One-way ANOVA: ANOVA Table (2 of 3)\n\nAssuming \\(H_0\\) is true, the entire data set is basically one sample from one population, the formula for computing the total sum of squares (SST) is:\n\n\\[\n\\text{SST} = \\sum_{j=1}^k \\sum_{i=1}^{n_j} (x_{ij} - \\bar{x})^2 = (n_T - 1) s_x^2 = 860\n\\]\n\\[\n= \\text{SSTR} + \\text{SSE} = 520 + 340\n\\]\n\nSST has \\(n_T - 1 = 15 - 1 = 14 (= 2 + 12)\\) degrees of freedom."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-3-of-3",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-3-of-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: ANOVA Table (3 of 3)",
+    "text": "One-way ANOVA: ANOVA Table (3 of 3)\n\nANOVA can be viewed as the process of partitioning the total sum of squares and the degrees of freedom into their corresponding sources: treatments and error.\nDividing the sum of squares by the appropriate degrees of freedom provides the variance estimates, the \\(F\\) value, and the \\(p\\)-value used to test the hypothesis of equal population means."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-chemitech-experiment-contd-anova-table",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-chemitech-experiment-contd-anova-table",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Chemitech Experiment (cont’d): ANOVA Table",
+    "text": "One-way ANOVA: Chemitech Experiment (cont’d): ANOVA Table\n\n\\(H_0: \\mu_1 = \\mu_2 = \\mu_3\\)\n\\(H_a:\\) Not all the means are equal\n\n\n\n\n\n\n\n\n\n\n\nSource of Variation\nSum of Squares\nDegrees of Freedom\nMean Square\n\\(F\\)\np-Value\n\n\n\n\nTreatments\n520\n2\n260.00\n9.18\n.004\n\n\nError\n340\n12\n28.33\n\n\n\n\nTotal\n860\n14"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-other-applications",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-other-applications",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Other Applications",
+    "text": "One-way ANOVA: Other Applications\n\n\nMean sales of companies using four (4) different advertising methods (spot TV, newspapers, flyers, magazines).\nMean quality levels of products from several vendors.\nYields of several processes (machines).\nMean completion times of different methods.\nMean waiting times of several lines in a bank.\nMean selling price of houses in different school districts.\nMean response time of a service request for several companies.\nMean ages between floor workers, middle managers, and executives.\nMean improvement or learning outcome measures between several training/teaching methods (in-person, online, hybrid, weekend program)."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#excels-anova-single-factor-tool",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#excels-anova-single-factor-tool",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Excel’s ANOVA: Single Factor Tool",
+    "text": "Excel’s ANOVA: Single Factor Tool\n\n\nStep 1: Open Assembly.xlsx, and, on Sheet 2, click the Data tab on the Ribbon\nStep 2: In the Analysis group, click Data Analysis\nStep 3: Choose Anova: Single Factor from the list of Analysis Tools\nStep 4: When the Anova: Single Factor dialog box appears: (see details on next slide)"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#excels-anova-single-factor-tool-1",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#excels-anova-single-factor-tool-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Excel’s ANOVA: Single Factor Tool",
+    "text": "Excel’s ANOVA: Single Factor Tool"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#excels-anova-single-factor-tool-2",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#excels-anova-single-factor-tool-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Excel’s ANOVA: Single Factor Tool",
+    "text": "Excel’s ANOVA: Single Factor Tool\nSummary and Output data"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-model-assumptions",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-model-assumptions",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Model Assumptions",
+    "text": "One-way ANOVA: Model Assumptions\n\nFor each population:\n\nThe response variable is normally distributed.\nThe mean of \\(i\\)-th population is \\(\\mu_i\\).\nThe variance of the response variable is the same for all of the populations; denoted \\(\\sigma^2\\) (unknown).\nThe observations must be independent."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-explained-between-treatments-variation-mstr",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-explained-between-treatments-variation-mstr",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Explained Between-Treatments Variation (MSTR)",
+    "text": "One-way ANOVA: Explained Between-Treatments Variation (MSTR)\n\n\n\nThe variation in the sample means is measured by the mean square due to treatments and is denoted by MSTR.\n\n\\[\n\\text{MSTR} = \\frac{\\text{Sum of squares due to treatments (SSTR)}}{\\text{Degrees of freedom of SSTR}} = \\frac{\\sum_{j=1}^k n_j(\\bar{x}_j - \\bar{x})^2}{k - 1}\n\\]\n\\[\n= \\frac{5(62 - 60)^2 + 5(66 - 60)^2 + 5(52 - 60)^2}{3 - 1} = \\frac{520}{2} = 260\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-unexplained-within-treatments-variation-mse",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-unexplained-within-treatments-variation-mse",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Unexplained Within-Treatments Variation (MSE)",
+    "text": "One-way ANOVA: Unexplained Within-Treatments Variation (MSE)\n\n\nThe variation of the sample observations within each sample is called the mean square error (MSE).\nA measure of sampling variation.\n\n\\[\n\\text{MSE} = \\frac{\\text{Sum of squares due to unexplained error (SSE)}}{\\text{Degrees of freedom of SSE}} = \\frac{\\sum_{j=1}^k (n_j - 1) s_j^2}{n_T - k}\n\\]\n\\[\n= \\frac{(5-1)(27.5) + (5-1)(26.5) + (5-1)(31)}{15-3} = \\frac{340}{12} = 28.33\n\\]\n\\((n_T = 15 \\text{ is the total sample size.})\\)"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: ANOVA Table",
+    "text": "One-way ANOVA: ANOVA Table\n\n\nANOVA can be viewed as the process of partitioning the total sum of squares and the degrees of freedom into their corresponding sources: treatments and error.\nDividing the sum of squares by the appropriate degrees of freedom provides the variance estimates, the \\(F\\) value, and the \\(p\\)-value used to test the hypothesis of equal population means."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-1",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: ANOVA Table",
+    "text": "One-way ANOVA: ANOVA Table\n\n\n\nAssuming \\(H_0\\) is true, the entire data set is basically one sample from one population, the formula for computing the total sum of squares (SST) is:\n\n\\[\n\\text{SST} = \\sum_{j=1}^k \\sum_{i=1}^{n_j} (x_{ij} - \\bar{x})^2 = (n_T - 1) s_x^2 = 860\n\\]\n\\[\n= \\text{SSTR} + \\text{SSE} = 520 + 340\n\\]\n\nSST has \\(n_T - 1 = 15 - 1 = 14 (= 2 + 12)\\) degrees of freedom."
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-chemitech-experiment-contd-anova-table-1",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-chemitech-experiment-contd-anova-table-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Chemitech Experiment (cont’d): ANOVA Table",
+    "text": "One-way ANOVA: Chemitech Experiment (cont’d): ANOVA Table\n\n\\(H_0: \\mu_1 = \\mu_2 = \\mu_3\\)\n\\(H_a:\\) Not all the means are equal\n\n\n\n\n\n\n\n\n\n\n\nSource of Variation\nSum of Squares\nDegrees of Freedom\nMean Square\n\\(F\\)\np-Value\n\n\n\n\nTreatments\nSSTR\n\\(df_1\\)\n\\(\\text{MSTR}=\\frac{\\text{SSTR}}{df_1}\\)\n\\(\\frac{MSTR}{MSE}\\)\n\\(1-\\text{F.DIST}(F, k-1, n_T-k, \\text{TRUE})\\)\n\n\nError\nSSE\n\\(df_2\\)\n\\(\\text{MSE}=\\frac{\\text{SSE}}{df_2}\\)\n\n\n\n\nTotal\n\\(SST=SSTR+SSE\\)\n\\(df_3=df_1+df_2\\)"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-chemitech-experiment-contd-anova-table-2",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-chemitech-experiment-contd-anova-table-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Chemitech Experiment (cont’d): ANOVA Table",
+    "text": "One-way ANOVA: Chemitech Experiment (cont’d): ANOVA Table\n\n\\(H_0: \\mu_1 = \\mu_2 = \\mu_3\\)\n\\(H_a:\\) Not all the means are equal\n\n\n\n\n\n\n\n\n\n\n\nSource of Variation\nSum of Squares\nDegrees of Freedom\nMean Square\n\\(F\\)\np-Value\n\n\n\n\nTreatments\n\\(\\sum_{j=1}^k n_j (\\bar{x}_j - \\bar{x})^2\\)\n\\(k - 1\\)\n\\(\\frac{\\text{SSTR}}{k - 1}\\)\n\\(\\frac{\\text{MS}_{\\text{Treatments}}}{\\text{MS}_{\\text{Error}}}\\)\n\\(1-\\text{F.DIST}(F, k-1, n_T-k, \\text{TRUE})\\)\n\n\nError\n\\(\\sum_{j=1}^k (n_j - 1) s_j^2\\)\n\\(n_T - k\\)\n\\(\\frac{\\text{SSE}}{n_T - k}\\)\n\n\n\n\nTotal\n\\(\\sum_{j=1}^k \\sum_{i=1}^{n_j} (x_{ij} - \\bar{x})^2\\)\n\\(n_T - 1\\)"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-chemitech-experiment-contd-anova-table-3",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-chemitech-experiment-contd-anova-table-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Chemitech Experiment (cont’d): ANOVA Table",
+    "text": "One-way ANOVA: Chemitech Experiment (cont’d): ANOVA Table\n\n\\(H_0: \\mu_1 = \\mu_2 = \\mu_3\\)\n\\(H_a:\\) Not all the means are equal\n\n\n\n\n\n\n\n\n\n\n\nSource of Variation\nSum of Squares\nDegrees of Freedom\nMean Square\n\\(F\\)\np-Value\n\n\n\n\nTreatments\n520\n2\n260.00\n9.18\n.004\n\n\nError\n340\n12\n28.33\n\n\n\n\nTotal\n860\n14"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-chemitech-experiment-contd-anova-table-4",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-chemitech-experiment-contd-anova-table-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: Chemitech Experiment (cont’d): ANOVA Table",
+    "text": "One-way ANOVA: Chemitech Experiment (cont’d): ANOVA Table\n\n\\(H_0: \\mu_1 = \\mu_2 = \\mu_3\\)\n\\(H_a:\\) Not all the means are equal\n\n\n\n\n\n\n\n\n\n\n\nSource of Variation\nSum of Squares (SS)\nDegrees of Freedom (df)\nMean Square (MS)\n\\(F\\)\np-Value\n\n\n\n\nTreatments\n\\(\\sum_{j=1}^k n_j (\\bar{x}_j - \\bar{x})^2\\)\n\\(k - 1\\)\n\\(\\frac{\\text{SSTR}}{k - 1}\\)\n\\(\\frac{\\text{MS}_{\\text{Treatments}}}{\\text{MS}_{\\text{Error}}}\\)\n\\(1 - \\text{F.DIST}(F, k-1, n_T-k, \\text{TRUE})\\)\n\n\nError\n\\(\\sum_{j=1}^k (n_j - 1) s_j^2\\)\n\\(n_T - k\\)\n\\(\\frac{\\text{SSE}}{n_T - k}\\)\n\n\n\n\nTotal\n\\(\\sum_{j=1}^k \\sum_{i=1}^{n_j} (x_{ij} - \\bar{x})^2\\)\n\\(n_T - 1\\)"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-2",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: ANOVA Table",
+    "text": "One-way ANOVA: ANOVA Table\n\n\\(H_0: \\mu_1 = \\mu_2 = \\mu_3\\)\n\\(H_a:\\) Not all the means are equal\n\n\n\n\n\n\n\n\n\n\n\n\n\nSource of Variation\nSum of Squares\nDegrees of Freedom\nMean Square\n\\(F\\)\np-Value\n\n\n\n\nTreatments\n\\(SSTR\\)\n\\(df_1\\)\n\\(\\text{MSTR}=\\frac{\\text{SSTR}}{df_1}\\)\n\\(\\frac{MSTR}{MSE}\\)\n\\(1-\\text{F.DIST}(F, k-1, n_T-k, \\text{TRUE})\\)\n\n\nError\n\\(SSE\\)\n\\(df_2\\)\n\\(\\text{MSE}=\\frac{\\text{SSE}}{df_2}\\)\n\n\n\n\nTotal\n\\(SST=SSTR+SSE\\)\n\\(df_3=df_1+df_2\\)"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-3",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: ANOVA Table",
+    "text": "One-way ANOVA: ANOVA Table\n\n\\(H_0: \\mu_1 = \\mu_2 = \\mu_3\\)\n\\(H_a:\\) Not all the means are equal\n\n\n\n\n\n\n\n\n\n\n\n\n\nSource of Variation\nSum of Squares\nDegrees of Freedom\nMean Square\n\\(F\\)\np-Value\n\n\n\n\nTreatments\n\\(\\sum_{j=1}^k n_j (\\bar{x}_j - \\bar{x})^2\\)\n\\(k - 1\\)\n\\(\\frac{\\text{SSTR}}{k - 1}\\)\n\\(\\frac{\\text{MSTR}}{\\text{MSE}}\\)\n\\(1-\\text{F.DIST}(F, k-1, n_T-k, \\text{TRUE})\\)\n\n\nError\n\\(\\sum_{j=1}^k (n_j - 1) s_j^2\\)\n\\(n_T - k\\)\n\\(\\frac{\\text{SSE}}{n_T - k}\\)\n\n\n\n\nTotal\n\\(\\sum_{j=1}^k \\sum_{i=1}^{n_j} (x_{ij} - \\bar{x})^2\\)\n\\(n_T - 1\\)"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-4",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "One-way ANOVA: ANOVA Table",
+    "text": "One-way ANOVA: ANOVA Table\n\n\\(H_0: \\mu_1 = \\mu_2 = \\mu_3\\)\n\\(H_a:\\) Not all the means are equal\n\n\n\n\n\n\n\n\n\n\n\n\nSource of Variation\nSum of Squares\nDegrees of Freedom\nMean Square\n\\(F\\)\np-Value\n\n\n\n\nTreatments\n520\n2\n260.00\n9.18\n.004\n\n\nError\n340\n12\n28.33\n\n\n\n\nTotal\n860\n14"
+  },
+  {
+    "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#key-takeaways",
+    "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#key-takeaways",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n\nExperimental Design: allow for control over variables, enabling the establishment of cause-and-effect relationships.\n\nObservational studies do not control variables, limiting conclusions about causality.\n\nANOVA: Is a statistical method used to test for differences in means across multiple groups.\n\nIt partitions the variance into components due to treatments and error, facilitating hypothesis testing.\n\nANOVA Assumptions and Decision Making:\n\nAssumptions include normal distribution, equal variances, and independence of observations.\nDecision rules are based on comparing the calculated F-statistic to a critical value or p-value to accept or reject the null hypothesis."
+  },
+  {
+    "objectID": "lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html#building-a-null-hypothesis",
+    "href": "lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html#building-a-null-hypothesis",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Building a Null Hypothesis",
+    "text": "Building a Null Hypothesis\n\nFormulate the null hypothesis by stating that there is no effect, no difference, or that the effect is equal to a specific value. The null hypothesis is often a statement of equality (e.g., no difference or no association).\nKey Phrases for Null Hypothesis:\n\n“There is no difference…”\n“There is no effect…”\n“The population mean is equal to…”\n“The proportion is equal to…”\n\nExamples:\n\nSingle-Sample Test (Mean):\n\\(H_0: \\mu = \\mu_0\\)\n(The mean blood pressure reduction with the new drug is equal to a standard value.)\nProportion Test:\n\\(H_0: p = p_0\\)\n(The proportion of patients responding to the treatment is equal to 50%.)"
   }
 ]

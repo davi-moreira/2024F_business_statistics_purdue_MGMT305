@@ -99,12 +99,9 @@ format:
 -   We will never know which hypothesis is true, unless we sample the entire population.
 
 
-# Inferences about Population Variances {background-color="#cfb991"}
-
-
 # Inference about a Population Variance {background-color="#cfb991"}
 
-## Inferences about a Population Variance
+## Inference about a Population Variance
 
 - A variance can provide important decision-making information.
 

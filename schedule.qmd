@@ -35,7 +35,7 @@ editor: visual
 | Aug 30    | Hyp. Testing Rvw. (cont’d)              | 11.1, 11.2             |[slides](/lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html){target="_blank"}  |[data](/lecture_slides/11_chapter_inference_pop_variance/data.zip){target="_blank"}  |- [Blog: There is Still Only One Test](There is still only one test){target="_blank"}<br> - [Nature: Statisticians issue warning over misuse of P-values](https://www.nature.com/articles/nature.2016.19503){target="_blank"}<br> - [ASA: Statement on Statistical Significance and p-values](https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf)  |
 | **Sep 1**  | **Homework 1 due date**                     | **Basic Stat. & Prob. Rvw.**                          |.  |.  |.  |
 | **Sep 2**  | **Labor Day**                               | **No class**                                          |.  |.  |.  |
-| **Sep 3**  | **Quiz 1 (Diagnostic)**                     | **Review Material (Chs. 1 – 12)**                     |.  |.  |.  |
+| **Sep 3**  | **Quiz 1**                     | **Review Material (Chs. 1 – 12)**                     |.  |.  |.  |
 | **Sep 4**  | **No class**                                | **No class**                                          |.  |.  |.  |
 | Sep 6  | Analysis of Variance                    | 13.1, 13.2                                         |.  |.  |.  |
 | **Sep 8**  | **Homework 2 due date**                     | **Int. Est. & Hyp. Testing Rvw.**                     |.  |.  |.  |

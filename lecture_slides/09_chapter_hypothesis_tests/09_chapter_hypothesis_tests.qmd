@@ -76,8 +76,8 @@ format:
 -   Critical values
 -   p-values
 -   Which side $(H_a)$ depends mostly on data
--   Strength of sample evidence against the hypothesized value (via p-value)
 -   Test a specific hypothesized parameter value
+-   Strength of sample evidence against the hypothesized value of the null hypothesis
 :::
 :::
 :::
@@ -118,6 +118,38 @@ In general, a hypothesis test about the value of a population mean $\mu$ takes o
 | One-tailed (upper-tail) | $H_0$: $\mu \leq \mu_0$          | $H_A$: $\mu > \mu_0$               |
 | Two-tailed              | $H_0$: $\mu = \mu_0$             | $H_A$: $\mu \neq \mu_0$            |
 
+
+## Building a Null Hypothesis
+
+- Formulate the null hypothesis by stating that there is no effect, no difference, or that the effect is equal to a specific value. The null hypothesis is often a statement of equality (e.g., no difference or no association).
+
+
+- **Key Phrases for Null Hypothesis:**
+
+    - "There is no difference..."
+    - "There is no effect..."
+    - "The population mean is equal to..."
+    - "The proportion is equal to..."
+
+- **Examples:**
+
+    - **Single-Sample Test (Mean):**  
+      $H_0: \mu = \mu_0$  
+      (The mean blood pressure reduction with the new drug is equal to a standard value.)
+
+    - **Proportion Test:**  
+      $H_0: p = p_0$  
+      (The proportion of patients responding to the treatment is equal to 50%.)
+
+<!---
+    - **Two-Sample Test (Comparison of Means):**  
+      $H_0: \mu_1 = \mu_2$  
+      (There is no difference in mean blood pressure reduction between the two drugs.)
+
+    - **Correlation Test:**  
+      $H_0: \rho = 0$  
+      (There is no correlation between hours studied and test scores.)
+--->
 
 # Type I and Type II Errors {background-color="#cfb991"}
 
@@ -398,6 +430,9 @@ H_0 &: p \geq p_0 &\text{Reject } H_0 \text{ if } z \leq -z_{\alpha} \\
 H_0 &: p = p_0 &\text{Reject } H_0 \text{ if } z \leq -z_{\alpha/2} \text{ or } z \geq z_{\alpha/2}
 \end{aligned}
 $$
+
+:::
+
 
 ## Tests About a Population Proportion - Example
 
