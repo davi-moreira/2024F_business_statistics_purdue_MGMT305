@@ -274,7 +274,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Date\nTopic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\nAug 19\nIntro. & Basic Stat. & Prob. Rvw.\nSyl., 1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years- IMS: Introduction to data\n\n\nAug 21\nBasic Stat. & Prob. Rvw. (cont’d)\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics: Observations, Variable, and Data Matrices- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data-IMS: Exploratory data analysis\n\n\nAug 23\nBasic Stat. & Prob. Rvw. (cont’d)\n6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\nAug 26\nInt. Est. Rvw.\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates and Sampling Variability - Video: Confidence Intervals- Video: Inferences for Proportions- Video: t-distribution- Video: Inference for one mean- IMS: Inference with mathematical models- IMS: Confidence intervals with bootstrapping - IMS: Inference for a single proportion -IMS: Inference for a single mean\n\n\nAug 28\nHyp. Testing Rvw.\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals - IMS: Hypothesis testing with randomization- MD: Hypothesis Testing\n\n\nAug 30\nHyp. Testing Rvw. (cont’d)\n11.1, 11.2\nslides\ndata\n- Blog: There is Still Only One Test - Nature: Statisticians issue warning over misuse of P-values - ASA: Statement on Statistical Significance and p-values\n\n\nSep 1\nHomework 1 due date\nBasic Stat. & Prob. Rvw.\n.\n.\n.\n\n\nSep 2\nLabor Day\nNo class\n.\n.\n.\n\n\nSep 3\nQuiz 1\nReview Material (Chs. 1 – 12)\n.\n.\n.\n\n\nSep 4\nNo class\nNo class\n.\n.\n.\n\n\nSep 6\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction - Video: Conditions for ANOVA - Video: Multiple comparisons -IMS: Inference for comparing many means\n\n\nSep 8\nHomework 2 due date\nInt. Est. & Hyp. Testing Rvw.\n.\n.\n.\n\n\nSep 9\nSimple Regression\n14.1\n.\n.\n.\n\n\nSep 11\nSimple Regression (cont’d)\n14.2, 14.3 (Correlation Supp.)\n.\n.\n.\n\n\nSep 13\nSimple Regression (cont’d)\n14.4, 14.5\n.\n.\n.\n\n\nSep 16\nSimple Regression (cont’d)\n14.6, 14.7 (w/Extrapolation & Predictions Supplements)\n.\n.\n.\n\n\nSep 18\nSimple Regression (cont’d)\n14.8, 14.9 (Normality Test Supp)\n.\n.\n.\n\n\nSep 20\nSimple Regression (cont’d)\nApplications\n.\n.\n.\n\n\nSep 22\nHomework 3 due date\nSimple Regression\n.\n.\n.\n\n\nSep 23\nMidterm 1 Review\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\n30\nMidterm 1 (6:30 pm – 7:30 pm, UC 114)\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\nSep 27\nMultiple Regression\n15.1, 15.2\n.\n.\n.\n\n\nSep 30\nMultiple Regression (cont’d)\n15.3, 15.4\n.\n.\n.\n\n\nOct 2\nMultiple Regression (cont’d)\n15.5, 15.6\n.\n.\n.\n\n\nOct 4\nMultiple Regression (cont’d)\n15.7\n.\n.\n.\n\n\nOct 6\nHomework 4 due date\nMultiple Regression Pt. 1\n.\n.\n.\n\n\nOct 7-8\nOct Break\nNo Class\n.\n.\n.\n\n\nOct 9\nMultiple Regression (cont’d)\n15.8 & Applications\n.\n.\n.\n\n\nOct 11\nMultiple Regression (cont’d)\nMore Applications\n.\n.\n.\n\n\nOct 14\nQuiz 2\nMultiple Regression\n.\n.\n.\n\n\nOct 16\nModel Building\n16.1 (w/Interaction Supplement)\n.\n.\n.\n\n\nOct 18\nModel Building (cont’d)\n16.2\n.\n.\n.\n\n\nOct 20\nHomework 5 due date\nMultiple Regression Pt. 2\n.\n.\n.\n\n\nOct 21\nModel Building (cont’d)\n16.3, 16.4 (w/Model Selection Supplement)\n.\n.\n.\n\n\nOct 23\nLogistic Regression\nSupplement\n.\n.\n.\n\n\nOct 25\nLogistic Regression (cont’d)\nSupplement XXX Chap 18? XXX\n.\n.\n.\n\n\nOct 27\nHomework 6 due date\nLogistic Regression\n.\n.\n.\n\n\nOct 28\nMidterm 2 Review\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\n31\nMidterm 2 (6:30 pm – 7:30 pm, UC 114)\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nNov 1\nTime Series\n17.1, 17.2\n.\n.\n.\n\n\nNov 4\nTime Series (cont’d)\n17.3, 17.4\n.\n.\n.\n\n\nNov 6\nTime Series (cont’d)\n17.5, 17.6\n.\n.\n.\n\n\nNov 8\nTime Series (cont’d)\nLag Variables Supplement & Applications\n.\n.\n.\n\n\nNov 10\nHomework 7 due date\nTime Series\n.\n.\n.\n\n\nNov 11\nNo class\nNo class\n.\n.\n.\n\n\nNov 12\nQuiz 3\nTime Series\n.\n.\n.\n\n\nNov 13\nDecision Analysis\n19.1, 19.2\n.\n.\n.\n\n\nNov 15\nDecision Analysis (cont’d)\n19.3\n.\n.\n.\n\n\nNov 18\nQuality Control\n20.1, 20.2\n.\n.\n.\n\n\nNov 20\nQuality Control (cont’d)\n20.3, 20.4\n.\n.\n.\n\n\nNov 22\nQuality Control (cont’d)\nApplications\n.\n.\n.\n\n\nNov 27-30\nThanksgiving Break\nNo Class\n.\n.\n.\n\n\nDec 1\nHomework 8 due date\nDecision Analysis and Quality Control\n.\n.\n.\n\n\nDec 2\nFinal Exam Review I\nCumulative\n.\n.\n.\n\n\nDec 4\nFinal Exam Review II\nCumulative\n.\n.\n.\n\n\nDec 6\nFinal Exam Preparation\nNo Class\n.\n.\n.\n\n\nTBD\nFinal Exam\nCumulative\n.\n.\n.\n\n\n\n\n*Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
+    "text": "Date\nTopic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\nAug 19\nIntro. & Basic Stat. & Prob. Rvw.\nSyl., 1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years- IMS: Introduction to data\n\n\nAug 21\nBasic Stat. & Prob. Rvw. (cont’d)\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics: Observations, Variable, and Data Matrices- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data-IMS: Exploratory data analysis\n\n\nAug 23\nBasic Stat. & Prob. Rvw. (cont’d)\n6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\nAug 26\nInt. Est. Rvw.\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates and Sampling Variability - Video: Confidence Intervals- Video: Inferences for Proportions- Video: t-distribution- Video: Inference for one mean- IMS: Inference with mathematical models- IMS: Confidence intervals with bootstrapping - IMS: Inference for a single proportion -IMS: Inference for a single mean\n\n\nAug 28\nHyp. Testing Rvw.\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals - IMS: Hypothesis testing with randomization- MD: Hypothesis Testing\n\n\nAug 30\nHyp. Testing Rvw. (cont’d)\n11.1, 11.2\nslides\ndata\n- Blog: There is Still Only One Test - Nature: Statisticians issue warning over misuse of P-values - ASA: Statement on Statistical Significance and p-values\n\n\nSep 1\nHomework 1 due date\nBasic Stat. & Prob. Rvw.\n.\n.\n.\n\n\nSep 2\nLabor Day\nNo class\n.\n.\n.\n\n\nSep 3\nQuiz 1\nReview Material (Chs. 1 – 12)\n.\n.\n.\n\n\nSep 4\nNo class\nNo class\n.\n.\n.\n\n\nSep 6\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction - Video: Conditions for ANOVA - Video: Multiple comparisons -IMS: Inference for comparing many means\n\n\nSep 8\nHomework 2 due date\nInt. Est. & Hyp. Testing Rvw.\n.\n.\n.\n\n\nSep 9\nSimple Regression\n14.1\nslides\ndata\n- Video: Line Fitting, Residuals, and Correlation - Video: Fitting a Line with Least Squares Regression - Video: Least Squares Regression - Video: Types of Outliers in Linear Regression - Video: Inference for Linear Regression -IMS: Linear regression with a single predictor\n\n\nSep 11\nSimple Regression (cont’d)\n14.2, 14.3\nslides\n.\n.\n\n\nSep 13\nSimple Regression (cont’d)\n14.4, 14.5\nslides\n.\n.\n\n\nSep 16\nSimple Regression (cont’d)\n14.6, 14.7\nslides\n.\n.\n\n\nSep 18\nSimple Regression (cont’d)\n14.8, 14.9\nslides\n.\n.\n\n\nSep 20\nSimple Regression (cont’d)\nApplications\nslides\n.\n.\n\n\nSep 22\nHomework 3 due date\nSimple Regression\n\n\n\n\n\n.\n.\n.\n\n\n\n\n\nSep 23\nMultiple Regression\n15.1, 15.2\n.\n.\n.\n\n\nSep 27\nMultiple Regression (cont’d)\n15.3, 15.4\n.\n.\n.\n\n\nSep 30\nMidterm 1 Review\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\n30\nMidterm 1 (6:30 pm – 7:30 pm, UC 114)\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\nOct 2\nMultiple Regression (cont’d)\n15.5, 15.6\n.\n.\n.\n\n\nOct 4\nMultiple Regression (cont’d)\n15.7\n.\n.\n.\n\n\nOct 6\nHomework 4 due date\nMultiple Regression Pt. 1\n.\n.\n.\n\n\nOct 7-8\nOct Break\nNo Class\n.\n.\n.\n\n\nOct 9\nMultiple Regression (cont’d)\n15.8 & Applications\n.\n.\n.\n\n\nOct 11\nMultiple Regression (cont’d)\nMore Applications\n.\n.\n.\n\n\nOct 14\nQuiz 2\nMultiple Regression\n.\n.\n.\n\n\nOct 16\nModel Building\n16.1 (w/Interaction Supplement)\n.\n.\n.\n\n\nOct 18\nModel Building (cont’d)\n16.2\n.\n.\n.\n\n\nOct 20\nHomework 5 due date\nMultiple Regression Pt. 2\n.\n.\n.\n\n\nOct 21\nModel Building (cont’d)\n16.3, 16.4 (w/Model Selection Supplement)\n.\n.\n.\n\n\nOct 23\nLogistic Regression\nSupplement\n.\n.\n.\n\n\nOct 25\nLogistic Regression (cont’d)\nSupplement XXX Chap 18? XXX\n.\n.\n.\n\n\nOct 27\nHomework 6 due date\nLogistic Regression\n.\n.\n.\n\n\nOct 28\nMidterm 2 Review\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\n31\nMidterm 2 (6:30 pm – 7:30 pm, UC 114)\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nNov 1\nTime Series\n17.1, 17.2\n.\n.\n.\n\n\nNov 4\nTime Series (cont’d)\n17.3, 17.4\n.\n.\n.\n\n\nNov 6\nTime Series (cont’d)\n17.5, 17.6\n.\n.\n.\n\n\nNov 8\nTime Series (cont’d)\nLag Variables Supplement & Applications\n.\n.\n.\n\n\nNov 10\nHomework 7 due date\nTime Series\n.\n.\n.\n\n\nNov 11\nNo class\nNo class\n.\n.\n.\n\n\nNov 12\nQuiz 3\nTime Series\n.\n.\n.\n\n\nNov 13\nDecision Analysis\n19.1, 19.2\n.\n.\n.\n\n\nNov 15\nDecision Analysis (cont’d)\n19.3\n.\n.\n.\n\n\nNov 18\nQuality Control\n20.1, 20.2\n.\n.\n.\n\n\nNov 20\nQuality Control (cont’d)\n20.3, 20.4\n.\n.\n.\n\n\nNov 22\nQuality Control (cont’d)\nApplications\n.\n.\n.\n\n\nNov 27-30\nThanksgiving Break\nNo Class\n.\n.\n.\n\n\nDec 1\nHomework 8 due date\nDecision Analysis and Quality Control\n.\n.\n.\n\n\nDec 2\nFinal Exam Review I\nCumulative\n.\n.\n.\n\n\nDec 4\nFinal Exam Review II\nCumulative\n.\n.\n.\n\n\nDec 6\nFinal Exam Preparation\nNo Class\n.\n.\n.\n\n\nTBD\nFinal Exam\nCumulative\n.\n.\n.\n\n\n\n\n*Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
     "crumbs": [
       "Schedule and Material"
     ]
@@ -305,7 +305,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#instructors-passions-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Instructor’s Passions",
-    "text": "Instructor’s Passions\n\n\n\n\n\n\n\n\n\n\nNYT - How John Travolta Became the Star of Carnival-Video."
+    "text": "Instructor’s Passions\n\n\nNYT - How John Travolta Became the Star of Carnival-Video."
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#students",
@@ -360,8 +360,8 @@
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#overview",
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#overview",
     "title": " MGMT 30500: Business Statistics ",
-    "section": "",
-    "text": "Introductions\nCourse Overview and Logistics\nMotivation\nCourse Objectives\n\nUnderstand basic statistical concepts\nApply statistical methods to business problems\n\n\n\n\nKey Topics\n\nDescriptive Statistics\nInferential Statistics\nExcel4stats"
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nIntroductions\nCourse Overview and Logistics\nMotivation\nCourse Objectives\n\nUnderstand basic statistical concepts\nApply statistical methods to business problems\n\n\n\n\nKey Topics\n\nDescriptive Statistics\nInferential Statistics\nExcel4stats"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#section-1",
@@ -417,7 +417,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#data-sources-and-scales-of-measurement",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Data Sources and Scales of Measurement",
-    "text": "Data Sources and Scales of Measurement\n\n\n\n\n\n\n\n\n\n\nElements are the entities on which data are collected.\nA variable is a characteristic of interest for the elements.\nThe set of measurements obtained for a particular element is called an observation.\nA data set with \\(n\\) elements contains \\(n\\) observations.\nThe total number of data values in a complete data set is the number of elements multiplied by the number of variables."
+    "text": "Data Sources and Scales of Measurement\n\n\nElements are the entities on which data are collected.\nA variable is a characteristic of interest for the elements.\nThe set of measurements obtained for a particular element is called an observation.\nA data set with \\(n\\) elements contains \\(n\\) observations.\nThe total number of data values in a complete data set is the number of elements multiplied by the number of variables."
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#descriptive-statistics",
@@ -515,14 +515,14 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summarizing and Presenting Data",
-    "text": "Summarizing and Presenting Data\n\n\n\n\n\n\n\n\n\n\n\n\nJune 9th Apple CEO Steve Jobs - Post"
+    "text": "Summarizing and Presenting Data\n\n\n\n\nJune 9th Apple CEO Steve Jobs - Post"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data-1",
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summarizing and Presenting Data",
-    "text": "Summarizing and Presenting Data\n\n\n\n\n\n\n\n\n\n\n\nProblems with pie charts - Post"
+    "text": "Summarizing and Presenting Data\n\n\n\nProblems with pie charts - Post"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data-2",
@@ -613,7 +613,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#graphical-summary-bar-chart-or-histogram---example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Graphical Summary: Bar Chart or Histogram - Example",
-    "text": "Graphical Summary: Bar Chart or Histogram - Example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhudson_auto_repair.xlsx\n\n\nFile -&gt; Options -&gt; Add-ins -&gt; Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) -&gt; Go -&gt; Data -&gt; Data Analysis (to conduct analyses)"
+    "text": "Graphical Summary: Bar Chart or Histogram - Example\n\n\n\n\n\n\nhudson_auto_repair.xlsx\n\n\nFile -&gt; Options -&gt; Add-ins -&gt; Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) -&gt; Go -&gt; Data -&gt; Data Analysis (to conduct analyses)"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#graphical-summary-bar-chart-or-histogram---example-1",
@@ -668,8 +668,8 @@
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#overview",
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#overview",
     "title": " MGMT 30500: Business Statistics ",
-    "section": "",
-    "text": "Descriptive Statistics\nMeasures of Central Location and Variability\nDistribution Shape\n\nSkewness\nSymmetry\n\nRelative Location and z-Scores\n\nCalculation and Interpretation\nExamples\n\nEmpirical Rule\n\n68-95-99.7 Rule\nDetecting Outliers\n\n\n\n\nFive-Number Summaries and Boxplots\nMeasures of Association Between Two Variables\n\nCovariance\nCorrelation"
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nDescriptive Statistics\nMeasures of Central Location and Variability\nDistribution Shape\n\nSkewness\nSymmetry\n\nRelative Location and z-Scores\n\nCalculation and Interpretation\nExamples\n\nEmpirical Rule\n\n68-95-99.7 Rule\nDetecting Outliers\n\n\n\n\nFive-Number Summaries and Boxplots\nMeasures of Association Between Two Variables\n\nCovariance\nCorrelation"
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#central-location",
@@ -816,7 +816,7 @@
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#boxplot-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Boxplot",
-    "text": "Boxplot\nExample: monthly_starting_salary.xlsx\n\n\n\n\n\n\n\n\n\n\n\n\nA box is drawn with its ends located at the first and third quartiles.\nA vertical line is drawn in the box at the location of the median (second quartile)."
+    "text": "Boxplot\nExample: monthly_starting_salary.xlsx\n\n\n\n\nA box is drawn with its ends located at the first and third quartiles.\nA vertical line is drawn in the box at the location of the median (second quartile)."
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#boxplot-2",
@@ -830,7 +830,7 @@
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#boxplot-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Boxplot",
-    "text": "Boxplot\n\nExample: monthly_starting_salary.xlsx\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe lower limit is located 1.5(IQR) below \\(Q_1\\).\n\nLower Limit: \\(Q_1 - 1.5(\\text{IQR}) = 5,857.5 - 1.5(167.5) = 5,606.25\\)\n\nThe upper limit is located 1.5(IQR) above \\(Q_3\\).\n\nUpper Limit: \\(Q_3 + 1.5(\\text{IQR}) = 6,025 + 1.5(167.5) = 6,276.25\\)\n\nThere is one outlier: 6,325."
+    "text": "Boxplot\n\nExample: monthly_starting_salary.xlsx\n\n\n\n\n\n\nThe lower limit is located 1.5(IQR) below \\(Q_1\\).\n\nLower Limit: \\(Q_1 - 1.5(\\text{IQR}) = 5,857.5 - 1.5(167.5) = 5,606.25\\)\n\nThe upper limit is located 1.5(IQR) above \\(Q_3\\).\n\nUpper Limit: \\(Q_3 + 1.5(\\text{IQR}) = 6,025 + 1.5(167.5) = 6,276.25\\)\n\nThere is one outlier: 6,325."
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#boxplot-4",
@@ -865,7 +865,7 @@
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#covariance",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Covariance",
-    "text": "Covariance\n\n\n\n\n\n\n\n\n\n\n\n\nThe covariance is a measure of the linear association between two variables.\nPositive values indicate a positive relationship.\nNegative values indicate a negative relationship."
+    "text": "Covariance\n\n\n\n\nThe covariance is a measure of the linear association between two variables.\nPositive values indicate a positive relationship.\nNegative values indicate a negative relationship."
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#covariance-1",
@@ -879,14 +879,14 @@
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#correlation-coefficient",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Correlation Coefficient",
-    "text": "Correlation Coefficient\n\n\n\n\n\n\n\n\n\n\n\n\nCorrelation is a unit-free measure of linear association and not necessarily causation."
+    "text": "Correlation Coefficient\n\n\n\n\nCorrelation is a unit-free measure of linear association and not necessarily causation."
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#correlation-coefficient-1",
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#correlation-coefficient-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Correlation Coefficient",
-    "text": "Correlation Coefficient\n\n\n\n\n\n\n\n\n\n\n\nSpurious Correlations!\n\n\n\nJust because two variables are highly correlated, it does not mean that one variable is the cause of the other."
+    "text": "Correlation Coefficient\n\n\n\nSpurious Correlations!\n\n\n\nJust because two variables are highly correlated, it does not mean that one variable is the cause of the other."
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#covariance-2",
@@ -977,7 +977,7 @@
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#correlation-coefficient-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Correlation Coefficient",
-    "text": "Correlation Coefficient\n\n\n\n\n\n\n\n\n\n\nRules of thumb:\n\n( 0.0 &lt; |r| &lt; 0.3 ) — weak correlation\n( 0.3 &lt; |r| &lt; 0.7 ) — moderate correlation\n( 0.7 &lt; |r| &lt; 1.0 ) — strong correlation"
+    "text": "Correlation Coefficient\n\n\nRules of thumb:\n\n( 0.0 &lt; |r| &lt; 0.3 ) — weak correlation\n( 0.3 &lt; |r| &lt; 0.7 ) — moderate correlation\n( 0.7 &lt; |r| &lt; 1.0 ) — strong correlation"
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#covariance-and-correlation-coefficient",
@@ -991,7 +991,7 @@
     "href": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#correlation-coefficient-5",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Correlation Coefficient",
-    "text": "Correlation Coefficient\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe correlation reflects the strength and direction of a linear relationship (top row)\nThe correlation does not reflect the slope of that relationship (middle)\nNor many aspects of nonlinear relationships (bottom).\nN.B.: the figure in the center has a slope of 0 but in that case the correlation coefficient is undefined because the variance of Y is zero.\n\n\nWiki"
+    "text": "Correlation Coefficient\n\n\n\n\n\n\n\nThe correlation reflects the strength and direction of a linear relationship (top row)\nThe correlation does not reflect the slope of that relationship (middle)\nNor many aspects of nonlinear relationships (bottom).\nN.B.: the figure in the center has a slope of 0 but in that case the correlation coefficient is undefined because the variance of Y is zero.\n\n\nWiki"
   },
   {
     "objectID": "lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html#correlation-coefficient-6",
@@ -1004,8 +1004,8 @@
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#overview",
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#overview",
     "title": " MGMT 30500: Business Statistics ",
-    "section": "",
-    "text": "Continuous Probability Distributions\n\nDefinition\nArea as a Measure of Probability\n\nNormal Probability Distribution\n\nCharacteristics\nApplications\n\n\n\n\nStandard Normal Probability Distribution\n\nStandardization\nExcel Functions\n\n\\(t\\)-distribution\n\nUse and comparison\nExcel Functions"
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nContinuous Probability Distributions\n\nDefinition\nArea as a Measure of Probability\n\nNormal Probability Distribution\n\nCharacteristics\nApplications\n\n\n\n\nStandard Normal Probability Distribution\n\nStandardization\nExcel Functions\n\n\\(t\\)-distribution\n\nUse and comparison\nExcel Functions"
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#continuous-probability-distributions",
@@ -1047,14 +1047,14 @@
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#normal-probability-distribution-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Normal Probability Distribution",
-    "text": "Normal Probability Distribution\n\n\n\n\n\n\n\n\n\n\nCharacteristics\n\nThe entire family of normal probability distributions is defined by its mean $$and its standard deviation \\(\\sigma\\). Denoted by \\(N(\\mu, \\sigma)\\).\nThe highest point on the normal curve is at the mean, which is also the median and mode.\nThe mean can be any numerical value: negative, zero, or positive. The mean determines the location of the distribution."
+    "text": "Normal Probability Distribution\n\n\nCharacteristics\n\nThe entire family of normal probability distributions is defined by its mean $$and its standard deviation \\(\\sigma\\). Denoted by \\(N(\\mu, \\sigma)\\).\nThe highest point on the normal curve is at the mean, which is also the median and mode.\nThe mean can be any numerical value: negative, zero, or positive. The mean determines the location of the distribution."
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#normal-probability-distribution-4",
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#normal-probability-distribution-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Normal Probability Distribution",
-    "text": "Normal Probability Distribution\n\n\n\n\n\n\n\n\n\n\nCharacteristics\n\nThe standard deviation determines the width of the curve: larger values result in wider, flatter curves.\nProbabilities for the normal random variable are given by areas under the curve. The total area under the curve is 1 (.5 to the left of the mean and .5 to the right)."
+    "text": "Normal Probability Distribution\n\n\nCharacteristics\n\nThe standard deviation determines the width of the curve: larger values result in wider, flatter curves.\nProbabilities for the normal random variable are given by areas under the curve. The total area under the curve is 1 (.5 to the left of the mean and .5 to the right)."
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#t-probability-distribution-1",
@@ -1096,14 +1096,14 @@
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#normal-probability-distribution-5",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Normal Probability Distribution",
-    "text": "Normal Probability Distribution\n\n\n\n\n\n\n\n\n\n\nCharacteristics\n\nEmpirical Rule"
+    "text": "Normal Probability Distribution\n\n\nCharacteristics\n\nEmpirical Rule"
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#standard-normal-probability-distribution-1",
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#standard-normal-probability-distribution-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Standard Normal Probability Distribution",
-    "text": "Standard Normal Probability Distribution\n\n\n\n\n\n\n\n\n\n\nCharacteristics\n\nA random variable having a normal distribution with a mean of 0 and a standard deviation of 1 is said to have a standard normal probability distribution.\nAlso called a z-distribution; Denoted by \\(Z\\) or \\(N(0,1)\\)."
+    "text": "Standard Normal Probability Distribution\n\n\nCharacteristics\n\nA random variable having a normal distribution with a mean of 0 and a standard deviation of 1 is said to have a standard normal probability distribution.\nAlso called a z-distribution; Denoted by \\(Z\\) or \\(N(0,1)\\)."
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#excel-to-compute-standard-normal-probabilities-1",
@@ -1117,7 +1117,7 @@
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#excel-to-compute-standard-normal-probabilities-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Excel to Compute Standard Normal Probabilities",
-    "text": "Excel to Compute Standard Normal Probabilities\n\n\n\n\n\n\n\n\n\n\nThe standard normal distribution and the cumulative area up to a given \\(z\\) value using the NORM.S.DIST(z, TRUE) function in Excel. The shaded area represents the cumulative probability up to the specified \\(z\\) value."
+    "text": "Excel to Compute Standard Normal Probabilities\n\n\nThe standard normal distribution and the cumulative area up to a given \\(z\\) value using the NORM.S.DIST(z, TRUE) function in Excel. The shaded area represents the cumulative probability up to the specified \\(z\\) value."
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#excel-to-compute-standard-normal-probabilities-3",
@@ -1138,7 +1138,7 @@
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#standard-normal-probability-distribution-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Standard Normal Probability Distribution",
-    "text": "Standard Normal Probability Distribution\n\n\n\n\n\n\n\n\n\n\n\n\nStandardization: Standardize \\(X \\sim N(\\mu, \\sigma)\\) to standard Normal Distribution, \\(Z\\)\n\\[\n  Z = \\frac{X - \\mu}{\\sigma}\n  \\]\n\nWe can think of \\(Z\\) as a measure of the number of standard deviations \\(X\\) is from \\(\\mu\\). (Cf. Standardization in Chapter 1.)\n\nConversely, \\(X = \\mu + z \\cdot \\sigma\\). If \\(X\\) can be written as \\(X = \\mu + z \\cdot \\sigma\\) where \\(Z\\) is standard normal, then \\(X \\sim N(\\mu, \\sigma^2)\\)\n\nThe letter z is used to designate the standard normal random variable."
+    "text": "Standard Normal Probability Distribution\n\n\n\n\nStandardization: Standardize \\(X \\sim N(\\mu, \\sigma)\\) to standard Normal Distribution, \\(Z\\)\n\\[\n  Z = \\frac{X - \\mu}{\\sigma}\n  \\]\n\nWe can think of \\(Z\\) as a measure of the number of standard deviations \\(X\\) is from \\(\\mu\\). (Cf. Standardization in Chapter 1.)\n\nConversely, \\(X = \\mu + z \\cdot \\sigma\\). If \\(X\\) can be written as \\(X = \\mu + z \\cdot \\sigma\\) where \\(Z\\) is standard normal, then \\(X \\sim N(\\mu, \\sigma^2)\\)\n\nThe letter z is used to designate the standard normal random variable."
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#summary-2",
@@ -1152,7 +1152,7 @@
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#t-probability-distribution-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "\\(t\\) Probability Distribution",
-    "text": "\\(t\\) Probability Distribution\n\n\n\n\n\n\n\n\n\n\nThe standard normal distribution and two \\(t\\) distributions with different degrees of freedom."
+    "text": "\\(t\\) Probability Distribution\n\n\nThe standard normal distribution and two \\(t\\) distributions with different degrees of freedom."
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#t-probability-distribution-4",
@@ -1201,7 +1201,7 @@
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#standard-normal-probabilities---example-grear-tire-company-problem-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Standard Normal Probabilities - Example: Grear Tire Company Problem",
-    "text": "Standard Normal Probabilities - Example: Grear Tire Company Problem\n\nStep 2: Compute the area under the standard normal curve to the right of \\(z = 0.7\\)\n\n\n\n\n\n\n\n\n\n\n\n\\[\nP(z &gt; 0.7) = 1 - P(z \\leq 0.7) \\\\\n= 1 - \\text{=NORM.S.DIST}(0.7, \\text{TRUE}) \\\\\n= 1 - 0.7580 \\\\\n= 0.2420\n\\]"
+    "text": "Standard Normal Probabilities - Example: Grear Tire Company Problem\n\nStep 2: Compute the area under the standard normal curve to the right of \\(z = 0.7\\)\n\n\n\n\\[\nP(z &gt; 0.7) = 1 - P(z \\leq 0.7) \\\\\n= 1 - \\text{=NORM.S.DIST}(0.7, \\text{TRUE}) \\\\\n= 1 - 0.7580 \\\\\n= 0.2420\n\\]"
   },
   {
     "objectID": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#example-grear-tire-company-problem",
@@ -1250,14 +1250,14 @@
     "href": "lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html#standard-normal-probabilities---example-grear-tire-company-problem-5",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Standard Normal Probabilities - Example: Grear Tire Company Problem",
-    "text": "Standard Normal Probabilities - Example: Grear Tire Company Problem\n\nStep 2: Convert \\(z_{0.1}\\) to the corresponding value of \\(x\\).\n\n\n\n\n\n\n\n\n\n\n\n\\[\nx = \\mu + z_{0.1} \\cdot \\sigma \\\\\n= 36,500 + \\text{=NORM.S.INV}(0.1) \\cdot (5000) \\\\\n= 36,500 + (-1.28155) \\cdot (5000) \\\\\n= 30,092.24\n\\]\nThus, a guarantee of 30,100 miles will meet the requirement that approximately 10% of the tires will be eligible for the guarantee."
+    "text": "Standard Normal Probabilities - Example: Grear Tire Company Problem\n\nStep 2: Convert \\(z_{0.1}\\) to the corresponding value of \\(x\\).\n\n\n\n\\[\nx = \\mu + z_{0.1} \\cdot \\sigma \\\\\n= 36,500 + \\text{=NORM.S.INV}(0.1) \\cdot (5000) \\\\\n= 36,500 + (-1.28155) \\cdot (5000) \\\\\n= 30,092.24\n\\]\nThus, a guarantee of 30,100 miles will meet the requirement that approximately 10% of the tires will be eligible for the guarantee."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#overview",
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#overview",
     "title": " MGMT 30500: Business Statistics ",
-    "section": "",
-    "text": "Statistical Inference\nCentral Limit Theorem\nPopulation Mean: \\(\\sigma\\) Known\n\n\n\nPopulation Mean: \\(\\sigma\\) Unknown\nPopulation Proportion\nSample Size Determination"
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nStatistical Inference\nCentral Limit Theorem\nPopulation Mean: \\(\\sigma\\) Known\n\n\n\nPopulation Mean: \\(\\sigma\\) Unknown\nPopulation Proportion\nSample Size Determination"
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#statistical-inference-interval-estimation-and-hypothesis-testing",
@@ -1453,7 +1453,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-and-margin-of-error-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Interval Estimate and Margin of Error",
-    "text": "Interval Estimate and Margin of Error\n\n\n\n\n\n\n\n\n\n\n\n\nA plausible range of values for the population parameter is called a confidence interval.\nUsing only a sample statistic to estimate a parameter is like fishing in a murky lake with a spear, and using a confidence interval is like fishing with a net."
+    "text": "Interval Estimate and Margin of Error\n\n\n\n\nA plausible range of values for the population parameter is called a confidence interval.\nUsing only a sample statistic to estimate a parameter is like fishing in a murky lake with a spear, and using a confidence interval is like fishing with a net."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#central-limit-theorem",
@@ -1488,7 +1488,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sampling-distribution-of-barx",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Sampling Distribution of \\(\\bar{X}\\)",
-    "text": "Sampling Distribution of \\(\\bar{X}\\)\n\n\n\n\n\n\n\n\n\n\nIt will be symmetric if:\n\n\\(n\\) is large (Central Limit Teorem) or\nPopulation of \\(X\\) is normal"
+    "text": "Sampling Distribution of \\(\\bar{X}\\)\n\n\nIt will be symmetric if:\n\n\\(n\\) is large (Central Limit Teorem) or\nPopulation of \\(X\\) is normal"
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-sigma-known-1",
@@ -1662,8 +1662,8 @@
     "objectID": "lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html#overview",
     "href": "lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html#overview",
     "title": " MGMT 30500: Business Statistics ",
-    "section": "",
-    "text": "Introduction to Hypothesis Testing\nFramework of Hypothesis Testing\nType I and Type II Errors\n\n\n\nHypothesis Testing for Means\nHypothesis Testing for Proportions\nUsing Excel for Hypothesis Testing"
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nIntroduction to Hypothesis Testing\nFramework of Hypothesis Testing\nType I and Type II Errors\n\n\n\nHypothesis Testing for Means\nHypothesis Testing for Proportions\nUsing Excel for Hypothesis Testing"
   },
   {
     "objectID": "lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html#statistical-inference-1",
@@ -1907,8 +1907,8 @@
     "objectID": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#overview",
     "href": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#overview",
     "title": " MGMT 30500: Business Statistics ",
-    "section": "",
-    "text": "Inference about a Population Variance\nChi-Square Distribution\nInterval Estimation of \\(\\sigma^2\\)\n\n\n\nHypothesis Testing about a Population Variance\nInferences about Two Population Variances\nF-Test Two-Sample for Variances - Example Excel"
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nInference about a Population Variance\nChi-Square Distribution\nInterval Estimation of \\(\\sigma^2\\)\n\n\n\nHypothesis Testing about a Population Variance\nInferences about Two Population Variances\nF-Test Two-Sample for Variances - Example Excel"
   },
   {
     "objectID": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#statistical-inference-1",
@@ -2209,7 +2209,7 @@
     "href": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#hypothesis-testing-about-a-population-variance---example-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Hypothesis Testing about a Population Variance - Example",
-    "text": "Hypothesis Testing about a Population Variance - Example\n\n\\(p\\)-value Approach:\n\n\n\n\n\n\n\n\n\n\n\n\\(p\\)-value = 1-CHISQ.DIST(28.18, 23, TRUE) = 0.209 &gt; 5%. Fail to reject \\(H_0\\)."
+    "text": "Hypothesis Testing about a Population Variance - Example\n\n\\(p\\)-value Approach:\n\n\n\n\\(p\\)-value = 1-CHISQ.DIST(28.18, 23, TRUE) = 0.209 &gt; 5%. Fail to reject \\(H_0\\)."
   },
   {
     "objectID": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#hypothesis-testing-about-a-population-variance---example-3",
@@ -2293,7 +2293,7 @@
     "href": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#hypothesis-testing-about-the-variances-of-two-populations---example-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Hypothesis Testing about the Variances of Two Populations - Example",
-    "text": "Hypothesis Testing about the Variances of Two Populations - Example\np-value approach:\n\n\n\n\n\n\n\n\n\n\n25 d.f. (numerator), and 15 d.f. (denominator),\np-value = 2*(1- F.DIST(2.40, 25,15, TRUE)) = 2*0.041 = 0.082.\nBecause \\(\\alpha = 0.10\\), we have p-value \\(&lt; \\alpha\\) and therefore, null hypothesis is rejected."
+    "text": "Hypothesis Testing about the Variances of Two Populations - Example\np-value approach:\n\n\n25 d.f. (numerator), and 15 d.f. (denominator),\np-value = 2*(1- F.DIST(2.40, 25,15, TRUE)) = 2*0.041 = 0.082.\nBecause \\(\\alpha = 0.10\\), we have p-value \\(&lt; \\alpha\\) and therefore, null hypothesis is rejected."
   },
   {
     "objectID": "lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html#f-test-two-sample-for-variances---example-excel-2",
@@ -2349,7 +2349,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#survey-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Survey",
-    "text": "Survey\n\n\n\n\n\n\n\n\n\n\nAttendance and Participation10 min"
+    "text": "Survey\n\n\nAttendance and Participation10 min"
   },
   {
     "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#experimental-design-1",
@@ -2636,21 +2636,21 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#simple-linear-regression",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Simple Linear Regression",
-    "text": "Simple Linear Regression\nXXX Falar de correlação… comparar com modelagem: ver arquivo 07-01-ds4ps-hyp-test-regression-presentation.html\nXXX Motivation: walmark example book - p. 606"
+    "text": "Simple Linear Regression\n\n\nManagerial decisions often are based on the relationship between two or more variables.\nRegression analysis can be used to develop an equation (as a conjecture) for the relationship between the variables.\n\nThe variable being predicted is called the dependent variable and is denoted by y.\nThe variables being used to predict the value of the dependent variable are called the independent variables and are denoted by x."
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#simple-linear-regression-1",
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#simple-linear-regression-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Simple Linear Regression",
-    "text": "Simple Linear Regression\n\n\nManagerial decisions often are based on the relationship between two or more variables.\nRegression analysis can be used to develop an equation (as a conjecture) for the relationship between the variables.\n\nThe variable being predicted is called the dependent variable and is denoted by y.\nThe variables being used to predict the value of the dependent variable are called the independent variables and are denoted by x."
+    "text": "Simple Linear Regression\n\n\nSimple linear regression involves one independent variable and one dependent variable.\nThe relationship between the two variables is linear, approximated by a straight line.\n\nAs an initial estimate of the unknown relationship.\nA regression analysis is a trial-and-error exercise.\n\nRegression analysis involving two or more independent variables is called multiple regression."
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#simple-linear-regression-2",
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#simple-linear-regression-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Simple Linear Regression",
-    "text": "Simple Linear Regression\n\n\nSimple linear regression involves one independent variable and one dependent variable.\nThe relationship between the two variables is linear, approximated by a straight line.\n\nAs an initial estimate of the unknown relationship.\nA regression analysis is a trial-and-error exercise.\n\nRegression analysis involving two or more independent variables is called multiple regression."
+    "text": "Simple Linear Regression"
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#regression-objective",
@@ -3224,7 +3224,7 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#normal-probability-plot",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Normal Probability Plot",
-    "text": "Normal Probability Plot\n\n\n\n\\(H_0\\): Random Error is normal;\n\\(H_1\\): Not normal"
+    "text": "Normal Probability Plot\n\n\n\n\n\n\n\n\\(H_0\\): Random Error is normal;\n\\(H_1\\): Not normal"
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#example-measuring-stock-risk",
@@ -3273,7 +3273,7 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#summary-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
-    "text": "Summary\n\nSome key takeaways from this session:\n\nXXX: XXX.\n\n\n\n\n\nXXX: XXX."
+    "text": "Summary\n\nSome key takeaways from this session:\n\nSimple Linear Regression Model: Helps to understand the linear relationship between two variables—predicting the Dependent Variable (\\(Y\\)) based on the Independent Variable (\\(X\\)).\n\nThis method is foundational for exploring how variables are related and how changes in one variable can predict changes in another.\n\nModel Interpretation and Assumptions: It is essential to interpret the regression coefficients and validate model assumptions to ensure that the model is reliable.\n\nAssumptions include linearity, independence, homoscedasticity (constant variance), and normality of residuals.\n\nResidual Analysis: Residual plots and other diagnostic tools are critical for validating the assumptions of the regression model and ensuring its accuracy.\n\nProper validation techniques prevent misinterpretation of data and help maintain the integrity of the analysis."
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#simple-linear-regression-3",
@@ -3526,5 +3526,75 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "",
     "text": "Continuous Probability Distributions\n\nDefinition\nArea as a Measure of Probability\n\nNormal Probability Distribution\n\nCharacteristics\nApplications\n\n\n\n\nStandard Normal Probability Distribution\n\nStandardization\nExcel Functions\n\n\\(t\\)-distribution\n\nUse and comparison\nExcel Functions"
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#covariance",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#covariance",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Covariance",
+    "text": "Covariance\n\n\n\n\n\nThe Covariance is a measure of the linear association between two variables.\nPositive values indicate a positive relationship.\nNegative values indicate a negative relationship."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#correlation-coefficient",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#correlation-coefficient",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Correlation Coefficient",
+    "text": "Correlation Coefficient\n\n\n\n\nCorrelation is a unit-free measure of linear association and not necessarily causation.\nThe coefficient can take on values between −1 and +1.\n\nValues near −1 indicate a strong negative linear relationship.\nValues near +1 indicate a strong positive linear relationship.\n\nThe closer the correlation is to zero, the weaker the linear relationship."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#what-is-a-model",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#what-is-a-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "What is a model?",
+    "text": "What is a model?\n\n\n\n\n\n\n\nAll models are wrong, but some are useful.\n— George Box\n\n\n\n\n\n\n\n\n\n\n\n\nNY City Subway Map"
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#what-does-it-mean-to-model-data",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#what-does-it-mean-to-model-data",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "What does it mean to “model” data?",
+    "text": "What does it mean to “model” data?\n\n\nLet’s start with a very simple premise:\n\nto model, we need to make explicit the conditions under which a variable \\(X\\) is related to a variable \\(Y\\).\n\n\n\n\nLet’s begin by giving specific names to these variables:\n\nDependent Variable (DV): This is our phenomenon of interest, usually denoted as \\(Y\\).\nIndependent Variable (IV): This is the phenomenon that explains/describe our dependent variable, generally denoted as \\(X\\)."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#what-does-it-mean-to-model-data-1",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#what-does-it-mean-to-model-data-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "What does it mean to “model” data?",
+    "text": "What does it mean to “model” data?\n\nMathematically, we model \\(Y\\) as a function of \\(X\\). Statistically, modeling can serve two main purposes:\n\nPrediction: The possibility of using the values of \\(X\\) to predict the value of \\(Y\\). There must be a substantive connection between these two variables for one to generate reliable predictions about the values of the other.\nExplanation: Used to understand the connection and significance (both substantive and statistical) of the relationship between two variables. In this case, we aim to accurately estimate the impact of one variable on the other, preferably excluding any potential omitted variables."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#motivation-walmart-carton-mix-optimization-study-1",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#motivation-walmart-carton-mix-optimization-study-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Motivation: Walmart Carton-Mix Optimization Study",
+    "text": "Motivation: Walmart Carton-Mix Optimization Study\n\n\nWalmart is the world’s largest retailer with over 245 million customers weekly.\nIn 2000, Walmart launched its online shopping site, Walmart.com.\nA network of distribution centers was created in the US to manage packaging for online orders."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#motivation-walmart-carton-mix-optimization-study-2",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#motivation-walmart-carton-mix-optimization-study-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Motivation: Walmart Carton-Mix Optimization Study",
+    "text": "Motivation: Walmart Carton-Mix Optimization Study\n\nCarton-Mix Optimization Study\n\nLocation: Carrollton, Georgia distribution center.\nObjective: Minimize material, labor, and shipping costs by optimizing the size and number of cartons.\nConstraints:\n\nMinimum and maximum carton sizes.\nOne-size carton limit for automatically constructed cartons.\n\nPeak Season: November to December, with over 100,000 packages shipped per day."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#motivation-walmart-carton-mix-optimization-study-3",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#motivation-walmart-carton-mix-optimization-study-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Motivation: Walmart Carton-Mix Optimization Study",
+    "text": "Motivation: Walmart Carton-Mix Optimization Study\n\n\nData was collected to develop a cost model for optimizing carton mix.\nDV: material cost of a carton in dollars per carton.\nIV: volume of the carton measured in cubic inches per carton.\nCost Model Formula:\n\n\\[\ny = -0.11 + 0.0014x\n\\]\n\nExample Calculation:\n\nCarton volume: 2800 cubic inches\nEstimated material cost: \\(y = -0.11 + 0.0014 \\times 2800 = 3.81\\)"
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#motivation-walmart-carton-mix-optimization-study-4",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#motivation-walmart-carton-mix-optimization-study-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Motivation: Walmart Carton-Mix Optimization Study",
+    "text": "Motivation: Walmart Carton-Mix Optimization Study\n\nImplementation and Results\n\nThe regression model was used in an optimization algorithm in Microsoft Excel to provide Walmart managers a recommendation on the optimal mix of carton sizes to carry at the distribution center.\n\nResults:\n\nFirst-year savings: $600,000\nEstimated annual savings across all distribution centers: $2 million"
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#simple-linear-regression-model",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#simple-linear-regression-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Simple Linear Regression Model",
+    "text": "Simple Linear Regression Model\n\n\n\nThe equation that describes how y is related to x and an error term is called the regression model.\nThe simple linear regression model for the data is:\n\n\\[\ny = \\beta_0 + \\beta_1 x + \\epsilon\n\\]\nwhere:\n\n\\(\\beta_0\\) and \\(\\beta_1\\) are the unknown parameters of the model,\n\\(\\epsilon\\) is a random variable called the error term (unexplained error), with mean of 0 and unknown error variance \\(\\sigma^2\\)."
   }
 ]

@@ -366,16 +366,168 @@ Professor<br>Davi Moreira<br>
 </div>
 </section>
 <section>
-<section id="simple-linear-regression-model" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Simple Linear Regression Model</h1>
+<section id="association-between-two-variables" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Association Between Two Variables</h1>
 
 </section>
-<section id="simple-linear-regression" class="slide level2 center">
-<h2>Simple Linear Regression</h2>
-<p>XXX Falar de correlação… comparar com modelagem: ver arquivo 07-01-ds4ps-hyp-test-regression-presentation.html</p>
-<p>XXX Motivation: walmark example book - p.&nbsp;606</p>
+<section id="covariance" class="slide level2 center">
+<h2>Covariance</h2>
+<p><br></p>
+
+<img data-src="figs/scatter_plot.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><p><br></p>
+<div>
+<ul>
+<li>The <a href="https://en.wikipedia.org/wiki/Covariance">Covariance</a> is a measure of the linear association between two variables.</li>
+<li>Positive values indicate a positive relationship.</li>
+<li>Negative values indicate a negative relationship.</li>
+</ul>
+</div>
+<p><br></p>
+<p><br></p>
 </section>
-<section id="simple-linear-regression-1" class="slide level2 center">
+<section id="correlation-coefficient" class="slide level2 center">
+<h2>Correlation Coefficient</h2>
+<p><br></p>
+
+<img data-src="figs/xkcd.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div>
+<ul>
+<li><p><a href="https://en.wikipedia.org/wiki/Correlation">Correlation</a> is a unit-free measure of linear association and not necessarily causation.</p></li>
+<li><p>The coefficient can take on values between −1 and +1.</p>
+<ul>
+<li>Values near −1 indicate a strong negative linear relationship.</li>
+<li>Values near +1 indicate a strong positive linear relationship.</li>
+</ul></li>
+<li><p>The closer the correlation is to zero, the weaker the linear relationship.</p></li>
+</ul>
+</div>
+<p><br></p>
+</section></section>
+<section>
+<section id="model" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Model</h1>
+
+</section>
+<section id="what-is-a-model" class="slide level2 center">
+<h2>What is a model?</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<blockquote>
+<p>All models are wrong, but some are useful.</p>
+<p>— George Box</p>
+</blockquote>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/metro.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<center>
+<a href="https://new.mta.info/map/5256">NY City Subway Map</a>
+</center>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="what-does-it-mean-to-model-data" class="slide level2 center">
+<h2>What does it mean to “model” data?</h2>
+<p><br></p>
+<ul>
+<li class="fragment"><p>Let’s start with a very simple premise:</p>
+<ul>
+<li class="fragment">to model, we need to make explicit the conditions under which a variable <span class="math inline">\(X\)</span> is related to a variable <span class="math inline">\(Y\)</span>.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li class="fragment"><p>Let’s begin by giving specific names to these variables:</p>
+<ul>
+<li class="fragment"><p><strong>Dependent Variable (DV)</strong>: This is our phenomenon of interest, usually denoted as <span class="math inline">\(Y\)</span>.</p></li>
+<li class="fragment"><p><strong>Independent Variable (IV)</strong>: This is the phenomenon that explains/describe our dependent variable, generally denoted as <span class="math inline">\(X\)</span>.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="what-does-it-mean-to-model-data-1" class="slide level2 center">
+<h2>What does it mean to “model” data?</h2>
+<p><br></p>
+<p>Mathematically, we model <span class="math inline">\(Y\)</span> as a <em>function</em> of <span class="math inline">\(X\)</span>. Statistically, modeling can serve two main purposes:</p>
+<ol type="1">
+<li class="fragment"><p><a href="https://www.statlearning.com/"><strong>Prediction</strong></a>: The possibility of using the values of <span class="math inline">\(X\)</span> to predict the value of <span class="math inline">\(Y\)</span>. There must be a substantive connection between these two variables for one to generate reliable predictions about the values of the other.</p></li>
+<li class="fragment"><p><a href="https://moderndive.com/5-regression.html"><strong>Explanation</strong></a>: Used to understand the connection and significance (both substantive and statistical) of the relationship between two variables. In this case, we aim to accurately estimate the impact of one variable on the other, preferably excluding any potential omitted variables.</p></li>
+</ol>
+</section></section>
+<section>
+<section id="motivation-walmart-carton-mix-optimization-study" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Motivation: Walmart Carton-Mix Optimization Study</h1>
+
+</section>
+<section id="motivation-walmart-carton-mix-optimization-study-1" class="slide level2 center">
+<h2>Motivation: Walmart Carton-Mix Optimization Study</h2>
+<p><br></p>
+<ul>
+<li class="fragment"><p>Walmart is the world’s largest retailer with over 245 million customers weekly.</p></li>
+<li class="fragment"><p>In 2000, Walmart launched its online shopping site, <code>Walmart.com</code>.</p></li>
+<li class="fragment"><p>A network of distribution centers was created in the US to manage packaging for online orders.</p></li>
+</ul>
+</section>
+<section id="motivation-walmart-carton-mix-optimization-study-2" class="slide level2 center">
+<h2>Motivation: Walmart Carton-Mix Optimization Study</h2>
+<p><br></p>
+<p><strong>Carton-Mix Optimization Study</strong></p>
+<ul>
+<li class="fragment"><p><strong>Location</strong>: Carrollton, Georgia distribution center.</p></li>
+<li class="fragment"><p><strong>Objective</strong>: Minimize material, labor, and shipping costs by optimizing the size and number of cartons.</p></li>
+<li class="fragment"><p><strong>Constraints</strong>:</p>
+<ul>
+<li class="fragment">Minimum and maximum carton sizes.</li>
+<li class="fragment">One-size carton limit for automatically constructed cartons.</li>
+</ul></li>
+<li class="fragment"><p><strong>Peak Season</strong>: November to December, with over 100,000 packages shipped per day.</p></li>
+</ul>
+</section>
+<section id="motivation-walmart-carton-mix-optimization-study-3" class="slide level2 center">
+<h2>Motivation: Walmart Carton-Mix Optimization Study</h2>
+<div>
+<ul>
+<li>Data was collected to develop a cost model for optimizing carton mix.</li>
+<li>DV: material cost of a carton in dollars per carton.</li>
+<li>IV: volume of the carton measured in cubic inches per carton.</li>
+<li><strong>Cost Model Formula</strong>:</li>
+</ul>
+<p><span class="math display">\[
+y = -0.11 + 0.0014x
+\]</span></p>
+<ul>
+<li><p>Example Calculation:</p>
+<ul>
+<li>Carton volume: 2800 cubic inches</li>
+<li>Estimated material cost: <span class="math inline">\(y = -0.11 + 0.0014 \times 2800 = 3.81\)</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="motivation-walmart-carton-mix-optimization-study-4" class="slide level2 center">
+<h2>Motivation: Walmart Carton-Mix Optimization Study</h2>
+<div>
+<p><strong>Implementation and Results</strong></p>
+<ul>
+<li>The regression model was used in an optimization algorithm in Microsoft Excel to provide Walmart managers a recommendation on the optimal mix of carton sizes to carry at the distribution center.</li>
+</ul>
+<p><strong>Results</strong>:</p>
+<ul>
+<li><p>First-year savings: $600,000</p></li>
+<li><p>Estimated annual savings across all distribution centers: $2 million</p></li>
+</ul>
+</div>
+</section>
+<section id="simple-linear-regression" class="slide level2 center">
 <h2>Simple Linear Regression</h2>
 <p><br></p>
 <ul>
@@ -387,7 +539,7 @@ Professor<br>Davi Moreira<br>
 </ul></li>
 </ul>
 </section>
-<section id="simple-linear-regression-2" class="slide level2 center">
+<section id="simple-linear-regression-1" class="slide level2 center">
 <h2>Simple Linear Regression</h2>
 <p><br></p>
 <ul>
@@ -430,7 +582,7 @@ Professor<br>Davi Moreira<br>
 <li class="fragment">Output vs.&nbsp;input</li>
 </ul>
 </section>
-<section id="simple-linear-regression-model-1" class="slide level2 center">
+<section id="simple-linear-regression-model" class="slide level2 center">
 <h2>Simple Linear Regression Model</h2>
 <p><br></p>
 <div>
@@ -448,7 +600,7 @@ y = \beta_0 + \beta_1 x + \epsilon
 </ul>
 </div>
 </section>
-<section id="simple-linear-regression-3" class="slide level2 center">
+<section id="simple-linear-regression-2" class="slide level2 center">
 <h2>Simple Linear Regression</h2>
 <p><br></p>
 
@@ -2400,11 +2552,15 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
 </section>
 <section id="normal-probability-plot" class="slide level2 center">
 <h2>Normal Probability Plot</h2>
+<div>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
 <ul>
-<li class="fragment"><strong><span class="math inline">\(H_0\)</span></strong>: Random Error is normal;</li>
-<li class="fragment"><strong><span class="math inline">\(H_1\)</span></strong>: Not normal</li>
+<li><strong><span class="math inline">\(H_0\)</span></strong>: Random Error is normal;</li>
+<li><strong><span class="math inline">\(H_1\)</span></strong>: Not normal</li>
 </ul>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div class="cell" data-layout-align="center">
@@ -2413,6 +2569,7 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
 <figure>
 <p><img data-src="figs/armands_pizza_normality_plot.png" class="quarto-figure quarto-figure-center" style="width:99.0%"></p>
 </figure>
+</div>
 </div>
 </div>
 </div>
@@ -2670,17 +2827,17 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
 <div>
 <p>Some key takeaways from this session:</p>
 <ul>
-<li><p><strong>XXX</strong>: XXX.</p>
+<li><p><strong>Simple Linear Regression Model</strong>: Helps to understand the linear relationship between two variables—predicting the Dependent Variable (<span class="math inline">\(Y\)</span>) based on the Independent Variable (<span class="math inline">\(X\)</span>).</p>
 <ul>
-<li><ol start="30" type="I">
-<li></li>
-</ol></li>
+<li>This method is foundational for exploring how variables are related and how changes in one variable can predict changes in another.</li>
 </ul></li>
-<li><p><strong>XXX</strong>: XXX.</p>
+<li><p><strong>Model Interpretation and Assumptions</strong>: It is essential to interpret the regression coefficients and validate model assumptions to ensure that the model is reliable.</p>
 <ul>
-<li><ol start="30" type="I">
-<li></li>
-</ol></li>
+<li>Assumptions include linearity, independence, homoscedasticity (constant variance), and normality of residuals.</li>
+</ul></li>
+<li><p><strong>Residual Analysis</strong>: Residual plots and other diagnostic tools are critical for validating the assumptions of the regression model and ensuring its accuracy.</p>
+<ul>
+<li>Proper validation techniques prevent misinterpretation of data and help maintain the integrity of the analysis.</li>
 </ul></li>
 </ul>
 </div>

@@ -22,6 +22,7 @@ format:
 html-math-method:
   method: mathjax
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  
 ---
 
 
@@ -52,14 +53,185 @@ html-math-method:
 :::
 :::
 
-# Simple Linear Regression Model {background-color="#cfb991"}
+# Association Between Two Variables {background-color="#cfb991"}
 
-## Simple Linear Regression 
+## Covariance
 
-XXX Falar de correlação... comparar com modelagem: ver arquivo 07-01-ds4ps-hyp-test-regression-presentation.html
+<br>
 
-XXX Motivation: walmark example book - p. 606
+```{r  echo=FALSE, out.width = "50%",fig.align="center"}
+knitr::include_graphics("figs/scatter_plot.png")
+```
 
+<br>
+
+::: {.nonincremental}
+
+- The [Covariance](https://en.wikipedia.org/wiki/Covariance) is a measure of the linear association between two variables.
+- Positive values indicate a positive relationship.
+- Negative values indicate a negative relationship.
+
+:::
+
+<br>
+
+<br>
+
+## Correlation Coefficient
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/xkcd.png")
+```
+
+
+::: {.nonincremental}
+
+- [Correlation](https://en.wikipedia.org/wiki/Correlation) is a unit-free measure of linear association and not necessarily causation.
+- The coefficient can take on values between −1 and +1.
+  
+    - Values near −1 indicate a strong negative linear relationship.
+    - Values near +1 indicate a strong positive linear relationship.
+	  
+- The closer the correlation is to zero, the weaker the linear relationship.
+
+:::
+
+<br>
+
+
+
+# Model {background-color="#cfb991"}
+
+## What is a model?
+
+
+::: columns
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+> All models are wrong, but some are useful.
+> 
+> --- George Box
+
+:::
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/metro.png")
+```
+
+<center>
+
+[NY City Subway Map](https://new.mta.info/map/5256)
+</center>
+
+:::
+:::
+
+
+
+<br>
+
+## What does it mean to "model" data?
+
+<br>
+
+- Let's start with a very simple premise: 
+    
+    - to model, we need to make explicit the conditions under which a variable $X$ is related to a variable $Y$. 
+    
+<br>
+
+- Let's begin by giving specific names to these variables:
+
+    - **Dependent Variable (DV)**: This is our phenomenon of interest, usually denoted as $Y$.
+    
+    - **Independent Variable (IV)**: This is the phenomenon that explains/describe our dependent variable, generally denoted as $X$.
+
+
+## What does it mean to "model" data?
+
+<br>
+
+Mathematically, we model $Y$ as a *function* of $X$. Statistically, modeling can serve two main purposes:
+
+1. [**Prediction**](https://www.statlearning.com/): The possibility of using the values of $X$ to predict the value of $Y$. There must be a substantive connection between these two variables for one to generate reliable predictions about the values of the other.
+   
+2. [**Explanation**](https://moderndive.com/5-regression.html): Used to understand the connection and significance (both substantive and statistical) of the relationship between two variables. In this case, we aim to accurately estimate the impact of one variable on the other, preferably excluding any potential omitted variables.
+
+# Motivation: Walmart Carton-Mix Optimization Study {background-color="#cfb991"}
+
+## Motivation: Walmart Carton-Mix Optimization Study
+
+<br>
+
+- Walmart is the world's largest retailer with over 245 million customers weekly.
+
+- In 2000, Walmart launched its online shopping site, `Walmart.com`.
+
+- A network of distribution centers was created in the US to manage packaging for online orders.
+
+
+## Motivation: Walmart Carton-Mix Optimization Study
+
+<br>
+
+**Carton-Mix Optimization Study**
+
+- **Location**: Carrollton, Georgia distribution center.
+
+- **Objective**: Minimize material, labor, and shipping costs by optimizing the size and number of cartons.
+
+- **Constraints**: 
+  - Minimum and maximum carton sizes.
+  - One-size carton limit for automatically constructed cartons.
+
+- **Peak Season**: November to December, with over 100,000 packages shipped per day.
+
+## Motivation: Walmart Carton-Mix Optimization Study
+
+::: {.nonincremental}
+
+- Data was collected to develop a cost model for optimizing carton mix.
+- DV: material cost of a carton in dollars per carton.
+- IV: volume of the carton measured in cubic inches per carton. 
+- **Cost Model Formula**: 
+
+$$
+y = -0.11 + 0.0014x
+$$
+
+- Example Calculation:
+  
+    - Carton volume: 2800 cubic inches
+    - Estimated material cost: $y = -0.11 + 0.0014 \times 2800 = 3.81$
+
+:::
+
+## Motivation: Walmart Carton-Mix Optimization Study
+
+::: {.nonincremental}
+
+**Implementation and Results**
+
+- The regression model was used in an optimization algorithm in Microsoft Excel to provide Walmart managers a recommendation on the optimal mix of carton sizes to carry at the distribution center.
+
+**Results**:
+
+- First-year savings: $600,000
+
+- Estimated annual savings across all distribution centers: $2 million
+
+:::
 
 ## Simple Linear Regression
 
@@ -1697,8 +1869,16 @@ Heteroscedasticity; Transform y to $log(y)$
 
 ## Normal Probability Plot
 
+::: {.nonincremental}
+
 ::: columns
 ::: {.column width="45%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<br>
+
+<br>
+
+<br>
 
 - **$H_0$**: Random Error is normal;
 - **$H_1$**: Not normal
@@ -1712,6 +1892,7 @@ knitr::include_graphics("figs/armands_pizza_normality_plot.png")
 
 :::
 
+:::
 :::
 
 
@@ -1810,13 +1991,19 @@ Using the standard deviation as a measure of volatility, SanDisk was the most vo
 ::: nonincremental
 Some key takeaways from this session:
 
--   **XXX**: XXX.
+- **Simple Linear Regression Model**: Helps to understand the linear relationship between two variables—predicting the Dependent Variable ($Y$) based on the Independent Variable ($X$).
 
-    -   XXX.
+    - This method is foundational for exploring how variables are related and how changes in one variable can predict changes in another.
 
--   **XXX**: XXX.
+- **Model Interpretation and Assumptions**: It is essential to interpret the regression coefficients and validate model assumptions to ensure that the model is reliable.
 
-    -   XXX.
+    - Assumptions include linearity, independence, homoscedasticity (constant variance), and normality of residuals.
+
+
+- **Residual Analysis**: Residual plots and other diagnostic tools are critical for validating the assumptions of the regression model and ensuring its accuracy.
+
+    - Proper validation techniques prevent misinterpretation of data and help maintain the integrity of the analysis.
+
 
 :::
 

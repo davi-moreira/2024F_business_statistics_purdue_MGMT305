@@ -39,17 +39,18 @@ editor: visual
 | **Sep 4**  | **No class**                                | **No class**                                          |.  |.  |.  |
 | Sep 6  | Analysis of Variance                    | 13.1, 13.2                                         |[slides](/lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html){target="_blank"}  |[data](/lecture_slides/13_chapter_one_way_anova/data/data.zip){target="_blank"}  |- [**Video**: ANOVA Introduction](https://www.youtube.com/watch?v=W36DMVJ4Ibo&list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD&index=6){target="_blank"}<br> - [**Video**: Conditions for ANOVA](https://www.youtube.com/watch?v=HGFiWMA5OC8&list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD&index=7){target="_blank"}<br> - [**Video**: Multiple comparisons](https://www.youtube.com/watch?v=THG0P3YNbdI&list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD){target="_blank"}<br> -[IMS: Inference for comparing many means](https://openintro-ims.netlify.app/inference-many-means){target="_blank"}  |
 | **Sep 8**  | **Homework 2 due date**                     | **Int. Est. & Hyp. Testing Rvw.**                     |.  |.  |.  |
-| Sep 9  | Simple Regression                       | 14.1                                              |.  |.  |.  |
-| Sep 11 | Simple Regression (cont’d)              | 14.2, 14.3 (Correlation Supp.)                     |.  |.  |.  |
-| Sep 13 | Simple Regression (cont’d)              | 14.4, 14.5                                         |.  |.  |.  |
-| Sep 16 | Simple Regression (cont’d)              | 14.6, 14.7 (w/Extrapolation & Predictions Supplements) |.  |.  |.  |
-| Sep 18 | Simple Regression (cont’d)              | 14.8, 14.9 (Normality Test Supp)                   |.  |.  |.  |
-| Sep 20 | Simple Regression (cont’d)              | Applications                                      |.  |.  |.  |
-| **Sep 22** | **Homework 3 due date**                     | **Simple Regression**                                 |.  |.  |.  |
-| **Sep 23** | **Midterm 1 Review**                        | **Analysis of Variance and Simple Regression**        |.  |.  |.  |
+| Sep 9  | Simple Regression  | 14.1 | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"}  |[data](/lecture_slides/14_chapter_simple_regression/data/data.zip){target="_blank"}    |- [**Video**: Line Fitting, Residuals, and Correlation](https://www.youtube.com/watch?v=mPvtZhdPBhQ&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM){target="_blank"}<br> - [**Video**: Fitting a Line with Least Squares Regression](https://www.youtube.com/watch?v=z8DmwG2G4Qc&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM){target="_blank"}<br> - [**Video**: Least Squares Regression](https://www.youtube.com/watch?v=yqf0L_WEaW0&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM){target="_blank"}<br> - [**Video**: Types of Outliers in Linear Regression](https://www.youtube.com/watch?v=jZEKAlo1E54&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM){target="_blank"}<br> - [**Video**: Inference for Linear Regression](https://www.youtube.com/watch?v=depiT-hTaGA&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM){target="_blank"}<br> -[IMS: Linear regression with a single predictor](https://openintro-ims.netlify.app/model-slr){target="_blank"}  |
+| Sep 11 | Simple Regression (cont’d) | 14.2, 14.3 | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"}  |.  |.  |
+| Sep 13 | Simple Regression (cont’d) | 14.4, 14.5  | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"} |.  |.  |
+| Sep 16 | Simple Regression (cont’d) | 14.6, 14.7 | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"}  |.  |.  |
+| Sep 18 | Simple Regression (cont’d) | 14.8, 14.9 | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"}  |.  |.  |
+| Sep 20 | Simple Regression (cont’d) | Applications  | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"} |.  |.  |
+| **Sep 22** | **Homework 3 due date**                     | **Simple Regression**                     
+|.  |.  |.  |
+| Sep 23 | Multiple Regression                     | 15.1, 15.2                                         |.  |.  |.  |
+| Sep 27 | Multiple Regression (cont’d)            | 15.3, 15.4                                         |.  |.  |.  |
+| **Sep 30** | **Midterm 1 Review**                        | **Analysis of Variance and Simple Regression**        |.  |.  |.  |
 | **30**          | **Midterm 1 (6:30 pm – 7:30 pm, UC 114)**                               | **Analysis of Variance and Simple Regression**        |.  |.  |.  |
-| Sep 27 | Multiple Regression                     | 15.1, 15.2                                         |.  |.  |.  |
-| Sep 30 | Multiple Regression (cont’d)            | 15.3, 15.4                                         |.  |.  |.  |
 | Oct 2    | Multiple Regression (cont’d)            | 15.5, 15.6                                         |.  |.  |.  |
 | Oct 4    | Multiple Regression (cont’d)            | 15.7                                              |.  |.  |.  |
 | **Oct 6**    | **Homework 4 due date**                     | **Multiple Regression Pt. 1**                         |.  |.  |.  |
