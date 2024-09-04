@@ -19,6 +19,9 @@ format:
     #logo: images/quarto.png
     footer: "Business Statistics"
     theme: [simple,custom.scss]
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 ---
 
 # Welcome! {background-color="#cfb991"}

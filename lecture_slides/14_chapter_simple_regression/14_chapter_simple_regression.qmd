@@ -1,6 +1,6 @@
 ---
 title: "<span style = 'font-size: 100%;'> MGMT 30500: Business Statistics </span>"
-subtitle: "<span style = 'font-size: 150%;'> Analysis of Variance (ANOVA)</span>"
+subtitle: "<span style = 'font-size: 150%;'> Simple Linear Regression</span>"
 author: "Professor<br>Davi Moreira<br>"
 date: "2024-08-01"
 date-format: "MMMM DD, YYYY"
@@ -19,456 +19,1804 @@ format:
     #logo: images/quarto.png
     footer: "Business Statistics"
     theme: [simple,custom.scss]
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 ---
+
 
 ## Overview
 
-::: {.nonincremental}
-
+::: nonincremental
 ::: columns
 ::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
--   Introducion to Experimental Design
--   Analysis of Variance (ANOVA)
+
+- Simple Linear Regression Model
+- Least Squares Method
+- Coefficient of Determination 
+- Model Assumptions
+- Testing for Significance
+
 :::
 
 ::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+- Excel’s Regression Tool
+- Using the Estimated Regression Equation for Estimation and Prediction
+- Residual Analysis: Validating Model Assumptions
+- Outliers and Influential Observations
+
+
+
 :::
 :::
 :::
 
-# Experimental Design {background-color="#cfb991"}
+# Simple Linear Regression Model {background-color="#cfb991"}
 
-## Experimental Design
+## Simple Linear Regression 
 
-<br>
+XXX Falar de correlação... comparar com modelagem: ver arquivo 07-01-ds4ps-hyp-test-regression-presentation.html
 
-- Statistical studies can be classified as being either experimental or observational.
-- In an **experimental study**, the levels of one or more factors are controlled so that data can be obtained about how the factors influence the response variables of interest.
-  - **Cause-and-effect relationships** are easier to establish in experimental studies.
-  - **Analysis of variance (ANOVA)** can be used to analyze the data obtained from experimental studies.
-- In an **observational study**, no attempt is made to control levels of the factors.
+XXX Motivation: walmark example book - p. 606
 
 
-## Experimental Design - Example: Chemitech Experiment
+## Simple Linear Regression
 
 <br>
 
-**Chemitech** developed a new filtration system for municipal water supplies. There are different methods that can be used to assemble the system. 
+- Managerial decisions often are based on the relationship between two or more variables.
 
-**Chemitech** has narrowed down to three methods: A, B, and C and wants to determine which assembly method can produce the greatest **mean** number of filtration systems per week.
-
-## Experimental Design - Example: Chemitech Experiment
-
-<br>
-
-**Randomization and Replications**
-
-For the purpose, the company randomly selected 15 workers and randomly divided them into 3 groups, and then randomly assigned one of the three treatments to each group 5 of the workers.
+- **Regression analysis** can be used to develop an equation (as a conjecture) for the relationship between the variables.
+  - The variable being predicted is called the **dependent variable** and is denoted by **y**.
+  - The variables being used to predict the value of the dependent variable are called the **independent variables** and are denoted by **x**.
 
 
-| Factor                | Assembly method            |
-|-----------------------|----------------------------|
-| Treatments/Levels/Values | A, B, and C             |
-| Response              | Number of units produced   |
-| Experimental units    | Employees                  |
-
-
-## Experimental Design - Example: Chemitech Experiment
+## Simple Linear Regression
 
 <br>
 
-**Terminology**
+- **Simple linear regression** involves one independent variable and one dependent variable.
 
-- A **factor** is a variable that the experimenter has selected for investigation.
-- A **treatment** is a level (value) of a factor.
-- **Response** or performance variable is a dependent/outcome variable affected by the factor.
-- **Experimental units** are the objects of interest in the experiment.
-- A **completely randomized design** is an experimental design in which the treatments are randomly assigned to the experimental units.
+- The relationship between the two variables is linear, approximated by a straight line.
 
-## Experimental Design - Example: Chemitech Experiment
+    - As an initial estimate of the unknown relationship.
+    - A regression analysis is a trial-and-error exercise.
+
+- Regression analysis involving two or more independent variables is called **multiple regression**.
+
+
+## Regression Objective
 
 <br>
 
-| Observation | A  | B  | C  |
-|-------------|----|----|----|
-| 1           | 58 | 58 | 48 |
-| 2           | 64 | 69 | 57 |
-| 3           | 55 | 71 | 59 |
-| 4           | 66 | 64 | 47 |
-| 5           | 67 | 68 | 49 |
-| Sample mean $\bar{x}_j$ | 62 | 66 | 52 |
-| Sample variance $s_j^2$ | 27.5| 26.5| 31.0 |
-| Sample standard deviation $s_j$ | 5.244| 5.148| 5.568 |
+- **Interpretation**: Determine whether variation in the dependent variable can be explained by (the variation of) the independent variable(s) by testing the statistical significance of the independent variable(s):
+
+    - As a group (F-test).
+    - Individually (t-tests).
+
+- **Prediction**: Study how to predict the dependent variable given the information of the independent variable(s).
+
+<!--- Note: Data-driven regression contains only curve-fitting (i.e., obtaining the estimated line). Only calculus is involved.--->
+
+
+## Applications
+
+<br>
+
+- Revenue vs. Advertising expenditure
+- Total cost vs. production quantity (variable and fixed costs)
+- NFL: Annual revenue vs. estimated team value
+- Total points earned vs. hours spent studying
+- Number of days absent vs. distance to work
+- Number of defective parts vs. line speed
+- Maintenance cost vs. age of the equipment
+- Sale price of 2007 Camry vs. mileage
+- Sales vs. promotion activities and Price
+- (Beta risk) Total return of an individual stock vs. total return for the stock market
+- Output vs. input
+
+
+## Simple Linear Regression Model
+
+<br>
+
+::: {.nonincremental}
+
+- The equation that describes how **y** is related to **x** and an error term is called the **regression model**.
+
+- The **simple linear regression model** for the data is:
+
+$$
+y = \beta_0 + \beta_1 x + \epsilon
+$$
+
+where:
+
+- $\beta_0$ and $\beta_1$ are the unknown **parameters** of the model,
+
+- $\epsilon$ is a random variable called the **error term** (unexplained error), with mean of 0 and unknown **error variance** $\sigma^2$.
+
+:::
+
+## Simple Linear Regression 
+
+<br>
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/reg_error.png") 
+```
+
+<br>
+
+## Simple Linear Regression Equation
+
+::: {.nonincremental}
+
+<br>
+
+- The **Simple Linear Regression Equation** is:
+
+$$
+E(y) = \beta_0 + \beta_1 x
+$$
+
+Graph of the regression equation is a straight line.
+
+- $E(y)$ is the expected value of **y** for a given **x** value
+- $\beta_0$ is the **y** intercept of the regression line (unknown)
+- $\beta_1$ is the slope of the regression line (unknown)
+
+:::
+
+
+## Simple Linear Regression Equation
+
+::: r-fit-text
+
+::: {layout-ncol=3}
+::: columns
+::: {.column width="33%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<br>
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/reg_relationship_01.png") 
+```
+
+<center>
+Positive Linear Relationship
+</center>
+
+
+:::
+
+::: {.column width="33%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<br>
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/reg_relationship_02.png") 
+```
+
+<center>
+Negative Linear Relationship
+</center>
+
+
+:::
+::: {.column width="33%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<br>
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/reg_relationship_03.png") 
+```
+
+<center>
+No Linear Relationship
+</center>
+
+
+:::
+::: 
+:::
+:::
+
+## Estimated Simple Linear Regression Equation
+
+<br>
+
+The **estimated simple linear regression equation**:
+
+$$
+\hat{y} = b_0 + b_1 x
+$$
+
+The graph is called the estimated/predicted regression line.
+
+- $\hat{y}$ is the estimated/predicted value of **y** for a given **x** value.
+- $b_0$ is the **y**-intercept of the line, estimating $\beta_0$
+- $b_1$ is the slope of the line, estimating $\beta_1$
+
+## Random Error ($\varepsilon$) and Observed Residual ($e$)
+
+<br>
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/reg_error_02.png") 
+```
+
+## Estimation Process
+
+<br>
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/reg_estimation.png") 
+```
+
+## Residuals/Errors 
+
+<br>
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/reg_residuals.png") 
+```
+
+# Least Squares Method {background-color="#cfb991"}
+
+## Least Squares Method
+
+<br>
+
+::: {.nonincremental}
+
+$y_i$ = observed value of the dependent variable for the **i**-th observation.
+
+$\hat{y}_i$ = estimated value of the dependent variable for the **i**-th observation.
+
+$$
+\text{Error or Residual} = \text{Observed} - \text{Predicted} = y_i - \hat{y}_i
+$$
+
+- **Least Squares Criterion**: To minimize the **Sum of Squared Errors (SSE)**
+
+$$
+\min SSE = \min \sum (y_i - \hat{y}_i)^2 = \min \sum (y_i - b_0 - b_1 x_i)^2
+$$
+
+
+:::
+
+## Least Squares Method 
+
+<br>
+
+::: {.nonincremental}
+
+Slope for the Estimated Regression Equation
+
+$$
+b_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}
+$$
+
+:::
+
+where:
+
+- $x_i$ = value of independent variable for **i**-th observation
+- $y_i$ = value of dependent variable for **i**-th observation
+- $\bar{x}$ = mean value for independent variable
+- $\bar{y}$ = mean value for dependent variable
+
+
+## Least Squares Method
+
+<br>
+
+**y-Intercept for the Estimated Regression Equation**
+
+$$
+b_0 = \bar{y} - b_1 \bar{x}
+$$
+
+
+## Regression Modeling Steps
+
+<br>
+
+::: {style="font-size: 80%;"}
+
+1. Define problem and propose model
+2. Make model assumptions
+3. Collect data
+4. Do descriptive data analysis 
+5. Obtain the prediction equation and evaluate the model
+   - Estimate the regression coefficients
+   - Check adequacy of the overall model
+   - Test significance of the overall model and the individual independent variables
+   - Residual Analysis: Validate the model assumptions
+6. Special issues (in multiple regression)
+   - Multicollinearity and variables selection
+7. Special models and transformations (for model-building)
+8. (Repeat Steps 1-7 if necessary.)
+9. Prediction, Implementation, …
+
+:::
+
+## Linear Regression: Example 
+
+<br>
+
+**Example**: Armand’s Pizza Parlor Restaurants
+
+Data was collected from a sample of 10 Armand’s Pizza Parlor Restaurants near college campuses.
+
+For the *i-th* observation or restaurant in the sample:
+
+- $x_i$ is the size of the student population
+- $y_i$ is the quarterly sales.
+
+
+## Linear Regression: Example 
+
+| Restaurant | Student population (1000s) | Quarterly sales (\$1000s) |
+|------------|----------------------------|--------------------------|
+| 1          | 2                          | 58                       |
+| 2          | 6                          | 105                      |
+| 3          | 8                          | 88                       |
+| 4          | 8                          | 118                      |
+| 5          | 12                         | 117                      |
+| 6          | 16                         | 137                      |
+| 7          | 20                         | 157                      |
+| 8          | 20                         | 169                      |
+| 9          | 22                         | 149                      |
+| 10         | 26                         | 202                      |
+
+
+## Linear Regression: Example Excel
+
+<br>
+
+**Example**: Armand’s Pizza Parlor Restaurants
+
+<br>
+
+
+```{r  echo=FALSE, out.width = "50%",fig.align="center"}
+knitr::include_graphics("figs/armands_pizza.png") 
+```
+
+<br>
+
+<br>
+
+## Linear Regression: Example 
+
+::: {style="font-size: 80%;"}
+
+| Metric                    | Population |  Sales  |
+|---------------------------|------------|---------|
+| Mean                      | 14         | 130     |
+| Standard Error            | 2.512      | 13.220  |
+| Median                    | 14         | 127.5   |
+| Mode                      | 8          | N/A     |
+| Standard Deviation        | 7.944      | 41.806  |
+| Sample Variance           | 63.111     | 1747.778|
+| Kurtosis                  | -1.332     | -0.033  |
+| Skewness                  | 0          | -0.014  |
+| Range                     | 24         | 144     |
+| Minimum                   | 2          | 58      |
+| Maximum                   | 26         | 202     |
+| Sum                       | 140        | 1300    |
+| Count                     | 10         | 10      |
+| Confidence Level (95%)    | 5.683      | 29.907  |
+
+:::
+
+## Linear Regression: Example 
+
+<br>
+
+
+```{r  echo=FALSE, out.width = "50%",fig.align="center"}
+knitr::include_graphics("figs/armands_pizza_plot.png") 
+```
+
+<br>
+
+<br>
+
+## Linear Regression: Example Excel
+
+
+
+::: columns
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+::: {.nonincremental}
+<br>
+
+- Producing a Scatter Diagram
+
+  - Step 1: Select cells B2:C11
+  - Step 2: Click the **Insert** tab on the Ribbon
+  - Step 3: In the Charts group, select **Insert Scatter (X,Y)** or **Bubble Chart**
+  - Step 4: When the list of scatter diagram subtypes appears, select **Scatter** (chart in upper left corner)
+
+:::
+:::
+
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {.fragment}
+::: {style="font-size: 80%;"}
+::: {.nonincremental}
+- Editing a Scatter Diagram
+
+  - Step 1: Click the **Chart Title** and replace it with *Armand’s Pizza Parlors*
+  - Step 2: Click the **Chart Elements** button
+  - Step 3: When the list of chart elements appears:
+    - Click **Axis Titles** (creates placeholders for titles)
+    - Click **Gridlines** (to deselect gridlines option)
+    - Click **Trendline**
+  - Step 4: Click the horizontal **Axis Title** and replace it with *Student population (1000s)*
+  - Step 5: Click the **Vertical (Value) Axis Title** and replace it with *Quarterly Sales ($1000s)*
+  - Step 6: Select the **Format Trendline** option
+  - Step 7: When the Format Trendline dialog box appears:
+    - Select **Display equation on chart**
+    - Click the **Fill & Line** button
+    - In the **Dash type** box, select **Solid**
+    - Close the **Format Trendline** dialog box
+
+:::
+:::
+:::
+:::
+:::
+
+## Linear Regression: Example 
+
+::: {style="font-size: 80%;"}
+
+|  i | $x_i$ | $y_i$ | $x_i - \bar{x}$ | $y_i - \bar{y}$ | $(x_i - \bar{x})(y_i - \bar{y})$ | $(x_i - \bar{x})^2$ | $(y_i - \bar{y})^2$ |
+|----|---------|---------|------------------|-------------------|----------------------------------|----------------------|----------------------|
+|  1 |    2    |   58    |       -12        |       -72         |                864               |         144          |         5184         |
+|  2 |    6    |  105    |        -8        |       -25         |                200               |          64          |          625         |
+|  3 |    8    |   88    |        -6        |       -42         |                252               |          36          |         1764         |
+|  4 |    8    |  118    |        -6        |       -12         |                 72               |          36          |          144         |
+|  5 |   12    |  117    |        -2        |       -13         |                 26               |           4          |          169         |
+|  6 |   16    |  137    |         2        |         7         |                 14               |           4          |           49         |
+|  7 |   20    |  157    |         6        |        27         |                162               |          36          |          729         |
+|  8 |   20    |  169    |         6        |        39         |                234               |          36          |         1521         |
+|  9 |   22    |  149    |         8        |        19         |                152               |          64          |          361         |
+| 10 |   26    |  202    |        12        |        72         |                864               |         144          |         5184         |
+| **Total** |  **140** | **1300** |     -          |       -           |             **2840**             |        **568**       |       **15730**      |
+
+::: {.fragment}
+
+Sample correlation:
+
+$$
+r_{xy} = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum(x_i - \bar{x})^2 \sum(y_i - \bar{y})^2}} = \frac{2840}{\sqrt{568 \times 15730}} = 0.9501
+$$
+
+<center>
+`= correl(x-array, y-array)`
+</center>
+
+:::
+:::
+
+## Linear Regression: Example 
+
+<br>
+
+::: {.nonincremental}
+
+- Slope for the Estimated Regression Equation
+
+$$
+b_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2} = \frac{2840}{568} = 5
+$$
+
+- y-Intercept for the Estimated Regression Equation
+
+$$
+b_0 = \bar{y} - b_1 \bar{x} = 130 - 5(14) = 60
+$$
+
+- Estimated Regression Equation
+
+$$
+\hat{y} = 60 + 5x
+$$
+
+::: 
+
+## Remarks
+
+<br>
+
+::: {style="font-size: 80%;"}
+
+::: {.nonincremental}
+
+$$
+b_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y}) / (n - 1)}{\sum (x_i - \bar{x})^2 / (n - 1)} = \frac{s_{xy}}{s_x^2}
+$$
+
+$$
+= \frac{s_{xy}}{s_x s_y} \cdot \frac{s_y}{s_x} = r_{xy} \frac{s_y}{s_x}
+$$
+
+$b_1$, $s_{xy}$, and $r_{xy}$ have the same signs, reflecting the relationship's direction between $x$ and $y$.
+
+:::
+:::
+::: {style="font-size: 70%;"}
+::: {.nonincremental}
+
+- $b_1$: Slope of the regression line, indicating the change in $y$ for a unit change in $x$.
+
+- $\sum (x_i - \bar{x})(y_i - \bar{y})$: Numerator for covariance, showing the joint deviation of $x$ and $y$ from their means.
+
+- $\sum (x_i - \bar{x})^2$: Denominator representing variance of $x$.
+
+- $s_{xy}$: Sample covariance, indicating how $x$ and $y$ vary together.
+
+- $s_x^2$: Sample variance of $x$, measuring the dispersion of $x$ around its mean.
+
+- $s_x$ and $s_y$: Standard deviations of $x$ and $y$, showing spread around their means.
+
+- $r_{xy}$: Correlation coefficient, measuring strength and direction of the linear relationship between $x$ and $y$.
+
+
+::: 
+:::
+
+## Partition of Total Variation 
+
+<br>
+
+
+```{r  echo=FALSE, out.width = "50%",fig.align="center"}
+knitr::include_graphics("figs/reg_partitition.png") 
+```
+
+<br>
+
+
+
+
+
+## Partition of Total Variation 
+
+::: {.nonincremental}
+
+- **Prediction equation:** $\hat{y} = 60 + 5x$
+- **For Observation #1** $(x = 2, y = 58)$: $\hat{y} = 60 + 5(2) = 70$
+  - Unexplained error/residual = $y - \hat{y} = 58 - 70 = -12$
+  
+<br>
+
+- **Note:**
+  
+$$
+y - \bar{y} = (\hat{y} - \bar{y}) + (y - \hat{y})
+$$
+
+$$
+58 - 130 = (70 - 130) + (58 - 70)
+$$
+
+$$
+\text{Total} = \text{Explained} + \text{Unexplained}
+$$
+
+:::
+
+## Partition of Total Variation 
+
+
+| $i$ | $x_i$ | Observed Y | Predicted Y | Total | Explained | Unexplained |
+|-----|-------|------------|-------------|-------|-----------|-------------|
+| 1     | 2       | 58         | 70          | -72   | -60       | -12         |
+| 2     | 6       | 105        | 90          | -25   | -40       | 15          |
+| 3     | 8       | 88         | 100         | -42   | -30       | -12         |
+| 4     | 8       | 118        | 100         | -12   | -30       | 18          |
+| 5     | 12      | 117        | 120         | -13   | -10       | -3          |
+| 6     | 16      | 137        | 140         | 7     | 10        | -3          |
+| 7     | 20      | 157        | 160         | 27    | 30        | -3          |
+| 8     | 20      | 169        | 160         | 39    | 30        | 9           |
+| 9     | 22      | 149        | 170         | 19    | 40        | -21         |
+| 10    | 26      | 202        | 190         | 72    | 60        | 12          |
+|       |Mean Y   | 130      | Sum of square | 15730 | 14200     | 1530        |
+|       |         |          |               | SST   | SSR       | SSE         |
+
+
+
+# Coefficient of Determination {background-color="#cfb991"}
+
+## Coefficient of Determination
+
+::: {.nonincremental}
+
+- **Relationship Among SST, SSR, SSE**
+
+$$
+\text{SST} = \text{SSR} + \text{SSE}
+$$
+
+$$
+\sum(y_i - \bar{y})^2 = \sum(\hat{y}_i - \bar{y})^2 + \sum(y_i - \hat{y}_i)^2
+$$
+
+$$
+\text{Degrees of freedom:} \quad n-1 \quad\quad\quad\quad\quad 1 \quad\quad\quad\quad\quad n-2 \quad\quad\quad\quad\quad\quad\quad\quad\quad
+$$
+
+**where:**
+
+- SST = total sum of squares (*Total variation*)
+- SSR = sum of squares due to regression (*Explained variation*)
+- SSE = sum of squares due to error (*Unexplained variation*)
+
+:::
+
+## Coefficient of Determination 
+
+::: {.nonincremental}
+
+- The **coefficient of determination** is:
+
+$$
+R^2 = \frac{\text{Explained variation}}{\text{Total variation}} = \frac{\text{SSR}}{\text{SST}}
+$$
+
+**where:**
+
+- SSR = sum of squares due to regression
+- SST = total sum of squares
+
+:::
+
+## Coefficient of Determination
+
+
+**Example:** Armand’s Pizza Parlor Restaurants
+
+::: {.nonincremental}
+
+
+$$
+R^2 = \frac{\text{SSR}}{\text{SST}} = \frac{14200}{15730} = 0.9027 = 90.27\%
+$$
+
+$$
+R^2 = 1 - \frac{\text{SSE}}{\text{SST}} = 1 - \frac{1530}{15730} = 1 - 0.973 = 90.27\%
+$$
+
+- The regression relationship is very strong; 
+- 90.27% of the variability in the sales can be explained by (the variability of) the size of the student population through the proposed linear relationship between them.
+
+:::
+
+## Coefficient of Determination: Excel
+
+
+::: columns
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+::: {.nonincremental}
+<br>
+
+- **Adding $R^2$ Value to Scatter Diagram**
+
+  - Step 1: Right-click on the trendline and select the **Format Trendline** option
+  - Step 2: When the Format Trendline dialog box appears:
+    - Select **Display R-squared on chart**
+    - Close the **Format Trendline** dialog box
+
+:::
+:::
+
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {.fragment}
+::: {style="font-size: 80%;"}
+::: {.nonincremental}
+
+<br>
+
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/armands_pizza_plot_r2.png") 
+```
+
+<br>
+
+:::
+:::
+:::
+:::
+:::
+
+
+## Sample Correlation Coefficient
+
+::: {.nonincremental}
+
+$$
+r_{xy} = (\text{sign of } b_1) \sqrt{\text{Coefficient of Determination}}
+$$
+
+$$
+r_{xy} = (\text{sign of } b_1) \sqrt{R^2}
+$$
+
+**where:**
+
+- $b_1$ = the slope of the estimated regression equation $\hat{y} = b_0 + b_1x$
+
+**Only in simple regression.**
+
+:::
+
+
+## Sample Correlation Coefficient
+
+::: {.nonincremental}
+
+**Example:** Armand’s Pizza Parlor Restaurants
+
+$$
+r_{xy} = (\text{sign of } b_1) \sqrt{R^2}
+$$
+
+The sign of $b_1$ in the equation $\hat{y} = 10 + 5x$ is "+".
+
+$$
+r_{xy} = +\sqrt{0.9027}
+$$
+
+$$
+r_{xy} = +0.9501
+$$
+
+:::
+
+
+# Model Assumptions {background-color="#cfb991"}
+
+## Assumptions About the Error Term $\varepsilon$
+
+<br>
+
+::: {.center}
+::: {.box .shadow}
+$$
+\varepsilon_i \text{ follows Normal } (0, \sigma^2), \text{ for all } i, \text{ independently}.
+$$
+:::
+:::
+
+<br>
+
+Validate model assumptions by a residual analysis (later).
+
+# Testing for Significance {background-color="#cfb991"}
+
+## Testing for Significance
+
+<br>
+
+::: {.nonincremental}
+
+
+- To test for a significant regression relationship, we must conduct a hypothesis test to determine whether the unknown $\beta_1$ is zero.
+- Two equivalent Tests are commonly used in simple regression:
+  
+  - $t$ Test  
+  - $F$ test
+
+- Both the $t$ test and $F$ test require an estimate of the unknown error variance $\sigma^2$.
+
+:::
+
+## Testing for Significance
+
+<br>
+
+::: {.nonincremental}
+
+Idea: **Estimating the population error variance** ($\sigma^2$) **by the sample residual variance** (denoted by $s^2$ or MSE).
+
+The mean square error (MSE), or $s^2$ is:
+
+$$
+s^2 = \text{MSE} = \frac{\text{SSE}}{(n-2)} \quad \text{Estimated unexplained variation.}
+$$
+
+where:
+
+$$
+\text{SSE} = \sum e_i^2 = \sum (y_i - \hat{y}_i)^2 = \underline{\hspace{4cm}}
+$$
+
+:::
+
+
+## Testing for Significance 
+
+::: {.nonincremental}
+
+- **An Estimate of $\sigma$**
+  - To estimate $\sigma$, we take the square root of $s^2$.
+  - The resulting $s$ is called the standard error (of the estimate).
+
+$$
+s = \sqrt{MSE} = \sqrt{\frac{SSE}{n - 2}} = \underline{\hspace{4cm}}
+$$
+
+:::
+
+
+## Testing for Overall Significance: $F$ Test 
+
+::: {.nonincremental}
+
+- **Hypotheses**
+  
+  $$ H_0 : \beta_1 = 0 \quad$$
+The proposed linear model is insignificant; No linear relationship; the predictor is insignificant; the predictor explains no variation in the response.
+  
+  $$ H_a : \beta_1 \neq 0 $$
+
+- **Test Statistic**
+  
+$$
+F = \frac{SSR / 1}{SSE / (n-2)} = \frac{MSR}{MSE} \quad \text{follows } F(1, n-2), \text{ if } H_0 \text{ is true.}
+$$
+
+
+:::
+
+## Testing for Overall Significance: $F$ Test 
+
+::: {.nonincremental}
+
+- **Decision Rules** *(right-tail)*:
+
+  - Reject $H_0$ if $p\text{-value} \leq \alpha$, or $F \geq F_{\alpha, 1, n-2}$
+
+<br>
+
+  where:
+
+  - $F_{\alpha, 1, n-2}$ is based on an $F$ distribution with 1 degree of freedom in the numerator and $n - 2$ degrees of freedom in the denominator.
+
+  - $F_{\alpha, 1, n-2} = F.\text{INV}(1-\alpha, 1, n - 2)$
+
+:::
+
+
+## Testing for Overall Significance: $F$ Test
+
+::: {.nonincremental}
+
+- Compute the value of the test statistic.
+
+$$
+F = \frac{SSR / 1}{SSE / (n-2)} = \frac{14,200 / 1}{1,530 / (10-2)} = 74.25
+$$
+
+<br>
+
+- **Decision.**
+
+  - $F_{\alpha} = F.\text{INV}(0.99,1,8) = 11.26$ and $F = 74.25 > 11.26.$ We reject $H_0.$
+
+  - $p\text{-value} = 1 - F.\text{DIST}(74.25,1,8, \text{TRUE}) \approx 0.000 < 1\% = \alpha$
+
+<center>
+::: {.red}
+The statistical evidence is sufficient to conclude that a significant relationship exists between the size of the student population and quarterly sales. The significance level is $\alpha = 1\%$.
+:::
+</center>
+
+:::
+
+## Testing for Individual Significance: $t$ Test 
+
+::: {.nonincremental}
+
+::: {.red}
+In regression, $b_1$ follows a normal distribution with mean $\beta_1$.
+:::
+
+- **Hypotheses**
+  
+  $H_0 : \beta_1 = 0 \quad (\text{Independent variable x is insignificant})$
+  
+  $H_a : \beta_1 \neq 0$
+
+<br>
+
+- **Test Statistic**
+  
+$$
+t = \frac{b_1 - 0}{s_{b_1}}, \quad \text{where} \quad s_{b_1} = \frac{s}{\sqrt{\sum(x_i - \bar{x})^2}}, \quad \text{follows } t(n-2), \text{ if } H_0 \text{ is true.}
+$$
+
+::: 
+
+## Testing for Individual Significance: $t$ Test
+
+::: {.nonincremental}
+
+<br>
+
+- **Decision Rules** *(two-tail)*:
+
+    - Reject $H_0$ if $p\text{-value} \leq \alpha$
+    - Reject $H_0$ if $t \leq -t_{\alpha/2,n-2}$ or $t \geq t_{\alpha/2,n-2}$ (i.e., $|t| > t_{\alpha/2,n-2}$)
+
+where the critical value, $t_{\alpha/2, n-2}$, is based on a $t$ distribution with $n - 2$ df.
+
+
+:::
+
+## Testing for Individual Significance: $t$ Test 
+
+<br>
+
+::: {.nonincremental}
+
+- Compute the value of the test statistic:
+
+$$
+t = \frac{b_1 - 0}{s_{b_1}} = \frac{5 - 0}{.5803} = 8.62
+$$
+<br>
+
+- **Decision:**
+
+    - $t_{0.01/2, 8} = T.\text{INV}(0.995,8) = 3.355$ provides an area of 0.005 in the upper tail of a $t$-distribution with $n-2$ degrees of freedom.
+    - Because $|t| = 8.62 > 3.355$, we can reject $H_0$ at $\alpha = 1\%$.
+    - $p\text{-value} = 2*(1-T.\text{DIST}(8.62,10-2,\text{TRUE})) \approx 0.000< 1\%$.
+
+  We can reject $H_0$.
+
+:::
+
+
+
+## Confidence Interval for $\beta_1$ 
+
+<br>
+
+<br>
+
+We can use a 99% confidence interval for $\beta_1$ to test the hypotheses just used in the *t* test.
+
+$H_0$ is rejected if the hypothesized value of $\beta_1$ is not included in the corresponding confidence interval for $\beta_1$.
+
+
+## Confidence Interval for $\beta_1$ 
+
+<br>
+
+::: {.nonincremental}
+
+- The form of a confidence interval for $\beta_1$ is:
+
+$$
+b_1 \pm t_{\alpha/2, n-2} s_{b_1}
+$$
+
+where:
+
+- $b_1$ is the point estimator,
+- $t_{\alpha/2, n-2} s_{b_1}$ is the margin of error (MOE),
+- $t_{\alpha/2, n-2}$ is the *t* value providing an upper-tail area of $\alpha/2$ in a *t* distribution with $n-2$ degrees of freedom.
+
+:::
+
+
+## Confidence Interval for $\beta_1$ 
+
+<br>
+
+::: {.nonincremental}
+
+- **99% Confidence Interval for $\beta_1$:**
+
+$$
+b_1 \pm t_{\alpha/2} s_{b_1} = 5 \pm 3.355(.5803) = 5 \pm 1.95
+$$
+
+or 3.05 to 6.95
+
+- **Conclusion:** 0 is not included in the 99% confidence interval. Reject $H_0$ at $\alpha$ = 1%.
+
+:::
+
+
+## Some Cautions about the Interpretation of Significance Tests
+
+<br>
+
+::: {.nonincremental}
+
+- Rejecting $H_0: \beta_1 = 0$ and concluding that the relationship between x and y is significant does not enable us to conclude that a **cause-and-effect relationship** is present between x and y.
+
+- Because we **are able to** reject $H_0: \beta_1 = 0$ and demonstrate statistical significance does not enable us to conclude that there is a **linear relationship** between x and y.
+
+:::
+
+# Excel’s Regression Tool {background-color="#cfb991"}
+
+## Excel’s Regression Tool
+
+<br>
+
+::: {.nonincremental}
+
+- Excel also has a comprehensive tool in its Data Analysis package called **Regression**.
+
+- The Regression tool can be used to perform a **complete regression analysis**.
+
+:::
+
+
+## Using Excel’s Regression Tool
+
+
+<center>
+**Performing the Regression Analysis**
+</center>
+
+
+::: columns
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+::: {.nonincremental}
+<br>
+
+  - **Step 1** Click the **DATA** tab on the Ribbon
+
+  - **Step 2** In the **Analyze** group, click **Data Analysis**
+
+  - **Step 3** Choose **Regression** from the list of Analysis Tools
+
+:::
+:::
+
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {.fragment}
+::: {style="font-size: 80%;"}
+::: {.nonincremental}
+
+<br>
+
+- **Step 4** When the Regression dialog box appears:
+    
+    - Enter **C1:C11** in the **Input Y Range** box
+    - Enter **B1:B11** in the **Input X Range** box
+    - Select the check box for **Labels**
+    - Select the check box for **Confidence Level**
+    - Enter **99** in the **Confidence Level** box
+    - Select **Output Range**
+    - Enter **A13** in the **Output Range** box
+    - Click **OK**
+
+<br>
+
+:::
+:::
+:::
+:::
+:::
+
+
+## Using Excel’s Regression Tool
+
+<br>
+
+**Example:** Armand’s Pizza Parlors: Regression tool dialog box
+
+<br>
+
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/armands_pizza_reg_excel.png") 
+```
+
+<br>
+
+
+
+
+## Using Excel’s Regression Tool
+
+<br>
+
+**Example:** Armand’s Pizza Parlors: Regression tool dialog box
+
+<br>
+
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/armands_pizza_reg_excel_output.png") 
+```
+
+<br>
+
+## Using Excel’s Regression Tool 
+
+::: r-fit-text
+::: {.nonincremental}
+::: columns
+::: {layout-ncol=3}
+::: {.column width="33%" style="text-align: center; justify-content: center; align-items: center;"}
+
+**Regression Statistics**:
+
+- **Multiple R**: 0.9501. Indicates a strong positive correlation between observed and predicted values.
+
+- **R Square (Coefficient of Determination)**: Approximately 90.27% of the variance in the dependent variable (Sales) is explained by the independent variable (Population).
+
+- **Adjusted R Square**: 0.8906. Adjusts the R Square for the number of predictors, providing a more accurate measure.
+
+- **Standard Error**: 13.8293. Measures the typical distance that the observed values fall from the regression line.
+
+
+:::
+::: {.column width="33%" style="text-align: center; justify-content: center; align-items: center;"}
+
+**ANOVA**
+
+- **Regression SS**: 14200. Variability explained by the model.
+  - **Residual SS**: 1530. Variability not explained by the model.
+  - **F-Statistic**: 74.2484. Indicates the model is statistically significant.
+  - **Significance F**: 2.55E-05. $p$-value indicating strong evidence against the null hypothesis.
+
+:::
+::: {.column width="33%" style="text-align: center; justify-content: center; align-items: center;"}
+
+**Model Results**
+
+- **Coefficients**:
+
+    - **Intercept**: 60 (p-value: 0.0002)  
+    - **Population**: 5 (p-value: 2.55E-05)  
+    - Both coefficients are statistically significant.
+
+- **Confidence Intervals**:
+    
+    - **95% CI for Intercept**: [38.7247, 81.2753]
+    - **95% CI for Population**: [3.6619, 6.3381]
+
+:::
+::: 
+:::
+:::
+:::
+
+# Using the Estimated Regression Equation for Estimation and Prediction {background-color="#cfb991"}
+
+## Using the Estimated Regression Equation for Estimation and Prediction
+
+::: {.nonincremental}
+
+- A **confidence interval** is an interval estimate of the **mean of all** values of $y$ for a given value of $x$.
+
+- A **prediction interval** is used whenever we want to **predict an individual** value of $y$ for a new randomly-chosen observation corresponding to a given value of $x$.
+
+- The given $x$-value is denoted by $x^*$ , and the corresponding point estimate is obtained from the estimated regression equation:
+
+$$
+\hat{y}^* = b_0 + b_1 x^*
+$$
+
+- The margin of error (MOE) is larger for a prediction interval.
+
+:::
+
+
+## Using the Estimated Regression Equation for Estimation and Prediction
+
+::: {.nonincremental}
+
+- **Confidence Interval Estimate of the mean**, $E(\hat{y}^*)$:
+
+$$
+\hat{y}^* \pm t_{\alpha/2, n-2} s_{\hat{y}^*}
+$$
+
+- **Prediction Interval Estimate of individual** $\hat{y}^*$:
+
+$$
+\hat{y}^* \pm t_{\alpha/2, n-2} s_{pred}
+$$
+
+where:
+
+- **confidence coefficient** is $1-\alpha$ and $t_{\alpha/2, n-2}$ is based on a _t_ distribution with $n-2$ degrees of freedom.
+
+:::
+
+## Point Estimation
+
+::: {.nonincremental}
+
+**Example:** Armand’s Pizza Parlors
+
+To predict quarterly sales or expected quarterly sales of restaurants near a campus or campuses with 10,000 students ($x* = 10$),
+
+$$
+\hat{y}^* = 60 + 5(10) = 110
+$$
+
+Predicted quarterly sales of $110,000
+
+:::
+
+## Sums of Squares
+
+
+| $i$ | $x_i$ | $y_i$ | $x_i - \bar{x}$ | $y_i - \bar{y}$ | $(x_i - \bar{x})(y_i - \bar{y})$ | $(x_i - \bar{x})^2$ | $(y_i - \bar{y})^2$ |
+|----|--------|--------|-----------------|----------------|-----------------------------------|---------------------|--------------------|
+| 1   | 2    | 58   | -12             | -72            | 864                               | 144               | 5184              |
+| 2   | 6    | 105  | -8              | -25            | 200                               | 64                | 625               |
+| 3   | 8    | 88   | -6              | -42            | 252                               | 36                | 1764              |
+| 4   | 8    | 118  | -6              | -12            | 72                                | 36                | 144               |
+| 5   | 12   | 117  | -2              | -13            | 26                                | 4                 | 169               |
+| 6   | 16   | 137  | 2               | 7              | 14                                | 4                 | 49                |
+| 7   | 20   | 157  | 6               | 27             | 162                               | 36                | 729               |
+| 8   | 20   | 169  | 6               | 39             | 234                               | 36                | 1521              |
+| 9   | 22   | 149  | 8               | 19             | 152                               | 64                | 361               |
+| 10  | 26   | 202  | 12              | 72             | 864                               | 144               | 5184              |
+| **Total** | 140  | 1300 |     |     | 2840                              | 568               | 15730             |
 
 <br>
 
 <center>
-Grand sample mean $\bar{x}$ = 60
+$\bar{x} = 14, \bar{y} = 130$
 </center>
 
-## Experimental Design - Example: Chemitech Experiment
+<br>
+
+## Confidence Interval for $E(\hat{y}^*)$
+
+::: {.nonincremental}
+
+Estimate of the Standard Deviation of $\hat{y}^*$:
+
+$$
+s_{\hat{y}^*} = s \sqrt{\frac{1}{n} + \frac{(x^* - \bar{x})^2}{\sum (x_i - \bar{x})^2}}
+$$
+
+$$
+= 13.829 \sqrt{\frac{1}{10} + \frac{(10 - 14)^2}{568}}
+$$
+
+$$
+= 13.829 \sqrt{.1282} = 4.95
+$$
+
+::: 
+
+## Confidence Interval for $E(\hat{y}^*)$
+
+
+95% confidence interval of the **mean** quarterly sales for all Armand’s restaurants located near campuses with 10,000 students is
+
+$$
+\hat{y}^* \pm t_{\alpha/2} s_{\hat{y}^*}
+$$
+
+$$
+110 \pm 2.306(4.95)
+$$
+
+$$
+110 \pm 11.415, \text{ or } \$98,585 \text{ to } \$121,415
+$$
+
+We are 95% confident that the **mean** quarterly sales for **all** Armand’s restaurants located near campuses with 10,000 students falls between \$98,585 and \$121,415.
+
+
+## Prediction Interval for $y^*$ 
+
+::: {.nonincremental}
+
+Estimate of the Standard Deviation of an **Individual Value** of $y^*$
+
+$$
+s_{pred} = s \sqrt{1 + \frac{1}{n} + \frac{(x^* - \bar{x})^2}{\sum (x_i - \bar{x})^2}}
+$$
+
+$$
+s_{pred} = 13.829 \sqrt{1 + \frac{1}{10} + \frac{(10 - 14)^2}{568}}
+$$
+
+$$
+= 13.829 \sqrt{1.282} = 14.69
+$$
+
+
+:::
+
+## Prediction Interval for $y^*$ 
+
+::: {.nonincremental}
+
+95% prediction interval for quarterly sales for the new Armand’s restaurant located near a campus with 10,000 students is
+
+$$
+\hat{y}^* \pm t_{\alpha/2} s_{pred}
+$$
+
+$$
+110 \pm 2.306(14.69)
+$$
+
+$$
+110 \pm 33.875, \text{ or } \$76,125 \text{ to } \$143,875
+$$
+
+If we randomly select **one** Armand’s restaurant located near a campus with 10,000 students, we are 95% confident that its quarterly sales will be between \$76,125 and \$143,875.
+
+:::
+
+
+## Comments
 
 <br>
 
 ::: {.nonincremental}
 
-- **One-way Analysis of Variance (ANOVA)** can be used to test for the equality of means (mean responses) of two or more normal populations.
+- Prediction intervals for individuals are wider than the corresponding confidence intervals for means.
 
-<br>
+- Two $x$-values with the same distance to the $\bar{x}$, their corresponding confidence intervals have the same width (and hence, the same margin of error). True also for the prediction intervals.
 
-- The hypotheses:
-
-  $H_0: \mu_1 = \mu_2 = \mu_3 = ... = \mu_k$
-
-  $H_a:$ Not all population means are equal.
-
-<br>
-where,
-
-  $(\mu_1, \mu_2, \mu_3, ..., \mu_k$ are mean responses for the $k$ populations.)
-
-  $(k = 3$ for the motivating example.)
+- The confidence interval is wider when the given $x$ is further away from the $\bar{x}$ -- It is more difficult to predict for outlying $x$'s.
 
 :::
 
+# Residual Analysis: Validating Model Assumptions {background-color="#cfb991"}
 
-## Experimental Design - Example: Chemitech Experiment
+## Residual Analysis: Validating Model Assumptions
 
-<br>
+::: {.nonincremental}
 
-- If $H_0$ is rejected, we cannot conclude that **all** population means are different.
+- If the assumptions about the error term $\varepsilon$ appear questionable, the hypothesis tests about the significance of the regression relationship and the interval estimation results may not be valid.
 
-<br>
+- The residuals provide the best information about $\varepsilon$.
 
-- Rejecting $H_0$ means that at least two population means have different values, or not all means are equal.
+- Residual for observation $i$
+
+$$
+y_i - \hat{y}_i
+$$
+
+- Much of the residual analysis is based on an examination of graphical plots.
+
+:::
+
+## Model Assumptions
+
+::: {.nonincremental}
+
+- $\varepsilon_i$ follows Normal (0, $\sigma^2$), for all $i$, independently.
+
+- **(Constant variance)** Random errors have a constant variance.
+  - Plot residuals against $x$ or the predicted $y$.
+
+- **(Randomness)** Random errors are random (no special patterns or trends).
+  - Plot residuals against observation number.
+
+- **(Normality)** Random errors follow a Normal distribution.
+  - Normal probability plot.
+
+:::
+
+## Residual Plot Against $x$ 
 
 
-# One-way ANOVA {background-color="#cfb991"}
+::: {style="font-size: 80%;"}
 
-## One-way ANOVA: Model Assumptions
+If the assumption that the variance of $\varepsilon$ is the same (constant) for all values of $x$ is valid, and the assumed regression model is an adequate representation of the relationship between the variables, then the residual plot should give an overall impression of a horizontal band of points.
+:::
 
-<br>
+::: columns
+::: {layout-ncol=3}
+::: {.column width="33%" style="text-align: center; justify-content: center; align-items: center;"}
 
-For each population:
+::: {.fragment}
 
-- The response variable is normally distributed.
-
-- The mean of $i$-th population is $\mu_i$.
-
-- The variance of the response variable is the same for **all** of the populations; denoted $\sigma^2$ (unknown).
-
-- The observations must be independent.
-
-## One-way ANOVA: Analysis Method
-
-<br>
-
-```{r  echo=FALSE, out.width = "70%",fig.align="center"}
-knitr::include_graphics("figs/analysis_method_anova.png") 
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/reg_residual_01.png") 
 ```
 
-<br>
-
-If the variation of the sample means is large, then not all population means are equal.  
-
-<br>
-
-<br>
-
-## One-way ANOVA: Analysis Method
-
-<br>
-
-There are two types of variation:
-
-- **Between-treatments variation** of sample means ($\bar{x}_j$): Variation due to different treatments. (Explained variation)
-
-- **Within-treatments variation** of observations from their respective treatment means (Unexplained variation).
-
-<br>
-
-- The **F Test** for $H_0$ vs $H_a$:
-
-    - If Between-treatments variation is significantly larger than the Within-treatment variation, reject $H_0$.
-
-
-## One-way ANOVA: Explained Between-Treatments Variation (MSTR)
-
-<br>
-
-::: {.nonincremental}
-
-- The variation in the sample means is measured by the mean square due to treatments and is denoted by **MSTR**.
-
-$$
-\text{MSTR} = \frac{\text{Sum of squares due to treatments (SSTR)}}{\text{Degrees of freedom of SSTR}} = \frac{\sum_{j=1}^k n_j(\bar{x}_j - \bar{x})^2}{k - 1}
-$$
-
-$$
-= \frac{5(62 - 60)^2 + 5(66 - 60)^2 + 5(52 - 60)^2}{3 - 1} = \frac{520}{2} = 260
-$$
+:::
 
 :::
 
-## One-way ANOVA: Unexplained Within-Treatments Variation (MSE)
+::: {.column width="33%" style="text-align: center; justify-content: center; align-items: center;"}
 
-::: {.nonincremental}
+::: {.fragment}
 
-- The variation of the sample observations within each sample is called the **mean square error (MSE)**.
-
-- A measure of sampling variation.
-
-$$
-\text{MSE} = \frac{\text{Sum of squares due to unexplained error (SSE)}}{\text{Degrees of freedom of SSE}} = \frac{\sum_{j=1}^k (n_j - 1) s_j^2}{n_T - k}
-$$
-
-$$
-= \frac{(5-1)(27.5) + (5-1)(26.5) + (5-1)(31)}{15-3} = \frac{340}{12} = 28.33
-$$
-
-$(n_T = 15 \text{ is the total sample size.})$
-
-:::
-
-
-## One-way ANOVA: Test Statistic and Decision Rule
-
-<br>
-
-::: {.nonincremental}
-
-**Test statistic:**
-
-- If MSTR is large, we will reject $H_0$; but we need to take the sampling variation (MSE) into account.
-- F statistic: $F = \frac{MSTR}{MSE}$
-
-**Decision rule:**
-
-- MSE is always a good estimate of the common population variance $\sigma^2$.
-- If $H_0$ is false (not all means are equal), MSTR overestimates $\sigma^2$ and is expected to be much larger than MSE.
-- Reject $H_0$ if $F = \frac{MSTR}{MSE}$ is too large.
-
-:::
-
-## One-way ANOVA: The F Test
-
-::: {.nonincremental}
-
-
-- The distribution of the test statistic:
-
-$$
-F = \frac{MSTR}{MSE}
-$$
-
-- If the null hypothesis is true and the ANOVA assumptions are valid, the sampling distribution of the test statistic is an **F distribution** with $k-1$ (numerator) and $n_T - k$ (denominator) degrees of freedom.
-
-<br>
-
-- **Decision Rule:** Reject $H_0$ if the observed $F > F_{\alpha, k-1, n_T-1}$ (right-tail),
-
-where $F_{\alpha, k-1, n_T-1} = \text{F.INV}(1-\alpha, k-1, n_T-1)$.
-
-:::
-
-
-## One-way ANOVA: The F Test
-
-<br>
-
-::: {.nonincremental}
-
-```{r  echo=FALSE, out.width = "70%",fig.align="center"}
-knitr::include_graphics("figs/anova_mstr_mse.png") 
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/reg_residual_02.png") 
 ```
 
-- Observed F-ratio  = 9.18
-- `p-value = 1–F.DIST(9.18,2,12,TRUE)` $\approx$ `0.004`
-
 :::
 
-<br>
-<br>
-
-
-## One-way ANOVA: Decision Rules
-
-<br>
-
-::: {.nonincremental}
-
-- **p-value approach:** Reject $H_0$ if $p$-value $\leq \alpha$
-
-<br>
-
-- **Critical-value approach:** Reject $H_0$ if $F \geq F_{\alpha}$
-
-where the critical value $F_{\alpha}$ is based on an **F distribution** with $k-1$ numerator d.f. and $n_T - k$ denominator d.f.
-
-- In our example, $F_{0.05,1,12} = \text{F.inv}(0.95,2,12) = 3.89$, and $9.18 > 3.89$.
-
-**Conclusion:** *We have statistically significant evidence that at least one pair of the assembly methods produced different mean numbers of filtration systems per week. The significance level is 5%.*
-
 :::
+::: {.column width="33%" style="text-align: center; justify-content: center; align-items: center;"}
 
-## One-way ANOVA: ANOVA Table 
+::: {.fragment}
 
-<br>
-
-- ANOVA can be viewed as the process of partitioning the total sum of squares and the degrees of freedom into their corresponding sources: treatments and error.
-
-- Dividing the sum of squares by the appropriate degrees of freedom provides the variance estimates, the $F$ value, and the $p$-value used to test the hypothesis of equal population means.
-
-## One-way ANOVA: ANOVA Table 
-
-<br>
-
-::: {.nonincremental}
-
-- Assuming $H_0$ is true, the entire data set is basically one sample from one population, the formula for computing the total sum of squares (SST) is:
-
-$$
-\text{SST} = \sum_{j=1}^k \sum_{i=1}^{n_j} (x_{ij} - \bar{x})^2 = (n_T - 1) s_x^2 = 860
-$$
-
-$$
-= \text{SSTR} + \text{SSE} = 520 + 340
-$$
-
-- SST has $n_T - 1 = 15 - 1 = 14 (= 2 + 12)$ degrees of freedom.
-
-:::
-
-## One-way ANOVA: ANOVA Table
-
-<br>
-
-$H_0: \mu_1 = \mu_2 = \mu_3$
-
-$H_a:$ Not all the means are equal
-
-<br>
-
-::: r-fit-text
-
-
-| Source of Variation | Sum of Squares | Degrees of Freedom | Mean Square | $F$  |p-Value |
-|---------------------|----------------|--------------------|-------------|-------|-------|
-| Treatments          | $SSTR$           | $df_1$             | $\text{MSTR}=\frac{\text{SSTR}}{df_1}$ | $\frac{MSTR}{MSE}$  | $1-\text{F.DIST}(F, k-1, n_T-k, \text{TRUE})$ |
-| Error               | $SSE$            | $df_2$             | $\text{MSE}=\frac{\text{SSE}}{df_2}$       |       |         |
-| Total               | $SST=SSTR+SSE$ | $df_3=df_1+df_2$ |             |       |         |
-
-
-:::
-
-## One-way ANOVA:  ANOVA Table
-
-<br>
-
-$H_0: \mu_1 = \mu_2 = \mu_3$
-
-$H_a:$ Not all the means are equal
-
-<br>
-
-::: r-fit-text
-
-
-| Source of Variation | Sum of Squares | Degrees of Freedom | Mean Square | $F$ | p-Value |
-|---------------------|---------------|-----------------|----------------|-----|---------|
-| Treatments          | $\sum_{j=1}^k n_j (\bar{x}_j - \bar{x})^2$   | $k - 1$ | $\frac{\text{SSTR}}{k - 1}$            | $\frac{\text{MSTR}}{\text{MSE}}$ | $1-\text{F.DIST}(F, k-1, n_T-k, \text{TRUE})$ |
-| Error               | $\sum_{j=1}^k (n_j - 1) s_j^2$  | $n_T - k$   | $\frac{\text{SSE}}{n_T - k}$ |          |       |
-| Total               | $\sum_{j=1}^k \sum_{i=1}^{n_j} (x_{ij} - \bar{x})^2$     | $n_T - 1$               |                                        |                                       |                                       |
-:::
-
-## One-way ANOVA: ANOVA Table
-
-<br>
-
-$H_0: \mu_1 = \mu_2 = \mu_3$
-
-$H_a:$ Not all the means are equal
-
-<br>
-
-| Source of Variation | Sum of Squares | Degrees of Freedom | Mean Square | $F$  | p-Value |
-|---------------------|----------------|--------------------|-------------|-------|---------|
-| Treatments          | 520            | 2                  | 260.00      | 9.18  | .004    |
-| Error               | 340            | 12                 | 28.33       |       |         |
-| Total               | 860            | 14                 |             |       |         |
-
-
-## One-way ANOVA: Other Applications
-
-::: {.nonincremental}
-
-- Mean sales of companies using four (4) different advertising methods (spot TV, newspapers, flyers, magazines).
-- Mean quality levels of products from several vendors.
-- Yields of several processes (machines).
-- Mean completion times of different methods.
-- Mean waiting times of several lines in a bank.
-- Mean selling price of houses in different school districts.
-- Mean response time of a service request for several companies.
-- Mean ages between floor workers, middle managers, and executives.
-- Mean improvement or learning outcome measures between several training/teaching methods (in-person, online, hybrid, weekend program).
-
-:::
-
-# Excel’s ANOVA {background-color="#cfb991"}
-
-## Excel’s ANOVA: Single Factor Tool 
-
-::: {.nonincremental}
-
-- **Step 1:** Open `Assembly.xlsx`, and, `on Sheet 2`, click the **Data** tab on the Ribbon
-
-- **Step 2:** In the **Analysis** group, click **Data Analysis**
-
-- **Step 3:** Choose **Anova: Single Factor** from the list of Analysis Tools
-
-- **Step 4:** When the **Anova: Single Factor** dialog box appears: (see details on next slide)
-
-:::
-
-## Excel’s ANOVA: Single Factor Tool 
-
-```{r  echo=FALSE, out.width = "70%",fig.align="center"}
-knitr::include_graphics("figs/anova_excel_01.png") 
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/reg_residual_03.png") 
 ```
 
+:::
+
+:::
+::: 
+:::
+
 <br>
 
-## Excel’s ANOVA: Single Factor Tool 
+## Residual Plot Against $x$ 
 
-**Summary and Output data**
+**Example:** Armand’s Pizza Parlors
+
+| Student Population ($x_i$) | Sales ($y_i$) | Predicted sales $y_i = 60 + 5(x_i)$ | Residuals ($y_i - \hat{y_i}$) |
+|----------------------------|---------------|--------------------------------------|------------------------------|
+| 2                            | 58              | 70                                    | -12                              |
+| 6                            | 105             | 90                                    | 15                               |
+| 8                            | 88              | 100                                   | -12                              |
+| 8                            | 118             | 100                                   | 18                               |
+| 12                           | 117             | 120                                   | -3                               |
+| 16                           | 137             | 140                                   | -3                               |
+| 20                           | 157             | 160                                   | -3                               |
+| 20                           | 169             | 160                                   | 9                                |
+| 22                           | 149             | 170                                   | -21                              |
+| 26                           | 202             | 190                                   | 12                              
+
+
+## Residual Plot Against $x$ 
+
+**Example:** Armand’s Pizza Parlors
+
+Plot of the residuals against the independent variable $x$.
 
 ```{r  echo=FALSE, out.width = "70%",fig.align="center"}
-knitr::include_graphics("figs/anova_excel_02.png") 
+knitr::include_graphics("figs/armands_pizza_plot_residual.png") 
 ```
 
+## Residual Plot Against $x$ - Excel
+
+::: {.nonincremental}
+
+::: columns
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+
+- Using Excel to Produce a Residual Plot
+
+    - The steps outlined earlier to obtain the regression output are performed with one change.
+    - When the Regression dialog box appears, we must also select the **Residual Plot** option.
+    - The output will include two new items:
+        
+        - A plot of the residuals against the independent variable, and
+        - A list of predicted values of $y$ and the corresponding residual values.
+
+:::
+
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+
 <br>
+
+```{r  echo=FALSE, out.width = "90%",fig.align="center"}
+knitr::include_graphics("figs/armands_pizza_plot_residual_excel.png") 
+```
+
+
+:::
+:::
+:::
+
+## Standardized Residuals
+
+::: {.nonincremental}
+
+- Standardized Residual for Observation $i$
+
+$$
+\frac{y_i - \hat{y_i}}{s_{y_i - \hat{y_i}}}
+$$
+
+where
+
+$$
+s_{y_i - \hat{y_i}} = s \sqrt{1 + h_i}
+$$
+
+$$
+h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
+$$
+
+:::
+
+
+## Standardized Residual Plot
+
+
+- The standardized residual plot can provide insight about the assumption that the error term $\varepsilon$ has a normal distribution.
+
+- If this assumption is satisfied, the distribution of the standardized residuals should appear to come from a standard normal probability distribution.
+
+    - Empirical rule applies.
+
+
+
+## Standardized Residual
+
+
+**Example:** Armand’s Pizza Parlors
+
+| Observation | Predicted sales $y_i = 60 + 5(x_i)$ | Residuals ($y_i - \hat{y_i}$) | Standardized Residual |
+|-------------|-------------------------------------|-------------------------------|-------------------------|
+| 1           | 70                                    | -12                              | -1.0792               |
+| 2           | 90                                    | 15                               | 1.2224                |
+| 3           | 100                                   | -12                              | -.9487                |
+| 4           | 100                                   | 18                               | 1.4230                |
+| 5           | 120                                   | -3                               | -.2296                |
+| 6           | 140                                   | -3                               | -.2296                |
+| 7           | 160                                   | -3                               | -.2372                |
+| 8           | 160                                   | 9                                | .7115                 |
+| 9           | 170                                   | -21                              | -1.7114               |
+| 10          | 190                                   | 12                               | 1.0792                |
+
+
+
+## Standardized Residual Plot
+
+
+**Example:** Armand’s Pizza Parlors
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/armands_pizza_plot_residual_std.png") 
+```
+
+
+- All of the standardized residuals are between -2 and +2 indicating that there is no reason to question the assumption that ε has a normal distribution.
+
+- Small sample size?
+
+## Using Excel to construct a Standardized Residual Plot
+
+
+**Example: Armand’s Pizza Parlors**
+
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/armands_pizza_plot_residual_std_excel.png") 
+```
+
+
+# Outliers and Influential Observations {background-color="#cfb991"}
+
+## Outliers and Influential Observations
+
+::: {.nonincremental}
+
+- **Detecting Outliers**
+
+    - An outlier is an observation that is unusual in comparison with the other data.
+    - Minitab classifies an observation as an outlier if its standardized residual value is < -2 or > +2.
+    - **Note:** The standardized residual rule sometimes fails to identify an unusually large observation as being an outlier.
+
+:::
+
+## Remedies for Special Patterns
+
+
+::: columns
+::: {layout-ncol=4}
+::: {.column width="25%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {.fragment}
+
+**Large Residuals**
+
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/residuals_special_pattern_01.png") 
+```
+
+Investigate
+
+:::
+
+:::
+
+::: {.column width="25%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {.fragment}
+
+**Strong Curvature**
+
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/residuals_special_pattern_02.png") 
+```
+
+Add $x^2$
+
+:::
+
+:::
+::: {.column width="25%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {.fragment}
+
+**Clusters**
+
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/residuals_special_pattern_03.png") 
+```
+
+Investigate, or add $x^2$
+
+:::
+
+:::
+::: {.column width="25%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {.fragment}
+
+**Unequal Variation**
+
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/residuals_special_pattern_04.png") 
+```
+
+Heteroscedasticity; Transform y to $log(y)$
+
+:::
+
+:::
+
+::: 
+:::
+
+<br>
+
+
+## Normal Probability Plot
+
+::: columns
+::: {.column width="45%" style="text-align: center; justify-content: center; align-items: center;"}
+
+- **$H_0$**: Random Error is normal;
+- **$H_1$**: Not normal
+
+:::
+::: {.column width="65%" style="text-align: center; justify-content: center; align-items: center;"}
+
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/armands_pizza_normality_plot.png") 
+```
+
+:::
+
+:::
+
+
+## Example: Measuring Stock Risk
+
+<br>
+
+In finance, one measure of the **risk** or **volatility** of an individual stock is the standard deviation of its total return (capital appreciation plus dividends) over several periods of time.
+
+- But the standard deviation does not **take into account** the extent to which the price of a given stock varies as a function of a standard market index, such as the S&P 500.
+
+- **Beta for a stock** is the regression coefficient ($\beta_1$) in a regression model, where the independent variable ($x$) is the total return for the stock market and the dependent variable is the stock’s returns.
+
+    - **Beta greater than 1** indicates that the stock is more volatile than the market and hence a risky stock.
+    
+    - **Beta less than 1** indicates that the stock is less volatile than the market and hence a less risky stock.
+
+
+## Example: Measuring Stock Risk
+
+<br>
+
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/beta_stocks_data.png") 
+```
+
+## Questions
+
+
+- Which stocks are the most volatile? (Standard deviation)
+
+- Which stocks would you expect to perform best in an up market? Down market? ($\beta_1$)
+
+- How much of the return for an individual stock is explained by the market? ($R^2$)
+
+
+## Descriptive Statistics
+
+| Variable           | Count | Mean    | StDev   | Minimum  | Median   | Maximum  |
+|--------------------|-------|---------|---------|----------|----------|----------|
+| Microsoft          | 36    | 0.00503 | 0.04537 | -0.08201 | 0.00400  | 0.08883  |
+| Exxon Mobil        | 36    | 0.01664 | 0.05534 | -0.11646 | 0.01278  | 0.23217  |
+| Caterpillar        | 36    | 0.0301  | 0.0686  | -0.1006  | 0.0408   | 0.2185   |
+| Johnson & Johnson  | 36    | 0.00530 | 0.03487 | -0.05917 | -0.00148 | 0.10334  |
+| McDonalds          | 36    | 0.0245  | 0.0681  | -0.1144  | 0.0370   | 0.1826   |
+| **SanDisk**            | 36    | 0.0693  | **0.1954**  | -0.2833  | 0.0741   | 0.5017   |
+| Qualcomm           | 36    | 0.0284  | 0.0862  | -0.1217  | 0.0387   | 0.2105   |
+| Procter & Gamble   | 36    | 0.01059 | 0.03707 | -0.05365 | 0.01333  | 0.08783  |
+| S&P 500            | 36    | 0.01010 | 0.02633 | -0.03429 | 0.01034  | 0.08104  |
+
+Using the standard deviation as a measure of volatility, SanDisk was the most volatile stock with a standard deviation of 0.1954.  The stocks of Johnson & Johnson and P & G exhibit less volatility than the other individual stocks. But, all of the individual stocks are more volatile than the market as a whole. The diversification embodied in the S&P 500 reduces its volatility.
+
+
+## Betas ($\beta_1$) of Stocks
+
+
+| Company            | Beta  |
+|--------------------|-------|
+| Microsoft          | .458  |
+| Exxon Mobil        | .731  |
+| Caterpillar        | 1.490 |
+| Johnson & Johnson  | .009  |
+| McDonald’s         | 1.500 |
+| SanDisk            | 2.600 |
+| Qualcomm           | 1.410 |
+| Procter & Gamble   | 0.507 |
+
+
+- Any stock with a beta greater than 1 will move up faster than the market when the market goes up. Any stock with a beta less than 1 will not go down as fast as the market in periods where the market declines.
+
+- We would expect SanDisk (+2.600) to benefit most from an up market.  Johnson & Johnson (0.009) is least affected by the market.  The effect of the market going down cannot be expected to exert much downward pressure on shares of Johnson & Johnson.
+
+
+
+
+## Variation Explained by Market
+
+| Company            | Equation                             | R-Sq     |
+|--------------------|--------------------------------------|----------|
+| Microsoft          | 0.00040 + 0.458 S&P 500              | 7.1%     |
+| Exxon Mobil        | 0.00926 + 0.731 S&P 500              | 12.1%    |
+| Caterpillar        | 0.015000 + 1.49 S&P 500              | 32.9%    |
+| Johnson & Johnson  | 0.00521 + 0.009 S&P 500              | 0.0%     |
+| McDonald’s         | 0.00930 + 1.500 S&P 500              | **33.8%**|
+| Sandisk            | 0.04300 + 2.600 S&P 500              | 12.3%    |
+| Qualcomm           | 0.01410 + 1.410 S&P 500              | 18.7%    |
+| Procter & Gamble   | 0.00548 + 0.507 S&P 500              | 12.9%    |
+
+
+- $R^2$ values for each stock indicate the percentage of variation explained by the market.
 
 # Summary
 
 ## Summary
 
-
-::: {.nonincremental}
-
+::: nonincremental
 Some key takeaways from this session:
 
-- **Experimental Design**: allow for control over variables, enabling the establishment of cause-and-effect relationships.
-  
-     - Observational studies do not control variables, limiting conclusions about causality.
+-   **XXX**: XXX.
 
-- **ANOVA**: Is a statistical method used to test for differences in means across multiple groups.
-  
-     - It partitions the variance into components due to treatments and error, facilitating hypothesis testing.
+    -   XXX.
 
-- **ANOVA Assumptions and Decision Making**:
-   
-    - Assumptions include normal distribution, equal variances, and independence of observations.
-    - Decision rules are based on comparing the calculated F-statistic to a critical value **or** p-value to accept or reject the null hypothesis.
+-   **XXX**: XXX.
+
+    -   XXX.
 
 :::
 
