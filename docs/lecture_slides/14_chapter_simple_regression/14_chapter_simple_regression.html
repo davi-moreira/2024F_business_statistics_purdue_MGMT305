@@ -1510,18 +1510,40 @@ r_{xy} = +0.9501
 <h1>Model Assumptions</h1>
 
 </section>
-<section id="assumptions-about-the-error-term-varepsilon" class="slide level2 center">
-<h2>Assumptions About the Error Term <span class="math inline">\(\varepsilon\)</span></h2>
-<p><br></p>
-<div class="center">
-<div class="box shadow">
+<section id="assumptions-about-the-error-term-epsilon" class="slide level2 center">
+<h2>Assumptions About the Error Term <span class="math inline">\(\epsilon\)</span></h2>
+<ol type="1">
+<li class="fragment"><p>The error term <span class="math inline">\(\epsilon\)</span> is a random variable with a mean or expected value of zero; that is, <span class="math inline">\(E(\epsilon) = 0\)</span>.</p>
+<ul>
+<li class="fragment"><strong>Implication</strong>: <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> are constants; therefore <span class="math inline">\(E(\beta_0) = \beta_0\)</span> and <span class="math inline">\(E(\beta_1) = \beta_1\)</span>; thus, for a given value of <span class="math inline">\(x\)</span>, the expected value of <span class="math inline">\(y\)</span> is:</li>
+</ul></li>
+</ol>
+<div class="fragment">
 <p><span class="math display">\[
-\varepsilon_i \text{ follows Normal } (0, \sigma^2), \text{ for all } i, \text{ independently}.
-\]</span></p>
+   E(y) = \beta_0 + \beta_1x
+   \]</span></p>
 </div>
-</div>
+<ol start="2" type="1">
+<li class="fragment"><p>The variance of <span class="math inline">\(\epsilon\)</span>, denoted by <span class="math inline">\(\sigma^2\)</span>, is the same for all values of <span class="math inline">\(x\)</span>.</p>
+<ul>
+<li class="fragment"><strong>Implication</strong>: The variance of <span class="math inline">\(y\)</span> about the regression line equals <span class="math inline">\(\sigma^2\)</span> and is the same for all values of <span class="math inline">\(x\)</span>.</li>
+</ul></li>
+<li class="fragment"><p>The values of <span class="math inline">\(\epsilon\)</span> are independent.</p>
+<ul>
+<li class="fragment"><strong>Implication</strong>: The value of <span class="math inline">\(\epsilon\)</span> for a particular value of <span class="math inline">\(x\)</span> is not related to the value of <span class="math inline">\(\epsilon\)</span> for any other value of <span class="math inline">\(x\)</span>; thus, the value of <span class="math inline">\(y\)</span> for a particular value of <span class="math inline">\(x\)</span> is not related to the value of <span class="math inline">\(y\)</span> for any other value of <span class="math inline">\(x\)</span>.</li>
+</ul></li>
+<li class="fragment"><p>The error term <span class="math inline">\(\epsilon\)</span> is a normally distributed random variable for all values of <span class="math inline">\(x\)</span>.</p>
+<ul>
+<li class="fragment"><strong>Implication</strong>: Because <span class="math inline">\(y\)</span> is a linear function of <span class="math inline">\(\epsilon\)</span>, <span class="math inline">\(y\)</span> is also a normally distributed random variable for all values of <span class="math inline">\(x\)</span>.</li>
+</ul></li>
+</ol>
+</section>
+<section id="assumptions-about-the-error-term-epsilon-1" class="slide level2 center">
+<h2>Assumptions About the Error Term <span class="math inline">\(\epsilon\)</span></h2>
 <p><br></p>
-<p>Validate model assumptions by a residual analysis (later).</p>
+
+<img data-src="figs/residuals_assumption.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><p><br></p>
+<p><br></p>
 </section></section>
 <section>
 <section id="testing-for-significance" class="title-slide slide level1 center" data-background-color="#cfb991">
@@ -1555,7 +1577,7 @@ s^2 = \text{MSE} = \frac{\text{SSE}}{(n-2)} \quad \text{Estimated unexplained va
 \]</span></p>
 <p>where:</p>
 <p><span class="math display">\[
-\text{SSE} = \sum e_i^2 = \sum (y_i - \hat{y}_i)^2 = \underline{\hspace{4cm}}
+\text{SSE} = \sum e_i^2 = \sum (y_i - \hat{y}_i)^2
 \]</span></p>
 </div>
 </section>
@@ -1570,13 +1592,14 @@ s^2 = \text{MSE} = \frac{\text{SSE}}{(n-2)} \quad \text{Estimated unexplained va
 </ul></li>
 </ul>
 <p><span class="math display">\[
-s = \sqrt{MSE} = \sqrt{\frac{SSE}{n - 2}} = \underline{\hspace{4cm}}
+s = \sqrt{MSE} = \sqrt{\frac{SSE}{n - 2}}
 \]</span></p>
 </div>
 </section>
 <section id="testing-for-overall-significance-f-test" class="slide level2 center">
 <h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <div>
+<div class="r-fit-text">
 <ul>
 <li><p><strong>Hypotheses</strong></p>
 <p><span class="math display">\[ H_0 : \beta_1 = 0 \quad\]</span> The proposed linear model is insignificant; No linear relationship; the predictor is insignificant; the predictor explains no variation in the response.</p>
@@ -1585,7 +1608,14 @@ s = \sqrt{MSE} = \sqrt{\frac{SSE}{n - 2}} = \underline{\hspace{4cm}}
 </ul>
 <p><span class="math display">\[
 F = \frac{SSR / 1}{SSE / (n-2)} = \frac{MSR}{MSE} \quad \text{follows } F(1, n-2), \text{ if } H_0 \text{ is true.}
-\]</span></p>
+\]</span> where</p>
+<ul>
+<li><strong>SSR (Sum of Squares for Regression)</strong>: measures how much of the variation in the dependent variable is explained by the independent variable(s).</li>
+<li><strong>MSR (Mean Square Regression)</strong>: is the average variation explained by the model per degree of freedom for the regression.In the case above, we have only one independent variable as the degree of freedom for the regression (denominator).</li>
+<li><strong>SSE (Sum of Squares for Error/Residuals)</strong>: measures the variation in the response variable that is not explained by the model.</li>
+<li><strong>MSE (Mean Square Error)</strong>: is the average variation that remains unexplained by the model, per degree of freedom for the error. The degrees of freedom for the error is the number of observations (<span class="math inline">\(n\)</span>) in the data set minus the number of parameters being estimated (<span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>).</li>
+</ul>
+</div>
 </div>
 </section>
 <section id="testing-for-overall-significance-f-test-1" class="slide level2 center">

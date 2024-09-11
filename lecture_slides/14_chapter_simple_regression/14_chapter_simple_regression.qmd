@@ -959,21 +959,44 @@ $$
 
 # Model Assumptions {background-color="#cfb991"}
 
-## Assumptions About the Error Term $\varepsilon$
+## Assumptions About the Error Term $\epsilon$
+
+1. The error term $\epsilon$ is a random variable with a mean or expected value of zero; that is, $E(\epsilon) = 0$.  
+   
+    - **Implication**: $\beta_0$ and $\beta_1$ are constants; therefore $E(\beta_0) = \beta_0$ and $E(\beta_1) = \beta_1$; thus, for a given value of $x$, the expected value of $y$ is:
+
+::: {.fragment}
+
+   $$
+   E(y) = \beta_0 + \beta_1x
+   $$
+
+:::
+
+2. The variance of $\epsilon$, denoted by $\sigma^2$, is the same for all values of $x$.  
+   
+    - **Implication**: The variance of $y$ about the regression line equals $\sigma^2$ and is the same for all values of $x$.
+
+3. The values of $\epsilon$ are independent.  
+   
+    - **Implication**: The value of $\epsilon$ for a particular value of $x$ is not related to the value of $\epsilon$ for any other value of $x$; thus, the value of $y$ for a particular value of $x$ is not related to the value of $y$ for any other value of $x$.
+
+4. The error term $\epsilon$ is a normally distributed random variable for all values of $x$.  
+   
+    - **Implication**: Because $y$ is a linear function of $\epsilon$, $y$ is also a normally distributed random variable for all values of $x$.
+
+## Assumptions About the Error Term $\epsilon$
 
 <br>
 
-::: {.center}
-::: {.box .shadow}
-$$
-\varepsilon_i \text{ follows Normal } (0, \sigma^2), \text{ for all } i, \text{ independently}.
-$$
-:::
-:::
+
+```{r  echo=FALSE, out.width = "70%",fig.align="center"}
+knitr::include_graphics("figs/residuals_assumption.png") 
+```
 
 <br>
 
-Validate model assumptions by a residual analysis (later).
+<br>
 
 # Testing for Significance {background-color="#cfb991"}
 
@@ -1011,7 +1034,7 @@ $$
 where:
 
 $$
-\text{SSE} = \sum e_i^2 = \sum (y_i - \hat{y}_i)^2 = \underline{\hspace{4cm}}
+\text{SSE} = \sum e_i^2 = \sum (y_i - \hat{y}_i)^2 
 $$
 
 :::
@@ -1026,7 +1049,7 @@ $$
   - The resulting $s$ is called the standard error (of the estimate).
 
 $$
-s = \sqrt{MSE} = \sqrt{\frac{SSE}{n - 2}} = \underline{\hspace{4cm}}
+s = \sqrt{MSE} = \sqrt{\frac{SSE}{n - 2}} 
 $$
 
 :::
@@ -1035,6 +1058,7 @@ $$
 ## Testing for Overall Significance: $F$ Test 
 
 ::: {.nonincremental}
+::: r-fit-text
 
 - **Hypotheses**
   
@@ -1048,7 +1072,14 @@ The proposed linear model is insignificant; No linear relationship; the predicto
 $$
 F = \frac{SSR / 1}{SSE / (n-2)} = \frac{MSR}{MSE} \quad \text{follows } F(1, n-2), \text{ if } H_0 \text{ is true.}
 $$
+where
 
+- **SSR (Sum of Squares for Regression)**: measures how much of the variation in the dependent variable is explained by the independent variable(s). 
+- **MSR (Mean Square Regression)**: is the average variation explained by the model per degree of freedom for the regression.In the case above, we have only one independent variable as the degree of freedom for the regression (denominator).
+- **SSE (Sum of Squares for Error/Residuals)**: measures the variation in the response variable that is not explained by the model.
+- **MSE (Mean Square Error)**: is the average variation that remains unexplained by the model, per degree of freedom for the error. The degrees of freedom for the error is the number of observations ($n$) in the data set minus the number of parameters being estimated ($\beta_0$ and $\beta_1$).
+
+::: 
 
 :::
 
