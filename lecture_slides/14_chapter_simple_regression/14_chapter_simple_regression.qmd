@@ -1028,7 +1028,7 @@ Idea: **Estimating the population error variance** ($\sigma^2$) **by the sample 
 The mean square error (MSE), or $s^2$ is:
 
 $$
-s^2 = \text{MSE} = \frac{\text{SSE}}{(n-2)} \quad \text{Estimated unexplained variation.}
+s^2 = \text{MSE} = \frac{\text{SSE}}{(n-2)}, \quad \text{SSE = Estimated unexplained variation.}
 $$
 
 where:
@@ -2015,7 +2015,7 @@ Using the standard deviation as a measure of volatility, SanDisk was the most vo
 
 - $R^2$ values for each stock indicate the percentage of variation explained by the market.
 
-# Summary
+# Summary {background-color="#cfb991"}
 
 ## Summary
 

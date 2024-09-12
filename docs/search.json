@@ -3364,7 +3364,7 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#testing-for-significance-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Significance",
-    "text": "Testing for Significance\n\n\nIdea: Estimating the population error variance (\\(\\sigma^2\\)) by the sample residual variance (denoted by \\(s^2\\) or MSE).\nThe mean square error (MSE), or \\(s^2\\) is:\n\\[\ns^2 = \\text{MSE} = \\frac{\\text{SSE}}{(n-2)} \\quad \\text{Estimated unexplained variation.}\n\\]\nwhere:\n\\[\n\\text{SSE} = \\sum e_i^2 = \\sum (y_i - \\hat{y}_i)^2\n\\]"
+    "text": "Testing for Significance\n\n\nIdea: Estimating the population error variance (\\(\\sigma^2\\)) by the sample residual variance (denoted by \\(s^2\\) or MSE).\nThe mean square error (MSE), or \\(s^2\\) is:\n\\[\ns^2 = \\text{MSE} = \\frac{\\text{SSE}}{(n-2)}, \\quad \\text{SSE = Estimated unexplained variation.}\n\\]\nwhere:\n\\[\n\\text{SSE} = \\sum e_i^2 = \\sum (y_i - \\hat{y}_i)^2\n\\]"
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#testing-for-significance-3",
