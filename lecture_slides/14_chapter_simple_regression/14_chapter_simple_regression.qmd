@@ -1028,7 +1028,7 @@ Idea: **Estimating the population error variance** ($\sigma^2$) **by the sample 
 The mean square error (MSE), or $s^2$ is:
 
 $$
-s^2 = \text{MSE} = \frac{\text{SSE}}{(n-2)}, \quad \text{SSE = Estimated unexplained variation.}
+s^2 = \text{MSE} = \frac{\text{SSE}}{(n-2)}, \quad \text{SSE = Sum of Squared Errors (unexplained variation).}
 $$
 
 where:
