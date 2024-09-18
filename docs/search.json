@@ -3056,7 +3056,7 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#sums-of-squares",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Sums of Squares",
-    "text": "Sums of Squares\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(i\\)\n\\(x_i\\)\n\\(y_i\\)\n\\(x_i - \\bar{x}\\)\n\\(y_i - \\bar{y}\\)\n\\((x_i - \\bar{x})(y_i - \\bar{y})\\)\n\\((x_i - \\bar{x})^2\\)\n\\((y_i - \\bar{y})^2\\)\n\n\n\n\n1\n2\n58\n-12\n-72\n864\n144\n5184\n\n\n2\n6\n105\n-8\n-25\n200\n64\n625\n\n\n3\n8\n88\n-6\n-42\n252\n36\n1764\n\n\n4\n8\n118\n-6\n-12\n72\n36\n144\n\n\n5\n12\n117\n-2\n-13\n26\n4\n169\n\n\n6\n16\n137\n2\n7\n14\n4\n49\n\n\n7\n20\n157\n6\n27\n162\n36\n729\n\n\n8\n20\n169\n6\n39\n234\n36\n1521\n\n\n9\n22\n149\n8\n19\n152\n64\n361\n\n\n10\n26\n202\n12\n72\n864\n144\n5184\n\n\nTotal\n140\n1300\n\n\n2840\n568\n15730\n\n\n\n\n\n\\(\\bar{x} = 14, \\bar{y} = 130\\)"
+    "text": "Sums of Squares\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(i\\)\n\\(x_i\\)\n\\(y_i\\)\n\\(x_i - \\bar{x}\\)\n\\(y_i - \\bar{y}\\)\n\\((x_i - \\bar{x})(y_i - \\bar{y})\\)\n\\((x_i - \\bar{x})^2\\)\n\\((y_i - \\bar{y})^2\\)\n\n\n\n\n1\n2\n58\n-12\n-72\n864\n144\n5184\n\n\n2\n6\n105\n-8\n-25\n200\n64\n625\n\n\n3\n8\n88\n-6\n-42\n252\n36\n1764\n\n\n4\n8\n118\n-6\n-12\n72\n36\n144\n\n\n5\n12\n117\n-2\n-13\n26\n4\n169\n\n\n6\n16\n137\n2\n7\n14\n4\n49\n\n\n7\n20\n157\n6\n27\n162\n36\n729\n\n\n8\n20\n169\n6\n39\n234\n36\n1521\n\n\n9\n22\n149\n8\n19\n152\n64\n361\n\n\n10\n26\n202\n12\n72\n864\n144\n5184\n\n\nTotal\n140\n1300\n\n\n2840\n568\n15730\n\n\n\n\n\\(\\bar{x} = 14, \\bar{y} = 130\\)"
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#confidence-interval-for-ehaty",
@@ -3610,5 +3610,19 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Assumptions About the Error Term \\(\\epsilon\\)",
     "text": "Assumptions About the Error Term \\(\\epsilon\\)"
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#confidence-interval-for-ehaty-2",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#confidence-interval-for-ehaty-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Confidence Interval for \\(E(\\hat{y}^*)\\)",
+    "text": "Confidence Interval for \\(E(\\hat{y}^*)\\)"
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#prediction-interval-for-y-2",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#prediction-interval-for-y-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Prediction Interval for \\(y^*\\)",
+    "text": "Prediction Interval for \\(y^*\\)"
   }
 ]

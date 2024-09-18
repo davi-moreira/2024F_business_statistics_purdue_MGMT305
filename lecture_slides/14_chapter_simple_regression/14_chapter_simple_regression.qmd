@@ -1481,7 +1481,6 @@ Predicted quarterly sales of $110,000
 | 10  | 26   | 202  | 12              | 72             | 864                               | 144               | 5184              |
 | **Total** | 140  | 1300 |     |     | 2840                              | 568               | 15730             |
 
-<br>
 
 <center>
 $\bar{x} = 14, \bar{y} = 130$
@@ -1528,6 +1527,12 @@ $$
 
 We are 95% confident that the **mean** quarterly sales for **all** Armand’s restaurants located near campuses with 10,000 students falls between \$98,585 and \$121,415.
 
+## Confidence Interval for $E(\hat{y}^*)$
+
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/reg_confidence_interval_plot.png") 
+```
+
 
 ## Prediction Interval for $y^*$ 
 
@@ -1571,6 +1576,12 @@ $$
 If we randomly select **one** Armand’s restaurant located near a campus with 10,000 students, we are 95% confident that its quarterly sales will be between \$76,125 and \$143,875.
 
 :::
+
+## Prediction Interval for $y^*$ 
+
+```{r  echo=FALSE, out.width = "99%",fig.align="center"}
+knitr::include_graphics("figs/reg_pred_interval_plot.png") 
+```
 
 
 ## Comments
