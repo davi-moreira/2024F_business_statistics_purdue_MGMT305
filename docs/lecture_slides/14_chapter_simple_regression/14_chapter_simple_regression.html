@@ -692,8 +692,8 @@ No Linear Relationship
 <li class="fragment"><span class="math inline">\(b_1\)</span> is the slope of the line, estimating <span class="math inline">\(\beta_1\)</span></li>
 </ul>
 </section>
-<section id="random-error-varepsilon-and-observed-residual-e" class="slide level2 center">
-<h2>Random Error (<span class="math inline">\(\varepsilon\)</span>) and Observed Residual (<span class="math inline">\(e\)</span>)</h2>
+<section id="random-error-epsilon-and-observed-residual-e" class="slide level2 center">
+<h2>Random Error (<span class="math inline">\(\epsilon\)</span>) and Observed Residual (<span class="math inline">\(e\)</span>)</h2>
 <p><br></p>
 
 <img data-src="figs/reg_error_02.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
@@ -2171,8 +2171,8 @@ s_{pred} = 13.829 \sqrt{1 + \frac{1}{10} + \frac{(10 - 14)^2}{568}}
 <h2>Residual Analysis: Validating Model Assumptions</h2>
 <div>
 <ul>
-<li><p>If the assumptions about the error term <span class="math inline">\(\varepsilon\)</span> appear questionable, the hypothesis tests about the significance of the regression relationship and the interval estimation results may not be valid.</p></li>
-<li><p>The residuals provide the best information about <span class="math inline">\(\varepsilon\)</span>.</p></li>
+<li><p>If the assumptions about the error term <span class="math inline">\(\epsilon\)</span> appear questionable, the hypothesis tests about the significance of the regression relationship and the interval estimation results may not be valid.</p></li>
+<li><p>The residuals provide the best information about <span class="math inline">\(\epsilon\)</span>.</p></li>
 <li><p>Residual for observation <span class="math inline">\(i\)</span></p></li>
 </ul>
 <p><span class="math display">\[
@@ -2183,30 +2183,31 @@ y_i - \hat{y}_i
 </ul>
 </div>
 </section>
-<section id="model-assumptions-1" class="slide level2 center">
-<h2>Model Assumptions</h2>
-<div>
+<section id="model-assumptions-and-validation-procedures-with-diagnosis-plots" class="slide level2 center">
+<h2>Model Assumptions and Validation Procedures with Diagnosis Plots</h2>
+<ol type="1">
+<li class="fragment"><p><span class="math inline">\(E(\varepsilon) = 0\)</span>.</p>
 <ul>
-<li><p><span class="math inline">\(\varepsilon_i\)</span> follows Normal (0, <span class="math inline">\(\sigma^2\)</span>), for all <span class="math inline">\(i\)</span>, independently.</p></li>
-<li><p><strong>(Constant variance)</strong> Random errors have a constant variance.</p>
-<ul>
-<li>Plot residuals against <span class="math inline">\(x\)</span> or the predicted <span class="math inline">\(y\)</span>.</li>
+<li class="fragment"><strong>Validation procedure:</strong> A plot of residuals against the predicted values of the dependent variable <span class="math inline">\(y\)</span>.</li>
 </ul></li>
-<li><p><strong>(Randomness)</strong> Random errors are random (no special patterns or trends).</p>
+<li class="fragment"><p>The variance of <span class="math inline">\(\varepsilon\)</span>, denoted by <span class="math inline">\(\sigma^2\)</span>, is the same for all values of <span class="math inline">\(x\)</span>.</p>
 <ul>
-<li>Plot residuals against observation number.</li>
+<li class="fragment"><strong>Validation procedure:</strong> A plot of the residuals against values of the independent variable <span class="math inline">\(x\)</span>.</li>
 </ul></li>
-<li><p><strong>(Normality)</strong> Random errors follow a Normal distribution.</p>
+<li class="fragment"><p>The values of <span class="math inline">\(\varepsilon\)</span> are independent.</p>
 <ul>
-<li>Normal probability plot.</li>
+<li class="fragment"><strong>Validation procedure:</strong> A standardized residual plot.</li>
 </ul></li>
-</ul>
-</div>
+<li class="fragment"><p>The error term <span class="math inline">\(\varepsilon\)</span> has a normal distribution.</p>
+<ul>
+<li class="fragment"><strong>Validation procedure:</strong> A normal probability plot.</li>
+</ul></li>
+</ol>
 </section>
 <section id="residual-plot-against-x" class="slide level2 center">
 <h2>Residual Plot Against <span class="math inline">\(x\)</span></h2>
 <div style="font-size: 80%;">
-<p>If the assumption that the variance of <span class="math inline">\(\varepsilon\)</span> is the same (constant) for all values of <span class="math inline">\(x\)</span> is valid, and the assumed regression model is an adequate representation of the relationship between the variables, then the residual plot should give an overall impression of a horizontal band of points.</p>
+<p>If the assumption that the variance of <span class="math inline">\(\epsilon\)</span> is the same (constant) for all values of <span class="math inline">\(x\)</span> is valid, and the assumed regression model is an adequate representation of the relationship between the variables, then the residual plot should give an overall impression of a horizontal band of points.</p>
 </div>
 <div class="columns">
 <div class="quarto-layout-panel" data-layout-ncol="3">
@@ -2222,6 +2223,9 @@ y_i - \hat{y}_i
 </div>
 </div>
 </div>
+<center>
+Panel A
+</center>
 </div>
 </div>
 <div class="column quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
@@ -2235,6 +2239,9 @@ y_i - \hat{y}_i
 </div>
 </div>
 </div>
+<center>
+Panel B
+</center>
 </div>
 </div>
 <div class="column quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
@@ -2248,6 +2255,9 @@ y_i - \hat{y}_i
 </div>
 </div>
 </div>
+<center>
+Panel C
+</center>
 </div>
 </div>
 </div>
@@ -2342,7 +2352,14 @@ y_i - \hat{y}_i
 <p><strong>Example:</strong> Armand’s Pizza Parlors</p>
 <p>Plot of the residuals against the independent variable <span class="math inline">\(x\)</span>.</p>
 
-<img data-src="figs/armands_pizza_plot_residual.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<img data-src="figs/armands_pizza_plot_residual_x.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><div style="font-size: 80%;">
+<ul>
+<li class="fragment">The residuals appear to approximate the horizontal pattern in Panel A.</li>
+<li class="fragment">Based on this subjective evaluation, we conclude that the residual plot does not provide evidence that the assumptions made for Armand’s regression model should be challenged.</li>
+<li class="fragment">We can be confident that Armand’s simple regression model is valid.</li>
+</ul>
+</div>
+</section>
 <section id="residual-plot-against-x---excel" class="slide level2 center">
 <h2>Residual Plot Against <span class="math inline">\(x\)</span> - Excel</h2>
 <div>
@@ -2375,6 +2392,20 @@ y_i - \hat{y}_i
 </div>
 </div>
 </section>
+<section id="residual-plot-against-haty" class="slide level2 center">
+<h2>Residual Plot Against <span class="math inline">\(\hat{y}\)</span></h2>
+<p><strong>Example:</strong> Armand’s Pizza Parlors</p>
+<p>Plot of the residuals against the independent variable <span class="math inline">\(\hat{y}\)</span>.</p>
+
+<img data-src="figs/armands_pizza_plot_residual_y.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><div style="font-size: 80%;">
+<ul>
+<li class="fragment">The pattern of this residual plot is the same as the pattern of the residual plot against the independent variable <span class="math inline">\(x\)</span>.</li>
+<li class="fragment">It is not a pattern that would lead us to question the model assumptions.</li>
+<li class="fragment">For simple linear regression, both the residual plot against <span class="math inline">\(x\)</span> and the residual plot against <span class="math inline">\(\hat{y}\)</span> provide the same pattern.</li>
+<li class="fragment">For multiple regression analysis, the residual plot against <span class="math inline">\(\hat{y}\)</span> is more widely used because of the presence of more than one independent variable.</li>
+</ul>
+</div>
+</section>
 <section id="standardized-residuals" class="slide level2 center">
 <h2>Standardized Residuals</h2>
 <div>
@@ -2384,10 +2415,10 @@ y_i - \hat{y}_i
 <p><span class="math display">\[
 \frac{y_i - \hat{y_i}}{s_{y_i - \hat{y_i}}}
 \]</span></p>
-<p>where</p>
+<p>where <span class="math inline">\(s_{y_i - \hat{y_i}}\)</span> is the standard deviation of residual <span class="math inline">\(i\)</span></p>
 <p><span class="math display">\[
 s_{y_i - \hat{y_i}} = s \sqrt{1 + h_i}
-\]</span></p>
+\]</span> where <span class="math inline">\(s\)</span> is the standard error of the estimate</p>
 <p><span class="math display">\[
 h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
 \]</span></p>
@@ -2396,7 +2427,7 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
 <section id="standardized-residual-plot" class="slide level2 center">
 <h2>Standardized Residual Plot</h2>
 <ul>
-<li class="fragment"><p>The standardized residual plot can provide insight about the assumption that the error term <span class="math inline">\(\varepsilon\)</span> has a normal distribution.</p></li>
+<li class="fragment"><p>The standardized residual plot can provide insight about the assumption that the error term <span class="math inline">\(\epsilon\)</span> has a normal distribution.</p></li>
 <li class="fragment"><p>If this assumption is satisfied, the distribution of the standardized residuals should appear to come from a standard normal probability distribution.</p>
 <ul>
 <li class="fragment">Empirical rule applies.</li>
@@ -2490,369 +2521,304 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
 <p><strong>Example:</strong> Armand’s Pizza Parlors</p>
 
 <img data-src="figs/armands_pizza_plot_residual_std.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><ul>
-<li class="fragment"><p>All of the standardized residuals are between -2 and +2 indicating that there is no reason to question the assumption that ε has a normal distribution.</p></li>
-<li class="fragment"><p>Small sample size?</p></li>
+<li class="fragment">All of the standardized residuals are between -2 and +2 indicating that there is no reason to question the assumption that ε has a normal distribution.</li>
 </ul>
 </section>
 <section id="using-excel-to-construct-a-standardized-residual-plot" class="slide level2 center">
 <h2>Using Excel to construct a Standardized Residual Plot</h2>
 <p><strong>Example: Armand’s Pizza Parlors</strong></p>
 
-<img data-src="figs/armands_pizza_plot_residual_std_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section></section>
+<img data-src="figs/armands_pizza_plot_residual_std_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<section id="normal-probability-plot" class="slide level2 center">
+<h2>Normal Probability Plot</h2>
+<p>Another approach for determining the validity of the assumption that the error term has a normal distribution.</p>
+<p>To show how a normal probability plot is developed, we introduce the concept of <strong>normal scores</strong>:</p>
+<blockquote>
+<p>Suppose 10 values are selected randomly from a normal probability distribution with a mean of zero and a standard deviation of one, and that the sampling process is repeated over and over with the values in each sample of 10 ordered from smallest to largest. For now, let us consider only the smallest value in each sample. The random variable representing the smallest value obtained in repeated sampling is called the <strong>first-order statistic</strong>.</p>
+</blockquote>
+<blockquote>
+<p>For samples of size 10 from a standard normal probability distribution, the expected value of the first-order statistic is -1.55. This expected value is called a <strong>normal score</strong>. For the case with a sample of size <span class="math inline">\(n = 10\)</span>, there are 10 order statistics and 10 normal scores (next slide). In general, a data set consisting of <span class="math inline">\(n\)</span> observations will have <span class="math inline">\(n\)</span> order statistics and hence <span class="math inline">\(n\)</span> normal scores.</p>
+</blockquote>
+<p><strong>Normal Scores</strong>: are expected values of the order statistics from a standard normal distribution.</p>
+</section>
+<section id="normal-probability-plot-1" class="slide level2 center">
+<h2>Normal Probability Plot</h2>
+<p><strong>Normal Scores for <span class="math inline">\(n = 10\)</span></strong></p>
+<center>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Order Statistic</th>
+<th>Normal Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>-1.55</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>-1.00</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>-0.65</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>-0.37</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>-0.12</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>0.12</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>0.37</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>0.65</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>1.00</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>1.55</td>
+</tr>
+</tbody>
+</table>
+</center>
+</section>
+<section id="normal-probability-plot-2" class="slide level2 center">
+<h2>Normal Probability Plot</h2>
+<div style="font-size: 80%;">
+<p>To determine whether the standardized residuals for Armand’s Pizza Parlors appear to come from a standard normal probability distribution.</p>
+<p>We order the 10 standardized residuals in parallel with the 10 normal scores:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Normal Scores</th>
+<th>Ordered Standardized Residuals</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>-1.55</td>
+<td>-1.7114</td>
+</tr>
+<tr class="even">
+<td>-1.00</td>
+<td>-1.0792</td>
+</tr>
+<tr class="odd">
+<td>-0.65</td>
+<td>-0.9487</td>
+</tr>
+<tr class="even">
+<td>-0.37</td>
+<td>-0.2372</td>
+</tr>
+<tr class="odd">
+<td>-0.12</td>
+<td>-0.2296</td>
+</tr>
+<tr class="even">
+<td>0.12</td>
+<td>-0.2296</td>
+</tr>
+<tr class="odd">
+<td>0.37</td>
+<td>0.7115</td>
+</tr>
+<tr class="even">
+<td>0.65</td>
+<td>1.0792</td>
+</tr>
+<tr class="odd">
+<td>1.00</td>
+<td>1.2224</td>
+</tr>
+<tr class="even">
+<td>1.55</td>
+<td>1.4230</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpreting the Normal Probability Plot</strong>: If the normality assumption is satisfied, the smallest standardized residual should be close to the smallest normal score, the next smallest standardized residual should be close to the next smallest normal score, and so on.</p>
+</div>
+</section>
+<section id="normal-probability-plot-3" class="slide level2 center">
+<h2>Normal Probability Plot</h2>
+<div style="font-size: 70%;">
+<p>A plot with the normal scores on the horizontal axis and the corresponding standardized residuals on the vertical axis, the plotted points should cluster closely around a 45-degree line passing through the origin if the standardized residuals are approximately normally distributed.</p>
+<div class="fragment">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/armands_pizza_normality_plot.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li class="fragment">The points are grouped closely about the line. Therefore, we can conclude that the assumption of the error term having a normal probability distribution is reasonable.</li>
+<li class="fragment">In general, the more closely the points are clustered about the 45-degree line, the stronger the evidence supporting the normality assumption. Any substantial curvature in the normal probability plot is evidence that the residuals have not come from a normal distribution.</li>
+</ul>
+</div>
+</div>
+</section></section>
 <section>
 <section id="outliers-and-influential-observations" class="title-slide slide level1 center" data-background-color="#cfb991">
 <h1>Outliers and Influential Observations</h1>
 
 </section>
-<section id="outliers-and-influential-observations-1" class="slide level2 center">
-<h2>Outliers and Influential Observations</h2>
-<div>
+<section id="outliers" class="slide level2 center">
+<h2>Outliers</h2>
+<p>An <strong>outlier</strong> is a data point (observation) that does not fit the trend shown by the remaining data. Represent observations that are suspect and warrant careful examination.</p>
 <ul>
-<li><p><strong>Detecting Outliers</strong></p>
+<li class="fragment"><p><strong>Erroneous Data</strong></p>
 <ul>
-<li>An outlier is an observation that is unusual in comparison with the other data.</li>
-<li>Minitab classifies an observation as an outlier if its standardized residual value is &lt; -2 or &gt; +2.</li>
-<li><strong>Note:</strong> The standardized residual rule sometimes fails to identify an unusually large observation as being an outlier.</li>
+<li class="fragment"><p>Investigate the source of the outlier to identify any errors in data collection or entry.</p></li>
+<li class="fragment"><p>Correct the data point if possible, or remove it if the correct value cannot be determined.</p></li>
 </ul></li>
-</ul>
-</div>
-</section>
-<section id="remedies-for-special-patterns" class="slide level2 center">
-<h2>Remedies for Special Patterns</h2>
-<div class="columns">
-<div class="quarto-layout-panel" data-layout-ncol="4">
-<div class="quarto-layout-row">
-<div class="column quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<div class="fragment">
-<p><strong>Large Residuals</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/residuals_special_pattern_01.png" class="quarto-figure quarto-figure-center" style="width:99.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Investigate</p>
-</div>
-</div>
-<div class="column quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<div class="fragment">
-<p><strong>Strong Curvature</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/residuals_special_pattern_02.png" class="quarto-figure quarto-figure-center" style="width:99.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Add <span class="math inline">\(x^2\)</span></p>
-</div>
-</div>
-<div class="column quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<div class="fragment">
-<p><strong>Clusters</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/residuals_special_pattern_03.png" class="quarto-figure quarto-figure-center" style="width:99.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Investigate, or add <span class="math inline">\(x^2\)</span></p>
-</div>
-</div>
-<div class="column quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<div class="fragment">
-<p><strong>Unequal Variation</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/residuals_special_pattern_04.png" class="quarto-figure quarto-figure-center" style="width:99.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Heteroscedasticity; Transform y to <span class="math inline">\(log(y)\)</span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p><br></p>
-</section>
-<section id="normal-probability-plot" class="slide level2 center">
-<h2>Normal Probability Plot</h2>
-<div>
-<div class="columns">
-<div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br></p>
-<p><br></p>
-<p><br></p>
+<li class="fragment"><p><strong>Violation of Model Assumptions</strong></p>
 <ul>
-<li><strong><span class="math inline">\(H_0\)</span></strong>: Random Error is normal;</li>
-<li><strong><span class="math inline">\(H_1\)</span></strong>: Not normal</li>
-</ul>
-</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/armands_pizza_normality_plot.png" class="quarto-figure quarto-figure-center" style="width:99.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="example-measuring-stock-risk" class="slide level2 center">
-<h2>Example: Measuring Stock Risk</h2>
-<p><br></p>
-<p>In finance, one measure of the <strong>risk</strong> or <strong>volatility</strong> of an individual stock is the standard deviation of its total return (capital appreciation plus dividends) over several periods of time.</p>
+<li class="fragment"><p>Use diagnostic tools to check if the outlier violates the assumptions of simple regression.</p></li>
+<li class="fragment"><p>Consider alternative models, such as transformations or robust regression methods, if the assumptions are violated.</p></li>
+</ul></li>
+<li class="fragment"><p><strong>Legitimate but Unusual Observations</strong></p>
 <ul>
-<li class="fragment"><p>But the standard deviation does not <strong>take into account</strong> the extent to which the price of a given stock varies as a function of a standard market index, such as the S&amp;P 500.</p></li>
-<li class="fragment"><p><strong>Beta for a stock</strong> is the regression coefficient (<span class="math inline">\(\beta_1\)</span>) in a regression model, where the independent variable (<span class="math inline">\(x\)</span>) is the total return for the stock market and the dependent variable is the stock’s returns.</p>
-<ul>
-<li class="fragment"><p><strong>Beta greater than 1</strong> indicates that the stock is more volatile than the market and hence a risky stock.</p></li>
-<li class="fragment"><p><strong>Beta less than 1</strong> indicates that the stock is less volatile than the market and hence a less risky stock.</p></li>
+<li class="fragment"><p>Recognize that some outliers are natural occurrences and represent rare events.</p></li>
+<li class="fragment"><p>Retain these outliers in the analysis to reflect the true variability in the data.</p></li>
+<li class="fragment"><p>Report and interpret the presence of these outliers in the context of the study.</p></li>
 </ul></li>
 </ul>
 </section>
-<section id="example-measuring-stock-risk-1" class="slide level2 center">
-<h2>Example: Measuring Stock Risk</h2>
+<section id="detecting-outliers" class="slide level2 center">
+<h2>Detecting Outliers</h2>
+<div style="font-size: 80%;">
+<p>For the case of simple linear regression, one can often detect outliers by simply examining the scatter diagram.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/outlier_01.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<center>
+<span class="math inline">\(R^2 = .4968\)</span>
+</center>
+<p>Given the pattern of the rest of the data, we would have expected <span class="math inline">\(y_4\)</span> to be much smaller and hence would consider observation 4 to be an outlier.</p>
+</div>
+</section>
+<section id="detecting-outliers-with-standardized-residuals" class="slide level2 center">
+<h2>Detecting Outliers with Standardized Residuals</h2>
+<div style="font-size: 70%;">
+<p>If an observation deviates greatly from the pattern of the rest of the data, the corresponding standardized residual will be large in absolute value.</p>
+<p>Any observation with a standardized residual of less than -2 or greater than +2 is a potential outlier. With normally distributed errors, standardized residuals should be outside these limits approximately 5% of the time.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/outlier_01.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>In the residual output section in the Figure we see that the standard residual value for observation 4 is 2.68.</p>
+</div>
+</section>
+<section id="detecting-outliers-1" class="slide level2 center">
+<h2>Detecting Outliers</h2>
+<div style="font-size: 80%;">
+<p>The identification of the outlier enables us to correct the data error and improve the regression results. This is the result with <span class="math inline">\(y_4 = 30\)</span>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/outlier_02.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li class="fragment">Now, no standard residuals are less than -2 or greater than +2.</li>
+<li class="fragment">The value of <span class="math inline">\(R^2\)</span> has increased from 0.4968 to 0.8380</li>
+<li class="fragment">The value of <span class="math inline">\(b_0\)</span> has decreased from 64.95 to 59.23.</li>
+<li class="fragment">The slope of the line has changed from -7.330 to -6.949.</li>
+</ul>
+</div>
+</section>
+<section id="influential-observations" class="slide level2 center">
+<h2>Influential Observations</h2>
 <p><br></p>
-
-<img data-src="figs/beta_stocks_data.png" class="quarto-figure quarto-figure-center r-stretch" style="width:99.0%"></section>
-<section id="questions" class="slide level2 center">
-<h2>Questions</h2>
 <ul>
-<li class="fragment"><p>Which stocks are the most volatile? (Standard deviation)</p></li>
-<li class="fragment"><p>Which stocks would you expect to perform best in an up market? Down market? (<span class="math inline">\(\beta_1\)</span>)</p></li>
-<li class="fragment"><p>How much of the return for an individual stock is explained by the market? (<span class="math inline">\(R^2\)</span>)</p></li>
+<li class="fragment"><p>An <strong>influential observation</strong> is an observation that has a strong influence on the regression results.</p></li>
+<li class="fragment"><p>An influential observation may be an outlier, it may correspond to an <span class="math inline">\(x\)</span> value far from its mean, or it may be caused by a combination of a somewhat off-trend <span class="math inline">\(y\)</span> value and a somewhat extreme <span class="math inline">\(x\)</span> value.</p></li>
+<li class="fragment"><p>If the observation is valid, it can contribute to a better understanding of the appropriate model and can lead to a better estimated regression equation.</p></li>
 </ul>
 </section>
-<section id="descriptive-statistics" class="slide level2 center">
-<h2>Descriptive Statistics</h2>
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 26%">
-<col style="width: 9%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 13%">
-<col style="width: 13%">
-<col style="width: 13%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Variable</th>
-<th>Count</th>
-<th>Mean</th>
-<th>StDev</th>
-<th>Minimum</th>
-<th>Median</th>
-<th>Maximum</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft</td>
-<td>36</td>
-<td>0.00503</td>
-<td>0.04537</td>
-<td>-0.08201</td>
-<td>0.00400</td>
-<td>0.08883</td>
-</tr>
-<tr class="even">
-<td>Exxon Mobil</td>
-<td>36</td>
-<td>0.01664</td>
-<td>0.05534</td>
-<td>-0.11646</td>
-<td>0.01278</td>
-<td>0.23217</td>
-</tr>
-<tr class="odd">
-<td>Caterpillar</td>
-<td>36</td>
-<td>0.0301</td>
-<td>0.0686</td>
-<td>-0.1006</td>
-<td>0.0408</td>
-<td>0.2185</td>
-</tr>
-<tr class="even">
-<td>Johnson &amp; Johnson</td>
-<td>36</td>
-<td>0.00530</td>
-<td>0.03487</td>
-<td>-0.05917</td>
-<td>-0.00148</td>
-<td>0.10334</td>
-</tr>
-<tr class="odd">
-<td>McDonalds</td>
-<td>36</td>
-<td>0.0245</td>
-<td>0.0681</td>
-<td>-0.1144</td>
-<td>0.0370</td>
-<td>0.1826</td>
-</tr>
-<tr class="even">
-<td><strong>SanDisk</strong></td>
-<td>36</td>
-<td>0.0693</td>
-<td><strong>0.1954</strong></td>
-<td>-0.2833</td>
-<td>0.0741</td>
-<td>0.5017</td>
-</tr>
-<tr class="odd">
-<td>Qualcomm</td>
-<td>36</td>
-<td>0.0284</td>
-<td>0.0862</td>
-<td>-0.1217</td>
-<td>0.0387</td>
-<td>0.2105</td>
-</tr>
-<tr class="even">
-<td>Procter &amp; Gamble</td>
-<td>36</td>
-<td>0.01059</td>
-<td>0.03707</td>
-<td>-0.05365</td>
-<td>0.01333</td>
-<td>0.08783</td>
-</tr>
-<tr class="odd">
-<td>S&amp;P 500</td>
-<td>36</td>
-<td>0.01010</td>
-<td>0.02633</td>
-<td>-0.03429</td>
-<td>0.01034</td>
-<td>0.08104</td>
-</tr>
-</tbody>
-</table>
-<p>Using the standard deviation as a measure of volatility, SanDisk was the most volatile stock with a standard deviation of 0.1954. The stocks of Johnson &amp; Johnson and P &amp; G exhibit less volatility than the other individual stocks. But, all of the individual stocks are more volatile than the market as a whole. The diversification embodied in the S&amp;P 500 reduces its volatility.</p>
-</section>
-<section id="betas-beta_1-of-stocks" class="slide level2 center">
-<h2>Betas (<span class="math inline">\(\beta_1\)</span>) of Stocks</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Company</th>
-<th>Beta</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft</td>
-<td>.458</td>
-</tr>
-<tr class="even">
-<td>Exxon Mobil</td>
-<td>.731</td>
-</tr>
-<tr class="odd">
-<td>Caterpillar</td>
-<td>1.490</td>
-</tr>
-<tr class="even">
-<td>Johnson &amp; Johnson</td>
-<td>.009</td>
-</tr>
-<tr class="odd">
-<td>McDonald’s</td>
-<td>1.500</td>
-</tr>
-<tr class="even">
-<td>SanDisk</td>
-<td>2.600</td>
-</tr>
-<tr class="odd">
-<td>Qualcomm</td>
-<td>1.410</td>
-</tr>
-<tr class="even">
-<td>Procter &amp; Gamble</td>
-<td>0.507</td>
-</tr>
-</tbody>
-</table>
+<section id="detecting-influential-observations" class="slide level2 center">
+<h2>Detecting Influential Observations</h2>
+<div style="font-size: 80%;">
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/influential_01.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>With observation 7 deleted,</p>
 <ul>
-<li class="fragment"><p>Any stock with a beta greater than 1 will move up faster than the market when the market goes up. Any stock with a beta less than 1 will not go down as fast as the market in periods where the market declines.</p></li>
-<li class="fragment"><p>We would expect SanDisk (+2.600) to benefit most from an up market. Johnson &amp; Johnson (0.009) is least affected by the market. The effect of the market going down cannot be expected to exert much downward pressure on shares of Johnson &amp; Johnson.</p></li>
+<li class="fragment"><p>The value of <span class="math inline">\(b_0\)</span> has increased from 127.4 to 138.1.</p></li>
+<li class="fragment"><p>The slope of the line has changed from -0.425 to -1.090.</p></li>
 </ul>
+</div>
 </section>
-<section id="variation-explained-by-market" class="slide level2 center">
-<h2>Variation Explained by Market</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Company</th>
-<th>Equation</th>
-<th>R-Sq</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft</td>
-<td>0.00040 + 0.458 S&amp;P 500</td>
-<td>7.1%</td>
-</tr>
-<tr class="even">
-<td>Exxon Mobil</td>
-<td>0.00926 + 0.731 S&amp;P 500</td>
-<td>12.1%</td>
-</tr>
-<tr class="odd">
-<td>Caterpillar</td>
-<td>0.015000 + 1.49 S&amp;P 500</td>
-<td>32.9%</td>
-</tr>
-<tr class="even">
-<td>Johnson &amp; Johnson</td>
-<td>0.00521 + 0.009 S&amp;P 500</td>
-<td>0.0%</td>
-</tr>
-<tr class="odd">
-<td>McDonald’s</td>
-<td>0.00930 + 1.500 S&amp;P 500</td>
-<td><strong>33.8%</strong></td>
-</tr>
-<tr class="even">
-<td>Sandisk</td>
-<td>0.04300 + 2.600 S&amp;P 500</td>
-<td>12.3%</td>
-</tr>
-<tr class="odd">
-<td>Qualcomm</td>
-<td>0.01410 + 1.410 S&amp;P 500</td>
-<td>18.7%</td>
-</tr>
-<tr class="even">
-<td>Procter &amp; Gamble</td>
-<td>0.00548 + 0.507 S&amp;P 500</td>
-<td>12.9%</td>
-</tr>
-</tbody>
-</table>
+<section id="detecting-influential-observations-1" class="slide level2 center">
+<h2>Detecting Influential Observations</h2>
+<p><strong>High Leverage Points:</strong> Observations with extreme values for the independent variable. Observation 7 in the data set shown is a point with high leverage.</p>
+<p>The leverage of an observation is determined by how far the value of the independent variable is from its mean value.</p>
+<p>For the single-independent-variable case, the leverage of the <span class="math inline">\(i\)</span>th observation, denoted <span class="math inline">\(h_i\)</span>, can be computed using:</p>
+<p><span class="math display">\[
+h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
+\]</span></p>
+<p>From the formula, farther <span class="math inline">\(x_i\)</span> is from its mean <span class="math inline">\(\bar{x}\)</span>, the higher the leverage of observation <span class="math inline">\(i\)</span>.</p>
+</section>
+<section id="detecting-influential-observations-2" class="slide level2 center">
+<h2>Detecting Influential Observations</h2>
+<div style="font-size: 70%;">
+<p>For the data shown, the leverage of observation 7 is as follows:</p>
+<p><span class="math display">\[
+h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2} = \frac{1}{7} + \frac{(70 - 24.286)^2}{2621.43} = 0.94
+\]</span></p>
+<p>For simple linear regression, we consider observations as having high leverage if <span class="math inline">\(h_i &gt; \frac{6}{n}\)</span>. For the example, <span class="math inline">\(\frac{6}{n} = \frac{6}{7} = 0.86\)</span>.</p>
+<p>Thus, because <span class="math inline">\(h_i = 0.94 &gt; 0.86\)</span>, observation 7 would be identified as having high leverage.</p>
+<p><br></p>
+<div class="fragment">
+<p><strong>Notes and Comments</strong>:</p>
 <ul>
-<li class="fragment"><span class="math inline">\(R^2\)</span> values for each stock indicate the percentage of variation explained by the market.</li>
+<li class="fragment"><p>The number <strong>6</strong> in the criterion <span class="math inline">\(h_i &gt; \frac{6}{n}\)</span> is an arbitrary rule of thumb used to identify high leverage points in linear regression. Some statisticians use <span class="math inline">\(\frac{2p}{n}\)</span>, where <span class="math inline">\(p\)</span> is the number of predictors plus one (for the intercept) in the model.</p></li>
+<li class="fragment"><p>Once an observation is identified as potentially influential because of a large residual or high leverage, its impact on the estimated regression equation should be evaluated.</p></li>
+<li class="fragment"><p>More advanced texts discuss diagnostics for doing so. However, if one is not familiar with the more advanced material, a simple procedure is to run the regression analysis with and without the observation. This approach will reveal the influence of the observation on the results.</p></li>
 </ul>
+</div>
+</div>
 </section></section>
 <section>
 <section id="summary" class="title-slide slide level1 center" data-background-color="#cfb991">

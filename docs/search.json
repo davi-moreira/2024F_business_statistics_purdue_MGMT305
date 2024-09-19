@@ -2706,7 +2706,7 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#random-error-epsilon-and-observed-residual-e",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Random Error (\\(\\epsilon\\)) and Observed Residual (\\(e\\))",
-    "text": "Random Error (\\(\\epsilon\\)) and Observed Residual (\\(e\\))\n\nXXX include plot XXXX"
+    "text": "Random Error (\\(\\epsilon\\)) and Observed Residual (\\(e\\))"
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#estimation-process",
@@ -3098,21 +3098,21 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-analysis-validating-model-assumptions-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Residual Analysis: Validating Model Assumptions",
-    "text": "Residual Analysis: Validating Model Assumptions\n\n\nIf the assumptions about the error term \\(\\varepsilon\\) appear questionable, the hypothesis tests about the significance of the regression relationship and the interval estimation results may not be valid.\nThe residuals provide the best information about \\(\\varepsilon\\).\nResidual for observation \\(i\\)\n\n\\[\ny_i - \\hat{y}_i\n\\]\n\nMuch of the residual analysis is based on an examination of graphical plots."
+    "text": "Residual Analysis: Validating Model Assumptions\n\n\nIf the assumptions about the error term \\(\\epsilon\\) appear questionable, the hypothesis tests about the significance of the regression relationship and the interval estimation results may not be valid.\nThe residuals provide the best information about \\(\\epsilon\\).\nResidual for observation \\(i\\)\n\n\\[\ny_i - \\hat{y}_i\n\\]\n\nMuch of the residual analysis is based on an examination of graphical plots."
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#model-assumptions-1",
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#model-assumptions-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Model Assumptions",
-    "text": "Model Assumptions\n\n\n\\(\\varepsilon_i\\) follows Normal (0, \\(\\sigma^2\\)), for all \\(i\\), independently.\n(Constant variance) Random errors have a constant variance.\n\nPlot residuals against \\(x\\) or the predicted \\(y\\).\n\n(Randomness) Random errors are random (no special patterns or trends).\n\nPlot residuals against observation number.\n\n(Normality) Random errors follow a Normal distribution.\n\nNormal probability plot."
+    "text": "Model Assumptions\n\n\n\\(\\epsilon_i\\) follows Normal (0, \\(\\sigma^2\\)), for all \\(i\\), independently. We will check:\n\n\n\n(Constant variance) Random errors have a constant variance.\n\nValidation procedure: Plot residuals against \\(x\\) or the predicted \\(y\\).\n\n(Randomness) Random errors are random (no special patterns or trends).\n\nValidation procedure: Plot residuals against observation number.\n\n(Normality) Random errors follow a Normal distribution.\n\nValidation procedure: Normal probability plot."
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-plot-against-x",
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-plot-against-x",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Residual Plot Against \\(x\\)",
-    "text": "Residual Plot Against \\(x\\)\n\nIf the assumption that the variance of \\(\\varepsilon\\) is the same (constant) for all values of \\(x\\) is valid, and the assumed regression model is an adequate representation of the relationship between the variables, then the residual plot should give an overall impression of a horizontal band of points."
+    "text": "Residual Plot Against \\(x\\)\n\nIf the assumption that the variance of \\(\\epsilon\\) is the same (constant) for all values of \\(x\\) is valid, and the assumed regression model is an adequate representation of the relationship between the variables, then the residual plot should give an overall impression of a horizontal band of points.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPanel A\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPanel B\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPanel C"
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-plot-against-x-1",
@@ -3126,7 +3126,7 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-plot-against-x-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Residual Plot Against \\(x\\)",
-    "text": "Residual Plot Against \\(x\\)\nExample: Armand’s Pizza Parlors\nPlot of the residuals against the independent variable \\(x\\)."
+    "text": "Residual Plot Against \\(x\\)\nExample: Armand’s Pizza Parlors\nPlot of the residuals against the independent variable \\(x\\).\n\n\n\nThe residuals appear to approximate the horizontal pattern in Panel A.\nBased on this subjective evaluation, we conclude that the residual plot does not provide evidence that the assumptions made for Armand’s regression model should be challenged.\nWe can be confident that Armand’s simple regression model is valid."
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-plot-against-x-3",
@@ -3168,14 +3168,14 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#standardized-residuals",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Standardized Residuals",
-    "text": "Standardized Residuals\n\n\nStandardized Residual for Observation \\(i\\)\n\n\\[\n\\frac{y_i - \\hat{y_i}}{s_{y_i - \\hat{y_i}}}\n\\]\nwhere\n\\[\ns_{y_i - \\hat{y_i}} = s \\sqrt{1 + h_i}\n\\]\n\\[\nh_i = \\frac{1}{n} + \\frac{(x_i - \\bar{x})^2}{\\sum (x_i - \\bar{x})^2}\n\\]"
+    "text": "Standardized Residuals\n\n\nStandardized Residual for Observation \\(i\\)\n\n\\[\n\\frac{y_i - \\hat{y_i}}{s_{y_i - \\hat{y_i}}}\n\\]\nwhere \\(s_{y_i - \\hat{y_i}}\\) is the standard deviation of residual \\(i\\)\n\\[\ns_{y_i - \\hat{y_i}} = s \\sqrt{1 + h_i}\n\\] where \\(s\\) is the standard error of the estimate\n\\[\nh_i = \\frac{1}{n} + \\frac{(x_i - \\bar{x})^2}{\\sum (x_i - \\bar{x})^2}\n\\]"
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#standardized-residual-plot",
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#standardized-residual-plot",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Standardized Residual Plot",
-    "text": "Standardized Residual Plot\n\nThe standardized residual plot can provide insight about the assumption that the error term \\(\\varepsilon\\) has a normal distribution.\nIf this assumption is satisfied, the distribution of the standardized residuals should appear to come from a standard normal probability distribution.\n\nEmpirical rule applies."
+    "text": "Standardized Residual Plot\n\nThe standardized residual plot can provide insight about the assumption that the error term \\(\\epsilon\\) has a normal distribution.\nIf this assumption is satisfied, the distribution of the standardized residuals should appear to come from a standard normal probability distribution.\n\nEmpirical rule applies."
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#standardized-residual",
@@ -3189,7 +3189,7 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#standardized-residual-plot-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Standardized Residual Plot",
-    "text": "Standardized Residual Plot\nExample: Armand’s Pizza Parlors\n\n\nAll of the standardized residuals are between -2 and +2 indicating that there is no reason to question the assumption that ε has a normal distribution.\nSmall sample size?"
+    "text": "Standardized Residual Plot\nExample: Armand’s Pizza Parlors\n\n\nAll of the standardized residuals are between -2 and +2 indicating that there is no reason to question the assumption that ε has a normal distribution."
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#standardized-residual-plot-2",
@@ -3224,7 +3224,7 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#normal-probability-plot",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Normal Probability Plot",
-    "text": "Normal Probability Plot\n\n\n\n\n\n\n\n\\(H_0\\): Random Error is normal;\n\\(H_1\\): Not normal"
+    "text": "Normal Probability Plot\nAnother approach for determining the validity of the assumption that the error term has a normal distribution.\nTo show how a normal probability plot is developed, we introduce the concept of normal scores:\n\nSuppose 10 values are selected randomly from a normal probability distribution with a mean of zero and a standard deviation of one, and that the sampling process is repeated over and over with the values in each sample of 10 ordered from smallest to largest. For now, let us consider only the smallest value in each sample. The random variable representing the smallest value obtained in repeated sampling is called the first-order statistic.\n\n\nFor samples of size 10 from a standard normal probability distribution, the expected value of the first-order statistic is -1.55. This expected value is called a normal score. For the case with a sample of size \\(n = 10\\), there are 10 order statistics and 10 normal scores (next slide). In general, a data set consisting of \\(n\\) observations will have \\(n\\) order statistics and hence \\(n\\) normal scores.\n\nNormal Scores: are expected values of the order statistics from a standard normal distribution."
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#example-measuring-stock-risk",
@@ -3624,5 +3624,117 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Prediction Interval for \\(y^*\\)",
     "text": "Prediction Interval for \\(y^*\\)"
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#model-assumptions-and-validation-procedures-with-diagnosis-plots",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#model-assumptions-and-validation-procedures-with-diagnosis-plots",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Model Assumptions and Validation Procedures with Diagnosis Plots",
+    "text": "Model Assumptions and Validation Procedures with Diagnosis Plots\n\n\\(E(\\varepsilon) = 0\\).\n\nValidation procedure: A plot of residuals against the predicted values of the dependent variable \\(y\\).\n\nThe variance of \\(\\varepsilon\\), denoted by \\(\\sigma^2\\), is the same for all values of \\(x\\).\n\nValidation procedure: A plot of the residuals against values of the independent variable \\(x\\).\n\nThe values of \\(\\varepsilon\\) are independent.\n\nValidation procedure: A standardized residual plot.\n\nThe error term \\(\\varepsilon\\) has a normal distribution.\n\nValidation procedure: A normal probability plot."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-plot-against-x---constant-variance",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-plot-against-x---constant-variance",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Residual Plot Against \\(x\\) - Constant variance",
+    "text": "Residual Plot Against \\(x\\) - Constant variance\n\nIf the assumption that the variance of \\(\\epsilon\\) is the same (constant) for all values of \\(x\\) is valid, and the assumed regression model is an adequate representation of the relationship between the variables, then the residual plot should give an overall impression of a horizontal band of points."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-plot-against-haty",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-plot-against-haty",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Residual Plot Against \\(\\hat{y}\\)",
+    "text": "Residual Plot Against \\(\\hat{y}\\)\nExample: Armand’s Pizza Parlors\nPlot of the residuals against the independent variable \\(\\hat{y}\\).\n\n\n\nThe pattern of this residual plot is the same as the pattern of the residual plot against the independent variable \\(x\\).\nIt is not a pattern that would lead us to question the model assumptions.\nFor simple linear regression, both the residual plot against \\(x\\) and the residual plot against \\(\\hat{y}\\) provide the same pattern.\nFor multiple regression analysis, the residual plot against \\(\\hat{y}\\) is more widely used because of the presence of more than one independent variable."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#normal-probability-plot-1",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#normal-probability-plot-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Normal Probability Plot",
+    "text": "Normal Probability Plot\nNormal Scores for \\(n = 10\\)\n\n\n\n\nOrder Statistic\nNormal Score\n\n\n\n\n1\n-1.55\n\n\n2\n-1.00\n\n\n3\n-0.65\n\n\n4\n-0.37\n\n\n5\n-0.12\n\n\n6\n0.12\n\n\n7\n0.37\n\n\n8\n0.65\n\n\n9\n1.00\n\n\n10\n1.55"
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#normal-probability-plot-2",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#normal-probability-plot-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Normal Probability Plot",
+    "text": "Normal Probability Plot\n\nTo determine whether the standardized residuals for Armand’s Pizza Parlors appear to come from a standard normal probability distribution.\nWe order the 10 standardized residuals in parallel with the 10 normal scores:\n\n\n\nNormal Scores\nOrdered Standardized Residuals\n\n\n\n\n-1.55\n-1.7114\n\n\n-1.00\n-1.0792\n\n\n-0.65\n-0.9487\n\n\n-0.37\n-0.2372\n\n\n-0.12\n-0.2296\n\n\n0.12\n-0.2296\n\n\n0.37\n0.7115\n\n\n0.65\n1.0792\n\n\n1.00\n1.2224\n\n\n1.55\n1.4230\n\n\n\nInterpreting the Normal Probability Plot: If the normality assumption is satisfied, the smallest standardized residual should be close to the smallest normal score, the next smallest standardized residual should be close to the next smallest normal score, and so on."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#normal-probability-plot-3",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#normal-probability-plot-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Normal Probability Plot",
+    "text": "Normal Probability Plot\n\nA plot with the normal scores on the horizontal axis and the corresponding standardized residuals on the vertical axis, the plotted points should cluster closely around a 45-degree line passing through the origin if the standardized residuals are approximately normally distributed.\n\n\n\n\n\n\n\n\n\n\n\nThe points are grouped closely about the line. Therefore, we can conclude that the assumption of the error term having a normal probability distribution is reasonable.\nIn general, the more closely the points are clustered about the 45-degree line, the stronger the evidence supporting the normality assumption. Any substantial curvature in the normal probability plot is evidence that the residuals have not come from a normal distribution."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#normal-probability-plot-4",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#normal-probability-plot-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Normal Probability Plot",
+    "text": "Normal Probability Plot\n\n\n\n\n\n\n\n\\(H_0\\): Random Error is normal;\n\\(H_1\\): Not normal"
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#outliers",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#outliers",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Outliers",
+    "text": "Outliers\nAn outlier is a data point (observation) that does not fit the trend shown by the remaining data. Represent observations that are suspect and warrant careful examination.\n\nErroneous Data\n\nInvestigate the source of the outlier to identify any errors in data collection or entry.\nCorrect the data point if possible, or remove it if the correct value cannot be determined.\n\nViolation of Model Assumptions\n\nUse diagnostic tools to check if the outlier violates the assumptions of simple regression.\nConsider alternative models, such as transformations or robust regression methods, if the assumptions are violated.\n\nLegitimate but Unusual Observations\n\nRecognize that some outliers are natural occurrences and represent rare events.\nRetain these outliers in the analysis to reflect the true variability in the data.\nReport and interpret the presence of these outliers in the context of the study."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-outliers",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-outliers",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Detecting Outliers",
+    "text": "Detecting Outliers\n\nFor the case of simple linear regression, one can often detect outliers by simply examining the scatter diagram.\n\n\n\n\n\n\n\n\n\n\n\\(R^2 = .4968\\)\n\nGiven the pattern of the rest of the data, we would have expected \\(y_4\\) to be much smaller and hence would consider observation 4 to be an outlier."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-outliers-1",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-outliers-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Detecting Outliers",
+    "text": "Detecting Outliers\n\nThe identification of the outlier enables us to correct the data error and improve the regression results. This is the result with \\(y_4 = 30\\).\n\n\n\n\n\n\n\n\n\n\nNow, no standard residuals are less than -2 or greater than +2.\nThe value of \\(R^2\\) has increased from 0.4968 to 0.8380\nThe value of \\(b_0\\) has decreased from 64.95 to 59.23.\nThe slope of the line has changed from -7.330 to -6.949."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-outliers-2",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-outliers-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Detecting Outliers",
+    "text": "Detecting Outliers\nThe identification of the outlier enables us to correct the data error and improve the regression results.\n\n\nNote that no standard residuals are less than -2 or greater than +2;\nThe value of \\(R^2\\) has increased from 0.4968 to 0.8380\nThe value of \\(b_0\\) has decreased from 64.95 to 59.23.\nThe slope of the line has changed from -7.330 to -6.949."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#influential-observations",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#influential-observations",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Influential Observations",
+    "text": "Influential Observations\n\n\nAn influential observation is an observation that has a strong influence on the regression results.\nAn influential observation may be an outlier, it may correspond to an \\(x\\) value far from its mean, or it may be caused by a combination of a somewhat off-trend \\(y\\) value and a somewhat extreme \\(x\\) value.\nIf the observation is valid, it can contribute to a better understanding of the appropriate model and can lead to a better estimated regression equation."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-influential-observations",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-influential-observations",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Detecting Influential Observations",
+    "text": "Detecting Influential Observations\n\n\n\n\n\n\n\n\n\n\n\n\nWith observation 7 deleted,\n\nThe value of \\(b_0\\) has increased from 127.4 to 138.1.\nThe slope of the line has changed from -0.425 to -1.090."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-influential-observations-1",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-influential-observations-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Detecting Influential Observations",
+    "text": "Detecting Influential Observations\nHigh Leverage Points: Observations with extreme values for the independent variable. Observation 7 in the data set shown is a point with high leverage.\nThe leverage of an observation is determined by how far the value of the independent variable is from its mean value.\nFor the single-independent-variable case, the leverage of the \\(i\\)th observation, denoted \\(h_i\\), can be computed using:\n\\[\nh_i = \\frac{1}{n} + \\frac{(x_i - \\bar{x})^2}{\\sum (x_i - \\bar{x})^2}\n\\]\nFrom the formula, farther \\(x_i\\) is from its mean \\(\\bar{x}\\), the higher the leverage of observation \\(i\\)."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-outliers-with-standardized-residuals",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-outliers-with-standardized-residuals",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Detecting Outliers with Standardized Residuals",
+    "text": "Detecting Outliers with Standardized Residuals\n\nIf an observation deviates greatly from the pattern of the rest of the data, the corresponding standardized residual will be large in absolute value.\nAny observation with a standardized residual of less than -2 or greater than +2 is a potential outlier. With normally distributed errors, standardized residuals should be outside these limits approximately 5% of the time.\n\n\n\n\n\n\n\n\n\nIn the residual output section in the Figure we see that the standard residual value for observation 4 is 2.68."
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-influential-observations-2",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#detecting-influential-observations-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Detecting Influential Observations",
+    "text": "Detecting Influential Observations\n\nFor the data shown, the leverage of observation 7 is as follows:\n\\[\nh_i = \\frac{1}{n} + \\frac{(x_i - \\bar{x})^2}{\\sum (x_i - \\bar{x})^2} = \\frac{1}{7} + \\frac{(70 - 24.286)^2}{2621.43} = 0.94\n\\]\nFor simple linear regression, we consider observations as having high leverage if \\(h_i &gt; \\frac{6}{n}\\). For the example, \\(\\frac{6}{n} = \\frac{6}{7} = 0.86\\).\nThus, because \\(h_i = 0.94 &gt; 0.86\\), observation 7 would be identified as having high leverage.\n\n\nNotes and Comments:\n\nThe number 6 in the criterion \\(h_i &gt; \\frac{6}{n}\\) is an arbitrary rule of thumb used to identify high leverage points in linear regression. Some statisticians use \\(\\frac{2p}{n}\\), where \\(p\\) is the number of predictors plus one (for the intercept) in the model.\nOnce an observation is identified as potentially influential because of a large residual or high leverage, its impact on the estimated regression equation should be evaluated.\nMore advanced texts discuss diagnostics for doing so. However, if one is not familiar with the more advanced material, a simple procedure is to run the regression analysis with and without the observation. This approach will reveal the influence of the observation on the results."
   }
 ]
