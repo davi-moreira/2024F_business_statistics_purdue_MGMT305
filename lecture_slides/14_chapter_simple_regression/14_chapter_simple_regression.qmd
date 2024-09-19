@@ -1620,21 +1620,21 @@ $$
 
 ## Model Assumptions and Validation Procedures with Diagnosis Plots
 
-1. $E(\varepsilon) = 0$.
+1. $E(\epsilon) = 0$.
 
     - **Validation procedure:** A plot of residuals against the predicted values of the dependent variable $y$.
 
 
-2. The variance of $\varepsilon$, denoted by $\sigma^2$, is the same for all values of $x$.
+2. The variance of $\epsilon$, denoted by $\sigma^2$, is the same for all values of $x$.
     
     - **Validation procedure:** A plot of the residuals against values of the independent variable $x$.
 
 
-3. The values of $\varepsilon$ are independent.
+3. The values of $\epsilon$ are independent.
 
     - **Validation procedure:** A standardized residual plot.
 
-4. The error term $\varepsilon$ has a normal distribution.
+4. The error term $\epsilon$ has a normal distribution.
 
     - **Validation procedure:** A normal probability plot.
 

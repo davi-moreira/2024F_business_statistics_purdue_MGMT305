@@ -3630,7 +3630,7 @@
     "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#model-assumptions-and-validation-procedures-with-diagnosis-plots",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Model Assumptions and Validation Procedures with Diagnosis Plots",
-    "text": "Model Assumptions and Validation Procedures with Diagnosis Plots\n\n\\(E(\\varepsilon) = 0\\).\n\nValidation procedure: A plot of residuals against the predicted values of the dependent variable \\(y\\).\n\nThe variance of \\(\\varepsilon\\), denoted by \\(\\sigma^2\\), is the same for all values of \\(x\\).\n\nValidation procedure: A plot of the residuals against values of the independent variable \\(x\\).\n\nThe values of \\(\\varepsilon\\) are independent.\n\nValidation procedure: A standardized residual plot.\n\nThe error term \\(\\varepsilon\\) has a normal distribution.\n\nValidation procedure: A normal probability plot."
+    "text": "Model Assumptions and Validation Procedures with Diagnosis Plots\n\n\\(E(\\epsilon) = 0\\).\n\nValidation procedure: A plot of residuals against the predicted values of the dependent variable \\(y\\).\n\nThe variance of \\(\\epsilon\\), denoted by \\(\\sigma^2\\), is the same for all values of \\(x\\).\n\nValidation procedure: A plot of the residuals against values of the independent variable \\(x\\).\n\nThe values of \\(\\epsilon\\) are independent.\n\nValidation procedure: A standardized residual plot.\n\nThe error term \\(\\epsilon\\) has a normal distribution.\n\nValidation procedure: A normal probability plot."
   },
   {
     "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#residual-plot-against-x---constant-variance",
