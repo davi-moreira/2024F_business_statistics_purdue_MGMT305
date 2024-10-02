@@ -2447,7 +2447,7 @@
     "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-the-f-test",
     "title": " MGMT 30500: Business Statistics ",
     "section": "One-way ANOVA: The F Test",
-    "text": "One-way ANOVA: The F Test\n\n\nThe distribution of the test statistic:\n\n\\[\nF = \\frac{MSTR}{MSE}\n\\]\n\nIf the null hypothesis is true and the ANOVA assumptions are valid, the sampling distribution of the test statistic is an F distribution with \\(k-1\\) (numerator) and \\(n_T - k\\) (denominator) degrees of freedom.\n\n\n\nDecision Rule: Reject \\(H_0\\) if the observed \\(F &gt; F_{\\alpha, k-1, n_T-1}\\) (right-tail),\n\nwhere \\(F_{\\alpha, k-1, n_T-1} = \\text{F.INV}(1-\\alpha, k-1, n_T-1)\\)."
+    "text": "One-way ANOVA: The F Test\n\n\nThe distribution of the test statistic:\n\n\\[\nF = \\frac{MSTR}{MSE}\n\\]\n\nIf the null hypothesis is true and the ANOVA assumptions are valid, the sampling distribution of the test statistic is an F distribution with \\(k-1\\) (numerator) and \\(n_T - k\\) (denominator) degrees of freedom.\n\n\n\nDecision Rule: Reject \\(H_0\\) if the observed \\(F &gt; F_{\\alpha, k-1, n_T-k}\\) (right-tail),\n\nwhere \\(F_{\\alpha, k-1, n_T-k} = \\text{F.INV}(1-\\alpha, k-1, n_T-k)\\)."
   },
   {
     "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-the-f-test-1",

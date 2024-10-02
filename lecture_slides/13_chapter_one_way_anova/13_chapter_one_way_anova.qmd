@@ -269,9 +269,9 @@ $$
 
 <br>
 
-- **Decision Rule:** Reject $H_0$ if the observed $F > F_{\alpha, k-1, n_T-1}$ (right-tail),
+- **Decision Rule:** Reject $H_0$ if the observed $F > F_{\alpha, k-1, n_T-k}$ (right-tail),
 
-where $F_{\alpha, k-1, n_T-1} = \text{F.INV}(1-\alpha, k-1, n_T-1)$.
+where $F_{\alpha, k-1, n_T-k} = \text{F.INV}(1-\alpha, k-1, n_T-k)$.
 
 :::
 
