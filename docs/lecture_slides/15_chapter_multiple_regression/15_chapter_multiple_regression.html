@@ -8,11 +8,11 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.555">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Professor Davi Moreira ">
   <meta name="dcterms.date" content="2024-08-01">
-  <title>MGMT 30500: Business Statistics -  MGMT 30500: Business Statistics </title>
+  <title>MGMT 30500: Business Statistics –  MGMT 30500: Business Statistics </title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -361,8 +361,7 @@ Professor<br>Davi Moreira<br>
 <li>Prediction</li>
 <li>Categorical Independent Variables</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 </section>
 <section>
@@ -765,19 +764,34 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <h2>Interpreting the Regression Coefficients</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p><br></p>
+<div>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/butler_company_reg_output_excel.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
-<li class="fragment"><p><span class="math inline">\(b_1 = +0.0611\)</span> (for <span class="math inline">\(x_1\)</span>)</p>
+<li><p><span class="math inline">\(b_1 = +0.0611\)</span> (for <span class="math inline">\(x_1\)</span>)</p>
 <ul>
-<li class="fragment">+0.0611 is the estimated change (increase) in the expected travel time corresponding to an increase of one mile in the distance traveled when the number of deliveries is held constant.</li>
+<li>+0.0611 is the estimated average change (increase) in the expected travel time corresponding to an increase of one mile in the distance traveled when the number of deliveries is held constant.</li>
 </ul></li>
 </ul>
 <p><br></p>
 <ul>
-<li class="fragment"><p><span class="math inline">\(b_2 = +0.9234\)</span> (for <span class="math inline">\(x_2\)</span>)</p>
+<li><p><span class="math inline">\(b_2 = +0.9234\)</span> (for <span class="math inline">\(x_2\)</span>)</p>
 <ul>
-<li class="fragment">+0.9234 is the estimated change (increase) in the expected travel time corresponding to an increase of one delivery when the number of miles traveled is held constant.</li>
+<li>+0.9234 is the estimated average change (increase) in the expected travel time corresponding to an increase of one delivery when the number of miles traveled is held constant.</li>
 </ul></li>
 </ul>
+</div></div>
+</div>
 </section></section>
 <section>
 <section id="multiple-coefficient-of-determination" class="title-slide slide level1 center" data-background-color="#cfb991">
@@ -827,7 +841,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <li class="fragment"><p>SSR = Sum of squares due to regression (explained by all predictors)</p></li>
 <li class="fragment"><p>SSE = Sum of squares due to error (unexplained variation of residuals)</p></li>
 <li class="fragment"><p><span class="math inline">\(n\)</span> = sample size.</p></li>
-<li class="fragment"><p><span class="math inline">\(p\)</span> = number of predictors.</p></li>
+<li class="fragment"><p><span class="math inline">\(p\)</span> = number of predictors (independent variables).</p></li>
 <li class="fragment"><p>The degrees of freedom for SSE reflect the number of observations left after accounting for the number of estimated parameters (<span class="math inline">\(n - (p + \text{one intercept})\)</span>.</p></li>
 </ul>
 </div>
@@ -901,7 +915,7 @@ R^2 = 1 - \frac{SSE / (n - 1)}{SST / (n - 1)} = 1 - \frac{\text{Residual varianc
 <h2>Remarks on Multiple Coefficient of Determination</h2>
 <ul>
 <li class="fragment"><p>Adding independent variables, even ones that are not statistically significant, will reduce the prediction errors, thus the SSE will become smaller.</p></li>
-<li class="fragment"><p>Because SST = SSR + SSE is fixed, SSR will become larger and hence, <span class="math inline">\(R^2 = SSR/SST\)</span> will always increase.</p></li>
+<li class="fragment"><p>Because SST = SSR + SSE is fixed, SSR will become larger, SSE will become smaller, and hence, <span class="math inline">\(R^2 = SSR/SST\)</span> will always increase.</p></li>
 <li class="fragment"><p>But, adding independent variables, the model will become more complex (a larger <span class="math inline">\(p\)</span>).</p></li>
 </ul>
 </section>
@@ -967,7 +981,8 @@ R^2_a = 1 - \frac{\frac{SSE}{(n - p - 1)}}{\frac{SST}{(n - 1)}} = 1 - \frac{MSE}
 <p><strong>Hypotheses</strong></p>
 <p><span class="math display">\[
 H_0: \beta_1 = \beta_2 = \dots = \beta_p = 0 \quad (\text{No linear relationship})
-\]</span> <span class="math display">\[
+\]</span></p>
+<p><span class="math display">\[
 H_a: \text{One or more of the slopes is not equal to zero}
 \]</span></p>
 <p><strong>Test Statistics</strong></p>
@@ -984,15 +999,16 @@ F = \frac{MSR}{MSE}
 <p><strong>Hypotheses:</strong></p>
 <p><span class="math display">\[
 H_0: \beta_1 = \beta_2 = 0
-\]</span> <span class="math display">\[
+\]</span></p>
+<p><span class="math display">\[
 H_a: \text{One or both slopes are not equal to zero}
 \]</span></p>
 <p><strong>Rejection Rule</strong></p>
 <p>For <span class="math inline">\(\alpha = 0.01\)</span> and degrees of freedom = 2 and 7, <span class="math inline">\(F_{\alpha} = 9.55\)</span>.</p>
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F \geq 9.55\)</span> or <span class="math inline">\(p \leq .01\)</span>.</p>
 </section>
-<section id="testing-for-overall-significance-f-test-4-of-5" class="slide level2 center">
-<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test (4 of 5)</h2>
+<section id="testing-for-overall-significance-f-test-3" class="slide level2 center">
+<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <p><strong>Test Statistics</strong></p>
 <p><span class="math display">\[
 F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
@@ -1001,8 +1017,8 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 <p>We reject <span class="math inline">\(H_0\)</span> because <span class="math inline">\(F = 32.8784 &gt; 9.55\)</span>.</p>
 <p>We have significant statistical evidence to conclude that at least one of the independent variables is useful in explaining the variation in the total travel time, or for predicting the total travel time. The significance level is 1%.</p>
 </section>
-<section id="testing-for-overall-significance-f-test-5-of-5" class="slide level2 center">
-<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test (5 of 5)</h2>
+<section id="testing-for-overall-significance-f-test-4" class="slide level2 center">
+<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <p><strong>ANOVA Output</strong></p>
 <table class="caption-top">
 <thead>
@@ -1046,8 +1062,8 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 p = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
 \]</span></p>
 </section>
-<section id="testing-for-individual-significance-t-test-1-of-5" class="slide level2 center">
-<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test (1 of 5)</h2>
+<section id="testing-for-individual-significance-t-test" class="slide level2 center">
+<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <ul>
 <li class="fragment"><p>If the <span class="math inline">\(F\)</span> test shows an overall significance, a separate <span class="math inline">\(t\)</span> test is conducted for each of the independent variables in the model.</p></li>
 <li class="fragment"><p>The <span class="math inline">\(t\)</span> test is used to determine whether each of the individual independent variables is significant <strong>in the presence of all other independent variables in the model</strong>.</p>
@@ -1057,8 +1073,8 @@ p = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
 <li class="fragment"><p>We refer to each of these <span class="math inline">\(t\)</span> Tests as a test for individual significance.</p></li>
 </ul>
 </section>
-<section id="testing-for-individual-significance-t-test-2-of-5" class="slide level2 center">
-<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test (2 of 5)</h2>
+<section id="testing-for-individual-significance-t-test-1" class="slide level2 center">
+<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <p><strong>Hypotheses</strong></p>
 <p><span class="math display">\[
 H_0: \beta_i = 0 \quad (x_i \text{ is not significant in the presence of all other } x's)
@@ -1074,8 +1090,8 @@ t = \frac{b_i - 0}{s_{b_i}} \quad (s_{b_i} \text{ is the standard error of } b_i
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(t \leq -t_{\alpha / 2}\)</span> or <span class="math inline">\(t \geq t_{\alpha / 2}\)</span> or if <span class="math inline">\(p\)</span>-value <span class="math inline">\(\leq \alpha\)</span>.</p>
 <p>where <span class="math inline">\(t_{\alpha/2}\)</span> is based on a <span class="math inline">\(t\)</span>-distribution with <span class="math inline">\(n - p - 1\)</span> degrees of freedom.</p>
 </section>
-<section id="testing-for-individual-significance-t-test-3-of-5" class="slide level2 center">
-<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test (3 of 5)</h2>
+<section id="testing-for-individual-significance-t-test-2" class="slide level2 center">
+<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <ul>
 <li class="fragment"><span class="math inline">\(H_0: \beta_i = 0\)</span></li>
@@ -1089,8 +1105,8 @@ t_{0.005} = 3.499
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(p\)</span>-value <span class="math inline">\(\leq .01\)</span>, or if <span class="math inline">\(t \leq -3.499\)</span> or <span class="math inline">\(t \geq 3.499\)</span>.</p>
 </div>
 </section>
-<section id="testing-for-individual-significance-t-test-4-of-5" class="slide level2 center">
-<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test (4 of 5)</h2>
+<section id="testing-for-individual-significance-t-test-3" class="slide level2 center">
+<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <p><strong>Test Statistics</strong></p>
 <p><span class="math display">\[
 t = \frac{b_1 - 0}{s_{b_1}} = \frac{0.0611 - 0}{0.0099} = 6.1717, \quad \text{for } x_1
@@ -1101,24 +1117,21 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <p><strong>Conclusion</strong></p>
 <p>Reject each of <span class="math inline">\(H_0: \beta_1 = 0\)</span> and <span class="math inline">\(H_0: \beta_2 = 0\)</span>. Each independent variable is statistically significant <strong>in the presence of the other</strong>.</p>
 </section>
-<section id="testing-for-individual-significance-t-test-5-of-5" class="slide level2 center">
-<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test (5 of 5)</h2>
+<section id="testing-for-individual-significance-t-test-4" class="slide level2 center">
+<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p>Regression Table</p>
 <p><br></p>
 
 <img data-src="figs/butler_company_reg_table_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
-<ul>
-<li class="fragment"><strong>Which of the two independent variables is more significant?</strong></li>
-</ul>
 </section></section>
 <section>
 <section id="multicollinearity" class="title-slide slide level1 center" data-background-color="#cfb991">
 <h1>Multicollinearity</h1>
 
 </section>
-<section id="multicollinearity-1-of-2" class="slide level2 center">
-<h2>Multicollinearity (1 of 2)</h2>
+<section id="multicollinearity-1" class="slide level2 center">
+<h2>Multicollinearity</h2>
 <ul>
 <li class="fragment"><p>The term <strong>multicollinearity</strong> refers to the correlation among the independent variables.</p></li>
 <li class="fragment"><p>It is important to compute pairwise correlations in a multiple regression analysis.</p></li>
@@ -1127,8 +1140,8 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <li class="fragment"><p>If the estimated regression equation is to be used only for predictive purposes, multicollinearity is usually not a serious problem</p></li>
 </ul>
 </section>
-<section id="multicollinearity-2-of-2" class="slide level2 center">
-<h2>Multicollinearity (2 of 2)</h2>
+<section id="multicollinearity-2" class="slide level2 center">
+<h2>Multicollinearity</h2>
 <ul>
 <li class="fragment"><p>The coefficients do not measure marginal effects of the predictors (rather <strong>combined</strong> effects may be measured).</p></li>
 <li class="fragment"><p>Coefficient estimates (b’s) are <strong>unstable</strong> (having “inflated” standard errors — also see <strong>Variance Inflation Factor, VIF</strong>).</p>
@@ -1158,16 +1171,16 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <h1>Categorical Independent Variables</h1>
 
 </section>
-<section id="categorical-independent-variables-1-of-9" class="slide level2 center">
-<h2>Categorical Independent Variables (1 of 9)</h2>
+<section id="categorical-independent-variables-1" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <ul>
 <li class="fragment"><p>In many situations, we need to work with categorical independent variables such as gender (an independent variable with 2 categories: Male, Female), method of payment (an independent variable with 3 categories: Cash, Check, Credit card), etc.</p></li>
 <li class="fragment"><p>Need to code categorical independent variables. For example, if <span class="math inline">\(x_2\)</span> is a gender variable, let <span class="math inline">\(x_2 = 1\)</span> for males and <span class="math inline">\(x_2 = 0\)</span> for females.</p></li>
 <li class="fragment"><p>In this case, <span class="math inline">\(x_2\)</span> is called a dummy or indicator variable, and the category with a 0 (i.e., female) is called the reference category or level.</p></li>
 </ul>
 </section>
-<section id="categorical-independent-variables-2-of-9" class="slide level2 center">
-<h2>Categorical Independent Variables (2 of 9)</h2>
+<section id="categorical-independent-variables-2" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <ul>
 <li class="fragment">Gender: F, M</li>
 <li class="fragment">Job Type: Lawyer, Salesperson, Educator, Government (for salary)</li>
@@ -1181,13 +1194,13 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <li class="fragment">Method of Payment: Cash, Check, Credit Card (for credit rating or loan approvals)</li>
 </ul>
 </section>
-<section id="categorical-independent-variables-3-of-9" class="slide level2 center">
-<h2>Categorical Independent Variables (3 of 9)</h2>
+<section id="categorical-independent-variables-3" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc.</strong></p>
 <p>Managers of Johnson Filtration, Inc.&nbsp;want to predict the repair time necessary for processing its maintenance requests. Repair time is believed to be related to two factors, the number of months since last service and the type of repair problem (mechanical or electrical). Data for a sample of 10 service calls are reported in the table (next slide).</p>
 </section>
-<section id="categorical-independent-variables-4-of-9" class="slide level2 center">
-<h2>Categorical Independent Variables (4 of 9)</h2>
+<section id="categorical-independent-variables-4" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc</strong></p>
 <table class="caption-top" style="width:100%;">
 <colgroup>
@@ -1270,8 +1283,8 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <p>0 = Mechanical (reference)<br>
 1 = Electrical</p>
 </section>
-<section id="categorical-independent-variables-5-of-9" class="slide level2 center">
-<h2>Categorical Independent Variables (5 of 9)</h2>
+<section id="categorical-independent-variables-5" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc.</strong></p>
 <p>Regression model:</p>
 <p><span class="math display">\[
@@ -1282,8 +1295,8 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <span class="math inline">\(x_1\)</span> = Number of months since last maintenance service<br>
 <span class="math inline">\(x_2\)</span> = 0 if type of repair is mechanical, 1 if the type of repair is electrical ( <span class="math inline">\(x_2\)</span> is a dummy variable)</p>
 </section>
-<section id="categorical-independent-variables-6-of-9" class="slide level2 center">
-<h2>Categorical Independent Variables (6 of 9)</h2>
+<section id="categorical-independent-variables-6" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc.</strong></p>
 <p>ANOVA Output:</p>
 <table class="caption-top">
@@ -1328,8 +1341,8 @@ R_a^2 = 1 - (1 - 0.8952) \cdot \frac{10 - 1}{10 - 2 - 1} = 81.90\%
 \]</span></p>
 <p>This indicates the estimated regression equation does a good job of explaining the variability in repair times.</p>
 </section>
-<section id="categorical-independent-variables-7-of-9" class="slide level2 center">
-<h2>Categorical Independent Variables (7 of 9)</h2>
+<section id="categorical-independent-variables-7" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p>Interpretation of regression coefficient <span class="math inline">\(\beta_2\)</span> of dummy variable <span class="math inline">\(x_2\)</span>:</p>
 <p><span class="math display">\[
 E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
@@ -1344,8 +1357,8 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = \beta_0 + \beta_1 x_1 + \beta_2
 \]</span></p>
 <p><span class="math inline">\(\beta_2\)</span> is the difference in the expected repair time between two types of repair <strong>if the numbers of months since last maintenance service (</strong><span class="math inline">\(x_1\)</span>) are the same.</p>
 </section>
-<section id="categorical-independent-variables-8-of-9" class="slide level2 center">
-<h2>Categorical Independent Variables (8 of 9)</h2>
+<section id="categorical-independent-variables-8" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc.</strong></p>
 <table class="caption-top">
 <thead>
@@ -1384,8 +1397,8 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = \beta_0 + \beta_1 x_1 + \beta_2
 <p>Months since last service is significant at 1% significance level (in the presence of the second variable, or if we control for Type of problem).</p>
 <p>Type of problem is also significant at 1% significance level if we control for the Months, and an electrical problem is predicted or estimated to take a longer time (by 1.1627) to repair than a mechanical one (the reference category).</p>
 </section>
-<section id="more-complex-categorical-variables-9-of-9" class="slide level2 center">
-<h2>More Complex Categorical Variables (9 of 9)</h2>
+<section id="more-complex-categorical-variables" class="slide level2 center">
+<h2>More Complex Categorical Variables</h2>
 <p>If a categorical variable has <span class="math inline">\(k\)</span> levels, only <span class="math inline">\(k - 1\)</span> dummy variables are required, with each dummy variable being coded as 0 or 1.</p>
 <p><strong>Example</strong>: Quarterly sales (dependent variable) vs.&nbsp;Sales regions</p>
 <table class="caption-top">
@@ -1446,8 +1459,8 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = \beta_0 + \beta_1 x_1 + \beta_2
 <li class="fragment"><p>In multiple regression analysis, it is preferable to use the residual plot against <span class="math inline">\(\hat{y}\)</span> to determine if the model assumptions are satisfied.</p></li>
 </ul>
 </section>
-<section id="standardized-residuals-1-of-3" class="slide level2 center">
-<h2>Standardized Residuals (1 of 3)</h2>
+<section id="standardized-residuals" class="slide level2 center">
+<h2>Standardized Residuals</h2>
 <ul>
 <li class="fragment"><p>Standardized residuals are frequently used in residual plots for purposes of:</p>
 <ul>
@@ -1461,15 +1474,15 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = \beta_0 + \beta_1 x_1 + \beta_2
 <li class="fragment"><p>Normality of residuals can be checked by the normal probability plot.</p></li>
 </ul>
 </section>
-<section id="standardized-residuals-2-of-3" class="slide level2 center">
-<h2>Standardized Residuals (2 of 3)</h2>
+<section id="standardized-residuals-1" class="slide level2 center">
+<h2>Standardized Residuals</h2>
 <p><strong>Example: Butler Trucking Company: Residual output</strong></p>
 <p><br></p>
 
 <img data-src="figs/butler_company_residual_output_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
 </section>
-<section id="standardized-residual-plot-against-haty-3-of-3" class="slide level2 center">
-<h2>Standardized Residual Plot Against <span class="math inline">\(\hat{y}\)</span> (3 of 3)</h2>
+<section id="standardized-residual-plot-against-haty" class="slide level2 center">
+<h2>Standardized Residual Plot Against <span class="math inline">\(\hat{y}\)</span></h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p><br></p>
 
@@ -2147,18 +2160,7 @@ E(Y) = \beta_0 + \beta_1 \cdot (DA) + \beta_2 \cdot (DB) + 0 \cdot (DC)
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -2190,7 +2192,29 @@ E(Y) = \beta_0 + \beta_1 \cdot (DA) + \beta_2 \cdot (DB) + 0 \cdot (DC)
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -2198,7 +2222,7 @@ E(Y) = \beta_0 + \beta_1 \cdot (DA) + \beta_2 \cdot (DB) + 0 \cdot (DC)
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

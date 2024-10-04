@@ -298,15 +298,29 @@ Each $b_i$ (for $x_i$) represents an estimate of the change in the expected $y$ 
 
 <br>
 
+::: nonincremental
+::: columns
+::: {.column width="30%" style="text-align: center; justify-content: center; align-items: center;"}
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/butler_company_reg_output_excel.png")
+```
+:::
+
+::: {.column width="70%" style="text-align: center; justify-content: center; align-items: center;"}
 -   $b_1 = +0.0611$ (for $x_1$)
 
-    -   +0.0611 is the estimated change (increase) in the expected travel time corresponding to an increase of one mile in the distance traveled when the number of deliveries is held constant.
+    -   +0.0611 is the estimated average change (increase) in the expected travel time corresponding to an increase of one mile in the distance traveled when the number of deliveries is held constant.
 
 <br>
 
 -   $b_2 = +0.9234$ (for $x_2$)
 
-    -   +0.9234 is the estimated change (increase) in the expected travel time corresponding to an increase of one delivery when the number of miles traveled is held constant.
+    -   +0.9234 is the estimated average change (increase) in the expected travel time corresponding to an increase of one delivery when the number of miles traveled is held constant.
+:::
+:::
+:::
+
+
 
 # Multiple Coefficient of Determination {background-color="#cfb991"}
 
@@ -334,7 +348,7 @@ Where:
 
 -   $n$ = sample size.
 
--   $p$ = number of predictors.
+-   $p$ = number of predictors (independent variables).
 
 -   The degrees of freedom for SSE reflect the number of observations left after accounting for the number of estimated parameters ($n - (p + \text{one intercept})$.
 :::
@@ -383,7 +397,7 @@ $$
 
 -   Adding independent variables, even ones that are not statistically significant, will reduce the prediction errors, thus the SSE will become smaller.
 
--   Because SST = SSR + SSE is fixed, SSR will become larger and hence, $R^2 = SSR/SST$ will always increase.
+-   Because SST = SSR + SSE is fixed, SSR will become larger, SSE will become smaller, and hence, $R^2 = SSR/SST$ will always increase.
 
 -   But, adding independent variables, the model will become more complex (a larger $p$).
 
@@ -452,7 +466,9 @@ Bringing in a new independent variable will increase the $R^2_a$ when and only w
 
 $$
 H_0: \beta_1 = \beta_2 = \dots = \beta_p = 0 \quad (\text{No linear relationship})
-$$ $$
+$$ 
+
+$$
 H_a: \text{One or more of the slopes is not equal to zero}
 $$
 
@@ -476,7 +492,9 @@ where $F_\alpha$ is based on an $F$ distribution with $p$ d.f. (numerator) and $
 
 $$
 H_0: \beta_1 = \beta_2 = 0
-$$ $$
+$$ 
+
+$$
 H_a: \text{One or both slopes are not equal to zero}
 $$
 
@@ -486,7 +504,7 @@ For $\alpha = 0.01$ and degrees of freedom = 2 and 7, $F_{\alpha} = 9.55$.
 
 Reject $H_0$ if $F \geq 9.55$ or $p \leq .01$.
 
-## Testing for Overall Significance: $F$ Test (4 of 5)
+## Testing for Overall Significance: $F$ Test 
 
 **Test Statistics**
 
@@ -500,7 +518,7 @@ We reject $H_0$ because $F = 32.8784 > 9.55$.
 
 We have significant statistical evidence to conclude that at least one of the independent variables is useful in explaining the variation in the total travel time, or for predicting the total travel time. The significance level is 1%.
 
-## Testing for Overall Significance: $F$ Test (5 of 5)
+## Testing for Overall Significance: $F$ Test 
 
 **ANOVA Output**
 
@@ -514,7 +532,7 @@ $$
 p = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
 $$
 
-## Testing for Individual Significance: $t$ Test (1 of 5)
+## Testing for Individual Significance: $t$ Test 
 
 -   If the $F$ test shows an overall significance, a separate $t$ test is conducted for each of the independent variables in the model.
 
@@ -524,7 +542,7 @@ $$
 
 -   We refer to each of these $t$ Tests as a test for individual significance.
 
-## Testing for Individual Significance: $t$ Test (2 of 5)
+## Testing for Individual Significance: $t$ Test
 
 **Hypotheses**
 
@@ -548,7 +566,7 @@ Reject $H_0$ if $t \leq -t_{\alpha / 2}$ or $t \geq t_{\alpha / 2}$ or if $p$-va
 
 where $t_{\alpha/2}$ is based on a $t$-distribution with $n - p - 1$ degrees of freedom.
 
-## Testing for Individual Significance: $t$ Test (3 of 5)
+## Testing for Individual Significance: $t$ Test 
 
 **Example: Butler Trucking Company**
 
@@ -565,7 +583,7 @@ $$
 Reject $H_0$ if $p$-value $\leq .01$, or if $t \leq -3.499$ or $t \geq 3.499$.
 :::
 
-## Testing for Individual Significance: $t$ Test (4 of 5)
+## Testing for Individual Significance: $t$ Test 
 
 **Test Statistics**
 
@@ -581,7 +599,7 @@ $$
 
 Reject each of $H_0: \beta_1 = 0$ and $H_0: \beta_2 = 0$. Each independent variable is statistically significant **in the presence of the other**.
 
-## Testing for Individual Significance: $t$ Test (5 of 5)
+## Testing for Individual Significance: $t$ Test 
 
 **Example: Butler Trucking Company**
 
@@ -595,11 +613,10 @@ knitr::include_graphics("figs/butler_company_reg_table_excel.png")
 
 <br>
 
--   **Which of the two independent variables is more significant?**
 
 # Multicollinearity {background-color="#cfb991"}
 
-## Multicollinearity (1 of 2)
+## Multicollinearity 
 
 -   The term **multicollinearity** refers to the correlation among the independent variables.
 
@@ -611,7 +628,7 @@ knitr::include_graphics("figs/butler_company_reg_table_excel.png")
 
 -   If the estimated regression equation is to be used only for predictive purposes, multicollinearity is usually not a serious problem
 
-## Multicollinearity (2 of 2)
+## Multicollinearity 
 
 -   The coefficients do not measure marginal effects of the predictors (rather **combined** effects may be measured).
 
@@ -634,7 +651,7 @@ knitr::include_graphics("figs/butler_company_reg_table_excel.png")
 
 # Categorical Independent Variables {background-color="#cfb991"}
 
-## Categorical Independent Variables (1 of 9)
+## Categorical Independent Variables 
 
 -   In many situations, we need to work with categorical independent variables such as gender (an independent variable with 2 categories: Male, Female), method of payment (an independent variable with 3 categories: Cash, Check, Credit card), etc.
 
@@ -642,7 +659,7 @@ knitr::include_graphics("figs/butler_company_reg_table_excel.png")
 
 -   In this case, $x_2$ is called a dummy or indicator variable, and the category with a 0 (i.e., female) is called the reference category or level.
 
-## Categorical Independent Variables (2 of 9)
+## Categorical Independent Variables 
 
 -   Gender: F, M
 -   Job Type: Lawyer, Salesperson, Educator, Government (for salary)
@@ -655,13 +672,13 @@ knitr::include_graphics("figs/butler_company_reg_table_excel.png")
 -   Smoker: Yes, No (for health risk)
 -   Method of Payment: Cash, Check, Credit Card (for credit rating or loan approvals)
 
-## Categorical Independent Variables (3 of 9)
+## Categorical Independent Variables 
 
 **Example: Johnson Filtration, Inc.**
 
 Managers of Johnson Filtration, Inc. want to predict the repair time necessary for processing its maintenance requests. Repair time is believed to be related to two factors, the number of months since last service and the type of repair problem (mechanical or electrical). Data for a sample of 10 service calls are reported in the table (next slide).
 
-## Categorical Independent Variables (4 of 9)
+## Categorical Independent Variables 
 
 **Example: Johnson Filtration, Inc**
 
@@ -681,7 +698,7 @@ Managers of Johnson Filtration, Inc. want to predict the repair time necessary f
 0 = Mechanical (reference)\
 1 = Electrical
 
-## Categorical Independent Variables (5 of 9)
+## Categorical Independent Variables 
 
 **Example: Johnson Filtration, Inc.**
 
@@ -696,7 +713,7 @@ $y$ = Repair time in hours\
 $x_1$ = Number of months since last maintenance service\
 $x_2$ = 0 if type of repair is mechanical, 1 if the type of repair is electrical ( $x_2$ is a dummy variable)
 
-## Categorical Independent Variables (6 of 9)
+## Categorical Independent Variables 
 
 **Example: Johnson Filtration, Inc.**
 
@@ -718,7 +735,7 @@ $$
 
 This indicates the estimated regression equation does a good job of explaining the variability in repair times.
 
-## Categorical Independent Variables (7 of 9)
+## Categorical Independent Variables 
 
 Interpretation of regression coefficient $\beta_2$ of dummy variable $x_2$:
 
@@ -738,7 +755,7 @@ $$
 
 $\beta_2$ is the difference in the expected repair time between two types of repair **if the numbers of months since last maintenance service (**$x_1$) are the same.
 
-## Categorical Independent Variables (8 of 9)
+## Categorical Independent Variables 
 
 **Example: Johnson Filtration, Inc.**
 
@@ -752,7 +769,7 @@ Months since last service is significant at 1% significance level (in the presen
 
 Type of problem is also significant at 1% significance level if we control for the Months, and an electrical problem is predicted or estimated to take a longer time (by 1.1627) to repair than a mechanical one (the reference category).
 
-## More Complex Categorical Variables (9 of 9)
+## More Complex Categorical Variables 
 
 If a categorical variable has $k$ levels, only $k - 1$ dummy variables are required, with each dummy variable being coded as 0 or 1.
 
@@ -786,7 +803,7 @@ Use only two (any two) dummy variables; i.e., two dummy variables are sufficient
 
 -   In multiple regression analysis, it is preferable to use the residual plot against $\hat{y}$ to determine if the model assumptions are satisfied.
 
-## Standardized Residuals (1 of 3)
+## Standardized Residuals 
 
 -   Standardized residuals are frequently used in residual plots for purposes of:
 
@@ -799,7 +816,7 @@ Use only two (any two) dummy variables; i.e., two dummy variables are sufficient
 
 -   Normality of residuals can be checked by the normal probability plot.
 
-## Standardized Residuals (2 of 3)
+## Standardized Residuals 
 
 **Example: Butler Trucking Company: Residual output**
 
@@ -811,7 +828,7 @@ knitr::include_graphics("figs/butler_company_residual_output_excel.png")
 
 <br>
 
-## Standardized Residual Plot Against $\hat{y}$ (3 of 3)
+## Standardized Residual Plot Against $\hat{y}$ 
 
 **Example: Butler Trucking Company**
 
