@@ -462,6 +462,8 @@ Bringing in a new independent variable will increase the $R^2_a$ when and only w
 
 ## Testing for Overall Significance: $F$ Test
 
+::: {style="font-size: 80%;"}
+
 **Hypotheses**
 
 $$
@@ -477,12 +479,19 @@ $$
 $$
 F = \frac{MSR}{MSE}
 $$
+where,
+
+$$
+MSR = \frac{SSR}{p} \quad \text{and} \quad MSE = \frac{SSE}{n-p-1}
+$$
 
 **Rejection Rule**
 
 Reject $H_0$ if $F \geq F_\alpha$ or $p \leq \alpha$.
 
 where $F_\alpha$ is based on an $F$ distribution with $p$ d.f. (numerator) and $n - p - 1$ d.f. (denominator).
+
+:::
 
 ## Testing for Overall Significance: $F$ Test
 
@@ -524,12 +533,22 @@ We have significant statistical evidence to conclude that at least one of the in
 
 | Source     | df  | SS      | MS      | F       | Significance F |
 |------------|-----|---------|---------|---------|----------------|
+| Regression | $p$  | SSR | $MSR=\frac{SSR}{p}$ | $F=\frac{MSR}{MSE}$ | $p-value$         |
+| Residual   | $n-p-1$   | SSE  | $MSE=\frac{SSE}{p}$  |         |                |
+| Total      | $n-1$   | SST    |         |         |                |
+
+## Testing for Overall Significance: $F$ Test 
+
+**ANOVA Output**
+
+| Source     | df  | SS      | MS      | F       | Significance F |
+|------------|-----|---------|---------|---------|----------------|
 | Regression | 2   | 21.6006 | 10.8003 | 32.8784 | 0.0003         |
 | Residual   | 7   | 2.2994  | 0.3285  |         |                |
 | Total      | 9   | 23.9    |         |         |                |
 
 $$
-p = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
+p-value = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
 $$
 
 ## Testing for Individual Significance: $t$ Test 
@@ -538,9 +557,9 @@ $$
 
 -   The $t$ test is used to determine whether each of the individual independent variables is significant **in the presence of all other independent variables in the model**.
 
-    -   I$t$ Tests the **additional contribution** in reducing the variation of the unexplained error (or in increasing the explained variation).
+    -   It tests the **additional contribution** in reducing the variation of the unexplained error (or in increasing the explained variation).
 
--   We refer to each of these $t$ Tests as a test for individual significance.
+-   We refer to each of these $t$ tests as a test for individual significance.
 
 ## Testing for Individual Significance: $t$ Test
 
@@ -622,7 +641,7 @@ knitr::include_graphics("figs/butler_company_reg_table_excel.png")
 
 -   It is important to compute pairwise correlations in a multiple regression analysis.
 
--   When independent variables are highly correlated (e.g., $|r| > 0.7$), it is difficult to determine the separate/marginal effect of each independent variable on the dependent variable.
+- **Rule of Thumb**:  When independent variables are highly correlated (e.g., $|r| > 0.7$), it is difficult to determine the separate/marginal effect of each independent variable on the dependent variable.
 
 -   Every attempt should be made to avoid including independent variables that are highly correlated.
 
@@ -639,13 +658,20 @@ knitr::include_graphics("figs/butler_company_reg_table_excel.png")
     -   **Large changes** in the estimated regression coefficients (slopes) when a predictor variable is added or deleted.
     -   **Wide confidence intervals** for the regression coefficients representing important predictor variables.
 
-# Prediction {background-color="#cfb991"}
+# Estimation and Prediction {background-color="#cfb991"}
 
-## Prediction
+##  Estimation and Prediction
 
--   The procedures for estimating the mean value of $y$ and predicting an individual value of $y$ in multiple regression are similar to those in simple regression. The interpretations of CI (Confidence Interval) and PI (Prediction Interval) are also similar.
+-   The procedures for estimating the mean value of $y$ and predicting an individual value of $y$ in multiple regression are similar to those in simple regression. 
 
 -   We substitute the given values of $x_1, x_2, ..., x_p$ into the estimated regression equation and use the corresponding value of $\hat{y}$ as the point estimate.
+
+- The interpretations of the Confidence Interval (CI) and Prediction Interval (PI) in multiple regression are similar to those in simple regression:
+
+    - The Confidence Interval (CI) estimates the range within which the mean value of the dependent variable is expected to lie, given specific values of the independent variables.
+    - The Prediction Interval (PI) estimates the range within which an individual observation of the dependent variable is expected to lie, given specific values of the independent variables.
+
+<br>
 
 -   The formulas required to develop interval estimates, CI and PI, are beyond the scope of the course and our textbook. Software packages for multiple regression will often provide these interval estimates.
 
@@ -684,6 +710,23 @@ Managers of Johnson Filtration, Inc. want to predict the repair time necessary f
 
 | Service Call | Months since last service | Type of repair | Repair time (hours) |
 |----------------|-----------------------|----------------|------------------|
+| 1            | 2                         | Electrical              | 2.9                 |
+| 2            | 6                         | Mechanical              | 3.0                 |
+| 3            | 8                         | Electrical              | 4.8                 |
+| 4            | 3                         | Mechanical              | 1.8                 |
+| 5            | 2                         | Electrical              | 2.9                 |
+| 6            | 7                         | Electrical              | 4.9                 |
+| 7            | 9                         | Mechanical              | 4.2                 |
+| 8            | 8                         | Mechanical              | 4.8                 |
+| 9            | 4                         | Electrical              | 4.4                 |
+| 10           | 6                         | Electrical              | 4.5                 |
+
+## Categorical Independent Variables 
+
+**Example: Johnson Filtration, Inc**: Now with a *dummy* or *indicator variable*.
+
+| Service Call | Months since last service | Type of repair | Repair time (hours) |
+|----------------|-----------------------|----------------|------------------|
 | 1            | 2                         | 1              | 2.9                 |
 | 2            | 6                         | 0              | 3.0                 |
 | 3            | 8                         | 1              | 4.8                 |
@@ -717,23 +760,11 @@ $x_2$ = 0 if type of repair is mechanical, 1 if the type of repair is electrical
 
 **Example: Johnson Filtration, Inc.**
 
-ANOVA Output:
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/multiple_reg_categorical_iv.png")
+```
 
-| df         | SS  | MS     | F      | Significance F |
-|------------|-----|--------|--------|----------------|
-| Regression | 2   | 9.0009 | 4.5005 | 21.357         |
-| Residual   | 7   | 1.4751 | 0.2107 |                |
-| Total      | 9   | 10.476 |        |                |
-
-$$
-R^2 = \frac{9.0009}{10.476} = 89.52\%
-$$
-
-$$
-R_a^2 = 1 - (1 - 0.8952) \cdot \frac{10 - 1}{10 - 2 - 1} = 81.90\%
-$$
-
-This indicates the estimated regression equation does a good job of explaining the variability in repair times.
+<br>
 
 ## Categorical Independent Variables 
 
@@ -745,55 +776,218 @@ $$
 
 For mechanical (reference):\
 $$
-E(y) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 0 = \beta_0 + \beta_1 x_1
+E(y|mechanical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 0 = \beta_0 + \beta_1 x_1
 $$
 
 For electrical:\
 $$
-E(y) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = \beta_0 + \beta_1 x_1 + \beta_2
+E(y|electrical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = (\beta_0 + \beta_2) + \beta_1 x_1 
 $$
-
-$\beta_2$ is the difference in the expected repair time between two types of repair **if the numbers of months since last maintenance service (**$x_1$) are the same.
 
 ## Categorical Independent Variables 
 
-**Example: Johnson Filtration, Inc.**
+- The mean repair time is a linear function of $x_1$ for both mechanical and electrical repairs.
 
-|           | Coefficients | Standard Error | t Stat | P-value |
-|-----------|--------------|----------------|--------|---------|
-| Intercept | 0.9305       | 0.4670         | 1.9926 | 0.0866  |
-| Months    | 0.3876       | 0.0626         | 6.1954 | 0.0004  |
-| Type      | 1.2627       | 0.3141         | 4.0197 | 0.0051  |
+- The slope of both equations is $\beta_1$, but the y-intercept differs:
 
-Months since last service is significant at 1% significance level (in the presence of the second variable, or if we control for Type of problem).
+    - For mechanical repairs: the y-intercept is $\beta_0$.
+    - For electrical repairs: the y-intercept is $\beta_0 + \beta_2$.
+  
+- The coefficient $\beta_2$ indicates the difference between the mean repair time for electrical repairs and the mean repair time for mechanical repairs.
 
-Type of problem is also significant at 1% significance level if we control for the Months, and an electrical problem is predicted or estimated to take a longer time (by 1.1627) to repair than a mechanical one (the reference category).
 
-## More Complex Categorical Variables 
+## Interpretation of $\beta_2$
 
-If a categorical variable has $k$ levels, only $k - 1$ dummy variables are required, with each dummy variable being coded as 0 or 1.
+- **If $\beta_2$ is positive**: The mean repair time for an electrical repair is greater than for a mechanical repair.
 
-**Example**: Quarterly sales (dependent variable) vs. Sales regions
+- **If $\beta_2$ is negative**: The mean repair time for an electrical repair is less than for a mechanical repair.
 
-| Region | DA  | DB  | DC  |
-|--------|-----|-----|-----|
-| A      | 1   | 0   | 0   |
-| B      | 0   | 1   | 0   |
-| C      | 0   | 0   | 1   |
+- **If $\beta_2 = 0$**: There is no difference in the mean repair time between electrical and mechanical repairs, indicating that the type of repair is not related to repair time.
 
-Use only two (any two) dummy variables; i.e., two dummy variables are sufficient to differentiate the three regions.
+- In effect, the use of the dummy variable for type of repair provides two estimated regression equations that can be used to predict the repair time.
+
+## Categorical Independent Variables 
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/multiple_reg_categorical_iv_plot.png")
+```
+
+<br>
+
+## More Complex Categorical Variables
+
+> A categorical variable with $k$ levels must be modeled using $k - 1$ dummy variables. Care must be taken in defining and interpreting the dummy variables.
+
+- In the Johnson Filtration example, a categorical variable (mechanical and electrical) with two levels was represented by a single dummy variable.
+
+- When a categorical variable has more than two levels, $k - 1$ dummy variables are required, with each coded as 0 or 1.
+
+## Example: Categorical Variable with Three Levels
+
+- Suppose a manufacturer organizes the sales territories into three regions: A, B, and C.
+
+- The number of copiers sold per week is the dependent variable.
+
+- The sales region is a categorical variable with three levels: A, B, and C.
+
+::: {.fragment}
+
+**Dummy Variables for Sales Region:** We need $3 - 1 = 2$ dummy variables.
+  
+$$
+x_1 = 
+\begin{cases}
+1 & \text{if sales region B} \\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+$$
+x_2 = 
+\begin{cases}
+1 & \text{if sales region C} \\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+
+:::
+
+## Example: Dummy Variable Coding
+
+- The following table shows the coding for the dummy variables $x_1$ and $x_2$ for each sales region.
+
+::: {.fragment}
+
+| Region | $x_1$ | $x_2$ |
+|--------|-----------|-----------|
+| A      | 0         | 0         |
+| B      | 1         | 0         |
+| C      | 0         | 1         |
+
+:::
+
+- Observations corresponding to region A are coded $x_1 = 0,  x_2 = 0$.
+- Observations corresponding to region B are coded $x_1 = 1,  x_2 = 0$.
+- Observations corresponding to region C are coded $x_1 = 0,  x_2 = 1$.
+
+## Example: Regression Equation with Dummy Variables
+
+::: {style="font-size: 80%;"}
+
+- The regression equation for the expected number of units sold is:
+
+::: {.fragment}
+
+$$
+E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
+$$
+
+:::
+
+- To interpret the parameters $\beta_0,  \beta_1,  \beta_2$, consider the three variations of the regression equation:
+
+- **Region A**: 
+  $$
+  E(y | \text{region A}) = \beta_0 + \beta_1 (0) + + \beta_2 (0) = \beta_0
+  $$
+
+- **Region B**: 
+  $$
+  E(y | \text{region B}) = \beta_0 + \beta_1 (1) + + \beta_2 (0) = \beta_0 + \beta_1 
+  $$
+
+- **Region C**: 
+  $$
+  E(y | \text{region C}) = \beta_0 + \beta_1 (0) + + \beta_2 (1) = \beta_0 + \beta_2
+  $$
+
+- Interpretation:
+  - $\beta_0$: Mean or expected value of sales for region A.
+  - $\beta_1$: Difference in mean sales between region B and region A.
+  - $\beta_2$: Difference in mean sales between region C and region A.
+
+:::
+
+## Example: Important Points on Dummy Variables
+
+- Two dummy variables are used because the sales region has three levels.
+
+- The assignment of $x_1 = 0, x_2 = 0$ for region A is arbitrary.
+
+- Alternative coding choices are possible, which would change the interpretation of $\beta_1$ and $\beta_2$.
+
+- **Key Point**: For a categorical variable with $k$ levels, $k - 1$ dummy variables are required.
+
+    - For a fourth region $D$, we would need three dummy variables.
 
 # Model Assumptions {background-color="#cfb991"}
 
-## Assumptions About the Error Term $\epsilon$
+## Assumptions about the Error Term $\epsilon$ in the Multiple Regression Model
 
-1.  The error term $\epsilon$ is a random variable reflecting the deviation between the observed $y$ value and the expected value of $y$ given by $\beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p$.
+::: {style="font-size: 80%;"}
 
-2.  $\epsilon$ is a normally distributed random variable with **mean of 0**.
+Consider the following two-independent-variable multiple regression equation:
 
-3.  The variance of $\epsilon$, denoted by $\sigma^2$, is the **same** for all values of the independent variables.
+$$
+E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
+$$
 
-4.  The values of $\epsilon$ are **independent**.
+:::
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/multiple_regression_plot.png")
+```
+
+::: {style="font-size: 80%;"}
+
+The graph of this equation is a plane in three-dimensional space. The value of $\epsilon$ shown is the difference between the actual $y$ value and the expected value of $y$, $E(y)$, when $x_1 = x_1^*$ and $x_2 = x_2^*$.
+
+:::
+
+<br>
+
+## Assumptions about the Error Term $\epsilon$ in the Multiple Regression Model
+
+$$
+y = \beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p + \epsilon
+$$
+
+1. **The error term $\epsilon$ is a random variable with $E(\epsilon) = 0$.**
+
+  - **Implication**: For given values of $x_1, x_2, \ldots, x_p$, the expected, or average, value of $y$ is given by:
+
+:::: {.fragment}
+
+$$
+E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p
+$$
+
+::::
+
+  - **Validation**: Residuals vs. Predicted Values Plot or the Standardized Residuals vs. Predicted Values Plot
+
+2. **The variance of $\epsilon$ is denoted by $\sigma^2$ and is the same for all values of the independent variables $x_1, x_2, \ldots, x_p$.**
+
+  - **Implication**: The variance of $y$ about the regression line equals $\sigma^2$ and is the same for all values of $x_1, x_2, \ldots, x_p$.
+
+  - **Validation**: Residuals vs. Predicted Values Plot or the Standardized Residuals vs. Predicted Values Plot
+
+## Assumptions about the Error Term $\epsilon$ in the Multiple Regression Model
+
+3. **The values of $\epsilon$ are independent.**
+
+    - **Implication**: The value of $\epsilon$ for a particular set of values for the independent variables is not related to the value of $\epsilon$ for any other set of values.
+
+    - **Validation**: Standardized Residuals vs. Predicted Values Plot
+
+4. **The error term $\epsilon$ is a normally distributed random variable reflecting the deviation between the $y$ value and the expected value of $y$.**
+
+    - **Implication**: Because $\beta_0, \beta_1, \ldots, \beta_p$ are constants for the given values of $x_1, x_2, \ldots, x_p$, the dependent variable $y$ is also a normally distributed random variable.
+
+    - **Validation**: Normal Probability Plot or Q-Q Plot (Quantile-Quantile Plot) of Residuals.
 
 # Residual Analysis {background-color="#cfb991"}
 
@@ -839,6 +1033,15 @@ knitr::include_graphics("figs/butler_company_residual_plot_excel.png")
 ```
 
 <br>
+
+::: {style="font-size: 80%;"}
+
+- The standardized residual plot does not indicate any abnormalities, and no standard residual is less than -2 or greater than +2. 
+- Note: the pattern of the standardized residual plot against $\hat{y}$ is the same as the pattern of the residual plot against $\hat{y}$. But the standardized residual plot enables us to check for outliers and determine whether the assumption of normality for the regression model (Distribution of $y$) is reasonable.
+
+:::
+
+<!---
 
 # Adding or Removing Independent Variables? {background-color="#cfb991"}
 
@@ -1044,6 +1247,8 @@ $p$-value = 1 – `F.DIST(9.1765, 2, 12, TRUE)` $\approx 0.0038$
 -   Method B is predicted to have a higher expected production quantity than Method C (by 14 units), and it is significantly higher at $\alpha = 5\%$.
 
 -   Method A is predicted to have a lower expected production quantity than Method B (by 4 units), but the significance level cannot be determined directly based on this particular ANOVA output.
+
+--->
 
 # Summary {background-color="#cfb991"}
 

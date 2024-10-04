@@ -978,6 +978,7 @@ R^2_a = 1 - \frac{\frac{SSE}{(n - p - 1)}}{\frac{SST}{(n - 1)}} = 1 - \frac{MSE}
 </section>
 <section id="testing-for-overall-significance-f-test-1" class="slide level2 center">
 <h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
+<div style="font-size: 80%;">
 <p><strong>Hypotheses</strong></p>
 <p><span class="math display">\[
 H_0: \beta_1 = \beta_2 = \dots = \beta_p = 0 \quad (\text{No linear relationship})
@@ -988,10 +989,14 @@ H_a: \text{One or more of the slopes is not equal to zero}
 <p><strong>Test Statistics</strong></p>
 <p><span class="math display">\[
 F = \frac{MSR}{MSE}
+\]</span> where,</p>
+<p><span class="math display">\[
+MSR = \frac{SSR}{p} \quad \text{and} \quad MSE = \frac{SSE}{n-p-1}
 \]</span></p>
 <p><strong>Rejection Rule</strong></p>
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F \geq F_\alpha\)</span> or <span class="math inline">\(p \leq \alpha\)</span>.</p>
 <p>where <span class="math inline">\(F_\alpha\)</span> is based on an <span class="math inline">\(F\)</span> distribution with <span class="math inline">\(p\)</span> d.f. (numerator) and <span class="math inline">\(n - p - 1\)</span> d.f. (denominator).</p>
+</div>
 </section>
 <section id="testing-for-overall-significance-f-test-2" class="slide level2 center">
 <h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
@@ -1018,6 +1023,56 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 <p>We have significant statistical evidence to conclude that at least one of the independent variables is useful in explaining the variation in the total travel time, or for predicting the total travel time. The significance level is 1%.</p>
 </section>
 <section id="testing-for-overall-significance-f-test-4" class="slide level2 center">
+<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
+<p><strong>ANOVA Output</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>df</th>
+<th>SS</th>
+<th>MS</th>
+<th>F</th>
+<th>Significance F</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regression</td>
+<td><span class="math inline">\(p\)</span></td>
+<td>SSR</td>
+<td><span class="math inline">\(MSR=\frac{SSR}{p}\)</span></td>
+<td><span class="math inline">\(F=\frac{MSR}{MSE}\)</span></td>
+<td><span class="math inline">\(p-value\)</span></td>
+</tr>
+<tr class="even">
+<td>Residual</td>
+<td><span class="math inline">\(n-p-1\)</span></td>
+<td>SSE</td>
+<td><span class="math inline">\(MSE=\frac{SSE}{p}\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td><span class="math inline">\(n-1\)</span></td>
+<td>SST</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="testing-for-overall-significance-f-test-5" class="slide level2 center">
 <h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <p><strong>ANOVA Output</strong></p>
 <table class="caption-top">
@@ -1059,7 +1114,7 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 </tbody>
 </table>
 <p><span class="math display">\[
-p = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
+p-value = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
 \]</span></p>
 </section>
 <section id="testing-for-individual-significance-t-test" class="slide level2 center">
@@ -1068,9 +1123,9 @@ p = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
 <li class="fragment"><p>If the <span class="math inline">\(F\)</span> test shows an overall significance, a separate <span class="math inline">\(t\)</span> test is conducted for each of the independent variables in the model.</p></li>
 <li class="fragment"><p>The <span class="math inline">\(t\)</span> test is used to determine whether each of the individual independent variables is significant <strong>in the presence of all other independent variables in the model</strong>.</p>
 <ul>
-<li class="fragment">I<span class="math inline">\(t\)</span> Tests the <strong>additional contribution</strong> in reducing the variation of the unexplained error (or in increasing the explained variation).</li>
+<li class="fragment">It tests the <strong>additional contribution</strong> in reducing the variation of the unexplained error (or in increasing the explained variation).</li>
 </ul></li>
-<li class="fragment"><p>We refer to each of these <span class="math inline">\(t\)</span> Tests as a test for individual significance.</p></li>
+<li class="fragment"><p>We refer to each of these <span class="math inline">\(t\)</span> tests as a test for individual significance.</p></li>
 </ul>
 </section>
 <section id="testing-for-individual-significance-t-test-1" class="slide level2 center">
@@ -1135,7 +1190,7 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <ul>
 <li class="fragment"><p>The term <strong>multicollinearity</strong> refers to the correlation among the independent variables.</p></li>
 <li class="fragment"><p>It is important to compute pairwise correlations in a multiple regression analysis.</p></li>
-<li class="fragment"><p>When independent variables are highly correlated (e.g., <span class="math inline">\(|r| &gt; 0.7\)</span>), it is difficult to determine the separate/marginal effect of each independent variable on the dependent variable.</p></li>
+<li class="fragment"><p><strong>Rule of Thumb</strong>: When independent variables are highly correlated (e.g., <span class="math inline">\(|r| &gt; 0.7\)</span>), it is difficult to determine the separate/marginal effect of each independent variable on the dependent variable.</p></li>
 <li class="fragment"><p>Every attempt should be made to avoid including independent variables that are highly correlated.</p></li>
 <li class="fragment"><p>If the estimated regression equation is to be used only for predictive purposes, multicollinearity is usually not a serious problem</p></li>
 </ul>
@@ -1154,16 +1209,24 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 </ul>
 </section></section>
 <section>
-<section id="prediction" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Prediction</h1>
+<section id="estimation-and-prediction" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Estimation and Prediction</h1>
 
 </section>
-<section id="prediction-1" class="slide level2 center">
-<h2>Prediction</h2>
+<section id="estimation-and-prediction-1" class="slide level2 center">
+<h2>Estimation and Prediction</h2>
 <ul>
-<li class="fragment"><p>The procedures for estimating the mean value of <span class="math inline">\(y\)</span> and predicting an individual value of <span class="math inline">\(y\)</span> in multiple regression are similar to those in simple regression. The interpretations of CI (Confidence Interval) and PI (Prediction Interval) are also similar.</p></li>
+<li class="fragment"><p>The procedures for estimating the mean value of <span class="math inline">\(y\)</span> and predicting an individual value of <span class="math inline">\(y\)</span> in multiple regression are similar to those in simple regression.</p></li>
 <li class="fragment"><p>We substitute the given values of <span class="math inline">\(x_1, x_2, ..., x_p\)</span> into the estimated regression equation and use the corresponding value of <span class="math inline">\(\hat{y}\)</span> as the point estimate.</p></li>
-<li class="fragment"><p>The formulas required to develop interval estimates, CI and PI, are beyond the scope of the course and our textbook. Software packages for multiple regression will often provide these interval estimates.</p></li>
+<li class="fragment"><p>The interpretations of the Confidence Interval (CI) and Prediction Interval (PI) in multiple regression are similar to those in simple regression:</p>
+<ul>
+<li class="fragment">The Confidence Interval (CI) estimates the range within which the mean value of the dependent variable is expected to lie, given specific values of the independent variables.</li>
+<li class="fragment">The Prediction Interval (PI) estimates the range within which an individual observation of the dependent variable is expected to lie, given specific values of the independent variables.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li class="fragment">The formulas required to develop interval estimates, CI and PI, are beyond the scope of the course and our textbook. Software packages for multiple regression will often provide these interval estimates.</li>
 </ul>
 </section></section>
 <section>
@@ -1202,6 +1265,88 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <section id="categorical-independent-variables-4" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc</strong></p>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 31%">
+<col style="width: 21%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Service Call</th>
+<th>Months since last service</th>
+<th>Type of repair</th>
+<th>Repair time (hours)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2</td>
+<td>Electrical</td>
+<td>2.9</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>6</td>
+<td>Mechanical</td>
+<td>3.0</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>8</td>
+<td>Electrical</td>
+<td>4.8</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>3</td>
+<td>Mechanical</td>
+<td>1.8</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>2</td>
+<td>Electrical</td>
+<td>2.9</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7</td>
+<td>Electrical</td>
+<td>4.9</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>9</td>
+<td>Mechanical</td>
+<td>4.2</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>8</td>
+<td>Mechanical</td>
+<td>4.8</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>4</td>
+<td>Electrical</td>
+<td>4.4</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>6</td>
+<td>Electrical</td>
+<td>4.5</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="categorical-independent-variables-5" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
+<p><strong>Example: Johnson Filtration, Inc</strong>: Now with a <em>dummy</em> or <em>indicator variable</em>.</p>
 <table class="caption-top" style="width:100%;">
 <colgroup>
 <col style="width: 21%">
@@ -1283,7 +1428,7 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <p>0 = Mechanical (reference)<br>
 1 = Electrical</p>
 </section>
-<section id="categorical-independent-variables-5" class="slide level2 center">
+<section id="categorical-independent-variables-6" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc.</strong></p>
 <p>Regression model:</p>
@@ -1295,53 +1440,13 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <span class="math inline">\(x_1\)</span> = Number of months since last maintenance service<br>
 <span class="math inline">\(x_2\)</span> = 0 if type of repair is mechanical, 1 if the type of repair is electrical ( <span class="math inline">\(x_2\)</span> is a dummy variable)</p>
 </section>
-<section id="categorical-independent-variables-6" class="slide level2 center">
+<section id="categorical-independent-variables-7" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc.</strong></p>
-<p>ANOVA Output:</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>df</th>
-<th>SS</th>
-<th>MS</th>
-<th>F</th>
-<th>Significance F</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Regression</td>
-<td>2</td>
-<td>9.0009</td>
-<td>4.5005</td>
-<td>21.357</td>
-</tr>
-<tr class="even">
-<td>Residual</td>
-<td>7</td>
-<td>1.4751</td>
-<td>0.2107</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Total</td>
-<td>9</td>
-<td>10.476</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><span class="math display">\[
-R^2 = \frac{9.0009}{10.476} = 89.52\%
-\]</span></p>
-<p><span class="math display">\[
-R_a^2 = 1 - (1 - 0.8952) \cdot \frac{10 - 1}{10 - 2 - 1} = 81.90\%
-\]</span></p>
-<p>This indicates the estimated regression equation does a good job of explaining the variability in repair times.</p>
+
+<img data-src="figs/multiple_reg_categorical_iv.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
 </section>
-<section id="categorical-independent-variables-7" class="slide level2 center">
+<section id="categorical-independent-variables-8" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
 <p>Interpretation of regression coefficient <span class="math inline">\(\beta_2\)</span> of dummy variable <span class="math inline">\(x_2\)</span>:</p>
 <p><span class="math display">\[
@@ -1349,102 +1454,216 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
 \]</span></p>
 <p>For mechanical (reference):<br>
 <span class="math display">\[
-E(y) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 0 = \beta_0 + \beta_1 x_1
+E(y|mechanical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 0 = \beta_0 + \beta_1 x_1
 \]</span></p>
 <p>For electrical:<br>
 <span class="math display">\[
-E(y) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = \beta_0 + \beta_1 x_1 + \beta_2
+E(y|electrical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = (\beta_0 + \beta_2) + \beta_1 x_1
 \]</span></p>
-<p><span class="math inline">\(\beta_2\)</span> is the difference in the expected repair time between two types of repair <strong>if the numbers of months since last maintenance service (</strong><span class="math inline">\(x_1\)</span>) are the same.</p>
 </section>
-<section id="categorical-independent-variables-8" class="slide level2 center">
+<section id="categorical-independent-variables-9" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
-<p><strong>Example: Johnson Filtration, Inc.</strong></p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th></th>
-<th>Coefficients</th>
-<th>Standard Error</th>
-<th>t Stat</th>
-<th>P-value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Intercept</td>
-<td>0.9305</td>
-<td>0.4670</td>
-<td>1.9926</td>
-<td>0.0866</td>
-</tr>
-<tr class="even">
-<td>Months</td>
-<td>0.3876</td>
-<td>0.0626</td>
-<td>6.1954</td>
-<td>0.0004</td>
-</tr>
-<tr class="odd">
-<td>Type</td>
-<td>1.2627</td>
-<td>0.3141</td>
-<td>4.0197</td>
-<td>0.0051</td>
-</tr>
-</tbody>
-</table>
-<p>Months since last service is significant at 1% significance level (in the presence of the second variable, or if we control for Type of problem).</p>
-<p>Type of problem is also significant at 1% significance level if we control for the Months, and an electrical problem is predicted or estimated to take a longer time (by 1.1627) to repair than a mechanical one (the reference category).</p>
+<ul>
+<li class="fragment"><p>The mean repair time is a linear function of <span class="math inline">\(x_1\)</span> for both mechanical and electrical repairs.</p></li>
+<li class="fragment"><p>The slope of both equations is <span class="math inline">\(\beta_1\)</span>, but the y-intercept differs:</p>
+<ul>
+<li class="fragment">For mechanical repairs: the y-intercept is <span class="math inline">\(\beta_0\)</span>.</li>
+<li class="fragment">For electrical repairs: the y-intercept is <span class="math inline">\(\beta_0 + \beta_2\)</span>.</li>
+</ul></li>
+<li class="fragment"><p>The coefficient <span class="math inline">\(\beta_2\)</span> indicates the difference between the mean repair time for electrical repairs and the mean repair time for mechanical repairs.</p></li>
+</ul>
+</section>
+<section id="interpretation-of-beta_2" class="slide level2 center">
+<h2>Interpretation of <span class="math inline">\(\beta_2\)</span></h2>
+<ul>
+<li class="fragment"><p><strong>If <span class="math inline">\(\beta_2\)</span> is positive</strong>: The mean repair time for an electrical repair is greater than for a mechanical repair.</p></li>
+<li class="fragment"><p><strong>If <span class="math inline">\(\beta_2\)</span> is negative</strong>: The mean repair time for an electrical repair is less than for a mechanical repair.</p></li>
+<li class="fragment"><p><strong>If <span class="math inline">\(\beta_2 = 0\)</span></strong>: There is no difference in the mean repair time between electrical and mechanical repairs, indicating that the type of repair is not related to repair time.</p></li>
+<li class="fragment"><p>In effect, the use of the dummy variable for type of repair provides two estimated regression equations that can be used to predict the repair time.</p></li>
+</ul>
+</section>
+<section id="categorical-independent-variables-10" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
+
+<img data-src="figs/multiple_reg_categorical_iv_plot.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
 </section>
 <section id="more-complex-categorical-variables" class="slide level2 center">
 <h2>More Complex Categorical Variables</h2>
-<p>If a categorical variable has <span class="math inline">\(k\)</span> levels, only <span class="math inline">\(k - 1\)</span> dummy variables are required, with each dummy variable being coded as 0 or 1.</p>
-<p><strong>Example</strong>: Quarterly sales (dependent variable) vs.&nbsp;Sales regions</p>
+<blockquote>
+<p>A categorical variable with <span class="math inline">\(k\)</span> levels must be modeled using <span class="math inline">\(k - 1\)</span> dummy variables. Care must be taken in defining and interpreting the dummy variables.</p>
+</blockquote>
+<ul>
+<li class="fragment"><p>In the Johnson Filtration example, a categorical variable (mechanical and electrical) with two levels was represented by a single dummy variable.</p></li>
+<li class="fragment"><p>When a categorical variable has more than two levels, <span class="math inline">\(k - 1\)</span> dummy variables are required, with each coded as 0 or 1.</p></li>
+</ul>
+</section>
+<section id="example-categorical-variable-with-three-levels" class="slide level2 center">
+<h2>Example: Categorical Variable with Three Levels</h2>
+<ul>
+<li class="fragment"><p>Suppose a manufacturer organizes the sales territories into three regions: A, B, and C.</p></li>
+<li class="fragment"><p>The number of copiers sold per week is the dependent variable.</p></li>
+<li class="fragment"><p>The sales region is a categorical variable with three levels: A, B, and C.</p></li>
+</ul>
+<div class="fragment">
+<p><strong>Dummy Variables for Sales Region:</strong> We need <span class="math inline">\(3 - 1 = 2\)</span> dummy variables.</p>
+<p><span class="math display">\[
+x_1 =
+\begin{cases}
+1 &amp; \text{if sales region B} \\
+0 &amp; \text{otherwise}
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[
+x_2 =
+\begin{cases}
+1 &amp; \text{if sales region C} \\
+0 &amp; \text{otherwise}
+\end{cases}
+\]</span></p>
+</div>
+</section>
+<section id="example-dummy-variable-coding" class="slide level2 center">
+<h2>Example: Dummy Variable Coding</h2>
+<ul>
+<li class="fragment">The following table shows the coding for the dummy variables <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> for each sales region.</li>
+</ul>
+<div class="fragment">
 <table class="caption-top">
 <thead>
 <tr class="header">
 <th>Region</th>
-<th>DA</th>
-<th>DB</th>
-<th>DC</th>
+<th><span class="math inline">\(x_1\)</span></th>
+<th><span class="math inline">\(x_2\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>A</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr class="even">
 <td>B</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 </tr>
 <tr class="odd">
 <td>C</td>
 <td>0</td>
-<td>0</td>
 <td>1</td>
 </tr>
 </tbody>
 </table>
-<p>Use only two (any two) dummy variables; i.e., two dummy variables are sufficient to differentiate the three regions.</p>
+</div>
+<ul>
+<li class="fragment">Observations corresponding to region A are coded <span class="math inline">\(x_1 = 0,  x_2 = 0\)</span>.</li>
+<li class="fragment">Observations corresponding to region B are coded <span class="math inline">\(x_1 = 1,  x_2 = 0\)</span>.</li>
+<li class="fragment">Observations corresponding to region C are coded <span class="math inline">\(x_1 = 0,  x_2 = 1\)</span>.</li>
+</ul>
+</section>
+<section id="example-regression-equation-with-dummy-variables" class="slide level2 center">
+<h2>Example: Regression Equation with Dummy Variables</h2>
+<div style="font-size: 80%;">
+<ul>
+<li class="fragment">The regression equation for the expected number of units sold is:</li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[
+E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
+\]</span></p>
+</div>
+<ul>
+<li class="fragment"><p>To interpret the parameters <span class="math inline">\(\beta_0,  \beta_1,  \beta_2\)</span>, consider the three variations of the regression equation:</p></li>
+<li class="fragment"><p><strong>Region A</strong>: <span class="math display">\[
+E(y | \text{region A}) = \beta_0 + \beta_1 (0) + + \beta_2 (0) = \beta_0
+\]</span></p></li>
+<li class="fragment"><p><strong>Region B</strong>: <span class="math display">\[
+E(y | \text{region B}) = \beta_0 + \beta_1 (1) + + \beta_2 (0) = \beta_0 + \beta_1
+\]</span></p></li>
+<li class="fragment"><p><strong>Region C</strong>: <span class="math display">\[
+E(y | \text{region C}) = \beta_0 + \beta_1 (0) + + \beta_2 (1) = \beta_0 + \beta_2
+\]</span></p></li>
+<li class="fragment"><p>Interpretation:</p>
+<ul>
+<li class="fragment"><span class="math inline">\(\beta_0\)</span>: Mean or expected value of sales for region A.</li>
+<li class="fragment"><span class="math inline">\(\beta_1\)</span>: Difference in mean sales between region B and region A.</li>
+<li class="fragment"><span class="math inline">\(\beta_2\)</span>: Difference in mean sales between region C and region A.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="example-important-points-on-dummy-variables" class="slide level2 center">
+<h2>Example: Important Points on Dummy Variables</h2>
+<ul>
+<li class="fragment"><p>Two dummy variables are used because the sales region has three levels.</p></li>
+<li class="fragment"><p>The assignment of <span class="math inline">\(x_1 = 0, x_2 = 0\)</span> for region A is arbitrary.</p></li>
+<li class="fragment"><p>Alternative coding choices are possible, which would change the interpretation of <span class="math inline">\(\beta_1\)</span> and <span class="math inline">\(\beta_2\)</span>.</p></li>
+<li class="fragment"><p><strong>Key Point</strong>: For a categorical variable with <span class="math inline">\(k\)</span> levels, <span class="math inline">\(k - 1\)</span> dummy variables are required.</p>
+<ul>
+<li class="fragment">For a fourth region <span class="math inline">\(D\)</span>, we would need three dummy variables.</li>
+</ul></li>
+</ul>
 </section></section>
 <section>
 <section id="model-assumptions" class="title-slide slide level1 center" data-background-color="#cfb991">
 <h1>Model Assumptions</h1>
 
 </section>
-<section id="assumptions-about-the-error-term-epsilon" class="slide level2 center">
-<h2>Assumptions About the Error Term <span class="math inline">\(\epsilon\)</span></h2>
+<section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model" class="slide level2 center">
+<h2>Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
+<div style="font-size: 80%;">
+<p>Consider the following two-independent-variable multiple regression equation:</p>
+<p><span class="math display">\[
+E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
+\]</span></p>
+</div>
+<p><br></p>
+
+<img data-src="figs/multiple_regression_plot.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div style="font-size: 80%;">
+<p>The graph of this equation is a plane in three-dimensional space. The value of <span class="math inline">\(\epsilon\)</span> shown is the difference between the actual <span class="math inline">\(y\)</span> value and the expected value of <span class="math inline">\(y\)</span>, <span class="math inline">\(E(y)\)</span>, when <span class="math inline">\(x_1 = x_1^*\)</span> and <span class="math inline">\(x_2 = x_2^*\)</span>.</p>
+</div>
+<p><br></p>
+</section>
+<section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1" class="slide level2 center">
+<h2>Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
+<p><span class="math display">\[
+y = \beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p + \epsilon
+\]</span></p>
 <ol type="1">
-<li class="fragment"><p>The error term <span class="math inline">\(\epsilon\)</span> is a random variable reflecting the deviation between the observed <span class="math inline">\(y\)</span> value and the expected value of <span class="math inline">\(y\)</span> given by <span class="math inline">\(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p\)</span>.</p></li>
-<li class="fragment"><p><span class="math inline">\(\epsilon\)</span> is a normally distributed random variable with <strong>mean of 0</strong>.</p></li>
-<li class="fragment"><p>The variance of <span class="math inline">\(\epsilon\)</span>, denoted by <span class="math inline">\(\sigma^2\)</span>, is the <strong>same</strong> for all values of the independent variables.</p></li>
-<li class="fragment"><p>The values of <span class="math inline">\(\epsilon\)</span> are <strong>independent</strong>.</p></li>
+<li class="fragment"><strong>The error term <span class="math inline">\(\epsilon\)</span> is a random variable with <span class="math inline">\(E(\epsilon) = 0\)</span>.</strong></li>
+</ol>
+<ul>
+<li class="fragment"><strong>Implication</strong>: For given values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>, the expected, or average, value of <span class="math inline">\(y\)</span> is given by:</li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[
+E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p
+\]</span></p>
+</div>
+<ul>
+<li class="fragment"><strong>Validation</strong>: Residuals vs.&nbsp;Predicted Values Plot or the Standardized Residuals vs.&nbsp;Predicted Values Plot</li>
+</ul>
+<ol start="2" type="1">
+<li class="fragment"><strong>The variance of <span class="math inline">\(\epsilon\)</span> is denoted by <span class="math inline">\(\sigma^2\)</span> and is the same for all values of the independent variables <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>.</strong></li>
+</ol>
+<ul>
+<li class="fragment"><p><strong>Implication</strong>: The variance of <span class="math inline">\(y\)</span> about the regression line equals <span class="math inline">\(\sigma^2\)</span> and is the same for all values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>.</p></li>
+<li class="fragment"><p><strong>Validation</strong>: Residuals vs.&nbsp;Predicted Values Plot or the Standardized Residuals vs.&nbsp;Predicted Values Plot</p></li>
+</ul>
+</section>
+<section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2" class="slide level2 center">
+<h2>Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
+<ol start="3" type="1">
+<li class="fragment"><p><strong>The values of <span class="math inline">\(\epsilon\)</span> are independent.</strong></p>
+<ul>
+<li class="fragment"><p><strong>Implication</strong>: The value of <span class="math inline">\(\epsilon\)</span> for a particular set of values for the independent variables is not related to the value of <span class="math inline">\(\epsilon\)</span> for any other set of values.</p></li>
+<li class="fragment"><p><strong>Validation</strong>: Standardized Residuals vs.&nbsp;Predicted Values Plot</p></li>
+</ul></li>
+<li class="fragment"><p><strong>The error term <span class="math inline">\(\epsilon\)</span> is a normally distributed random variable reflecting the deviation between the <span class="math inline">\(y\)</span> value and the expected value of <span class="math inline">\(y\)</span>.</strong></p>
+<ul>
+<li class="fragment"><p><strong>Implication</strong>: Because <span class="math inline">\(\beta_0, \beta_1, \ldots, \beta_p\)</span> are constants for the given values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>, the dependent variable <span class="math inline">\(y\)</span> is also a normally distributed random variable.</p></li>
+<li class="fragment"><p><strong>Validation</strong>: Normal Probability Plot or Q-Q Plot (Quantile-Quantile Plot) of Residuals.</p></li>
+</ul></li>
 </ol>
 </section></section>
 <section>
@@ -1487,367 +1706,232 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = \beta_0 + \beta_1 x_1 + \beta_2
 <p><br></p>
 
 <img data-src="figs/butler_company_residual_plot_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
-</section></section>
-<section>
-<section id="adding-or-removing-independent-variables" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Adding or Removing Independent Variables?</h1>
+<div style="font-size: 80%;">
+<ul>
+<li class="fragment">The standardized residual plot does not indicate any abnormalities, and no standard residual is less than -2 or greater than +2.</li>
+<li class="fragment">Note: the pattern of the standardized residual plot against <span class="math inline">\(\hat{y}\)</span> is the same as the pattern of the residual plot against <span class="math inline">\(\hat{y}\)</span>. But the standardized residual plot enables us to check for outliers and determine whether the assumption of normality for the regression model (Distribution of <span class="math inline">\(y\)</span>) is reasonable.</li>
+</ul>
+</div>
+<!---
 
-</section>
-<section id="adding-or-removing-independent-variables-1" class="slide level2 center">
-<h2>Adding or Removing Independent Variables?</h2>
-<ul>
-<li class="fragment"><p>If adding a predictor to a model can lower the estimated error variance <span class="math inline">\(S^2\)</span>, then adding it will increase Adjusted <span class="math inline">\(R^2\)</span>.</p></li>
-<li class="fragment"><p><strong>Definition</strong>: A predictor is said to be an <strong>ineffective predictor</strong> if its <span class="math inline">\(|T\text{-value}|\)</span></p>
-<ul>
-<li class="fragment"><span class="math inline">\(\frac{|b-0|}{se(b)} &lt; 1\)</span> (coefficient estimate <span class="math inline">\(b\)</span> is within one standard deviation from 0), or its two-sided p-value <span class="math inline">\(&gt; 0.32\)</span>.</li>
-<li class="fragment">Adding an ineffective predictor will decrease Adjusted <span class="math inline">\(R^2\)</span>.</li>
-<li class="fragment">Removing an ineffective predictor will increase Adjusted <span class="math inline">\(R^2\)</span>.</li>
-<li class="fragment">We will be penalized for including ineffective predictors.</li>
-</ul></li>
-</ul>
-</section></section>
-<section>
-<section id="application-of-dummy-variables" class="title-slide slide level1 center" data-background-color="#cfb991">
-<h1>Application of Dummy Variables</h1>
+# Adding or Removing Independent Variables? {background-color="#cfb991"}
 
-</section>
-<section id="chemitech-experiment" class="slide level2 center">
-<h2>Chemitech Experiment</h2>
-<p><strong>Chemitech</strong> developed a new filtration system for municipal water supplies.<br>
-There are different methods that can be used to assemble the system.</p>
-<p><strong>Chemitech</strong> has narrowed down to three methods: A, B, and C and wants to determine which assembly method can produce the greatest number of filtration systems per week.</p>
-</section>
-<section id="chemitech-experiment-contd" class="slide level2 center">
-<h2>Chemitech Experiment (cont’d)</h2>
-<p>For the purpose, it selected 15 workers and then randomly assigned each of the three treatments to 5 of the workers.</p>
-<div class="cell">
-<p>Response (Y): Number of units produced per week<br>
-Factor: Assembly method<br>
-Treatments: A, B, and C<br>
-Experimental units: Employees</p>
-</div>
-</section>
-<section id="chemitech-experiment-contd-1" class="slide level2 center">
-<h2>Chemitech Experiment (cont’d)</h2>
-<p>Hypotheses:</p>
-<p><span class="math inline">\(H_0: \mu_A = \mu_B = \mu_C\)</span><br>
-<span class="math inline">\(H_a:\)</span> Not all the means are equal</p>
-<p>where:</p>
-<p><span class="math inline">\(\mu_A = E(Y)\)</span> using method A</p>
-<p><span class="math inline">\(\mu_B = E(Y)\)</span> using method B</p>
-<p><span class="math inline">\(\mu_C = E(Y)\)</span> using method C</p>
-</section>
-<section id="chemitech-experiment-data-contd" class="slide level2 center">
-<h2>Chemitech Experiment: Data (cont’d)</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Observation</th>
-<th>A</th>
-<th>B</th>
-<th>C</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>58</td>
-<td>58</td>
-<td>48</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>64</td>
-<td>69</td>
-<td>57</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>55</td>
-<td>71</td>
-<td>59</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>66</td>
-<td>64</td>
-<td>47</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>67</td>
-<td>68</td>
-<td>49</td>
-</tr>
-<tr class="even">
-<td>Sample mean <span class="math inline">\(\bar{y}_j\)</span></td>
-<td>62</td>
-<td>66</td>
-<td>52</td>
-</tr>
-<tr class="odd">
-<td>Sample variance <span class="math inline">\(s_j^2\)</span></td>
-<td>27.5</td>
-<td>26.5</td>
-<td>31.0</td>
-</tr>
-</tbody>
-</table>
-<center>
-Grand sample mean <span class="math inline">\(\bar{y} = 60\)</span>
-</center>
-</section>
-<section id="chemitech-experiment-contd-2" class="slide level2 center">
-<h2>Chemitech Experiment (cont’d)</h2>
-<p><strong>One-way ANOVA by Regression with dummy variables:</strong></p>
-<ul>
-<li class="fragment"><p>Consider the Assembly Method (Factor) as the independent variable with three categorical values (A, B, C).</p></li>
-<li class="fragment"><p>Use dummy variables to represent or differentiate the three categorical values.</p></li>
-<li class="fragment"><p>Include only (any) two dummy variables for three categories.</p></li>
-<li class="fragment"><p>Use an <span class="math inline">\(F\)</span>-Test to test the overall significance of the dummy variables.</p></li>
-</ul>
-</section>
-<section id="define-dummy-variables" class="slide level2 center">
-<h2>Define Dummy Variables</h2>
-<div>
-<div style="font-size: 70%;">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Production</th>
-<th>Method</th>
-<th>DA</th>
-<th>DB</th>
-<th>DC</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>58</td>
-<td>A</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>64</td>
-<td>A</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td>55</td>
-<td>A</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>66</td>
-<td>A</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td>67</td>
-<td>A</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>58</td>
-<td>B</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td>69</td>
-<td>B</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>71</td>
-<td>B</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td>64</td>
-<td>B</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>68</td>
-<td>B</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td>48</td>
-<td>C</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>57</td>
-<td>C</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>59</td>
-<td>C</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>47</td>
-<td>C</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>49</td>
-<td>C</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>DA represents Method A<br>
-</li>
-<li>DB represents Method B<br>
-</li>
-<li>DC represents Method C</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="model-and-interpretation" class="slide level2 center">
-<h2>Model and Interpretation</h2>
-<p><strong>Regression Model (assume category C is the reference category):</strong></p>
-<p><span class="math display">\[
+## Adding or Removing Independent Variables?
+
+-   If adding a predictor to a model can lower the estimated error variance $S^2$, then adding it will increase Adjusted $R^2$.
+
+-   **Definition**: A predictor is said to be an **ineffective predictor** if its $|T\text{-value}|$
+
+    -   $\frac{|b-0|}{se(b)} < 1$ (coefficient estimate $b$ is within one standard deviation from 0), or its two-sided p-value $> 0.32$.
+    -   Adding an ineffective predictor will decrease Adjusted $R^2$.
+    -   Removing an ineffective predictor will increase Adjusted $R^2$.
+    -   We will be penalized for including ineffective predictors.
+
+# Application of Dummy Variables {background-color="#cfb991"}
+
+## Chemitech Experiment
+
+**Chemitech** developed a new filtration system for municipal water supplies.\
+There are different methods that can be used to assemble the system.
+
+**Chemitech** has narrowed down to three methods: A, B, and C and wants to determine which assembly method can produce the greatest number of filtration systems per week.
+
+## Chemitech Experiment (cont'd)
+
+For the purpose, it selected 15 workers and then randomly assigned each of the three treatments to 5 of the workers.
+
+::: cell
+Response (Y): Number of units produced per week\
+Factor: Assembly method\
+Treatments: A, B, and C\
+Experimental units: Employees
+:::
+
+## Chemitech Experiment (cont'd)
+
+Hypotheses:
+
+$H_0: \mu_A = \mu_B = \mu_C$\
+$H_a:$ Not all the means are equal
+
+where:
+
+$\mu_A = E(Y)$ using method A
+
+$\mu_B = E(Y)$ using method B
+
+$\mu_C = E(Y)$ using method C
+
+## Chemitech Experiment: Data (cont'd)
+
+| Observation             | A    | B    | C    |
+|-------------------------|------|------|------|
+| 1                       | 58   | 58   | 48   |
+| 2                       | 64   | 69   | 57   |
+| 3                       | 55   | 71   | 59   |
+| 4                       | 66   | 64   | 47   |
+| 5                       | 67   | 68   | 49   |
+| Sample mean $\bar{y}_j$ | 62   | 66   | 52   |
+| Sample variance $s_j^2$ | 27.5 | 26.5 | 31.0 |
+
+<center>Grand sample mean $\bar{y} = 60$</center>
+
+## Chemitech Experiment (cont'd)
+
+**One-way ANOVA by Regression with dummy variables:**
+
+-   Consider the Assembly Method (Factor) as the independent variable with three categorical values (A, B, C).
+
+-   Use dummy variables to represent or differentiate the three categorical values.
+
+-   Include only (any) two dummy variables for three categories.
+
+-   Use an $F$-Test to test the overall significance of the dummy variables.
+
+## Define Dummy Variables
+
+::: nonincremental
+::: {style="font-size: 70%;"}
+| Production | Method | DA  | DB  | DC  |
+|------------|--------|-----|-----|-----|
+| 58         | A      | 1   | 0   | 0   |
+| 64         | A      | 1   | 0   | 0   |
+| 55         | A      | 1   | 0   | 0   |
+| 66         | A      | 1   | 0   | 0   |
+| 67         | A      | 1   | 0   | 0   |
+| 58         | B      | 0   | 1   | 0   |
+| 69         | B      | 0   | 1   | 0   |
+| 71         | B      | 0   | 1   | 0   |
+| 64         | B      | 0   | 1   | 0   |
+| 68         | B      | 0   | 1   | 0   |
+| 48         | C      | 0   | 0   | 1   |
+| 57         | C      | 0   | 0   | 1   |
+| 59         | C      | 0   | 0   | 1   |
+| 47         | C      | 0   | 0   | 1   |
+| 49         | C      | 0   | 0   | 1   |
+
+-   DA represents Method A\
+-   DB represents Method B\
+-   DC represents Method C
+:::
+:::
+
+## Model and Interpretation
+
+**Regression Model (assume category C is the reference category):**
+
+$$
 Y = \beta_0 + \beta_1 \cdot (DA) + \beta_2 \cdot (DB) + 0 \cdot (DC) + \epsilon
-\]</span></p>
-<p>or</p>
-<p><span class="math display">\[
-E(Y) = \beta_0 + \beta_1 \cdot (DA) + \beta_2 \cdot (DB) + 0 \cdot (DC)
-\]</span></p>
-<p><span class="math inline">\(\beta_1\)</span>: slope of DA - the difference in <span class="math inline">\(E(Y)\)</span> between the category that DA represents and the reference category.</p>
-<p><span class="math inline">\(\beta_2\)</span>: slope of DB - the difference in <span class="math inline">\(E(Y)\)</span> between the category that DB represents and the reference category.</p>
-</section>
-<section id="model-and-interpretation-contd" class="slide level2 center">
-<h2>Model and Interpretation (cont’d)</h2>
-<p><strong>Regression Model (Use Method C as the reference method):</strong></p>
-<p><span class="math display">\[
-E(Y) = \beta_0 + \beta_1 \cdot (DA) + \beta_2 \cdot (DB) + 0 \cdot (DC)
-\]</span></p>
-<p><span class="math inline">\(\mu_C = \beta_0\)</span> for Method C<br>
-<span class="math inline">\(\mu_A = \beta_0 + \beta_1\)</span> for Method A<br>
-<span class="math inline">\(\mu_B = \beta_0 + \beta_2\)</span> for Method B</p>
-</section>
-<section id="hypotheses" class="slide level2 center">
-<h2>Hypotheses</h2>
-<p><strong>Test of Overall Significance (</strong><span class="math inline">\(F\)</span> test):</p>
-<p><span class="math inline">\(H_0: \beta_1 = \beta_2 = 0\)</span> (i.e., <span class="math inline">\(\mu_A = \mu_B = \mu_C\)</span>, and Method is insignificant)</p>
-<p><strong>Test of individual significance (</strong><span class="math inline">\(t\)</span> test):</p>
-<p><span class="math inline">\(H_0: \beta_1 = 0\)</span> (i.e., <span class="math inline">\(\mu_A - \mu_C = 0\)</span>)<br>
-<span class="math inline">\(H_0: \beta_2 = 0\)</span> (i.e., <span class="math inline">\(\mu_B - \mu_C = 0\)</span>)</p>
-</section>
-<section id="excel-output" class="slide level2 center">
-<h2>Excel Output</h2>
-<p><br></p>
+$$
 
-<img data-src="figs/chemitech_experiment_excel_output.png" class="quarto-figure quarto-figure-center r-stretch" style="width:95.0%"><p><br></p>
-<ul>
-<li class="fragment"><p>Reject <span class="math inline">\(H_0\)</span> at <span class="math inline">\(\alpha\)</span> = 5%.</p></li>
-<li class="fragment"><p>Overall, the assembly method is a significant factor.</p></li>
-</ul>
-</section>
-<section id="details-of-the-f-test" class="slide level2 center">
-<h2>Details of the <span class="math inline">\(F\)</span>-Test</h2>
-<p><br></p>
-<p><strong>Test Statistic:</strong></p>
-<p><span class="math inline">\(F = MSTR/MSE = 260/28.3333 = 9.1765\)</span></p>
-<p><br></p>
-<p><strong>Decision Rule: Critical-value approach</strong></p>
-<p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F \geq 3.8853\)</span></p>
-<p>where <span class="math inline">\(3.8853 = F_{0.05} = F.INV(0.95, 2, 12)\)</span> is the 5% upper critical value.</p>
-</section>
-<section id="p-value" class="slide level2 center">
-<h2><span class="math inline">\(p\)</span>-value</h2>
-<div style="font-size: 90%;">
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/chemitech_experiment_pvalue.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Where,</p>
-<p><span class="math inline">\(p\)</span>-value = 1 – <code>F.DIST(9.1765, 2, 12, TRUE)</code> <span class="math inline">\(\approx 0.0038\)</span></p>
-<ul>
-<li class="fragment">There is sufficient statistical evidence to conclude that at least two mean numbers of units produced are not equal and hence the Assembly Method is significant. The significance level is 5%.</li>
-</ul>
-</div>
-<p><br></p>
-</section>
-<section id="comparisons" class="slide level2 center">
-<h2>Comparisons</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th></th>
-<th>Coefficients</th>
-<th>SE</th>
-<th>t Stat</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Intercept</td>
-<td>52</td>
-<td>2.38048</td>
-<td>21.8444</td>
-</tr>
-<tr class="even">
-<td>DA</td>
-<td>10</td>
-<td>3.3665</td>
-<td>2.97044</td>
-</tr>
-<tr class="odd">
-<td>DB</td>
-<td>14</td>
-<td>3.3665</td>
-<td>4.15862</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li class="fragment"><p>Method A is predicted to have a higher expected production quantity than Method C (by 10 units), and it is significantly higher at <span class="math inline">\(\alpha = 5\%\)</span>.</p></li>
-<li class="fragment"><p>Method B is predicted to have a higher expected production quantity than Method C (by 14 units), and it is significantly higher at <span class="math inline">\(\alpha = 5\%\)</span>.</p></li>
-<li class="fragment"><p>Method A is predicted to have a lower expected production quantity than Method B (by 4 units), but the significance level cannot be determined directly based on this particular ANOVA output.</p></li>
-</ul>
+or
+
+$$
+E(Y) = \beta_0 + \beta_1 \cdot (DA) + \beta_2 \cdot (DB) + 0 \cdot (DC)
+$$
+
+$\beta_1$: slope of DA - the difference in $E(Y)$ between the category that DA represents and the reference category.
+
+$\beta_2$: slope of DB - the difference in $E(Y)$ between the category that DB represents and the reference category.
+
+## Model and Interpretation (cont'd)
+
+**Regression Model (Use Method C as the reference method):**
+
+$$
+E(Y) = \beta_0 + \beta_1 \cdot (DA) + \beta_2 \cdot (DB) + 0 \cdot (DC)
+$$
+
+$\mu_C = \beta_0$ for Method C\
+$\mu_A = \beta_0 + \beta_1$ for Method A\
+$\mu_B = \beta_0 + \beta_2$ for Method B
+
+## Hypotheses
+
+**Test of Overall Significance (**$F$ test):
+
+$H_0: \beta_1 = \beta_2 = 0$ (i.e., $\mu_A = \mu_B = \mu_C$, and Method is insignificant)
+
+**Test of individual significance (**$t$ test):
+
+$H_0: \beta_1 = 0$ (i.e., $\mu_A - \mu_C = 0$)\
+$H_0: \beta_2 = 0$ (i.e., $\mu_B - \mu_C = 0$)
+
+## Excel Output
+
+<br>
+
+
+
+::: {.cell layout-align="center"}
+::: {.cell-output-display}
+![](figs/chemitech_experiment_excel_output.png){fig-align='center' width=95%}
+:::
+:::
+
+
+
+<br>
+
+-   Reject $H_0$ at $\alpha$ = 5%.
+
+-   Overall, the assembly method is a significant factor.
+
+## Details of the $F$-Test
+
+<br>
+
+**Test Statistic:**
+
+$F = MSTR/MSE = 260/28.3333 = 9.1765$
+
+<br>
+
+**Decision Rule: Critical-value approach**
+
+Reject $H_0$ if $F \geq 3.8853$
+
+where $3.8853 = F_{0.05} = F.INV(0.95, 2, 12)$ is the 5% upper critical value.
+
+## $p$-value
+
+::: {style="font-size: 90%;"}
+<br>
+
+
+
+::: {.cell layout-align="center"}
+::: {.cell-output-display}
+![](figs/chemitech_experiment_pvalue.png){fig-align='center' width=60%}
+:::
+:::
+
+
+
+Where,
+
+$p$-value = 1 – `F.DIST(9.1765, 2, 12, TRUE)` $\approx 0.0038$
+
+-   There is sufficient statistical evidence to conclude that at least two mean numbers of units produced are not equal and hence the Assembly Method is significant. The significance level is 5%.
+:::
+
+<br>
+
+## Comparisons
+
+|           | Coefficients | SE      | t Stat  |
+|-----------|--------------|---------|---------|
+| Intercept | 52           | 2.38048 | 21.8444 |
+| DA        | 10           | 3.3665  | 2.97044 |
+| DB        | 14           | 3.3665  | 4.15862 |
+
+-   Method A is predicted to have a higher expected production quantity than Method C (by 10 units), and it is significantly higher at $\alpha = 5\%$.
+
+-   Method B is predicted to have a higher expected production quantity than Method C (by 14 units), and it is significantly higher at $\alpha = 5\%$.
+
+-   Method A is predicted to have a lower expected production quantity than Method B (by 4 units), but the significance level cannot be determined directly based on this particular ANOVA output.
+
+--->
 </section></section>
 <section>
 <section id="summary" class="title-slide slide level1 center" data-background-color="#cfb991">

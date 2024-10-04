@@ -4463,7 +4463,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Overall Significance: \\(F\\) Test",
-    "text": "Testing for Overall Significance: \\(F\\) Test\nHypotheses\n\\[\nH_0: \\beta_1 = \\beta_2 = \\dots = \\beta_p = 0 \\quad (\\text{No linear relationship})\n\\]\n\\[\nH_a: \\text{One or more of the slopes is not equal to zero}\n\\]\nTest Statistics\n\\[\nF = \\frac{MSR}{MSE}\n\\]\nRejection Rule\nReject \\(H_0\\) if \\(F \\geq F_\\alpha\\) or \\(p \\leq \\alpha\\).\nwhere \\(F_\\alpha\\) is based on an \\(F\\) distribution with \\(p\\) d.f. (numerator) and \\(n - p - 1\\) d.f. (denominator)."
+    "text": "Testing for Overall Significance: \\(F\\) Test\n\nHypotheses\n\\[\nH_0: \\beta_1 = \\beta_2 = \\dots = \\beta_p = 0 \\quad (\\text{No linear relationship})\n\\]\n\\[\nH_a: \\text{One or more of the slopes is not equal to zero}\n\\]\nTest Statistics\n\\[\nF = \\frac{MSR}{MSE}\n\\] where,\n\\[\nMSR = \\frac{SSR}{p} \\quad \\text{and} \\quad MSE = \\frac{SSE}{n-p-1}\n\\]\nRejection Rule\nReject \\(H_0\\) if \\(F \\geq F_\\alpha\\) or \\(p \\leq \\alpha\\).\nwhere \\(F_\\alpha\\) is based on an \\(F\\) distribution with \\(p\\) d.f. (numerator) and \\(n - p - 1\\) d.f. (denominator)."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-2",
@@ -4750,7 +4750,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#multicollinearity-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Multicollinearity",
-    "text": "Multicollinearity\n\nThe term multicollinearity refers to the correlation among the independent variables.\nIt is important to compute pairwise correlations in a multiple regression analysis.\nWhen independent variables are highly correlated (e.g., \\(|r| &gt; 0.7\\)), it is difficult to determine the separate/marginal effect of each independent variable on the dependent variable.\nEvery attempt should be made to avoid including independent variables that are highly correlated.\nIf the estimated regression equation is to be used only for predictive purposes, multicollinearity is usually not a serious problem"
+    "text": "Multicollinearity\n\nThe term multicollinearity refers to the correlation among the independent variables.\nIt is important to compute pairwise correlations in a multiple regression analysis.\nRule of Thumb: When independent variables are highly correlated (e.g., \\(|r| &gt; 0.7\\)), it is difficult to determine the separate/marginal effect of each independent variable on the dependent variable.\nEvery attempt should be made to avoid including independent variables that are highly correlated.\nIf the estimated regression equation is to be used only for predictive purposes, multicollinearity is usually not a serious problem"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#multicollinearity-2",
@@ -4785,42 +4785,42 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Categorical Independent Variables",
-    "text": "Categorical Independent Variables\nExample: Johnson Filtration, Inc\n\n\n\n\n\n\n\n\n\nService Call\nMonths since last service\nType of repair\nRepair time (hours)\n\n\n\n\n1\n2\n1\n2.9\n\n\n2\n6\n0\n3.0\n\n\n3\n8\n1\n4.8\n\n\n4\n3\n0\n1.8\n\n\n5\n2\n1\n2.9\n\n\n6\n7\n1\n4.9\n\n\n7\n9\n0\n4.2\n\n\n8\n8\n0\n4.8\n\n\n9\n4\n1\n4.4\n\n\n10\n6\n1\n4.5\n\n\n\n0 = Mechanical (reference)\n1 = Electrical"
+    "text": "Categorical Independent Variables\nExample: Johnson Filtration, Inc\n\n\n\n\n\n\n\n\n\nService Call\nMonths since last service\nType of repair\nRepair time (hours)\n\n\n\n\n1\n2\nElectrical\n2.9\n\n\n2\n6\nMechanical\n3.0\n\n\n3\n8\nElectrical\n4.8\n\n\n4\n3\nMechanical\n1.8\n\n\n5\n2\nElectrical\n2.9\n\n\n6\n7\nElectrical\n4.9\n\n\n7\n9\nMechanical\n4.2\n\n\n8\n8\nMechanical\n4.8\n\n\n9\n4\nElectrical\n4.4\n\n\n10\n6\nElectrical\n4.5"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-5",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-5",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Categorical Independent Variables",
-    "text": "Categorical Independent Variables\nExample: Johnson Filtration, Inc.\nRegression model:\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\epsilon\n\\]\nWhere:\n\\(y\\) = Repair time in hours\n\\(x_1\\) = Number of months since last maintenance service\n\\(x_2\\) = 0 if type of repair is mechanical, 1 if the type of repair is electrical ( \\(x_2\\) is a dummy variable)"
+    "text": "Categorical Independent Variables\nExample: Johnson Filtration, Inc: Now with a dummy or indicator variable.\n\n\n\n\n\n\n\n\n\nService Call\nMonths since last service\nType of repair\nRepair time (hours)\n\n\n\n\n1\n2\n1\n2.9\n\n\n2\n6\n0\n3.0\n\n\n3\n8\n1\n4.8\n\n\n4\n3\n0\n1.8\n\n\n5\n2\n1\n2.9\n\n\n6\n7\n1\n4.9\n\n\n7\n9\n0\n4.2\n\n\n8\n8\n0\n4.8\n\n\n9\n4\n1\n4.4\n\n\n10\n6\n1\n4.5\n\n\n\n0 = Mechanical (reference)\n1 = Electrical"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-6",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-6",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Categorical Independent Variables",
-    "text": "Categorical Independent Variables\nExample: Johnson Filtration, Inc.\nANOVA Output:\n\n\n\ndf\nSS\nMS\nF\nSignificance F\n\n\n\n\nRegression\n2\n9.0009\n4.5005\n21.357\n\n\nResidual\n7\n1.4751\n0.2107\n\n\n\nTotal\n9\n10.476\n\n\n\n\n\n\\[\nR^2 = \\frac{9.0009}{10.476} = 89.52\\%\n\\]\n\\[\nR_a^2 = 1 - (1 - 0.8952) \\cdot \\frac{10 - 1}{10 - 2 - 1} = 81.90\\%\n\\]\nThis indicates the estimated regression equation does a good job of explaining the variability in repair times."
+    "text": "Categorical Independent Variables\nExample: Johnson Filtration, Inc.\nRegression model:\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\epsilon\n\\]\nWhere:\n\\(y\\) = Repair time in hours\n\\(x_1\\) = Number of months since last maintenance service\n\\(x_2\\) = 0 if type of repair is mechanical, 1 if the type of repair is electrical ( \\(x_2\\) is a dummy variable)"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-7",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-7",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Categorical Independent Variables",
-    "text": "Categorical Independent Variables\nInterpretation of regression coefficient \\(\\beta_2\\) of dummy variable \\(x_2\\):\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2\n\\]\nFor mechanical (reference):\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 \\cdot 0 = \\beta_0 + \\beta_1 x_1\n\\]\nFor electrical:\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 \\cdot 1 = \\beta_0 + \\beta_1 x_1 + \\beta_2\n\\]\n\\(\\beta_2\\) is the difference in the expected repair time between two types of repair if the numbers of months since last maintenance service (\\(x_1\\)) are the same."
+    "text": "Categorical Independent Variables\nExample: Johnson Filtration, Inc."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-8",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-8",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Categorical Independent Variables",
-    "text": "Categorical Independent Variables\nExample: Johnson Filtration, Inc.\n\n\n\n\nCoefficients\nStandard Error\nt Stat\nP-value\n\n\n\n\nIntercept\n0.9305\n0.4670\n1.9926\n0.0866\n\n\nMonths\n0.3876\n0.0626\n6.1954\n0.0004\n\n\nType\n1.2627\n0.3141\n4.0197\n0.0051\n\n\n\nMonths since last service is significant at 1% significance level (in the presence of the second variable, or if we control for Type of problem).\nType of problem is also significant at 1% significance level if we control for the Months, and an electrical problem is predicted or estimated to take a longer time (by 1.1627) to repair than a mechanical one (the reference category)."
+    "text": "Categorical Independent Variables\nInterpretation of regression coefficient \\(\\beta_2\\) of dummy variable \\(x_2\\):\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2\n\\]\nFor mechanical (reference):\n\\[\nE(y|mechanical) = \\beta_0 + \\beta_1 x_1 + \\beta_2 \\cdot 0 = \\beta_0 + \\beta_1 x_1\n\\]\nFor electrical:\n\\[\nE(y|electrical) = \\beta_0 + \\beta_1 x_1 + \\beta_2 \\cdot 1 = (\\beta_0 + \\beta_2) + \\beta_1 x_1\n\\]"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#more-complex-categorical-variables",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#more-complex-categorical-variables",
     "title": " MGMT 30500: Business Statistics ",
     "section": "More Complex Categorical Variables",
-    "text": "More Complex Categorical Variables\nIf a categorical variable has \\(k\\) levels, only \\(k - 1\\) dummy variables are required, with each dummy variable being coded as 0 or 1.\nExample: Quarterly sales (dependent variable) vs. Sales regions\n\n\n\nRegion\nDA\nDB\nDC\n\n\n\n\nA\n1\n0\n0\n\n\nB\n0\n1\n0\n\n\nC\n0\n0\n1\n\n\n\nUse only two (any two) dummy variables; i.e., two dummy variables are sufficient to differentiate the three regions."
+    "text": "More Complex Categorical Variables\n\nA categorical variable with \\(k\\) levels must be modeled using \\(k - 1\\) dummy variables. Care must be taken in defining and interpreting the dummy variables.\n\n\nIn the Johnson Filtration example, a categorical variable (mechanical and electrical) with two levels was represented by a single dummy variable.\nWhen a categorical variable has more than two levels, \\(k - 1\\) dummy variables are required, with each coded as 0 or 1."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#standardized-residuals",
@@ -4841,7 +4841,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#standardized-residual-plot-against-haty",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Standardized Residual Plot Against \\(\\hat{y}\\)",
-    "text": "Standardized Residual Plot Against \\(\\hat{y}\\)\nExample: Butler Trucking Company"
+    "text": "Standardized Residual Plot Against \\(\\hat{y}\\)\nExample: Butler Trucking Company\n\n\n\n\n\nThe standardized residual plot does not indicate any abnormalities, and no standard residual is less than -2 or greater than +2.\nNote: the pattern of the standardized residual plot against \\(\\hat{y}\\) is the same as the pattern of the residual plot against \\(\\hat{y}\\). But the standardized residual plot enables us to check for outliers and determine whether the assumption of normality for the regression model (Distribution of \\(y\\)) is reasonable."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-3",
@@ -4855,14 +4855,14 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Overall Significance: \\(F\\) Test",
-    "text": "Testing for Overall Significance: \\(F\\) Test\nANOVA Output\n\n\n\nSource\ndf\nSS\nMS\nF\nSignificance F\n\n\n\n\nRegression\n2\n21.6006\n10.8003\n32.8784\n0.0003\n\n\nResidual\n7\n2.2994\n0.3285\n\n\n\n\nTotal\n9\n23.9\n\n\n\n\n\n\n\\[\np = 1 - F.DIST(32.8784, 2, 7, TRUE) \\approx 0.0003\n\\]"
+    "text": "Testing for Overall Significance: \\(F\\) Test\nANOVA Output\n\n\n\n\n\n\n\n\n\n\n\nSource\ndf\nSS\nMS\nF\nSignificance F\n\n\n\n\nRegression\n\\(p\\)\nSSR\n\\(MSR=\\frac{SSR}{p}\\)\n\\(F=\\frac{MSR}{MSE}\\)\n\\(p-value\\)\n\n\nResidual\n\\(n-p-1\\)\nSSE\n\\(MSE=\\frac{SSE}{p}\\)\n\n\n\n\nTotal\n\\(n-1\\)\nSST"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Individual Significance: \\(t\\) Test",
-    "text": "Testing for Individual Significance: \\(t\\) Test\n\nIf the \\(F\\) test shows an overall significance, a separate \\(t\\) test is conducted for each of the independent variables in the model.\nThe \\(t\\) test is used to determine whether each of the individual independent variables is significant in the presence of all other independent variables in the model.\n\nI\\(t\\) Tests the additional contribution in reducing the variation of the unexplained error (or in increasing the explained variation).\n\nWe refer to each of these \\(t\\) Tests as a test for individual significance."
+    "text": "Testing for Individual Significance: \\(t\\) Test\n\nIf the \\(F\\) test shows an overall significance, a separate \\(t\\) test is conducted for each of the independent variables in the model.\nThe \\(t\\) test is used to determine whether each of the individual independent variables is significant in the presence of all other independent variables in the model.\n\nIt tests the additional contribution in reducing the variation of the unexplained error (or in increasing the explained variation).\n\nWe refer to each of these \\(t\\) tests as a test for individual significance."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test-1",
@@ -4891,5 +4891,96 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Individual Significance: \\(t\\) Test",
     "text": "Testing for Individual Significance: \\(t\\) Test\nExample: Butler Trucking Company\nRegression Table"
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model",
+    "text": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model\n\nConsider the following two-independent-variable multiple regression equation:\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2\n\\]\n\n\n\n\nThe graph of this equation is a plane in three-dimensional space. The value of \\(\\epsilon\\) shown is the difference between the actual \\(y\\) value and the expected value of \\(y\\), \\(E(y)\\), when \\(x_1 = x_1^*\\) and \\(x_2 = x_2^*\\)."
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model",
+    "text": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\cdots + \\beta_p x_p + \\epsilon\n\\]\n\nThe error term \\(\\epsilon\\) is a random variable with \\(E(\\epsilon) = 0\\).\n\n\nImplication: For given values of \\(x_1, x_2, \\ldots, x_p\\), the expected, or average, value of \\(y\\) is given by:\n\n\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\cdots + \\beta_p x_p\n\\]\n\n\nValidation: Residuals vs. Predicted Values Plot or the Standardized Residuals vs. Predicted Values Plot\n\n\nThe variance of \\(\\epsilon\\) is denoted by \\(\\sigma^2\\) and is the same for all values of the independent variables \\(x_1, x_2, \\ldots, x_p\\).\n\n\nImplication: The variance of \\(y\\) about the regression line equals \\(\\sigma^2\\) and is the same for all values of \\(x_1, x_2, \\ldots, x_p\\).\nValidation: Residuals vs. Predicted Values Plot or the Standardized Residuals vs. Predicted Values Plot"
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model",
+    "text": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model\n\nThe values of \\(\\epsilon\\) are independent.\n\nImplication: The value of \\(\\epsilon\\) for a particular set of values for the independent variables is not related to the value of \\(\\epsilon\\) for any other set of values.\nValidation: Standardized Residuals vs. Predicted Values Plot\n\nThe error term \\(\\epsilon\\) is a normally distributed random variable reflecting the deviation between the \\(y\\) value and the expected value of \\(y\\).\n\nImplication: Because \\(\\beta_0, \\beta_1, \\ldots, \\beta_p\\) are constants for the given values of \\(x_1, x_2, \\ldots, x_p\\), the dependent variable \\(y\\) is also a normally distributed random variable.\nValidation: Normal Probability Plot or Q-Q Plot (Quantile-Quantile Plot) of Residuals."
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-5",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Testing for Overall Significance: \\(F\\) Test",
+    "text": "Testing for Overall Significance: \\(F\\) Test\nANOVA Output\n\n\n\nSource\ndf\nSS\nMS\nF\nSignificance F\n\n\n\n\nRegression\n2\n21.6006\n10.8003\n32.8784\n0.0003\n\n\nResidual\n7\n2.2994\n0.3285\n\n\n\n\nTotal\n9\n23.9\n\n\n\n\n\n\n\\[\np-value = 1 - F.DIST(32.8784, 2, 7, TRUE) \\approx 0.0003\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#estimation-and-prediction-1",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#estimation-and-prediction-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Estimation and Prediction",
+    "text": "Estimation and Prediction\n\nThe procedures for estimating the mean value of \\(y\\) and predicting an individual value of \\(y\\) in multiple regression are similar to those in simple regression.\nWe substitute the given values of \\(x_1, x_2, ..., x_p\\) into the estimated regression equation and use the corresponding value of \\(\\hat{y}\\) as the point estimate.\nThe interpretations of the Confidence Interval (CI) and Prediction Interval (PI) in multiple regression are similar to those in simple regression:\n\nThe Confidence Interval (CI) estimates the range within which the mean value of the dependent variable is expected to lie, given specific values of the independent variables.\nThe Prediction Interval (PI) estimates the range within which an individual observation of the dependent variable is expected to lie, given specific values of the independent variables.\n\n\n\n\nThe formulas required to develop interval estimates, CI and PI, are beyond the scope of the course and our textbook. Software packages for multiple regression will often provide these interval estimates."
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-9",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-9",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Categorical Independent Variables",
+    "text": "Categorical Independent Variables\n\nThe mean repair time is a linear function of \\(x_1\\) for both mechanical and electrical repairs.\nThe slope of both equations is \\(\\beta_1\\), but the y-intercept differs:\n\nFor mechanical repairs: the y-intercept is \\(\\beta_0\\).\nFor electrical repairs: the y-intercept is \\(\\beta_0 + \\beta_2\\).\n\nThe coefficient \\(\\beta_2\\) indicates the difference between the mean repair time for electrical repairs and the mean repair time for mechanical repairs."
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-10",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-10",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Categorical Independent Variables",
+    "text": "Categorical Independent Variables"
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#interpretation-of-beta_2",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#interpretation-of-beta_2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of \\(\\beta_2\\)",
+    "text": "Interpretation of \\(\\beta_2\\)\n\nIf \\(\\beta_2\\) is positive: The mean repair time for an electrical repair is greater than for a mechanical repair.\nIf \\(\\beta_2\\) is negative: The mean repair time for an electrical repair is less than for a mechanical repair.\nIf \\(\\beta_2 = 0\\): There is no difference in the mean repair time between electrical and mechanical repairs, indicating that the type of repair is not related to repair time.\nIn effect, the use of the dummy variable for type of repair provides two estimated regression equations that can be used to predict the repair time."
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-categorical-variable-with-three-levels",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-categorical-variable-with-three-levels",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Categorical Variable with Three Levels",
+    "text": "Example: Categorical Variable with Three Levels\n\nSuppose a manufacturer organizes the sales territories into three regions: A, B, and C.\nThe number of copiers sold per week is the dependent variable.\nThe sales region is a categorical variable with three levels: A, B, and C.\n\n\nDummy Variables for Sales Region: We need \\(3 - 1 = 2\\) dummy variables.\n\\[\nx_1 =\n\\begin{cases}\n1 & \\text{if sales region B} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]\n\\[\nx_2 =\n\\begin{cases}\n1 & \\text{if sales region C} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-dummy-variable-coding",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-dummy-variable-coding",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Dummy Variable Coding",
+    "text": "Example: Dummy Variable Coding\n\nThe following table shows the coding for the dummy variables \\(x_1\\) and \\(x_2\\) for each sales region.\n\n\n\n\n\nRegion\n\\(x_1\\)\n\\(x_2\\)\n\n\n\n\nA\n0\n0\n\n\nB\n1\n0\n\n\nC\n0\n1\n\n\n\n\n\nObservations corresponding to region A are coded \\(x_1 = 0,  x_2 = 0\\).\nObservations corresponding to region B are coded \\(x_1 = 1,  x_2 = 0\\).\nObservations corresponding to region C are coded \\(x_1 = 0,  x_2 = 1\\)."
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-regression-equation-with-dummy-variables",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-regression-equation-with-dummy-variables",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Regression Equation with Dummy Variables",
+    "text": "Example: Regression Equation with Dummy Variables\n\n\nThe regression equation for the expected number of units sold is:\n\n\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2\n\\]\n\n\nTo interpret the parameters \\(\\beta_0,  \\beta_1,  \\beta_2\\), consider the three variations of the regression equation:\nRegion A: \\[\nE(y | \\text{region A}) = \\beta_0 + \\beta_1 (0) + + \\beta_2 (0) = \\beta_0\n\\]\nRegion B: \\[\nE(y | \\text{region B}) = \\beta_0 + \\beta_1 (1) + + \\beta_2 (0) = \\beta_0 + \\beta_1\n\\]\nRegion C: \\[\nE(y | \\text{region C}) = \\beta_0 + \\beta_1 (0) + + \\beta_2 (1) = \\beta_0 + \\beta_2\n\\]\nInterpretation:\n\n\\(\\beta_0\\): Mean or expected value of sales for region A.\n\\(\\beta_1\\): Difference in mean sales between region B and region A.\n\\(\\beta_2\\): Difference in mean sales between region C and region A."
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-important-points-on-dummy-variables",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-important-points-on-dummy-variables",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Important Points on Dummy Variables",
+    "text": "Example: Important Points on Dummy Variables\n\nTwo dummy variables are used because the sales region has three levels.\nThe assignment of \\(x_1 = 0, x_2 = 0\\) for region A is arbitrary.\nAlternative coding choices are possible, which would change the interpretation of \\(\\beta_1\\) and \\(\\beta_2\\).\nKey Point: For a categorical variable with \\(k\\) levels, \\(k - 1\\) dummy variables are required.\n\nFor a fourth region \\(D\\), we would need three dummy variables."
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-for-four-regions",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-for-four-regions",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example for Four Regions:",
+    "text": "Example for Four Regions:\n\\[\nx_1 =\n\\begin{cases}\n1 & \\text{if sales region B} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]\n\\[\nx_2 =\n\\begin{cases}\n1 & \\text{if sales region C} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]\n\\[\nx_3 =\n\\begin{cases}\n1 & \\text{if sales region D} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]\nXXXXX ## More Complex Categorical Variables\nIf a categorical variable has \\(k\\) levels, only \\(k - 1\\) dummy variables are required, with each dummy variable being coded as 0 or 1.\nExample: Quarterly sales (dependent variable) vs. Sales regions\n\n\n\nRegion\nDA\nDB\nDC\n\n\n\n\nA\n1\n0\n0\n\n\nB\n0\n1\n0\n\n\nC\n0\n0\n1\n\n\n\nUse only two (any two) dummy variables; i.e., two dummy variables are sufficient to differentiate the three regions."
   }
 ]
