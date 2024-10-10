@@ -923,6 +923,47 @@ $$
 
 # Model Assumptions {background-color="#cfb991"}
 
+## Precision and Accuracy
+
+::: columns
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/precision_accuracy.png")
+```
+
+:::
+
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+::: {style="font-size: 70%;"}
+
+- **Precision**: Refers to the consistency or reliability of the model's predictions.
+
+- **Accuracy**: Refers to how close the model's predictions are to the true values.
+
+::: {.fragment}
+
+In the context of regression:
+
+- **High Precision, Low Accuracy**: Predictions are consistent but biased.
+- **High Precision, High Accuracy**: Predictions are both consistent and valid.
+- **Low Precision, Low Accuracy**: Predictions are neither consistent nor valid.
+- **Low Precision, High Accuracy**: Predictions are valid on average but have high variability.
+
+::: {.fragment}
+**To achieve high precision and high accuracy, we need to meet the model assumptions.**
+
+:::
+
+:::
+:::
+:::
+:::
+
+
+
+
+
 ## Assumptions about the Error Term $\epsilon$ in the Multiple Regression Model
 
 ::: {style="font-size: 80%;"}

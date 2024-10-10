@@ -50,7 +50,7 @@ html-math-method:
 
 # General Linear Model  {background-color="#cfb991"}
 
-## General Linear Model (1 of 2)
+## General Linear Model 
 
 - Models in which the parameters $(\beta_0, \beta_1, \ldots, \beta_p)$ all have exponents of one are called **linear models**.
 - A **general linear model** involving $p$ independent variables ($z_i$’s) is:
@@ -130,46 +130,46 @@ $$
 
 Add or use $\sqrt{x}$ term. $(x^{0.5})$
 
-\[
+$$
 \begin{array}{c}
 \text{Residuals} \\
 Y \text{ or Residuals}
 \end{array}
-\]
+$$
 
-\[
+$$
 \text{Predictor } (x) \text{ or Fitted } (\hat{y})
-\]
+$$
 
 ## Logarithmic Transformation
 
 Add or use $\ln(x)$ term. $(\ln(x) \text{ or } \log(x))$
 
-\[
+$$
 \begin{array}{c}
 \text{Residuals} \\
 Y \text{ or Residuals}
 \end{array}
-\]
+$$
 
-\[
+$$
 \text{Predictor } (x) \text{ or Fitted } (\hat{y})
-\]
+$$
 
 ## Reciprocal Transformation
 
 Add or use $1/x$ term. $(1/x)$
 
-\[
+$$
 \begin{array}{c}
 \text{Residuals} \\
 Y \text{ or Residuals}
 \end{array}
-\]
+$$
 
-\[
+$$
 \text{Predictor } (x) \text{ or Fitted } (\hat{y})
-\]
+$$
 
 
 
@@ -177,16 +177,16 @@ Y \text{ or Residuals}
 
 Change $y$ to $\ln(y)$ as the new response variable. $(\ln(y))$
 
-\[
+$$
 \begin{array}{c}
 \text{Residuals} \\
 Y \text{ or Residuals}
 \end{array}
-\]
+$$
 
-\[
+$$
 \text{Predictor } (x) \text{ or Fitted } (\hat{y})
-\]
+$$
 
 $$\beta_1 > 0$$ (Pink Curve)  
 $$\beta_1 < 0$$ (Blue Curve)
@@ -195,16 +195,16 @@ $$\beta_1 < 0$$ (Blue Curve)
 
 Add $x^2$ or $x^k$ term. $(= x^2 \text{ or } x^k)$
 
-\[
+$$
 \begin{array}{c}
 \text{Residuals} \\
 Y \text{ or Residuals}
 \end{array}
-\]
+$$
 
-\[
+$$
 \text{Predictor } (x) \text{ or Fitted } (\hat{y})
-\]
+$$
 
 $$\beta_1 > 0$$ (Pink Curve)  
 $$\beta_1 < 0$$ (Blue Curve)
@@ -310,35 +310,23 @@ $$\ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \t
 
 ## Residuals vs Fitted Values
 
-```{r}
-plot(logAmountSpent ~ fittedValues, 
-     main = "Residuals Versus the Fitted Values (response is log(AmountSpent))",
-     xlab = "Fitted Value",
-     ylab = "Residual",
-     col = "red",
-     pch = 19)
-abline(h = 0, col = "green", lwd = 2)
-```
-
+XXX include image XXXX
 
 **Formula:** 
 
-\[
+$$
 \ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \text{Children} + \alpha_3 \text{Catalogs} + \epsilon'
-\]
+$$
 
 ## Normal Probability Plot of Residuals 
 
-```{r}
-qqnorm(residuals, main = "Normal Probability Plot of the Residuals (response is log(AmountSpent))")
-qqline(residuals, col = "blue", lwd = 2)
-```
+XXX include image XXXX
 
 **Formula:**
 
-\[
+$$
 \ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \text{Children} + \alpha_3 \text{Catalogs} + \epsilon'
-\]
+$$
 
 ## Multicollinearity Issue
 
@@ -371,10 +359,7 @@ The objective is to study which predictor variable(s) will significantly determi
 
 ## Data (Beef Consumption.MPJ)
 
-```{r}
-data <- read.table("beef_consumption.txt", header = TRUE, sep = "\t")
-print(head(data))
-```
+XXX include image XXXX
 
 ## Correlations
 
@@ -404,9 +389,9 @@ Data -> Data Analysis -> Correlation ->
 | Total     | 22 | 529.271 |         |         |         |
 
 - **Model Summary**
-\[
+$$
 R^2 = 92.34\% \quad R^2_{\text{adj}} = 90.64\% \quad R^2_{\text{pred}} = 88.77\%
-\]
+$$
 
 ## Variable Selection
 
@@ -425,18 +410,18 @@ Different subsets of the independent variables are evaluated.
 
 ## Adding or Removing Predictors?
 
-- Adding (removing) any predictor will always increase (decrease) \(R^2\).
+- Adding (removing) any predictor will always increase (decrease) $R^2$.
 
-- **Definition**: A predictor is an ineffective predictor if its \(|T-Value| = \frac{|b - 0|}{se(b)} < 1\) (coefficient estimate \(b\) is within one standard deviation from 0, i.e., too close to 0), or its two-sided p-value > 0.32 (Empirical rule).
-    - **Adding** an effective predictor will decrease the estimated error variance \(S^2\) and hence increase Adj \(R^2\). The opposite is true when adding an ineffective predictor.
-    - **Removing** an effective predictor will increase the estimated error variance \(S^2\) and hence decrease Adj \(R^2\). The opposite is true when removing an ineffective predictor.
+- **Definition**: A predictor is an ineffective predictor if its $|T-Value| = \frac{|b - 0|}{se(b)} < 1$ (coefficient estimate $b$ is within one standard deviation from 0, i.e., too close to 0), or its two-sided p-value > 0.32 (Empirical rule).
+    - **Adding** an effective predictor will decrease the estimated error variance $S^2$ and hence increase Adj $R^2$. The opposite is true when adding an ineffective predictor.
+    - **Removing** an effective predictor will increase the estimated error variance $S^2$ and hence decrease Adj $R^2$. The opposite is true when removing an ineffective predictor.
 
 ## Variable Selection: Backward Elimination
 
 - **All stepwise variable selection methods**: Measure additional variation explained to determine whether to select or eliminate a predictor variable (by a t-test) or a group of predictor variables (by a partial F-test).
 
 - The **Backward Elimination** procedure begins with a model that includes all the independent variables the modeler wants considered (Full Model).
-    - It then attempts to remove one variable at a time by determining whether the least significant variable (one with the smallest absolute T-value or the largest p-value) currently in the model can indeed be removed because its p-value is larger than the user-specified \(\alpha\)-to-remove value (i.e., insignificant).
+    - It then attempts to remove one variable at a time by determining whether the least significant variable (one with the smallest absolute T-value or the largest p-value) currently in the model can indeed be removed because its p-value is larger than the user-specified $\alpha$-to-remove value (i.e., insignificant).
     - Once a variable has been removed from the model it cannot reenter at a subsequent step.
 
 ## Step 1: Full Model
@@ -445,9 +430,9 @@ Different subsets of the independent variables are evaluated.
 Regression Analysis: Consumption versus Price, Income, Pop, GNP  
 Model Summary  
 - S: 1.50040  
-- \( R^2 \): 92.34%  
-- \( R^2(adj) \): 90.64%  
-- \( R^2(pred) \): 88.77%
+- $R^2$: 92.34%  
+- $R^2(adj)$: 90.64%  
+- $R^2(pred)$: 88.77%
 
 **Coefficients**
 | Term     | Coef   | SE Coef | T-Value | P-Value | VIF     |
@@ -465,9 +450,9 @@ Model Summary
 Regression Analysis: Consumption versus Price, Income, GNP  
 Model Summary  
 - S: 1.48805  
-- \( R^2 \): 92.05%  
-- \( R^2(adj) \): 90.80%  
-- \( R^2(pred) \): 89.34%
+- $R^2$: 92.05%  
+- $R^2(adj)$: 90.80%  
+- $R^2(pred)$: 89.34%
 
 **Coefficients**
 | Term     | Coef   | SE Coef | T-Value | P-Value | VIF     |
@@ -484,9 +469,9 @@ Model Summary
 Regression Analysis: Consumption versus Price, GNP  
 Model Summary  
 - S: 1.46166  
-- \( R^2 \): 91.93%  
-- \( R^2(adj) \): 91.12%  
-- \( R^2(pred) \): 89.69%
+- $R^2$: 91.93%  
+- $R^2(adj)$: 91.12%  
+- $R^2(pred)$: 89.69%
 
 **Coefficients**
 | Term     | Coef    | SE Coef | T-Value | P-Value | VIF     |
@@ -504,7 +489,7 @@ XXXX include slide XXXX
 ## Variable Selection: Forward Selection
 
 - The forward-selection procedure starts with no independent variables.
-- At each step, the predictor (currently not in the model), **if included**, can achieve the largest **reduction** in the estimated error variance (\(S^2\) or MSE) or the greatest **improvement** in the Adjusted \( R^2 \), is the candidate to enter.
+- At each step, the predictor (currently not in the model), **if included**, can achieve the largest **reduction** in the estimated error variance ($S^2$ or MSE) or the greatest **improvement** in the Adjusted $R^2$, is the candidate to enter.
     - If it is significant (p-value < alpha-to-enter), then this predictor enters.
 - Once a predictor has been added, it will stay.
 
@@ -512,8 +497,8 @@ XXXX include slide XXXX
 
 ## Variable Selection: Stepwise Regression
 
-- At each iteration, the first consideration is to see whether the least significant variable currently in the model can be removed because its partial \( F \) value is less than the user-specified or default \( p \) Value to Leave.
-- If no variable can be removed, the procedure checks to see whether the most significant variable not in the model can be added because its partial \( F \) value is greater than the user-specified or default \( p \) Value to Enter.
+- At each iteration, the first consideration is to see whether the least significant variable currently in the model can be removed because its partial $F$ value is less than the user-specified or default $p$ Value to Leave.
+- If no variable can be removed, the procedure checks to see whether the most significant variable not in the model can be added because its partial $F$ value is greater than the user-specified or default $p$ Value to Enter.
 - If no variable can be removed and no variable can be added, the procedure stops.
 
 ## Variable Selection: Best-Subsets Regression
@@ -524,23 +509,23 @@ XXXX include slide XXXX
 
 ## Best Subsets Regression
 
-- Select a model that has the highest **adjusted \( R \)-squared** value.
-    - Recall that Adjusted \( R \)-squared considers the model complexity (i.e., the number of predictors, \( p \)), model adequacy (i.e., the \( R \)-squared value), and sample size (\( n \)).
-- Can pre-fix the number of predictors (**our discretion**) and then select the best subset model with the highest Adjusted \( R \)-squared value.
+- Select a model that has the highest **adjusted $R$-squared** value.
+    - Recall that Adjusted $R$-squared considers the model complexity (i.e., the number of predictors, $p$), model adequacy (i.e., the $R$-squared value), and sample size ($n$).
+- Can pre-fix the number of predictors (**our discretion**) and then select the best subset model with the highest Adjusted $R$-squared value.
 
 ## Remarks
 
 - In the same problem (fix n), among the models with the same number of predictors (fix p), a model with a larger $R^2$ will have a larger $Adj R^2$, and vice versa.
 
-\[
+$$
 Adj R^2 = 1 - (1 - R^2)\frac{n - 1}{n - p - 1}
-\]
+$$
 
 - Recall: The model with a smaller estimated error variance, $S^2$ or MSE, has a larger $Adj R^2$:
 
-\[
+$$
 Adj R^2 = 1 - \frac{S^2}{\frac{SST}{(n-1)}}
-\]
+$$
 
 ## Best Subsets Regression
 
@@ -647,17 +632,17 @@ The company wants to increase the current advertising expenditure by $50,000, wh
 
 ## The Linear Regression Model
 
-\[
+$$
 Exposure = \beta_0 + \beta_1 \text{Expenditure} + \beta_2 (\text{Magazine}) + 0 (\text{Newspaper}) + \beta_3 (\text{Expenditure} * \text{Magazine}) + \epsilon
-\]
+$$
 
-\[
+$$
 E(\text{Exposure}) = 
 \begin{cases} 
 (\beta_0 + \beta_2) + (\beta_1 + \beta_3)\text{Expenditure} & \text{If Magazine} \\
 \beta_0 + (\beta_1)\text{Expenditure} & \text{If Newspaper}
 \end{cases}
-\]
+$$
 
 - The coefficient of the interaction $(\beta_3)$ is the difference in the slopes.
 - If $\beta_3 > 0$, Magazine has a larger slope and hence, a better return.
@@ -697,27 +682,27 @@ E(\text{Exposure}) =
 | Magazine                   | -193.051           | 37.252    | -5.182     |
 | Expenditure * Magazine     | 0.719              | 0.107     | 6.731      |
 
-\[
+$$
 \text{Predicted Exposure} = 56.295 + 1.118 \times \text{Expenditure} - 193.051 \times \text{Magazine} + 0.719 \times \text{Expenditure} \times \text{Magazine}
-\]
+$$
 
 ## Predicted Exposure
 
-\[
+$$
 \text{Predicted Exposure} = 56.295 + 1.118 \times \text{Expenditure} - 193.051 \times \text{Magazine} + 0.719 \times \text{Expenditure} \times \text{Magazine}
-\]
+$$
 
 - **Newspaper** (Magazine = 0)
 
-\[
+$$
 \text{Predicted Exposure} = 56.295 + 1.1178 \times \text{Expenditure}
-\]
+$$
 
 - **Magazine** (Magazine = 1)
 
-\[
+$$
 \text{Predicted Exposure} = (56.295 - 193.051) + (1.1178 + 0.719) \times \text{Expenditure}
-\]
+$$
 
 ## Conclusions
 
@@ -726,8 +711,8 @@ E(\text{Exposure}) =
 
 ## Determining When to Add or Delete Variables
 
-- To determine if we should add \( x_2 \) to a model involving \( x_1 \) (or delete \( x_2 \) in a model involving both \( x_1 \) and \( x_2 \)), we perform a partial \( F \)-test to test the significance of this candidate variable \( x_2 \).
-  - When there is only one candidate variable, the partial \( F \)-test is equivalent to a \( t \)-test.
+- To determine if we should add $x_2$ to a model involving $x_1$ (or delete $x_2$ in a model involving both $x_1$ and $x_2$), we perform a partial $F$-test to test the significance of this candidate variable $x_2$.
+  - When there is only one candidate variable, the partial $F$-test is equivalent to a $t$-test.
   
 - One can consider adding or deleting several independent variables as a group or a subset.
 
@@ -748,59 +733,59 @@ E(\text{Exposure}) =
 
 ## Partial F-test: Significance of a Subset of Independent Variables (2 of 3)
 
-\[
+$$
 \text{Partial } F = \frac{\text{SSE(reduced) - SSE(full)}}{\text{number of variable(s) in the subset}} \times \frac{1}{\text{MSE(full)}}
-\]
+$$
 
-\[
+$$
 \text{Partial } F = \frac{\text{SSE}(x_1) - \text{SSE}(x_1, x_2)}{\text{SSE}(x_1, x_2)/(n-p-1)} \text{ for } x_2 \text{ in our example.}
-\]
+$$
 
 ## Partial F-test: Significance of a Subset of Independent Variables (3 of 3)
 
-- The partial \( F \)-statistic follows an \( F \)-distribution with degrees of freedom (# of variable(s) in the subset) and \( d.f. \) of MSE, if \( H_0 \) is true.
+- The partial $F$-statistic follows an $F$-distribution with degrees of freedom (# of variable(s) in the subset) and $d.f.$ of MSE, if $H_0$ is true.
 
-- The \( p \)-value criterion can also be used to determine whether it is advantageous to add one or more dependent variables to a multiple regression model.
+- The $p$-value criterion can also be used to determine whether it is advantageous to add one or more dependent variables to a multiple regression model.
 
-- The \( p \)-value associated with the computed \( F \) statistic can be compared to the level of significance \( \alpha \).
+- The $p$-value associated with the computed $F$ statistic can be compared to the level of significance $\alpha$.
 
-- To determine the \( p \)-value:
+- To determine the $p$-value:
 
-\[
+$$
 = 1 - \text{F.DIST}(\text{partial } F\text{-value, numerator df, denominator df, TRUE})
-\]
+$$
 
-## Illustrative Example: Testing \( x_2 \) and \( x_3 \) in the Presence of \( x_1 \)
+## Illustrative Example: Testing $x_2$ and $x_3$ in the Presence of $x_1$
 
 - **Null Hypothesis**
 
-\[
+$$
 H_0: \beta_2 = \beta_3 = 0
-\]
+$$
 
-\[
+$$
 H_a: \text{ at least one of } \beta_2 \text{ and } \beta_3 \text{ is not 0.}
-\]
+$$
 
 - **Full model**
 
-\[
+$$
 Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 + \epsilon
-\]
+$$
 
-- **Reduced model (assume \( H_0 \) is true)**
+- **Reduced model (assume $H_0$ is true)**
 
-\[
+$$
 Y = \beta_0 + \beta_1 x_1 + \cancel{\beta_2 x_2} + \cancel{\beta_3 x_3} + \epsilon
-\]
+$$
 
 ## SSR for Full and Reduced Models
 
 - **Full model**: 
 
-\[
+$$
 \hat{Y} = 210.02 + 18.08 x_1 + 9.46 x_2 + 9.03 x_3
-\]
+$$
 
 **Full Model SSR Table**
 

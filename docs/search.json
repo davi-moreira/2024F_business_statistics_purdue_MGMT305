@@ -4982,5 +4982,12 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example for Four Regions:",
     "text": "Example for Four Regions:\n\\[\nx_1 =\n\\begin{cases}\n1 & \\text{if sales region B} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]\n\\[\nx_2 =\n\\begin{cases}\n1 & \\text{if sales region C} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]\n\\[\nx_3 =\n\\begin{cases}\n1 & \\text{if sales region D} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]\nXXXXX ## More Complex Categorical Variables\nIf a categorical variable has \\(k\\) levels, only \\(k - 1\\) dummy variables are required, with each dummy variable being coded as 0 or 1.\nExample: Quarterly sales (dependent variable) vs. Sales regions\n\n\n\nRegion\nDA\nDB\nDC\n\n\n\n\nA\n1\n0\n0\n\n\nB\n0\n1\n0\n\n\nC\n0\n0\n1\n\n\n\nUse only two (any two) dummy variables; i.e., two dummy variables are sufficient to differentiate the three regions."
+  },
+  {
+    "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#precision-and-accuracy",
+    "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#precision-and-accuracy",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Precision and Accuracy",
+    "text": "Precision and Accuracy\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrecision: Refers to the consistency or reliability of the model’s predictions.\nAccuracy: Refers to how close the model’s predictions are to the true values.\n\n\nIn the context of regression:\n\nHigh Precision, Low Accuracy: Predictions are consistent but biased.\nHigh Precision, High Accuracy: Predictions are both consistent and valid.\nLow Precision, Low Accuracy: Predictions are neither consistent nor valid.\nLow Precision, High Accuracy: Predictions are valid on average but have high variability.\n\n\nTo achieve high precision and high accuracy, we need to meet the model assumptions."
   }
 ]
