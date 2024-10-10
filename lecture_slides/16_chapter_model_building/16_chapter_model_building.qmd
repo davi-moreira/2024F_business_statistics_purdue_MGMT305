@@ -1,0 +1,872 @@
+---
+title: "<span style = 'font-size: 100%;'> MGMT 30500: Business Statistics </span>"
+subtitle: "<span style = 'font-size: 150%;'> Regression Analysis: Model Building</span>"
+author: "Professor<br>Davi Moreira<br>"
+date: "2024-08-01"
+date-format: "MMMM DD, YYYY"
+format:
+  revealjs: 
+    transition: slide
+    background-transition: fade
+    width: 1600
+    height: 900
+    center: true
+    slide-number: true
+    incremental: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    #logo: images/quarto.png
+    footer: "Business Statistics"
+    theme: [simple,custom.scss]
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+## Overview
+
+:::::: nonincremental
+::::: columns
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+- General Linear Model 
+- Modeling Curvilinear Relationships  
+- Nonlinear Models That Are Intrinsically Linear - Transformations  
+- Multicollinearity – Effects and Example  
+
+:::
+
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+- Determining When to Add or Delete Variables  
+- Variable Selection Procedures  
+  
+    - Backward Elimination Method  
+    - All Best Subsets  
+
+- Interaction Effects  
+:::
+:::::
+::::::
+
+# General Linear Model  {background-color="#cfb991"}
+
+## General Linear Model (1 of 2)
+
+- Models in which the parameters $(\beta_0, \beta_1, \ldots, \beta_p)$ all have exponents of one are called **linear models**.
+- A **general linear model** involving $p$ independent variables ($z_i$’s) is:
+
+$$
+y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
+$$
+
+where each independent variable $z_i$ is a (linear or nonlinear) function of $x_1, x_2, \ldots, x_k$ (the variables for which data have been collected).
+
+- Here, $y$ can be a function of the original response variable as well.
+
+## General Linear Model 
+
+- The simplest case is when we have collected data for just one variable $x_1$ and want to estimate $y$ by using a straight-line relationship. In this case $z_1 = x_1$.
+- This model is called a **simple first-order model** with one predictor variable.
+
+$$
+y = \beta_0 + \beta_1 x_1 + \epsilon
+$$
+
+# Modelling Curvilinear Relationships
+
+## Modelling Curvilinear Relationships
+
+- Some non-linear models can be expressed as a general linear model.
+- To account for a curvilinear relationship, we might consider a **second-order model with one predictor variable** $(x_1)$:
+
+$$
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon
+$$
+
+- It is a linear model because we can set: $z_1 = x_1$ and $z_2 = x_1^2$.
+
+# Interaction
+
+## Interaction
+
+- If the original data set consists of observations for $y$ and two independent variables, $x_1$ and $x_2$, we might develop a **second-order model with two predictor variables** $(x_1$ and $x_2)$ with interaction:
+
+$$
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1^2 + \beta_4 x_2^2 + \beta_5 x_1 x_2 + \epsilon
+$$
+
+- The variable $x_1 x_2$ is added to account for the potential effects of the two variables acting together.
+- $\beta_5$ measures the **interaction effect**.
+
+
+# Nonlinear Models That Are Intrinsically Linear
+
+## Nonlinear Models That Are Intrinsically Linear
+
+- Models in which the parameters $(\beta_0, \beta_1, \ldots, \beta_p)$ have exponents other than one are called **nonlinear models**.
+
+- In some **cases** we can perform a transformation of variables that will enable us to use regression analysis with the general linear model.
+
+- The **exponential growth model** involves the regression equation:
+
+$$
+E(y) = \beta_0 \beta_1^x
+$$
+
+- We can transform this nonlinear model to a linear model by taking the natural logarithm of both sides.
+
+# Other Transformations to Consider
+
+## Other Transformations to Consider
+
+- **Square-root**: $\sqrt{x}$  
+- **Logarithmic**: $\log_{10}(x), \log_{10}(y), \ln(x)$, etc.  
+- **Reciprocal**: $1/y, 1/x$  
+- **Exponential**: $e^x, e^y$  
+- **Square**: $x^2, y^2$  
+- **Power**: $x^k, y^k$  
+
+## Square-Root Transformation
+
+Add or use $\sqrt{x}$ term. $(x^{0.5})$
+
+\[
+\begin{array}{c}
+\text{Residuals} \\
+Y \text{ or Residuals}
+\end{array}
+\]
+
+\[
+\text{Predictor } (x) \text{ or Fitted } (\hat{y})
+\]
+
+## Logarithmic Transformation
+
+Add or use $\ln(x)$ term. $(\ln(x) \text{ or } \log(x))$
+
+\[
+\begin{array}{c}
+\text{Residuals} \\
+Y \text{ or Residuals}
+\end{array}
+\]
+
+\[
+\text{Predictor } (x) \text{ or Fitted } (\hat{y})
+\]
+
+## Reciprocal Transformation
+
+Add or use $1/x$ term. $(1/x)$
+
+\[
+\begin{array}{c}
+\text{Residuals} \\
+Y \text{ or Residuals}
+\end{array}
+\]
+
+\[
+\text{Predictor } (x) \text{ or Fitted } (\hat{y})
+\]
+
+
+
+## Exponential Transformation
+
+Change $y$ to $\ln(y)$ as the new response variable. $(\ln(y))$
+
+\[
+\begin{array}{c}
+\text{Residuals} \\
+Y \text{ or Residuals}
+\end{array}
+\]
+
+\[
+\text{Predictor } (x) \text{ or Fitted } (\hat{y})
+\]
+
+$$\beta_1 > 0$$ (Pink Curve)  
+$$\beta_1 < 0$$ (Blue Curve)
+
+## Exponential Transformations
+
+Add $x^2$ or $x^k$ term. $(= x^2 \text{ or } x^k)$
+
+\[
+\begin{array}{c}
+\text{Residuals} \\
+Y \text{ or Residuals}
+\end{array}
+\]
+
+\[
+\text{Predictor } (x) \text{ or Fitted } (\hat{y})
+\]
+
+$$\beta_1 > 0$$ (Pink Curve)  
+$$\beta_1 < 0$$ (Blue Curve)
+
+## Example: Direct Marketer 
+
+- A direct marketer of electronic products, who advertises entirely by mailing catalogs, wants to examine the effect of its catalog mailings on sales **(AmountSpent)**.
+- A sample of 1000 customers. Partial data:
+
+| Customer | AmountSpent | Income  | Children | Catalogs |
+|----------|-------------|---------|----------|----------|
+| 1        | $218        | $16,400 | 1        | 12       |
+| 2        | $2,632      | $108,100| 3        | 18       |
+| 3        | $3,048      | $97,300 | 1        | 12       |
+| 4        | $435        | $26,800 | 0        | 12       |
+| 5        | $106        | $11,200 | 0        | 6        |
+
+**Note**: Data from Customers 6 – 1000 are not shown.
+
+## Regression Output
+
+$$\text{AmountSpent} = \beta_0 + \beta_1 \text{Income} + \beta_2 \text{Children} + \beta_3 \text{Catalogs} + \epsilon$$
+
+The regression equation is:
+
+$$\text{AmountSpent} = - 443 + 0.0204 \text{Income} - 199 \text{Children} + 47.7 \text{Catalogs}$$
+
+| Predictor | Coef   | SE Coef |  T   |  P    |
+|-----------|--------|---------|------|-------|
+| Constant  | -442.77| 53.72   | -8.24| 0.000 |
+| Income    | 0.0204 | 0.0006  | 34.42| 0.000 |
+| Children  | -198.69| 17.09   | -11.63| 0.000 |
+| Catalogs  | 47.695 | 2.755   | 17.31| 0.000 |
+
+$S = 562.5$  
+$R-Sq = 65.8\%$  
+$R-Sq(\text{adj}) = 65.7\%$  
+
+**Analysis of Variance**
+
+| Source    | DF | SS         | MS     |  F     |  P    |
+|-----------|----|------------|--------|--------|-------|
+| Regression|  3 | 607562347  | 202520782 | 639.99 | 0.000 |
+| Residual  | 996| 315179849  | 316446 |        |       |
+| Total     | 999| 922742196  |        |        |       |
+
+## Normal Probability Plot of Residuals
+
+$$\text{AmountSpent} = \beta_0 + \beta_1 \text{Income} + \beta_2 \text{Children} + \beta_3 \text{Catalogs} + \epsilon$$
+
+- This plot shows the normal probability plot of residuals for the response variable **AmountSpent**.
+
+## Residuals vs Fitted Values
+
+$$\text{AmountSpent} = \beta_0 + \beta_1 \text{Income} + \beta_2 \text{Children} + \beta_3 \text{Catalogs} + \epsilon$$
+
+- This plot shows the residuals versus the fitted values for the response variable **AmountSpent**.
+
+## Log(AmtSpt) vs. Income
+
+- Scatterplot of $\log(\text{AmtSpt})$ vs Income.
+
+## Log(AmtSpt) vs Log(Income)
+
+- Scatterplot of $\log(\text{AmtSpt})$ vs $\log(\text{Income})$.
+
+## Variable Transformations
+
+$$\text{AmountSpent} = \beta_0 + \beta_1 \text{Income} + \beta_2 \text{Children} + \beta_3 \text{Catalogs} + \epsilon$$
+
+- Transforming the variables:
+
+$$\ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \text{Children} + \alpha_3 \text{Catalogs} + \epsilon'$$
+
+## Regression Outputs 
+
+$$\ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \text{Children} + \alpha_3 \text{Catalogs} + \epsilon'$$
+
+| Summary            | Value     |
+|--------------------|-----------|
+| Multiple R         | 0.8837    |
+| R-Square           | 0.7810    |
+| Adjusted R-Square  | 0.7804    |
+| StErr of Estimate  | 0.41031   |
+
+**ANOVA Table**
+
+| Source       | DF | Sum of Squares | Mean of Squares | F-Ratio  | p-Value |
+|--------------|----|----------------|----------------|----------|---------|
+| Explained    | 3  | 598.02812      | 199.34271      | 1184.0707| < 0.0001|
+| Unexplained  | 996| 167.68030      | 0.16835        |          |         |
+
+**Regression Table**
+
+| Predictor   | Coefficient | Standard Error | t-Value   | p-Value | Lower Limit | Upper Limit |
+|-------------|-------------|----------------|-----------|---------|-------------|-------------|
+| Constant    | -3.8302     | 0.2151         | -17.8106  | < 0.0001| -4.2522     | -3.4082     |
+| Children    | -0.2290     | 0.0124         | -18.3981  | < 0.0001| -0.2534     | -0.2045     |
+| Catalogs    | 0.0432      | 0.0020         | 21.4559   | < 0.0001| 0.0393      | 0.0472      |
+| log(Income) | 0.9470      | 0.0203         | 46.5613   | < 0.0001| 0.9071      | 0.9869      |
+
+
+
+## Residuals vs Fitted Values
+
+```{r}
+plot(logAmountSpent ~ fittedValues, 
+     main = "Residuals Versus the Fitted Values (response is log(AmountSpent))",
+     xlab = "Fitted Value",
+     ylab = "Residual",
+     col = "red",
+     pch = 19)
+abline(h = 0, col = "green", lwd = 2)
+```
+
+
+**Formula:** 
+
+\[
+\ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \text{Children} + \alpha_3 \text{Catalogs} + \epsilon'
+\]
+
+## Normal Probability Plot of Residuals 
+
+```{r}
+qqnorm(residuals, main = "Normal Probability Plot of the Residuals (response is log(AmountSpent))")
+qqline(residuals, col = "blue", lwd = 2)
+```
+
+**Formula:**
+
+\[
+\ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \text{Children} + \alpha_3 \text{Catalogs} + \epsilon'
+\]
+
+## Multicollinearity Issue
+
+- The term **multicollinearity** refers to the correlation among the independent variables.
+    - When some independent variables are highly correlated (say, $|r| > 0.7$), it is not possible to determine the separate/marginal effect ($\beta_i$) of the independent variables on the dependent variable.
+- It is important to compute pairwise correlations in a multiple regression analysis.
+    - Every attempt should be made to avoid including independent variables that are highly correlated.
+- If the estimated regression equation is to be used only for predictive purposes, multicollinearity is usually not a serious problem.
+
+## Effects of Multicollinearity
+
+- The coefficients do not measure marginal effects of the predictors (rather **combined** effects may be measured).
+- Coefficient estimates ($b_i$’s) are **unstable** (having “inflated” standard errors) – By how much, see Variance Inflation Factor (VIF).
+    - **Nonsignificant** test results for important predictor variables.
+    - Estimated regression coefficients with an algebraic sign that is the **opposite** of what is expected from theoretical considerations or from correlations.
+    - **Large changes** in the estimated regression coefficients when a predictor variable is added or deleted.
+    - **Wide confidence intervals** for the regression coefficients representing important predictor variables.
+
+## Multicollinearity: An Example
+
+The file contains data on **beef consumption** in the United States from 1971 to 1993.
+
+- **Consumption**: Quantity consumed in billions of pounds (Y)
+- **Price**: In dollars per hundred pounds
+- **Income**: Per capita income in dollars
+- **Pop**: U.S. population in millions
+- **GNP**: In billions of dollars
+
+The objective is to study which predictor variable(s) will significantly determine the consumption of beef in the country, if at all.
+
+## Data (Beef Consumption.MPJ)
+
+```{r}
+data <- read.table("beef_consumption.txt", header = TRUE, sep = "\t")
+print(head(data))
+```
+
+## Correlations
+
+| Consumption | Price | Income | Pop | GNP |
+|-------------|-------|--------|-----|-----|
+|      1      | -0.6814 |  0.8011  | 0.8573 | 0.8512 |
+|             |    1  | -0.2377 | -0.3378 | -0.3070 |
+|             |       |    1   | 0.9654 | 0.9831 |
+|             |       |        |    1   | 0.9933 |
+|             |       |        |        |    1   |
+
+### Note: 
+Data -> Data Analysis -> Correlation ->
+
+## Consumption vs Price, Income, Pop, GNP
+
+- **Analysis of Variance**
+
+| Source   | DF | Adj SS  | Adj MS  | F-Value | P-Value |
+|----------|----|---------|---------|---------|---------|
+| Regression | 4  | 488.749 | 122.187 | 54.28   | 0.000   |
+| Price     | 1  | 85.086  | 85.086  | 37.80   | 0.000   |
+| Income    | 1  | 1.701   | 1.701   | 0.76    | 0.396   |
+| Pop       | 1  | 1.550   | 1.550   | 0.69    | 0.417   |
+| GNP       | 1  | 6.654   | 6.654   | 2.96    | 0.103   |
+| Error     | 18 | 40.521  | 2.251   |         |         |
+| Total     | 22 | 529.271 |         |         |         |
+
+- **Model Summary**
+\[
+R^2 = 92.34\% \quad R^2_{\text{adj}} = 90.64\% \quad R^2_{\text{pred}} = 88.77\%
+\]
+
+## Variable Selection
+
+
+- **Stepwise Regression**
+- **Forward Selection**
+- **Backward Elimination**
+- **Best-Subsets Regression**
+
+::: {.column-body}
+Iterative; one independent variable at a time is added or deleted based on the F statistic.
+Different subsets of the independent variables are evaluated.
+:::
+
+*Stepwise regression, forward selection, and backward elimination are heuristics and, therefore, offer no guarantee that the best model will be found.*
+
+## Adding or Removing Predictors?
+
+- Adding (removing) any predictor will always increase (decrease) \(R^2\).
+
+- **Definition**: A predictor is an ineffective predictor if its \(|T-Value| = \frac{|b - 0|}{se(b)} < 1\) (coefficient estimate \(b\) is within one standard deviation from 0, i.e., too close to 0), or its two-sided p-value > 0.32 (Empirical rule).
+    - **Adding** an effective predictor will decrease the estimated error variance \(S^2\) and hence increase Adj \(R^2\). The opposite is true when adding an ineffective predictor.
+    - **Removing** an effective predictor will increase the estimated error variance \(S^2\) and hence decrease Adj \(R^2\). The opposite is true when removing an ineffective predictor.
+
+## Variable Selection: Backward Elimination
+
+- **All stepwise variable selection methods**: Measure additional variation explained to determine whether to select or eliminate a predictor variable (by a t-test) or a group of predictor variables (by a partial F-test).
+
+- The **Backward Elimination** procedure begins with a model that includes all the independent variables the modeler wants considered (Full Model).
+    - It then attempts to remove one variable at a time by determining whether the least significant variable (one with the smallest absolute T-value or the largest p-value) currently in the model can indeed be removed because its p-value is larger than the user-specified \(\alpha\)-to-remove value (i.e., insignificant).
+    - Once a variable has been removed from the model it cannot reenter at a subsequent step.
+
+## Step 1: Full Model
+
+
+Regression Analysis: Consumption versus Price, Income, Pop, GNP  
+Model Summary  
+- S: 1.50040  
+- \( R^2 \): 92.34%  
+- \( R^2(adj) \): 90.64%  
+- \( R^2(pred) \): 88.77%
+
+**Coefficients**
+| Term     | Coef   | SE Coef | T-Value | P-Value | VIF     |
+|----------|--------|---------|---------|---------|---------|
+| Constant | 122    | 102     | 1.20    | 0.245   |         |
+| Price    | -0.3378| 0.0549  | -6.15   | 0.000   | 1.30    |
+| Income   | -0.00362| 0.00416| -0.87   | 0.396   | 44.66   |
+| Pop      | -0.394 | 0.475   | -0.83   | 0.417   | 106.30  |
+| GNP      | 0.0228 | 0.0133  | 1.72    | 0.103   | 213.27  |
+
+**Pop is insignificant at 10%. Pop is an ineffective predictor.**
+
+## Step 2
+
+Regression Analysis: Consumption versus Price, Income, GNP  
+Model Summary  
+- S: 1.48805  
+- \( R^2 \): 92.05%  
+- \( R^2(adj) \): 90.80%  
+- \( R^2(pred) \): 89.34%
+
+**Coefficients**
+| Term     | Coef   | SE Coef | T-Value | P-Value | VIF     |
+|----------|--------|---------|---------|---------|---------|
+| Constant | 40.0   | 22.0    | 1.82    | 0.085   |         |
+| Price    | -0.3318| 0.0540  | -6.14   | 0.000   | 1.28    |
+| Income   | -0.00198| 0.00363| -0.54   | 0.592   | 34.61   |
+| GNP      | 0.01277| 0.00541 | 2.36    | 0.029   | 36.06   |
+
+**Income is insignificant at 10%. Income is ineffective.**
+
+## Step 3
+
+Regression Analysis: Consumption versus Price, GNP  
+Model Summary  
+- S: 1.46166  
+- \( R^2 \): 91.93%  
+- \( R^2(adj) \): 91.12%  
+- \( R^2(pred) \): 89.69%
+
+**Coefficients**
+| Term     | Coef    | SE Coef | T-Value | P-Value | VIF     |
+|----------|---------|---------|---------|---------|---------|
+| Constant | 28.13   | 3.36    | 8.37    | 0.000   |         |
+| Price    | -0.3426 | 0.0493  | -6.95   | 0.000   | 1.10    |
+| GNP      | 0.00987 | 0.00093 | 10.62   | 0.000   | 1.10    |
+
+**Regression Equation: Consumption = 28.13 - 0.3426 Price + 0.00987 GNP**
+
+## Summary
+
+XXXX include slide XXXX
+
+## Variable Selection: Forward Selection
+
+- The forward-selection procedure starts with no independent variables.
+- At each step, the predictor (currently not in the model), **if included**, can achieve the largest **reduction** in the estimated error variance (\(S^2\) or MSE) or the greatest **improvement** in the Adjusted \( R^2 \), is the candidate to enter.
+    - If it is significant (p-value < alpha-to-enter), then this predictor enters.
+- Once a predictor has been added, it will stay.
+
+**\*Not discussed.**
+
+## Variable Selection: Stepwise Regression
+
+- At each iteration, the first consideration is to see whether the least significant variable currently in the model can be removed because its partial \( F \) value is less than the user-specified or default \( p \) Value to Leave.
+- If no variable can be removed, the procedure checks to see whether the most significant variable not in the model can be added because its partial \( F \) value is greater than the user-specified or default \( p \) Value to Enter.
+- If no variable can be removed and no variable can be added, the procedure stops.
+
+## Variable Selection: Best-Subsets Regression
+
+- The three preceding procedures are one-variable-at-a-time methods offering no guarantee that the best model for a given number of variables will be found.
+- Some software packages include **best-subsets regression** that enables the user to find, given a specified number of independent variables, the best regression model.
+- Some software **output**, such as Minitab, identifies the three best one-variable estimated regression equations, the three best two-variable equation, and so on. (Page 42.)
+
+## Best Subsets Regression
+
+- Select a model that has the highest **adjusted \( R \)-squared** value.
+    - Recall that Adjusted \( R \)-squared considers the model complexity (i.e., the number of predictors, \( p \)), model adequacy (i.e., the \( R \)-squared value), and sample size (\( n \)).
+- Can pre-fix the number of predictors (**our discretion**) and then select the best subset model with the highest Adjusted \( R \)-squared value.
+
+## Remarks
+
+- In the same problem (fix n), among the models with the same number of predictors (fix p), a model with a larger $R^2$ will have a larger $Adj R^2$, and vice versa.
+
+\[
+Adj R^2 = 1 - (1 - R^2)\frac{n - 1}{n - p - 1}
+\]
+
+- Recall: The model with a smaller estimated error variance, $S^2$ or MSE, has a larger $Adj R^2$:
+
+\[
+Adj R^2 = 1 - \frac{S^2}{\frac{SST}{(n-1)}}
+\]
+
+## Best Subsets Regression
+
+Response is Consumption
+
+| Vars | R-Sq | R-Sq (adj) | R-Sq (pred) | Mallows Cp | S    | I | Pn | rc | ioPG | cmoN | SeepPP |
+|------|------|------------|-------------|------------|------|---|----|----|------|------|--------|
+| 1    | 73.5 | 72.2       | 67.3        | 43.3       | 2.5847 | X |    |    |    |      |        |
+| 1    | 72.4 | 71.1       | 66.5        | 45.8       | 2.6352 | X |    |    |    |      |        |
+| 1    | 64.2 | 62.5       | 55.4        | 65.2       | 3.0051 | X |    |    |    |      |        |
+| 2    | 91.9 | 91.1       | 89.7        | 2.0        | 1.4617 | X | X  |    |    |      |        |
+| 2    | 90.8 | 89.9       | 88.2        | 4.6        | 1.5587 | X | X  |    |    |      |        |
+| 3    | 92.1 | 90.8       | 89.3        | 3.7        | 1.4881 | X | X  | X  |    |      |        |
+| 4    | 92.3 | 90.6       | 88.8        | 5.0        | 1.5004 | X | X  | X  | X  |      |        |
+
+- Minitab: `Stat -> Regression -> Regression -> Best Subsets -> .... -> Options: Free predictor(s) in Each Model: Minimum: 1; Maximum: (leave blank); Model of each size to print: 3 -> ....`
+
+## Best-Subsets Regression: Results
+
+a) Overall, {Price, GNP} is the best model.
+b) {Pop} has the highest $Adj R^2$ and $R^2$ among all 1-predictor models.
+c) {Price, GNP} has the highest $Adj R^2$ and $R^2$ among all 2-predictor models.
+d) {Price, Income, GNP} has the highest $Adj R^2$ and $R^2$ among all 3-predictor models.
+e) {Price, Income, GNP} has and always has a higher $R^2$ than {Price, Income}.
+
+**Question:** Is GNP an effective predictor in this model?
+
+
+## Questions
+
+- In the presence of Pop, is Price an effective predictor? Yes, but why?
+
+- Which predictor has the highest absolute correlation with the Consumption? Pop, but why?
+
+## Comparisons
+
+| Method     | Variables included | Adj R-squared |
+|------------|--------------------|---------------|
+| Forward    | Price, Pop         | 89.90%       |
+| Backward   | Price, GNP         | 91.12%       |
+| Stepwise   | Price, Pop         | 89.90%       |
+| Best-subsets | Price, GNP        | 91.12%       |
+
+- Alpha-to-enter = 0.10, Alpha-to-remove = 0.10.
+
+## Interaction Effect: An Example
+
+A company is currently using two advertising media (magazines and newspapers) to advertise its product and plans to increase its current advertising expenditure by $50,000.
+
+The company likes to determine:
+- Which of the two advertising media can be expected to give a better return for the extra money spent (i.e., “bigger bang for the buck”)?
+- What is the expected return from this additional $50,000?
+
+## Advertising Effectiveness
+
+**Exposure:** Effective exposure index (The higher, the better.)  
+**Type:** Type of advertising media  
+**Expenditure:** Advertising expenditure ($1000)
+
+| Exposure | Expenditure | Type      |
+|----------|-------------|----------|
+| 965      | 600         | Magazine |
+| 340      | 260         | Magazine |
+| 155      | 160         | Magazine |
+| 120      | 130         | Magazine |
+| 145      | 155         | Magazine |
+| 35       | 100         | Magazine |
+| 620      | 530         | Newspaper|
+| 700      | 585         | Newspaper|
+| 485      | 395         | Newspaper|
+| 350      | 275         | Newspaper|
+| 595      | 420         | Newspaper|
+| 310      | 200         | Newspaper|
+| 190      | 150         | Newspaper|
+
+The company wants to increase the current advertising expenditure by $50,000, which advertising method should it use?
+
+## Exposure vs. Expenditure (by Type)
+
+![Scatterplot of Exposure vs Expenditure](path/to/scatterplot.png)
+
+- Blue: Magazine
+- Red: Newspaper
+
+## Dummy Variables and Interaction
+
+| Exposure | Expenditure | Type      | Magazine | Newspaper | Expenditure*Magazine |
+|----------|-------------|----------|----------|-----------|----------------------|
+| 965      | 600         | Magazine | 1        | 0         | 600                  |
+| 340      | 260         | Magazine | 1        | 0         | 260                  |
+| 155      | 160         | Magazine | 1        | 0         | 160                  |
+| 120      | 130         | Magazine | 1        | 0         | 130                  |
+| 145      | 155         | Magazine | 1        | 0         | 155                  |
+| 35       | 100         | Magazine | 1        | 0         | 100                  |
+| 620      | 530         | Newspaper| 0        | 1         | 0                    |
+| 700      | 585         | Newspaper| 0        | 1         | 0                    |
+| 485      | 395         | Newspaper| 0        | 1         | 0                    |
+| 350      | 275         | Newspaper| 0        | 1         | 0                    |
+| 595      | 420         | Newspaper| 0        | 1         | 0                    |
+| 310      | 200         | Newspaper| 0        | 1         | 0                    |
+| 190      | 150         | Newspaper| 0        | 1         | 0                    |
+
+- Create dummy variables, Magazine and Newspaper, and use, say, Newspaper as the reference category.
+
+## The Linear Regression Model
+
+\[
+Exposure = \beta_0 + \beta_1 \text{Expenditure} + \beta_2 (\text{Magazine}) + 0 (\text{Newspaper}) + \beta_3 (\text{Expenditure} * \text{Magazine}) + \epsilon
+\]
+
+\[
+E(\text{Exposure}) = 
+\begin{cases} 
+(\beta_0 + \beta_2) + (\beta_1 + \beta_3)\text{Expenditure} & \text{If Magazine} \\
+\beta_0 + (\beta_1)\text{Expenditure} & \text{If Newspaper}
+\end{cases}
+\]
+
+- The coefficient of the interaction $(\beta_3)$ is the difference in the slopes.
+- If $\beta_3 > 0$, Magazine has a larger slope and hence, a better return.
+
+
+## ANOVA Table
+
+**H<sub>0</sub>**:  β<sub>1</sub> = β<sub>2</sub> = β<sub>3</sub> = 0 (No relationship of Exposure with Expenditure and Type.)
+
+**Regression Statistics Table**
+
+| **Regression Statistics** | **Values** |
+|---------------------------|------------|
+| Multiple R                | 0.995      |
+| R Square                  | 0.990      |
+| Adjusted R Square         | 0.987      |
+| Standard Error            | 30.940     |
+| Observations              | 13         |
+
+**ANOVA Table**
+
+| **ANOVA**      | **df** | **SS**       | **MS**       | **F**    | **Significance F** |
+|----------------|--------|--------------|--------------|---------|-------------------|
+| Regression     | 3      | 886457.432   | 295485.811   | 308.668 | 0.000             |
+| Residual       | 9      | 8615.645     | 957.294      |         |                   |
+| Total          | 12     | 895073.077   |              |         |                   |
+
+
+**Regression Table**
+
+**Regression Coefficients Table**
+
+| **Coefficients**           | **Standard Error** | **t Stat** | **P-value** |
+|----------------------------|--------------------|-----------|------------|
+| Intercept                  | 56.295             | 30.470    | 1.848      |
+| Expenditure                | 1.118              | 0.077     | 14.501     |
+| Magazine                   | -193.051           | 37.252    | -5.182     |
+| Expenditure * Magazine     | 0.719              | 0.107     | 6.731      |
+
+\[
+\text{Predicted Exposure} = 56.295 + 1.118 \times \text{Expenditure} - 193.051 \times \text{Magazine} + 0.719 \times \text{Expenditure} \times \text{Magazine}
+\]
+
+## Predicted Exposure
+
+\[
+\text{Predicted Exposure} = 56.295 + 1.118 \times \text{Expenditure} - 193.051 \times \text{Magazine} + 0.719 \times \text{Expenditure} \times \text{Magazine}
+\]
+
+- **Newspaper** (Magazine = 0)
+
+\[
+\text{Predicted Exposure} = 56.295 + 1.1178 \times \text{Expenditure}
+\]
+
+- **Magazine** (Magazine = 1)
+
+\[
+\text{Predicted Exposure} = (56.295 - 193.051) + (1.1178 + 0.719) \times \text{Expenditure}
+\]
+
+## Conclusions
+
+- Which media is predicted to give a better expected return for the additional $50,000?
+- What is the expected return for this $50,000?
+
+## Determining When to Add or Delete Variables
+
+- To determine if we should add \( x_2 \) to a model involving \( x_1 \) (or delete \( x_2 \) in a model involving both \( x_1 \) and \( x_2 \)), we perform a partial \( F \)-test to test the significance of this candidate variable \( x_2 \).
+  - When there is only one candidate variable, the partial \( F \)-test is equivalent to a \( t \)-test.
+  
+- One can consider adding or deleting several independent variables as a group or a subset.
+
+- The test is used in variable selection for model building.
+
+- The test is used to handle multicollinearity issue.
+
+## Partial F-test: Significance of a Subset of Independent Variables (1 of 3)
+
+- **Null Hypothesis**:
+  - Variables in the subset do not improve significantly the model when all other variables are included.
+  
+  (Their regression coefficients are all zero: No linear relationship).
+
+- The model with all involved independent variables is called the **full model**.
+
+- The model without the candidate independent variables is called the **reduced model**. It is the model assuming the null hypothesis is true.
+
+## Partial F-test: Significance of a Subset of Independent Variables (2 of 3)
+
+\[
+\text{Partial } F = \frac{\text{SSE(reduced) - SSE(full)}}{\text{number of variable(s) in the subset}} \times \frac{1}{\text{MSE(full)}}
+\]
+
+\[
+\text{Partial } F = \frac{\text{SSE}(x_1) - \text{SSE}(x_1, x_2)}{\text{SSE}(x_1, x_2)/(n-p-1)} \text{ for } x_2 \text{ in our example.}
+\]
+
+## Partial F-test: Significance of a Subset of Independent Variables (3 of 3)
+
+- The partial \( F \)-statistic follows an \( F \)-distribution with degrees of freedom (# of variable(s) in the subset) and \( d.f. \) of MSE, if \( H_0 \) is true.
+
+- The \( p \)-value criterion can also be used to determine whether it is advantageous to add one or more dependent variables to a multiple regression model.
+
+- The \( p \)-value associated with the computed \( F \) statistic can be compared to the level of significance \( \alpha \).
+
+- To determine the \( p \)-value:
+
+\[
+= 1 - \text{F.DIST}(\text{partial } F\text{-value, numerator df, denominator df, TRUE})
+\]
+
+## Illustrative Example: Testing \( x_2 \) and \( x_3 \) in the Presence of \( x_1 \)
+
+- **Null Hypothesis**
+
+\[
+H_0: \beta_2 = \beta_3 = 0
+\]
+
+\[
+H_a: \text{ at least one of } \beta_2 \text{ and } \beta_3 \text{ is not 0.}
+\]
+
+- **Full model**
+
+\[
+Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 + \epsilon
+\]
+
+- **Reduced model (assume \( H_0 \) is true)**
+
+\[
+Y = \beta_0 + \beta_1 x_1 + \cancel{\beta_2 x_2} + \cancel{\beta_3 x_3} + \epsilon
+\]
+
+## SSR for Full and Reduced Models
+
+- **Full model**: 
+
+\[
+\hat{Y} = 210.02 + 18.08 x_1 + 9.46 x_2 + 9.03 x_3
+\]
+
+**Full Model SSR Table**
+
+| **SSR for Full Model** | **df** | **SS**         |
+|------------------------|--------|---------------|
+| Regression             | 3      | 45271.11      |
+| Residual               | 26     | 15308.09      |
+| Total                  | 29     | 60579.20      |
+
+**Reduced Model SSR Table**
+
+| **SSR for Reduced Model** | **df** | **SS**        |
+|---------------------------|--------|--------------|
+| Regression                | 1      | 20104.00     |
+| Residual                  | 28     | 40475.00     |
+| Total                     | 29     | 60579.20     |
+
+## Partial F-test
+
+**Full Model**
+
+| df | SS       |
+|----|----------|
+| Regression | 3 | 45271.11 |
+| Residual   | 26 | 15308.09 |
+| Total      | 29 | 60579.20 |
+
+**Reduced Model**
+
+
+| df | SS      |
+|----|---------|
+| Regression | 1 | 20104.00 |
+| Residual   | 28 | 40475.00 |
+| Total      | 29 | 60579.20 |
+
+**Partial F Calculation**
+
+$$
+Partial \, F = \frac{{SSR(Full) - SSR(Reduced)}}{{df(Full) - df(Reduced)}} / \frac{{MSE(Full)}}{26} = \frac{{45271.11 - 20104.00}}{3 - 1} / \frac{15308.09}{26} = 21.37
+$$
+
+**p-value Calculation**
+
+$$
+p-value = 1 - F.DIST(21.37, 2, 26, TRUE) = 3.24287E-06
+$$
+
+**Conclusion:** We reject $H_0$ at 5% significance level and conclude at least one of $\beta_2$ and $\beta_3$ is not zero.
+
+## AmountSpent vs Income (2 of 11)
+
+# Scatterplot of AmountSpent vs Income
+plot(income, amountspent, 
+     main="Scatterplot of AmountSpent vs Income", 
+     col="red", pch=19, xlab="Income", ylab="AmountSpent")
+
+# Summary {background-color="#cfb991"}
+
+## Summary
+
+::: nonincremental
+Some key takeaways from this session:
+
+-   XXXX
+
+:::
+
+# Thank you! {background-color="#cfb991"}

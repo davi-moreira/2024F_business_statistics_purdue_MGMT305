@@ -889,17 +889,17 @@ $$
 
 - **Region A**: 
   $$
-  E(y | \text{region A}) = \beta_0 + \beta_1 (0) + + \beta_2 (0) = \beta_0
+  E(y | \text{region A}) = \beta_0 + \beta_1 (0) + \beta_2 (0) = \beta_0
   $$
 
 - **Region B**: 
   $$
-  E(y | \text{region B}) = \beta_0 + \beta_1 (1) + + \beta_2 (0) = \beta_0 + \beta_1 
+  E(y | \text{region B}) = \beta_0 + \beta_1 (1) + \beta_2 (0) = \beta_0 + \beta_1 
   $$
 
 - **Region C**: 
   $$
-  E(y | \text{region C}) = \beta_0 + \beta_1 (0) + + \beta_2 (1) = \beta_0 + \beta_2
+  E(y | \text{region C}) = \beta_0 + \beta_1 (0) + \beta_2 (1) = \beta_0 + \beta_2
   $$
 
 - Interpretation:
