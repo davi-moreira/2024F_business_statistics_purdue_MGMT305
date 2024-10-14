@@ -1,0 +1,2839 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.57">
+
+  <meta name="author" content="Professor Davi Moreira ">
+  <meta name="dcterms.date" content="2024-08-01">
+  <title>MGMT 30500: Business Statistics –  MGMT 30500: Business Statistics </title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></h1>
+  <p class="subtitle"><span style="font-size: 150%;"> Regression Analysis: Model Building</span></p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Professor<br>Davi Moreira<br> 
+</div>
+</div>
+</div>
+
+  <p class="date">August 01, 2024</p>
+</section>
+<section id="overview" class="slide level2 center">
+<h2>Overview</h2>
+<div>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li>General Linear Model</li>
+<li>Modeling Curvilinear Relationships<br>
+</li>
+<li>Nonlinear Models That Are Intrinsically Linear - Transformations<br>
+</li>
+<li>Multicollinearity – Effects and Example</li>
+</ul>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li><p>Determining When to Add or Delete Variables<br>
+</p></li>
+<li><p>Variable Selection Procedures</p>
+<ul>
+<li>Backward Elimination Method<br>
+</li>
+<li>All Best Subsets</li>
+</ul></li>
+<li><p>Interaction Effects<br>
+</p></li>
+</ul>
+</div></div>
+</div>
+</section>
+<section>
+<section id="general-linear-model" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>General Linear Model</h1>
+
+</section>
+<section id="general-linear-model-1" class="slide level2 center">
+<h2>General Linear Model</h2>
+<ul>
+<li class="fragment"><p>Models in which the parameters <span class="math inline">\((\beta_0, \beta_1, \ldots, \beta_p)\)</span> all have exponents of one are called <strong>linear models</strong>.</p></li>
+<li class="fragment"><p>A <strong>general linear model</strong> involving <span class="math inline">\(p\)</span> independent variables (<span class="math inline">\(z_i\)</span>’s) is:</p></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[
+y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
+\]</span></p>
+<p>where each independent variable <span class="math inline">\(z_i\)</span> is a (linear or nonlinear) function of <span class="math inline">\(x_1, x_2, \ldots, x_k\)</span> (the variables for which data have been collected).</p>
+<ul>
+<li class="fragment">Here, <span class="math inline">\(y\)</span> can be a function of the original response variable as well.</li>
+</ul>
+</div>
+</section>
+<section id="general-linear-model-2" class="slide level2 center">
+<h2>General Linear Model</h2>
+<ul>
+<li class="fragment"><p>The simplest case is when we have collected data for just one variable <span class="math inline">\(x_1\)</span> and want to estimate <span class="math inline">\(y\)</span> by using a straight-line relationship. In this case <span class="math inline">\(z_1 = x_1\)</span>.</p></li>
+<li class="fragment"><p>This model is called a <strong>simple first-order model</strong> with one predictor variable.</p></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[
+y = \beta_0 + \beta_1 x_1 + \epsilon
+\]</span></p>
+</div>
+</section></section>
+<section>
+<section id="modelling-curvilinear-relationships" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Modelling Curvilinear Relationships</h1>
+
+</section>
+<section id="modelling-curvilinear-relationships-1" class="slide level2 center">
+<h2>Modelling Curvilinear Relationships</h2>
+
+<img data-src="16_chapter_model_building_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="modelling-curvilinear-relationships-2" class="slide level2 center">
+<h2>Modelling Curvilinear Relationships</h2>
+<ul>
+<li class="fragment"><p>Some non-linear models can be expressed as a general linear model.</p></li>
+<li class="fragment"><p>To account for a curvilinear relationship, we might consider a <strong>second-order model with one predictor variable</strong> <span class="math inline">\((x_1)\)</span>:</p></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon
+\]</span></p>
+<ul>
+<li class="fragment">It is a linear model because we can set: <span class="math inline">\(z_1 = x_1\)</span> and <span class="math inline">\(z_2 = x_1^2\)</span>.</li>
+</ul>
+</div>
+</section>
+<section id="modelling-curvilinear-relationships-3" class="slide level2 center">
+<h2>Modelling Curvilinear Relationships</h2>
+
+<img data-src="16_chapter_model_building_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="interpretation-of-independent-variable-effect-in-a-second-order-model" class="slide level2 center">
+<h2>Interpretation of Independent Variable Effect in a Second-Order Model</h2>
+<ul>
+<li class="fragment"><p><strong><span class="math inline">\(\beta_1\)</span></strong>: Represents the linear effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span>. It gives the initial (or marginal) change in <span class="math inline">\(y\)</span> for a one-unit increase in <span class="math inline">\(x_1\)</span> when <span class="math inline">\(x_1^2\)</span> is held constant.</p></li>
+<li class="fragment"><p><strong><span class="math inline">\(\beta_2\)</span></strong>: Represents the quadratic effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span>. It determines whether the curve opens upwards <span class="math inline">\((\beta_2 &gt; 0)\)</span> or downwards <span class="math inline">\((\beta_2 &lt; 0)\)</span>.</p></li>
+</ul>
+</section>
+<section id="marginal-effect-of-x_1" class="slide level2 center">
+<h2>Marginal Effect of <span class="math inline">\(x_1\)</span></h2>
+<ul>
+<li class="fragment">The overall effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span> can be expressed as:</li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[
+\frac{dy}{dx_1} = \beta_1 + 2\beta_2 x_1
+\]</span></p>
+<ul>
+<li class="fragment"><p>This shows that the effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span> changes as <span class="math inline">\(x_1\)</span> increases or decreases due to the presence of the quadratic term <span class="math inline">\(x_1^2\)</span>.</p></li>
+<li class="fragment"><p>Instead of a constant change (as in linear models), the presence of <span class="math inline">\(2\beta_2 x_1\)</span> shows a varying slope depending on the value of <span class="math inline">\(x_1\)</span>.</p></li>
+</ul>
+</div>
+</section>
+<section id="practical-interpretation" class="slide level2 center">
+<h2>Practical Interpretation</h2>
+<ul>
+<li class="fragment"><p>If <span class="math inline">\(\beta_2 &gt; 0\)</span>, <span class="math inline">\(y\)</span> increases at an increasing rate as <span class="math inline">\(x_1\)</span> increases, resulting in a U-shaped curve.</p></li>
+<li class="fragment"><p>If <span class="math inline">\(\beta_2 &lt; 0\)</span>, <span class="math inline">\(y\)</span> increases at a decreasing rate and then decreases, resulting in an inverted U-shaped curve.</p></li>
+<li class="fragment"><p>The effect of <span class="math inline">\(x_1\)</span> should always be considered in light of both <span class="math inline">\(\beta_1\)</span> and <span class="math inline">\(\beta_2\)</span>.</p></li>
+</ul>
+</section></section>
+<section>
+<section id="interaction" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Interaction</h1>
+
+</section>
+<section id="interaction-1" class="slide level2 center">
+<h2>Interaction</h2>
+<ul>
+<li class="fragment">If the original data set consists of observations for <span class="math inline">\(y\)</span> and two independent variables, <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>, we might develop a <strong>second-order model with two predictor variables</strong> <span class="math inline">\((x_1\)</span> and <span class="math inline">\(x_2)\)</span> with interaction:</li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
+\]</span></p>
+<ul>
+<li class="fragment"><p>The variable <span class="math inline">\(x_1 x_2\)</span> is added to account for the potential effects of the two variables acting together.</p></li>
+<li class="fragment"><p><span class="math inline">\(\beta_3\)</span> measures the <strong>interaction effect</strong>.</p></li>
+</ul>
+</div>
+</section>
+<section id="example-interaction" class="slide level2 center">
+<h2>Example: Interaction</h2>
+<p>To provide an illustration of interaction and what it means, lets check the regression study conducted by Tyler Personal Care for one of its new shampoo products. Two factors believed to have the most influence on sales are:</p>
+<ul>
+<li class="fragment"><p>Unit selling price</p></li>
+<li class="fragment"><p>Advertising expenditure</p></li>
+</ul>
+<p>To investigate the effects of these two variables on sales, prices of $2.00, $2.50, and $3.00 were paired with advertising expenditures of $50,000 and $100,000 in 24 test markets.</p>
+</section>
+<section id="example-difference-in-mean-sales" class="slide level2 center">
+<h2>Example: Difference in Mean Sales</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<p><strong>Mean Sales (1000s) for the Tyler Personal Care Example</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th><strong>Advertising Expenditure</strong></th>
+<th><strong>$2.00</strong></th>
+<th><strong>$2.50</strong></th>
+<th><strong>$3.00</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>$50,000</strong></td>
+<td>461</td>
+<td>364</td>
+<td>332</td>
+</tr>
+<tr class="even">
+<td><strong>$100,000</strong></td>
+<td>808</td>
+<td>646</td>
+<td>375</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 70%;">
+<ul>
+<li class="fragment"><p>With a price of $2.00, the difference in mean sales between advertising expenditures of $50,000 and $100,000 is:</p>
+<p><span class="math display">\[
+808,000 - 461,000 = 347,000 \, units
+\]</span></p></li>
+<li class="fragment"><p>When the price is $2.50, the difference is:</p>
+<p><span class="math display">\[
+646,000 - 364,000 = 282,000 \, units
+\]</span></p></li>
+<li class="fragment"><p>When the price is $3.00, the difference is:</p>
+<p><span class="math display">\[
+375,000 - 332,000 = 43,000 \, units
+\]</span></p></li>
+</ul>
+<p>Clearly, the difference in mean sales between advertising expenditures depends on the price of the product. The effect of increased advertising expenditure diminishes at higher selling prices, providing evidence of interaction between the price and advertising expenditure variables.</p>
+</div>
+</div></div>
+</section>
+<section id="example-regression-model-with-interaction" class="slide level2 center">
+<h2>Example: Regression Model with Interaction</h2>
+<p>To account for the effect of interaction, we use the following regression model:</p>
+<p><span class="math display">\[
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
+\]</span></p>
+<p>Where: - <span class="math inline">\(y\)</span> = unit sales (1000s) - <span class="math inline">\(x_1\)</span> = price ($) - <span class="math inline">\(x_2\)</span> = advertising expenditure ($1000s)</p>
+</section>
+<section id="example-estimated-regression-equation" class="slide level2 center">
+<h2>Example: Estimated Regression Equation</h2>
+<p>Using the estimated regression equation:</p>
+<p><span class="math display">\[
+\text{Sales} = -275.8333 + 175 \, \text{Price} + 19.68 \, \text{AdvExp} - 6.08 \, \text{PriceAdv}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li class="fragment"><strong>Sales</strong> = unit sales (1000s)</li>
+<li class="fragment"><strong>Price</strong> = price of the product ($)</li>
+<li class="fragment"><strong>AdvExp</strong> = advertising expenditure ($1000s)</li>
+<li class="fragment"><strong>PriceAdv</strong> = interaction term (Price times AdvExp)</li>
+</ul>
+</section>
+<section id="example-significance-of-interaction" class="slide level2 center">
+<h2>Example: Significance of Interaction</h2>
+
+<img data-src="figs/interaction_reg_output.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>The <span class="math inline">\(p\)</span>-value corresponding to the <span class="math inline">\(t\)</span>-test for <code>PriceAdv</code> is 0.0000, which indicates significant interaction between the price of the product and the advertising expenditure.</p>
+<p><br></p>
+</section>
+<section id="example-interpretation-of-coefficients" class="slide level2 center">
+<h2>Example: Interpretation of Coefficients</h2>
+<ul>
+<li class="fragment"><p><strong><span class="math inline">\(\beta_0\)</span></strong>: Intercept. Represents the expected value of <span class="math inline">\(y\)</span> when <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> are zero.</p></li>
+<li class="fragment"><p><strong><span class="math inline">\(\beta_1\)</span></strong>: Effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span> when <span class="math inline">\(x_2 = 0\)</span>.</p></li>
+<li class="fragment"><p><strong><span class="math inline">\(\beta_2\)</span></strong>: Effect of <span class="math inline">\(x_2\)</span> on <span class="math inline">\(y\)</span> when <span class="math inline">\(x_1 = 0\)</span>.</p></li>
+<li class="fragment"><p><strong><span class="math inline">\(\beta_3\)</span></strong>: Interaction effect between <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>. Indicates how the relationship between <span class="math inline">\(x_1\)</span> and <span class="math inline">\(y\)</span> changes with different values of <span class="math inline">\(x_2\)</span>, and vice-versa.</p></li>
+</ul>
+</section>
+<section id="example-marginal-effects" class="slide level2 center">
+<h2>Example: Marginal Effects</h2>
+<ul>
+<li class="fragment"><strong>Effect of <span class="math inline">\(x_1\)</span></strong>:</li>
+</ul>
+<p><span class="math display">\[
+\frac{\partial y}{\partial x_1} = \beta_1 + \beta_3 x_2
+\]</span></p>
+<ul>
+<li class="fragment"><strong>Effect of <span class="math inline">\(x_2\)</span></strong>:</li>
+</ul>
+<p><span class="math display">\[
+\frac{\partial y}{\partial x_2} = \beta_2 + \beta_3 x_1
+\]</span></p>
+<ul>
+<li class="fragment">The effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span> depends on <span class="math inline">\(x_2\)</span>, and the effect of <span class="math inline">\(x_2\)</span> on <span class="math inline">\(y\)</span> depends on <span class="math inline">\(x_1\)</span>.</li>
+</ul>
+</section>
+<section id="example-interpretation-of-interaction-effect" class="slide level2 center">
+<h2>Example: Interpretation of Interaction Effect</h2>
+<ul>
+<li class="fragment"><p>If <span class="math inline">\(\beta_3 &gt; 0\)</span>, a positive (or negative) effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span> increases as <span class="math inline">\(x_2\)</span> increases.</p></li>
+<li class="fragment"><p>If <span class="math inline">\(\beta_3 &lt; 0\)</span>, a positive (or negative) effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span> decreases as <span class="math inline">\(x_2\)</span> increases.</p></li>
+</ul>
+</section>
+<section id="example-coefficient-interpretation" class="slide level2 center">
+<h2>Example: Coefficient Interpretation</h2>
+<div style="font-size: 80%;">
+<ul>
+<li class="fragment"><p><strong>Price</strong>: <span class="math inline">\(175\)</span> - When AdvExp is zero, a one-unit increase in Price leads to an expected increase of 175 units in <span class="math inline">\(y\)</span>.</p></li>
+<li class="fragment"><p><strong>AdvExp</strong>: <span class="math inline">\(19.68\)</span> - When Price is zero, a one-unit increase in AdvExp results in an expected increase of 19.68 units in <span class="math inline">\(y\)</span>.</p></li>
+<li class="fragment"><p><strong>PriceAdv</strong>: <span class="math inline">\(-6.08\)</span>- Interaction effect: A one-unit increase in AdvExp decreases the effect of Price on <span class="math inline">\(y\)</span> by 6.08 units (and vice versa).</p></li>
+</ul>
+<p><strong>Interpretation of Interaction Effect</strong></p>
+<ul>
+<li class="fragment"><p>The interaction term <span class="math inline">\(\beta_3\)</span> (PriceAdv) is negative.</p>
+<ul>
+<li class="fragment">As AdvExp increases, the positive effect of Price on <span class="math inline">\(y\)</span> decreases.</li>
+<li class="fragment">Suggests diminishing returns on Price when AdvExp is already high (or vice versa).</li>
+</ul></li>
+<li class="fragment"><p>An increase in Advertising Expenditures may lead to higher sales, but this effect diminishes as more the Price increases.</p></li>
+<li class="fragment"><p>The interaction effect is negative and significant, showing that the combined effect of Price and AdvExp on <span class="math inline">\(y\)</span> is not purely additive.</p></li>
+<li class="fragment"><p><strong>Takeaway</strong>: Adjustments to Price or AdvExp should consider their interaction, as increasing both may not yield linear increases in <span class="math inline">\(y.\)</span></p></li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="log-transformation" class="title-slide slide level1 center">
+<h1>Log Transformation</h1>
+
+</section>
+<section id="original-data" class="slide level2 center">
+<h2>Original Data</h2>
+
+<img data-src="16_chapter_model_building_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="log-transformation-1" class="slide level2 center">
+<h2>Log Transformation</h2>
+
+<img data-src="16_chapter_model_building_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="possibile-logarithmic-transformations" class="slide level2 center">
+<h2>Possibile Logarithmic Transformations</h2>
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 34%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><strong>X</strong></th>
+<th style="text-align: center;"><strong>logX</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><br><strong>Y</strong><br></td>
+<td style="text-align: center;"><br><strong>linear</strong><br><span class="math inline">\(\hat{Y}_i = \alpha + \beta X_i\)</span><br></td>
+<td style="text-align: center;"><br><strong>linear-log</strong><br><span class="math inline">\(\hat{Y}_i = \alpha + \beta \log X_i\)</span><br></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><br><strong>logY</strong><br></td>
+<td style="text-align: center;"><br><strong>log-linear</strong><br><span class="math inline">\(\log \hat{Y}_i = \alpha + \beta X_i\)</span><br></td>
+<td style="text-align: center;"><br><strong>log-log</strong><br><span class="math inline">\(\log \hat{Y}_i = \alpha + \beta \log X_i\)</span><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><br></p>
+<div style="font-size: 60%;">
+<p>Source: <a href="https://kenbenoit.net/assets/courses/ME104/logmodels2.pdf">Linear Regression Models with Logarithmic Transformations</a></p>
+</div>
+</section>
+<section id="what-changes-after-the-transformation" class="slide level2 center">
+<h2>What Changes After the Transformation</h2>
+<ul>
+<li class="fragment"><p>You should be cautious when interpreting and reporting the findings of the model.</p></li>
+<li class="fragment"><p>The interpretation varies based on the variable that was transformed (dependent variable, independent variable, or both).</p></li>
+<li class="fragment"><p>As a general rule, you should always keep in mind the logic:</p></li>
+</ul>
+<div class="fragment">
+<blockquote>
+<p><em>“What does a one-unit change in this transformed variable mean in terms of the original variable?”</em></p>
+</blockquote>
+<center>
+<a href="https://theeffectbook.net/ch-StatisticalAdjustment.html#getting-fancier-with-regression">The Effect Book</a>
+</center>
+</div>
+<!---
+
+## Linear-Log Transformation
+
+<br>
+
+
+
+::: {.cell layout-align="center"}
+::: {.cell-output-display}
+![](figs/linear_log.jpg){fig-align='center' width=60%}
+:::
+:::
+
+
+
+- A 1% change in $X_i$ results in $\beta_i/100$ change in $Y_i$.
+
+<br>
+
+<br>
+
+## Log-Linear Transformation
+
+<br>
+
+
+
+::: {.cell layout-align="center"}
+::: {.cell-output-display}
+![](figs/log_linear.jpg){fig-align='center' width=60%}
+:::
+:::
+
+
+
+- A one-unit change in $X_i$ results in a $\beta_i\%$ change in $Y_i$.
+
+<br>
+
+<br>
+
+## Log-Log Transformation
+
+<br>
+
+
+
+::: {.cell layout-align="center"}
+::: {.cell-output-display}
+![](figs/log_log.jpg){fig-align='center' width=80%}
+:::
+:::
+
+
+
+- A 1% change in $X_i$ results in a $\beta_i\%$ change in $Y_i$.
+
+<br>
+
+<br>
+--->
+</section>
+<section id="log-transformation-summary" class="slide level2 center">
+<h2>Log Transformation Summary</h2>
+<p><br></p>
+<div style="font-size: 80%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 25%">
+<col style="width: 23%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Model</strong></th>
+<th><strong>Model Equation</strong></th>
+<th><strong>Interpretation of <span class="math inline">\(\beta_1\)</span></strong></th>
+<th><strong>Interpretation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Level-level</td>
+<td><span class="math inline">\(y = \beta_0 + \beta_1 x + \epsilon\)</span></td>
+<td><span class="math inline">\(\Delta y = \beta_1 \Delta x\)</span></td>
+<td>A one-unit change in <span class="math inline">\(x\)</span> results in a <span class="math inline">\(\beta_1\)</span> unit change in <span class="math inline">\(y\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 25%">
+<col style="width: 23%">
+<col style="width: 38%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Level-log</td>
+<td><span class="math inline">\(y = \beta_0 + \beta_1 \log(x) + \epsilon\)</span></td>
+<td><span class="math inline">\(\Delta y = (\beta_1 / 100) \% \Delta x\)</span></td>
+<td>A 1% change in <span class="math inline">\(x\)</span> results in a <span class="math inline">\(\beta_1/100\)</span> unit change in <span class="math inline">\(y\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 25%">
+<col style="width: 23%">
+<col style="width: 38%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Log-level</td>
+<td><span class="math inline">\(\log(y) = \beta_0 + \beta_1 x + \epsilon\)</span></td>
+<td><span class="math inline">\(\%\Delta y = (100\beta_1) \Delta x\)</span></td>
+<td>A one-unit change in <span class="math inline">\(x\)</span> results in a <span class="math inline">\(\beta_1\%\)</span> change in <span class="math inline">\(y\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 25%">
+<col style="width: 23%">
+<col style="width: 38%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Log-log</td>
+<td><span class="math inline">\(\log(y) = \beta_0 + \beta_1 \log(x) + \epsilon\)</span></td>
+<td><span class="math inline">\(\%\Delta y = \beta_1 \% \Delta x\)</span></td>
+<td>A 1% change in <span class="math inline">\(x\)</span> results in a <span class="math inline">\(\beta_1\%\)</span> change in <span class="math inline">\(y\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="example-log-transformation" class="slide level2 center">
+<h2>Example: Log Transformation</h2>
+<div style="font-size: 70%;">
+<p>Predict Miles-Per-Gallon (MPG) according to the automobile Weight (in pounds):</p>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="fragment">
+<p><span class="math display">\[
+\text{MPG} = 56.0957 - 0.0116 \times \text{Weight}
+\]</span></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/level_level_example.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li class="fragment"><p>The pattern does not look like the the horizontal band we should expect to find if the assumptions about the error term are valid.</p></li>
+<li class="fragment"><p>Variability in the residuals appears to increase as the value of <span class="math inline">\(\hat{y}\)</span> increases.</p></li>
+</ul>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="fragment">
+<p><span class="math display">\[
+\text{LnMPG} = 4.5242 - 0.0005 \times \text{Weight}
+\]</span></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/log_level_example.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li class="fragment"><p>The wedge-shpaed pattern disappeared.</p></li>
+<li class="fragment"><p>The model with the logarithm of miles per gallon as the dependent variable provides an excellent fit to the oberved data.</p></li>
+</ul>
+</div>
+</div></div>
+</div>
+</section></section>
+<section>
+<section id="nonlinear-models-that-are-intrinsically-linear" class="title-slide slide level1 center">
+<h1>Nonlinear Models That Are Intrinsically Linear</h1>
+
+</section>
+<section id="nonlinear-models-that-are-intrinsically-linear-1" class="slide level2 center">
+<h2>Nonlinear Models That Are Intrinsically Linear</h2>
+<p>Models in which the parameters <span class="math inline">\(\beta_0, \beta_1, \ldots, \beta_p\)</span> have exponents other than one are called nonlinear models.</p>
+<p>However, for the case of the exponential model, we can perform a transformation of variables that will enable us to perform regression analysis using the general linear model.</p>
+<p>The exponential model involves the following regression equation:</p>
+<p><span class="math display">\[
+E(y) = \beta_0 \beta_1^x
+\]</span></p>
+<p>This model is appropriate when the dependent variable <span class="math inline">\(y\)</span> increases or decreases by a constant percentage, instead of by a fixed amount, as <span class="math inline">\(x\)</span> increases.</p>
+</section>
+<section id="example-of-exponential-model" class="slide level2 center">
+<h2>Example of Exponential Model</h2>
+<p>Suppose sales for a product <span class="math inline">\(y\)</span> are related to advertising expenditure <span class="math inline">\(x\)</span> (in $1000s) according to the following regression equation:</p>
+<p><span class="math display">\[
+E(y) = 500(1.2)^x
+\]</span> Thus, - for <span class="math inline">\(x = 1\)</span>, <span class="math inline">\(E(y) = 500(1.2)^1 = 600\)</span> - for <span class="math inline">\(x = 2\)</span>, <span class="math inline">\(E(y) = 500(1.2)^2 = 720\)</span> - for <span class="math inline">\(x = 3\)</span>, <span class="math inline">\(E(y) = 500(1.2)^3 = 864\)</span></p>
+<p>Note that <span class="math inline">\(E(y)\)</span> is not increasing by a constant amount in this case, but by a constant percentage. The percentage increase is 20%.</p>
+</section>
+<section id="logarithmic-transformation-of-the-model" class="slide level2 center">
+<h2>Logarithmic Transformation of the Model</h2>
+<p>We can transform this nonlinear model to a linear model by taking the natural logarithm of both sides of the equation:</p>
+<p><span class="math display">\[
+\ln E(y) = \ln \beta_0 + x \ln \beta_1
+\]</span></p>
+</section>
+<section id="linearized-model" class="slide level2 center">
+<h2>Linearized Model</h2>
+<p>Now, if we let <span class="math inline">\(y' = \ln E(y)\)</span>, <span class="math inline">\(\beta'_0 = \ln \beta_0\)</span>, and <span class="math inline">\(\beta'_1 = \ln \beta_1\)</span>, we can rewrite the equation as:</p>
+<p><span class="math display">\[
+y' = \beta'_0 + \beta'_1 x
+\]</span></p>
+<p>The formulas for simple linear regression can now be used to develop estimates of <span class="math inline">\(\beta'_0\)</span> and <span class="math inline">\(\beta'_1\)</span>. Denoting the estimates as <span class="math inline">\(b'_0\)</span> and <span class="math inline">\(b'_1\)</span>, leads to the following estimated regression equation:</p>
+<p><span class="math display">\[
+\hat{y'} = b'_0 + b'_1 x
+\]</span></p>
+<p>To obtain predictions of the original dependent variable <span class="math inline">\(y\)</span> given a value of <span class="math inline">\(x\)</span>, we would first substitute the value of <span class="math inline">\(x\)</span> into the equation above to compute <span class="math inline">\(\hat{y'}\)</span>, and then raise <span class="math inline">\(e\)</span> to the power of <span class="math inline">\(\hat{y'}\)</span> to obtain the prediction of <span class="math inline">\(y\)</span>, or the expected value of <span class="math inline">\(y\)</span>, in its original units.</p>
+</section>
+<section id="linearized-model---example-prediction" class="slide level2 center">
+<h2>Linearized Model - Example Prediction</h2>
+<div>
+<p>Given the estimates:</p>
+<ul>
+<li><p><span class="math inline">\(b'_0 = 3.5\)</span></p></li>
+<li><p><span class="math inline">\(b'_1 = 0.2\)</span></p></li>
+</ul>
+<p>Let’s predict <span class="math inline">\(y\)</span> when the advertising expenditure <span class="math inline">\(x = 5\)</span> (in $1000s).</p>
+<p>Using the linearized equation we calculate <span class="math inline">\(y'\)</span>:</p>
+<p><span class="math display">\[
+y' = b'_0 + b'_1 \cdot x = 3.5 + 0.2 \cdot 5 = 4.5
+\]</span></p>
+<p>Now, exponentiate <span class="math inline">\(y'\)</span> to get the predicted <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[
+y = e^{4.5} \approx 90.02
+\]</span></p>
+<p>Thus, the predicted sales <span class="math inline">\(y\)</span> when the advertising expenditure is 5 (in $1000s) is approximately 90 units (in $1000s).</p>
+</div>
+</section></section>
+<section>
+<section id="other-transformations-to-consider" class="title-slide slide level1 center">
+<h1>Other Transformations to Consider</h1>
+
+</section>
+<section id="other-transformations-to-consider-1" class="slide level2 center">
+<h2>Other Transformations to Consider</h2>
+<ul>
+<li class="fragment"><strong>Square-root</strong>: <span class="math inline">\(\sqrt{x}\)</span><br>
+</li>
+<li class="fragment"><strong>Logarithmic</strong>: <span class="math inline">\(\log_{10}(x), \log_{10}(y), \ln(x)\)</span>, etc.<br>
+</li>
+<li class="fragment"><strong>Reciprocal</strong>: <span class="math inline">\(1/y, 1/x\)</span><br>
+</li>
+<li class="fragment"><strong>Exponential</strong>: <span class="math inline">\(e^x, e^y\)</span><br>
+</li>
+<li class="fragment"><strong>Square</strong>: <span class="math inline">\(x^2, y^2\)</span><br>
+</li>
+<li class="fragment"><strong>Power</strong>: <span class="math inline">\(x^k, y^k\)</span></li>
+</ul>
+</section>
+<section id="square-root-transformation" class="slide level2 center">
+<h2>Square-Root Transformation</h2>
+<p>Add or use <span class="math inline">\(\sqrt{x}\)</span> term or <span class="math inline">\((x^{0.5})\)</span></p>
+
+<img data-src="figs/transformation_sqrt.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="logarithmic-transformation" class="slide level2 center">
+<h2>Logarithmic Transformation</h2>
+<p>Add or use <span class="math inline">\((\ln(x) \text{ or } \log(x))\)</span> term.</p>
+
+<img data-src="figs/transformation_log.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="reciprocal-transformation" class="slide level2 center">
+<h2>Reciprocal Transformation</h2>
+<p>Add or use <span class="math inline">\(1/x\)</span> term.</p>
+
+<img data-src="figs/transformation_reciprocal.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="exponential-transformation" class="slide level2 center">
+<h2>Exponential Transformation</h2>
+<p>Change <span class="math inline">\(y\)</span> to <span class="math inline">\(\ln(y)\)</span> as the new response variable.</p>
+
+<img data-src="figs/transformation_exponential.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="power-transformations" class="slide level2 center">
+<h2>Power Transformations</h2>
+<p>Add <span class="math inline">\(x^2\)</span> or <span class="math inline">\(x^k\)</span> term.</p>
+
+<!---
+## Transformations Example: Direct Marketer 
+
+- A direct marketer of electronic products, who advertises entirely by mailing catalogs, wants to examine the effect of its catalog mailings on sales **(AmountSpent)**.
+
+- A sample of 1000 customers. Partial data:
+
+| Customer | AmountSpent | Income  | Children | Catalogs |
+|----------|-------------|---------|----------|----------|
+| 1        | $218        | $16,400 | 1        | 12       |
+| 2        | $2,632      | $108,100| 3        | 18       |
+| 3        | $3,048      | $97,300 | 1        | 12       |
+| 4        | $435        | $26,800 | 0        | 12       |
+| 5        | $106        | $11,200 | 0        | 6        |
+
+**Note**: Data from Customers 6 – 1000 are not shown. `Direct Marketer.xls`
+
+## Transformations Example: Direct Marketer 
+
+::: {style="font-size: 80%;"}
+
+$$\text{AmountSpent} = \beta_0 + \beta_1 \text{Income} + \beta_2 \text{Children} + \beta_3 \text{Catalogs} + \epsilon$$
+
+**Regression Output**
+
+$S = 562.5$  
+$R-Sq = 65.8\%$  
+$R-Sq(\text{adj}) = 65.7\%$  
+
+| Source    | DF | SS         | MS     |  F     |  P    |
+|-----------|----|------------|--------|--------|-------|
+| Regression|  3 | 607562347  | 202520782 | 639.99 | 0.000 |
+| Residual  | 996| 315179849  | 316446 |        |       |
+| Total     | 999| 922742196  |        |        |       |
+
+| Predictor | Coef   | SE Coef |  T   |  P    |
+|-----------|--------|---------|------|-------|
+| Constant  | -442.77| 53.72   | -8.24| 0.000 |
+| Income    | 0.0204 | 0.0006  | 34.42| 0.000 |
+| Children  | -198.69| 17.09   | -11.63| 0.000 |
+| Catalogs  | 47.695 | 2.755   | 17.31| 0.000 |
+
+**Regression Equation:**
+
+$$\text{AmountSpent} = - 443 + 0.0204 \text{Income} - 199 \text{Children} + 47.7 \text{Catalogs}$$
+
+:::
+
+## Normal Probability Plot of Residuals
+
+$$\text{AmountSpent} = \beta_0 + \beta_1 \text{Income} + \beta_2 \text{Children} + \beta_3 \text{Catalogs} + \epsilon$$
+
+- This plot shows the normal probability plot of residuals for the response variable **AmountSpent**.
+
+## Residuals vs Fitted Values
+
+$$\text{AmountSpent} = \beta_0 + \beta_1 \text{Income} + \beta_2 \text{Children} + \beta_3 \text{Catalogs} + \epsilon$$
+
+- This plot shows the residuals versus the fitted values for the response variable **AmountSpent**.
+
+## Log(AmtSpt) vs. Income
+
+- Scatterplot of $\log(\text{AmtSpt})$ vs Income.
+
+## Log(AmtSpt) vs Log(Income)
+
+- Scatterplot of $\log(\text{AmtSpt})$ vs $\log(\text{Income})$.
+
+## Variable Transformations
+
+$$\text{AmountSpent} = \beta_0 + \beta_1 \text{Income} + \beta_2 \text{Children} + \beta_3 \text{Catalogs} + \epsilon$$
+
+- Transforming the variables:
+
+$$\ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \text{Children} + \alpha_3 \text{Catalogs} + \epsilon'$$
+
+## Regression Outputs 
+
+$$\ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \text{Children} + \alpha_3 \text{Catalogs} + \epsilon'$$
+
+| Summary            | Value     |
+|--------------------|-----------|
+| Multiple R         | 0.8837    |
+| R-Square           | 0.7810    |
+| Adjusted R-Square  | 0.7804    |
+| StErr of Estimate  | 0.41031   |
+
+**ANOVA Table**
+
+| Source       | DF | Sum of Squares | Mean of Squares | F-Ratio  | p-Value |
+|--------------|----|----------------|----------------|----------|---------|
+| Explained    | 3  | 598.02812      | 199.34271      | 1184.0707| < 0.0001|
+| Unexplained  | 996| 167.68030      | 0.16835        |          |         |
+
+**Regression Table**
+
+| Predictor   | Coefficient | Standard Error | t-Value   | p-Value | Lower Limit | Upper Limit |
+|-------------|-------------|----------------|-----------|---------|-------------|-------------|
+| Constant    | -3.8302     | 0.2151         | -17.8106  | < 0.0001| -4.2522     | -3.4082     |
+| Children    | -0.2290     | 0.0124         | -18.3981  | < 0.0001| -0.2534     | -0.2045     |
+| Catalogs    | 0.0432      | 0.0020         | 21.4559   | < 0.0001| 0.0393      | 0.0472      |
+| log(Income) | 0.9470      | 0.0203         | 46.5613   | < 0.0001| 0.9071      | 0.9869      |
+
+
+
+## Residuals vs Fitted Values
+
+XXX include image XXXX
+
+**Formula:** 
+
+$$
+\ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \text{Children} + \alpha_3 \text{Catalogs} + \epsilon'
+$$
+
+## Normal Probability Plot of Residuals 
+
+XXX include image XXXX
+
+**Formula:**
+
+$$
+\ln(\text{AmountSpent}) = \alpha_0 + \alpha_1 \ln(\text{Income}) + \alpha_2 \text{Children} + \alpha_3 \text{Catalogs} + \epsilon'
+$$
+
+## Multicollinearity Issue
+
+- The term **multicollinearity** refers to the correlation among the independent variables.
+    - When some independent variables are highly correlated (say, $|r| > 0.7$), it is not possible to determine the separate/marginal effect ($\beta_i$) of the independent variables on the dependent variable.
+- It is important to compute pairwise correlations in a multiple regression analysis.
+    - Every attempt should be made to avoid including independent variables that are highly correlated.
+- If the estimated regression equation is to be used only for predictive purposes, multicollinearity is usually not a serious problem.
+
+## Effects of Multicollinearity
+
+- The coefficients do not measure marginal effects of the predictors (rather **combined** effects may be measured).
+- Coefficient estimates ($b_i$’s) are **unstable** (having “inflated” standard errors) – By how much, see Variance Inflation Factor (VIF).
+    - **Nonsignificant** test results for important predictor variables.
+    - Estimated regression coefficients with an algebraic sign that is the **opposite** of what is expected from theoretical considerations or from correlations.
+    - **Large changes** in the estimated regression coefficients when a predictor variable is added or deleted.
+    - **Wide confidence intervals** for the regression coefficients representing important predictor variables.
+
+## Multicollinearity: An Example
+
+The file contains data on **beef consumption** in the United States from 1971 to 1993.
+
+- **Consumption**: Quantity consumed in billions of pounds (Y)
+- **Price**: In dollars per hundred pounds
+- **Income**: Per capita income in dollars
+- **Pop**: U.S. population in millions
+- **GNP**: In billions of dollars
+
+The objective is to study which predictor variable(s) will significantly determine the consumption of beef in the country, if at all.
+
+## Data (Beef Consumption.MPJ)
+
+XXX include image XXXX
+
+## Correlations
+
+| Consumption | Price | Income | Pop | GNP |
+|-------------|-------|--------|-----|-----|
+|      1      | -0.6814 |  0.8011  | 0.8573 | 0.8512 |
+|             |    1  | -0.2377 | -0.3378 | -0.3070 |
+|             |       |    1   | 0.9654 | 0.9831 |
+|             |       |        |    1   | 0.9933 |
+|             |       |        |        |    1   |
+
+### Note: 
+Data -> Data Analysis -> Correlation ->
+
+## Consumption vs Price, Income, Pop, GNP
+
+- **Analysis of Variance**
+
+| Source   | DF | Adj SS  | Adj MS  | F-Value | P-Value |
+|----------|----|---------|---------|---------|---------|
+| Regression | 4  | 488.749 | 122.187 | 54.28   | 0.000   |
+| Price     | 1  | 85.086  | 85.086  | 37.80   | 0.000   |
+| Income    | 1  | 1.701   | 1.701   | 0.76    | 0.396   |
+| Pop       | 1  | 1.550   | 1.550   | 0.69    | 0.417   |
+| GNP       | 1  | 6.654   | 6.654   | 2.96    | 0.103   |
+| Error     | 18 | 40.521  | 2.251   |         |         |
+| Total     | 22 | 529.271 |         |         |         |
+
+- **Model Summary**
+$$
+R^2 = 92.34\% \quad R^2_{\text{adj}} = 90.64\% \quad R^2_{\text{pred}} = 88.77\%
+$$
+--->
+<img data-src="figs/transformation_power.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section></section>
+<section>
+<section id="when-to-add-or-delete-variables" class="title-slide slide level1 center">
+<h1>When to Add or Delete Variables</h1>
+
+</section>
+<section id="strategies-for-adding-or-removing-variables" class="slide level2 center">
+<h2>Strategies for Adding or Removing Variables</h2>
+<div style="font-size: 70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 14%">
+<col style="width: 24%">
+<col style="width: 30%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>#</strong></th>
+<th><strong>Strategy</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Add Variables</strong></th>
+<th><strong>Remove Variables</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>P-Value</strong></td>
+<td>Based on statistical significance</td>
+<td>If p-value &lt; 0.05</td>
+<td>If p-value &gt; 0.05</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 14%">
+<col style="width: 24%">
+<col style="width: 30%">
+<col style="width: 27%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>2</td>
+<td><strong>Adjusted R-Squared</strong></td>
+<td>Checks if model fit improves</td>
+<td>If adjusted <span class="math inline">\(R^2\)</span> increases</td>
+<td>If adjusted <span class="math inline">\(R^2\)</span> decreases</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 14%">
+<col style="width: 24%">
+<col style="width: 30%">
+<col style="width: 27%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>3</td>
+<td><strong>F-Test</strong></td>
+<td>Compares models with and without added variables</td>
+<td>If F-test indicates significant improvement</td>
+<td>If F-test shows no significant improvement</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 14%">
+<col style="width: 24%">
+<col style="width: 30%">
+<col style="width: 27%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>4</td>
+<td><strong>AIC / BIC</strong></td>
+<td>Balances model fit and complexity</td>
+<td>If AIC / BIC decreases</td>
+<td>If AIC / BIC increases</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 14%">
+<col style="width: 24%">
+<col style="width: 30%">
+<col style="width: 27%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>5</td>
+<td><strong>Stepwise Regression</strong></td>
+<td>Automated selection procedure based on statistical contribution</td>
+<td>Add variables with high statistical contribution</td>
+<td>Remove variables with low contribution</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 14%">
+<col style="width: 24%">
+<col style="width: 30%">
+<col style="width: 27%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>6</td>
+<td><strong>Multicollinearity (VIF)</strong></td>
+<td>Detects multicollinearity between independent variables</td>
+<td>Use the full model</td>
+<td>If VIF &gt; 10</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 14%">
+<col style="width: 24%">
+<col style="width: 30%">
+<col style="width: 27%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>7</td>
+<td><strong>Cross-Validation</strong></td>
+<td>Assesses model performance across different data subsets</td>
+<td>If cross-validation performance improves</td>
+<td>If cross-validation performance worsens</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 14%">
+<col style="width: 24%">
+<col style="width: 30%">
+<col style="width: 27%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>8</td>
+<td><strong>Theoretical Justification</strong></td>
+<td>Adds or removes variables based on theory, domain knowledge, or experience</td>
+<td>Add based on theory or domain knowledge</td>
+<td>Remove variables that are irrelevant, regardless of statistical significance</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="adding-variables-in-regression-models" class="slide level2 center">
+<h2>Adding Variables in Regression Models</h2>
+<p>We can use an F-test to determine whether it is advantageous to add one or more independent variables to a multiple regression model.</p>
+<p>This is based on determining the reduction in the error sum of squares (SSE) resulting from adding variables.</p>
+<p>The null and alternative hypotheses are defined as:</p>
+<p><span class="math display">\[
+H_0: \beta_{q+1} = \beta_{q+2} = \cdots = \beta_p = 0
+\]</span></p>
+<p><span class="math display">\[
+H_a: \text{One or more of the parameters is not equal to zero}
+\]</span></p>
+<p>where <span class="math inline">\(q\)</span> is the number of independent variables in the first model.</p>
+</section>
+<section id="adding-variables-in-regression-models-1" class="slide level2 center">
+<h2>Adding Variables in Regression Models</h2>
+<p>Let’s illustrate this using the Butler Trucking example.</p>
+<p>The regression equation with miles traveled <span class="math inline">\(x_1\)</span> as the only independent variable is:</p>
+<p><span class="math display">\[
+\hat{y} = 1.2739 + 0.0678x_1
+\]</span></p>
+<p>The error sum of squares for this model is:</p>
+<p><span class="math display">\[
+SSE(x_1) = 8.0287
+\]</span></p>
+</section>
+<section id="adding-variables-in-regression-models-2" class="slide level2 center">
+<h2>Adding Variables in Regression Models</h2>
+<p>When the number of deliveries <span class="math inline">\(x_2\)</span> is added, the regression equation becomes:</p>
+<p><span class="math display">\[
+\hat{y} = -0.8687 + 0.0611x_1 + 0.9234x_2
+\]</span></p>
+<p>The error sum of squares for this model is:</p>
+<p><span class="math display">\[
+SSE(x_1, x_2) = 2.2994
+\]</span></p>
+</section>
+<section id="adding-variables-in-regression-models-3" class="slide level2 center">
+<h2>Adding Variables in Regression Models</h2>
+<p>The reduction in SSE from adding <span class="math inline">\(x_2\)</span> to the model is:</p>
+<p><span class="math display">\[
+SSE(x_1) - SSE(x_1, x_2) = 8.0287 - 2.2994 = 5.7293
+\]</span></p>
+<p>We can conduct a F-test to determine if this reduction is significant:</p>
+<p><span class="math display">\[
+F = \frac{\frac{SSE(x_1) - SSE(x_1, x_2)}{1}}{\frac{SSE(x_1, x_2)}{n - p - 1}}
+\]</span></p>
+</section>
+<section id="adding-variables-in-regression-models-4" class="slide level2 center">
+<h2>Adding Variables in Regression Models</h2>
+<div style="font-size: 80%;">
+<p>Substituting the values:</p>
+<p><span class="math display">\[
+F = \frac{5.7293}{1} \Big/ \frac{2.2994}{7} = 17.44
+\]</span> Where,</p>
+<ul>
+<li class="fragment"><span class="math inline">\(n = 10\)</span></li>
+<li class="fragment"><span class="math inline">\(p = 2\)</span></li>
+</ul>
+<p><strong>Conclusion from F-Test</strong></p>
+<p>Using Excel, we obtain a <span class="math inline">\(p\)</span>-value of <span class="math inline">\(0.0042\)</span> for the calculated F-statistic. Since the <span class="math inline">\(p\)</span>-value is less than the significance level <span class="math inline">\(\alpha = 0.05\)</span>, we reject the null hypothesis. Thus, adding <span class="math inline">\(x_2\)</span> results in a significant reduction in SSE.</p>
+<p>The t-test and F-test are equivalent when only one independent variable is being added, and we can use either to assess significance.</p>
+</div>
+</section></section>
+<section>
+<section id="variable-selection" class="title-slide slide level1 center">
+<h1>Variable Selection</h1>
+
+</section>
+<section id="variable-selection-procedures" class="slide level2 center">
+<h2>Variable Selection Procedures</h2>
+<p>Given a data set with several possible independent variables, variable selection procedures provide a systematic approach to selecting a subset of the independent variables that provide the best model.</p>
+<ol type="1">
+<li class="fragment"><strong>Stepwise regression</strong></li>
+<li class="fragment"><strong>Forward selection</strong></li>
+<li class="fragment"><strong>Backward elimination</strong></li>
+<li class="fragment"><strong>Best-subsets regression</strong>.</li>
+</ol>
+<p>The first three procedures are iterative; at each step, a single independent variable is added or deleted, and the new model is evaluated. The process continues until a stopping criterion indicates that the procedure cannot find a better model.</p>
+<p>The best-subsets procedure is not a one-variable-at-a-time procedure; it evaluates regression models involving different subsets of the independent variables.</p>
+</section>
+<section id="hypothesis-testing-for-variable-selection" class="slide level2 center">
+<h2>Hypothesis Testing for Variable Selection</h2>
+<p>In the stepwise regression, forward selection, and backward elimination procedures, the criterion for selecting an independent variable to add or delete from the model at each step is based on the F-statistic.</p>
+<p>Suppose we are considering adding <span class="math inline">\(x_2\)</span> to a model involving <span class="math inline">\(x_1\)</span> or deleting <span class="math inline">\(x_2\)</span> from a model involving <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>. To test whether the addition or deletion of <span class="math inline">\(x_2\)</span> is statistically significant, the null and alternative hypotheses can be stated as follows:</p>
+<p><span class="math display">\[
+H_0: \beta_2 = 0
+\]</span></p>
+<p><span class="math display">\[
+H_a: \beta_2 \neq 0
+\]</span></p>
+</section>
+<section id="f-test-for-variable-selection" class="slide level2 center">
+<h2>F-Test for Variable Selection</h2>
+<p>We saw that:</p>
+<p><span class="math display">\[
+F = \\frac{{SSE(x_1) - SSE(x_1, x_2)}}{1} \\div \\frac{{SSE(x_1, x_2)}}{n - p - 1}
+\]</span></p>
+<p>can be used as a criterion for determining whether the presence of <span class="math inline">\(x_2\)</span> in the model causes a significant reduction in the error sum of squares.</p>
+<p>The p-value corresponding to this F-statistic is used to determine whether an independent variable should be added or deleted from the regression model. The usual rejection rule applies: Reject <span class="math inline">\(H_0\)</span> if p-value <span class="math inline">\(\leq \alpha\)</span>.</p>
+</section>
+<section id="stepwise-regression" class="slide level2 center">
+<h2>Stepwise Regression</h2>
+<p>The stepwise regression procedure begins each step by determining whether any of the variables <strong>already in the model</strong> should be removed.</p>
+<p>It does so by first computing an F-statistic and corresponding p-value for each independent variable in the model.</p>
+<p>Refering to the level of significance <span class="math inline">\(\alpha\)</span> for determining whether an independent variable should be removed from the model as <strong>p Value to Leave</strong>, if the p-value for any independent variable is greater than <strong>p Value to Leave</strong>, the independent variable with the largest p-value is removed, and the stepwise regression procedure begins a new step.</p>
+</section>
+<section id="stepwise-regression-process" class="slide level2 center">
+<h2>Stepwise Regression Process</h2>
+<p>If no independent variable can be removed from the model, the procedure attempts to enter another independent variable into the model.</p>
+<p>It does so by first computing an F-statistic and corresponding p-value for each independent variable that is not in the model.</p>
+<p>Refering to the level of significance <span class="math inline">\(\alpha\)</span> for determining whether an independent variable should be entered into the model as <strong>p Value to Enter</strong>.</p>
+<p>The independent variable with the smallest p-value is entered into the model provided its p-value is less than <strong>p Value to Enter</strong>. The procedure continues in this manner until no independent variables can be deleted from or added to the model.</p>
+</section>
+<section id="stepwise-regression-limitations" class="slide level2 center">
+<h2>Stepwise Regression Limitations</h2>
+<p>Because the one-at-a-time procedures do not consider every possible subset for a given number of independent variables, they will not necessarily select the model with the highest R-Square value.</p>
+<p>In summary, at each step of the stepwise regression procedure, the first consideration is to see whether any independent variable can be removed from the current model. If none of the independent variables can be removed from the model, the procedure checks to see whether any of the independent variables that are not currently in the model can be entered.</p>
+</section>
+<section id="stepwise-regression-considerations" class="slide level2 center">
+<h2>Stepwise Regression Considerations</h2>
+<p>Because of the nature of the stepwise regression procedure, an independent variable can enter the model at one step, be removed at a subsequent step, and then enter the model at a later step.</p>
+<p>The procedure stops when no independent variables can be removed from or entered into the model.</p>
+</section>
+<section id="stepwise-regression-example" class="slide level2 center">
+<h2>Stepwise Regression Example</h2>
+<p>Let’s consider a dataset with the following variables:</p>
+<ul>
+<li class="fragment"><strong>Income</strong>: Household income (in $1000s)</li>
+<li class="fragment"><strong>Age</strong>: Age of the head of the household</li>
+<li class="fragment"><strong>Education</strong>: Years of education</li>
+<li class="fragment"><strong>Spending</strong>: Annual spending on goods (dependent variable)</li>
+</ul>
+<p><strong>Initial Model</strong></p>
+<p>We start by considering an initial model with <strong>Income</strong> as the only predictor of <strong>Spending</strong>.</p>
+<p><span class="math display">\[
+Spending = \beta_0 + \beta_1 \cdot Income + \epsilon
+\]</span></p>
+<p>Using an F-statistic and p-value, we find <strong>Income</strong> is significant, so we keep it in the model.</p>
+</section>
+<section id="stepwise-regression-example-1" class="slide level2 center">
+<h2>Stepwise Regression Example</h2>
+<p>Next, we calculate the p-values for the remaining variables (<strong>Age</strong> and <strong>Education</strong>) and check if any of them can be added to the model.</p>
+<p>After calculating, we find that <strong>Education</strong> has the lowest p-value and is significant, so we add it to the model:</p>
+<p><span class="math display">\[
+Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \epsilon
+\]</span></p>
+</section>
+<section id="stepwise-regression-example-2" class="slide level2 center">
+<h2>Stepwise Regression Example</h2>
+<p>Now, we compute the p-values for both <strong>Income</strong> and <strong>Education</strong>. If either variable has a high p-value (e.g., <span class="math inline">\(p &gt; 0.05\)</span>), we remove it from the model.</p>
+<p>In this case, both <strong>Income</strong> and <strong>Education</strong> remain significant.</p>
+</section>
+<section id="stepwise-regression-example-3" class="slide level2 center">
+<h2>Stepwise Regression Example</h2>
+<p>We continue this process by adding <strong>Age</strong> to the model if it is significant, or removing variables if their significance drops. The process continues until no more variables can be added or removed.</p>
+</section>
+<section id="stepwise-regression-example-4" class="slide level2 center">
+<h2>Stepwise Regression Example</h2>
+<p>After completing the procedure, our final model could look like this:</p>
+<p><span class="math display">\[
+Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \epsilon
+\]</span></p>
+<p>Here, <strong>Income</strong> and <strong>Education</strong> are the only significant predictors of <strong>Spending</strong>.</p>
+</section>
+<section id="summary-of-stepwise-procedure" class="slide level2 center">
+<h2>Summary of Stepwise Procedure</h2>
+<ol type="1">
+<li class="fragment"><strong>Start</strong>: Begin with one variable and calculate p-values.</li>
+<li class="fragment"><strong>Add</strong>: Add the variable with the lowest p-value, provided it’s below the threshold.</li>
+<li class="fragment"><strong>Remove</strong>: Remove variables if their p-values become too high.</li>
+<li class="fragment"><strong>Stop</strong>: Stop when no more variables can be added or removed.</li>
+</ol>
+</section>
+<section id="forward-selection" class="slide level2 center">
+<h2>Forward Selection</h2>
+<p>The forward selection procedure starts with no independent variables. It adds variables one at a time using the same procedure as stepwise regression for determining whether an independent variable should be entered into the model.</p>
+<ul>
+<li class="fragment"><p>However, the forward selection procedure does not permit a variable to be removed from the model once it has been entered.</p></li>
+<li class="fragment"><p>The procedure stops when the p-value for each of the independent variables not in the model is greater than <strong>p Value to Enter</strong>.</p></li>
+</ul>
+</section>
+<section id="forward-selection-limitations" class="slide level2 center">
+<h2>Forward Selection Limitations</h2>
+<ol type="1">
+<li class="fragment"><p><strong>No Removal of Variables</strong>: Once a variable is entered into the model, it cannot be removed, even if later additions make it less significant. This could result in keeping variables that are not optimal for the final model.</p></li>
+<li class="fragment"><p><strong>Ignores Multicollinearity</strong>: Forward selection does not account for multicollinearity between independent variables. High correlations among predictors may lead to unstable coefficients and misleading results.</p></li>
+<li class="fragment"><p><strong>Greedy Approach</strong>: The procedure focuses on adding one variable at a time based on immediate statistical improvement, which might lead to suboptimal global models. It might overlook combinations of variables that would better explain the dependent variable.</p></li>
+<li class="fragment"><p><strong>Model Overfitting</strong>: Forward selection increases the risk of overfitting, especially when the dataset has many variables. This results in a model that fits the training data too closely but performs poorly on new data.</p></li>
+<li class="fragment"><p><strong>Assumes Independence of Variables</strong>: The procedure assumes that variables can be assessed one by one for entry, without considering how combinations of variables interact. This might ignore important interactions between variables that could improve model performance.</p></li>
+</ol>
+</section>
+<section id="backward-elimination" class="slide level2 center">
+<h2>Backward Elimination</h2>
+<p>The backward elimination procedure begins with a model that includes all the independent variables.</p>
+<p>It then deletes one independent variable at a time using the same procedure as stepwise regression. However, the backward elimination procedure does not permit an independent variable to be reentered once it has been removed.</p>
+<p>The procedure stops when none of the independent variables in the model has a p-value greater than <strong>p Value to Leave</strong>.</p>
+</section>
+<section id="backward-elimination-limitations" class="slide level2 center">
+<h2>Backward Elimination Limitations</h2>
+<ol type="1">
+<li class="fragment"><p><strong>No Reentry of Variables</strong>: Once a variable is removed from the model, it cannot be reentered, even if later stages show that it might be significant. This could lead to models that miss important predictors.</p></li>
+<li class="fragment"><p><strong>Ignores Multicollinearity</strong>: Backward elimination does not take into account multicollinearity between variables. High correlations between predictors can result in unreliable coefficient estimates.</p></li>
+<li class="fragment"><p><strong>Overfitting Risk</strong>: By starting with all variables and only eliminating those that don’t meet the p-value threshold, there is a higher risk of overfitting. The model may fit the training data too closely but generalize poorly to new data.</p></li>
+<li class="fragment"><p><strong>Dependent on Initial Model</strong>: The procedure is highly dependent on the initial model, which includes all variables. Poor choices in the initial set of variables can lead to suboptimal models.</p></li>
+<li class="fragment"><p><strong>May Lead to Different Models</strong>: Different elimination paths could lead to different final models, and not all of them may be optimal. Backward elimination might overlook variable interactions and combinations that forward selection would have considered.</p></li>
+</ol>
+</section>
+<section id="best-subsets-regression" class="slide level2 center">
+<h2>Best-Subsets Regression</h2>
+<p>Many statistical software packages have a procedure called best-subsets regression that enables the user to find, given a specified number of independent variables, the best regression equation.</p>
+<p>Typical output from such packages will enable the user to identify:</p>
+<ul>
+<li class="fragment"><p>The two best one-variable estimated regression equations,</p></li>
+<li class="fragment"><p>The two best two-variable regression equations,</p></li>
+<li class="fragment"><p>The two best three-variable regression equations, and so on.</p></li>
+</ul>
+<p>The criterion used in determining which estimated regression equations are best for any number of predictors is usually the value of the adjusted coefficient of determination.</p>
+</section>
+<section id="notes-comments" class="slide level2 center">
+<h2>Notes + Comments</h2>
+<ol type="1">
+<li class="fragment"><strong>Interaction Variables</strong>: Functions of the independent variables can be used to create new independent variables for use with any of the procedures in this section.
+<ul>
+<li class="fragment">For instance, if we wanted <span class="math inline">\(x_1 x_2\)</span> in the model to account for interaction, we would use the data for <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> to create the data for <span class="math inline">\(z = x_1 x_2\)</span>.</li>
+</ul></li>
+<li class="fragment"><strong>Limitations of Procedures</strong>: None of the procedures that add or delete variables one at a time can be guaranteed to identify the best regression model.
+<ul>
+<li class="fragment">However, they are excellent approaches to finding good models—especially when little multicollinearity is present.</li>
+</ul></li>
+<li class="fragment"><strong>Software Implementation</strong>: The stepwise, forward selection, backward elimination, and best-subsets approaches to building a regression model can be implemented in Excel.
+<ul>
+<li class="fragment">However, this would be very inefficient as each approach would potentially require several steps in which various models based on what was learned in the previous step would have to be estimated.</li>
+<li class="fragment">Most statistical software (including <code>R</code>) are capable of implementing each of these algorithms automatically.</li>
+</ul></li>
+</ol>
+<p>XXXXXXXXXXXXXXXXXXXXXX Add Cinelli? XXXXXXXXXXXXXXXXXXXXX</p>
+<!---
+XXXXXXXXXXXXXXXXXx
+
+## Variable Selection
+
+1. **Stepwise Regression**
+
+2. **Forward Selection**
+
+3. **Backward Elimination**
+
+4. **Best-Subsets Regression**
+
+::: {.column-body}
+Iterative; one independent variable at a time is added or deleted based on the F statistic.
+Different subsets of the independent variables are evaluated.
+:::
+
+*Stepwise regression, forward selection, and backward elimination are heuristics and, therefore, offer no guarantee that the best model will be found.*
+
+## Adding or Removing Predictors?
+
+- Adding (removing) any predictor will always increase (decrease) $R^2$.
+
+- **Definition**: A predictor is an ineffective predictor if its $|T-Value| = \frac{|b - 0|}{se(b)} < 1$ (coefficient estimate $b$ is within one standard deviation from 0, i.e., too close to 0), or its two-sided p-value > 0.32 (Empirical rule).
+    - **Adding** an effective predictor will decrease the estimated error variance $S^2$ and hence increase Adj $R^2$. The opposite is true when adding an ineffective predictor.
+    - **Removing** an effective predictor will increase the estimated error variance $S^2$ and hence decrease Adj $R^2$. The opposite is true when removing an ineffective predictor.
+
+## Variable Selection: Backward Elimination
+
+- **All stepwise variable selection methods**: Measure additional variation explained to determine whether to select or eliminate a predictor variable (by a t-test) or a group of predictor variables (by a partial F-test).
+
+- The **Backward Elimination** procedure begins with a model that includes all the independent variables the modeler wants considered (Full Model).
+    - It then attempts to remove one variable at a time by determining whether the least significant variable (one with the smallest absolute T-value or the largest p-value) currently in the model can indeed be removed because its p-value is larger than the user-specified $\alpha$-to-remove value (i.e., insignificant).
+    - Once a variable has been removed from the model it cannot reenter at a subsequent step.
+
+## Step 1: Full Model
+
+
+Regression Analysis: Consumption versus Price, Income, Pop, GNP  
+Model Summary  
+- S: 1.50040  
+- $R^2$: 92.34%  
+- $R^2(adj)$: 90.64%  
+- $R^2(pred)$: 88.77%
+
+**Coefficients**
+| Term     | Coef   | SE Coef | T-Value | P-Value | VIF     |
+|----------|--------|---------|---------|---------|---------|
+| Constant | 122    | 102     | 1.20    | 0.245   |         |
+| Price    | -0.3378| 0.0549  | -6.15   | 0.000   | 1.30    |
+| Income   | -0.00362| 0.00416| -0.87   | 0.396   | 44.66   |
+| Pop      | -0.394 | 0.475   | -0.83   | 0.417   | 106.30  |
+| GNP      | 0.0228 | 0.0133  | 1.72    | 0.103   | 213.27  |
+
+**Pop is insignificant at 10%. Pop is an ineffective predictor.**
+
+## Step 2
+
+Regression Analysis: Consumption versus Price, Income, GNP  
+Model Summary  
+- S: 1.48805  
+- $R^2$: 92.05%  
+- $R^2(adj)$: 90.80%  
+- $R^2(pred)$: 89.34%
+
+**Coefficients**
+| Term     | Coef   | SE Coef | T-Value | P-Value | VIF     |
+|----------|--------|---------|---------|---------|---------|
+| Constant | 40.0   | 22.0    | 1.82    | 0.085   |         |
+| Price    | -0.3318| 0.0540  | -6.14   | 0.000   | 1.28    |
+| Income   | -0.00198| 0.00363| -0.54   | 0.592   | 34.61   |
+| GNP      | 0.01277| 0.00541 | 2.36    | 0.029   | 36.06   |
+
+**Income is insignificant at 10%. Income is ineffective.**
+
+## Step 3
+
+Regression Analysis: Consumption versus Price, GNP  
+Model Summary  
+- S: 1.46166  
+- $R^2$: 91.93%  
+- $R^2(adj)$: 91.12%  
+- $R^2(pred)$: 89.69%
+
+**Coefficients**
+| Term     | Coef    | SE Coef | T-Value | P-Value | VIF     |
+|----------|---------|---------|---------|---------|---------|
+| Constant | 28.13   | 3.36    | 8.37    | 0.000   |         |
+| Price    | -0.3426 | 0.0493  | -6.95   | 0.000   | 1.10    |
+| GNP      | 0.00987 | 0.00093 | 10.62   | 0.000   | 1.10    |
+
+**Regression Equation: Consumption = 28.13 - 0.3426 Price + 0.00987 GNP**
+
+## Summary
+
+XXXX include slide XXXX
+
+## Variable Selection: Forward Selection
+
+- The forward-selection procedure starts with no independent variables.
+- At each step, the predictor (currently not in the model), **if included**, can achieve the largest **reduction** in the estimated error variance ($S^2$ or MSE) or the greatest **improvement** in the Adjusted $R^2$, is the candidate to enter.
+    - If it is significant (p-value < alpha-to-enter), then this predictor enters.
+- Once a predictor has been added, it will stay.
+
+**\*Not discussed.**
+
+## Variable Selection: Stepwise Regression
+
+- At each iteration, the first consideration is to see whether the least significant variable currently in the model can be removed because its partial $F$ value is less than the user-specified or default $p$ Value to Leave.
+- If no variable can be removed, the procedure checks to see whether the most significant variable not in the model can be added because its partial $F$ value is greater than the user-specified or default $p$ Value to Enter.
+- If no variable can be removed and no variable can be added, the procedure stops.
+
+## Variable Selection: Best-Subsets Regression
+
+- The three preceding procedures are one-variable-at-a-time methods offering no guarantee that the best model for a given number of variables will be found.
+- Some software packages include **best-subsets regression** that enables the user to find, given a specified number of independent variables, the best regression model.
+- Some software **output**, such as Minitab, identifies the three best one-variable estimated regression equations, the three best two-variable equation, and so on. (Page 42.)
+
+## Best Subsets Regression
+
+- Select a model that has the highest **adjusted $R$-squared** value.
+    - Recall that Adjusted $R$-squared considers the model complexity (i.e., the number of predictors, $p$), model adequacy (i.e., the $R$-squared value), and sample size ($n$).
+- Can pre-fix the number of predictors (**our discretion**) and then select the best subset model with the highest Adjusted $R$-squared value.
+
+## Remarks
+
+- In the same problem (fix n), among the models with the same number of predictors (fix p), a model with a larger $R^2$ will have a larger $Adj R^2$, and vice versa.
+
+$$
+Adj R^2 = 1 - (1 - R^2)\frac{n - 1}{n - p - 1}
+$$
+
+- Recall: The model with a smaller estimated error variance, $S^2$ or MSE, has a larger $Adj R^2$:
+
+$$
+Adj R^2 = 1 - \frac{S^2}{\frac{SST}{(n-1)}}
+$$
+
+## Best Subsets Regression
+
+Response is Consumption
+
+| Vars | R-Sq | R-Sq (adj) | R-Sq (pred) | Mallows Cp | S    | I | Pn | rc | ioPG | cmoN | SeepPP |
+|------|------|------------|-------------|------------|------|---|----|----|------|------|--------|
+| 1    | 73.5 | 72.2       | 67.3        | 43.3       | 2.5847 | X |    |    |    |      |        |
+| 1    | 72.4 | 71.1       | 66.5        | 45.8       | 2.6352 | X |    |    |    |      |        |
+| 1    | 64.2 | 62.5       | 55.4        | 65.2       | 3.0051 | X |    |    |    |      |        |
+| 2    | 91.9 | 91.1       | 89.7        | 2.0        | 1.4617 | X | X  |    |    |      |        |
+| 2    | 90.8 | 89.9       | 88.2        | 4.6        | 1.5587 | X | X  |    |    |      |        |
+| 3    | 92.1 | 90.8       | 89.3        | 3.7        | 1.4881 | X | X  | X  |    |      |        |
+| 4    | 92.3 | 90.6       | 88.8        | 5.0        | 1.5004 | X | X  | X  | X  |      |        |
+
+- Minitab: `Stat -> Regression -> Regression -> Best Subsets -> .... -> Options: Free predictor(s) in Each Model: Minimum: 1; Maximum: (leave blank); Model of each size to print: 3 -> ....`
+
+## Best-Subsets Regression: Results
+
+a) Overall, {Price, GNP} is the best model.
+b) {Pop} has the highest $Adj R^2$ and $R^2$ among all 1-predictor models.
+c) {Price, GNP} has the highest $Adj R^2$ and $R^2$ among all 2-predictor models.
+d) {Price, Income, GNP} has the highest $Adj R^2$ and $R^2$ among all 3-predictor models.
+e) {Price, Income, GNP} has and always has a higher $R^2$ than {Price, Income}.
+
+**Question:** Is GNP an effective predictor in this model?
+
+
+## Questions
+
+- In the presence of Pop, is Price an effective predictor? Yes, but why?
+
+- Which predictor has the highest absolute correlation with the Consumption? Pop, but why?
+
+## Comparisons
+
+| Method     | Variables included | Adj R-squared |
+|------------|--------------------|---------------|
+| Forward    | Price, Pop         | 89.90%       |
+| Backward   | Price, GNP         | 91.12%       |
+| Stepwise   | Price, Pop         | 89.90%       |
+| Best-subsets | Price, GNP        | 91.12%       |
+
+- Alpha-to-enter = 0.10, Alpha-to-remove = 0.10.
+--->
+</section>
+<section id="interaction-effect-an-example" class="slide level2 center">
+<h2>Interaction Effect: An Example</h2>
+<p>A company is currently using two advertising media (magazines and newspapers) to advertise its product and plans to increase its current advertising expenditure by $50,000.</p>
+<p>The company likes to determine: - Which of the two advertising media can be expected to give a better return for the extra money spent (i.e., “bigger bang for the buck”)? - What is the expected return from this additional $50,000?</p>
+</section>
+<section id="advertising-effectiveness" class="slide level2 center">
+<h2>Advertising Effectiveness</h2>
+<p><strong>Exposure:</strong> Effective exposure index (The higher, the better.)<br>
+<strong>Type:</strong> Type of advertising media<br>
+<strong>Expenditure:</strong> Advertising expenditure ($1000)</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Exposure</th>
+<th>Expenditure</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>965</td>
+<td>600</td>
+<td>Magazine</td>
+</tr>
+<tr class="even">
+<td>340</td>
+<td>260</td>
+<td>Magazine</td>
+</tr>
+<tr class="odd">
+<td>155</td>
+<td>160</td>
+<td>Magazine</td>
+</tr>
+<tr class="even">
+<td>120</td>
+<td>130</td>
+<td>Magazine</td>
+</tr>
+<tr class="odd">
+<td>145</td>
+<td>155</td>
+<td>Magazine</td>
+</tr>
+<tr class="even">
+<td>35</td>
+<td>100</td>
+<td>Magazine</td>
+</tr>
+<tr class="odd">
+<td>620</td>
+<td>530</td>
+<td>Newspaper</td>
+</tr>
+<tr class="even">
+<td>700</td>
+<td>585</td>
+<td>Newspaper</td>
+</tr>
+<tr class="odd">
+<td>485</td>
+<td>395</td>
+<td>Newspaper</td>
+</tr>
+<tr class="even">
+<td>350</td>
+<td>275</td>
+<td>Newspaper</td>
+</tr>
+<tr class="odd">
+<td>595</td>
+<td>420</td>
+<td>Newspaper</td>
+</tr>
+<tr class="even">
+<td>310</td>
+<td>200</td>
+<td>Newspaper</td>
+</tr>
+<tr class="odd">
+<td>190</td>
+<td>150</td>
+<td>Newspaper</td>
+</tr>
+</tbody>
+</table>
+<p>The company wants to increase the current advertising expenditure by $50,000, which advertising method should it use?</p>
+</section>
+<section id="exposure-vs.-expenditure-by-type" class="slide level2 center">
+<h2>Exposure vs.&nbsp;Expenditure (by Type)</h2>
+<p>XXX include figure XXXX</p>
+<ul>
+<li class="fragment">Blue: Magazine</li>
+<li class="fragment">Red: Newspaper</li>
+</ul>
+</section>
+<section id="dummy-variables-and-interaction" class="slide level2 center">
+<h2>Dummy Variables and Interaction</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 14%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Exposure</th>
+<th>Expenditure</th>
+<th>Type</th>
+<th>Magazine</th>
+<th>Newspaper</th>
+<th>Expenditure*Magazine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>965</td>
+<td>600</td>
+<td>Magazine</td>
+<td>1</td>
+<td>0</td>
+<td>600</td>
+</tr>
+<tr class="even">
+<td>340</td>
+<td>260</td>
+<td>Magazine</td>
+<td>1</td>
+<td>0</td>
+<td>260</td>
+</tr>
+<tr class="odd">
+<td>155</td>
+<td>160</td>
+<td>Magazine</td>
+<td>1</td>
+<td>0</td>
+<td>160</td>
+</tr>
+<tr class="even">
+<td>120</td>
+<td>130</td>
+<td>Magazine</td>
+<td>1</td>
+<td>0</td>
+<td>130</td>
+</tr>
+<tr class="odd">
+<td>145</td>
+<td>155</td>
+<td>Magazine</td>
+<td>1</td>
+<td>0</td>
+<td>155</td>
+</tr>
+<tr class="even">
+<td>35</td>
+<td>100</td>
+<td>Magazine</td>
+<td>1</td>
+<td>0</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>620</td>
+<td>530</td>
+<td>Newspaper</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>700</td>
+<td>585</td>
+<td>Newspaper</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>485</td>
+<td>395</td>
+<td>Newspaper</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>350</td>
+<td>275</td>
+<td>Newspaper</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>595</td>
+<td>420</td>
+<td>Newspaper</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>310</td>
+<td>200</td>
+<td>Newspaper</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>190</td>
+<td>150</td>
+<td>Newspaper</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li class="fragment">Create dummy variables, Magazine and Newspaper, and use, say, Newspaper as the reference category.</li>
+</ul>
+</section>
+<section id="the-linear-regression-model" class="slide level2 center">
+<h2>The Linear Regression Model</h2>
+<p><span class="math display">\[
+Exposure = \beta_0 + \beta_1 \text{Expenditure} + \beta_2 (\text{Magazine}) + 0 (\text{Newspaper}) + \beta_3 (\text{Expenditure} * \text{Magazine}) + \epsilon
+\]</span></p>
+<p><span class="math display">\[
+E(\text{Exposure}) =
+\begin{cases}
+(\beta_0 + \beta_2) + (\beta_1 + \beta_3)\text{Expenditure} &amp; \text{If Magazine} \
+\beta_0 + (\beta_1)\text{Expenditure} &amp; \text{If Newspaper}
+\end{cases}
+\]</span></p>
+<ul>
+<li class="fragment">The coefficient of the interaction <span class="math inline">\((\beta_3)\)</span> is the difference in the slopes.</li>
+<li class="fragment">If <span class="math inline">\(\beta_3 &gt; 0\)</span>, Magazine has a larger slope and hence, a better return.</li>
+</ul>
+</section>
+<section id="anova-table" class="slide level2 center">
+<h2>ANOVA Table</h2>
+<p><strong>H<sub>0</sub></strong>: β<sub>1</sub> = β<sub>2</sub> = β<sub>3</sub> = 0 (No relationship of Exposure with Expenditure and Type.)</p>
+<p><strong>Regression Statistics Table</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th><strong>Regression Statistics</strong></th>
+<th><strong>Values</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Multiple R</td>
+<td>0.995</td>
+</tr>
+<tr class="even">
+<td>R Square</td>
+<td>0.990</td>
+</tr>
+<tr class="odd">
+<td>Adjusted R Square</td>
+<td>0.987</td>
+</tr>
+<tr class="even">
+<td>Standard Error</td>
+<td>30.940</td>
+</tr>
+<tr class="odd">
+<td>Observations</td>
+<td>13</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ANOVA Table</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 10%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 11%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>ANOVA</strong></th>
+<th><strong>df</strong></th>
+<th><strong>SS</strong></th>
+<th><strong>MS</strong></th>
+<th><strong>F</strong></th>
+<th><strong>Significance F</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regression</td>
+<td>3</td>
+<td>886457.432</td>
+<td>295485.811</td>
+<td>308.668</td>
+<td>0.000</td>
+</tr>
+<tr class="even">
+<td>Residual</td>
+<td>9</td>
+<td>8615.645</td>
+<td>957.294</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>12</td>
+<td>895073.077</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regression Table</strong></p>
+<p><strong>Regression Coefficients Table</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 28%">
+<col style="width: 15%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Coefficients</strong></th>
+<th><strong>Standard Error</strong></th>
+<th><strong>t Stat</strong></th>
+<th><strong>P-value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intercept</td>
+<td>56.295</td>
+<td>30.470</td>
+<td>1.848</td>
+</tr>
+<tr class="even">
+<td>Expenditure</td>
+<td>1.118</td>
+<td>0.077</td>
+<td>14.501</td>
+</tr>
+<tr class="odd">
+<td>Magazine</td>
+<td>-193.051</td>
+<td>37.252</td>
+<td>-5.182</td>
+</tr>
+<tr class="even">
+<td>Expenditure * Magazine</td>
+<td>0.719</td>
+<td>0.107</td>
+<td>6.731</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+\text{Predicted Exposure} = 56.295 + 1.118 \times \text{Expenditure} - 193.051 \times \text{Magazine} + 0.719 \times \text{Expenditure} \times \text{Magazine}
+\]</span></p>
+</section>
+<section id="predicted-exposure" class="slide level2 center">
+<h2>Predicted Exposure</h2>
+<p><span class="math display">\[
+\text{Predicted Exposure} = 56.295 + 1.118 \times \text{Expenditure} - 193.051 \times \text{Magazine} + 0.719 \times \text{Expenditure} \times \text{Magazine}
+\]</span></p>
+<ul>
+<li class="fragment"><strong>Newspaper</strong> (Magazine = 0)</li>
+</ul>
+<p><span class="math display">\[
+\text{Predicted Exposure} = 56.295 + 1.1178 \times \text{Expenditure}
+\]</span></p>
+<ul>
+<li class="fragment"><strong>Magazine</strong> (Magazine = 1)</li>
+</ul>
+<p><span class="math display">\[
+\text{Predicted Exposure} = (56.295 - 193.051) + (1.1178 + 0.719) \times \text{Expenditure}
+\]</span></p>
+</section>
+<section id="conclusions" class="slide level2 center">
+<h2>Conclusions</h2>
+<ul>
+<li class="fragment">Which media is predicted to give a better expected return for the additional $50,000?</li>
+<li class="fragment">What is the expected return for this $50,000?</li>
+</ul>
+</section>
+<section id="determining-when-to-add-or-delete-variables" class="slide level2 center">
+<h2>Determining When to Add or Delete Variables</h2>
+<ul>
+<li class="fragment"><p>To determine if we should add <span class="math inline">\(x_2\)</span> to a model involving <span class="math inline">\(x_1\)</span> (or delete <span class="math inline">\(x_2\)</span> in a model involving both <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>), we perform a partial <span class="math inline">\(F\)</span>-test to test the significance of this candidate variable <span class="math inline">\(x_2\)</span>.</p>
+<ul>
+<li class="fragment">When there is only one candidate variable, the partial <span class="math inline">\(F\)</span>-test is equivalent to a <span class="math inline">\(t\)</span>-test.</li>
+</ul></li>
+<li class="fragment"><p>One can consider adding or deleting several independent variables as a group or a subset.</p></li>
+<li class="fragment"><p>The test is used in variable selection for model building.</p></li>
+<li class="fragment"><p>The test is used to handle multicollinearity issue.</p></li>
+</ul>
+</section>
+<section id="partial-f-test-significance-of-a-subset-of-independent-variables-1-of-3" class="slide level2 center">
+<h2>Partial F-test: Significance of a Subset of Independent Variables (1 of 3)</h2>
+<ul>
+<li class="fragment"><p><strong>Null Hypothesis</strong>:</p>
+<ul>
+<li class="fragment">Variables in the subset do not improve significantly the model when all other variables are included.</li>
+</ul>
+<p>(Their regression coefficients are all zero: No linear relationship).</p></li>
+<li class="fragment"><p>The model with all involved independent variables is called the <strong>full model</strong>.</p></li>
+<li class="fragment"><p>The model without the candidate independent variables is called the <strong>reduced model</strong>. It is the model assuming the null hypothesis is true.</p></li>
+</ul>
+</section>
+<section id="partial-f-test-significance-of-a-subset-of-independent-variables-2-of-3" class="slide level2 center">
+<h2>Partial F-test: Significance of a Subset of Independent Variables (2 of 3)</h2>
+<p><span class="math display">\[
+\text{Partial } F = \frac{\text{SSE(reduced) - SSE(full)}}{\text{number of variable(s) in the subset}} \times \frac{1}{\text{MSE(full)}}
+\]</span></p>
+<p><span class="math display">\[
+\text{Partial } F = \frac{\text{SSE}(x_1) - \text{SSE}(x_1, x_2)}{\text{SSE}(x_1, x_2)/(n-p-1)} \text{ for } x_2 \text{ in our example.}
+\]</span></p>
+</section>
+<section id="partial-f-test-significance-of-a-subset-of-independent-variables-3-of-3" class="slide level2 center">
+<h2>Partial F-test: Significance of a Subset of Independent Variables (3 of 3)</h2>
+<ul>
+<li class="fragment"><p>The partial <span class="math inline">\(F\)</span>-statistic follows an <span class="math inline">\(F\)</span>-distribution with degrees of freedom (# of variable(s) in the subset) and <span class="math inline">\(d.f.\)</span> of MSE, if <span class="math inline">\(H_0\)</span> is true.</p></li>
+<li class="fragment"><p>The <span class="math inline">\(p\)</span>-value criterion can also be used to determine whether it is advantageous to add one or more dependent variables to a multiple regression model.</p></li>
+<li class="fragment"><p>The <span class="math inline">\(p\)</span>-value associated with the computed <span class="math inline">\(F\)</span> statistic can be compared to the level of significance <span class="math inline">\(\alpha\)</span>.</p></li>
+<li class="fragment"><p>To determine the <span class="math inline">\(p\)</span>-value:</p></li>
+</ul>
+<p><span class="math display">\[
+= 1 - \text{F.DIST}(\text{partial } F\text{-value, numerator df, denominator df, TRUE})
+\]</span></p>
+</section>
+<section id="illustrative-example-testing-x_2-and-x_3-in-the-presence-of-x_1" class="slide level2 center">
+<h2>Illustrative Example: Testing <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> in the Presence of <span class="math inline">\(x_1\)</span></h2>
+<ul>
+<li class="fragment"><strong>Null Hypothesis</strong></li>
+</ul>
+<p><span class="math display">\[
+H_0: \beta_2 = \beta_3 = 0
+\]</span></p>
+<p><span class="math display">\[
+H_a: \text{ at least one of } \beta_2 \text{ and } \beta_3 \text{ is not 0.}
+\]</span></p>
+<ul>
+<li class="fragment"><strong>Full model</strong></li>
+</ul>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 + \epsilon
+\]</span></p>
+<ul>
+<li class="fragment"><strong>Reduced model (assume <span class="math inline">\(H_0\)</span> is true)</strong></li>
+</ul>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1 x_1 + \cancel{\beta_2 x_2} + \cancel{\beta_3 x_3} + \epsilon
+\]</span></p>
+</section>
+<section id="ssr-for-full-and-reduced-models" class="slide level2 center">
+<h2>SSR for Full and Reduced Models</h2>
+<ul>
+<li class="fragment"><strong>Full model</strong>:</li>
+</ul>
+<p><span class="math display">\[
+\hat{Y} = 210.02 + 18.08 x_1 + 9.46 x_2 + 9.03 x_3
+\]</span></p>
+<p><strong>Full Model SSR Table</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th><strong>SSR for Full Model</strong></th>
+<th><strong>df</strong></th>
+<th><strong>SS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regression</td>
+<td>3</td>
+<td>45271.11</td>
+</tr>
+<tr class="even">
+<td>Residual</td>
+<td>26</td>
+<td>15308.09</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>29</td>
+<td>60579.20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reduced Model SSR Table</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th><strong>SSR for Reduced Model</strong></th>
+<th><strong>df</strong></th>
+<th><strong>SS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regression</td>
+<td>1</td>
+<td>20104.00</td>
+</tr>
+<tr class="even">
+<td>Residual</td>
+<td>28</td>
+<td>40475.00</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>29</td>
+<td>60579.20</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="partial-f-test" class="slide level2 center">
+<h2>Partial F-test</h2>
+<p><strong>Full Model</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>df</th>
+<th>SS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regression</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Residual</td>
+<td>26</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>29</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reduced Model</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>df</th>
+<th>SS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regression</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Residual</td>
+<td>28</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>29</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Partial F Calculation</strong></p>
+<p><span class="math display">\[
+Partial \, F = \frac{{SSR(Full) - SSR(Reduced)}}{{df(Full) - df(Reduced)}} / \frac{{MSE(Full)}}{26} = \frac{{45271.11 - 20104.00}}{3 - 1} / \frac{15308.09}{26} = 21.37
+\]</span></p>
+<p><strong>p-value Calculation</strong></p>
+<p><span class="math display">\[
+p-value = 1 - F.DIST(21.37, 2, 26, TRUE) = 3.24287E-06
+\]</span></p>
+<p><strong>Conclusion:</strong> We reject <span class="math inline">\(H_0\)</span> at 5% significance level and conclude at least one of <span class="math inline">\(\beta_2\)</span> and <span class="math inline">\(\beta_3\)</span> is not zero.</p>
+</section>
+<section id="amountspent-vs-income-2-of-11" class="slide level2 center">
+<h2>AmountSpent vs Income (2 of 11)</h2>
+</section></section>
+<section id="scatterplot-of-amountspent-vs-income" class="title-slide slide level1 center">
+<h1>Scatterplot of AmountSpent vs Income</h1>
+<p>plot(income, amountspent, main=“Scatterplot of AmountSpent vs Income”, col=“red”, pch=19, xlab=“Income”, ylab=“AmountSpent”)</p>
+</section>
+
+<section>
+<section id="summary" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Summary</h1>
+
+</section>
+<section id="summary-1" class="slide level2 center">
+<h2>Summary</h2>
+<div>
+<p>Some key takeaways from this session:</p>
+<ul>
+<li>XXXX</li>
+</ul>
+</div>
+</section></section>
+<section id="thank-you" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Thank you!</h1>
+
+<div class="quarto-auto-generated-content">
+<div class="footer footer-default">
+<p>Business Statistics</p>
+</div>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
