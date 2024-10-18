@@ -274,7 +274,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Date\nTopic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\nAug 19\nIntro. & Basic Stat. & Prob. Rvw.\nSyl., 1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years- IMS: Introduction to data\n\n\nAug 21\nBasic Stat. & Prob. Rvw. (cont’d)\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics: Observations, Variable, and Data Matrices- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data-IMS: Exploratory data analysis\n\n\nAug 23\nBasic Stat. & Prob. Rvw. (cont’d)\n6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\nAug 26\nInt. Est. Rvw.\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates and Sampling Variability - Video: Confidence Intervals- Video: Inferences for Proportions- Video: t-distribution- Video: Inference for one mean- IMS: Inference with mathematical models- IMS: Confidence intervals with bootstrapping - IMS: Inference for a single proportion -IMS: Inference for a single mean\n\n\nAug 28\nHyp. Testing Rvw.\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals - IMS: Hypothesis testing with randomization- MD: Hypothesis Testing\n\n\nAug 30\nHyp. Testing Rvw. (cont’d)\n11.1, 11.2\nslides\ndata\n- Blog: There is Still Only One Test - Nature: Statisticians issue warning over misuse of P-values - ASA: Statement on Statistical Significance and p-values\n\n\nSep 1\nHomework 1 due date\nBasic Stat. & Prob. Rvw.\n.\n.\n.\n\n\nSep 2\nLabor Day\nNo class\n.\n.\n.\n\n\nSep 3\nQuiz 1\nReview Material (Chs. 1 – 12)\n.\n.\n.\n\n\nSep 4\nNo class\nNo class\n.\n.\n.\n\n\nSep 6\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction - Video: Conditions for ANOVA - Video: Multiple comparisons -IMS: Inference for comparing many means\n\n\nSep 8\nHomework 2 due date\nInt. Est. & Hyp. Testing Rvw.\n.\n.\n.\n\n\nSep 9\nSimple Regression\n14.1\nslides\ndata\n- Video: Line Fitting, Residuals, and Correlation - Video: Fitting a Line with Least Squares Regression - Video: Least Squares Regression - Video: Types of Outliers in Linear Regression - Video: Inference for Linear Regression -IMS: Linear regression with a single predictor -IMS: Inference for linear regression with a single predictor\n\n\nSep 11\nSimple Regression (cont’d)\n14.2, 14.3\nslides\n.\n.\n\n\nSep 13\nSimple Regression (cont’d)\n14.4, 14.5\nslides\n.\n.\n\n\nSep 16\nSimple Regression (cont’d)\n14.6, 14.7\nslides\n.\n.\n\n\nSep 18\nSimple Regression (cont’d)\n14.8\nslides\n.\n.\n\n\nSep 20\nSimple Regression (cont’d)\n14.9\nslides\n.\n.\n\n\nSep 22\nHomework 3 due date\nSimple Regression\n\n\n\n\n\n.\n.\n.\n\n\n\n\n\nSep 23\nMultiple Regression\n15.1\nslides\ndata\n- Video: Introduction to Multiple Regression- Video: Model Selection in Multiple Regression- Video: Checking Multiple Regression Diagnostics Using Graphs-IMS: Linear regression with multiple predictors-IMS: Inference for linear regression with multiple predictors\n\n\nSep 25\nMultiple Regression\n15.2\nslides\n.\n.\n\n\nSep 27\nMultiple Regression (cont’d)\nMidterm 1 Review\n.\n.\n.\n\n\nSep 30\nMidterm 1 (6:30 pm – 7:30 pm, UC 114)\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\nOct 2\nMultiple Regression (cont’d)\n15.3, 15.4\nslides\n.\n.\n\n\nOct 4\nMultiple Regression (cont’d)\n15.5, 15.6\nslides\n.\n.\n\n\nOct 6\nHomework 4 due date\nMultiple Regression Pt. 1\n.\n.\n.\n\n\nOct 7-8\nOct Break\nNo Class\n.\n.\n.\n\n\nOct 9\nMultiple Regression (cont’d)\n15.7\nslides\n.\n.\n\n\nOct 11\nMultiple Regression (cont’d)\n15.8\nslides\n.\n.\n\n\nOct 14\nQuiz 2\nMultiple Regression\n.\n.\n.\n\n\nOct 16\nModel Building\n16.1\nslides\ndata\n- Video: Model Selection in Multiple Regression- IMS: Model Selection- IMS: Multicollinearity- IMS: Cross-validation for prediction error\n\n\nOct 18\nModel Building (cont’d)\n16.2\nslides\n.\n.\n\n\nOct 20\nHomework 5 due date\nMultiple Regression Pt. 2\n.\n.\n.\n\n\nOct 21\nModel Building (cont’d)\n16.3, 16.4\nslides\n.\n.\n\n\nOct 23\nLogistic Regression\nSupplement\n.\n.\n.\n\n\nOct 25\nLogistic Regression (cont’d)\nSupplement.\n.\n.\n.\n\n\nOct 27\nHomework 6 due date\nLogistic Regression\n.\n.\n.\n\n\nOct 28\nMidterm 2 Review\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\n31\nMidterm 2 (6:30 pm – 7:30 pm, UC 114)\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nNov 1\nTime Series\n17.1, 17.2\n.\n.\n.\n\n\nNov 4\nTime Series (cont’d)\n17.3, 17.4\n.\n.\n.\n\n\nNov 6\nTime Series (cont’d)\n17.5, 17.6\n.\n.\n.\n\n\nNov 8\nTime Series (cont’d)\nLag Variables Supplement & Applications\n.\n.\n.\n\n\nNov 10\nHomework 7 due date\nTime Series\n.\n.\n.\n\n\nNov 11\nNo class\nNo class\n.\n.\n.\n\n\nNov 12\nQuiz 3\nTime Series\n.\n.\n.\n\n\nNov 13\nDecision Analysis\n19.1, 19.2\n.\n.\n.\n\n\nNov 15\nDecision Analysis (cont’d)\n19.3\n.\n.\n.\n\n\nNov 18\nQuality Control\n20.1, 20.2\n.\n.\n.\n\n\nNov 20\nQuality Control (cont’d)\n20.3, 20.4\n.\n.\n.\n\n\nNov 22\nQuality Control (cont’d)\nApplications\n.\n.\n.\n\n\nNov 27-30\nThanksgiving Break\nNo Class\n.\n.\n.\n\n\nDec 1\nHomework 8 due date\nDecision Analysis and Quality Control\n.\n.\n.\n\n\nDec 2\nFinal Exam Review I\nCumulative\n.\n.\n.\n\n\nDec 4\nFinal Exam Review II\nCumulative\n.\n.\n.\n\n\nDec 6\nFinal Exam Preparation\nNo Class\n.\n.\n.\n\n\nTBD\nFinal Exam\nCumulative\n.\n.\n.\n\n\n\n\n*Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
+    "text": "Date\nTopic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\nAug 19\nIntro. & Basic Stat. & Prob. Rvw.\nSyl., 1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years- IMS: Introduction to data\n\n\nAug 21\nBasic Stat. & Prob. Rvw. (cont’d)\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics: Observations, Variable, and Data Matrices- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data-IMS: Exploratory data analysis\n\n\nAug 23\nBasic Stat. & Prob. Rvw. (cont’d)\n6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\nAug 26\nInt. Est. Rvw.\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates and Sampling Variability - Video: Confidence Intervals- Video: Inferences for Proportions- Video: t-distribution- Video: Inference for one mean- IMS: Inference with mathematical models- IMS: Confidence intervals with bootstrapping - IMS: Inference for a single proportion -IMS: Inference for a single mean\n\n\nAug 28\nHyp. Testing Rvw.\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals - IMS: Hypothesis testing with randomization- MD: Hypothesis Testing\n\n\nAug 30\nHyp. Testing Rvw. (cont’d)\n11.1, 11.2\nslides\ndata\n- Blog: There is Still Only One Test - Nature: Statisticians issue warning over misuse of P-values - ASA: Statement on Statistical Significance and p-values\n\n\nSep 1\nHomework 1 due date\nBasic Stat. & Prob. Rvw.\n.\n.\n.\n\n\nSep 2\nLabor Day\nNo class\n.\n.\n.\n\n\nSep 3\nQuiz 1\nReview Material (Chs. 1 – 12)\n.\n.\n.\n\n\nSep 4\nNo class\nNo class\n.\n.\n.\n\n\nSep 6\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction - Video: Conditions for ANOVA - Video: Multiple comparisons -IMS: Inference for comparing many means\n\n\nSep 8\nHomework 2 due date\nInt. Est. & Hyp. Testing Rvw.\n.\n.\n.\n\n\nSep 9\nSimple Regression\n14.1\nslides\ndata\n- Video: Line Fitting, Residuals, and Correlation - Video: Fitting a Line with Least Squares Regression - Video: Least Squares Regression - Video: Types of Outliers in Linear Regression - Video: Inference for Linear Regression -IMS: Linear regression with a single predictor -IMS: Inference for linear regression with a single predictor\n\n\nSep 11\nSimple Regression (cont’d)\n14.2, 14.3\nslides\n.\n.\n\n\nSep 13\nSimple Regression (cont’d)\n14.4, 14.5\nslides\n.\n.\n\n\nSep 16\nSimple Regression (cont’d)\n14.6, 14.7\nslides\n.\n.\n\n\nSep 18\nSimple Regression (cont’d)\n14.8\nslides\n.\n.\n\n\nSep 20\nSimple Regression (cont’d)\n14.9\nslides\n.\n.\n\n\nSep 22\nHomework 3 due date\nSimple Regression\n\n\n\n\n\n.\n.\n.\n\n\n\n\n\nSep 23\nMultiple Regression\n15.1\nslides\ndata\n- Video: Introduction to Multiple Regression- Video: Model Selection in Multiple Regression- Video: Checking Multiple Regression Diagnostics Using Graphs-IMS: Linear regression with multiple predictors-IMS: Inference for linear regression with multiple predictors\n\n\nSep 25\nMultiple Regression\n15.2\nslides\n.\n.\n\n\nSep 27\nMultiple Regression (cont’d)\nMidterm 1 Review\n.\n.\n.\n\n\nSep 30\nMidterm 1 (6:30 pm – 7:30 pm, UC 114)\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\nOct 2\nMultiple Regression (cont’d)\n15.3, 15.4\nslides\n.\n.\n\n\nOct 4\nMultiple Regression (cont’d)\n15.5, 15.6\nslides\n.\n.\n\n\nOct 6\nHomework 4 due date\nMultiple Regression Pt. 1\n.\n.\n.\n\n\nOct 7-8\nOct Break\nNo Class\n.\n.\n.\n\n\nOct 9\nMultiple Regression (cont’d)\n15.7\nslides\n.\n.\n\n\nOct 11\nMultiple Regression (cont’d)\n15.8\nslides\n.\n.\n\n\nOct 14\nQuiz 2\nMultiple Regression\n.\n.\n.\n\n\nOct 16\nModel Building\n16.1\nslides\ndata\n- Video: Model Selection in Multiple Regression- IMS: Model Selection- IMS: Multicollinearity- IMS: Cross-validation for prediction error\n\n\nOct 18\nModel Building (cont’d)\n16.2\nslides\n.\n.\n\n\nOct 20\nHomework 5 due date\nMultiple Regression Pt. 2\n.\n.\n.\n\n\nOct 21\nModel Building (cont’d)\n16.3, 16.4\nslides\n.\n.\n\n\nOct 23\nLogistic Regression\nSupplement and Slides\nslides\n.\n- Video: Basic Ideas of Logistic Regression- IMS: Logistic regression- IMS: Inference for logistic regression\n\n\nOct 25\nLogistic Regression (cont’d)\nSupplement and Slides\nslides\n.\n.\n\n\nOct 27\nHomework 6 due date\nLogistic Regression\n.\n.\n.\n\n\nOct 28\nMidterm 2 Review\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\n31\nMidterm 2 (6:30 pm – 7:30 pm, UC 114)\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nNov 1\nTime Series\n17.1, 17.2\n.\n.\n.\n\n\nNov 4\nTime Series (cont’d)\n17.3, 17.4\n.\n.\n.\n\n\nNov 6\nTime Series (cont’d)\n17.5, 17.6\n.\n.\n.\n\n\nNov 8\nTime Series (cont’d)\nLag Variables Supplement & Applications\n.\n.\n.\n\n\nNov 10\nHomework 7 due date\nTime Series\n.\n.\n.\n\n\nNov 11\nNo class\nNo class\n.\n.\n.\n\n\nNov 12\nQuiz 3\nTime Series\n.\n.\n.\n\n\nNov 13\nDecision Analysis\n19.1, 19.2\n.\n.\n.\n\n\nNov 15\nDecision Analysis (cont’d)\n19.3\n.\n.\n.\n\n\nNov 18\nQuality Control\n20.1, 20.2\n.\n.\n.\n\n\nNov 20\nQuality Control (cont’d)\n20.3, 20.4\n.\n.\n.\n\n\nNov 22\nQuality Control (cont’d)\nApplications\n.\n.\n.\n\n\nNov 27-30\nThanksgiving Break\nNo Class\n.\n.\n.\n\n\nDec 1\nHomework 8 due date\nDecision Analysis and Quality Control\n.\n.\n.\n\n\nDec 2\nFinal Exam Review I\nCumulative\n.\n.\n.\n\n\nDec 4\nFinal Exam Review II\nCumulative\n.\n.\n.\n\n\nDec 6\nFinal Exam Preparation\nNo Class\n.\n.\n.\n\n\nTBD\nFinal Exam\nCumulative\n.\n.\n.\n\n\n\n\n*Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
     "crumbs": [
       "Schedule and Material"
     ]
@@ -6599,5 +6599,376 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
     "text": "Summary\n\nSome key takeaways from this session:\n\nXXXX"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#overview",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#overview",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\n\nLogistic Regression Model."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#motivation-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#motivation-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Motivation",
+    "text": "Motivation\n\n\nWhat is the probability of success of a candidate based on the data below?\n\n\n\n\n\n\nadmit\ngre\ngpa\nrank\n\n\n\n\n0\n380\n3.61\n3\n\n\n1\n660\n3.67\n3\n\n\n1\n800\n4.00\n1\n\n\n1\n640\n3.19\n4\n\n\n0\n520\n2.93\n4\n\n\n1\n760\n3.00\n2\n\n\n\n\n\n\n\n\ngre: Graduate Record Exam scores\ngpa: Grade Point Average\nrank: prestige of undergraduate institution\nadmit: admission to graduate school"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#review-of-linear-estimation",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#review-of-linear-estimation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Review of Linear Estimation",
+    "text": "Review of Linear Estimation\n\n\n\\(Y = \\beta_{0} + \\beta_{1}X + \\beta_{2}Z + \\epsilon\\)\n\n\n\nWe could transform or add variables to achieve model linearity:\n\nTaking logarithms of Y and/or X’s;\nAdding quadratic terms;\nAdding interactions.\n\n\n\n\nThen we run our estimation, check model quality, visualize results, etc."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#review-of-linear-estimation-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#review-of-linear-estimation-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Review of Linear Estimation",
+    "text": "Review of Linear Estimation\n\n\n\\(Y = \\beta_{0} + \\beta_{1}X + \\beta_{2}Z + \\epsilon\\)\n\n\nIn all linear models we have covered, the dependent variable (\\(Y\\)) was numerical/continuous.\n\n\nWhat do we do when it is not numerical/continuous?"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#general-linear-model",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#general-linear-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "General Linear Model",
+    "text": "General Linear Model\n\nGeneral Linear Model can be used to relates the dependent variable to the systematic part of the model (linear predictor) through a link function.\n\nFrom:\n\n\n\\(Y = \\beta_{0} + \\beta_{1}X + \\beta_{2}Z + \\epsilon\\)\n\n\n\nTo:\n\n\n\\(P_{i} = P (Y = 1) = \\Lambda(\\beta_{0} + \\beta_{1}X_{1i} + \\beta_{2}Z_{2i} + \\epsilon) = \\Lambda(XB + \\epsilon)\\),\n\n\nwhere \\(\\Lambda\\) (lambda) represents the link function that strictly assumes values between 0 and 1.\n\nSource: Wikipedia - Generalized linear model."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#binary-dependent-variable",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#binary-dependent-variable",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Binary Dependent Variable",
+    "text": "Binary Dependent Variable\n\nTherefore, the predicted probabilities of a binary dependent variable model can be given by:\n\n\n\\(\\hat{P}_{i} = \\hat{P} (Y = 1) = \\Lambda (\\hat{\\beta}_{0} + \\hat{\\beta}_{1}X_{1i} + \\hat{\\beta}_{2}Z_{2i}) = \\Lambda(\\hat{X}_{i}B)\\) ,\n\n\nwhere \\(\\Lambda(\\hat{X}_{i}B)\\) is the systematic (linear) component of the model."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#understanding-the-link-function-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#understanding-the-link-function-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Understanding the Link Function",
+    "text": "Understanding the Link Function\n\n\nHow to solve this problem?"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#understanding-the-link-function-2",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#understanding-the-link-function-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Understanding the Link Function",
+    "text": "Understanding the Link Function\n\n\nHow to solve this problem?\n\n\nWe need to transform \\(Y\\) (dichotomous) into a continuous variable \\(Y'\\) (\\(-\\infty\\), \\(\\infty\\));\nTo do this, we need a link function that performs this transformation."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#solution",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#solution",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Solution:",
+    "text": "Solution:"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#understanding-the-link-function-3",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#understanding-the-link-function-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Understanding the Link Function",
+    "text": "Understanding the Link Function\n\nLet’s remember the log-level model transformation:\n\n\\[\n\\log(\\hat{Y}_{i}) = \\beta_{0} + \\beta X\n\\]\n\n\n\nA variation of one unit in \\(X_i\\) implies a \\(\\beta\\%\\) variation in \\(Y_i\\);\nThe link function is: \\(F(Y) = \\log(Y)\\);"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#binary-dependent-variable-the-role-of-the-link-function",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#binary-dependent-variable-the-role-of-the-link-function",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Binary Dependent Variable – The Role of the Link Function",
+    "text": "Binary Dependent Variable – The Role of the Link Function\n\n\n\n\\[\ny^{*}_{i} = \\beta_{0} + \\beta X + \\epsilon\\\\\n\\text{Pr}(y = 1|x) = \\text{Pr}(y^* &gt; 0|x)\\\\\n\\text{Pr}(y = 1|x) = \\text{Pr}(u &gt; - [\\beta_{0} + \\beta x]|x)\n\\]\n\nTherefore, the probability depends on the distribution of \\(u\\)."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#binary-dependent-variable-the-role-of-the-link-function-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#binary-dependent-variable-the-role-of-the-link-function-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Binary Dependent Variable – The Role of the Link Function",
+    "text": "Binary Dependent Variable – The Role of the Link Function\n\n\n\n\\[\ny^{*}_{i} = \\beta_{0} + \\beta X + \\epsilon\\\\\n\\text{Pr}(y = 1|x) = \\text{Pr}(y^* &gt; 0|x)\\\\\n\\text{Pr}(y = 1|x) = \\text{Pr}(u &gt; - [\\beta_{0} + \\beta x]|x)\n\\]\n\nTherefore, the probability depends on the distribution of \\(u\\)."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#binary-dependent-variable-logit-and-probit-models",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#binary-dependent-variable-logit-and-probit-models",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Binary Dependent Variable – Logit and Probit Models",
+    "text": "Binary Dependent Variable – Logit and Probit Models\n\n\nFor both the Logit and Probit models, the probability of the event occurring is the cumulative density function of \\(\\epsilon\\) evaluated at values determined by the independent variables"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#logistic-function-vs-normal-distribution",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#logistic-function-vs-normal-distribution",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Logistic Function vs Normal Distribution",
+    "text": "Logistic Function vs Normal Distribution"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#understanding-the-link-function-logit",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#understanding-the-link-function-logit",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Understanding the Link Function: Logit",
+    "text": "Understanding the Link Function: Logit"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#binary-dependent-variable-logit-and-probit-models-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#binary-dependent-variable-logit-and-probit-models-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Binary Dependent Variable – Logit and Probit Models",
+    "text": "Binary Dependent Variable – Logit and Probit Models\n\n\nFor both the Logit and Probit models, the probability of the event occurring is the cumulative density function of \\(u\\) evaluated at values determined by the independent variables"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#motivation-binomial-logit-model-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#motivation-binomial-logit-model-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Motivation: Binomial Logit Model",
+    "text": "Motivation: Binomial Logit Model\nA researcher is interested in how variables such as GRE (Graduate Record Exam scores), GPA (Grade Point Average), and the prestige of the undergraduate institution affect admission into graduate school. The response variable, admit/don’t admit, is binary. What is the probability of success of a candidate based on these data?\n\n\n\n\n\nadmit\ngre\ngpa\nrank\n\n\n\n\n0\n380\n3.61\n3\n\n\n1\n660\n3.67\n3\n\n\n1\n800\n4.00\n1\n\n\n1\n640\n3.19\n4\n\n\n0\n520\n2.93\n4\n\n\n1\n760\n3.00\n2\n\n\n\n\n\n\n\n Source: LOGIT REGRESSION - R DATA ANALYSIS EXAMPLES"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#data",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#data",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Data",
+    "text": "Data\n\n\n\n\n\nadmit\ngre\ngpa\nrank\n\n\n\n\n0\n380\n3.61\n3\n\n\n1\n660\n3.67\n3\n\n\n1\n800\n4.00\n1\n\n\n1\n640\n3.19\n4\n\n\n0\n520\n2.93\n4\n\n\n1\n760\n3.00\n2"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#estimating-the-model",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#estimating-the-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Estimating the Model",
+    "text": "Estimating the Model\n\n\n\n\n\n\n\nObservations\n400\n\n\nDependent variable\nadmit\n\n\nType\nGeneralized linear model\n\n\nFamily\nbinomial\n\n\nLink\nlogit\n\n\n\n\n \n\n\n\n\n𝛘²(5)\n41.46\n\n\np\n0.00\n\n\nPseudo-R² (Cragg-Uhler)\n0.14\n\n\nPseudo-R² (McFadden)\n0.08\n\n\nAIC\n470.52\n\n\nBIC\n494.47\n\n\n\n\n \n\n\n\n\n\nEst.\nS.E.\nz val.\np\n\n\n\n\n(Intercept)\n-3.99\n1.14\n-3.50\n0.00\n\n\ngre\n0.00\n0.00\n2.07\n0.04\n\n\ngpa\n0.80\n0.33\n2.42\n0.02\n\n\nrank2\n-0.68\n0.32\n-2.13\n0.03\n\n\nrank3\n-1.34\n0.35\n-3.88\n0.00\n\n\nrank4\n-1.55\n0.42\n-3.71\n0.00\n\n\n\n Standard errors: MLE"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#model-adjustments-and-quality",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#model-adjustments-and-quality",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Model Adjustments and Quality",
+    "text": "Model Adjustments and Quality\n\nPseudo \\(R^2\\): For similar models, the higher the Pseudo \\(R^2\\), the better the model fit;\nAkaike’s Information Criterion (AIC): For similar models, the lower the AIC, the better the model fit;\nBayesian Information Criterion (BIC): For similar models, the lower the BIC, the better the model fit;"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-results-log-odds",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-results-log-odds",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of Results: Log-Odds",
+    "text": "Interpretation of Results: Log-Odds\n\nFor a one-unit increase in gre, the log-odds of the dependent variable (admit) increase by 0.002;\nFor a one-unit increase in gpa, the log-odds of the DV increase by 0.804;\nIn the case of the variable rank, being a graduate of an institution with rank\\(=2\\) changes the log-odds by \\(-0.675\\) compared to an institution with rank\\(=1\\).\n\n Source: How do I interpret Odds Ratios in Logistic Regression?"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#understanding-the-link-function-logit-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#understanding-the-link-function-logit-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Understanding the Link Function: Logit",
+    "text": "Understanding the Link Function: Logit"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-results-predicted-probability",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-results-predicted-probability",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of Results: Predicted Probability",
+    "text": "Interpretation of Results: Predicted Probability\n\\[\np = \\frac{\\exp(\\beta x)}{1 + \\exp(\\beta x)}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#additional-material",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#additional-material",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Additional Material",
+    "text": "Additional Material\n\nBinomial Logistic Regression.\nHow do I interpret Odds Ratios in Logistic Regression?.\nMultinomial Logistic Regression.\nTutorial: Leveraging Labelled Data in R.\nUCLA: Data Analysis Examples.\nIntroduction to Econometrics with R.\nBeyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#summary-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#summary-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary",
+    "text": "Summary\n\n\nSome key takeaways from this session:\n\nWhen to Use Logistic Regression: Use logistic regression when the dependent variable is binary (e.g., success/failure).\nProbabilistic Interpretation: Models the probability of an event occurring based on predictor variables.\nInterpretation of Coefficients: Log-Odds:\n\\[\n\\ln\\left(\\frac{P(Y = 1)}{1 - P(Y = 1)}\\right) = \\beta_0 + \\beta_1 X_1 + \\ldots + \\beta_p X_p\n\\]\n\nCoefficients represent the change in log-odds for a one-unit increase in the predictor.\n\nInterpretation of Coefficients: Odds Ratio:\n\\[\n\\text{Odds Ratio} = e^{\\beta_i}\n\\]\n\nAn odds ratio &gt; 1 indicates increased odds of the event occurring with a one-unit increase in \\(X_i\\).\nAn odds ratio &lt; 1 indicates decreased odds."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#general-linear-model-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#general-linear-model-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "General Linear Model",
+    "text": "General Linear Model\n\nModels in which the parameters \\((\\beta_0, \\beta_1, \\ldots, \\beta_p)\\) all have exponents of one are called linear models.\nA general linear model involving \\(p\\) independent variables (\\(z_i\\)’s) is:\n\n\n\\[\ny = \\beta_0 + \\beta_1 z_1 + \\beta_2 z_2 + \\ldots + \\beta_p z_p + \\epsilon\n\\]\nwhere each independent variable \\(z_i\\) is a (linear or nonlinear) function of \\(x_1, x_2, \\ldots, x_k\\) (the variables for which data have been collected).\n\nHere, \\(y\\) can be a function of the original response variable as well."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#general-linear-model-2",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#general-linear-model-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "General Linear Model",
+    "text": "General Linear Model\n\n\nThe General Linear Model can be used to relates the dependent variable \\(Y\\) to the systematic part of the model (linear predictors) through a link function.\n\nFrom:\n\n\n\\(Y = \\beta_{0} + \\beta_{1}X + \\beta_{2}Z + \\epsilon\\)\n\n\n\n\nTo:\n\n\n\\(P_{i} = P (Y = 1) = \\Lambda(\\beta_{0} + \\beta_{1}X_{1i} + \\beta_{2}Z_{2i} + \\epsilon) = \\Lambda(XB + \\epsilon)\\),\n\n\nwhere \\(\\Lambda\\) (lambda) represents the link function that strictly assumes values between 0 and 1.\n\n\nSource: Wikipedia - Generalized linear model."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#the-role-of-the-link-function",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#the-role-of-the-link-function",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "The Role of the Link Function",
+    "text": "The Role of the Link Function\n\n\n\n\n\nThe logistic function transforms the linear prediction \\(\\beta_0 + \\beta X\\) into a probability that \\(Y = 1\\), denoted as \\(\\Pr(Y = 1|X)\\).\nThis function is sigmoidal (S-shaped), which is why the probability smoothly transitions between 0 and 1.\nThe line \\(E(y^*|X)\\) represents the expected value of the latent variable for a given value of \\(X\\).\n\n\n\n\n\n\\[\nY =\n  \\begin{cases}\n    1       & \\quad \\text{if } y^{*}_{i} &gt; 0 \\\\\n    0  & \\quad \\text{if } y^{*}_{i} \\leq 0\n  \\end{cases}\n\\]\n\n\\(y^{*}\\): is a latent (unobserved) variable, which represents an underlying continuous measure that influences the binary outcome. It drives the observed binary outcome \\(Y\\).\n\n\n\\[\ny^{*}_{i} = \\beta_{0} + \\beta X + \\epsilon\n\\]\n\nThe binary variable \\(Y\\) is determined by a threshold applied to the latent variable \\(y^{*}\\).\nThe plot illustrates the role of the logistic function in converting the continuous latent variable into probabilities that \\(Y = 1\\) or \\(Y = 0\\). As \\(X\\) increases past a certain threshold (denoted \\(\\tau = 0\\) on the graph), the probability that \\(Y = 1\\) rises above 0.5, indicating a higher likelihood of observing \\(Y = 1\\).\nIn summary: The logistic model maps a linear predictor (\\(\\beta_0 + \\beta X\\)) to a binary outcome, using the latent variable \\(y^*\\) to link the continuous world with the binary outcome via a threshold and the logistic function."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#the-role-of-the-link-function-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#the-role-of-the-link-function-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "The Role of the Link Function",
+    "text": "The Role of the Link Function\n\n\n\n\n\n\n\n\n\n\nLatent Variable Model\n\n\\[\ny^{*}_{i} = \\beta_{0} + \\beta X + \\epsilon\n\\]\n\n\n\n\nBinary Outcome Based on Latent Variable\n\n\\[\n\\text{Pr}(y = 1|x) = \\text{Pr}(y^* &gt; 0|x)\\\\\n\\]\n\n\n\n\nThe Probability in Terms of the Error Term\n\n\\[\n\\text{Pr}(y = 1|x) = \\text{Pr}(\\epsilon &gt; - [\\beta_{0} + \\beta x]|x)\n\\]\nThe probability depends on the distribution of \\(\\epsilon\\)."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#logit-and-probit-models",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#logit-and-probit-models",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Logit and Probit Models",
+    "text": "Logit and Probit Models\nTwo distributions of \\(\\epsilon\\) are considered:\n\n\nLogistic distribution: In the Logit model, \\(\\epsilon\\) has a logistic distribution, \\(\\mu = 0\\) and variance given by: \\(\\sigma^2(u) = \\pi^2/3\\)\n\n\\[\n\\text{Pr}(y = 1|x) = \\frac{\\exp(\\beta_{0} + \\beta x)}{1 + \\exp(\\beta_{0} + \\beta x)} \\quad \\text{or} \\quad \\frac{e^{\\beta_0 + \\beta_1 x_i}}{1 + e^{\\beta_0 + \\beta_1 x_i}}\n\\]\n\n\nNormal distribution: In the Probit model, \\(\\epsilon\\) has a normal distribution and variance given by: \\(\\sigma^2(u) = 1\\)\n\n\\[\n\\text{Pr}(y = 1|x) = \\int_{-\\infty}^{\\beta_{0} + \\beta x} \\frac{1}{\\sqrt{2\\pi}} \\exp\\Bigg(-\\frac{t^2}{2}\\Bigg)dt\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#the-logit-link-function-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#the-logit-link-function-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "The Logit Link Function",
+    "text": "The Logit Link Function"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#the-logit-link-function-2",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#the-logit-link-function-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "The Logit Link Function",
+    "text": "The Logit Link Function\n\n\nThe probability of the event occurring is the cumulative density function of \\(\\epsilon\\) evaluated at values determined by the independent variables"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#estimating-the-model-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#estimating-the-model-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Estimating the Model",
+    "text": "Estimating the Model\n\n\n\n\n\n\n\nObservations\n400\n\n\nDependent variable\nadmit\n\n\nType\nGeneralized linear model\n\n\nFamily\nbinomial\n\n\nLink\nlogit\n\n\n\n\n \n\n\n\n\n𝛘²(5)\n41.46\n\n\np\n0.00\n\n\nPseudo-R² (Cragg-Uhler)\n0.14\n\n\nPseudo-R² (McFadden)\n0.08\n\n\nAIC\n470.52\n\n\nBIC\n494.47\n\n\n\n\n \n\n\n\n\n\nEst.\nS.E.\nz val.\np\n\n\n\n\n(Intercept)\n-3.99\n1.14\n-3.50\n0.00\n\n\ngre\n0.00\n0.00\n2.07\n0.04\n\n\ngpa\n0.80\n0.33\n2.42\n0.02\n\n\nrank2\n-0.68\n0.32\n-2.13\n0.03\n\n\nrank3\n-1.34\n0.35\n-3.88\n0.00\n\n\nrank4\n-1.55\n0.42\n-3.71\n0.00\n\n\n\n Standard errors: MLE"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#estimating-the-event-probability",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#estimating-the-event-probability",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Estimating the Event Probability",
+    "text": "Estimating the Event Probability\n\\[\nP(Y_i = 1) = \\frac{e^{\\beta_0 + \\beta_1 x_i}}{1 + e^{\\beta_0 + \\beta_1 x_i}}\n\\]\nLogit link function\n\\[\n\\hat{Y}_i = \\frac{e^{b_0 + b_1 x_i}}{1 + e^{b_0 + b_1 x_i}}\n\\]\nPrediction equation\nA common estimation method to obtain \\(b_0\\) and \\(b_1\\) is called the Maximum Likelihood Method. It finds the values of \\(\\beta_0\\) and \\(\\beta_1\\) that maximize the probability (or likelihood) of observing the data."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-beta_1-via-lnodds",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-beta_1-via-lnodds",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of \\(\\beta_1\\) via Ln(Odds)",
+    "text": "Interpretation of \\(\\beta_1\\) via Ln(Odds)\nDefine the odds for the event:\n\\[\n\\text{Odds}(x) \\equiv \\frac{\\text{Event probability}}{\\text{Non-event probability}} = \\frac{P(Y = 1)}{1 - P(Y = 1)} = e^{\\beta_0 + \\beta_1 x}\n\\]\n\\[\n\\ln(\\text{Odds}(x)) = \\beta_0 + \\beta_1 x\n\\]\n\n\\(b_1\\) is the predicted change in the \\(\\ln(\\text{Odds}(x))\\) per-unit increase in \\(x\\).\n\\(b_1\\) is the predicted difference: \\[\n\\ln(\\text{Odds}(x+1)) - \\ln(\\text{Odds}(x)).\n\\]\nThis relationship is true for all \\(x\\)."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-ebeta_1-via-odds-ratio",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-ebeta_1-via-odds-ratio",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of \\(e^{\\beta_1}\\) via Odds Ratio",
+    "text": "Interpretation of \\(e^{\\beta_1}\\) via Odds Ratio\n\nDefine the odds ratio:\n\\[\n\\text{Odds Ratio}(x) \\equiv \\frac{\\text{Odds}(x+1)}{\\text{Odds}(x)} = e^{\\beta_1}\n\\]\nBy increasing \\(x\\) by one unit, the odds of the event change by a factor of \\(e^{\\beta_1}\\)."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-ebeta_1-continuous-predictor-x",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-ebeta_1-continuous-predictor-x",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of \\(e^{\\beta_1}\\) (Continuous Predictor, \\(x\\))",
+    "text": "Interpretation of \\(e^{\\beta_1}\\) (Continuous Predictor, \\(x\\))\n\n\\[\n\\frac{\\text{Odds}(x+1)}{\\text{Odds}(x)} = e^{\\beta_1}\n\\]\n\nThe odds for the event will change by a factor of \\(e^{\\beta_1}\\) per unit increase in \\(x\\), where \\(\\beta_1\\) is the population slope of \\(x\\).\nIf \\(\\beta_1 = 0\\) or \\(e^{\\beta_1} = 1\\), there is no change in odds.\nIf \\(\\beta_1 &gt; 0\\) or \\(e^{\\beta_1} &gt; 1\\), the odds increase.\nIf \\(\\beta_1 &lt; 0\\) or \\(e^{\\beta_1} &lt; 1\\), the odds decrease.\n\nIf \\(\\beta_1\\) is estimated by \\(b_1\\), then the odds for the event are predicted to change by a factor of \\(e^{b_1}\\) per unit increase in \\(x\\)."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#estimating-the-model-r-output",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#estimating-the-model-r-output",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Estimating the Model: R Output",
+    "text": "Estimating the Model: R Output\n\n\n\n\n\n\n\nObservations\n400\n\n\nDependent variable\nadmit\n\n\nType\nGeneralized linear model\n\n\nFamily\nbinomial\n\n\nLink\nlogit\n\n\n\n\n \n\n\n\n\n𝛘²(5)\n41.46\n\n\np\n0.00\n\n\nPseudo-R² (Cragg-Uhler)\n0.14\n\n\nPseudo-R² (McFadden)\n0.08\n\n\nAIC\n470.52\n\n\nBIC\n494.47\n\n\n\n\n \n\n\n\n\n\nEst.\nS.E.\nz val.\np\n\n\n\n\n(Intercept)\n-3.99\n1.14\n-3.50\n0.00\n\n\ngre\n0.00\n0.00\n2.07\n0.04\n\n\ngpa\n0.80\n0.33\n2.42\n0.02\n\n\nrank2\n-0.68\n0.32\n-2.13\n0.03\n\n\nrank3\n-1.34\n0.35\n-3.88\n0.00\n\n\nrank4\n-1.55\n0.42\n-3.71\n0.00\n\n\n\n Standard errors: MLE"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#output-model-summary",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#output-model-summary",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Output: Model Summary",
+    "text": "Output: Model Summary\n\nObservations: 400\n\nThe number of data points used in the model (400 observations).\n\nDependent Variable: admit\n\nThe binary outcome variable being predicted (in this case, admission to a school).\n\nType: Generalized linear model\n\nThe model used is a generalized linear model (GLM).\n\nFamily: binomial\n\nThe binomial family is appropriate for binary outcomes.\n\nLink: logit\n\nThe logit link function is used to model the log-odds of the probability of success."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#output-model-fit-statistics",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#output-model-fit-statistics",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Output: Model Fit Statistics",
+    "text": "Output: Model Fit Statistics\n\nχ²(5) = 41.46:\n\nThe chi-squared test statistic for the overall model fit.\n\np = 0.00:\n\nThe p-value for the model, indicating that the model is statistically significant (p &lt; 0.05).\n\nPseudo-R² (Cragg-Uhler) = 0.14:\n\nThe pseudo-R², similar to the R² in linear regression, but interpreted more loosely. Indicates that 14% of the variation in the outcome is explained by the model.\n\nPseudo-R² (McFadden) = 0.08:\n\nAnother form of pseudo-R², typically smaller than Cragg-Uhler’s.\n\nAIC = 470.52:\n\nThe Akaike Information Criterion, a measure of model fit that penalizes for complexity. Lower values indicate a better fit.\n\nBIC = 494.47:\n\nThe Bayesian Information Criterion, similar to AIC but with a stronger penalty for complexity."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#output-coefficients",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#output-coefficients",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Output: Coefficients",
+    "text": "Output: Coefficients\n\n\nIntercept (Est. = -3.99, p = 0.00):\n\nThe log-odds of being admitted when all predictors are zero. The negative value indicates a low baseline probability of admission.\n\nGRE (Est. = 0.00, p = 0.04):\n\nThe coefficient for GRE is positive and statistically significant (p &lt; 0.05), but the value is very close to zero. This means GRE has a very small positive effect on the log-odds of admission.\n\nGPA (Est. = 0.80, p = 0.02):\n\nA positive coefficient indicates that higher GPA increases the likelihood of admission. It is statistically significant (p &lt; 0.05).\n\nRank 2 (Est. = -0.68, p = 0.03):\n\nBeing in rank 2 (relative to rank 1) decreases the odds of admission. This is statistically significant.\n\nRank 3 (Est. = -1.34, p = 0.00):\n\nA strong negative effect on the log-odds of admission for rank 3. It is statistically significant.\n\nRank 4 (Est. = -1.55, p = 0.00):\n\nBeing in rank 4 strongly reduces the chances of admission, statistically significant with a very low p-value."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#from-log-odds-to-odds-and-probabilities",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#from-log-odds-to-odds-and-probabilities",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "From Log-Odds to Odds and Probabilities",
+    "text": "From Log-Odds to Odds and Probabilities\n\nLog-Odds (Linear Equation)\n\nThe log-odds (logit) from a logistic regression model can be written as:\n\\[\n\\text{Log-Odds}(Y = 1) = \\beta_0 + \\beta_1 \\times X_1 + \\beta_2 \\times X_2 + \\dots + \\beta_k \\times X_k\n\\]\nWhere:\n\n\\(\\beta_0\\) is the intercept,\n\\(\\beta_1, \\beta_2, \\dots, \\beta_k\\) are the coefficients for predictors \\(X_1, X_2, \\dots, X_k\\)."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#from-log-odds-to-odds",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#from-log-odds-to-odds",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "From Log-Odds to Odds",
+    "text": "From Log-Odds to Odds\n\n\nConverting Log-Odds to Odds\n\nTo convert the log-odds to odds, use the exponential function:\n\\[\n\\text{Odds} = e^{\\text{Log-Odds}} = e^{\\beta_0 + \\beta_1 X_1 + \\dots + \\beta_k X_k}\n\\]\nThe odds represent the ratio of the probability of the event happening to the probability of the event not happening."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#from-log-odds-to-probabilities",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#from-log-odds-to-probabilities",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "From Log-Odds to Probabilities",
+    "text": "From Log-Odds to Probabilities\n\n\nComputing the Probability\n\nTo compute the probability from the log-odds, use the logistic function:\n\\[\nP(Y = 1) = \\frac{1}{1 + e^{-\\text{Log-Odds}}}\n\\]\nOr equivalently:\n\\[\nP(Y = 1) = \\frac{e^{\\text{Log-Odds}}}{1 + e^{\\text{Log-Odds}}}\n\\]\nThis formula converts the log-odds into a probability value between 0 and 1."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#example-odds-and-probabilities",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#example-odds-and-probabilities",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Odds and Probabilities",
+    "text": "Example: Odds and Probabilities\nFor example, if the log-odds from the model output for a certain \\(X\\) is:\n\\[\n\\text{Log-Odds} = \\beta_0 + \\beta_1 X_1 = -3.99 + (0.80 \\times GPA) - (0.68 \\times Rank 2)\n\\]\n\nCompute the odds using \\(e^{\\text{Log-Odds}}\\).\nCompute the probability using the logistic function."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation",
+    "text": "Interpretation\n\nOdds greater than 1: The event is more likely to happen.\nOdds less than 1: The event is less likely to happen.\nProbability near 1: High chance of the event occurring.\nProbability near 0: Low chance of the event occurring."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#output-conclusion",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#output-conclusion",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Output: Conclusion",
+    "text": "Output: Conclusion\n\nThis model indicates that GPA, GRE, and rank significantly influence the likelihood of admission, with lower ranks (higher numerical values) significantly decreasing the chances of admission."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-results-odds",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-results-odds",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of Results: Odds",
+    "text": "Interpretation of Results: Odds\n\nGRE: For a one-unit increase in GRE, the odds of being admitted increase by a factor of: \\[\ne^{0.002} \\approx 1.002\n\\] This means that for every additional point in GRE, the odds of admission increase by 0.2%.\nGPA: For a one-unit increase in GPA, the odds of being admitted increase by a factor of: \\[\ne^{0.804} \\approx 2.23\n\\] This means that for each additional GPA point, the odds of admission more than double (2.23 times higher).\nRank (Rank 2): For being in Rank 2 compared to Rank 1, the odds of admission decrease by a factor of: \\[\ne^{-0.675} \\approx 0.51\n\\] This means that students from Rank 2 institutions have approximately half the odds of being admitted compared to those from Rank 1 institutions."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-results-probability",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#interpretation-of-results-probability",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of Results: Probability",
+    "text": "Interpretation of Results: Probability\nTo convert log-odds into probabilities:\n\\[\nP(Y = 1) = \\frac{1}{1 + e^{-(\\text{log-odds})}}\n\\]\n\nGRE: The change in probability for a one-unit increase in GRE is minimal, given the very small log-odds coefficient (0.002). The probability increases slightly for each GRE point.\nGPA: A one-unit increase in GPA substantially increases the probability of admission, as the log-odds increase by 0.804. This leads to a noticeable jump in the probability of being admitted.\nRank (Rank 2): Being in Rank 2 compared to Rank 1 decreases the probability of admission due to the reduction in log-odds by 0.675. This results in a lower probability of being admitted for Rank 2 graduates."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#summary-2",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#summary-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary",
+    "text": "Summary\n\nSome key takeaways from this session:\n\nLog-Odds to Odds:\n\\[\n\\text{Odds} = e^{\\text{Log-Odds}}\n\\]\nOdds to Probability:\n\\[\nP(Y = 1) = \\frac{\\text{Odds}}{1 + \\text{Odds}}\n\\]\nDirect Conversion:\n\\[\nP(Y = 1) = \\frac{e^{\\beta_0 + \\beta_1 X_1 + \\ldots + \\beta_p X_p}}{1 + e^{\\beta_0 + \\beta_1 X_1 + \\ldots + \\beta_p X_p}}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#summary-3",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#summary-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary",
+    "text": "Summary\n\n\nSome key takeaways from this session:\n\nMaximum Likelihood Estimation (MLE): Estimates the parameters that maximize the likelihood of observing the given data.\nModel Assessment: AIC (Akaike Information Criterion) and BIC (Bayesian Information Criterion): Lower values indicate a better balance between model fit and complexity.\nThe logistic function ensures predicted probabilities are between 0 and 1.\nCoefficients can be interpreted in terms of log-odds and odds ratios.\nModel fit and predictor significance can be evaluated using pseudo R-squared, AIC, BIC, and statistical tests.\nUnderstanding how to convert between log-odds, odds, and probabilities is crucial for interpretation."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#from-log-odds-to-odds-and-probabilities-1",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#from-log-odds-to-odds-and-probabilities-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "From Log-Odds to Odds and Probabilities",
+    "text": "From Log-Odds to Odds and Probabilities\n\n\nLog-Odds (Linear Equation)\n\nThe log-odds (logit) from a logistic regression model can be written as:\n\\[\n\\text{Log-Odds}(Y = 1) = \\beta_0 + \\beta_1 \\times X_1 + \\beta_2 \\times X_2 + \\dots + \\beta_k \\times X_k\n\\]\nWhere:\n\n\\(\\beta_0\\) is the intercept,\n\\(\\beta_1, \\beta_2, \\dots, \\beta_k\\) are the coefficients for predictors \\(X_1, X_2, \\dots, X_k\\)."
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "",
+    "text": "Logistic Regression Model."
   }
 ]
