@@ -905,23 +905,131 @@ Using an F-statistic and p-value, we find **Income** is significant, so we keep 
 
 ## Stepwise Regression Example
 
-Next, we calculate the p-values for the remaining variables (**Age** and **Education**) and check if any of them can be added to the model.
+::: {style="font-size: 60%;"}
+::: nonincremental
 
-After calculating, we find that **Education** has the lowest p-value and is significant, so we add it to the model:
+
+The remaining variables, **Age** and **Education**, are candidates for inclusion.
+
+**Calculating p-values for Inclusion**
+
+- **Add Each Variable Separately**: Create two new models:
+
+  1. **Adding Education**:
+
+     $$
+     Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \epsilon
+     $$
+
+  2. **Adding Age**:
+
+     $$
+     Spending = \beta_0 + \beta_1 \cdot Income + \beta_3 \cdot Age + \epsilon
+     $$
+
+- **Estimate Coefficients**: For each model, estimate the new coefficients ($\hat{\beta}_2$ or $\hat{\beta}_3$).
+
+- **Compute Standard Errors**: Calculate the standard errors for these new coefficients.
+
+- **Calculate t-statistics**:
+
+  $$
+  t_{\text{Education}} = \frac{\hat{\beta}_2}{SE(\hat{\beta}_2)}
+  $$
+
+  $$
+  t_{\text{Age}} = \frac{\hat{\beta}_3}{SE(\hat{\beta}_3)}
+  $$
+
+- **Determine p-values**: Find the p-values corresponding to $t_{\text{Education}}$ and $t_{\text{Age}}$.
+
+**Decision**
+
+- **Select Variable with Lowest p-value**: Choose the variable with the lowest p-value below the entry threshold (e.g., 0.05).
+
+- **Add Significant Variable**: Since **Education** is significant (assuming a p-value of 0.01), add it to the model.
+
+:::
+:::
+
+
+## Stepwise Regression Example
+
+::: {style="font-size: 60%;"}
+::: nonincremental
+
+
+With **Income** and **Education** in the model:
 
 $$
 Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \epsilon
 $$
 
+**Calculating p-values for Removal**
+
+- **Re-estimate Coefficients**: Re-estimate $\hat{\beta}_1$ and $\hat{\beta}_2$.
+
+- **Compute Standard Errors**: Calculate the standard errors for these coefficients.
+
+- **Calculate t-statistics**:
+
+  $$
+  t_{\text{Income}} = \frac{\hat{\beta}_1}{SE(\hat{\beta}_1)}
+  $$
+
+  $$
+  t_{\text{Education}} = \frac{\hat{\beta}_2}{SE(\hat{\beta}_2)}
+  $$
+
+- **Determine p-values**: Find the p-values corresponding to $t_{\text{Income}}$ and $t_{\text{Education}}$.
+
+**Decision**
+
+- **Check for Non-significance**: If any variable's p-value exceeds the removal threshold (e.g., 0.10), consider removing it.
+
+- **Retain Significant Variables**: If both variables remain significant (p-values below 0.05), keep them in the model.
+
+:::
+:::
+
+
+
 ## Stepwise Regression Example
 
-Now, we compute the p-values for both **Income** and **Education**. If either variable has a high p-value (e.g., $p > 0.05$), we remove it from the model.
+::: {style="font-size: 60%;"}
+::: nonincremental
 
-In this case, both **Income** and **Education** remain significant.
+**Assess Remaining Variables**
 
-## Stepwise Regression Example
+Now, only **Age** remains for consideration.
 
-We continue this process by adding **Age** to the model if it is significant, or removing variables if their significance drops. The process continues until no more variables can be added or removed.
+### Calculating p-value for Age
+
+- **Add Age to the Model**:
+
+  $$
+  Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \beta_3 \cdot Age + \epsilon
+  $$
+
+- **Estimate \(\hat{\beta}_3\) and Compute SE**: Estimate the coefficient for **Age** and its standard error.
+
+- **Calculate t-statistic and p-value**:
+
+  $$
+  t_{\text{Age}} = \frac{\hat{\beta}_3}{SE(\hat{\beta}_3)}
+  $$
+
+- **Determine the p-value**: Find the p-value from the t-distribution.
+
+**Decision**
+
+- **Add or Exclude**: If the p-value for **Age** is below 0.05, add it to the model; otherwise, exclude it.
+
+- **Example Outcome**: Suppose the p-value for **Age** is 0.15; you would not add **Age** to the model.
+
+:::
+:::
+
 
 ## Stepwise Regression Example
 

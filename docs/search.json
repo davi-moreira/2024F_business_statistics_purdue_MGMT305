@@ -5898,21 +5898,21 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Stepwise Regression Example",
-    "text": "Stepwise Regression Example\nNext, we calculate the p-values for the remaining variables (Age and Education) and check if any of them can be added to the model.\nAfter calculating, we find that Education has the lowest p-value and is significant, so we add it to the model:\n\\[\nSpending = \\beta_0 + \\beta_1 \\cdot Income + \\beta_2 \\cdot Education + \\epsilon\n\\]"
+    "text": "Stepwise Regression Example\n\n\nThe remaining variables, Age and Education, are candidates for inclusion.\nCalculating p-values for Inclusion\n\nAdd Each Variable Separately: Create two new models:\n\nAdding Education:\n\\[\nSpending = \\beta_0 + \\beta_1 \\cdot Income + \\beta_2 \\cdot Education + \\epsilon\n\\]\nAdding Age:\n\\[\nSpending = \\beta_0 + \\beta_1 \\cdot Income + \\beta_3 \\cdot Age + \\epsilon\n\\]\n\nEstimate Coefficients: For each model, estimate the new coefficients (\\(\\hat{\\beta}_2\\) or \\(\\hat{\\beta}_3\\)).\nCompute Standard Errors: Calculate the standard errors for these new coefficients.\nCalculate t-statistics:\n\\[\nt_{\\text{Education}} = \\frac{\\hat{\\beta}_2}{SE(\\hat{\\beta}_2)}\n\\]\n\\[\nt_{\\text{Age}} = \\frac{\\hat{\\beta}_3}{SE(\\hat{\\beta}_3)}\n\\]\nDetermine p-values: Find the p-values corresponding to \\(t_{\\text{Education}}\\) and \\(t_{\\text{Age}}\\).\n\nDecision\n\nSelect Variable with Lowest p-value: Choose the variable with the lowest p-value below the entry threshold (e.g., 0.05).\nAdd Significant Variable: Since Education is significant (assuming a p-value of 0.01), add it to the model."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-2",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Stepwise Regression Example",
-    "text": "Stepwise Regression Example\nNow, we compute the p-values for both Income and Education. If either variable has a high p-value (e.g., \\(p &gt; 0.05\\)), we remove it from the model.\nIn this case, both Income and Education remain significant."
+    "text": "Stepwise Regression Example\n\n\nWith Income and Education in the model:\n\\[\nSpending = \\beta_0 + \\beta_1 \\cdot Income + \\beta_2 \\cdot Education + \\epsilon\n\\]\nCalculating p-values for Removal\n\nRe-estimate Coefficients: Re-estimate \\(\\hat{\\beta}_1\\) and \\(\\hat{\\beta}_2\\).\nCompute Standard Errors: Calculate the standard errors for these coefficients.\nCalculate t-statistics:\n\\[\nt_{\\text{Income}} = \\frac{\\hat{\\beta}_1}{SE(\\hat{\\beta}_1)}\n\\]\n\\[\nt_{\\text{Education}} = \\frac{\\hat{\\beta}_2}{SE(\\hat{\\beta}_2)}\n\\]\nDetermine p-values: Find the p-values corresponding to \\(t_{\\text{Income}}\\) and \\(t_{\\text{Education}}\\).\n\nDecision\n\nCheck for Non-significance: If any variable’s p-value exceeds the removal threshold (e.g., 0.10), consider removing it.\nRetain Significant Variables: If both variables remain significant (p-values below 0.05), keep them in the model."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-3",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Stepwise Regression Example",
-    "text": "Stepwise Regression Example\nWe continue this process by adding Age to the model if it is significant, or removing variables if their significance drops. The process continues until no more variables can be added or removed."
+    "text": "Stepwise Regression Example\n\n\nAssess Remaining Variables\nNow, only Age remains for consideration.\nCalculating p-value for Age\n\nAdd Age to the Model:\n\\[\nSpending = \\beta_0 + \\beta_1 \\cdot Income + \\beta_2 \\cdot Education + \\beta_3 \\cdot Age + \\epsilon\n\\]\n**Estimate (_3) and Compute SE: Estimate the coefficient for Age** and its standard error.\nCalculate t-statistic and p-value:\n\\[\nt_{\\text{Age}} = \\frac{\\hat{\\beta}_3}{SE(\\hat{\\beta}_3)}\n\\]\nDetermine the p-value: Find the p-value from the t-distribution.\n\nDecision\n\nAdd or Exclude: If the p-value for Age is below 0.05, add it to the model; otherwise, exclude it.\nExample Outcome: Suppose the p-value for Age is 0.15; you would not add Age to the model."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-4",

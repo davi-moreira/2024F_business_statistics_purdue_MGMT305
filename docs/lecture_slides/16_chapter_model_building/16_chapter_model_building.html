@@ -1222,20 +1222,96 @@ Spending = \beta_0 + \beta_1 \cdot Income + \epsilon
 </section>
 <section id="stepwise-regression-example-1" class="slide level2 center">
 <h2>Stepwise Regression Example</h2>
-<p>Next, we calculate the p-values for the remaining variables (<strong>Age</strong> and <strong>Education</strong>) and check if any of them can be added to the model.</p>
-<p>After calculating, we find that <strong>Education</strong> has the lowest p-value and is significant, so we add it to the model:</p>
+<div style="font-size: 60%;">
+<div>
+<p>The remaining variables, <strong>Age</strong> and <strong>Education</strong>, are candidates for inclusion.</p>
+<p><strong>Calculating p-values for Inclusion</strong></p>
+<ul>
+<li><p><strong>Add Each Variable Separately</strong>: Create two new models:</p>
+<ol type="1">
+<li><p><strong>Adding Education</strong>:</p>
 <p><span class="math display">\[
 Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \epsilon
+\]</span></p></li>
+<li><p><strong>Adding Age</strong>:</p>
+<p><span class="math display">\[
+Spending = \beta_0 + \beta_1 \cdot Income + \beta_3 \cdot Age + \epsilon
+\]</span></p></li>
+</ol></li>
+<li><p><strong>Estimate Coefficients</strong>: For each model, estimate the new coefficients (<span class="math inline">\(\hat{\beta}_2\)</span> or <span class="math inline">\(\hat{\beta}_3\)</span>).</p></li>
+<li><p><strong>Compute Standard Errors</strong>: Calculate the standard errors for these new coefficients.</p></li>
+<li><p><strong>Calculate t-statistics</strong>:</p>
+<p><span class="math display">\[
+t_{\text{Education}} = \frac{\hat{\beta}_2}{SE(\hat{\beta}_2)}
 \]</span></p>
+<p><span class="math display">\[
+t_{\text{Age}} = \frac{\hat{\beta}_3}{SE(\hat{\beta}_3)}
+\]</span></p></li>
+<li><p><strong>Determine p-values</strong>: Find the p-values corresponding to <span class="math inline">\(t_{\text{Education}}\)</span> and <span class="math inline">\(t_{\text{Age}}\)</span>.</p></li>
+</ul>
+<p><strong>Decision</strong></p>
+<ul>
+<li><p><strong>Select Variable with Lowest p-value</strong>: Choose the variable with the lowest p-value below the entry threshold (e.g., 0.05).</p></li>
+<li><p><strong>Add Significant Variable</strong>: Since <strong>Education</strong> is significant (assuming a p-value of 0.01), add it to the model.</p></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="stepwise-regression-example-2" class="slide level2 center">
 <h2>Stepwise Regression Example</h2>
-<p>Now, we compute the p-values for both <strong>Income</strong> and <strong>Education</strong>. If either variable has a high p-value (e.g., <span class="math inline">\(p &gt; 0.05\)</span>), we remove it from the model.</p>
-<p>In this case, both <strong>Income</strong> and <strong>Education</strong> remain significant.</p>
+<div style="font-size: 60%;">
+<div>
+<p>With <strong>Income</strong> and <strong>Education</strong> in the model:</p>
+<p><span class="math display">\[
+Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \epsilon
+\]</span></p>
+<p><strong>Calculating p-values for Removal</strong></p>
+<ul>
+<li><p><strong>Re-estimate Coefficients</strong>: Re-estimate <span class="math inline">\(\hat{\beta}_1\)</span> and <span class="math inline">\(\hat{\beta}_2\)</span>.</p></li>
+<li><p><strong>Compute Standard Errors</strong>: Calculate the standard errors for these coefficients.</p></li>
+<li><p><strong>Calculate t-statistics</strong>:</p>
+<p><span class="math display">\[
+t_{\text{Income}} = \frac{\hat{\beta}_1}{SE(\hat{\beta}_1)}
+\]</span></p>
+<p><span class="math display">\[
+t_{\text{Education}} = \frac{\hat{\beta}_2}{SE(\hat{\beta}_2)}
+\]</span></p></li>
+<li><p><strong>Determine p-values</strong>: Find the p-values corresponding to <span class="math inline">\(t_{\text{Income}}\)</span> and <span class="math inline">\(t_{\text{Education}}\)</span>.</p></li>
+</ul>
+<p><strong>Decision</strong></p>
+<ul>
+<li><p><strong>Check for Non-significance</strong>: If any variable’s p-value exceeds the removal threshold (e.g., 0.10), consider removing it.</p></li>
+<li><p><strong>Retain Significant Variables</strong>: If both variables remain significant (p-values below 0.05), keep them in the model.</p></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="stepwise-regression-example-3" class="slide level2 center">
 <h2>Stepwise Regression Example</h2>
-<p>We continue this process by adding <strong>Age</strong> to the model if it is significant, or removing variables if their significance drops. The process continues until no more variables can be added or removed.</p>
+<div style="font-size: 60%;">
+<div>
+<p><strong>Assess Remaining Variables</strong></p>
+<p>Now, only <strong>Age</strong> remains for consideration.</p>
+<h3 id="calculating-p-value-for-age">Calculating p-value for Age</h3>
+<ul>
+<li><p><strong>Add Age to the Model</strong>:</p>
+<p><span class="math display">\[
+Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \beta_3 \cdot Age + \epsilon
+\]</span></p></li>
+<li><p>**Estimate (_3) and Compute SE<strong>: Estimate the coefficient for </strong>Age** and its standard error.</p></li>
+<li><p><strong>Calculate t-statistic and p-value</strong>:</p>
+<p><span class="math display">\[
+t_{\text{Age}} = \frac{\hat{\beta}_3}{SE(\hat{\beta}_3)}
+\]</span></p></li>
+<li><p><strong>Determine the p-value</strong>: Find the p-value from the t-distribution.</p></li>
+</ul>
+<p><strong>Decision</strong></p>
+<ul>
+<li><p><strong>Add or Exclude</strong>: If the p-value for <strong>Age</strong> is below 0.05, add it to the model; otherwise, exclude it.</p></li>
+<li><p><strong>Example Outcome</strong>: Suppose the p-value for <strong>Age</strong> is 0.15; you would not add <strong>Age</strong> to the model.</p></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="stepwise-regression-example-4" class="slide level2 center">
 <h2>Stepwise Regression Example</h2>
