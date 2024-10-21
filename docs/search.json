@@ -5912,14 +5912,14 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Stepwise Regression Example",
-    "text": "Stepwise Regression Example\n\n\nAssess Remaining Variables\nNow, only Age remains for consideration.\nCalculating p-value for Age\n\nAdd Age to the Model:\n\\[\nSpending = \\beta_0 + \\beta_1 \\cdot Income + \\beta_2 \\cdot Education + \\beta_3 \\cdot Age + \\epsilon\n\\]\n**Estimate (_3) and Compute SE: Estimate the coefficient for Age** and its standard error.\nCalculate t-statistic and p-value:\n\\[\nt_{\\text{Age}} = \\frac{\\hat{\\beta}_3}{SE(\\hat{\\beta}_3)}\n\\]\nDetermine the p-value: Find the p-value from the t-distribution.\n\nDecision\n\nAdd or Exclude: If the p-value for Age is below 0.05, add it to the model; otherwise, exclude it.\nExample Outcome: Suppose the p-value for Age is 0.15; you would not add Age to the model."
+    "text": "Stepwise Regression Example\n\n\nAssess Remaining Variables\nNow, only Age remains for consideration.\nCalculating p-value for Age\n\nAdd Age to the Model:\n\\[\nSpending = \\beta_0 + \\beta_1 \\cdot Income + \\beta_2 \\cdot Education + \\beta_3 \\cdot Age + \\epsilon\n\\]\nEstimate \\(\\hat{\\beta}_3\\) and Compute SE: Estimate the coefficient for Age and its standard error.\nCalculate t-statistic and p-value:\n\\[\nt_{\\text{Age}} = \\frac{\\hat{\\beta}_3}{SE(\\hat{\\beta}_3)}\n\\]\nDetermine the p-value: Find the p-value from the t-distribution.\n\nDecision\n\nAdd or Exclude: If the p-value for Age is below 0.05, add it to the model; otherwise, exclude it.\nExample Outcome: Suppose the p-value for Age is 0.15; you would not add Age to the model."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-4",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Stepwise Regression Example",
-    "text": "Stepwise Regression Example\nAfter completing the procedure, our final model could look like this:\n\\[\nSpending = \\beta_0 + \\beta_1 \\cdot Income + \\beta_2 \\cdot Education + \\epsilon\n\\]\nHere, Income and Education are the only significant predictors of Spending."
+    "text": "Stepwise Regression Example\n\nAfter completing the procedure, our final model could look like this:\n\\[\nSpending = \\beta_0 + \\beta_1 \\cdot Income + \\beta_2 \\cdot Education + \\epsilon\n\\]\nHere, Income and Education are the only significant predictors of Spending."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#summary-of-stepwise-procedure",

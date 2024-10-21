@@ -955,7 +955,7 @@ The remaining variables, **Age** and **Education**, are candidates for inclusion
 
 ## Stepwise Regression Example
 
-::: {style="font-size: 60%;"}
+::: {style="font-size: 70%;"}
 ::: nonincremental
 
 
@@ -996,14 +996,14 @@ $$
 
 ## Stepwise Regression Example
 
-::: {style="font-size: 60%;"}
+::: {style="font-size: 70%;"}
 ::: nonincremental
 
 **Assess Remaining Variables**
 
 Now, only **Age** remains for consideration.
 
-### Calculating p-value for Age
+**Calculating p-value for Age**
 
 - **Add Age to the Model**:
 
@@ -1011,7 +1011,7 @@ Now, only **Age** remains for consideration.
   Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \beta_3 \cdot Age + \epsilon
   $$
 
-- **Estimate \(\hat{\beta}_3\) and Compute SE**: Estimate the coefficient for **Age** and its standard error.
+- **Estimate $\hat{\beta}_3$ and Compute SE**: Estimate the coefficient for **Age** and its standard error.
 
 - **Calculate t-statistic and p-value**:
 
@@ -1032,6 +1032,8 @@ Now, only **Age** remains for consideration.
 
 
 ## Stepwise Regression Example
+
+<br>
 
 After completing the procedure, our final model could look like this:
 
