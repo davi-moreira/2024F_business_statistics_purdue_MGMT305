@@ -67,10 +67,10 @@ editor: visual
 | **Oct 28**   | **Midterm 2 Review**                        | **Mult. Regr. Model Bldg Log. Regr.**                 |.  |.  |.  |
 | **Oct 29**   | **Homework 6 due date**                     | **Logistic Regression**                               |.  |.  |.  |
 | **31**          | **Midterm 2 (6:30 pm – 7:30 pm, UC 114)**                               | **Mult. Regr. Model Bldg Log. Regr.**                 |.  |.  |.  |
-| Nov 1   | Time Series                             | 17.1, 17.2                                         |.  |.  |.  |
-| Nov 4   | Time Series (cont’d)                    | 17.3, 17.4                                         |.  |.  |.  |
-| Nov 6   | Time Series (cont’d)                    | 17.5, 17.6                                         |.  |.  |.  |
-| Nov 8   | Time Series (cont’d)                    | Lag Variables Supplement & Applications           |.  |.  |.  |
+| Nov 1   | Time Series                             | 17.1                                         |[slides](/lecture_slides/17_chapter_time_series/17_chapter_time_series.html){target="_blank"}  |.  |[**Video**: Time Series Forecast Using Forecast Sheet in Excel](https://www.youtube.com/watch?v=WU6UKKuVGY8){target="_blank"}  |
+| Nov 4   | Time Series (cont’d)                    | 17.2, 17.3                                         |[slides](/lecture_slides/17_chapter_time_series/17_chapter_time_series.html){target="_blank"}  |.  |.  |
+| Nov 6   | Time Series (cont’d)                    | 17.4, 17.5                                         |[slides](/lecture_slides/17_chapter_time_series/17_chapter_time_series.html){target="_blank"}  |.  |.  |
+| Nov 8   | Time Series (cont’d)                    | 17.6           |[slides](/lecture_slides/17_chapter_time_series/17_chapter_time_series.html){target="_blank"}  |.  |.  |
 | **Nov 10**  | **Homework 7 due date**                     | **Time Series**                                       |.  |.  |.  |
 | **Nov 11**  | **No class**                                | **No class**                                          |.  |.  |.  |
 | **Nov 12**  | **Quiz 3**                                  | **Time Series**                                       |.  |.  |.  |
