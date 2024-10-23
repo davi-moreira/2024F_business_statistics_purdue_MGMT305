@@ -7845,5 +7845,12 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Step 4: The Average Seasonal Factors",
     "text": "Step 4: The Average Seasonal Factors\nAveraging all \\(S_{t t}\\) values corresponding to that season to obtain Seasonal Index \\(S_t\\).\n\n\n\nQuarter\nSeasonal-Irregular Values\nSeasonal Index\n\n\n\n\n1\n0.971, 0.918, 0.908\n0.93\n\n\n2\n0.840, 0.839, 0.834\n0.84\n\n\n3\n1.096, 1.075, 1.109\n1.09\n\n\n4\n1.133, 1.156, 1.141\n1.14\n\n\nTotal\n\n4"
+  },
+  {
+    "objectID": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#logit-models",
+    "href": "lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html#logit-models",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Logit Models",
+    "text": "Logit Models\n\n\n\nLogistic distribution: In the Logit model, \\(\\epsilon\\) has a logistic distribution, \\(\\mu = 0\\) and variance given by: \\(\\sigma^2(u) = \\pi^2/3\\)\n\n\\[\n\\text{Pr}(y = 1|x) = \\frac{\\exp(\\beta_{0} + \\beta x)}{1 + \\exp(\\beta_{0} + \\beta x)} \\quad \\text{or} \\quad \\frac{e^{\\beta_0 + \\beta_1 x_i}}{1 + e^{\\beta_0 + \\beta_1 x_i}}\n\\]"
   }
 ]

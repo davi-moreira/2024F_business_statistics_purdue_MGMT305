@@ -374,6 +374,7 @@ $$
 :::
 :::::
 
+<!---
 
 ## The Role of the Link Function
 
@@ -435,9 +436,17 @@ The probability depends on the distribution of $\epsilon$.
 :::
 :::::
 
-## Logit and Probit Models
 
+--->
+<!---
+## Logit and Probit Models
+--->
+
+## Logit Models
+
+<!---
 Two distributions of $\epsilon$ are considered:
+--->
 
 ::: {.nonincremental}
 
@@ -447,6 +456,7 @@ $$
 \text{Pr}(y = 1|x) = \frac{\exp(\beta_{0} + \beta x)}{1 + \exp(\beta_{0} + \beta x)} \quad \text{or} \quad \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 $$
 
+<!---
 ::: {.fragment}
 
 - **Normal distribution**: In the Probit model, $\epsilon$ has a normal distribution and variance given by: $\sigma^2(u) = 1$
@@ -456,6 +466,8 @@ $$
 $$
 
 :::
+--->
+
 :::
 
 ## Logistic Function vs Normal Distribution

@@ -604,51 +604,79 @@ y^{*}_{i} = \beta_{0} + \beta X + \epsilon
 </div>
 </div>
 </div></div>
-</section>
-<section id="the-role-of-the-link-function-1" class="slide level2 center">
-<h2>The Role of the Link Function</h2>
-<div class="columns">
-<div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><br></p>
-<p><br></p>
+<!---
+
+## The Role of the Link Function
+
+::::: columns
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<br>
+
+<br>
+
 <center>
-<p><img data-src="figs/image12.png" style="width:95.0%"></p>
+
+![](figs/image12.png){width=95%}
+
 </center>
-</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<div>
-<ul>
-<li>Latent Variable Model</li>
-</ul>
-<p><span class="math display">\[
+
+:::
+
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {.nonincremental}
+
+- Latent Variable Model
+
+
+$$
 y^{*}_{i} = \beta_{0} + \beta X + \epsilon
-\]</span></p>
-</div>
-<div class="fragment">
-<div>
-<ul>
-<li>Binary Outcome Based on Latent Variable</li>
-</ul>
-<p><span class="math display">\[
-\text{Pr}(y = 1|x) = \text{Pr}(y^* &gt; 0|x)\\
-\]</span></p>
-</div>
-<div>
-<div class="fragment">
-<ul>
-<li>The Probability in Terms of the Error Term</li>
-</ul>
-<p><span class="math display">\[
-\text{Pr}(y = 1|x) = \text{Pr}(\epsilon &gt; - [\beta_{0} + \beta x]|x)
-\]</span></p>
-<p>The probability depends on the distribution of <span class="math inline">\(\epsilon\)</span>.</p>
-</div>
-</div>
-</div>
-</div></div>
+$$
+
+:::
+
+::: fragment
+::: {.nonincremental}
+
+- Binary Outcome Based on Latent Variable
+
+$$
+\text{Pr}(y = 1|x) = \text{Pr}(y^* > 0|x)\\
+$$
+
+:::
+
+::: {.nonincremental}
+
+::: fragment
+
+- The Probability in Terms of the Error Term
+
+$$
+\text{Pr}(y = 1|x) = \text{Pr}(\epsilon > - [\beta_{0} + \beta x]|x)
+$$
+
+The probability depends on the distribution of $\epsilon$.
+
+::: 
+
+::: 
+:::
+:::
+:::::
+
+
+--->
+<!---
+## Logit and Probit Models
+--->
 </section>
-<section id="logit-and-probit-models" class="slide level2 center">
-<h2>Logit and Probit Models</h2>
-<p>Two distributions of <span class="math inline">\(\epsilon\)</span> are considered:</p>
+<section id="logit-models" class="slide level2 center">
+<h2>Logit Models</h2>
+<!---
+Two distributions of $\epsilon$ are considered:
+--->
 <div>
 <ul>
 <li><strong>Logistic distribution</strong>: In the Logit model, <span class="math inline">\(\epsilon\)</span> has a logistic distribution, <span class="math inline">\(\mu = 0\)</span> and variance given by: <span class="math inline">\(\sigma^2(u) = \pi^2/3\)</span></li>
@@ -656,14 +684,17 @@ y^{*}_{i} = \beta_{0} + \beta X + \epsilon
 <p><span class="math display">\[
 \text{Pr}(y = 1|x) = \frac{\exp(\beta_{0} + \beta x)}{1 + \exp(\beta_{0} + \beta x)} \quad \text{or} \quad \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 \]</span></p>
-<div class="fragment">
-<ul>
-<li><strong>Normal distribution</strong>: In the Probit model, <span class="math inline">\(\epsilon\)</span> has a normal distribution and variance given by: <span class="math inline">\(\sigma^2(u) = 1\)</span></li>
-</ul>
-<p><span class="math display">\[
+<!---
+::: {.fragment}
+
+- **Normal distribution**: In the Probit model, $\epsilon$ has a normal distribution and variance given by: $\sigma^2(u) = 1$
+
+$$ 
 \text{Pr}(y = 1|x) = \int_{-\infty}^{\beta_{0} + \beta x} \frac{1}{\sqrt{2\pi}} \exp\Bigg(-\frac{t^2}{2}\Bigg)dt
-\]</span></p>
-</div>
+$$
+
+:::
+--->
 </div>
 </section>
 <section id="logistic-function-vs-normal-distribution" class="slide level2 center">
