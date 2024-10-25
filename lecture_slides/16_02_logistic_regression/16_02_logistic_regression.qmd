@@ -231,7 +231,7 @@ $\hat{P}_{i} = \hat{P} (Y = 1) = \Lambda (\hat{\beta}_{0} + \hat{\beta}_{1}X_{1i
 
 where $\Lambda(\hat{X}_{i}B)$ is the systematic (linear) component of the model.
 
-# Understanding the Link Function 
+# Understanding the Link Function  {background-color="#cfb991"}
 
 ## Understanding the Link Function
 
@@ -503,7 +503,7 @@ ggplot(data=dat, aes(x=x, y=value, colour=type, fill=type)) +
 
 ```
 
-# The Logit Link Function
+# The Logit Link Function  {background-color="#cfb991"}
 
 ## The Logit Link Function
 
@@ -612,7 +612,7 @@ If $\beta_1$ is estimated by $b_1$, then the odds for the event are predicted to
 
 ::::
 
-# Motivation: Binomial Logit Model
+# Motivation: Binomial Logit Model  {background-color="#cfb991"}
 
 ## Motivation: Binomial Logit Model
 
@@ -655,6 +655,34 @@ summ(mylogit)
 
 ## Output: Model Summary
 
+::::: columns
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 65%;"}
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.width="50%", out.height="50%"}
+
+mydata$rank <- factor(mydata$rank)
+
+mylogit <- glm(admit ~ gre + gpa + rank, data = mydata, family = "binomial")
+
+summ(mylogit)
+
+# tab_model(mylogit, auto.label = FALSE, 
+#           # collapse.ci = TRUE,
+#           # dv.labels = c("additive_model", "interactive_model"),
+#           # pred.labels = c("Intercept", "Female", "Women's Movement Thermometer", "Women's Movement Thermometer X Female"), 
+#           show.ci = FALSE)
+
+```
+
+:::
+
+:::
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 80%;"}
+
 - **Observations**: 400
 
     - The number of data points used in the model (400 observations).
@@ -675,7 +703,41 @@ summ(mylogit)
 
     - The logit link function is used to model the log-odds of the probability of success.
 
+:::
+
+:::
+::::: 
+
+
 ## Output:  Model Fit Statistics
+
+::::: columns
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 65%;"}
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.width="50%", out.height="50%"}
+
+mydata$rank <- factor(mydata$rank)
+
+mylogit <- glm(admit ~ gre + gpa + rank, data = mydata, family = "binomial")
+
+summ(mylogit)
+
+# tab_model(mylogit, auto.label = FALSE, 
+#           # collapse.ci = TRUE,
+#           # dv.labels = c("additive_model", "interactive_model"),
+#           # pred.labels = c("Intercept", "Female", "Women's Movement Thermometer", "Women's Movement Thermometer X Female"), 
+#           show.ci = FALSE)
+
+```
+
+:::
+
+:::
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 75%;"}
 
 - **χ²(5) = 41.46**: 
 
@@ -701,9 +763,41 @@ summ(mylogit)
 
     - The Bayesian Information Criterion, similar to AIC but with a stronger penalty for complexity.
 
+:::
+
+:::
+::::: 
+
+
 ## Output: Coefficients
 
-::: {style="font-size: 80%;"}
+::::: columns
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 65%;"}
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.width="50%", out.height="50%"}
+
+mydata$rank <- factor(mydata$rank)
+
+mylogit <- glm(admit ~ gre + gpa + rank, data = mydata, family = "binomial")
+
+summ(mylogit)
+
+# tab_model(mylogit, auto.label = FALSE, 
+#           # collapse.ci = TRUE,
+#           # dv.labels = c("additive_model", "interactive_model"),
+#           # pred.labels = c("Intercept", "Female", "Women's Movement Thermometer", "Women's Movement Thermometer X Female"), 
+#           show.ci = FALSE)
+
+```
+
+:::
+
+:::
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 70%;"}
 
 - **Intercept (Est. = -3.99, p = 0.00)**:
 
@@ -731,7 +825,10 @@ summ(mylogit)
 
 :::
 
-# From Log-Odds to Odds and Probabilities
+:::
+::::: 
+
+# From Log-Odds to Odds and Probabilities {background-color="#cfb991"}
 
 ## From Log-Odds to Odds and Probabilities
 
@@ -794,18 +891,75 @@ This formula converts the log-odds into a probability value between 0 and 1.
 
 ## Interpretation of Results: Log-Odds
 
-- For a one-unit increase in `gre`, the log-odds of the dependent variable (`admit`) increase by 0.002;
+::::: columns
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
 
-- For a one-unit increase in `gpa`, the log-odds of the DV increase by 0.804;
+::: {style="font-size: 65%;"}
 
-- In the case of the variable `rank`, being a graduate of an institution with
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.width="50%", out.height="50%"}
+
+mydata$rank <- factor(mydata$rank)
+
+mylogit <- glm(admit ~ gre + gpa + rank, data = mydata, family = "binomial")
+
+summ(mylogit)
+
+# tab_model(mylogit, auto.label = FALSE, 
+#           # collapse.ci = TRUE,
+#           # dv.labels = c("additive_model", "interactive_model"),
+#           # pred.labels = c("Intercept", "Female", "Women's Movement Thermometer", "Women's Movement Thermometer X Female"), 
+#           show.ci = FALSE)
+
+```
+
+:::
+
+:::
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+- **GRE**: For a one-unit increase in `gre`, the log-odds of the dependent variable (`admit`) increase by 0.002;
+
+- **GPA**: For a one-unit increase in `gpa`, the log-odds of the DV increase by 0.804;
+
+- **Rank**: In the case of the variable `rank`, being a graduate of an institution with
 `rank`$=2$ changes the log-odds by $-0.675$ compared to an institution with `rank`$=1$.
 
-<br>
+:::
+::::: 
+
 <font size="3">**Source**: [How do I interpret Odds Ratios in Logistic Regression?](https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/)</font>
 
 
+
 ## Interpretation of Results: Odds
+
+::::: columns
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 65%;"}
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.width="50%", out.height="50%"}
+
+mydata$rank <- factor(mydata$rank)
+
+mylogit <- glm(admit ~ gre + gpa + rank, data = mydata, family = "binomial")
+
+summ(mylogit)
+
+# tab_model(mylogit, auto.label = FALSE, 
+#           # collapse.ci = TRUE,
+#           # dv.labels = c("additive_model", "interactive_model"),
+#           # pred.labels = c("Intercept", "Female", "Women's Movement Thermometer", "Women's Movement Thermometer X Female"), 
+#           show.ci = FALSE)
+
+```
+
+:::
+
+:::
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 70%;"}
 
 - **GRE**: For a one-unit increase in GRE, the odds of being admitted increase by a factor of:
   $$
@@ -825,8 +979,41 @@ This formula converts the log-odds into a probability value between 0 and 1.
   $$
   This means that students from Rank 2 institutions have approximately half the odds of being admitted compared to those from Rank 1 institutions.
 
+:::
+
+:::
+::::: 
+
 
 ## Interpretation of Results: Probability
+
+::::: columns
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 65%;"}
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.width="50%", out.height="50%"}
+
+mydata$rank <- factor(mydata$rank)
+
+mylogit <- glm(admit ~ gre + gpa + rank, data = mydata, family = "binomial")
+
+summ(mylogit)
+
+# tab_model(mylogit, auto.label = FALSE, 
+#           # collapse.ci = TRUE,
+#           # dv.labels = c("additive_model", "interactive_model"),
+#           # pred.labels = c("Intercept", "Female", "Women's Movement Thermometer", "Women's Movement Thermometer X Female"), 
+#           show.ci = FALSE)
+
+```
+
+:::
+
+:::
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 80%;"}
 
 To convert log-odds into probabilities:
 
@@ -840,6 +1027,11 @@ $$
 - **GPA**: A one-unit increase in GPA substantially increases the probability of admission, as the log-odds increase by 0.804. This leads to a noticeable jump in the probability of being admitted.
   
 - **Rank (Rank 2)**: Being in Rank 2 compared to Rank 1 decreases the probability of admission due to the reduction in log-odds by 0.675. This results in a lower probability of being admitted for Rank 2 graduates.
+
+:::
+
+:::
+::::: 
 
 ## Interpretation of Results: Predicted Probability
 
@@ -874,29 +1066,11 @@ ggplot(newdata3, aes(x = gre, y = PredictedProb)) +
 
 ```
 
-## Interpretation
-
-- **Odds greater than 1**: The event is more likely to happen.
-
-- **Odds less than 1**: The event is less likely to happen.
-
-- **Probability near 1**: High chance of the event occurring.
-
-- **Probability near 0**: Low chance of the event occurring.
-
-## Output: Conclusion
+## Example Output: Conclusion
 
 <br>
 
 This model indicates that GPA, GRE, and rank significantly influence the likelihood of admission, with lower ranks (higher numerical values) significantly decreasing the chances of admission.
-
-## Model Adjustments and Quality
-
-- Pseudo $R^2$: For similar models, the higher the Pseudo $R^2$, the better the model fit;
-
-- Akaike’s Information Criterion (AIC): For similar models, the lower the AIC, the better the model fit;
-
-- Bayesian Information Criterion (BIC): For similar models, the lower the BIC, the better the model fit;
 
 ## Additional Material
 

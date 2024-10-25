@@ -523,7 +523,7 @@ y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
 <p>where <span class="math inline">\(\Lambda(\hat{X}_{i}B)\)</span> is the systematic (linear) component of the model.</p>
 </section></section>
 <section>
-<section id="understanding-the-link-function" class="title-slide slide level1 center">
+<section id="understanding-the-link-function" class="title-slide slide level1 center" data-background-color="#cfb991">
 <h1>Understanding the Link Function</h1>
 
 </section>
@@ -702,7 +702,7 @@ $$
 
 <img data-src="16_02_logistic_regression_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section></section>
 <section>
-<section id="the-logit-link-function" class="title-slide slide level1 center">
+<section id="the-logit-link-function" class="title-slide slide level1 center" data-background-color="#cfb991">
 <h1>The Logit Link Function</h1>
 
 </section>
@@ -774,7 +774,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
 </section></section>
 <section>
-<section id="motivation-binomial-logit-model" class="title-slide slide level1 center">
+<section id="motivation-binomial-logit-model" class="title-slide slide level1 center" data-background-color="#cfb991">
 <h1>Motivation: Binomial Logit Model</h1>
 
 </section>
@@ -972,6 +972,140 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </section>
 <section id="output-model-summary" class="slide level2 center">
 <h2>Output: Model Summary</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 65%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Observations</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Dependent variable</td>
+<td style="text-align: right;">admit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Type</td>
+<td style="text-align: right;">Generalized linear model</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Family</td>
+<td style="text-align: right;">binomial</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Link</td>
+<td style="text-align: right;">logit</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
+<td style="text-align: right;">41.46</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">p</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (Cragg-Uhler)</td>
+<td style="text-align: right;">0.14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (McFadden)</td>
+<td style="text-align: right;">0.08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">AIC</td>
+<td style="text-align: right;">470.52</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">BIC</td>
+<td style="text-align: right;">494.47</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">S.E.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">z val.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">(Intercept)</td>
+<td style="text-align: right;">-3.99</td>
+<td style="text-align: right;">1.14</td>
+<td style="text-align: right;">-3.50</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">gre</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">2.07</td>
+<td style="text-align: right;">0.04</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">gpa</td>
+<td style="text-align: right;">0.80</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">2.42</td>
+<td style="text-align: right;">0.02</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank2</td>
+<td style="text-align: right;">-0.68</td>
+<td style="text-align: right;">0.32</td>
+<td style="text-align: right;">-2.13</td>
+<td style="text-align: right;">0.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">rank3</td>
+<td style="text-align: right;">-1.34</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">-3.88</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank4</td>
+<td style="text-align: right;">-1.55</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">-3.71</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup></sup> Standard errors: MLE</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 80%;">
 <ul>
 <li class="fragment"><p><strong>Observations</strong>: 400</p>
 <ul>
@@ -994,9 +1128,145 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <li class="fragment">The logit link function is used to model the log-odds of the probability of success.</li>
 </ul></li>
 </ul>
+</div>
+</div></div>
 </section>
 <section id="output-model-fit-statistics" class="slide level2 center">
 <h2>Output: Model Fit Statistics</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 65%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Observations</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Dependent variable</td>
+<td style="text-align: right;">admit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Type</td>
+<td style="text-align: right;">Generalized linear model</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Family</td>
+<td style="text-align: right;">binomial</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Link</td>
+<td style="text-align: right;">logit</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
+<td style="text-align: right;">41.46</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">p</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (Cragg-Uhler)</td>
+<td style="text-align: right;">0.14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (McFadden)</td>
+<td style="text-align: right;">0.08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">AIC</td>
+<td style="text-align: right;">470.52</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">BIC</td>
+<td style="text-align: right;">494.47</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">S.E.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">z val.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">(Intercept)</td>
+<td style="text-align: right;">-3.99</td>
+<td style="text-align: right;">1.14</td>
+<td style="text-align: right;">-3.50</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">gre</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">2.07</td>
+<td style="text-align: right;">0.04</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">gpa</td>
+<td style="text-align: right;">0.80</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">2.42</td>
+<td style="text-align: right;">0.02</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank2</td>
+<td style="text-align: right;">-0.68</td>
+<td style="text-align: right;">0.32</td>
+<td style="text-align: right;">-2.13</td>
+<td style="text-align: right;">0.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">rank3</td>
+<td style="text-align: right;">-1.34</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">-3.88</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank4</td>
+<td style="text-align: right;">-1.55</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">-3.71</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup></sup> Standard errors: MLE</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 75%;">
 <ul>
 <li class="fragment"><p><strong>χ²(5) = 41.46</strong>:</p>
 <ul>
@@ -1023,10 +1293,145 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <li class="fragment">The Bayesian Information Criterion, similar to AIC but with a stronger penalty for complexity.</li>
 </ul></li>
 </ul>
+</div>
+</div></div>
 </section>
 <section id="output-coefficients" class="slide level2 center">
 <h2>Output: Coefficients</h2>
-<div style="font-size: 80%;">
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 65%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Observations</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Dependent variable</td>
+<td style="text-align: right;">admit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Type</td>
+<td style="text-align: right;">Generalized linear model</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Family</td>
+<td style="text-align: right;">binomial</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Link</td>
+<td style="text-align: right;">logit</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
+<td style="text-align: right;">41.46</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">p</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (Cragg-Uhler)</td>
+<td style="text-align: right;">0.14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (McFadden)</td>
+<td style="text-align: right;">0.08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">AIC</td>
+<td style="text-align: right;">470.52</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">BIC</td>
+<td style="text-align: right;">494.47</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">S.E.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">z val.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">(Intercept)</td>
+<td style="text-align: right;">-3.99</td>
+<td style="text-align: right;">1.14</td>
+<td style="text-align: right;">-3.50</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">gre</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">2.07</td>
+<td style="text-align: right;">0.04</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">gpa</td>
+<td style="text-align: right;">0.80</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">2.42</td>
+<td style="text-align: right;">0.02</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank2</td>
+<td style="text-align: right;">-0.68</td>
+<td style="text-align: right;">0.32</td>
+<td style="text-align: right;">-2.13</td>
+<td style="text-align: right;">0.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">rank3</td>
+<td style="text-align: right;">-1.34</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">-3.88</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank4</td>
+<td style="text-align: right;">-1.55</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">-3.71</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup></sup> Standard errors: MLE</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 70%;">
 <ul>
 <li class="fragment"><p><strong>Intercept (Est. = -3.99, p = 0.00)</strong>:</p>
 <ul>
@@ -1054,9 +1459,10 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </ul></li>
 </ul>
 </div>
+</div></div>
 </section></section>
 <section>
-<section id="from-log-odds-to-odds-and-probabilities" class="title-slide slide level1 center">
+<section id="from-log-odds-to-odds-and-probabilities" class="title-slide slide level1 center" data-background-color="#cfb991">
 <h1>From Log-Odds to Odds and Probabilities</h1>
 
 </section>
@@ -1109,15 +1515,283 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </section>
 <section id="interpretation-of-results-log-odds" class="slide level2 center">
 <h2>Interpretation of Results: Log-Odds</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 65%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Observations</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Dependent variable</td>
+<td style="text-align: right;">admit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Type</td>
+<td style="text-align: right;">Generalized linear model</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Family</td>
+<td style="text-align: right;">binomial</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Link</td>
+<td style="text-align: right;">logit</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
+<td style="text-align: right;">41.46</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">p</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (Cragg-Uhler)</td>
+<td style="text-align: right;">0.14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (McFadden)</td>
+<td style="text-align: right;">0.08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">AIC</td>
+<td style="text-align: right;">470.52</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">BIC</td>
+<td style="text-align: right;">494.47</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">S.E.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">z val.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">(Intercept)</td>
+<td style="text-align: right;">-3.99</td>
+<td style="text-align: right;">1.14</td>
+<td style="text-align: right;">-3.50</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">gre</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">2.07</td>
+<td style="text-align: right;">0.04</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">gpa</td>
+<td style="text-align: right;">0.80</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">2.42</td>
+<td style="text-align: right;">0.02</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank2</td>
+<td style="text-align: right;">-0.68</td>
+<td style="text-align: right;">0.32</td>
+<td style="text-align: right;">-2.13</td>
+<td style="text-align: right;">0.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">rank3</td>
+<td style="text-align: right;">-1.34</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">-3.88</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank4</td>
+<td style="text-align: right;">-1.55</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">-3.71</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup></sup> Standard errors: MLE</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
-<li class="fragment"><p>For a one-unit increase in <code>gre</code>, the log-odds of the dependent variable (<code>admit</code>) increase by 0.002;</p></li>
-<li class="fragment"><p>For a one-unit increase in <code>gpa</code>, the log-odds of the DV increase by 0.804;</p></li>
-<li class="fragment"><p>In the case of the variable <code>rank</code>, being a graduate of an institution with <code>rank</code><span class="math inline">\(=2\)</span> changes the log-odds by <span class="math inline">\(-0.675\)</span> compared to an institution with <code>rank</code><span class="math inline">\(=1\)</span>.</p></li>
+<li class="fragment"><p><strong>GRE</strong>: For a one-unit increase in <code>gre</code>, the log-odds of the dependent variable (<code>admit</code>) increase by 0.002;</p></li>
+<li class="fragment"><p><strong>GPA</strong>: For a one-unit increase in <code>gpa</code>, the log-odds of the DV increase by 0.804;</p></li>
+<li class="fragment"><p><strong>Rank</strong>: In the case of the variable <code>rank</code>, being a graduate of an institution with <code>rank</code><span class="math inline">\(=2\)</span> changes the log-odds by <span class="math inline">\(-0.675\)</span> compared to an institution with <code>rank</code><span class="math inline">\(=1\)</span>.</p></li>
 </ul>
-<p><br> <font size="3"><strong>Source</strong>: <a href="https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/">How do I interpret Odds Ratios in Logistic Regression?</a></font></p>
+</div></div>
+<p><font size="3"><strong>Source</strong>: <a href="https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/">How do I interpret Odds Ratios in Logistic Regression?</a></font></p>
 </section>
 <section id="interpretation-of-results-odds" class="slide level2 center">
 <h2>Interpretation of Results: Odds</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 65%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Observations</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Dependent variable</td>
+<td style="text-align: right;">admit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Type</td>
+<td style="text-align: right;">Generalized linear model</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Family</td>
+<td style="text-align: right;">binomial</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Link</td>
+<td style="text-align: right;">logit</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
+<td style="text-align: right;">41.46</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">p</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (Cragg-Uhler)</td>
+<td style="text-align: right;">0.14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (McFadden)</td>
+<td style="text-align: right;">0.08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">AIC</td>
+<td style="text-align: right;">470.52</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">BIC</td>
+<td style="text-align: right;">494.47</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">S.E.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">z val.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">(Intercept)</td>
+<td style="text-align: right;">-3.99</td>
+<td style="text-align: right;">1.14</td>
+<td style="text-align: right;">-3.50</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">gre</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">2.07</td>
+<td style="text-align: right;">0.04</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">gpa</td>
+<td style="text-align: right;">0.80</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">2.42</td>
+<td style="text-align: right;">0.02</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank2</td>
+<td style="text-align: right;">-0.68</td>
+<td style="text-align: right;">0.32</td>
+<td style="text-align: right;">-2.13</td>
+<td style="text-align: right;">0.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">rank3</td>
+<td style="text-align: right;">-1.34</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">-3.88</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank4</td>
+<td style="text-align: right;">-1.55</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">-3.71</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup></sup> Standard errors: MLE</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 70%;">
 <ul>
 <li class="fragment"><p><strong>GRE</strong>: For a one-unit increase in GRE, the odds of being admitted increase by a factor of: <span class="math display">\[
 e^{0.002} \approx 1.002
@@ -1129,9 +1803,145 @@ e^{0.804} \approx 2.23
 e^{-0.675} \approx 0.51
 \]</span> This means that students from Rank 2 institutions have approximately half the odds of being admitted compared to those from Rank 1 institutions.</p></li>
 </ul>
+</div>
+</div></div>
 </section>
 <section id="interpretation-of-results-probability" class="slide level2 center">
 <h2>Interpretation of Results: Probability</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 65%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Observations</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Dependent variable</td>
+<td style="text-align: right;">admit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Type</td>
+<td style="text-align: right;">Generalized linear model</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Family</td>
+<td style="text-align: right;">binomial</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Link</td>
+<td style="text-align: right;">logit</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
+<td style="text-align: right;">41.46</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">p</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (Cragg-Uhler)</td>
+<td style="text-align: right;">0.14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Pseudo-R² (McFadden)</td>
+<td style="text-align: right;">0.08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">AIC</td>
+<td style="text-align: right;">470.52</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">BIC</td>
+<td style="text-align: right;">494.47</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Est.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">S.E.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">z val.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">(Intercept)</td>
+<td style="text-align: right;">-3.99</td>
+<td style="text-align: right;">1.14</td>
+<td style="text-align: right;">-3.50</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">gre</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">2.07</td>
+<td style="text-align: right;">0.04</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">gpa</td>
+<td style="text-align: right;">0.80</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">2.42</td>
+<td style="text-align: right;">0.02</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank2</td>
+<td style="text-align: right;">-0.68</td>
+<td style="text-align: right;">0.32</td>
+<td style="text-align: right;">-2.13</td>
+<td style="text-align: right;">0.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">rank3</td>
+<td style="text-align: right;">-1.34</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">-3.88</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">rank4</td>
+<td style="text-align: right;">-1.55</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">-3.71</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup></sup> Standard errors: MLE</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div style="font-size: 80%;">
 <p>To convert log-odds into probabilities:</p>
 <p><span class="math display">\[
 P(Y = 1) = \frac{1}{1 + e^{-(\text{log-odds})}}
@@ -1141,6 +1951,8 @@ P(Y = 1) = \frac{1}{1 + e^{-(\text{log-odds})}}
 <li class="fragment"><p><strong>GPA</strong>: A one-unit increase in GPA substantially increases the probability of admission, as the log-odds increase by 0.804. This leads to a noticeable jump in the probability of being admitted.</p></li>
 <li class="fragment"><p><strong>Rank (Rank 2)</strong>: Being in Rank 2 compared to Rank 1 decreases the probability of admission due to the reduction in log-odds by 0.675. This results in a lower probability of being admitted for Rank 2 graduates.</p></li>
 </ul>
+</div>
+</div></div>
 </section>
 <section id="interpretation-of-results-predicted-probability" class="slide level2 center">
 <h2>Interpretation of Results: Predicted Probability</h2>
@@ -1148,28 +1960,11 @@ P(Y = 1) = \frac{1}{1 + e^{-(\text{log-odds})}}
 p = \frac{\exp(\beta x)}{1 + \exp(\beta x)}
 \]</span></p>
 
-<img data-src="16_02_logistic_regression_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
-<section id="interpretation" class="slide level2 center">
-<h2>Interpretation</h2>
-<ul>
-<li class="fragment"><p><strong>Odds greater than 1</strong>: The event is more likely to happen.</p></li>
-<li class="fragment"><p><strong>Odds less than 1</strong>: The event is less likely to happen.</p></li>
-<li class="fragment"><p><strong>Probability near 1</strong>: High chance of the event occurring.</p></li>
-<li class="fragment"><p><strong>Probability near 0</strong>: Low chance of the event occurring.</p></li>
-</ul>
-</section>
-<section id="output-conclusion" class="slide level2 center">
-<h2>Output: Conclusion</h2>
+<img data-src="16_02_logistic_regression_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<section id="example-output-conclusion" class="slide level2 center">
+<h2>Example Output: Conclusion</h2>
 <p><br></p>
 <p>This model indicates that GPA, GRE, and rank significantly influence the likelihood of admission, with lower ranks (higher numerical values) significantly decreasing the chances of admission.</p>
-</section>
-<section id="model-adjustments-and-quality" class="slide level2 center">
-<h2>Model Adjustments and Quality</h2>
-<ul>
-<li class="fragment"><p>Pseudo <span class="math inline">\(R^2\)</span>: For similar models, the higher the Pseudo <span class="math inline">\(R^2\)</span>, the better the model fit;</p></li>
-<li class="fragment"><p>Akaike’s Information Criterion (AIC): For similar models, the lower the AIC, the better the model fit;</p></li>
-<li class="fragment"><p>Bayesian Information Criterion (BIC): For similar models, the lower the BIC, the better the model fit;</p></li>
-</ul>
 </section>
 <section id="additional-material" class="slide level2 center">
 <h2>Additional Material</h2>
