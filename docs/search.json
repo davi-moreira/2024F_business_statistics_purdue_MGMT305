@@ -7165,140 +7165,140 @@
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-and-exponential-smoothing-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Moving Averages and Exponential Smoothing",
-    "text": "Moving Averages and Exponential Smoothing\n\nThree forecasting methods that are appropriate for a time series with a horizontal pattern:\nMoving Averages (MAs)\nWeighted Moving Averages\nExponentially Weighted Moving Averages (EWMAs)\nThey are called smoothing methods because their objective is to smooth out the random fluctuations (due to random errors or noises) in the time series.\nThey are most appropriate for short-range forecasts."
+    "text": "Moving Averages and Exponential Smoothing\n\nThree forecasting methods that are appropriate for a time series with a horizontal pattern:\n\n\nMoving Averages (MAs)\nWeighted Moving Averages\nExponentially Weighted Moving Averages (EWMAs)\n\n\nThey are called smoothing methods because their objective is to smooth out the random fluctuations (due to random errors or noises) in the time series.\nThey are most appropriate for short-range forecasts."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-1",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Moving Averages",
-    "text": "Moving Averages\n\n\nThe moving averages (MA) method uses the average of the most recent \\(k\\) data values in the time series as the forecast for the next period.\n\n\\[\nMA_t = \\text{Average of most recent } k \\text{ data values} = \\frac{Y_{t-k+1} + \\cdots + Y_{t-1} + Y_t}{k}, \\text{ at time } t\n\\]\n\\[\nF_{t+1} = MA_t\n\\]\nWhere:\n\\[\nF_{t+1} = \\text{forecast of the time series for period } t + 1\n\\]\n\\[\nY_t = \\text{observed value of the time series in period } t\n\\]\n\\[\nk = \\text{span}\n\\]\nEach observation in the moving average calculation receives the same weight \\((1/k)\\)."
+    "text": "Moving Averages\nThe moving averages method uses the average of the most recent k data values in the time series as the forecast for the next period. Mathematically, a moving average forecast of order k is as follows:\n\n\n\n\n\n\n\nMoving Average Forecast of Order \\(k\\)\n\n\n\n\\[\nF_{t+1} = \\frac{\\sum (\\text{most recent } k \\text{ data values})}{k} = \\frac{Y_t + Y_{t-1} + \\cdots + Y_{t-k+1}}{k}\n\\]\nwhere:\n\n\\(F_{t+1}\\) = forecast of the time series for period \\(t + 1\\)\n\\(Y_t\\) = actual value of the time series in period \\(t\\)\n\n\n\n\n\n\n\nEach observation in the moving average calculation receives the same weight \\((1/k)\\).\nThe term moving is used because every time a new observation becomes available for the time series, it replaces the oldest observation in the equation.\nAs a result, the average will change, or move, as new observations become available."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-2",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Moving Averages",
-    "text": "Moving Averages\n\n\nThe term moving is used because every time a new observation becomes available for the time series, it replaces the oldest observation in the equation.\n\nThat is, the oldest observation leaves while the newest observation enters the calculations.\n\nAs a result, the average will change, or move, as new observations become available."
+    "text": "Moving Averages\n\n\nTo use moving averages to forecast, we must first select the span (the order), which is the number of observed time series values to be included in the moving average.\n\nA smaller value of k will track shifts in a time series more quickly than a larger value of k.\nA larger value of k, the smoother the MA. Less sensitive to changes in the given time series.\nIf more past observations are considered relevant, then a larger value of k is better."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-3",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Moving Averages",
-    "text": "Moving Averages\n\n\nTo use moving averages to forecast, we must first select the span, which is the number of observed time series values to be included in the moving average.\n\nA smaller value of k will track shifts in a time series more quickly than a larger value of k.\nA larger value of k, the smoother the MA. Less sensitive to changes in the given time series.\nIf more past observations are considered relevant, then a larger value of k is better."
+    "text": "Moving Averages\n\nExample: Gasoline sale time series: three-week moving average (\\(k = 3\\))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nTime series value\nForecast\nForecast error\nAbsolute value of forecast error\nSquared forecast error\nPercentage error\nAbsolute value of percentage error\n\n\n\n\n1\n17\n\n\n\n\n\n\n\n\n2\n21\n\n\n\n\n\n\n\n\n3\n19\n\n\n\n\n\n\n\n\n4\n23\n\\(\\frac{(17 + 21 + 19)}{3} = 19\\)\n4\n4\n16\n17.39\n17.39\n\n\n5\n18\n\\(\\frac{21 + 19 + 23}{3} = 21\\)\n-3\n3\n9\n-16.67\n16.67\n\n\n6\n16\n20\n-4\n4\n16\n-25.00\n25.00\n\n\n7\n20\n19\n1\n1\n1\n5.00\n5.00\n\n\n8\n18\n18\n0\n0\n0\n0.00\n0.00\n\n\n9\n22\n18\n4\n4\n16\n18.18\n18.18\n\n\n10\n20\n20\n0\n0\n0\n0.00\n0.00\n\n\n11\n15\n20\n-5\n5\n25\n-33.33\n33.33\n\n\n12\n22\n19\n3\n3\n9\n13.64\n13.64\n\n\n\n\nTotals\n\n\n0\n24\n92"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-4",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Moving Averages",
-    "text": "Moving Averages\n\nExample: Gasoline sale time series: three-week moving average (\\(k = 3\\))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nTime series value\nForecast\nForecast error\nAbsolute value of forecast error\nSquared forecast error\nPercentage error\nAbsolute value of percentage error\n\n\n\n\n1\n17\n\n\n\n\n\n\n\n\n2\n21\n\n\n\n\n\n\n\n\n3\n19\n\n\n\n\n\n\n\n\n4\n23\n19*\n4\n4\n16\n17.39\n17.39\n\n\n5\n18\n21**\n-3\n3\n9\n-16.67\n16.67\n\n\n6\n16\n20\n-4\n4\n16\n-25.00\n25.00\n\n\n7\n20\n19\n1\n1\n1\n5.00\n5.00\n\n\n8\n18\n18\n0\n0\n0\n0.00\n0.00\n\n\n\n\n\\[\n* = (17 + 21 + 19) / 3 = 19\n\\]\n\\[\n** = (21 + 19 + 23) / 3 = 21\n\\]"
+    "text": "Moving Averages\nExample: Gasoline sale time series: three-week moving average\n\\[\n\\text{MAE} = \\frac{24}{9} = 2.67\n\\]\n\\[\n\\text{MSE} = \\frac{92}{9} = 10.22\n\\]\n\\[\n\\text{MAPE} = \\frac{129.21}{9} = 14.36\\%\n\\]\n\nThe three-week moving average approach provided more accurate forecasts than the naïve approach (19.24%)."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-5",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-5",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Moving Averages",
-    "text": "Moving Averages\nExample: Gasoline sale time series: three-week moving average\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nTime series value\nForecast\nForecast error\nAbsolute value of forecast error\nSquared forecast error\nPercentage error\nAbsolute value of percentage error\n\n\n\n\n9\n22\n18\n4\n4\n16\n18.18\n18.18\n\n\n10\n20\n20\n0\n0\n0\n0.00\n0.00\n\n\n11\n15\n20\n-5\n5\n25\n-33.33\n33.33\n\n\n12\n22\n19\n3\n3\n9\n13.64\n13.64\n\n\nTotals\n\n\n0\n24\n92\n-20.79\n129.21"
+    "text": "Moving Averages\n\nExample: Gasoline sales time series: three-week moving average\n\n\n\nThe Figure shows the original time series plot and the three-week moving average forecasts.\nNote how the graph of the moving average forecasts has tended to smooth out the random fluctuations in the time series."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-6",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-6",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Moving Averages",
-    "text": "Moving Averages\nExample: Gasoline sale time series: three-week moving average\n\\[\n\\text{MAE} = \\frac{24}{9} = 2.67\n\\]\n\\[\n\\text{MSE} = \\frac{92}{9} = 10.22\n\\]\n\\[\n\\text{MAPE} = \\frac{129.21}{9} = 14.36\\%\n\\]\n\nThe three-week moving average approach provided more accurate forecasts than the naïve approach (19.24%)."
+    "text": "Moving Averages\n\nExample: Gasoline sales time series: three-week moving average"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-7",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-7",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Moving Averages",
-    "text": "Moving Averages\n\nExample: Gasoline sales time series: three-week moving average"
+    "text": "Moving Averages\nExample: Gasoline sale time series: three-week moving average\n\\[\n\\text{MAE} = \\frac{24}{9} = 2.67\n\\]\n\\[\n\\text{MSE} = \\frac{92}{9} = 10.22\n\\]\n\\[\n\\text{MAPE} = \\frac{129.21}{9} = 14.36\\%\n\\]\n\nThe three-week moving average approach provided more accurate forecasts than the naïve approach (19.24%)."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#weighted-moving-averages-1",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#weighted-moving-averages-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Weighted Moving Averages",
-    "text": "Weighted Moving Averages\n\nWeighted Moving Averages (A brief description)\n\nTo use this method, we must first select the number of data values to be included in the average. (Span)\n\nNext, we must choose the weight for each of the data values.\n\nThe more recent observations are typically given more weight than older observations.\nFor convenience, the weights should sum to 1."
+    "text": "Weighted Moving Averages\n\nIn the moving averages method, each observation in the moving average calculation receives the same weight.\nWeighted Moving Averages: we can select a different weight for each data value (e.g. the most recent observations) and then compute a weighted average of the most recent \\(k\\) values as the forecast.\n\nThe more recent observations are typically given more weight than older observations.\nFor convenience, the weights should sum to 1."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#weighted-moving-averages-2",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#weighted-moving-averages-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Weighted Moving Averages",
-    "text": "Weighted Moving Averages\nFor the Gasoline data, a three-period weighted moving average (3WMA) for Week 3 is:\n\\[\nWMA_3 = \\frac{1}{6}(17) + \\frac{2}{6}(21) + \\frac{3}{6}(19) = 19.33\n\\]\n\nif the weights are \\(\\frac{1}{6}, \\frac{2}{6}, \\frac{3}{6}\\), which sum to 1.\n19 is the most recent of the three observations and receives the largest weight."
+    "text": "Weighted Moving Averages\nFor the Gasoline data, a three-period weighted moving average (3WMA) for Week 4 is:\n\\[\nWMA_3 = \\frac{1}{6}(17) + \\frac{2}{6}(21) + \\frac{3}{6}(19) = 19.33\n\\]\n\nif the weights are \\(\\frac{1}{6}, \\frac{2}{6}, \\frac{3}{6}\\), which sum to 1.\n19 is the most recent of the three observations and receives the largest weight.\nTo determine whether one particular combination of number of data values and weights provides a more accurate forecast than another combination, it is recommended to use MSE as the measure of the forecast accuracy.\n\nIf we assume that the combination that is best for the past will also be best for the future, we would use the one that minimizes MSE for the historical time series to forecast the next value in the time series."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-1",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Exponential Smoothing Forecast",
-    "text": "Exponential Smoothing Forecast\n\nThe exponential smoothing forecast is a weighted average of all the time series data up to the current period.\nWe select only the weight between 0 and 1 for the most recent observation. This weight is called the smoothing constant and is denoted by \\(\\alpha\\).\n\n\\(1 - \\alpha\\) is called the damping factor.\n\nThe term exponential smoothing comes from the exponential nature of the weighting scheme for the historical values.\n\nThe weights assigned to the time series values decrease exponentially as the “age” of the data values increases.\n\nThe statistic computed in each period is called the Exponentially Weighted Moving Average (EWMA)."
+    "text": "Exponential Smoothing Forecast\n\n\nThe exponential smoothing forecast is a special case of the weighted moving averages.\nIt is the weighted average of all the time series data up to the current period.\nWe select only the weight between 0 and 1 for the most recent observation. This weight is called the smoothing constant and is denoted by \\(\\alpha\\).\n\n\\(1 - \\alpha\\) is called the damping factor.\n\n\n\n\n\n\n\n\n\n\n\nSingle Exponential Smoothing Forecast\n\n\n\\[\nF_{t+1} = \\alpha Y_t + (1 - \\alpha) F_t\n\\]\nwhere\n\n\n\\(F_{t+1}\\) = forecast of the time series for period \\(t + 1\\)\n\\(Y_t\\) = actual value of the time series in period \\(t\\)\n\\(F_t\\) = forecast of the time series for period \\(t\\)\n\\(\\alpha\\) = smoothing constant \\((0 \\leq \\alpha \\leq 1)\\)\n\n\n\n\n\n\n\n\n\nThere are a number of exponential smoothing procedures.\nThe term exponential smoothing comes from the exponential nature of the weighting scheme for the historical values.\n\nThe weights assigned to the time series values decrease exponentially as the “age” of the data values increases.\n\nThe statistic computed in each period is called the Exponentially Weighted Moving Average (EWMA)."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-2",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Exponential Smoothing Forecast",
-    "text": "Exponential Smoothing Forecast\n\\[\nF_2 = Y_1 \\quad (\\text{to initiate the computations})\n\\]\n\\[\nF_{t+1} = \\alpha Y_t + (1 - \\alpha) F_t, \\quad t = 2, 3, \\dots\n\\]\nwhere:\n\n\\(F_{t+1}\\) = forecast of the time series for period \\(t + 1\\)\n\\(Y_t\\) = actual value of the time series in period \\(t\\)\n\\(F_t\\) = forecast of the time series for period \\(t\\)"
+    "text": "Exponential Smoothing Forecast\nLet’s illustrate by working with a time series involving only three periods of data: \\(Y_1\\), \\(Y_2\\), and \\(Y_3\\).\n\nTo initiate, let \\(F_1\\) equal the actual value of the time series in period 1; that is, \\(F_1 = Y_1\\). Hence, the forecast for period 2 is\n\\[\n\\begin{aligned}\nF_2 &= \\alpha Y_1 + (1 - \\alpha) F_1 \\\\\n    &= \\alpha Y_1 + (1 - \\alpha) Y_1 \\\\\n    &= Y_1\n\\end{aligned}\n\\]\nThus, the exponential smoothing forecast for period 2 is equal to the actual value of the time series in period 1."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-3",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Exponential Smoothing Forecast",
-    "text": "Exponential Smoothing Forecast\n\\[\nF_2 = Y_1 \\quad (\\text{to initiate the computations; no } F_1)\n\\]\n\\[\nF_3 = \\alpha Y_2 + (1 - \\alpha) F_2\n\\]\n\\[\nF_4 = \\alpha Y_3 + (1 - \\alpha) F_3\n\\]\n\\[\nF_5 = \\alpha Y_4 + (1 - \\alpha) F_4\n\\]\n\n…"
+    "text": "Exponential Smoothing Forecast\nThe forecast for period 3 is\n\\[\nF_3 = \\alpha Y_2 + (1 - \\alpha) F_2 = \\alpha Y_2 + (1 - \\alpha) Y_1\n\\]\nFinally, substituting this expression for \\(F_3\\) in the expression for \\(F_4\\), we obtain\n\\[\n\\begin{aligned}\nF_4 &= \\alpha Y_3 + (1 - \\alpha) F_3 \\\\\n&= \\alpha Y_3 + (1 - \\alpha)[\\alpha Y_2 + (1 - \\alpha) Y_1] \\\\\n&= \\alpha Y_3 + \\alpha (1 - \\alpha) Y_2 + (1 - \\alpha)^2 Y_1\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-4",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Exponential Smoothing Forecast",
-    "text": "Exponential Smoothing Forecast\n\n\nWith algebraic manipulation, we can rewrite \\(F_{t+1} = \\alpha Y_t + (1 - \\alpha) F_t\\) as:\n\n\\[\nF_{t+1} = F_t + \\alpha (Y_t - F_t)\n\\]\n\nWe adjust the current forecast \\(F_t\\) by \\(\\alpha\\) times the current forecast error, \\(Y_t - F_t\\), as the forecast for the next period \\(t + 1\\).\nWhy “exponential”?\n\n\\[\nF_{t+1} : Y_1, Y_2, ...., Y_{t-2}, Y_{t-1}, Y_t \\quad (t : current)\n\\]"
+    "text": "Exponential Smoothing Forecast\n\nThe term exponential smoothing comes from the exponential nature of the weighting scheme for the historical values.\nWe now see that \\(F_4\\) is a weighted average of the first three time series values. The sum of the coefficients, or weights, for \\(Y_1\\), \\(Y_2\\), and \\(Y_3\\) equals 1. A similar argument can be made to show that, in general, any forecast \\(F_{t+1}\\) is a weighted average of all the previous time series values.\nDespite the fact that exponential smoothing provides a forecast that is a weighted average of all past observations, all past data do not need to be saved to compute the forecast for the next period. In fact, only two pieces of information are needed: \\(Y_t\\) and \\(F_t\\)."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-1",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Exponential Smoothing Forecast: Example",
-    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series\nThe number of gallons of gasoline sold by a distributor over a period of 12 weeks is given below. The distributor uses exponential smoothing to forecast sales. Which value for the smoothing constant \\(\\alpha\\), 0.2 or 0.3, gives better forecasts?\n\n\n\nWeek\nSales\nWeek\nSales\n\n\n\n\n1\n17\n7\n20\n\n\n2\n21\n8\n18\n\n\n3\n19\n9\n22\n\n\n4\n23\n10\n20\n\n\n5\n18\n11\n15\n\n\n6\n16\n12\n22"
+    "text": "Exponential Smoothing Forecast: Example\n\nGasoline sale time series with smoothing constant \\(\\alpha = 0.2\\)\n\n\n\n\n\n\n\n\n\n\nWeek\nTime series value\nForecast\nForecast error\nSquared forecast error\n\n\n\n\n1\n17\n\n\n\n\n\n2\n21\n17\n4.00\n16.00\n\n\n3\n19\n\\(0.2(21) + 0.8(17)=17.80\\)\n1.20\n1.44\n\n\n4\n23\n\\(0.2(19) + 0.8(17.80)=18.04\\)\n4.96\n24.60\n\n\n5\n18\n19.03\n-1.03\n1.06\n\n\n6\n16\n18.83\n-2.83\n8.01\n\n\n7\n20\n18.26\n1.74\n3.03\n\n\n8\n18\n18.61\n-0.61\n0.37\n\n\n9\n22\n18.49\n3.51\n12.32\n\n\n10\n20\n19.19\n0.81\n0.66\n\n\n11\n15\n19.35\n-4.35\n18.92\n\n\n12\n22\n18.48\n3.52\n12.39\n\n\n\n\nTotals\n10.92\n98.80"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-2",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Exponential Smoothing Forecast: Example",
-    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series with smoothing constant \\(\\alpha = 0.2\\)\n\n\n\n\n\n\n\n\n\n\nWeek\nTime series value\nForecast\nForecast error\nSquared forecast error\n\n\n\n\n1\n17\n\n\n\n\n\n2\n21\n17\n4.00\n16.00\n\n\n3\n19\n17.80*\n1.20\n1.44\n\n\n4\n23\n18.04**\n4.96\n24.60\n\n\n5\n18\n19.03\n-1.03\n1.06\n\n\n6\n16\n18.83\n-2.83\n8.01\n\n\n7\n20\n18.26\n1.74\n3.03\n\n\n8\n18\n18.61\n-0.61\n0.37\n\n\n\n\\[\n* 17.80 = 0.2(21) + 0.8(17)\n\\]\n\\[\n** 18.04 = 0.2(19) + 0.8(17.80)\n\\]"
+    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series with smoothing constant \\(\\alpha = 0.2\\)\n\\[\n\\text{MSE} = \\frac{98.80}{11} = 8.98\n\\]"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-3",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Exponential Smoothing Forecast: Example",
-    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series with smoothing constant \\(\\alpha = 0.2\\)\n\n\n\n\n\n\n\n\n\n\nWeek\nTime series value\nForecast\nForecast error\nSquared forecast error\n\n\n\n\n9\n22\n18.49\n3.51\n12.32\n\n\n10\n20\n19.19\n0.81\n0.66\n\n\n11\n15\n19.35\n-4.35\n18.92\n\n\n12\n22\n18.48\n3.52\n12.39\n\n\nTotals\n\n\n10.92\n98.80"
+    "text": "Exponential Smoothing Forecast: Example\n\nGasoline sale time series with smoothing constant \\(\\alpha = 0.3\\)\n\n\n\n\n\n\n\n\n\n\nWeek\nTime series value\nForecast\nForecast error\nSquared forecast error\n\n\n\n\n1\n17\n\n\n\n\n\n2\n21\n17\n4\n16\n\n\n3\n19\n18.20\n0.80\n0.64\n\n\n4\n23\n18.44\n4.56\n20.79\n\n\n5\n18\n19.81\n-1.81\n3.28\n\n\n6\n16\n19.27\n-3.27\n10.69\n\n\n7\n20\n18.29\n1.71\n2.92\n\n\n8\n18\n18.80\n-0.80\n0.64\n\n\n9\n22\n18.56\n3.44\n11.83\n\n\n10\n20\n19.59\n0.41\n0.17\n\n\n11\n15\n19.71\n-4.71\n22.18\n\n\n12\n22\n18.30\n3.70\n13.69\n\n\n\n\nTotals\n8.03\n102.83"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-4",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Exponential Smoothing Forecast: Example",
-    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series with smoothing constant \\(\\alpha = 0.2\\)\n\\[\n\\text{MSE} = \\frac{98.80}{11} = 8.98\n\\]"
+    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series with smoothing constant \\(\\alpha = 0.3\\)\n\\[\n\\text{MSE} = \\frac{102.83}{11} = 9.35\n\\]\n\nExponential smoothing (with \\(\\alpha = 0.2\\)) provided more accurate forecasts (8.98) than exponential smoothing with \\(\\alpha = 0.3\\) in this example."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-5",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-5",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Exponential Smoothing Forecast: Example",
-    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series with smoothing constant \\(\\alpha = 0.3\\)\n\n\n\n\n\n\n\n\n\n\nWeek\nTime series value\nForecast\nForecast error\nSquared forecast error\n\n\n\n\n1\n17\n\n\n\n\n\n2\n21\n17\n4\n16\n\n\n3\n19\n18.20\n0.80\n0.64\n\n\n4\n23\n18.44\n4.56\n20.79\n\n\n5\n18\n19.81\n-1.81\n3.28\n\n\n6\n16\n19.27\n-3.27\n10.69\n\n\n7\n20\n18.29\n1.71\n2.92\n\n\n8\n18\n18.80\n-0.80\n0.64"
+    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series with smoothing constant \\(\\alpha = 0.3\\)\n\\[\n\\text{MSE} = \\frac{102.83}{11} = 9.35\n\\]\nExponential smoothing (with \\(\\alpha = 0.2\\)) provided more accurate forecasts (8.98) than exponential smoothing with \\(\\alpha = 0.3\\) in this example."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-6",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-6",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Exponential Smoothing Forecast: Example",
-    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series with smoothing constant \\(\\alpha = 0.3\\)\n\n\n\n\n\n\n\n\n\n\nWeek\nTime series value\nForecast\nForecast error\nSquared forecast error\n\n\n\n\n9\n22\n18.56\n3.44\n11.83\n\n\n10\n20\n19.59\n0.41\n0.17\n\n\n11\n15\n19.71\n-4.71\n22.18\n\n\n12\n22\n18.30\n3.70\n13.69\n\n\nTotals\n\n\n8.03\n102.83"
+    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series with smoothing constant \\(\\alpha = 0.3\\)\n\\[\n\\text{MSE} = \\frac{102.83}{11} = 9.35\n\\]\nExponential smoothing (with \\(\\alpha = 0.2\\)) provided more accurate forecasts (8.98) than exponential smoothing with \\(\\alpha = 0.3\\) in this example."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example-7",
@@ -7389,7 +7389,7 @@
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#comments",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Comments",
-    "text": "Comments\n\nThe 10 day moving averages follow the pattern of closing prices fairly closely (ending at 1739.65).\nThe 200 day moving average is the nearly straight line across the middle of the chart, ending at 1795.30. Notice that the larger the moving average span, generally the more smoothing that is achieved.\nThe 50 day moving average is the line through the colored band on the chart. The band, sometimes called the moving average envelope, marks the 50 day MA ± 5%.\nTo a large extent, over this 12 month period Amazon’s stock price has tended to follow this 50 day MA envelope fairly closely.\nDrops below it are not very long-lasting and tend to be followed by fairly big price increases. Stock traders noticing this might be inclined to purchase Amazon stocks when it drops below that 50 day MA envelope."
+    "text": "Comments\n\nThe 10 day moving averages follow the pattern of closing prices fairly closely (ending at 1739.65).\nThe 200 day moving average is the nearly straight line across the middle of the chart, ending at 1795.30. Notice that the larger the moving average span, generally the more smoothing that is achieved.\nThe 50 day moving average is the line through the colored band on the chart. The band, sometimes called the moving average envelope, marks the 50 day MA ± 5%.\nTo a large extent, over this 12 month period Amazon’s stock price has tended to follow this 50 day MA envelope fairly closely.\nDrops below it are not very long-lasting and tend to be followed by fairly big price increases. Stock traders noticing this might be inclined to purchase Amazon stocks when it drops below that 50 day MA envelope.\n\nXXXXXXXXXXX Parei aqui em cima - a sequência do livro é Trend Projection vou seguir igual ao livro XXXXXXXXXXXXX"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#trend-projection-1",
@@ -7403,42 +7403,42 @@
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression",
-    "text": "Linear Trend Regression\n\n\nThe prediction equation for the linear trend pattern is:\n\n\\[\n\\hat{Y_t} = b_0 + b_1 t, \\quad t = 1, 2, \\ldots\n\\]\nwhere:\n\n\\(\\hat{Y_t}\\) = linear trend forecast of mean response for period t\n\\(b_0\\) = estimated intercept of the linear trend line\n\\(b_1\\) = estimated slope of the linear trend line\n\\(t\\) = time period"
+    "text": "Linear Trend Regression\n\n\n\n\nBicycle Yearly Sales Time Series\n\n\n\n\nTime (Year)\nSales (1000s)\n\n\n\n\n1\n21.6\n\n\n2\n22.9\n\n\n3\n25.5\n\n\n4\n21.9\n\n\n5\n23.9\n\n\n6\n27.5\n\n\n7\n31.5\n\n\n8\n29.7\n\n\n9\n28.6\n\n\n10\n31.4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlthough it shows some up and down movement over the past 10 years, we can identify a linear trend line.\nThe trend line provides a reasonable approximation o the. long-run movement in the series.\nWe can use the simple linear regression method to develop such a linear trend line."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-2",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression",
-    "text": "Linear Trend Regression\n\\[\n\\hat{Y_t} = b_0 + b_1 t\n\\]\n\\[\nb_1 = \\frac{\\sum_{t=1}^{n} (t - \\bar{t})(Y_t - \\bar{Y})}{\\sum_{t=1}^{n} (t - \\bar{t})^2}\n\\]\n\\[\nb_0 = \\bar{Y} - b_1 \\bar{t}\n\\]\nwhere:\n\n\\(Y_t\\) = value of the time series in period t\n\\(\\bar{Y}\\) = average values of the time series\n\\(\\bar{t}\\) = average value of t\nn = number of time periods (observations)"
+    "text": "Linear Trend Regression\n\n\n\n\n\n\n\n\nLinear Trend Equation\n\n\n\n\\[\n\\hat{Y_t} = b_0 + b_1 t, \\quad t = 1, 2, \\ldots\n\\]\nwhere:\n\n\\(\\hat{Y_t}\\) = linear trend forecast of mean response for period t\n\\(b_0\\) = estimated intercept of the linear trend line\n\\(b_1\\) = estimated slope of the linear trend line\n\\(t\\) = time period"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-3",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression",
-    "text": "Linear Trend Regression\nExample: Bicycle Yearly Sales Time Series\nThe data regarding bicycle sales over a period of 10 years is tabulated below.\n\n\n\nTime (Year)\nSales (1000s)\n\n\n\n\n1\n21.6\n\n\n2\n22.9\n\n\n3\n25.5\n\n\n4\n21.9\n\n\n5\n23.9\n\n\n6\n27.5\n\n\n7\n31.5\n\n\n8\n29.7\n\n\n9\n28.6\n\n\n10\n31.4"
+    "text": "Linear Trend Regression\n\n\n\n\n\n\n\nComputing the Slope and Intercept for a Linear Trend\n\n\n\n\\[\nb_1 = \\frac{\\sum_{t=1}^{n} (t - \\bar{t})(Y_t - \\bar{Y})}{\\sum_{t=1}^{n} (t - \\bar{t})^2}, \\quad \\text{or} \\quad b_1 = \\frac{\\sum_{t=1}^{n} t Y_t - \\left( \\frac{\\sum_{t=1}^{n} t \\sum_{t=1}^{n} Y_t}{n} \\right)}{\\sum_{t=1}^{n} t^2 - \\left( \\frac{\\left(\\sum_{t=1}^{n} t\\right)^2}{n} \\right)}\n\\]\n\\[\nb_0 = \\bar{Y} - b_1 \\bar{t}\n\\]\nWhere:\n\n\\(Y_t\\) = value of the time series in period \\(t\\)\n\\(n\\) = number of time periods (number of observations)\n\\(\\bar{Y}\\) = average value of the time series\n\\(\\bar{t}\\) = average value of \\(t\\)"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-4",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression",
-    "text": "Linear Trend Regression"
+    "text": "Linear Trend Regression\n\\[\n\\hat{Y_t} = b_0 + b_1 t\n\\]\n\\[\nb_1 = \\frac{\\sum_{t=1}^{n} (t - \\bar{t})(Y_t - \\bar{Y})}{\\sum_{t=1}^{n} (t - \\bar{t})^2}\n\\]\n\\[\nb_0 = \\bar{Y} - b_1 \\bar{t}\n\\]\nwhere:\n\n\\(Y_t\\) = value of the time series in period t\n\\(\\bar{Y}\\) = average values of the time series\n\\(\\bar{t}\\) = average value of t\nn = number of time periods (observations)"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-5",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-5",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression",
-    "text": "Linear Trend Regression\nExample: Bicycle Sales Time Series\n\n\n\n\n\n\n\n\n\n\n\n\\(t\\)\n\\(Y_1\\)\n\\(t - \\bar{t}\\)\n\\(Y_1 - \\bar{Y}\\)\n\\((t - \\bar{t})(Y_1 - \\bar{Y})\\)\n\\((t - \\bar{t})^2\\)\n\n\n\n\n1\n21.6\n-4.5\n-4.85\n21.825\n20.25\n\n\n2\n22.9\n-3.5\n-3.55\n12.425\n12.25\n\n\n3\n25.5\n-2.5\n-0.95\n2.375\n6.25\n\n\n4\n21.9\n-1.5\n-4.55\n6.825\n2.25\n\n\n5\n23.9\n-0.5\n-2.55\n1.275\n0.25\n\n\n6\n27.5\n0.5\n1.05\n0.525\n0.25\n\n\n7\n31.5\n1.5\n5.05\n7.575\n2.25\n\n\n8\n29.7\n2.5\n3.25\n8.125\n6.25\n\n\n9\n28.6\n3.5\n2.15\n7.525\n12.25\n\n\n10\n31.4\n4.5\n4.95\n22.275\n20.25\n\n\nTotals\n264.5\n\n\n90.750\n82.5"
+    "text": "Linear Trend Regression\nLinear Trend Equation for the Bicycle Sales Time Series:\n\\[\n\\hat{Y}_t = 20.4 + 1.1t\n\\]\n\nThe slope 1.1 indicates that over the past 10 years the firm experienced an average growth in sales of about 1100 units per year.\nIf we assume that the past 10-year trend in sales is a good indicator of the future, this trend equation can be used to develop forecasts for future time periods. Substituting \\(t = 11\\) into the equation yields next year’s trend projection or forecast, \\(\\hat{Y}_{11}\\).\n\n\\[\n\\hat{Y}_t = 20.4 + 1.1 \\times 11 = 32.5\n\\]\nThus, using trend projection, we would forecast sales of 32,500 bicycles next year."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-6",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-6",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression",
-    "text": "Linear Trend Regression\nExample: Bicycle Sales Time Series\n\\[\n\\bar{t} = \\frac{55}{10} = 5.5, \\quad \\bar{Y} = \\frac{264.5}{10} = 26.45\n\\]\n\\[\nb_1 = \\frac{90.75}{82.5} = 1.1\n\\]\n\\[\nb_0 = 26.45 - 1.1(5.5) = 20.4\n\\]\nFor example:\n\\[\n\\hat{Y_1} = 20.4 + (1.1)(1) = 21.5, \\text{ for } t = 1.\n\\]"
+    "text": "Linear Trend Regression\n\\[\n\\hat{Y_t} = b_0 + b_1 t\n\\]\n\\[\nb_1 = \\frac{\\sum_{t=1}^{n} (t - \\bar{t})(Y_t - \\bar{Y})}{\\sum_{t=1}^{n} (t - \\bar{t})^2}\n\\]\n\\[\nb_0 = \\bar{Y} - b_1 \\bar{t}\n\\]\nwhere:\n\n\\(Y_t\\) = value of the time series in period t\n\\(\\bar{Y}\\) = average values of the time series\n\\(\\bar{t}\\) = average value of t\nn = number of time periods (observations)"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-7",
@@ -7487,14 +7487,14 @@
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Seasonality Without Trend",
-    "text": "Seasonality Without Trend\n\nThe time series plot does not clearly indicate any long-term trend in sales.\nHowever, close inspection of the plot does reveal a seasonal pattern.\n\nThe first and third quarters have moderate sales,\nthe second quarter has the highest sales, and\nthe fourth quarter tends to be the lowest quarter in terms of sales."
+    "text": "Seasonality Without Trend\nGeneral Form of Estimated Regression Equation\n\\[\n\\hat{Y} = b_0 + b_1(Qtr1) + b_2(Qtr2) + b_3(Qtr3)\n\\]\nEstimated Regression Equation\nForecasted Sales = 95.0 + 29.0(Qtr1) + 57.0(Qtr2) + 26.0(Qtr3)\nForecast of Mean Quarterly Sales in Year 6\n\nQuarter 1: Sales = 95 + 29(1) + 57(0) + 26(0) = 124\nQuarter 2: Sales = 95 + 29(0) + 57(1) + 26(0) = 152\nQuarter 3: Sales = 95 + 29(0) + 57(0) + 26(1) = 121\nQuarter 4: Sales = 95 + 29(0) + 57(0) + 26(0) = 95"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-3",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Seasonality Without Trend",
-    "text": "Seasonality Without Trend\n\nRecall from an earlier chapter that dummy variables can be used to deal with categorical independent variables in a multiple regression model.\nWe will treat the season as a categorical variable.\nRecall that when a categorical variable has \\(k\\) levels, \\(k - 1\\) dummy variables are required.\nIf there are four seasons, we have the following dummy variables:\n\nQtr1 = 1 if Quarter 1, 0 otherwise\nQtr2 = 1 if Quarter 2, 0 otherwise\nQtr3 = 1 if Quarter 3, 0 otherwise\nQtr4 = 1 if Quarter 4, 0 otherwise (Used as the reference quarter)"
+    "text": "Seasonality Without Trend\n\nRecall that dummy variables can be used to deal with categorical independent variables in a multiple regression model.\nWe will treat the season as a categorical variable.\nRecall that when a categorical variable has \\(k\\) levels, \\(k - 1\\) dummy variables are required.\nIf there are four seasons, we have the following dummy variables:\n\n\n\n\\[\n\\text{Qtr1} =\n\\begin{cases}\n1 & \\text{if Quarter 1} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\quad\n\\text{Qtr2} =\n\\begin{cases}\n1 & \\text{if Quarter 2} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\quad\n\\text{Qtr3} =\n\\begin{cases}\n1 & \\text{if Quarter 3} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\quad\n\\text{Qtr4} =\n\\begin{cases}\n1 & \\text{if Quarter 4} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-4",
@@ -7536,7 +7536,7 @@
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Seasonality and Trend: Example",
-    "text": "Seasonality and Trend: Example\n\nSmartphone Sales Time Series\n\nThis graph shows the time series plot of smartphone sales, where the trend and seasonality are clearly visible."
+    "text": "Seasonality and Trend: Example\nMultiple Regression Equation for Seasonal Effects and Trend\nThe general form of the estimated multiple regression equation for modeling both the quarterly seasonal effects and the linear trend in the smartphone time series is as follows:\n\\[\n\\hat{Y}_t = b_0 + b_1 \\text{Qtr1} + b_2 \\text{Qtr2} + b_3 \\text{Qtr3} + b_4 t\n\\]\nwhere\n\n\\(\\hat{Y}_t\\) = estimate or forecast of sales in period \\(t\\)\nQtr1 = 1 if time period \\(t\\) corresponds to the first quarter of the year; 0 otherwise\nQtr2 = 1 if time period \\(t\\) corresponds to the second quarter of the year; 0 otherwise\nQtr3 = 1 if time period \\(t\\) corresponds to the third quarter of the year; 0 otherwise\n\\(t\\) = time period"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend",
@@ -7564,21 +7564,21 @@
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Time Series Decomposition",
-    "text": "Time Series Decomposition\n\nTime series decomposition can be used to separate a time series into seasonal, trend, and irregular components.\nThis method can be used for forecasting or getting a better understanding of the time series.\nDecomposition assumes that the time series value at time \\(t\\) is a function of three components: trend, seasonal, and irregular.\nDeseasonalized data can provide better insight into the true nature of the time series."
+    "text": "Time Series Decomposition\nTime series decomposition can be used to separate or decompose a time series. It assumes that \\(Y_t\\), the actual time series value at period \\(t\\), is a function of three components:\n\nA trend component\nA seasonal component\nAn irregular or error component\n\n\nHow these three components are combined to generate the observed values of the time series depends upon whether we assume the relationship is best described by an additive or a multiplicative model."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-2",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Time Series Decomposition",
-    "text": "Time Series Decomposition\nAdditive Model\n\\[\nY_t = Trend_t + Seasonal_t + Irregular_t\n\\]\nwhere,\n\n\\(Trend_t\\) = trend value at time \\(t\\)\n\\(Seasonal_t\\) = seasonal value at time \\(t\\)\n\\(Irregular_t\\) = irregular value at time \\(t\\)\n\n\n\nAn additive model is appropriate when seasonal fluctuations are independent of the time series’ level."
+    "text": "Time Series Decomposition\n\nTime series decomposition can be used to separate a time series into seasonal, trend, and irregular components.\nThis method can be used for forecasting or getting a better understanding of the time series.\nDecomposition assumes that the time series value at time \\(t\\) is a function of three components: trend, seasonal, and irregular.\nDeseasonalized data can provide better insight into the true nature of the time series."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-3",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Time Series Decomposition",
-    "text": "Time Series Decomposition\nMultiplicative Model\n\\[\nY_t = Trend_t \\times Seasonal_t \\times Irregular_t\n\\]\n\n\\(Trend_t\\) = trend value at time \\(t\\)\n\\(Seasonal_t\\) = seasonal value at time \\(t\\)\n\\(Irregular_t\\) = irregular value at time \\(t\\)\n\n\n\nA multiplicative model is used when seasonal fluctuations grow larger as the time series values increase."
+    "text": "Time Series Decomposition\nAdditive Model\n\\[\nY_t = Trend_t + Seasonal_t + Irregular_t\n\\]\nwhere,\n\n\\(Trend_t\\) = trend value at time \\(t\\)\n\\(Seasonal_t\\) = seasonal value at time \\(t\\)\n\\(Irregular_t\\) = irregular value at time \\(t\\)\n\n\n\nAn additive model is appropriate when seasonal fluctuations are independent of the time series’ level."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#example-smartphone-sales-1",
@@ -7662,7 +7662,7 @@
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-plot-example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Time Series Plot: Example",
-    "text": "Time Series Plot: Example\nGasoline sale time series\nThe number of gallons of gasoline sold by a gasoline distributor over a period of 12 weeks is given in the table below. The distributor would like to identify the underlying pattern in the data to guide it in selecting an appropriate forecasting method.\n\n\n\nWeek\nSales\nWeek\nSales\n\n\n\n\n1\n17\n7\n20\n\n\n2\n21\n8\n18\n\n\n3\n19\n9\n22\n\n\n4\n23\n10\n20\n\n\n5\n18\n11\n15\n\n\n6\n16\n12\n22"
+    "text": "Time Series Plot: Example\nGasoline sale time series\nThe number of gallons of gasoline sold by a gasoline distributor over a period of 12 weeks is given in the table below. The distributor would like to identify the underlying pattern in the data to guide it in selecting an appropriate forecasting method.\n\n\n\n\nWeek\nSales\n\n\n\n\n1\n17\n\n\n2\n21\n\n\n3\n19\n\n\n4\n23\n\n\n5\n18\n\n\n6\n16\n\n\n7\n20\n\n\n8\n18\n\n\n9\n22\n\n\n10\n20\n\n\n11\n15\n\n\n12\n22"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-plot-example-1",
@@ -7711,56 +7711,56 @@
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-naïve-forecast",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Forecast Accuracy: Example Naïve Forecast",
-    "text": "Forecast Accuracy: Example Naïve Forecast\nGasoline sale time series\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nObserved Time series\nNaïve Forecast\nForecast error\nAbsolute value of forecast error\nSquared forecast error\nPercentage error\nAbsolute value of percentage error\n\n\n\n\n1\n17\n\n\n\n\n\n\n\n\n2\n21\n17\n4\n4\n16\n19.05 = \\(\\frac{4}{21}\\)\n19.05\n\n\n3\n19\n21\n-2\n2\n4\n-10.53\n10.53\n\n\n4\n23\n19\n4\n4\n16\n17.39\n17.39\n\n\n5\n18\n23\n-5\n5\n25\n-27.78\n27.78\n\n\n6\n16\n18\n-2\n2\n4\n-12.5\n12.5\n\n\n7\n20\n16\n4\n4\n16\n20.00\n20.00\n\n\n8\n18\n20\n-2\n2\n4\n-11.11\n11.11"
+    "text": "Forecast Accuracy: Example Naïve Forecast\n\n\n\nTo demonstrate the computation of these measures of forecast accuracy, let’s introduce the simplest of forecasting methods: the naïve forecasting method\nThe naïve forecasting method uses only the most recent observation in the time series as the forecast for the next time period.\n\n\\[\nF_{t+1} = Y_t, \\text{ the actual observed value in period } t\n\\]"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-naïve-forecast-1",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-naïve-forecast-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Forecast Accuracy: Example Naïve Forecast",
-    "text": "Forecast Accuracy: Example Naïve Forecast\nGasoline sale time series\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nObserved Time series\nForecast\nForecast error\nAbsolute value of forecast error\nSquared forecast error\nPercentage error\nAbsolute value of percentage error\n\n\n\n\n9\n22\n18\n4\n4\n16\n18.18\n18.18\n\n\n10\n20\n22\n-2\n2\n4\n-10.00\n10.00\n\n\n11\n15\n20\n-5\n5\n25\n-33.33\n33.33\n\n\n12\n22\n15\n7\n7\n49\n31.82\n31.82\n\n\nTotals\n\n5\n\n41\n179\n1.19\n211.69"
+    "text": "Forecast Accuracy: Example Naïve Forecast\n\nGasoline sale time series\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nObserved Time series\nNaïve Forecast\nForecast error\nAbsolute value of forecast error\nSquared forecast error\nPercentage error\nAbsolute value of percentage error\n\n\n\n\n1\n17\n\n\n\n\n\n\n\n\n2\n21\n17\n4\n4\n16\n19.05 = \\(\\frac{4}{21}\\)\n19.05\n\n\n3\n19\n21\n-2\n2\n4\n-10.53\n10.53\n\n\n4\n23\n19\n4\n4\n16\n17.39\n17.39\n\n\n5\n18\n23\n-5\n5\n25\n-27.78\n27.78\n\n\n6\n16\n18\n-2\n2\n4\n-12.5\n12.5\n\n\n7\n20\n16\n4\n4\n16\n20.00\n20.00\n\n\n8\n18\n20\n-2\n2\n4\n-11.11\n11.11\n\n\n9\n22\n18\n4\n4\n16\n18.18\n18.18\n\n\n10\n20\n22\n-2\n2\n4\n-10.00\n10.00\n\n\n11\n15\n20\n-5\n5\n25\n-33.33\n33.33\n\n\n12\n22\n15\n7\n7\n49\n31.82\n31.82\n\n\nTotals\n\n\n5\n41\n179\n1.19\n211.69\n\n\n\n\nWeek 2: the postive forecast error indicates that the forecasting method underestimated the actual value of sales.\nWeek 3: the negative forecast error indicates that the forecasting method overestimated the actual value of sales."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-naïve-forecast-2",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-naïve-forecast-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Forecast Accuracy: Example Naïve Forecast",
-    "text": "Forecast Accuracy: Example Naïve Forecast\nGasoline sale time series: Naive Forecast Accuracy\n\\[\n\\text{MAE} = \\frac{41}{11} = 3.73\n\\]\n\\[\n\\text{MSE} = \\frac{179}{11} = 16.27\n\\]\n\\[\n\\text{MAPE} = \\frac{211.69}{11} = 19.24\\%\n\\]"
+    "text": "Forecast Accuracy: Example Naïve Forecast\n\nGasoline sale time series: Naive Forecast Accuracy\n\nMean Absolute Error (MAE): It is the mean of the absolute values of the forecast errors.\n\n\n\\[\n\\text{MAE} = \\frac{41}{11} = 3.73\n\\]\n\nMean Squared Error (MSE): It is the average of the squared forecast errors.\n\n\n\n\\[\n\\text{MSE} = \\frac{179}{11} = 16.27\n\\]\n\n\n\nThe size of MAE and MSE depends upon the scale of the data. So, it is not recommended to make comparisons for different time intervals (e.g. months vs weeks).\nTo make comparisons like these we need relative or percentage error measues like MAPE.\nMean Absolute Percentage Error (MAPE): It is the average of the absolute percentage errors of the forecasts.\n\n\n\n\\[\n\\text{MAPE} = \\frac{211.69}{11} = 19.24\\%\n\\]"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression: Example",
-    "text": "Linear Trend Regression: Example\nBicycle Yearly Sales Time Series\nThe data regarding bicycle sales over a period of 10 years is tabulated below.\n\n\n\nTime (Year)\nSales (1000s)\n\n\n\n\n1\n21.6\n\n\n2\n22.9\n\n\n3\n25.5\n\n\n4\n21.9\n\n\n5\n23.9\n\n\n6\n27.5\n\n\n7\n31.5\n\n\n8\n29.7\n\n\n9\n28.6\n\n\n10\n31.4"
+    "text": "Linear Trend Regression: Example\n\nTo compute the linear trend equation for the bicycle sales time series, we begin the calculations by computing \\(\\bar{t}\\) and \\(\\bar{Y}\\).\n\\[\n\\bar{t} = \\frac{\\sum_{t=1}^{n} t}{n} = \\frac{55}{10} = 5.5\n\\]\n\\[\n\\bar{Y} = \\frac{\\sum_{t=1}^{n} Y_t}{n} = \\frac{264.5}{10} = 26.45\n\\]\n\nUsing these values, and the data, we can compute: the slope and intercept.\n\\[\nb_1 = \\frac{\\sum_{t=1}^{n} (t - \\bar{t})(Y_t - \\bar{Y})}{\\sum_{t=1}^{n} (t - \\bar{t})^2} = \\frac{90.75}{82.5} = 1.1\n\\]\n\\[\nb_0 = \\bar{Y} - b_1 \\bar{t} = 26.45 - 1.1(5.5) = 20.4\n\\]\n\n\nTherefore, the linear trend equation is:\n\\[\n\\hat{Y}_t = 20.4 + 1.1t\n\\]"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-1",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression: Example",
-    "text": "Linear Trend Regression: Example"
+    "text": "Linear Trend Regression: Example\n\nBicycle Sales Time Series\n\n\n\n\n\n\n\n\n\n\n\n\\(t\\)\n\\(Y_1\\)\n\\(t - \\bar{t}\\)\n\\(Y_1 - \\bar{Y}\\)\n\\((t - \\bar{t})(Y_1 - \\bar{Y})\\)\n\\((t - \\bar{t})^2\\)\n\n\n\n\n1\n21.6\n-4.5\n-4.85\n21.825\n20.25\n\n\n2\n22.9\n-3.5\n-3.55\n12.425\n12.25\n\n\n3\n25.5\n-2.5\n-0.95\n2.375\n6.25\n\n\n4\n21.9\n-1.5\n-4.55\n6.825\n2.25\n\n\n5\n23.9\n-0.5\n-2.55\n1.275\n0.25\n\n\n6\n27.5\n0.5\n1.05\n0.525\n0.25\n\n\n7\n31.5\n1.5\n5.05\n7.575\n2.25\n\n\n8\n29.7\n2.5\n3.25\n8.125\n6.25\n\n\n9\n28.6\n3.5\n2.15\n7.525\n12.25\n\n\n10\n31.4\n4.5\n4.95\n22.275\n20.25\n\n\nTotals\n264.5\n\n\n90.750\n82.5"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-2",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression: Example",
-    "text": "Linear Trend Regression: Example\nBicycle Sales Time Series\n\n\n\n\n\n\n\n\n\n\n\n\\(t\\)\n\\(Y_1\\)\n\\(t - \\bar{t}\\)\n\\(Y_1 - \\bar{Y}\\)\n\\((t - \\bar{t})(Y_1 - \\bar{Y})\\)\n\\((t - \\bar{t})^2\\)\n\n\n\n\n1\n21.6\n-4.5\n-4.85\n21.825\n20.25\n\n\n2\n22.9\n-3.5\n-3.55\n12.425\n12.25\n\n\n3\n25.5\n-2.5\n-0.95\n2.375\n6.25\n\n\n4\n21.9\n-1.5\n-4.55\n6.825\n2.25\n\n\n5\n23.9\n-0.5\n-2.55\n1.275\n0.25\n\n\n6\n27.5\n0.5\n1.05\n0.525\n0.25\n\n\n7\n31.5\n1.5\n5.05\n7.575\n2.25\n\n\n8\n29.7\n2.5\n3.25\n8.125\n6.25\n\n\n9\n28.6\n3.5\n2.15\n7.525\n12.25\n\n\n10\n31.4\n4.5\n4.95\n22.275\n20.25\n\n\nTotals\n264.5\n\n\n90.750\n82.5"
+    "text": "Linear Trend Regression: Example\nLinear Trend Equation for the Bicycle Sales Time Series:\n\\[\n\\hat{Y}_t = 20.4 + 1.1t\n\\]\nThe slope 1.1 indicates that over the past 10 years the firm experienced an average growth in sales of about 1100 units per year.\n\nIf we assume that the past 10-year trend in sales is a good indicator of the future, this trend equation can be used to develop forecasts for future time periods. Substituting \\(t = 11\\) into the equation yields next year’s trend projection or forecast, \\(\\hat{Y}_{11}\\).\n\\[\n\\hat{Y}_t = 20.4 + 1.1 \\times 11 = 32.5\n\\]\nThus, using trend projection, we would forecast sales of 32,500 bicycles next year."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-3",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression: Example",
-    "text": "Linear Trend Regression: Example\nBicycle Sales Time Series\n\\[\n\\bar{t} = \\frac{55}{10} = 5.5, \\quad \\bar{Y} = \\frac{264.5}{10} = 26.45\n\\]\n\\[\nb_1 = \\frac{90.75}{82.5} = 1.1\n\\]\n\\[\nb_0 = 26.45 - 1.1(5.5) = 20.4\n\\]\nFor example:\n\\[\n\\hat{Y_1} = 20.4 + (1.1)(1) = 21.5, \\text{ for } t = 1.\n\\]"
+    "text": "Linear Trend Regression: Example\n\nBicycle Sales Time Series\n\n\n\nYear\nSales\nForecast\nForecast error\nSquared Forecast Error\n\n\n\n\n1\n21.6\n21.5\n0.1\n0.01\n\n\n2\n22.9\n22.6\n0.3\n0.09\n\n\n3\n25.5\n23.7\n1.8\n3.24\n\n\n4\n21.9\n24.8\n-2.9\n8.41\n\n\n5\n23.9\n25.9\n-2.0\n4.00\n\n\n6\n27.5\n27.8\n0.5\n0.25\n\n\n7\n31.5\n28.1\n3.4\n11.56\n\n\n8\n29.7\n29.2\n0.5\n0.25\n\n\n9\n28.6\n30.3\n-1.7\n2.89\n\n\n10\n31.4\n31.4\n0.0\n0.00\n\n\nTotal\n264.5\n\n\n30.7\n\n\n\n\\[\n\\text{MSE} = \\frac{\\sum_{t=1}^{n} (Y_t - F_t)^2}{n} = \\frac{30.7}{10} = 3.07\n\\]"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-4",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linear Trend Regression: Example",
-    "text": "Linear Trend Regression: Example\n\nBicycle Sales Time Series\n\n\n\nYear\nSales\nForecast\nForecast error\nSquared Forecast Error\n\n\n\n\n1\n21.6\n21.5\n0.1\n0.01\n\n\n2\n22.9\n22.6\n0.3\n0.09\n\n\n3\n25.5\n23.7\n1.8\n3.24\n\n\n4\n21.9\n24.8\n-2.9\n8.41\n\n\n5\n23.9\n25.9\n-2.0\n4.00\n\n\n6\n27.5\n27.8\n0.5\n0.25\n\n\n7\n31.5\n28.1\n3.4\n11.56\n\n\n8\n29.7\n29.2\n0.5\n0.25\n\n\n9\n28.6\n30.3\n-1.7\n2.89\n\n\n10\n31.4\n31.4\n0.0\n0.00\n\n\nTotal\n264.5\n\n\n30.7\n\n\n\n\\[\n\\text{MSE} = \\frac{30.7}{10} = 3.07\n\\]"
+    "text": "Linear Trend Regression: Example"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#regression-output-example",
@@ -7774,42 +7774,42 @@
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Nonlinear Trend Regression: Example",
-    "text": "Nonlinear Trend Regression: Example\nCholesterol Revenue Time Series\nThe data regarding cholesterol sales over a period of 10 years is tabulated below. A curvilinear function appears to be needed to model the long-term trend.\n\n\n\nYear\nRevenue ($ millions)\nYear\nRevenue ($ millions)\n\n\n\n\n1\n23.1\n6\n43.2\n\n\n2\n21.3\n7\n59.5\n\n\n3\n27.4\n8\n64.4\n\n\n4\n34.6\n9\n74.2\n\n\n5\n33.8\n10\n99.3"
+    "text": "Nonlinear Trend Regression: Example\n\nCholesterol Revenue Time Series\nThe data regarding cholesterol sales over a period of 10 years is tabulated below. A curvilinear function appears to be needed to model the long-term trend.\n\n\n\n\n\n\n\nYear\nRevenue ($ millions)\n\n\n\n\n1\n23.1\n\n\n2\n21.3\n\n\n3\n27.4\n\n\n4\n34.6\n\n\n5\n33.8\n\n\n6\n43.2\n\n\n7\n59.5\n\n\n8\n64.4\n\n\n9\n74.2\n\n\n10\n99.3"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-1",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Nonlinear Trend Regression: Example",
-    "text": "Nonlinear Trend Regression: Example\n\nCholesterol Revenue Time Series"
+    "text": "Nonlinear Trend Regression: Example\nXXXXXXXXXXXXXXXXXXXx\n\nCholesterol Revenue Time Series"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Seasonality Without Trend: Example",
-    "text": "Seasonality Without Trend: Example\nUmbrella Quarterly Sales Time Series\n\n\n\nYear\nQuarter 1\nQuarter 2\nQuarter 3\nQuarter 4\n\n\n\n\n1\n125\n153\n106\n88\n\n\n2\n118\n161\n133\n102\n\n\n3\n138\n144\n113\n80\n\n\n4\n109\n137\n125\n109\n\n\n5\n130\n165\n128\n96"
+    "text": "Seasonality Without Trend: Example\n\n\n\n\nUmbrella Quarterly Sales Time Series\n\n\n\n\nYear\nQuarter\nSales\n\n\n\n\n1\n1\n125\n\n\n1\n2\n153\n\n\n1\n3\n106\n\n\n1\n4\n88\n\n\n2\n1\n118\n\n\n2\n2\n161\n\n\n2\n3\n133\n\n\n2\n4\n102\n\n\n3\n1\n138\n\n\n3\n2\n144\n\n\n3\n3\n113\n\n\n3\n4\n80\n\n\n4\n1\n109\n\n\n4\n2\n137\n\n\n4\n3\n125\n\n\n4\n4\n109\n\n\n5\n1\n130\n\n\n5\n2\n165\n\n\n5\n3\n128\n\n\n5\n4\n96"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example-1",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Seasonality Without Trend: Example",
-    "text": "Seasonality Without Trend: Example\n\nUmbrella Sales Time Series Plot"
+    "text": "Seasonality Without Trend: Example\n\n\n\nUmbrella Quarterly Sales Time Series\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe time series plot does not clearly indicate any long-term trend in sales.\nHowever, close inspection of the plot does reveal a seasonal pattern.\n\nThe first and third quarters have moderate sales,\nthe second quarter has the highest sales, and\nthe fourth quarter tends to be the lowest quarter in terms of sales."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Seasonality and Trend: Example",
-    "text": "Seasonality and Trend: Example\n\nSmartphone Quarterly Sales Time Series\n\nThe data for smartphone sales shows seasonal patterns in the sales with an upward linear trend. We need to account for both seasonality and trend to develop accurate forecasts.\n\n\n\n\nYear\nQuarter 1\nQuarter 2\nQuarter 3\nQuarter 4\n\n\n\n\n1\n4.8\n4.1\n6.0\n6.5\n\n\n2\n5.8\n5.2\n6.8\n7.4\n\n\n3\n6.0\n5.6\n7.5\n7.8\n\n\n4\n6.3\n5.9\n8.0\n8.4\n\n\n\n(Need to line up the data and use time periods \\(t = 1, 2, ..., 16\\), instead of Year.)"
+    "text": "Seasonality and Trend: Example\n\n\n\nSmartphone Quarterly Sales Data (in Thousands)\n\n\n\nYear\nQuarter\nSales (1000s)\n\n\n\n\n1\n1\n4.8\n\n\n\n2\n4.1\n\n\n\n3\n6.0\n\n\n\n4\n6.5\n\n\n2\n1\n5.8\n\n\n\n2\n5.2\n\n\n\n3\n6.8\n\n\n\n4\n7.4\n\n\n3\n1\n6.0\n\n\n\n2\n5.6\n\n\n\n3\n7.5\n\n\n\n4\n7.8\n\n\n4\n1\n6.3\n\n\n\n2\n5.9\n\n\n\n3\n8.0\n\n\n\n4\n8.4"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-2",
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Seasonality and Trend: Example",
-    "text": "Seasonality and Trend: Example\nForecast for Quarter 1 in Year 5 (Time period t = 17)\n\\[\nSales = 6.07 + .146(17) - 1.36(1) - 2.03(0) - .304(0) = 7.19\n\\]\n\nForecast for Quarter 2 in Year 5 (Time period t = 18)\n\\[\nSales = 6.07 + .146(18) - 1.36(0) - 2.03(1) - .304(0) = 6.67\n\\]\n\n\nForecast for Quarter 3 in Year 5 (Time period t = 19)\n\\[\nSales = 6.07 + .146(19) - 1.36(0) - 2.03(0) - .304(1) = 8.54\n\\]\n\n\nForecast for Quarter 4 in Year 5 (Time period t = 20)\n\\[\nSales = 6.07 + .146(20) - 1.36(0) - 2.03(0) - .304(0) = 8.99\n\\]"
+    "text": "Seasonality and Trend: Example\n\n\n\nQuarterly Sales Data with Indicators and Period\n\n\n\nYear\nQuarter\nQtr1\nQtr2\nQtr3\nPeriod\nSales (1000s)\n\n\n\n\n1\n1\n1\n0\n0\n1\n4.8\n\n\n\n2\n0\n1\n0\n2\n4.1\n\n\n\n3\n0\n0\n1\n3\n6.0\n\n\n\n4\n0\n0\n0\n4\n6.5\n\n\n2\n1\n1\n0\n0\n5\n5.8\n\n\n\n2\n0\n1\n0\n6\n5.2\n\n\n\n3\n0\n0\n1\n7\n6.8\n\n\n\n4\n0\n0\n0\n8\n7.4\n\n\n3\n1\n1\n0\n0\n9\n6.0\n\n\n\n2\n0\n1\n0\n10\n5.6\n\n\n\n3\n0\n0\n1\n11\n7.5\n\n\n\n4\n0\n0\n0\n12\n7.8\n\n\n4\n1\n1\n0\n0\n13\n6.3\n\n\n\n2\n0\n1\n0\n14\n5.9\n\n\n\n3\n0\n0\n1\n15\n8.0\n\n\n\n4\n0\n0\n0\n16\n8.4"
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#procedures-overview-1",
@@ -7887,5 +7887,1020 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example Output: Conclusion",
     "text": "Example Output: Conclusion\n\nThis model indicates that GPA, GRE, and rank significantly influence the likelihood of admission, with lower ranks (higher numerical values) significantly decreasing the chances of admission."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#using-excels-chart-tools-to-construct-a-time-series-plot",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#using-excels-chart-tools-to-construct-a-time-series-plot",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Using Excel’s Chart Tools to Construct a Time Series Plot",
+    "text": "Using Excel’s Chart Tools to Construct a Time Series Plot\n\n\n\n\n\nA time series plot is simply a scatter diagram with lines connecting the points.\nSteps\n\nSelect cells A2:B13 in the Gasoline.xlsx file.\nClick the Insert tab on the Ribbon\nIn the Charts group, click the Insert Scatter (X, Y) or Bubble Chart button\nWhen the list of scatter diagram subtypes appears:\n\nClick the Scatter with Straight Lines and Markers button\n\n\nThe time series plot produced by Excel will appear in the same worksheet."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-with-the-naïve-forecasting-method",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-with-the-naïve-forecasting-method",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forecast Accuracy with the Naïve Forecasting Method",
+    "text": "Forecast Accuracy with the Naïve Forecasting Method\n\n\n\nTo demonstrate the computation of these measures of forecast accuracy, let’s introduce the simplest of forecasting methods: the naïve forecasting method\nThe naïve forecasting method uses only the most recent observation in the time series as the forecast for the next time period.\n\n\\[\nF_{t+1} = Y_t, \\text{ the actual observed value in period } t\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-patterns-horizontal-pattern-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-patterns-horizontal-pattern-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Time Series Patterns: Horizontal Pattern",
+    "text": "Time Series Patterns: Horizontal Pattern\nStationary Time Series\nThe term stationary time series is used to denote a time series whose statistical properties are independent of time. In particular, this means that:\n\nThe process generating the data has a constant mean.\nThe variability of the time series is constant over time.\n\n\nA time series plot for a stationary time series will always exhibit a horizontal pattern. But simply observing a horizontal pattern is not sufficient evidence to conclude that the time series is stationary.\nMore advanced texts on forecasting discuss procedures for determining if a time series is stationary and provide methods for transforming a time series that is not stationary into a stationary series."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-historical-data-average",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-historical-data-average",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forecast Accuracy: Example Historical Data Average",
+    "text": "Forecast Accuracy: Example Historical Data Average\nLet’s use the average of all the historical data available as the forecast for the next period.\n\nWe begin by developing a forecast for Week 2. Since there is only one historical value available prior to Week 2, the forecast for Week 2 is just the time series value in Week 1. Thus, the forecast for Week 2 is 17 thousand gallons of gasoline.\n\n\nTo compute the forecast for Week 3, we take the average of the sales values in Weeks 1 and 2:\n\\[\n\\text{Forecast for week 3} = \\frac{17 + 21}{2} = 19\n\\]\n\n\nSimilarly, the forecast for Week 4 is:\n\\[\n\\text{Forecast for week 4} = \\frac{17 + 21 + 19}{3} = 19\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-historical-data-average-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-historical-data-average-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forecast Accuracy: Example Historical Data Average",
+    "text": "Forecast Accuracy: Example Historical Data Average\n\nThe forecasts obtained using this method for the gasoline time series are:\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nTime Series Value\nForecast\nForecast Error\nAbsolute Value of Forecast Error\nSquared Forecast Error\nPercentage Error\nAbsolute Value of Percentage Error\n\n\n\n\n1\n17\n\n\n\n\n\n\n\n\n2\n21\n17.00\n4.00\n4.00\n16.00\n19.05\n19.05\n\n\n3\n19\n19.00\n0.00\n0.00\n0.00\n0.00\n0.00\n\n\n4\n23\n19.00\n4.00\n4.00\n16.00\n17.39\n17.39\n\n\n5\n18\n20.00\n-2.00\n2.00\n4.00\n-11.11\n11.11\n\n\n6\n16\n19.60\n-3.60\n3.60\n12.96\n-22.50\n22.50\n\n\n7\n20\n19.00\n1.00\n1.00\n1.00\n5.00\n5.00\n\n\n8\n18\n19.14\n-1.14\n1.14\n1.31\n-6.35\n6.35\n\n\n9\n22\n19.00\n3.00\n3.00\n9.00\n13.64\n13.64\n\n\n10\n20\n19.33\n0.67\n0.67\n0.44\n3.33\n3.33\n\n\n11\n15\n19.40\n-4.40\n4.40\n19.36\n-29.33\n29.33\n\n\n12\n22\n19.00\n3.00\n3.00\n9.00\n13.64\n13.64\n\n\n\n\nTotals\n4.53\n26.81\n89.07\n2.76\n141.34"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-historical-data-average-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-example-historical-data-average-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forecast Accuracy: Example Historical Data Average",
+    "text": "Forecast Accuracy: Example Historical Data Average\nUsing the results shown, we obtained the following values of MAE, MSE, and MAPE:\n\\[\n\\text{MAE} = \\frac{26.81}{11} = 2.44\n\\] \\[\n\\text{MSE} = \\frac{89.07}{11} = 8.10\n\\] \\[\n\\text{MAPE} = \\frac{141.34}{11} = 12.85\\%\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-comparison-of-forecasting-methods",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-accuracy-comparison-of-forecasting-methods",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forecast Accuracy: Comparison of Forecasting Methods",
+    "text": "Forecast Accuracy: Comparison of Forecasting Methods\nWe can now compare the accuracy of the two forecasting methods we have considered by comparing the values of MAE, MSE, and MAPE for each method.\n\n\n\n\nNaive Method\nAverage of Past Values\n\n\n\n\nMAE\n3.73\n2.44\n\n\nMSE\n16.27\n8.10\n\n\nMAPE\n19.24%\n12.85%\n\n\n\nFor every measure, the average of past values provides more accurate forecasts than using the most recent observation as the forecast for the next period.\n\nIf the underlying time series is stationary, the average of all the historical data will generally provide the best results.\nIf the time series is not stationary, adjustments are needed.\n\n\nIn cases where the time series shifts to a new level (e.g., due to contract changes), the naive method might adapt faster than the averaging method."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#importance-of-forecast-accuracy-and-adaptability",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#importance-of-forecast-accuracy-and-adaptability",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Importance of Forecast Accuracy and Adaptability",
+    "text": "Importance of Forecast Accuracy and Adaptability\nMeasures of forecast accuracy are crucial but should not be the sole basis for choosing a forecasting method.\n\nConsider the business context and the likelihood of changes in the time series level.\nHistorical forecast accuracy should be weighed alongside the ability of the method to adapt to shifts."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-average-forecast-of-order-k",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-average-forecast-of-order-k",
+    "title": "Moving Average Forecast",
+    "section": "Moving Average Forecast of Order k",
+    "text": "Moving Average Forecast of Order k\nThe moving averages method uses the average of the most recent k data values in the time series as the forecast for the next period. Mathematically, a moving average forecast of order k is as follows:\n\n\n\n\n\n\nNote\n\n\nMoving Average Forecast of Order k\n\\[\nF_{t+1} = \\frac{\\sum (\\text{most recent } k \\text{ data values})}{k} = \\frac{Y_t + Y_{t-1} + \\cdots + Y_{t-k+1}}{k}\n\\]\nwhere:\n\n\\(F_{t+1}\\) = forecast of the time series for period \\(t + 1\\)\n\\(Y_t\\) = actual value of the time series in period \\(t\\)\n\n\n\n\nThe term moving is used because every time a new observation becomes available for the time series, it replaces the oldest observation in the equation, and a new average is computed. As a result, the average will change, or move, as new observations become available."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-8",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-8",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Moving Averages",
+    "text": "Moving Averages\n\nExample: Gasoline sales time series: three-week moving average"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-plot",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-plot",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Moving Averages Plot",
+    "text": "Moving Averages Plot\n\nExample: Gasoline sales time series: three-week moving average\n\n\n\nThe Figure shows the original time series plot and the three-week moving average forecasts.\nNote how the graph of the moving average forecasts has tended to smooth out the random fluctuations in the time series."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages---excel",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages---excel",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Moving Averages - Excel",
+    "text": "Moving Averages - Excel\n\nEnter/Access Data: Open the file Gasoline. The data are in cells A2:B13 and labels are in cells A1:B1.\n\nStep 1: Click the Data tab on the Ribbon\nStep 2: In the Analyze group, click Data Analysis\nStep 3: Choose Moving Average from the list of Analysis Tools and click OK\nStep 4: When the Moving Average dialog box appears:\n\nEnter B2:B13 in the Input Range box\nEnter 3 in the Interval box\nEnter C3 in the Output Range box\nSelect the check box for Chart Output\nClick OK\n\n\nThe three-week moving average forecasts appear in column C of the worksheet; a chart showing the actual values of the time series and the forecasted values also appears. Forecasts for periods of other lengths can be computed easily by entering a different value in the interval box."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-example",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Exponential Smoothing Forecast: Example",
+    "text": "Exponential Smoothing Forecast: Example\nGasoline sale time series\nThe number of gallons of gasoline sold by a distributor over a period of 12 weeks is given below. The distributor uses exponential smoothing to forecast sales. Which value for the smoothing constant \\(\\alpha\\), 0.2 or 0.3, gives better forecasts?\n\n\n\n\nWeek\nSales\n\n\n\n\n1\n17\n\n\n2\n21\n\n\n3\n19\n\n\n4\n23\n\n\n5\n18\n\n\n6\n16\n\n\n7\n20\n\n\n8\n18\n\n\n9\n22\n\n\n10\n20\n\n\n11\n15\n\n\n12\n22"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-excel",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-excel",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Exponential Smoothing Forecast: Excel",
+    "text": "Exponential Smoothing Forecast: Excel\n\n\nStep 1: Click Data tab on the Ribbon\nIn the Analyze group, click Data Analysis\nChoose Exponential smoothing from the list of Analysis Tools and click OK\nWhen the Exponential smoothing dialog box appears:\n\nEnter B2:B13 in the Input Range box\nEnter 0.8 in the Damping factor box\nEnter C2 in the Output Range box\nSelect Chart Output\n\nClick OK"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-excel-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#exponential-smoothing-forecast-excel-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Exponential Smoothing Forecast: Excel",
+    "text": "Exponential Smoothing Forecast: Excel\n\nGasoline sale time series with smoothing constant \\(\\alpha = 0.2\\)"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-5",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Linear Trend Regression: Example",
+    "text": "Linear Trend Regression: Example\nBicycle Sales Time Series\n\\[\n\\bar{t} = \\frac{55}{10} = 5.5, \\quad \\bar{Y} = \\frac{264.5}{10} = 26.45\n\\]\n\\[\nb_1 = \\frac{90.75}{82.5} = 1.1\n\\]\n\\[\nb_0 = 26.45 - 1.1(5.5) = 20.4\n\\]\nFor example:\n\\[\n\\hat{Y_1} = 20.4 + (1.1)(1) = 21.5, \\text{ for } t = 1.\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-6",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-regression-example-6",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Linear Trend Regression: Example",
+    "text": "Linear Trend Regression: Example\n\nBicycle Sales Time Series\n\n\n\nYear\nSales\nForecast\nForecast error\nSquared Forecast Error\n\n\n\n\n1\n21.6\n21.5\n0.1\n0.01\n\n\n2\n22.9\n22.6\n0.3\n0.09\n\n\n3\n25.5\n23.7\n1.8\n3.24\n\n\n4\n21.9\n24.8\n-2.9\n8.41\n\n\n5\n23.9\n25.9\n-2.0\n4.00\n\n\n6\n27.5\n27.8\n0.5\n0.25\n\n\n7\n31.5\n28.1\n3.4\n11.56\n\n\n8\n29.7\n29.2\n0.5\n0.25\n\n\n9\n28.6\n30.3\n-1.7\n2.89\n\n\n10\n31.4\n31.4\n0.0\n0.00\n\n\nTotal\n264.5\n\n\n30.7\n\n\n\n\\[\n\\text{MSE} = \\frac{30.7}{10} = 3.07\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#regression-output-example-excel",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#regression-output-example-excel",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Regression Output: Example Excel",
+    "text": "Regression Output: Example Excel\n\n\n\n\n\nEnter/Access Data: Open the file Bicycle. The data are in cells A2:B11 and labels are in cells A1:B1.\n\n\nStep 1: Click the Data tab on the Ribbon\nStep 2: In the Analyze group, click Data Analysis\nStep 3: Choose Regression from the list of Analysis Tools\nStep 4: When the Regression dialog box appears:\n\nEnter B1:B11 in the Input Y Range box\nEnter A1:A11 in the Input X Range box\nSelect the check box for Labels\nSelect the check box for Confidence Level\nOutput Range:\n\nEnter A13 in the Output Range box (to identify the upper left corner of the section of the worksheet where the output will appear)\n\nClick OK"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Nonlinear Trend Regression: Example",
+    "text": "Nonlinear Trend Regression: Example\n\nCholesterol Revenue Time Series"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-excel",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-excel",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Nonlinear Trend Regression: Example Excel",
+    "text": "Nonlinear Trend Regression: Example Excel\n\n\n\n\n\nEnter/Access Data: Open the file Cholesterol.\n\n\nStep 1: Click the Data tab on the Ribbon\nStep 2: In the Analyze group, click Data Analysis\nStep 3: Choose Regression from the list of Analysis Tools\nStep 4: When the Regression dialog box appears:\n\nEnter C1:C11 in the Input Y Range box\nEnter A1:B11 in the Input X Range box\nSelect the check box for Labels\nSelect the check box for Confidence Level\nOutput Range:\n\nEnter A13 in the Output Range box (to identify the upper left corner of the section of the worksheet where the output will appear)\n\nClick OK\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe estimated regression equation is:\n\\[\n\\hat{Y}_t = 24.1817 - 2.1060t + 0.9216t^2\n\\]\nThe forecast of sales revenue for year 11 is:\n\\[\n\\hat{Y}_t = 24.1817 - 2.1060(11) + 0.9216(11)^2 = 112.53, \\quad \\text{or} \\quad \\approx \\text{\\$112.5 million}.\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-excel-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-excel-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Nonlinear Trend Regression: Example Excel",
+    "text": "Nonlinear Trend Regression: Example Excel\n\n\n\n\nSteps for Creating a Scatter Plot with Trendline\n\nEnter/Access Data: Open the file Cholesterol\n\n\nStep 1: Select cells B2:B11\nStep 2: Click the Insert tab on the Ribbon\nStep 3: In the Charts group, click the Insert Scatter (X, Y) or Bubble Chart button\nStep 4: When the list of scatter diagram subtypes appears, click the Scatter button (the chart in the upper left corner)\nStep 5: Click OK; the scatter diagram will appear in the current worksheet\nStep 6: Position the mouse pointer over any data point in the scatter diagram, right-click, and choose Add Trendline\nStep 7: In the Format Trendline dialog box:\n\nChoose Polynomial from the Trend/Regression Type list\nEnter 2 in the Order box\nChoose Display Equation on chart"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-excel-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-excel-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Nonlinear Trend Regression: Example Excel",
+    "text": "Nonlinear Trend Regression: Example Excel\n\n\n\n\nSteps for Creating a Scatter Plot with Trendline\n\nEnter/Access Data: Open the file Cholesterol\n\n\nStep 1: Select cells B2:B11\nStep 2: Click the Insert tab on the Ribbon\nStep 3: In the Charts group, click the Insert Scatter (X, Y) or Bubble Chart button\nStep 4: When the list of scatter diagram subtypes appears, click the Scatter button (the chart in the upper left corner)\nStep 5: Click OK; the scatter diagram will appear in the current worksheet\nStep 6: Position the mouse pointer over any data point in the scatter diagram, right-click, and choose Add Trendline\nStep 7: In the Format Trendline dialog box:\n\nChoose Polynomial from the Trend/Regression Type list\nEnter 2 in the Order box\nChoose Display Equation on chart"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-excel-3",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#nonlinear-trend-regression-example-excel-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Nonlinear Trend Regression: Example Excel",
+    "text": "Nonlinear Trend Regression: Example Excel\n\n\n\n\nSteps for Creating a Scatter Plot with Trendline in Excel\n\nEnter/Access Data: Open the file Cholesterol.\n\n\nStep 1: Select cells B2:B11\nStep 2: Click the Insert tab on the Ribbon\nStep 3: In the Charts group, click the Insert Scatter (X, Y) or Bubble Chart button\nStep 4: When the list of scatter diagram subtypes appears:\n\nClick the Scatter button (the chart in the upper left corner)\n\nStep 5: Click OK; the scatter diagram will appear in the current worksheet\nStep 6: Position the mouse pointer over any data point in the scatter diagram and right-click to display a list of options; choose Add Trendline\nStep 7: When the Format Trendline dialog box appears:\n\nChoose Polynomial from the Trend/Regression Type list\nEnter 2 in the Order box\nChoose Display Equation on chart\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n::::::"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#xxx",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#xxx",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "XXX",
+    "text": "XXX\n\n\nXXX\n\nXXX\n\nXXX"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonality Without Trend: Example",
+    "text": "Seasonality Without Trend: Example\n\nRecall that dummy variables can be used to deal with categorical independent variables in a multiple regression model.\nWe will treat the season as a categorical variable.\nRecall that when a categorical variable has \\(k\\) levels, \\(k - 1\\) dummy variables are required.\nIf there are four seasons, we have the following dummy variables with \\(Qtr4\\) being the reference level:\n\n\n\n\\[\n\\text{Qtr1} =\n\\begin{cases}\n1 & \\text{if Quarter 1} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\quad\n\\text{Qtr2} =\n\\begin{cases}\n1 & \\text{if Quarter 2} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\quad\n\\text{Qtr3} =\n\\begin{cases}\n1 & \\text{if Quarter 3} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example-3",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonality Without Trend: Example",
+    "text": "Seasonality Without Trend: Example\n\n\n\n\n\n\nYear\nQuarter\nQtr1\nQtr2\nQtr3\nSales\n\n\n\n\n1\n1\n1\n0\n0\n125\n\n\n1\n2\n0\n1\n0\n153\n\n\n1\n3\n0\n0\n1\n106\n\n\n1\n4\n0\n0\n0\n88\n\n\n2\n1\n1\n0\n0\n118\n\n\n2\n2\n0\n1\n0\n161\n\n\n2\n3\n0\n0\n1\n133\n\n\n2\n4\n0\n0\n0\n102\n\n\n3\n1\n1\n0\n0\n138\n\n\n3\n2\n0\n1\n0\n144\n\n\n3\n3\n0\n0\n1\n113\n\n\n3\n4\n0\n0\n0\n80\n\n\n4\n1\n1\n0\n0\n109\n\n\n4\n2\n0\n1\n0\n137\n\n\n4\n3\n0\n0\n1\n125\n\n\n4\n4\n0\n0\n0\n109\n\n\n5\n1\n1\n0\n0\n130\n\n\n5\n2\n0\n1\n0\n165\n\n\n5\n3\n0\n0\n1\n128\n\n\n5\n4\n0\n0\n0\n96"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example-4",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonality Without Trend: Example",
+    "text": "Seasonality Without Trend: Example\n\n\nGeneral Form of Estimated Regression Equation\n\n\\[\n\\hat{Y} = b_0 + b_1(Qtr1) + b_2(Qtr2) + b_3(Qtr3)\n\\]\n\n\nEstimated Regression Equation\n\n\\[\n\\text{Forecasted Sales} = 95.0 + 29.0(Qtr1) + 57.0(Qtr2) + 26.0(Qtr3)\n\\]\n\n\n\nForecast of Mean Quarterly Sales in Year 6\n\nQuarter 1: Sales = 95 + 29(1) + 57(0) + 26(0) = 124\nQuarter 2: Sales = 95 + 29(0) + 57(1) + 26(0) = 152\nQuarter 3: Sales = 95 + 29(0) + 57(0) + 26(1) = 121\nQuarter 4: Sales = 95 + 29(0) + 57(0) + 26(0) = 95"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example-5",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-without-trend-example-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonality Without Trend: Example",
+    "text": "Seasonality Without Trend: Example\nNote that we could have obtained the quarterly forecasts for next year simply by computing the average number of umbrellas sold in each quarter:\n\n\n\nYear\nQuarter 1\nQuarter 2\nQuarter 3\nQuarter 4\n\n\n\n\n1\n125\n153\n106\n88\n\n\n2\n118\n161\n133\n102\n\n\n3\n138\n144\n113\n80\n\n\n4\n109\n137\n125\n109\n\n\n5\n130\n165\n128\n96\n\n\nAverage\n124\n152\n121\n95\n\n\n\nNonetheless, the regression output provides additional information that can be used to assess the accuracy of the forecast and determine the significance of the results."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-3",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonality and Trend: Example",
+    "text": "Seasonality and Trend: Example\n\nGeneral Form of Estimated Regression Equation\n\\[\n\\hat{Y} = b_0 + b_1 Qtr1 + b_2 \\cdot Qtr2 + b_3 \\cdot Qtr3 + b_4 \\cdot \\cdot t\n\\]\nWhere \\(t\\) is the time period \\(t = 1, 2, \\ldots\\)\n\n\nEstimated Regression Equation\n\nForecast for Time Period 17 (Quarter 1 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(1) - 2.03(0) - .304(0) + .146(17) = 7.19\n\\]\n\n\nForecast for Time Period 18 (Quarter 2 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(0) - 2.03(1) - .304(0) + .146(18) = 6.67\n\\]\n\n\nForecast for Time Period 19 (Quarter 3 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(1) + .146(19) = 8.54\n\\]\n\n\nForecast for Time Period 20 (Quarter 4 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(0) + .146(20) = 8.99\n\\]\n\n\nThus, accounting for the seasonal effects and the linear trend in smartphone sales, the estimates of quarterly sales in year 5 are 7190, 6670, 8540, and 8990."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-4",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonality and Trend: Example",
+    "text": "Seasonality and Trend: Example\n\nThe dummy variables in the estimated multiple regression equation provide four estimated multiple regression equations, one for each quarter.\n\\[\n\\text{Quarter 1: Sales} = 6.07 - 1.36(1) - 2.03(0) - .304(0) + .146t = 4.71 + .146t\n\\]\nSimilarly, if time period \\(t\\) corresponds to quarters 2, 3, and 4, the estimates of quarterly sales are:\n\\[\n\\begin{align*}\n\\text{Quarter 2: Sales} & = 6.07 - 1.36(0) - 2.03(1) - .304(0) + .146t = 4.04 + .146t \\\\\n\\text{Quarter 3: Sales} & = 6.07 - 1.36(0) - 2.03(0) - .304(1) + .146t = 5.77 + .146t \\\\\n\\text{Quarter 4: Sales} & = 6.07 - 1.36(0) - 2.03(0) - .304(0) + .146t = 6.07 + .146t\n\\end{align*}\n\\]\n\nInterpretation of the Regression Coefficients\nThe slope of the trend line for each quarterly forecast equation is .146, indicating a growth in sales of about 146 smartphones per quarter.\nThe only difference in the four equations is that they have different intercepts.\nFor instance, the intercept for the quarter 1 equation is 4.71 and the intercept for the quarter 4 equation is 6.07. Thus, sales in quarter 1 are\n\\[\n4.71 - 6.07 = -1.36\n\\]\nor 1360 smartphones less than in quarter 4.\nIn other words, the estimated regression coefficient for Qtr1 provides an estimate of the difference in sales between quarter 1 and quarter 4."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-5",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonality and Trend: Example",
+    "text": "Seasonality and Trend: Example\nForecast for Quarter 1 in Year 5 (Time period t = 17)\n\\[\nSales = 6.07 + .146(17) - 1.36(1) - 2.03(0) - .304(0) = 7.19\n\\]\n\nForecast for Quarter 2 in Year 5 (Time period t = 18)\n\\[\nSales = 6.07 + .146(18) - 1.36(0) - 2.03(1) - .304(0) = 6.67\n\\]\n\n\nForecast for Quarter 3 in Year 5 (Time period t = 19)\n\\[\nSales = 6.07 + .146(19) - 1.36(0) - 2.03(0) - .304(1) = 8.54\n\\]\n\n\nForecast for Quarter 4 in Year 5 (Time period t = 20)\n\\[\nSales = 6.07 + .146(20) - 1.36(0) - 2.03(0) - .304(0) = 8.99\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-motivation",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-motivation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Time Series Decomposition: Motivation",
+    "text": "Time Series Decomposition: Motivation\n\nUnderstanding what is really going on with a time series often depends upon the use of deseasonalized data.\nFor example, we might be interested in learning whether electrical power consumption is increasing in our area.\nSuppose we learn that electric power consumption in September is down 3% from the previous month. We must be careful with such information, because whenever a seasonal influence is present, such comparisons may be misleading if the data have not been deseasonalized.\nThe fact that electric power consumption is down 3% from August to September might be only the seasonal effect associated with a decrease in the use of air conditioning and not because of a long-term decline in the use of electric power.\nIndeed, after adjusting for the seasonal effect, we might even find that the use of electric power increased.\nMany other time series, such as unemployment statistics, home sales, and retail sales, are subject to strong seasonal influences. It is important to deseasonalize such data before making a judgment about any long-term trend."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#additive-decomposition-model",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#additive-decomposition-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Additive Decomposition Model",
+    "text": "Additive Decomposition Model\n\nAn additive model is appropriate in situations where the seasonal fluctuations do not depend upon the level of the time series.\nIf the sizes of the seasonal fluctuations in earlier time periods are about the same as the sizes of the seasonal fluctuations in later time periods, an additive model is appropriate."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#when-to-use-an-additive-model",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#when-to-use-an-additive-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "When to Use an Additive Model",
+    "text": "When to Use an Additive Model\n\nAn additive model is appropriate in situations where the seasonal fluctuations do not depend upon the level of the time series.\nThe regression model for incorporating seasonal and trend effects is an additive model.\nIf the sizes of the seasonal fluctuations in earlier time periods are about the same as the sizes of the seasonal fluctuations in later time periods, an additive model is appropriate."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#choosing-between-additive-and-multiplicative-models",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#choosing-between-additive-and-multiplicative-models",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Choosing Between Additive and Multiplicative Models",
+    "text": "Choosing Between Additive and Multiplicative Models\n\nIf the seasonal fluctuations change over time, growing larger as the sales volume increases because of a long-term linear trend, then a multiplicative model should be used.\nMany business and economic time series follow this pattern."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model",
+    "text": "Multiplicative Decomposition Model\nA multiplicative decomposition model takes the following form:\n\\[\nY_t = Trend_t \\times Seasonal_t \\times Irregular_t\n\\]\nwhere\n\n\\(Trend_t\\) = trend value at time period \\(t\\)\n\\(Seasonal_t\\) = seasonal index at time period \\(t\\)\n\\(Irregular_t\\) = irregular index at time period \\(t\\)\nThe Census Bureau uses a multiplicative model in conjunction with its methodology for deseasonalizing time series."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#component-multiplication-in-the-model",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#component-multiplication-in-the-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Component Multiplication in the Model",
+    "text": "Component Multiplication in the Model\nIn this model, the trend, seasonal, and irregular components are multiplied to give the value of the time series.\n\nTrend is measured in units of the item being forecast.\nThe seasonal and irregular components are measured in relative terms:\n\nValues above 1.00 indicate effects above the trend.\nValues below 1.00 indicate effects below the trend."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#practical-application-in-analysis",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#practical-application-in-analysis",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Practical Application in Analysis",
+    "text": "Practical Application in Analysis\nBecause this is the method most often used in practice, we will focus on:\n\nDeveloping estimates of the trend and seasonal components for a multiplicative model.\nIllustrating with quarterly smartphone sales time series."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#calculating-the-seasonal-indexes",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#calculating-the-seasonal-indexes",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Calculating the Seasonal Indexes",
+    "text": "Calculating the Seasonal Indexes\nSales are lowest in the second quarter of each year and increase in quarters 3 and 4.\nThus, we conclude that a seasonal pattern exists for the smartphone sales time series. The computational procedure used to identify each quarter’s seasonal influence begins by computing a moving average to remove the combined seasonal and irregular effects from the data, leaving us with a time series that contains only trend and any remaining random variation not removed by the moving average calculations."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-average-calculation",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-average-calculation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Moving Average Calculation",
+    "text": "Moving Average Calculation\nBecause we are working with a quarterly series, we will use four data values in each moving average.\n\nThe moving average calculation for the first four quarters of the smartphone sales data is:\n\n\\[\n\\text{First moving average} = \\frac{4.8 + 4.1 + 6.0 + 6.5}{4} = \\frac{21.4}{4} = 5.35\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#continuing-the-moving-average-calculations",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#continuing-the-moving-average-calculations",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Continuing the Moving Average Calculations",
+    "text": "Continuing the Moving Average Calculations\n\nNote that the moving average calculation for the first four quarters yields the average quarterly sales over year 1 of the time series.\nContinuing the moving average calculations, we next add the 5.8 value for the first quarter of year 2 and drop the 4.8 for the first quarter of year 1.\n\nThus, the second moving average is:\n\\[\n\\text{Second moving average} = \\frac{4.1 + 6.0 + 6.5 + 5.8}{4} = \\frac{22.4}{4} = 5.60\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#third-moving-average-calculation",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#third-moving-average-calculation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Third Moving Average Calculation",
+    "text": "Third Moving Average Calculation\nSimilarly, the third moving average calculation is:\n\\[\n(6.0 + 6.5 + 5.8 + 5.2) / 4 = 5.875\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-average-calculations",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-average-calculations",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Moving Average Calculations",
+    "text": "Moving Average Calculations\nBefore we proceed with the moving average calculations for the entire time series, let us return to the first moving average calculation, which resulted in a value of 5.35.\n\nThe 5.35 value is the average quarterly sales volume for year 1.\nAs we look back at the calculation of the 5.35 value, associating 5.35 with the “middle” of the moving average group makes sense."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#period-alignment-with-moving-averages",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#period-alignment-with-moving-averages",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Period Alignment with Moving Averages",
+    "text": "Period Alignment with Moving Averages\nNote that with four quarters in the moving average, there is no middle period.\n\nThe 5.35 value really corresponds to period 2.5, the last half of quarter 2 and the first half of quarter 3.\nSimilarly, if we go to the next moving average value of 5.60, the middle period corresponds to period 3.5, the last half of quarter 3 and the first half of quarter 4."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#centering-moving-averages",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#centering-moving-averages",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Centering Moving Averages",
+    "text": "Centering Moving Averages\nThe two moving average values we computed do not correspond directly to the original quarters of the time series.\n\nWe can resolve this by computing the average of the two moving averages.\nThe center of the first moving average is period 2.5, and the center of the second moving average is period 3.5.\nBy averaging these, we center the moving average at quarter 3, exactly where it should be."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#centered-moving-average-calculation",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#centered-moving-average-calculation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Centered Moving Average Calculation",
+    "text": "Centered Moving Average Calculation\nThis moving average is referred to as a centered moving average.\n\nThus, the centered moving average for period 3 is:\n\n\\[\n\\frac{5.35 + 5.60}{2} = 5.475\n\\]\n\nSimilarly, the centered moving average value for period 4 is:\n\n\\[\n\\frac{5.60 + 5.875}{2} = 5.738\n\\]\n\nTable 17.20 shows a complete summary of the moving average and centered moving average calculations for the smartphone sales data."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#centered-moving-average-calculations",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#centered-moving-average-calculations",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Centered Moving Average Calculations",
+    "text": "Centered Moving Average Calculations\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nSales (1000s)\nFour-Quarter Moving Average\nCentered Moving Average\n\n\n\n\n1\n1\n4.8\n\n\n\n\n1\n2\n4.1\n\n\n\n\n\n\n\n5.350\n5.475\n\n\n1\n3\n6.0\n\n\n\n\n\n\n\n5.600\n5.738\n\n\n1\n4\n6.5\n\n\n\n\n\n\n\n5.875\n5.975\n\n\n2\n1\n5.8\n\n\n\n\n\n\n\n6.075\n6.188\n\n\n2\n2\n5.2\n\n\n\n\n\n\n\n6.300\n6.325\n\n\n2\n3\n6.8\n\n\n\n\n\n\n\n6.350\n6.400\n\n\n2\n4\n7.4\n\n\n\n\n\n\n\n6.450\n6.538\n\n\n3\n1\n6.0\n\n\n\n\n\n\n\n6.625\n6.675\n\n\n3\n2\n5.6\n\n\n\n\n\n\n\n6.725\n6.763\n\n\n3\n3\n7.5\n\n\n\n\n\n\n\n6.800\n6.838\n\n\n3\n4\n7.8\n\n\n\n\n\n\n\n6.875\n6.938\n\n\n4\n1\n6.3\n\n\n\n\n\n\n\n7.000\n7.075\n\n\n4\n2\n5.9\n\n\n\n\n\n\n\n7.150\n\n\n\n4\n3\n8.0\n\n\n\n\n\n\n\n\n\n\n\n4\n4\n8.4"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#interpretation-of-centered-moving-averages",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#interpretation-of-centered-moving-averages",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of Centered Moving Averages",
+    "text": "Interpretation of Centered Moving Averages\nWhat do the centered moving averages in Table 17.20 tell us about this time series?\nFigure 17.24 shows a time series plot of the actual time series values and the centered moving average values."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#smoothing-effect-of-centered-moving-averages",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#smoothing-effect-of-centered-moving-averages",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Smoothing Effect of Centered Moving Averages",
+    "text": "Smoothing Effect of Centered Moving Averages\nNote particularly how the centered moving average values tend to “smooth out” both the seasonal and irregular fluctuations in the time series.\n\nThe centered moving averages represent the trend in the data and any random variation that was not removed by using moving averages to smooth the data."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#decomposition-model",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#decomposition-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decomposition Model",
+    "text": "Decomposition Model"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model",
+    "text": "Multiplicative Decomposition Model\nIn this model, the trend, seasonal, and irregular components are multiplied to give the value of the time series.\n\nTrend is measured in units of the item being forecast.\nThe seasonal and irregular components are measured in relative terms:\n\nValues above 1.00 indicate effects above the trend.\nValues below 1.00 indicate effects below the trend."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-irregular-values",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-irregular-values",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonal-Irregular Values",
+    "text": "Seasonal-Irregular Values\nThe seasonal-irregular values, or de-trended values, are calculated as follows:\n\\[\n\\frac{Y_t}{\\text{Trend}_t} = \\frac{\\text{Trend}_t \\times \\text{Seasonal}_t \\times \\text{Irregular}_t}{\\text{Trend}_t} = \\text{Seasonal}_t \\times \\text{Irregular}_t\n\\]\nExample Calculation\nFor the third quarter of year 1: \\[\n\\frac{6.0}{5.475} = 1.096\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#example-calculation",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#example-calculation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example Calculation",
+    "text": "Example Calculation\nFor example, the third quarter of year 1 shows a trend value of 5.475 (the centered moving average).\nSo:\n\\[\n\\frac{6.0}{5.475} = 1.096\n\\]\nThis is the combined seasonal-irregular value.\nTable 17.21 summarizes the seasonal-irregular values for the entire time series."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-irregular-value-table",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-irregular-value-table",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonal-Irregular Value Table",
+    "text": "Seasonal-Irregular Value Table\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nSales (1000s)\nCentered Moving Average\nSeasonal-Irregular Value\n\n\n\n\n1\n1\n4.8\n\n\n\n\n1\n2\n4.1\n\n\n\n\n1\n3\n6.0\n5.475\n1.096\n\n\n1\n4\n6.5\n5.738\n1.133\n\n\n2\n1\n5.8\n5.975\n0.971\n\n\n2\n2\n5.2\n6.188\n0.840\n\n\n2\n3\n6.8\n6.325\n1.075\n\n\n2\n4\n7.4\n6.400\n1.156\n\n\n3\n1\n6.0\n6.538\n0.918\n\n\n3\n2\n5.6\n6.675\n0.839\n\n\n3\n3\n7.5\n6.763\n1.109\n\n\n3\n4\n7.8\n6.838\n1.141\n\n\n4\n1\n6.3\n6.938\n0.908\n\n\n4\n2\n5.9\n7.075\n0.834\n\n\n4\n3\n8.0\n\n\n\n\n4\n4\n8.4"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-irregular-values-for-third-quarter",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-irregular-values-for-third-quarter",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonal-Irregular Values for Third Quarter",
+    "text": "Seasonal-Irregular Values for Third Quarter\nConsider the seasonal-irregular values for the third quarter: 1.096, 1.075, and 1.109.\n\nSeasonal-irregular values greater than 1.00 indicate effects above the trend estimate, while values below 1.00 indicate effects below the trend estimate.\nThe three seasonal-irregular values for quarter 3 show an above-average effect in the third quarter."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#averaging-to-estimate-seasonal-influence",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#averaging-to-estimate-seasonal-influence",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Averaging to Estimate Seasonal Influence",
+    "text": "Averaging to Estimate Seasonal Influence\nSince the year-to-year fluctuations in the seasonal-irregular values are primarily due to random error, we can average the computed values to eliminate the irregular influence and obtain an estimate of the third-quarter seasonal influence.\n\\[\n\\text{Seasonal effect of quarter 3} = \\frac{1.096 + 1.075 + 1.109}{3} = 1.09\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-index-for-the-third-quarter",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-index-for-the-third-quarter",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonal Index for the Third Quarter",
+    "text": "Seasonal Index for the Third Quarter\nWe refer to 1.09 as the seasonal index for the third quarter.\nTable 17.22 summarizes the calculations involved in computing the seasonal indexes for the smartphone sales time series. The seasonal indexes for the four quarters are 0.93, 0.84, 1.09, and 1.14."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-irregular-values-and-seasonal-indexes",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-irregular-values-and-seasonal-indexes",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonal-Irregular Values and Seasonal Indexes",
+    "text": "Seasonal-Irregular Values and Seasonal Indexes\n\n\n\nQuarter\nSeasonal-Irregular Values\nSeasonal Index\n\n\n\n\n1\n0.971, 0.918, 0.908\n0.93\n\n\n2\n0.840, 0.839, 0.834\n0.84\n\n\n3\n1.096, 1.075, 1.109\n1.09\n\n\n4\n1.133, 1.156, 1.141\n1.14"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#interpretation-of-seasonal-indexes",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#interpretation-of-seasonal-indexes",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of Seasonal Indexes",
+    "text": "Interpretation of Seasonal Indexes\nInterpretation of the seasonal indexes in Table 17.22 provides some insight about the seasonal component in smartphone sales.\n\nThe best sales quarter is the fourth quarter, with sales averaging 14% above the trend estimate.\nThe worst, or slowest, sales quarter is the second quarter; its seasonal index of 0.84 shows that the sales average is 16% below the trend estimate.\n\nThe seasonal component corresponds clearly to the intuitive expectation that smartphone sales increase when a new school year begins (quarter 3) and for the holiday season (quarter 4)."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#adjustment-of-seasonal-indexes",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#adjustment-of-seasonal-indexes",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Adjustment of Seasonal Indexes",
+    "text": "Adjustment of Seasonal Indexes\nOne final adjustment is sometimes necessary in obtaining the seasonal indexes.\n\nThe multiplicative model requires that the average seasonal index equal 1.00, so the sum of the four seasonal indexes in Table 17.22 must equal 4.00.\nIn other words, the seasonal effects must even out over the year.\n\nThe average of the seasonal indexes in our example is equal to 1.00, so this type of adjustment is not necessary."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#making-adjustments-if-required",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#making-adjustments-if-required",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Making Adjustments (If Required)",
+    "text": "Making Adjustments (If Required)\nIn cases where adjustment is necessary:\n\nMultiply each seasonal index by the number of seasons divided by the sum of the unadjusted seasonal indexes.\n\nFor quarterly data, this means:\n\\[\n\\text{Adjusted Seasonal Index} = \\frac{4}{\\text{sum of the unadjusted seasonal indexes}}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series",
+    "text": "Deseasonalizing the Time Series\nA time series that has had the seasonal effects removed is referred to as a deseasonalized time series, and the process of using the seasonal indexes to remove the seasonal effects from a time series is referred to as deseasonalizing the time series.\n\nUsing a multiplicative decomposition model, we deseasonalize a time series by dividing each observation by its corresponding seasonal index.\nThe multiplicative decomposition model is:\n\n\\[\nY_t = Trend_t \\times Seasonal_t \\times Irregular_t\n\\]\nWhen we divide each time series observation \\(Y_t\\) by its corresponding seasonal index, the resulting data show only trend and random variability (the irregular component)."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#importance-of-deseasonalized-data",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#importance-of-deseasonalized-data",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Importance of Deseasonalized Data",
+    "text": "Importance of Deseasonalized Data\nEconomic time series adjusted for seasonal variations are often reported in publications such as the Survey of Current Business, The Wall Street Journal, and Bloomberg Businessweek."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#process-of-deseasonalizing",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#process-of-deseasonalizing",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Process of Deseasonalizing",
+    "text": "Process of Deseasonalizing\nWhen we divide each time series observation \\(Y_t\\) by its corresponding seasonal index, the resulting data show only trend and random variability (the irregular component).\n\nThe deseasonalized time series for smartphone sales is summarized in Table 17.23.\nA graph of the deseasonalized time series is shown in Figure 17.25."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalized-sales-data-table",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalized-sales-data-table",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalized Sales Data Table",
+    "text": "Deseasonalized Sales Data Table\n\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nTime Period\nSales (1000s)\nSeasonal Index\nDeseasonalized Sales\n\n\n\n\n1\n1\n1\n4.8\n0.93\n5.16\n\n\n1\n2\n2\n4.1\n0.84\n4.88\n\n\n1\n3\n3\n6.0\n1.09\n5.50\n\n\n1\n4\n4\n6.5\n1.14\n5.70\n\n\n2\n1\n5\n5.8\n0.93\n6.24\n\n\n2\n2\n6\n5.2\n0.84\n6.19\n\n\n2\n3\n7\n6.8\n1.09\n6.24\n\n\n2\n4\n8\n7.4\n1.14\n6.49\n\n\n3\n1\n9\n6.0\n0.93\n6.45\n\n\n3\n2\n10\n5.6\n0.84\n6.67\n\n\n3\n3\n11\n7.5\n1.09\n6.88\n\n\n3\n4\n12\n7.8\n1.14\n6.84\n\n\n4\n1\n13\n6.3\n0.93\n6.77\n\n\n4\n2\n14\n5.9\n0.84\n7.02\n\n\n4\n3\n15\n8.0\n1.09\n7.34\n\n\n4\n4\n16\n8.4\n1.14\n7.37"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalized-sales-plot",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalized-sales-plot",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalized Sales Plot",
+    "text": "Deseasonalized Sales Plot"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#identifying-trend-in-deseasonalized-data",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#identifying-trend-in-deseasonalized-data",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Identifying Trend in Deseasonalized Data",
+    "text": "Identifying Trend in Deseasonalized Data\nThe graph of the deseasonalized smartphone sales time series shown in Figure 17.25 appears to have an upward linear trend.\n\nTo identify this trend, we will fit a linear trend equation to the deseasonalized time series using the same method shown in Section 17.4.\nThe only difference is that we will be fitting a trend line to the deseasonalized data instead of the original data."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-equation",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#linear-trend-equation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Linear Trend Equation",
+    "text": "Linear Trend Equation\nRecall that for a linear trend, the estimated regression equation can be written as:\n\\[\nT_t = b_0 + b_1 t\n\\]\nwhere\n\n\\(T_t\\): linear trend forecast in period \\(t\\)\n\\(b_0\\): intercept of the linear trend line\n\\(b_1\\): slope of the trend line\n\\(t\\): time period\n\nIn Section 17.4, we provided formulas for computing the values of \\(b_0\\) and \\(b_1\\)."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#fitting-a-linear-trend-line",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#fitting-a-linear-trend-line",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Fitting a Linear Trend Line",
+    "text": "Fitting a Linear Trend Line\nTo fit a linear trend line to the deseasonalized data in Table 17.23, the only change is that the deseasonalized time series values are used instead of the observed values \\(Y_t\\) in computing \\(b_0\\) and \\(b_1\\).\nUsing Excel’s Regression tool, the estimated linear trend equation is:\n\\[\n\\text{Deseasonalized Sales} = 5.10 + 0.148t\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#interpretation-of-the-slope",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#interpretation-of-the-slope",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of the Slope",
+    "text": "Interpretation of the Slope\n\nThe slope of 0.148 indicates that over the past 16 quarters, the firm averaged a deseasonalized growth in sales of about 148 smartphones per quarter.\nIf we assume that the past 16-quarter trend in sales data is a reasonably good indicator of the future, this equation can be used to develop a trend projection for future quarters."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#example-projection",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#example-projection",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example Projection",
+    "text": "Example Projection\nFor example, substituting \\(t = 17\\) into the equation yields next quarter’s deseasonalized trend projection, \\(T_{17}\\):\n\\[\nT_{17} = 5.10 + 0.148(17) = 7.616\n\\]\nThus, using the deseasonalized data, the linear trend forecast for next quarter (period 17) is 7616 smartphones."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecasting-further-quarters",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecasting-further-quarters",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forecasting Further Quarters",
+    "text": "Forecasting Further Quarters\nSimilarly, the deseasonalized trend forecasts for the next three quarters (periods 18, 19, and 20) are 7764, 7912, and 8060 smartphones, respectively."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-adjustments",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-adjustments",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonal Adjustments",
+    "text": "Seasonal Adjustments\nThe final step in developing the forecast when both trend and seasonal components are present is to use the seasonal indexes to adjust the deseasonalized trend projections.\n\nFor the smartphone sales example, we have a deseasonalized trend projection for the next four quarters.\nNow, we must adjust the forecast for the seasonal effect.\n\nThe seasonal index for the first quarter of year 5 (\\(t = 17\\)) is 0.93, so we obtain the quarterly forecast by multiplying the deseasonalized forecast based on trend \\((T_{17} = 7616)\\) by the seasonal index (0.93). Thus, the forecast for the next quarter is \\(7616 \\times 0.93 = 7083\\)."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#quarterly-forecasts-table",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#quarterly-forecasts-table",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quarterly Forecasts Table",
+    "text": "Quarterly Forecasts Table\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nDeseasonalized Trend Forecast\nSeasonal Index\nQuarterly Forecast\n\n\n\n\n5\n1\n7616\n0.93\n\\(7616 \\times 0.93 = 7083\\)\n\n\n5\n2\n7764\n0.84\n\\(7764 \\times 0.84 = 6522\\)\n\n\n5\n3\n7912\n1.09\n\\(7912 \\times 1.09 = 8624\\)\n\n\n5\n4\n8060\n1.14\n\\(8060 \\times 1.14 = 9188\\)"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#models-based-on-monthly-data",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#models-based-on-monthly-data",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Models Based on Monthly Data",
+    "text": "Models Based on Monthly Data\nIn the preceding smartphone sales example, we used quarterly data to illustrate the computation of seasonal indexes.\n\nMany businesses use monthly rather than quarterly forecasts.\nIn such cases, the procedures introduced in this section can be applied with minor modifications.\n\nFor monthly data: 1. A 12-month moving average replaces the four-quarter moving average. 2. 12 monthly seasonal indexes, rather than four quarterly seasonal indexes, must be computed.\nOther than these changes, the computational and forecasting procedures are identical."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#cyclical-component",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#cyclical-component",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Cyclical Component",
+    "text": "Cyclical Component\n\nMathematically, the multiplicative model can be expanded to include a cyclical component.\n\\[\nY_t = Trend_t \\times Cyclical_t \\times Seasonal_t \\times Irregular_t\n\\]\n\nThe cyclical component, like the seasonal component, is expressed as a percentage of trend.\nThis component is attributable to multiyear cycles in the time series.\n\nIt is analogous to the seasonal component but over a longer period. However, due to the length of time involved, obtaining enough relevant data to estimate the cyclical component is often difficult."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#characteristics-of-the-cyclical-component",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#characteristics-of-the-cyclical-component",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Characteristics of the Cyclical Component",
+    "text": "Characteristics of the Cyclical Component\n\nThe cyclical component, like the seasonal component, is expressed as a percentage of trend.\nAs mentioned in Section 17.1, this component is attributable to multiyear cycles in the time series.\n\nIt is analogous to the seasonal component but over a longer period. However, due to the length of time involved, obtaining enough relevant data to estimate the cyclical component is often difficult."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#challenges-with-cyclical-component",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#challenges-with-cyclical-component",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Challenges with Cyclical Component",
+    "text": "Challenges with Cyclical Component\n\nCycles usually vary in length, making it difficult to identify or separate cyclical effects from long-term trend effects.\nIn practice, these effects are often combined and referred to as a combined trend-cycle component.\n\nFurther discussion of the cyclical component is found in specialized texts on forecasting methods.\nXXXXXXXXXX Parei aqui em cima! Terminar e checar lag XXXXXXXXXXXXXXXx\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#additive-decomposition-model-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#additive-decomposition-model-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Additive Decomposition Model",
+    "text": "Additive Decomposition Model\nAn additive decomposition model takes the following form:\n\\[\nY_t = Trend_t + Seasonal_t + Irregular_t\n\\]\nwhere\n\n\\(Trend_t\\) = trend value at time period \\(t\\)\n\\(Seasonal_t\\) = seasonal value at time period \\(t\\)\n\\(Irregular_t\\) = irregular value at time period \\(t\\)\nIn an additive model, the values for the three components are simply added together to obtain the actual time series value \\(Y_t\\).\nThe irregular or error component accounts for the variability in the time series that cannot be explained by the trend and seasonal components."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model",
+    "text": "Multiplicative Decomposition Model\nA multiplicative decomposition model is expressed as:\n\\[\nY_t = \\text{Trend}_t \\times \\text{Seasonal}_t \\times \\text{Irregular}_t\n\\]\n\nMultiplicative models are useful when fluctuations change with the level of the time series."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#calculating-seasonal-indexes",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#calculating-seasonal-indexes",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Calculating Seasonal Indexes",
+    "text": "Calculating Seasonal Indexes\nTo identify the seasonal pattern for a time series, use a moving average to remove combined seasonal and irregular effects:\n\nFirst Moving Average: \\[\n\\text{First moving average} = \\frac{4.8 + 4.1 + 6.0 + 6.5}{4} = 5.35\n\\]\nSecond Moving Average: \\[\n\\text{Second moving average} = \\frac{4.1 + 6.0 + 6.5 + 5.8}{4} = 5.60\n\\]\n\nCentered Moving Average Calculation\nThe centered moving average adjusts for alignment: \\[\n\\text{Centered moving average for period 3} = \\frac{5.35 + 5.60}{2} = 5.475\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-irregular-values-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-irregular-values-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonal-Irregular Values",
+    "text": "Seasonal-Irregular Values\nThe seasonal-irregular values, or de-trended values, are calculated as follows:\n\\[\n\\frac{Y_t}{\\text{Trend}_t} = \\frac{\\text{Trend}_t \\times \\text{Seasonal}_t \\times \\text{Irregular}_t}{\\text{Trend}_t} = \\text{Seasonal}_t \\times \\text{Irregular}_t\n\\]\nExample Calculation\nFor the third quarter of year 1: \\[\n\\frac{6.0}{5.475} = 1.096\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#table-of-centered-moving-averages-and-seasonal-irregular-values",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#table-of-centered-moving-averages-and-seasonal-irregular-values",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Table of Centered Moving Averages and Seasonal-Irregular Values",
+    "text": "Table of Centered Moving Averages and Seasonal-Irregular Values\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nSales (1000s)\nCentered Moving Average\nSeasonal-Irregular Value\n\n\n\n\n1\n1\n4.8\n\n\n\n\n1\n2\n4.1\n5.350\n\n\n\n1\n3\n6.0\n5.475\n1.096\n\n\n1\n4\n6.5\n5.738\n1.133\n\n\n2\n1\n5.8\n5.975\n0.971\n\n\n…\n…\n…\n…\n…"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#computing-seasonal-index-for-quarter-3",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#computing-seasonal-index-for-quarter-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Computing Seasonal Index for Quarter 3",
+    "text": "Computing Seasonal Index for Quarter 3\nTo compute the seasonal effect for Quarter 3, average the seasonal-irregular values for that quarter:\n\\[\n\\text{Seasonal effect of quarter 3} = \\frac{1.096 + 1.075 + 1.109}{3} = 1.09\n\\]\nThe seasonal indexes for the four quarters are: - Quarter 1: 0.93 - Quarter 2: 0.84 - Quarter 3: 1.09 - Quarter 4: 1.14\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-4",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Time Series Decomposition",
+    "text": "Time Series Decomposition\nMultiplicative Model\n\\[\nY_t = Trend_t \\times Seasonal_t \\times Irregular_t\n\\]\n\n\\(Trend_t\\) = trend value at time \\(t\\)\n\\(Seasonal_t\\) = seasonal value at time \\(t\\)\n\\(Irregular_t\\) = irregular value at time \\(t\\)\n\n\n\nA multiplicative model is used when seasonal fluctuations grow larger as the time series values increase."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-5",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#time-series-decomposition-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Time Series Decomposition",
+    "text": "Time Series Decomposition\nMultiplicative Model\n\\[\nY_t = Trend_t \\times Seasonal_t \\times Irregular_t\n\\]\n\n\\(Trend_t\\) = trend value at time \\(t\\)\n\\(Seasonal_t\\) = seasonal value at time \\(t\\)\n\\(Irregular_t\\) = irregular value at time \\(t\\)\n\n\n\nA multiplicative model is used when seasonal fluctuations grow larger as the time series values increase."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\n\n\nSales are lowest in the second quarter of each year and increase in quarters 3 and 4.\nWe conclude that a seasonal pattern exists for the smartphone sales time series."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nMoving Average Calculation\n\nBecause we are working with a quarterly series, we will use four data values in each moving average.\nThe moving average calculation for the first four quarters of the smartphone sales data is:\n\n\\[\n\\text{First moving average} = \\frac{4.8 + 4.1 + 6.0 + 6.5}{4} = \\frac{21.4}{4} = 5.35\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nMoving Average Calculation\n\nNote that the moving average calculation for the first four quarters yields the average quarterly sales over year 1 of the time series.\nContinuing the moving average calculations, we next add the 5.8 value for the first quarter of year 2 and drop the 4.8 for the first quarter of year 1.\n\nThus, the second moving average is:\n\\[\n\\text{Second moving average} = \\frac{4.1 + 6.0 + 6.5 + 5.8}{4} = \\frac{22.4}{4} = 5.60\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-3",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nMoving Average Calculation\nSimilarly, the third moving average calculation is:\n\\[\n(6.0 + 6.5 + 5.8 + 5.2) / 4 = 5.875\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-4",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nBefore we proceed with the moving average calculations for the entire time series, let us return to the first moving average calculation, which resulted in a value of 5.35.\n\nThe 5.35 value is the average quarterly sales volume for year 1.\nAs we look back at the calculation of the 5.35 value, associating 5.35 with the “middle” of the moving average group makes sense."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-5",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nPeriod Alignment with Moving Averages\nNote that with four quarters in the moving average, there is no middle period.\n\nThe 5.35 value really corresponds to period 2.5, the last half of quarter 2 and the first half of quarter 3.\nSimilarly, if we go to the next moving average value of 5.60, the middle period corresponds to period 3.5, the last half of quarter 3 and the first half of quarter 4."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-6",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-6",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nCentering Moving Averages\nThe two moving average values we computed do not correspond directly to the original quarters of the time series.\n\nWe can resolve this by computing the average of the two moving averages.\nThe center of the first moving average is period 2.5, and the center of the second moving average is period 3.5.\nBy averaging these, we center the moving average at quarter 3, exactly where it should be."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-7",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nCentered Moving Average Calculation\nThis moving average is referred to as a centered moving average.\n\nThus, the centered moving average for period 3 is:\n\n\\[\n\\frac{5.35 + 5.60}{2} = 5.475\n\\]\n\nSimilarly, the centered moving average value for period 4 is:\n\n\\[\n\\frac{5.60 + 5.875}{2} = 5.738\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-8",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-8",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nCentered Moving Average Calculations\n\nSummary of the moving average and centered moving average calculations for the smartphone sales data.\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nSales (1000s)\nFour-Quarter Moving Average\nCentered Moving Average\n\n\n\n\n1\n1\n4.8\n\n\n\n\n1\n2\n4.1\n\n\n\n\n\n\n\n5.350\n5.475\n\n\n1\n3\n6.0\n\n\n\n\n\n\n\n5.600\n5.738\n\n\n1\n4\n6.5\n\n\n\n\n\n\n\n5.875\n5.975\n\n\n2\n1\n5.8\n\n\n\n\n\n\n\n6.075\n6.188\n\n\n2\n2\n5.2\n\n\n\n\n\n\n\n6.300\n6.325\n\n\n2\n3\n6.8\n\n\n\n\n\n\n\n6.350\n6.400\n\n\n2\n4\n7.4\n\n\n\n\n\n\n\n6.450\n6.538\n\n\n3\n1\n6.0\n\n\n\n\n\n\n\n6.625\n6.675\n\n\n3\n2\n5.6\n\n\n\n\n\n\n\n6.725\n6.763\n\n\n3\n3\n7.5\n\n\n\n\n\n\n\n6.800\n6.838\n\n\n3\n4\n7.8\n\n\n\n\n\n\n\n6.875\n6.938\n\n\n4\n1\n6.3\n\n\n\n\n\n\n\n7.000\n7.075\n\n\n4\n2\n5.9\n\n\n\n\n\n\n\n7.150\n\n\n\n4\n3\n8.0\n\n\n\n\n\n\n\n\n\n\n\n4\n4\n8.4"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-9",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-9",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nWhat do the centered moving averages tell us about this time series?\n\n-The Figure shows a time series plot of the actual time series values and the centered moving average values.\n\nNote particularly how the centered moving average values tend to “smooth out” both the seasonal and irregular fluctuations in the time series.\nThe centered moving averages represent the trend in the data and any random variation that was not removed by using moving averages to smooth the data."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-10",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-10",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nThe multiplicative decomposition model is:\n\\[\nY_t = Trend_t \\times Seasonal_t \\times Irregular_t\n\\]\nBy dividing each side of this equation by the trend component \\(T_t\\), we can identify the combined seasonal-irregular effect in the time series.\n\\[\n\\frac{Y_t}{Trend_t} = \\frac{Trend_t \\times Seasonal_t \\times Irregular_t}{Trend_t} = Seasonal_t \\times Irregular_t\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-11",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-11",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nFor example, the third quarter of year 1 shows a trend value of 5.475 (the centered moving average).\nSo:\n\\[\n\\frac{6.0}{5.475} = 1.096\n\\]\nThis is the combined seasonal-irregular value."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-12",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-12",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\n\nSeasonal-irregular values for the entire time series.\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nSales (1000s)\nCentered Moving Average\nSeasonal-Irregular Value\n\n\n\n\n1\n1\n4.8\n\n\n\n\n1\n2\n4.1\n\n\n\n\n1\n3\n6.0\n5.475\n1.096\n\n\n1\n4\n6.5\n5.738\n1.133\n\n\n2\n1\n5.8\n5.975\n0.971\n\n\n2\n2\n5.2\n6.188\n0.840\n\n\n2\n3\n6.8\n6.325\n1.075\n\n\n2\n4\n7.4\n6.400\n1.156\n\n\n3\n1\n6.0\n6.538\n0.918\n\n\n3\n2\n5.6\n6.675\n0.839\n\n\n3\n3\n7.5\n6.763\n1.109\n\n\n3\n4\n7.8\n6.838\n1.141\n\n\n4\n1\n6.3\n6.938\n0.908\n\n\n4\n2\n5.9\n7.075\n0.834\n\n\n4\n3\n8.0\n\n\n\n\n4\n4\n8.4"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-13",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-13",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nSeasonal-Irregular Values for Third Quarter\nConsider the seasonal-irregular values for the third quarter: 1.096, 1.075, and 1.109.\n\nSeasonal-irregular values greater than 1.00 indicate effects above the trend estimate, while values below 1.00 indicate effects below the trend estimate.\nThe three seasonal-irregular values for quarter 3 show an above-average effect in the third quarter."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-14",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-14",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nAveraging to Estimate Seasonal Influence\nSince the year-to-year fluctuations in the seasonal-irregular values are primarily due to random error, we can average the computed values to eliminate the irregular influence and obtain an estimate of the third-quarter seasonal influence.\n\\[\n\\text{Seasonal effect of quarter 3} = \\frac{1.096 + 1.075 + 1.109}{3} = 1.09\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-15",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-15",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nSeasonal-Irregular Values and Seasonal Indexes\n\n\n\nQuarter\nSeasonal-Irregular Values\nSeasonal Index\n\n\n\n\n1\n0.971, 0.918, 0.908\n0.93\n\n\n2\n0.840, 0.839, 0.834\n0.84\n\n\n3\n1.096, 1.075, 1.109\n1.09\n\n\n4\n1.133, 1.156, 1.141\n1.14\n\n\n\n\nThe seasonal indexes for the four quarters are 0.93, 0.84, 1.09, and 1.14.\nThe best sales quarter is the fourth quarter, with sales averaging 14% above the trend estimate.\nThe worst, or slowest, sales quarter is the second quarter; its seasonal index of 0.84 shows that the sales average is 16% below the trend estimate.\nThe seasonal component corresponds clearly to the intuitive expectation that smartphone sales increase when a new school year begins (quarter 3) and for the holiday season (quarter 4)."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-16",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-16",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nOne final adjustment is sometimes necessary in obtaining the seasonal indexes.\n\nThe multiplicative model requires that the average seasonal index equal 1.00, so the sum of the four seasonal indexes must equal 4.00.\nIn other words, the seasonal effects must even out over the year.\nThe average of the seasonal indexes in our example is equal to 1.00, so this type of adjustment is not necessary."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-17",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-17",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example",
+    "text": "Multiplicative Decomposition Model: Example\nMaking Adjustments (If Required)\nIn cases where adjustment is necessary:\n\nMultiply each seasonal index by the number of seasons divided by the sum of the unadjusted seasonal indexes.\n\nFor quarterly data, this means:\n\\[\n\\text{Adjusted Seasonal Index} = \\frac{4}{\\text{sum of the unadjusted seasonal indexes}}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series",
+    "text": "Deseasonalizing the Time Series\nIdentifying Trend in Deseasonalized Data\nThe graph of the deseasonalized smartphone sales time series shown in Figure 17.25 appears to have an upward linear trend.\n\nTo identify this trend, we will fit a linear trend equation to the deseasonalized time series.\nThe only difference is that we will be fitting a trend line to the deseasonalized data instead of the original data."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-linear-trend-equation",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-linear-trend-equation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series: Linear Trend Equation",
+    "text": "Deseasonalizing the Time Series: Linear Trend Equation\nRecall that for a linear trend, the estimated regression equation can be written as:\n\\[\nT_t = b_0 + b_1 t\n\\]\nwhere\n\n\\(T_t\\): linear trend forecast in period \\(t\\)\n\\(b_0\\): intercept of the linear trend line\n\\(b_1\\): slope of the trend line\n\\(t\\): time period"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-fitting-a-linear-trend-line",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-fitting-a-linear-trend-line",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series: Fitting a Linear Trend Line",
+    "text": "Deseasonalizing the Time Series: Fitting a Linear Trend Line\nTo fit a linear trend line to the deseasonalized data, the only change is that the deseasonalized time series values are used instead of the observed values \\(Y_t\\) in computing \\(b_0\\) and \\(b_1\\).\nUsing Excel’s Regression tool, the estimated linear trend equation is:\n\\[\n\\text{Deseasonalized Sales} = 5.10 + 0.148t\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-interpretation-of-the-slope",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-interpretation-of-the-slope",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series: Interpretation of the Slope",
+    "text": "Deseasonalizing the Time Series: Interpretation of the Slope\n\nThe slope of 0.148 indicates that over the past 16 quarters, the firm averaged a deseasonalized growth in sales of about 148 smartphones per quarter.\nIf we assume that the past 16-quarter trend in sales data is a reasonably good indicator of the future, this equation can be used to develop a trend projection for future quarters."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-example-projection",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-example-projection",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series: Example Projection",
+    "text": "Deseasonalizing the Time Series: Example Projection\nSubstituting \\(t = 17\\) into the equation yields next quarter’s deseasonalized trend projection, \\(T_{17}\\):\n\\[\nT_{17} = 5.10 + 0.148(17) = 7.616\n\\]\nThus, using the deseasonalized data, the linear trend forecast for next quarter (period 17) is 7616 smartphones.\nSimilarly, the deseasonalized trend forecasts for the next three quarters (periods 18, 19, and 20) are 7764, 7912, and 8060 smartphones, respectively."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-adjustments-quarterly-forecasts-table",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-adjustments-quarterly-forecasts-table",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonal Adjustments: Quarterly Forecasts Table",
+    "text": "Seasonal Adjustments: Quarterly Forecasts Table\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nDeseasonalized Trend Forecast\nSeasonal Index\nQuarterly Forecast\n\n\n\n\n5\n1\n7616\n0.93\n\\(7616 \\times 0.93 = 7083\\)\n\n\n5\n2\n7764\n0.84\n\\(7764 \\times 0.84 = 6522\\)\n\n\n5\n3\n7912\n1.09\n\\(7912 \\times 1.09 = 8624\\)\n\n\n5\n4\n8060\n1.14\n\\(8060 \\times 1.14 = 9188\\)\n\n\n\nThe Table shows the quarterly forecasts for quarters 17 through 20. The high-volume fourth quarter has a 9188-unit forecast, and the low-volume second quarter has a 6522-unit forecast."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#cyclical-component-challenges",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#cyclical-component-challenges",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Cyclical Component: Challenges",
+    "text": "Cyclical Component: Challenges\n\nCycles usually vary in length, making it difficult to identify or separate cyclical effects from long-term trend effects.\nIn practice, these effects are often combined and referred to as a combined trend-cycle component."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#additive-decomposition-model-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#additive-decomposition-model-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Additive Decomposition Model",
+    "text": "Additive Decomposition Model\nAn additive decomposition model takes the form:\n\\[\nY_t = \\text{Trend}_t + \\text{Seasonal}_t + \\text{Irregular}_t\n\\]\nwhere:\n\n\\(Trend_t\\): Value at time \\(t\\)\n\\(Seasonal_t\\): Seasonal value at time \\(t\\)\n\\(Irregular_t\\): Error component not explained by trend and seasonality\n\nUse additive models when seasonal fluctuations are consistent over time."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-with-lag-variables-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-with-lag-variables-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forecast with Lag Variables",
+    "text": "Forecast with Lag Variables\nAssume lag order is 4.\n\n\n\nQuarter\n\\(t\\)\nSales ($Mil.)\nLag 1\nLag 2\nLag 3\nLag 4\n\n\n\n\nQ210\n1\n8.75\n\n\n\n\n\n\nQ310\n2\n8.40\n8.75\n\n\n\n\n\nQ410\n3\n14.10\n8.40\n8.75\n\n\n\n\nQ111\n4\n16.24\n14.10\n8.40\n8.75\n\n\n\nQ211\n5\n18.65\n16.24\n14.10\n8.40\n8.75\n\n\nQ311\n6\n20.34\n18.65\n16.24\n14.10\n8.40\n\n\n…\n…\n…\n…\n…\n…\n…"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-with-lag-variables-correlations",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-with-lag-variables-correlations",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forecast with Lag Variables: Correlations",
+    "text": "Forecast with Lag Variables: Correlations\n\n\n\n\nSales ($Mil.)\nLag 1\nLag 2\nLag 3\n\n\n\n\nLag 1\n0.642\n\n\n\n\n\nLag 2\n0.418\n0.660\n\n\n\n\nLag 3\n0.603\n0.440\n0.660\n\n\n\nLag 4\n0.914\n0.605\n0.437\n0.664"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-with-lag-variables-full-model",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-with-lag-variables-full-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forecast with Lag Variables: Full Model",
+    "text": "Forecast with Lag Variables: Full Model\n\nSummary Output:\n\n\n\nRegression Statistics\n\n\n\n\n\nMultiple R\n0.9226\n\n\nR Square\n0.8511\n\n\nAdjusted R Square\n0.8252\n\n\nStandard Error\n7.0864\n\n\nObservations\n28\n\n\n\nANOVA\n\n\n\ndf\nSS\nMS\nF\nSignificance F\n\n\n\n\nRegression\n4\n6602.696\n1650.674\n32.871\n\n\nResidual\n23\n1154.980\n50.217\n\n\n\nTotal\n27\n7757.676\n\n\n\n\n\nCoefficients:\n\n\n\nVariables\nCoefficients\nStandard Error\nt Stat\nP-value\n\n\n\n\nIntercept\n16.438\n4.179\n3.933\n0.001\n\n\nLag 1\n0.011\n0.122\n0.091\n0.928\n\n\nLag 2\n-0.141\n0.119\n-1.188\n0.247\n\n\nLag 3\n0.007\n0.121\n0.057\n0.955\n\n\nLag 4\n0.858\n0.115\n7.467\n0.000"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-with-lag-variables-reduced-model",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#forecast-with-lag-variables-reduced-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forecast with Lag Variables: Reduced Model",
+    "text": "Forecast with Lag Variables: Reduced Model\n\nSummary Output:\n\n\n\nRegression Statistics\n\n\n\n\n\nMultiple R\n0.9144\n\n\nR Square\n0.8361\n\n\nAdjusted R Square\n0.8298\n\n\nStandard Error\n6.9933\n\n\nObservations\n28\n\n\n\nANOVA\n\n\n\ndf\nSS\nMS\nF\nSignificance F\n\n\n\n\nRegression\n1\n6486.115\n6486.115\n132.624\n\n\nResidual\n26\n1271.561\n48.906\n\n\n\nTotal\n27\n7757.676\n\n\n\n\n\nCoefficients:\n\n\n\nVariables\nCoefficients\nStandard Error\nt Stat\nP-value\n\n\n\n\nIntercept\n13.161\n3.002\n4.384\n0.000\n\n\nLag 4\n0.813\n0.071\n11.516\n0.000\n\n\n\n\\[\n\\widehat{Sales_t} = 13.161 + (0.813) \\widehat{Sales_{t-4}}\n\\]\nwhere the predictor is the Lag 4 variable."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#procedures-overview",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#procedures-overview",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Procedures: Overview",
+    "text": "Procedures: Overview\n\nThe computational procedure to identify each quarter’s seasonal influence begins by computing a moving average to remove the combined seasonal and irregular effects from the data, leaving us with a time series that contains only trend and any remaining random variation not removed by the moving average calculations.\n\nSteps 1-2: Calculate centered moving averages (Initial deseasonalized data).\nStep 3: Determine the seasonal and irregular factors for each time series value. (Individual factors due to seasonality and irregularity).\nStep 4: Determine Seasonal Index (SI) for each season (Updating the factors).\nStep 5: Determine the deseasonalized data (Update the deseasonalized data using SI).\nStep 6: Determine the Trend Component of the deseasonalized data (Model trend).\nStep 7: Determine the deseasonalized predictions (based on the Trend Component). (Forecast trend).\nStep 8: Add the seasonality to the predictions."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 1)",
+    "text": "Multiplicative Decomposition Model: Example (Step 1)\n\nMoving Average Calculation\n\nBecause we are working with a quarterly series, we will use four data values in each moving average.\nThe moving average calculation for the first four quarters of the smartphone sales data is:\n\n\\[\n\\text{First moving average} = \\frac{4.8 + 4.1 + 6.0 + 6.5}{4} = \\frac{21.4}{4} = 5.35\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-1-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-1-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 1)",
+    "text": "Multiplicative Decomposition Model: Example (Step 1)\n\nMoving Average Calculation\n\nNote that the moving average calculation for the first four quarters yields the average quarterly sales over year 1 of the time series.\nContinuing the moving average calculations, we next add the 5.8 value for the first quarter of year 2 and drop the 4.8 for the first quarter of year 1.\n\nThus, the second moving average is:\n\\[\n\\text{Second moving average} = \\frac{4.1 + 6.0 + 6.5 + 5.8}{4} = \\frac{22.4}{4} = 5.60\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-1-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-1-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 1)",
+    "text": "Multiplicative Decomposition Model: Example (Step 1)\nMoving Average Calculation\nSimilarly, the third moving average calculation is:\n\\[\n(6.0 + 6.5 + 5.8 + 5.2) / 4 = 5.875\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-1-3",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-1-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 1)",
+    "text": "Multiplicative Decomposition Model: Example (Step 1)\nBefore we proceed with the moving average calculations for the entire time series, let us return to the first moving average calculation, which resulted in a value of 5.35.\n\nThe 5.35 value is the average quarterly sales volume for year 1.\nAs we look back at the calculation of the 5.35 value, associating 5.35 with the “middle” of the moving average group makes sense."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 2)",
+    "text": "Multiplicative Decomposition Model: Example (Step 2)\nPeriod Alignment with Moving Averages\nNote that with four quarters in the moving average, there is no middle period.\n\nThe 5.35 value really corresponds to period 2.5, the last half of quarter 2 and the first half of quarter 3.\nSimilarly, if we go to the next moving average value of 5.60, the middle period corresponds to period 3.5, the last half of quarter 3 and the first half of quarter 4."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-2-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-2-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 2)",
+    "text": "Multiplicative Decomposition Model: Example (Step 2)\nCentering Moving Averages\nThe two moving average values we computed do not correspond directly to the original quarters of the time series.\n\nWe can resolve this by computing the average of the two moving averages.\nThe center of the first moving average is period 2.5, and the center of the second moving average is period 3.5.\nBy averaging these, we center the moving average at quarter 3, exactly where it should be."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-2-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-2-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 2)",
+    "text": "Multiplicative Decomposition Model: Example (Step 2)\n\nCentered Moving Average Calculation\nThis moving average is referred to as a centered moving average.\n\nThus, the centered moving average for period 3 is:\n\n\\[\n\\frac{5.35 + 5.60}{2} = 5.475\n\\]\n\n\nSimilarly, the centered moving average value for period 4 is:\n\n\n\\[\n\\frac{5.60 + 5.875}{2} = 5.738\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-2-3",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-2-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 2)",
+    "text": "Multiplicative Decomposition Model: Example (Step 2)\n\nCentered Moving Average Calculations\nSummary of the moving average and centered moving average calculations for the smartphone sales data.\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nSales (1000s)\nFour-Quarter Moving Average\nCentered Moving Average\n\n\n\n\n1\n1\n4.8\n\n\n\n\n1\n2\n4.1\n\n\n\n\n\n\n\n5.350\n5.475\n\n\n1\n3\n6.0\n\n\n\n\n\n\n\n5.600\n5.738\n\n\n1\n4\n6.5\n\n\n\n\n\n\n\n5.875\n5.975\n\n\n2\n1\n5.8\n\n\n\n\n\n\n\n6.075\n6.188\n\n\n2\n2\n5.2\n\n\n\n\n\n\n\n6.300\n6.325\n\n\n2\n3\n6.8\n\n\n\n\n\n\n\n6.350\n6.400\n\n\n2\n4\n7.4\n\n\n\n\n\n\n\n6.450\n6.538\n\n\n3\n1\n6.0\n\n\n\n\n\n\n\n6.625\n6.675\n\n\n3\n2\n5.6\n\n\n\n\n\n\n\n6.725\n6.763\n\n\n3\n3\n7.5\n\n\n\n\n\n\n\n6.800\n6.838\n\n\n3\n4\n7.8\n\n\n\n\n\n\n\n6.875\n6.938\n\n\n4\n1\n6.3\n\n\n\n\n\n\n\n7.000\n7.075\n\n\n4\n2\n5.9\n\n\n\n\n\n\n\n7.150\n\n\n\n4\n3\n8.0\n\n\n\n\n4\n4\n8.4"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-3",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 3)",
+    "text": "Multiplicative Decomposition Model: Example (Step 3)\nWhat do the centered moving averages tell us about this time series?\n\n\n\nThe Figure shows a time series plot of the actual time series values and the centered moving average values.\nNote particularly how the centered moving average values tend to “smooth out” both the seasonal and irregular fluctuations in the time series.\nThe centered moving averages represent the trend in the data and any random variation that was not removed by using moving averages to smooth the data."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 4)",
+    "text": "Multiplicative Decomposition Model: Example (Step 4)\nThe multiplicative decomposition model is:\n\\[\nY_t = Trend_t \\times Seasonal_t \\times Irregular_t\n\\]\nBy dividing each side of this equation by the trend component \\(T_t\\), we can identify the combined seasonal-irregular effect in the time series.\n\\[\n\\frac{Y_t}{Trend_t} = \\frac{Trend_t \\times Seasonal_t \\times Irregular_t}{Trend_t} = Seasonal_t \\times Irregular_t\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 4)",
+    "text": "Multiplicative Decomposition Model: Example (Step 4)\nFor example, the third quarter of year 1 shows a trend value of 5.475 (the centered moving average).\nSo:\n\\[\n\\frac{6.0}{5.475} = 1.096\n\\]\nThis is the combined seasonal-irregular value."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 4)",
+    "text": "Multiplicative Decomposition Model: Example (Step 4)\n\nSeasonal-irregular values for the entire time series.\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nSales (1000s)\nCentered Moving Average\nSeasonal-Irregular Value\n\n\n\n\n1\n1\n4.8\n\n\n\n\n1\n2\n4.1\n\n\n\n\n1\n3\n6.0\n5.475\n1.096\n\n\n1\n4\n6.5\n5.738\n1.133\n\n\n2\n1\n5.8\n5.975\n0.971\n\n\n2\n2\n5.2\n6.188\n0.840\n\n\n2\n3\n6.8\n6.325\n1.075\n\n\n2\n4\n7.4\n6.400\n1.156\n\n\n3\n1\n6.0\n6.538\n0.918\n\n\n3\n2\n5.6\n6.675\n0.839\n\n\n3\n3\n7.5\n6.763\n1.109\n\n\n3\n4\n7.8\n6.838\n1.141\n\n\n4\n1\n6.3\n6.938\n0.908\n\n\n4\n2\n5.9\n7.075\n0.834\n\n\n4\n3\n8.0\n\n\n\n\n4\n4\n8.4"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-3",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 4)",
+    "text": "Multiplicative Decomposition Model: Example (Step 4)\nSeasonal-Irregular Values for Third Quarter\nConsider the seasonal-irregular values for the third quarter: 1.096, 1.075, and 1.109.\n\nSeasonal-irregular values greater than 1.00 indicate effects above the trend estimate, while values below 1.00 indicate effects below the trend estimate.\nThe three seasonal-irregular values for quarter 3 show an above-average effect in the third quarter."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-4",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 4)",
+    "text": "Multiplicative Decomposition Model: Example (Step 4)\nAveraging to Estimate Seasonal Influence\nSince the year-to-year fluctuations in the seasonal-irregular values are primarily due to random error, we can average the computed values to eliminate the irregular influence and obtain an estimate of the third-quarter seasonal influence.\n\\[\n\\text{Seasonal effect of quarter 3} = \\frac{1.096 + 1.075 + 1.109}{3} = 1.09\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-5",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 4)",
+    "text": "Multiplicative Decomposition Model: Example (Step 4)\nSeasonal-Irregular Values and Seasonal Indexes\n\n\n\nQuarter\nSeasonal-Irregular Values\nSeasonal Index\n\n\n\n\n1\n0.971, 0.918, 0.908\n0.93\n\n\n2\n0.840, 0.839, 0.834\n0.84\n\n\n3\n1.096, 1.075, 1.109\n1.09\n\n\n4\n1.133, 1.156, 1.141\n1.14\n\n\n\n\nThe seasonal indexes for the four quarters are 0.93, 0.84, 1.09, and 1.14.\nThe best sales quarter is the fourth quarter, with sales averaging 14% above the trend estimate.\nThe worst, or slowest, sales quarter is the second quarter; its seasonal index of 0.84 shows that the sales average is 16% below the trend estimate.\nThe seasonal component corresponds clearly to the intuitive expectation that smartphone sales increase when a new school year begins (quarter 3) and for the holiday season (quarter 4)."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-6",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-6",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 4)",
+    "text": "Multiplicative Decomposition Model: Example (Step 4)\nOne final adjustment is sometimes necessary in obtaining the seasonal indexes.\n\nThe multiplicative model requires that the average seasonal index equal 1.00, so the sum of the four seasonal indexes must equal 4.00.\nIn other words, the seasonal effects must even out over the year.\nThe average of the seasonal indexes in our example is equal to 1.00, so this type of adjustment is not necessary."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-7",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#multiplicative-decomposition-model-example-step-4-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiplicative Decomposition Model: Example (Step 4)",
+    "text": "Multiplicative Decomposition Model: Example (Step 4)\n\nMaking Adjustments (If Required)\nIn cases where adjustment is necessary:\n\nMultiply each seasonal index by the number of seasons divided by the sum of the unadjusted seasonal indexes.\n\nFor quarterly data, this means:\n\\[\n\\text{Adjusted Seasonal Index} = \\frac{4}{\\text{sum of the unadjusted seasonal indexes}}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-step-5",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-step-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series (Step 5)",
+    "text": "Deseasonalizing the Time Series (Step 5)\n\nA time series that has had the seasonal effects removed is referred to as a deseasonalized time series, and the process of using the seasonal indexes to remove the seasonal effects from a time series is referred to as deseasonalizing the time series.\n\nUsing a multiplicative decomposition model, we deseasonalize a time series by dividing each observation by its corresponding seasonal index.\nThe multiplicative decomposition model is:\n\n\\[\nY_t = Trend_t \\times Seasonal_t \\times Irregular_t\n\\]\nWhen we divide each time series observation \\(Y_t\\) by its corresponding seasonal index, the resulting data show only trend and random variability (the irregular component)."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalized-sales-data-table-step-5",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalized-sales-data-table-step-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalized Sales Data Table (Step 5)",
+    "text": "Deseasonalized Sales Data Table (Step 5)\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nTime Period\nSales (1000s)\nSeasonal Index\nDeseasonalized Sales\n\n\n\n\n1\n1\n1\n4.8\n0.93\n5.16\n\n\n1\n2\n2\n4.1\n0.84\n4.88\n\n\n1\n3\n3\n6.0\n1.09\n5.50\n\n\n1\n4\n4\n6.5\n1.14\n5.70\n\n\n2\n1\n5\n5.8\n0.93\n6.24\n\n\n2\n2\n6\n5.2\n0.84\n6.19\n\n\n2\n3\n7\n6.8\n1.09\n6.24\n\n\n2\n4\n8\n7.4\n1.14\n6.49\n\n\n3\n1\n9\n6.0\n0.93\n6.45\n\n\n3\n2\n10\n5.6\n0.84\n6.67\n\n\n3\n3\n11\n7.5\n1.09\n6.88\n\n\n3\n4\n12\n7.8\n1.14\n6.84\n\n\n4\n1\n13\n6.3\n0.93\n6.77\n\n\n4\n2\n14\n5.9\n0.84\n7.02\n\n\n4\n3\n15\n8.0\n1.09\n7.34\n\n\n4\n4\n16\n8.4\n1.14\n7.37"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalized-sales-plot-step-5",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalized-sales-plot-step-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalized Sales Plot (Step 5)",
+    "text": "Deseasonalized Sales Plot (Step 5)"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-step-5-1",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-step-5-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series (Step 5)",
+    "text": "Deseasonalizing the Time Series (Step 5)\nIdentifying Trend in Deseasonalized Data\nThe graph of the deseasonalized smartphone sales time series shown in Figure 17.25 appears to have an upward linear trend.\n\nTo identify this trend, we will fit a linear trend equation to the deseasonalized time series.\nThe only difference is that we will be fitting a trend line to the deseasonalized data instead of the original data."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-linear-trend-equation-step-6",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-linear-trend-equation-step-6",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series: Linear Trend Equation (Step 6)",
+    "text": "Deseasonalizing the Time Series: Linear Trend Equation (Step 6)\nRecall that for a linear trend, the estimated regression equation can be written as:\n\\[\nT_t = b_0 + b_1 t\n\\]\nwhere\n\n\\(T_t\\): linear trend forecast in period \\(t\\)\n\\(b_0\\): intercept of the linear trend line\n\\(b_1\\): slope of the trend line\n\\(t\\): time period"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-fitting-a-linear-trend-line-step-6",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-fitting-a-linear-trend-line-step-6",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series: Fitting a Linear Trend Line (Step 6)",
+    "text": "Deseasonalizing the Time Series: Fitting a Linear Trend Line (Step 6)\nTo fit a linear trend line to the deseasonalized data, the only change is that the deseasonalized time series values are used instead of the observed values \\(Y_t\\) in computing \\(b_0\\) and \\(b_1\\).\nUsing Excel’s Regression tool, the estimated linear trend equation is:\n\\[\n\\text{Deseasonalized Sales} = 5.10 + 0.148t\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-interpretation-of-the-slope-step-6",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-interpretation-of-the-slope-step-6",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series: Interpretation of the Slope (Step 6)",
+    "text": "Deseasonalizing the Time Series: Interpretation of the Slope (Step 6)\n\nThe slope of 0.148 indicates that over the past 16 quarters, the firm averaged a deseasonalized growth in sales of about 148 smartphones per quarter.\nIf we assume that the past 16-quarter trend in sales data is a reasonably good indicator of the future, this equation can be used to develop a trend projection for future quarters."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-example-projection-step-7",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#deseasonalizing-the-time-series-example-projection-step-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Deseasonalizing the Time Series: Example Projection (Step 7)",
+    "text": "Deseasonalizing the Time Series: Example Projection (Step 7)\nSubstituting \\(t = 17\\) into the equation yields next quarter’s deseasonalized trend projection, \\(T_{17}\\):\n\\[\nT_{17} = 5.10 + 0.148(17) = 7.616\n\\]\nThus, using the deseasonalized data, the linear trend forecast for next quarter (period 17) is 7616 smartphones.\nSimilarly, the deseasonalized trend forecasts for the next three quarters (periods 18, 19, and 20) are 7764, 7912, and 8060 smartphones, respectively."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-adjustments-step-8",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-adjustments-step-8",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonal Adjustments (Step 8)",
+    "text": "Seasonal Adjustments (Step 8)\n\nThe final step in developing the forecast when both trend and seasonal components are present is to use the seasonal indexes to adjust the deseasonalized trend projections.\n\nFor the smartphone sales example, we have a deseasonalized trend projection for the next four quarters.\nNow, we must adjust the forecast for the seasonal effect.\n\nThe seasonal index for the first quarter of year 5 (\\(t = 17\\)) is 0.93, so we obtain the quarterly forecast by multiplying the deseasonalized forecast based on trend \\((T_{17} = 7616)\\) by the seasonal index (0.93). Thus, the forecast for the next quarter is \\(7616 \\times 0.93 = 7083\\)."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-adjustments-quarterly-forecasts-table-step-8",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonal-adjustments-quarterly-forecasts-table-step-8",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Seasonal Adjustments: Quarterly Forecasts Table (Step 8)",
+    "text": "Seasonal Adjustments: Quarterly Forecasts Table (Step 8)\n\n\n\n\n\n\n\n\n\n\nYear\nQuarter\nDeseasonalized Trend Forecast\nSeasonal Index\nQuarterly Forecast\n\n\n\n\n5\n1\n7616\n0.93\n\\(7616 \\times 0.93 = 7083\\)\n\n\n5\n2\n7764\n0.84\n\\(7764 \\times 0.84 = 6522\\)\n\n\n5\n3\n7912\n1.09\n\\(7912 \\times 1.09 = 8624\\)\n\n\n5\n4\n8060\n1.14\n\\(8060 \\times 1.14 = 9188\\)\n\n\n\n\nThe high-volume fourth quarter has a 9188-unit forecast, and the low-volume second quarter has a 6522-unit forecast."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-excel",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#moving-averages-excel",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Moving Averages: Excel",
+    "text": "Moving Averages: Excel\n\nEnter/Access Data: Open the file Gasoline. The data are in cells A2:B13 and labels are in cells A1:B1.\n\nStep 1: Click the Data tab on the Ribbon\nStep 2: In the Analyze group, click Data Analysis\nStep 3: Choose Moving Average from the list of Analysis Tools and click OK\nStep 4: When the Moving Average dialog box appears:\n\nEnter B2:B13 in the Input Range box\nEnter 3 in the Interval box\nEnter C3 in the Output Range box\nSelect the check box for Chart Output\nClick OK\n\n\nThe three-week moving average forecasts appear in column C of the worksheet; a chart showing the actual values of the time series and the forecasted values also appears. Forecasts for periods of other lengths can be computed easily by entering a different value in the interval box."
   }
 ]

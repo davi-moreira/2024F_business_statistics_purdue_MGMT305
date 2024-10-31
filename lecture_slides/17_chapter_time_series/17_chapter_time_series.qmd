@@ -179,14 +179,25 @@ knitr::include_graphics("figs/forecasting_methods.jpg")
 
 The number of gallons of gasoline sold by a gasoline distributor over a period of 12 weeks is given in the table below. The distributor would like to identify the underlying pattern in the data to guide it in selecting an appropriate forecasting method.
 
-| **Week** | Sales | **Week** | Sales |
-|------|-------|------|-------|
-| **1**    | 17    | **7**    | 20    |
-| **2**    | 21    | **8**    | 18    |
-| **3**    | 19    | **9**    | 22    |
-| **4**    | 23    | **10**   | 20    |
-| **5**    | 18    | **11**   | 15    |
-| **6**    | 16    | **12**   | 22    |
+::: {style="font-size: 65%;"}
+
+| **Week** | Sales | 
+|------|-------|
+| **1**    | 17    | 
+| **2**    | 21    | 
+| **3**    | 19    | 
+| **4**    | 23    | 
+| **5**    | 18    | 
+| **6**    | 16    | 
+| **7**    | 20    |
+| **8**    | 18    |
+| **9**    | 22    |
+| **10**   | 20    |
+| **11**   | 15    |
+| **12**   | 22    |
+
+:::
+
 
 ## Time Series Plot: Example
 
@@ -220,6 +231,7 @@ The common types of data patterns that can be identified when examining a time s
 
 - It is more difficult to choose an appropriate forecasting method to identify a change in the level of the time series. (The Change-time problem.)
 
+
 ::::: columns
 ::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
 
@@ -237,6 +249,24 @@ knitr::include_graphics("figs/horizontal_pattern_level.png")
 :::
 :::::
 ::::::
+
+## Time Series Patterns: Horizontal Pattern
+
+**Stationary Time Series**
+
+The term **stationary time series** is used to denote a time series whose statistical properties are independent of time. In particular, this means that:
+
+1. The process generating the data has a constant mean.
+
+2. The variability of the time series is constant over time.
+
+:::: {.fragment}
+
+A time series plot for a stationary time series will always exhibit a horizontal pattern. But simply observing a horizontal pattern is not sufficient evidence to conclude that the time series is stationary.
+
+More advanced texts on forecasting discuss procedures for determining if a time series is stationary and provide methods for transforming a time series that is not stationary into a stationary series.
+
+::::
 
 ## Time Series Patterns: Trend Pattern
 
@@ -303,6 +333,54 @@ knitr::include_graphics("figs/trend_seasonal_pattern.png")
 knitr::include_graphics("figs/cyclical_pattern.png")
 ```
 
+# Time Series Plot {background-color="#cfb991"}
+
+## Using Excel’s Chart Tools to Construct a Time Series Plot
+
+:::{.columns}
+
+::: {.column width="40%"}
+
+:::{.nonincremental}
+::: {style="font-size: 60%;"}
+
+<br>
+
+A time series plot is simply a scatter diagram with lines connecting the points. 
+
+**Steps**
+
+1. **Select cells A2:B13** in the `Gasoline.xlsx` file.
+
+2. **Click the Insert tab on the Ribbon**
+
+3. **In the Charts group, click the Insert Scatter (X, Y) or Bubble Chart button**
+
+4. **When the list of scatter diagram subtypes appears**:
+
+     - Click the *Scatter with Straight Lines and Markers* button
+
+The time series plot produced by Excel will appear in the same worksheet.
+
+:::
+:::
+:::
+
+::: {.column width="60%"}
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/time_series_excel.png")
+```
+
+:::
+
+:::
+
+
+
+
 # Selecting a Forecasting Method {background-color="#cfb991"}
 
 ## Selecting a Forecasting Method
@@ -364,13 +442,13 @@ $$
 
 - **Mean Absolute Percentage Error (MAPE)**: The size of MAE and MSE depend upon the scale of the data, so it is difficult to make comparisons for different time periods. To make such comparisons, we need to work with relative or percentage error measures. Percentage Error is the error divided by the observed value of the time series. The MAPE is the average of the absolute percentage errors of the forecasts.
 
-## Forecast Accuracy
+## Forecast Accuracy: Example Naïve Forecast
 
 :::::: nonincremental
 
-- To forecast for time $t+1$, we use time series data up to and including time $t$. There are different ways of using this data.
+<!---- To forecast for time $t+1$, we use time series data up to and including time $t$. There are different ways of using this data.--->
 
-- To demonstrate the computation of these measures of forecast accuracy, we will introduce the simplest of forecasting methods.
+- To demonstrate the computation of these measures of forecast accuracy, let's introduce the simplest of forecasting methods: the **naïve forecasting method**
 
 - The **naïve forecasting method** uses only the most recent observation in the time series as the forecast for the next time period.
 
@@ -381,6 +459,8 @@ $$
 ::::::
 
 ## Forecast Accuracy: Example Naïve Forecast
+
+::: {style="font-size: 60%;"}
 
 **Gasoline sale time series**
 
@@ -394,35 +474,163 @@ $$
 | 6    | 16                   | 18             | -2             | 2                                | 4                      | -12.5            | 12.5                               |
 | 7    | 20                   | 16             | 4              | 4                                | 16                     | 20.00            | 20.00                              |
 | 8    | 18                   | 20             | -2             | 2                                | 4                      | -11.11           | 11.11                              |
-
-## Forecast Accuracy: Example Naïve Forecast
-
-**Gasoline sale time series**
-
-| Week | Observed Time series | Forecast | Forecast error | Absolute value of forecast error | Squared forecast error | Percentage error | Absolute value of percentage error |
-|------|----------------------|----------|----------------|----------------------------------|------------------------|------------------|------------------------------------|
 | 9    | 22                   | 18       | 4              | 4                                | 16                     | 18.18            | 18.18                              |
 | 10   | 20                   | 22       | -2             | 2                                | 4                      | -10.00           | 10.00                              |
 | 11   | 15                   | 20       | -5             | 5                                | 25                     | -33.33           | 33.33                              |
 | 12   | 22                   | 15       | 7              | 7                                | 49                     | 31.82            | 31.82                              |
-| Totals|                      | 5        |                | 41                               | 179                    |   1.19               | 211.69                             |
+| Totals|                      |         | 5                | 41                               | 179                    |   1.19               | 211.69                             |
+
+
+- Week 2: the postive forecast error indicates that the forecasting method underestimated the actual value of sales.
+
+- Week 3: the negative forecast error indicates that the forecasting method overestimated the actual value of sales.
+
+:::
 
 ## Forecast Accuracy: Example Naïve Forecast
 
+::: {style="font-size: 80%;"}
+
 **Gasoline sale time series**: Naive Forecast Accuracy
+
+- **Mean Absolute Error (MAE)**: It is the mean of the **absolute values** of the forecast errors.
+
+:::{.fragment}
 
 $$
 \text{MAE} = \frac{41}{11} = 3.73
 $$
 
+
+- **Mean Squared Error (MSE)**: It is the average of the squared forecast errors.
+
+:::
+
+:::{.fragment}
+
 $$
 \text{MSE} = \frac{179}{11} = 16.27
 $$
+
+:::
+
+:::{.fragment}
+
+- The size of **MAE** and **MSE** depends upon the scale of the data. So, it is not recommended to make comparisons  for different time intervals (e.g. months vs weeks). 
+
+- To make comparisons like these we need relative or percentage error measues like **MAPE**.
+
+
+- **Mean Absolute Percentage Error (MAPE)**: It is the average of the absolute percentage errors of the forecasts.
+
+:::
+
+:::{.fragment}
 
 $$
 \text{MAPE} = \frac{211.69}{11} = 19.24\%
 $$
 
+:::
+
+:::
+
+## Forecast Accuracy: Example Historical Data Average
+
+Let’s use the **average of all the historical data** available as the forecast for the next period. 
+
+:::{.fragment}
+
+We begin by developing a forecast for Week 2. Since there is only one historical value available prior to Week 2, the forecast for Week 2 is just the time series value in Week 1. Thus, the forecast for Week 2 is 17 thousand gallons of gasoline.
+
+:::
+:::{.fragment}
+
+To compute the forecast for Week 3, we take the average of the sales values in Weeks 1 and 2:
+
+$$
+\text{Forecast for week 3} = \frac{17 + 21}{2} = 19
+$$
+
+:::
+:::{.fragment}
+
+
+Similarly, the forecast for Week 4 is:
+
+$$
+\text{Forecast for week 4} = \frac{17 + 21 + 19}{3} = 19
+$$
+:::
+
+## Forecast Accuracy: Example Historical Data Average
+
+::: {style="font-size: 70%;"}
+
+The forecasts obtained using this method for the gasoline time series are:
+
+| Week | Time Series Value | Forecast | Forecast Error | Absolute Value of Forecast Error | Squared Forecast Error | Percentage Error | Absolute Value of Percentage Error |
+|------|-------------------|----------|----------------|---------------------------------|------------------------|------------------|-------------------------------------|
+| 1 | 17                |          |                |                                 |                        |                  |                                     |
+| 2 | 21                | 17.00    | 4.00           | 4.00                            | 16.00                  | 19.05           | 19.05                               |
+| 3 | 19                | 19.00    | 0.00           | 0.00                            | 0.00                   | 0.00            | 0.00                                |
+| 4 | 23                | 19.00    | 4.00           | 4.00                            | 16.00                  | 17.39           | 17.39                               |
+| 5 | 18                | 20.00    | -2.00          | 2.00                            | 4.00                   | -11.11          | 11.11                               |
+| 6 | 16                | 19.60    | -3.60          | 3.60                            | 12.96                  | -22.50          | 22.50                               |
+| 7 | 20                | 19.00    | 1.00           | 1.00                            | 1.00                   | 5.00            | 5.00                                |
+| 8 | 18                | 19.14    | -1.14          | 1.14                            | 1.31                   | -6.35           | 6.35                                |
+| 9 | 22                | 19.00    | 3.00           | 3.00                            | 9.00                   | 13.64           | 13.64                               |
+| 10 | 20                | 19.33    | 0.67           | 0.67                            | 0.44                   | 3.33            | 3.33                                |
+| 11 | 15                | 19.40    | -4.40          | 4.40                            | 19.36                  | -29.33          | 29.33                               |
+| 12 | 22                | 19.00    | 3.00           | 3.00                            | 9.00                   | 13.64           | 13.64                               |
+| | | Totals            | 4.53     | 26.81          | 89.07                           | 2.76                   | 141.34          |                                     |
+
+:::
+
+## Forecast Accuracy: Example Historical Data Average
+
+Using the results shown, we obtained the following values of MAE, MSE, and MAPE:
+
+$$
+\text{MAE} = \frac{26.81}{11} = 2.44
+$$
+$$
+\text{MSE} = \frac{89.07}{11} = 8.10
+$$
+$$
+\text{MAPE} = \frac{141.34}{11} = 12.85\%
+$$
+
+## Forecast Accuracy: Comparison of Forecasting Methods
+
+We can now compare the accuracy of the two forecasting methods we have considered by comparing the values of MAE, MSE, and MAPE for each method.
+
+|                    | Naive Method | Average of Past Values |
+|--------------------|--------------|------------------------|
+| **MAE**           | 3.73         | 2.44                  |
+| **MSE**           | 16.27        | 8.10                  |
+| **MAPE**          | 19.24%       | 12.85%                |
+
+For every measure, the average of past values provides more accurate forecasts than using the most recent observation as the forecast for the next period.
+
+
+- If the underlying time series is **stationary**, the average of all the historical data will generally provide the best results.
+
+- If the time series is **not stationary**, adjustments are needed.
+
+:::{.fragment}
+
+In cases where the time series shifts to a new level (e.g., due to contract changes), the naive method might adapt faster than the averaging method.
+
+:::
+
+## Importance of Forecast Accuracy and Adaptability
+
+Measures of forecast accuracy are crucial but should not be the sole basis for choosing a forecasting method.
+
+- Consider the business context and the likelihood of changes in the time series level.
+
+- Historical forecast accuracy should be weighed alongside the ability of the method to adapt to shifts.
 
 # Moving Averages and Exponential Smoothing  {background-color="#cfb991"}
 
@@ -430,11 +638,11 @@ $$
 
 - Three forecasting methods that are appropriate for a time series with a **horizontal pattern**:
 
-- Moving Averages (MAs)
+1. Moving Averages (MAs)
 
-- Weighted Moving Averages
+2. Weighted Moving Averages
 
-- Exponentially Weighted Moving Averages (EWMAs)
+3. Exponentially Weighted Moving Averages (EWMAs)
 
 - They are called **smoothing methods** because their objective is to smooth out the random fluctuations (due to random errors or noises) in the time series.
 
@@ -444,43 +652,29 @@ $$
 
 ## Moving Averages
 
-:::::: nonincremental
+The **moving averages** method uses the average of the most recent *k* data values in the time series as the forecast for the next period. Mathematically, a moving average forecast of order *k* is as follows:
 
-- The moving averages (MA) method uses the average of the most recent $k$ data values in the time series as the forecast for the next period.
+::: {.callout-note title="Moving Average Forecast of Order $k$"}
 
-$$
-MA_t = \text{Average of most recent } k \text{ data values} = \frac{Y_{t-k+1} + \cdots + Y_{t-1} + Y_t}{k}, \text{ at time } t
-$$
+::: nonincremental
 
-$$
-F_{t+1} = MA_t
-$$
-
-Where:
 
 $$
-F_{t+1} = \text{forecast of the time series for period } t + 1
+F_{t+1} = \frac{\sum (\text{most recent } k \text{ data values})}{k} = \frac{Y_t + Y_{t-1} + \cdots + Y_{t-k+1}}{k}
 $$
 
-$$
-Y_t = \text{observed value of the time series in period } t
-$$
+where:
 
-$$
-k = \text{span}
-$$
+- $F_{t+1}$ = forecast of the time series for period $t + 1$
+- $Y_t$ = actual value of the time series in period $t$
 
-Each observation in the moving average calculation receives the same weight $(1/k)$.
+:::
 
-:::::: 
+:::
 
-## Moving Averages
-
-<br>
+- Each observation in the moving average calculation receives the same weight $(1/k)$.
 
 - The term **moving** is used because every time a new observation becomes available for the time series, it replaces the oldest observation in the equation.
-
-    - That is, the oldest observation leaves while the newest observation enters the calculations.
 
 - As a result, the average will change, or move, as new observations become available.
 
@@ -488,7 +682,7 @@ Each observation in the moving average calculation receives the same weight $(1/
 
 <br>
 
-- To use moving averages to forecast, we must first select the **span**, which is the number of observed time series values to be included in the moving average.
+- To use moving averages to forecast, we must first select the *span* (the *order*), which is the number of observed time series values to be included in the moving average.
 
   - A smaller value of *k* will track shifts in a time series more quickly than a larger value of *k*.
   - A larger value of *k*, the smoother the MA. Less sensitive to changes in the given time series.
@@ -496,7 +690,7 @@ Each observation in the moving average calculation receives the same weight $(1/
 
 ## Moving Averages 
 
-::: {style="font-size: 80%;"}
+::: {style="font-size: 70%;"}
 
 **Example**: Gasoline sale time series: three-week moving average ($k = 3$)
 
@@ -507,39 +701,22 @@ Each observation in the moving average calculation receives the same weight $(1/
 | 1    | 17                |          |                |                                  |                        |                  |                                    |
 | 2    | 21                |          |                |                                  |                        |                  |                                    |
 | 3    | 19                |          |                |                                  |                        |                  |                                    |
-| 4    | 23                | 19*      | 4              | 4                                | 16                     | 17.39            | 17.39                              |
-| 5    | 18                | 21**     | -3             | 3                                | 9                      | -16.67           | 16.67                              |
+| 4    | 23                | $\frac{(17 + 21 + 19)}{3} = 19$      | 4              | 4                                | 16                     | 17.39            | 17.39                              |
+| 5    | 18                | $\frac{21 + 19 + 23}{3} = 21$     | -3             | 3                                | 9                      | -16.67           | 16.67                              |
 | 6    | 16                | 20       | -4             | 4                                | 16                     | -25.00           | 25.00                              |
 | 7    | 20                | 19       | 1              | 1                                | 1                      | 5.00             | 5.00                               |
 | 8    | 18                | 18       | 0              | 0                                | 0                      | 0.00             | 0.00                               |
-
-<br>
-
-$$
-* = (17 + 21 + 19) / 3 = 19
-$$  
-
-$$
-** = (21 + 19 + 23) / 3 = 21
-$$
-
-<br>
-
-:::
-
-## Moving Averages
-
-**Example**: Gasoline sale time series: three-week moving average
-
-<br>
-
-| Week | Time series value | Forecast | Forecast error | Absolute value of forecast error | Squared forecast error | Percentage error | Absolute value of percentage error |
-|------|-------------------|----------|----------------|----------------------------------|------------------------|------------------|------------------------------------|
 | 9    | 22                | 18       | 4              | 4                                | 16                     | 18.18            | 18.18                              |
 | 10   | 20                | 20       | 0              | 0                                | 0                      | 0.00             | 0.00                               |
 | 11   | 15                | 20       | -5             | 5                                | 25                     | -33.33           | 33.33                              |
 | 12   | 22                | 19       | 3              | 3                                | 9                      | 13.64            | 13.64                              |
-| Totals|                   |         | 0               | 24                               | 92                     | -20.79           | 129.21                             |
+| | | Totals|                   |         | 0               | 24                               | 92                     | -20.79           | 129.21                             |
+
+<br>
+
+<br>
+
+:::
 
 ## Moving Averages
 
@@ -559,7 +736,7 @@ $$
 
 - The three-week moving average approach provided more accurate forecasts than the naïve approach (19.24\%).
 
-## Moving Averages
+## Moving Averages Plot
 
 <br>
 
@@ -571,41 +748,103 @@ $$
 knitr::include_graphics("figs/moving_averages_excel.png")
 ```
 
+- The Figure shows the original time series plot and the three-week moving average forecasts.
+- Note how the graph of the moving average forecasts has tended to smooth out the random fluctuations in the time series.
 <br>
+
+## Moving Averages: Excel
+
+::: nonincremental
+
+**Enter/Access Data**: Open the file *Gasoline*. The data are in cells A2:B13 and labels are in cells A1:B1.
+
+1. **Step 1**: Click the **Data** tab on the Ribbon
+
+2. **Step 2**: In the **Analyze** group, click **Data Analysis**
+
+3. **Step 3**: Choose **Moving Average** from the list of **Analysis Tools** and click **OK**
+
+4. **Step 4**: When the **Moving Average** dialog box appears:
+
+   - Enter `B2:B13` in the **Input Range** box
+   - Enter `3` in the **Interval** box
+   - Enter `C3` in the **Output Range** box
+   - Select the check box for **Chart Output**
+   - Click **OK**
+
+The three-week moving average forecasts appear in column C of the worksheet; a chart showing the actual values of the time series and the forecasted values also appears. Forecasts for periods of other lengths can be computed easily by entering a different value in the interval box.
+
+:::
 
 # Weighted Moving Averages {background-color="#cfb991"}
 
 ## Weighted Moving Averages 
 
-- Weighted Moving Averages (A brief description)
+- In the moving averages method, each observation in the moving average calculation receives the same weight.
 
-    - To use this method, we must first select the number of data values to be included in the average. (Span)
-
-- Next, we must choose the weight for each of the data values.
+- Weighted Moving Averages: we can select a different weight for each data value (e.g. the most recent observations) and then compute a weighted average of the most recent $k$ values as the forecast.
 
     - The more recent observations are typically given more weight than older observations.
+    
     - For convenience, the weights should sum to 1.
 
 ## Weighted Moving Averages 
 
-**For the Gasoline data, a three-period weighted moving average (3WMA) for Week 3 is:**
+**For the Gasoline data, a three-period weighted moving average (3WMA) for Week 4 is:**
 
 $$
 WMA_3 = \frac{1}{6}(17) + \frac{2}{6}(21) + \frac{3}{6}(19) = 19.33
 $$
 
 - if the weights are $\frac{1}{6}, \frac{2}{6}, \frac{3}{6}$, which sum to 1.
+
 - 19 is the most recent of the three observations and receives the largest weight.
+
+- To determine whether one particular combination of number of data values and weights provides a more accurate forecast than another combination, it is recommended to use MSE as the measure of the forecast accuracy.
+
+    - If we assume that the combination that is best for the past will also be best for the future, we would use the one that minimizes MSE for the historical time series to forecast the next value in the time series.
 
 # Exponential Smoothing Forecast {background-color="#cfb991"}
 
 ## Exponential Smoothing Forecast
 
-- The exponential smoothing forecast is a weighted average of all the time series data up to the current period.
+:::: {style="font-size: 70%;"}
+
+- The exponential smoothing forecast is a special case of the weighted moving averages.
+
+- It is the weighted average of all the time series data up to the current period.
 
 - We select only the weight between 0 and 1 for the most recent observation. This weight is called the *smoothing constant* and is denoted by $\alpha$.
 
     - $1 - \alpha$ is called the *damping factor*.
+
+::::
+
+:::::: {.fragment}
+
+::: {.callout-note title="Single Exponential Smoothing Forecast"}
+
+
+$$
+F_{t+1} = \alpha Y_t + (1 - \alpha) F_t
+$$
+
+where
+
+::: nonincremental
+
+- $F_{t+1}$ = forecast of the time series for period $t + 1$
+- $Y_t$ = actual value of the time series in period $t$
+- $F_t$ = forecast of the time series for period $t$
+- $\alpha$ = smoothing constant $(0 \leq \alpha \leq 1)$
+
+::: 
+::: 
+::::::
+
+:::: {style="font-size: 70%;"}
+
+- There are a number of exponential smoothing procedures.
 
 - The term *exponential smoothing* comes from the exponential nature of the weighting scheme for the historical values.
   
@@ -613,67 +852,57 @@ $$
 
 - The statistic computed in each period is called the *Exponentially Weighted Moving Average* (EWMA).
 
-## Exponential Smoothing Forecast
+::::
 
-$$
-F_2 = Y_1 \quad (\text{to initiate the computations})
-$$
-
-$$
-F_{t+1} = \alpha Y_t + (1 - \alpha) F_t, \quad t = 2, 3, \dots
-$$
-
-where:
-
-- $F_{t+1}$ = forecast of the time series for period $t + 1$
-
-- $Y_t$ = actual value of the time series in period $t$
-
-- $F_t$ = forecast of the time series for period $t$
-
-## Exponential Smoothing Forecast 
-
-$$
-F_2 = Y_1 \quad (\text{to initiate the computations; no } F_1)
-$$
-
-$$
-F_3 = \alpha Y_2 + (1 - \alpha) F_2
-$$
-
-$$
-F_4 = \alpha Y_3 + (1 - \alpha) F_3
-$$
-
-$$
-F_5 = \alpha Y_4 + (1 - \alpha) F_4
-$$
-
-<center>
-...
-</center>
 
 ## Exponential Smoothing Forecast
 
-:::::: nonincremental
+Let's illustrate by working with a time series involving only three periods of data: $Y_1$, $Y_2$, and $Y_3$.
 
-- With algebraic manipulation, we can rewrite $F_{t+1} = \alpha Y_t + (1 - \alpha) F_t$ as:
+:::::: fragment
 
-$$
-F_{t+1} = F_t + \alpha (Y_t - F_t)
-$$
+To initiate, let $F_1$ equal the actual value of the time series in period 1; that is, $F_1 = Y_1$. Hence, the forecast for period 2 is
 
-- We adjust the current forecast $F_t$ by $\alpha$ times the current forecast error, $Y_t - F_t$, as the forecast for the next period $t + 1$.
-
-- Why "exponential"?
 
 $$
-F_{t+1} : Y_1, Y_2, ...., Y_{t-2}, Y_{t-1}, Y_t \quad (t : current)
+\begin{aligned}
+F_2 &= \alpha Y_1 + (1 - \alpha) F_1 \\
+    &= \alpha Y_1 + (1 - \alpha) Y_1 \\
+    &= Y_1
+\end{aligned}
 $$
+
+
+Thus, the exponential smoothing forecast for period 2 is equal to the actual value of the time series in period 1.
 
 ::::::
 
-# Exponential Smoothing Forecast: Example {background-color="#cfb991"}
+
+## Exponential Smoothing Forecast
+
+The forecast for period 3 is
+
+$$
+F_3 = \alpha Y_2 + (1 - \alpha) F_2 = \alpha Y_2 + (1 - \alpha) Y_1
+$$
+
+Finally, substituting this expression for $F_3$ in the expression for $F_4$, we obtain
+
+$$
+\begin{aligned}
+F_4 &= \alpha Y_3 + (1 - \alpha) F_3 \\
+&= \alpha Y_3 + (1 - \alpha)[\alpha Y_2 + (1 - \alpha) Y_1] \\
+&= \alpha Y_3 + \alpha (1 - \alpha) Y_2 + (1 - \alpha)^2 Y_1
+\end{aligned}
+$$
+
+## Exponential Smoothing Forecast
+
+- The term **exponential smoothing** comes from the exponential nature of the weighting scheme for the historical values.
+
+- We now see that $F_4$ is a weighted average of the first three time series values. The sum of the coefficients, or weights, for $Y_1$, $Y_2$, and $Y_3$ equals 1. A similar argument can be made to show that, in general, any forecast $F_{t+1}$ is a weighted average of all the previous time series values.
+
+- Despite the fact that exponential smoothing provides a forecast that is a weighted average of all past observations, all past data do not need to be saved to compute the forecast for the next period. In fact, only two pieces of information are needed: $Y_t$ and $F_t$.
 
 ## Exponential Smoothing Forecast: Example 
 
@@ -681,16 +910,29 @@ $$
 
 The number of gallons of gasoline sold by a distributor over a period of 12 weeks is given below. The distributor uses exponential smoothing to forecast sales. Which value for the smoothing constant $\alpha$, 0.2 or 0.3, gives better forecasts?
 
-| **Week** | Sales | **Week** | Sales |
-|------|-------|------|-------|
-| **1**    | 17    | **7**    | 20    |
-| **2**    | 21    | **8**    | 18    |
-| **3**    | 19    | **9**    | 22    |
-| **4**    | 23    | **10**   | 20    |
-| **5**    | 18    | **11**  | 15    |
-| **6**    | 16    | **12**   | 22    |
+::: {style="font-size: 65%;"}
+
+| **Week** | Sales |
+|------|-------|
+| **1**    | 17    |
+| **2**    | 21    |
+| **3**    | 19    |
+| **4**    | 23    |
+| **5**    | 18    |
+| **6**    | 16    |
+| **7**    | 20    |
+| **8**    | 18    |
+| **9**    | 22    |
+| **10**   | 20    |
+| **11**  | 15     |
+| **12**   | 22    |
+
+:::
+
 
 ## Exponential Smoothing Forecast: Example
+
+:::: {style="font-size: 70%;"}
 
 **Gasoline sale time series** with smoothing constant $\alpha = 0.2$
 
@@ -698,33 +940,19 @@ The number of gallons of gasoline sold by a distributor over a period of 12 week
 |------|-------------------|----------|----------------|------------------------|
 | 1    | 17                |          |                |                        |
 | 2    | 21                | 17       | 4.00           | 16.00                  |
-| 3    | 19                | 17.80*   | 1.20           | 1.44                   |
-| 4    | 23                | 18.04**  | 4.96           | 24.60                  |
+| 3    | 19                | $0.2(21) + 0.8(17)=17.80$   | 1.20           | 1.44                   |
+| 4    | 23                | $0.2(19) + 0.8(17.80)=18.04$  | 4.96           | 24.60                  |
 | 5    | 18                | 19.03    | -1.03          | 1.06                   |
 | 6    | 16                | 18.83    | -2.83          | 8.01                   |
 | 7    | 20                | 18.26    | 1.74           | 3.03                   |
 | 8    | 18                | 18.61    | -0.61          | 0.37                   |
-
-$$
-* 17.80 = 0.2(21) + 0.8(17)
-$$
-
-$$
-** 18.04 = 0.2(19) + 0.8(17.80)
-$$
-
-
-## Exponential Smoothing Forecast: Example
-
-**Gasoline sale time series** with smoothing constant $\alpha = 0.2$
-
-| Week | Time series value | Forecast | Forecast error | Squared forecast error |
-|------|-------------------|----------|----------------|------------------------|
 | 9    | 22                | 18.49    | 3.51           | 12.32                  |
 | 10   | 20                | 19.19    | 0.81           | 0.66                   |
 | 11   | 15                | 19.35    | -4.35          | 18.92                  |
 | 12   | 22                | 18.48    | 3.52           | 12.39                  |
-|  Totals    |                   |    | 10.92          | 98.80                  |
+|      |                   |  Totals  | 10.92          | 98.80                  |
+
+::::
 
 ## Exponential Smoothing Forecast: Example
 
@@ -735,6 +963,8 @@ $$
 $$
 
 ## Exponential Smoothing Forecast: Example
+
+:::: {style="font-size: 70%;"}
 
 **Gasoline sale time series** with smoothing constant $\alpha = 0.3$
 
@@ -748,18 +978,13 @@ $$
 | 6    | 16                | 19.27    | -3.27          | 10.69                  |
 | 7    | 20                | 18.29    | 1.71           | 2.92                   |
 | 8    | 18                | 18.80    | -0.80          | 0.64                   |
-
-## Exponential Smoothing Forecast: Example
-
-**Gasoline sale time series** with smoothing constant $\alpha = 0.3$
-
-| Week | Time series value | Forecast | Forecast error | Squared forecast error |
-|------|-------------------|----------|----------------|------------------------|
 | 9    | 22                | 18.56    | 3.44           | 11.83                  |
 | 10   | 20                | 19.59    | 0.41           | 0.17                   |
 | 11   | 15                | 19.71    | -4.71          | 22.18                  |
 | 12   | 22                | 18.30    | 3.70           | 13.69                  |
-|  Totals   |                   |    | 8.03           | 102.83                 |
+|     |                   | Totals   | 8.03           | 102.83                 |
+
+::::
 
 ## Exponential Smoothing Forecast: Example
 
@@ -769,11 +994,11 @@ $$
 \text{MSE} = \frac{102.83}{11} = 9.35
 $$
 
-Exponential smoothing (with $\alpha = 0.2$) provided more accurate forecasts (8.98) than exponential smoothing with $\alpha = 0.3$ in this example.
+- Exponential smoothing (with $\alpha = 0.2$) provided more accurate forecasts (8.98) than exponential smoothing with $\alpha = 0.3$ in this example.
 
-# Using Excel’s Exponential Smoothing Tool {background-color="#cfb991"}
+## Exponential Smoothing Forecast: Excel
 
-## Using Excel’s Exponential Smoothing Tool
+::: nonincremental
 
 1. Step 1: Click **Data** tab on the Ribbon
 2. In the **Analyze** group, click **Data Analysis**
@@ -785,8 +1010,9 @@ Exponential smoothing (with $\alpha = 0.2$) provided more accurate forecasts (8.
     - Select **Chart Output**
 5. Click **OK**
 
+:::
 
-## Using Excel’s Exponential Smoothing Tool
+## Exponential Smoothing Forecast: Excel
 
 <br>
 
@@ -818,8 +1044,6 @@ knitr::include_graphics("figs/exponential_smoothing.png")
 
 - The choice of **lag order** (how many periods back to look) and the selection of an appropriate forecasting model are critical for forecasting lag variables effectively.
 
-
-
 ## Forecast with Lag Variables: Global Apple iPhone Quarterly Sales
 
 ::: {style="font-size: 85%;"}
@@ -846,7 +1070,7 @@ $n = 32$
 
 :::
 
-## Lag Variables
+## Forecast with Lag Variables
 
 Assume lag order is 4.
 
@@ -860,7 +1084,7 @@ Assume lag order is 4.
 | Q311    | 6     | 20.34          | 18.65 | 16.24 | 14.10 | 8.40  |
 | ...     | ...   | ...            | ...   | ...   | ...   | ...   |
 
-## Correlations
+## Forecast with Lag Variables: Correlations
 
 |               | Sales (\$Mil.) | Lag 1 | Lag 2 | Lag 3 |
 |---------------|-------|-------|-------|-------|
@@ -869,7 +1093,7 @@ Assume lag order is 4.
 | **Lag 3**     | 0.603 | 0.440 | 0.660 |       |
 | **Lag 4**     | 0.914 | 0.605 | 0.437 | 0.664 |
 
-## Full Model
+## Forecast with Lag Variables: Full Model
 
 ::: {style="font-size: 68%;"}
 
@@ -893,8 +1117,8 @@ Assume lag order is 4.
 
 **Coefficients:**
 
-| Coefficients | Standard Error | t Stat | P-value |
-|--------------|----------------|--------|---------|
+| Variables | Coefficients | Standard Error | t Stat | P-value |
+|--------------|----------------|----------------|--------|---------|
 | Intercept    | 16.438          | 4.179  | 3.933   | 0.001   |
 | Lag 1        | 0.011           | 0.122  | 0.091   | 0.928   |
 | Lag 2        | -0.141          | 0.119  | -1.188  | 0.247   |
@@ -903,7 +1127,7 @@ Assume lag order is 4.
 
 :::
 
-## Reduced Model
+## Forecast with Lag Variables: Reduced Model
 
 ::: {style="font-size: 68%;"}
 
@@ -927,8 +1151,8 @@ Assume lag order is 4.
 
 **Coefficients:**
 
-| Coefficients | Standard Error | t Stat | P-value |
-|--------------|----------------|--------|---------|
+| Variables | Coefficients | Standard Error | t Stat | P-value |
+|--------------|----------------|----------------|--------|---------|
 | Intercept    | 13.161          | 3.002  | 4.384   | 0.000   |
 | Lag 4        | 0.813           | 0.071  | 11.516  | 0.000   |
 
@@ -940,7 +1164,7 @@ where the predictor is the Lag 4 variable.
 
 :::
 
-
+<!---
 ## Moving Averages and Stock Charts
 
 <br>
@@ -994,13 +1218,15 @@ knitr::include_graphics("figs/amazon.png")
 
 - Drops below it are not very long-lasting and tend to be followed by fairly big price increases. Stock traders noticing this might be inclined to purchase Amazon stocks when it drops below that **50 day MA envelope**.
 
+--->
+
 # Trend Projection {background-color="#cfb991"}
 
 ## Trend Projection
 
-- If a time series plot exhibits a linear trend, the method of [least squares regression](#) may be used to determine a trend line (projection) for future forecasts.
+- If a time series plot exhibits a linear trend, the method of **least squares regression** may be used to determine a trend line (projection) for future forecasts.
 
-- Least squares regression determines the unique [trend line forecast](#), which minimizes the sum of squared (forecast) errors, SSE, between the trend line forecasts (predicted values) and the actual (observed) values for the time series.
+- Least squares regression determines the unique **trend line forecast**, which minimizes the sum of squared (forecast) errors, SSE, between the trend line forecasts (predicted values) and the actual (observed) values for the time series.
 
 - The independent variable is the **time period** and the dependent variable is the actual observed value in the time series.
 
@@ -1008,52 +1234,19 @@ knitr::include_graphics("figs/amazon.png")
 
 ## Linear Trend Regression
 
-:::::: nonincremental
+:::: {style="font-size: 70%;"}
 
-- The prediction equation for the linear trend pattern is:
-  
-$$ 
-\hat{Y_t} = b_0 + b_1 t, \quad t = 1, 2, \ldots 
-$$
+::::: columns
+::: {.column width="30%" style="text-align: center; justify-content: center; align-items: center;"}
 
-where:
-
-- $\hat{Y_t}$ = linear trend forecast of **mean** response for period t
-- $b_0$ = estimated intercept of the linear trend line
-- $b_1$ = estimated slope of the linear trend line
-- $t$ = time period
-
-::::::
-
-## Linear Trend Regression
-
-$$
-\hat{Y_t} = b_0 + b_1 t
-$$
-
-$$
-b_1 = \frac{\sum_{t=1}^{n} (t - \bar{t})(Y_t - \bar{Y})}{\sum_{t=1}^{n} (t - \bar{t})^2}
-$$
-
-$$
-b_0 = \bar{Y} - b_1 \bar{t}
-$$
-
-where:
-
-- $Y_t$ = value of the time series in period t
-- $\bar{Y}$ = average values of the time series
-- $\bar{t}$ = average value of t
-- n = number of time periods (observations)
-
-## Linear Trend Regression: Example
+<br>
 
 **Bicycle Yearly Sales Time Series**
 
-The data regarding bicycle sales over a period of 10 years is tabulated below.
+<center>
 
 | Time (Year) | Sales (1000s) |
-|-------------|---------------|
+|:-------------:|:---------------:|
 | 1           | 21.6          |
 | 2           | 22.9          |
 | 3           | 25.5          |
@@ -1065,17 +1258,124 @@ The data regarding bicycle sales over a period of 10 years is tabulated below.
 | 9           | 28.6          |
 | 10          | 31.4          |
 
-## Linear Trend Regression: Example
+</center>
+
+:::
+
+::: {.column width="70%" style="text-align: center; justify-content: center; align-items: center;"}
+
+:::{.fragment}
 
 <br>
 
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/bicicle_sales.png")
+<br>
+
+```{r  echo=FALSE, out.width = "90%",fig.align="center"}
+knitr::include_graphics("figs/bike_sales_reg_line_plot.png")
 ```
 
+:::
+
+- Although it shows some up and down movement over the past 10 years, we can identify a linear trend line.
+
+- The trend line provides a reasonable approximation o the. long-run movement in the series. 
+- We can use the simple linear regression method to develop such a linear trend line.
+
+:::
+:::::
+
+::::
+
+## Linear Trend Regression
+
 <br>
 
+::: {.callout-note title="Linear Trend Equation"}
+
+::: nonincremental
+
+$$ 
+\hat{Y_t} = b_0 + b_1 t, \quad t = 1, 2, \ldots 
+$$
+
+where:
+
+- $\hat{Y_t}$ = linear trend forecast of **mean** response for period *t*
+- $b_0$ = estimated intercept of the linear trend line
+- $b_1$ = estimated slope of the linear trend line
+- $t$ = time period
+
+:::
+:::
+
+## Linear Trend Regression
+
+
+::: {.callout-note title="Computing the Slope and Intercept for a Linear Trend"}
+
+::: nonincremental
+
+
+$$
+b_1 = \frac{\sum_{t=1}^{n} (t - \bar{t})(Y_t - \bar{Y})}{\sum_{t=1}^{n} (t - \bar{t})^2}, \quad \text{or} \quad b_1 = \frac{\sum_{t=1}^{n} t Y_t - \left( \frac{\sum_{t=1}^{n} t \sum_{t=1}^{n} Y_t}{n} \right)}{\sum_{t=1}^{n} t^2 - \left( \frac{\left(\sum_{t=1}^{n} t\right)^2}{n} \right)}
+$$
+
+$$
+b_0 = \bar{Y} - b_1 \bar{t}
+$$
+
+Where:
+
+- $Y_t$ = value of the time series in period $t$
+- $n$ = number of time periods (number of observations)
+- $\bar{Y}$ = average value of the time series
+- $\bar{t}$ = average value of $t$
+
+:::
+:::
+
 ## Linear Trend Regression: Example
+
+:::: {style="font-size: 70%;"}
+
+To compute the **linear trend equation for the bicycle sales time series**, we begin the calculations by computing $\bar{t}$ and $\bar{Y}$.
+
+$$
+\bar{t} = \frac{\sum_{t=1}^{n} t}{n} = \frac{55}{10} = 5.5
+$$
+
+$$
+\bar{Y} = \frac{\sum_{t=1}^{n} Y_t}{n} = \frac{264.5}{10} = 26.45
+$$
+
+:::{.fragment}
+
+Using these values, and the data, we can compute: the slope and intercept.
+
+$$
+b_1 = \frac{\sum_{t=1}^{n} (t - \bar{t})(Y_t - \bar{Y})}{\sum_{t=1}^{n} (t - \bar{t})^2} = \frac{90.75}{82.5} = 1.1
+$$
+
+$$
+b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
+$$
+
+:::
+
+:::{.fragment}
+
+Therefore, the linear trend equation is:
+
+$$
+\hat{Y}_t = 20.4 + 1.1t
+$$
+
+::::
+:::
+
+## Linear Trend Regression: Example
+
+:::: {style="font-size: 70%;"}
 
 **Bicycle Sales Time Series**
 
@@ -1093,27 +1393,29 @@ knitr::include_graphics("figs/bicicle_sales.png")
 | 10    | 31.4    | 4.5             | 4.95              | 22.275                           | 20.25               |
 | **Totals** | **264.5** |                 |                   | **90.750**                        | **82.5**             |
 
+::::
+
 ## Linear Trend Regression: Example
 
-**Bicycle Sales Time Series**
+Linear Trend Equation for the Bicycle Sales Time Series:
 
 $$
-\bar{t} = \frac{55}{10} = 5.5, \quad \bar{Y} = \frac{264.5}{10} = 26.45
+\hat{Y}_t = 20.4 + 1.1t
 $$
 
+The slope 1.1 indicates that over the past 10 years the firm experienced an average growth in sales of about 1100 units per year.
+
+:::{.fragment}
+
+If we assume that the past 10-year trend in sales is a good indicator of the future, this trend equation can be used to develop forecasts for future time periods. Substituting $t = 11$ into the equation yields next year’s trend projection or forecast, $\hat{Y}_{11}$. 
+ 
 $$
-b_1 = \frac{90.75}{82.5} = 1.1
+\hat{Y}_t = 20.4 + 1.1 \times 11 = 32.5
 $$
 
-$$
-b_0 = 26.45 - 1.1(5.5) = 20.4
-$$
+Thus, using trend projection, we would forecast sales of 32,500 bicycles next year.
 
-For example:
-
-$$ 
-\hat{Y_1} = 20.4 + (1.1)(1) = 21.5, \text{ for } t = 1.
-$$
+:::
 
 ## Linear Trend Regression: Example
 
@@ -1137,22 +1439,54 @@ $$
 
 
 $$
-\text{MSE} = \frac{30.7}{10} = 3.07
+\text{MSE} = \frac{\sum_{t=1}^{n} (Y_t - F_t)^2}{n} = \frac{30.7}{10} = 3.07
 $$
-
 :::
 
-## Regression Output: Example
+## Regression Output: Example Excel
+
+::: {style="font-size: 80%;"}
+
+:::::: nonincremental
+::::: columns
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+
+- Enter/Access Data: Open the file Bicycle. The data are in cells A2:B11 and labels are in cells A1:B1.
+
+1. **Step 1**: Click the **Data** tab on the Ribbon
+
+2. **Step 2**: In the **Analyze** group, click **Data Analysis**
+
+3. **Step 3**: Choose **Regression** from the list of **Analysis Tools**
+
+4. **Step 4**: When the **Regression** dialog box appears:
+   
+   - Enter `B1:B11` in the **Input Y Range** box
+   - Enter `A1:A11` in the **Input X Range** box
+   - Select the check box for **Labels**
+   - Select the check box for **Confidence Level**
+   - **Output Range**:
+     - Enter `A13` in the **Output Range** box (to identify the upper left corner of the section of the worksheet where the output will appear)
+   - Click **OK**
+
+:::
+::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
 
 <br>
 
-**Bicycle Sales**
 
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+<br>
+
+```{r  echo=FALSE, out.width = "90%",fig.align="center"}
 knitr::include_graphics("figs/bicicle_sales_output.png")
 ```
 
 <br>
+
+:::
+:::::
+:::
+::::::
 
 # Nonlinear Trend Regression {background-color="#cfb991"}
 
@@ -1179,29 +1513,161 @@ $$
 
 ## Nonlinear Trend Regression: Example
 
+:::: {style="font-size: 70%;"}
+
 **Cholesterol Revenue Time Series**
 
 The data regarding cholesterol sales over a period of 10 years is tabulated below. A curvilinear function appears to be needed to model the long-term trend.
 
-| Year | Revenue (\$ millions) | Year | Revenue (\$ millions) |
-|------|-----------------------|------|-----------------------|
-| 1    | 23.1                  | 6    | 43.2                  |
-| 2    | 21.3                  | 7    | 59.5                  |
-| 3    | 27.4                  | 8    | 64.4                  |
-| 4    | 34.6                  | 9    | 74.2                  |
-| 5    | 33.8                  | 10   | 99.3                  |
 
-## Nonlinear Trend Regression: Example
+:::::: nonincremental
+::::: columns
+::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
+
+<center>
+
+| Year | Revenue (\$ millions) | 
+|------|-----------------------|
+| **1**    | 23.1             | 
+| **2**    | 21.3             | 
+| **3**    | 27.4             |
+| **4**    | 34.6             |
+| **5**    | 33.8             |
+| **6**    | 43.2             |
+| **7**    | 59.5             |
+| **8**    | 64.4             |
+| **9**    | 74.2             |
+| **10**   | 99.3             |
+
+</center>
+
+:::
+::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
 
 <br>
 
-**Cholesterol Revenue Time Series**
 
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/cholesterol_revenue.png")
+```{r  echo=FALSE, out.width = "90%",fig.align="center"}
+knitr::include_graphics("figs/cholesterol_plot.png")
 ```
 
+
+:::
+::::: 
+::::::
+
+::::
+
+## Nonlinear Trend Regression: Example Excel
+
+
+:::::: nonincremental
+::::: columns
+::: {.column width="50%" style="text-align: left;"}
+
+:::: {style="font-size: 80%;"}
+
+- Enter/Access Data: Open the file Cholesterol. 
+
+1. **Step 1**: Click the **Data** tab on the Ribbon
+
+2. **Step 2**: In the **Analyze** group, click **Data Analysis**
+
+3. **Step 3**: Choose **Regression** from the list of **Analysis Tools**
+
+4. **Step 4**: When the **Regression** dialog box appears:
+   
+   - Enter `C1:C11` in the **Input Y Range** box
+   - Enter `A1:B11` in the **Input X Range** box
+   - Select the check box for **Labels**
+   - Select the check box for **Confidence Level**
+   - **Output Range**:
+     - Enter `A13` in the **Output Range** box (to identify the upper left corner of the section of the worksheet where the output will appear)
+   - Click **OK**
+
+::::
+
+:::
+::: {.column width="50%" style="text-align: left;"}
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/cholesterol_reg.png")
+```
+
+:::: {style="font-size: 50%;"}
+
+The estimated regression equation is:
+
+$$
+\hat{Y}_t = 24.1817 - 2.1060t + 0.9216t^2
+$$
+
+The forecast of sales revenue for year 11 is:
+
+$$
+\hat{Y}_t = 24.1817 - 2.1060(11) + 0.9216(11)^2 = 112.53, \quad \text{or} \quad \approx \text{\$112.5 million}.
+$$
+
+
+
 <br>
+
+::::
+
+:::
+::::: 
+::::::
+
+## Nonlinear Trend Regression: Example Excel
+
+::::::: nonincremental
+:::::: {.columns}
+
+::: {.column width="30%"}
+
+::: {style="font-size: 60%;"}
+
+Steps for Creating a Scatter Plot with Trendline
+
+- **Enter/Access Data**: Open the file *Cholesterol*
+
+1. **Step 1**: Select cells **B2:B11**
+2. **Step 2**: Click the **Insert** tab on the Ribbon
+3. **Step 3**: In the **Charts** group, click the **Insert Scatter (X, Y) or Bubble Chart** button
+4. **Step 4**: When the list of scatter diagram subtypes appears, click the **Scatter** button (the chart in the upper left corner)
+5. **Step 5**: Click **OK**; the scatter diagram will appear in the current worksheet
+6. **Step 6**: Position the mouse pointer over any data point in the scatter diagram, right-click, and choose **Add Trendline**
+7. **Step 7**: In the **Format Trendline** dialog box:
+   - Choose **Polynomial** from the **Trend/Regression Type** list
+   - Enter **2** in the **Order** box
+   - Choose **Display Equation on chart**
+
+:::
+
+:::
+
+::: {.column width="30%"}
+
+<br>
+
+```{r, echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics("figs/cholesterol_polinomial_excel_plot.png")
+```
+
+:::
+
+::: {.column width="40%"}
+
+<br>
+
+```{r, echo=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics("figs/cholesterol_polinomial_plot.png")
+```
+
+:::
+
+::::::
+:::::::
 
 # Seasonality Without Trend {background-color="#cfb991"}
 
@@ -1209,7 +1675,7 @@ knitr::include_graphics("figs/cholesterol_revenue.png")
 
 - When seasonality exists, we need to incorporate it into our forecasting models to ensure accurate forecasts.
 
-- We will first look at the case of a seasonal time series with **no trend** and then discuss how to model seasonality with trend.
+- We will first look at the case of a **seasonal time series with no trend** and then discuss how to model **seasonality with trend**.
 
 - **Seasonal patterns** are recognized by seeing the same repeating pattern of highs and lows over successive and short periods of time (within a "short" period of time).
 
@@ -1220,30 +1686,79 @@ knitr::include_graphics("figs/cholesterol_revenue.png")
 
 ## Seasonality Without Trend: Example
 
+:::::: {.columns}
+
+::: {.column width="30%"}
+
+::: {style="font-size: 60%;"}
+
+<center>
 **Umbrella Quarterly Sales Time Series**
+</center>
 
-| Year | Quarter 1 | Quarter 2 | Quarter 3 | Quarter 4 |
-|------|-----------|-----------|-----------|-----------|
-| 1    | 125       | 153       | 106       | 88        |
-| 2    | 118       | 161       | 133       | 102       |
-| 3    | 138       | 144       | 113       | 80        |
-| 4    | 109       | 137       | 125       | 109       |
-| 5    | 130       | 165       | 128       | 96        |
+| Year | Quarter | Sales |
+|------|---------|-------|
+| 1    | 1       | 125   |
+| 1     | 2       | 153   |
+| 1     | 3       | 106   |
+| 1     | 4       | 88    |
+| 2    | 1       | 118   |
+| 2     | 2       | 161   |
+| 2     | 3       | 133   |
+| 2     | 4       | 102   |
+| 3    | 1       | 138   |
+| 3     | 2       | 144   |
+| 3     | 3       | 113   |
+| 3     | 4       | 80    |
+| 4    | 1       | 109   |
+| 4     | 2       | 137   |
+| 4     | 3       | 125   |
+| 4     | 4       | 109   |
+| 5    | 1       | 130   |
+| 5     | 2       | 165   |
+| 5     | 3       | 128   |
+| 5     | 4       | 96    |
 
 
-## Seasonality Without Trend: Example
+:::
+:::
+::: {.column width="70%"}
 
 <br>
 
-**Umbrella Sales Time Series Plot**
+::: {.fragment}
 
 ```{r  echo=FALSE, out.width = "80%",fig.align="center"}
 knitr::include_graphics("figs/umbrela_sales.png")
 ```
 
+::: 
+:::
+::::::
+
+
+## Seasonality Without Trend: Example
+
+
+:::::: {.columns}
+::: {.column width="70%"}
+
+<center>
+**Umbrella Quarterly Sales Time Series**
+</center>
+
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/umbrela_sales.png")
+```
+
+:::
+
+::: {.column width="30%"}
+
 <br>
 
-## Seasonality Without Trend
+::: {style="font-size: 70%;"}
 
 - The time series plot does not clearly indicate any long-term trend in sales.
 
@@ -1253,280 +1768,444 @@ knitr::include_graphics("figs/umbrela_sales.png")
     - the second quarter has the highest sales, and
     - the fourth quarter tends to be the lowest quarter in terms of sales.
 
+:::
+:::
+::::::
 
-## Seasonality Without Trend
+## Seasonality Without Trend: Example
 
-- Recall from an earlier chapter that dummy variables can be used to deal with categorical independent variables in a multiple regression model.
+- Recall that dummy variables can be used to deal with categorical independent variables in a multiple regression model.
 
 - We will treat the season as a categorical variable.
 
 - Recall that when a categorical variable has $k$ levels, $k - 1$ dummy variables are required.
 
-- If there are four seasons, we have the following dummy variables:
+- If there are four seasons, we have the following dummy variables with $Qtr4$ being the reference level:
 
-    - Qtr1 = 1 if Quarter 1, 0 otherwise
-    - Qtr2 = 1 if Quarter 2, 0 otherwise
-    - Qtr3 = 1 if Quarter 3, 0 otherwise
-    - Qtr4 = 1 if Quarter 4, 0 otherwise (Used as the reference quarter)
+::: {style="font-size: 90%;"}
+::: {.fragment}
 
-
-## Seasonality Without Trend
-
-::: {style="font-size: 60%;"}
-
-| Year | Quarter | Sales | Time Period | Qtr1 | Qtr2 | Qtr3 |
-|------|---------|-------|-------------|------|------|------|
-| 1    | 1       | 125   | 1           | 1    | 0    | 0    |
-| 1    | 2       | 153   | 2           | 0    | 1    | 0    |
-| 1    | 3       | 106   | 3           | 0    | 0    | 1    |
-| 1    | 4       | 88    | 4           | 0    | 0    | 0    |
-| 2    | 1       | 118   | 5           | 1    | 0    | 0    |
-| 2    | 2       | 161   | 6           | 0    | 1    | 0    |
-| 2    | 3       | 133   | 7           | 0    | 0    | 1    |
-| 2    | 4       | 102   | 8           | 0    | 0    | 0    |
-| 3    | 1       | 138   | 9           | 1    | 0    | 0    |
-| 3    | 2       | 144   | 10          | 0    | 1    | 0    |
-| 3    | 3       | 113   | 11          | 0    | 0    | 1    |
-| 3    | 4       | 80    | 12          | 0    | 0    | 0    |
-| 4    | 1       | 109   | 13          | 1    | 0    | 0    |
-| 4    | 2       | 137   | 14          | 0    | 1    | 0    |
-| 4    | 3       | 125   | 15          | 0    | 0    | 1    |
-| 4    | 4       | 109   | 16          | 0    | 0    | 0    |
-| 5    | 1       | 130   | 17          | 1    | 0    | 0    |
-| 5    | 2       | 165   | 18          | 0    | 1    | 0    |
-| 5    | 3       | 128   | 19          | 0    | 0    | 1    |
-| 5    | 4       | 96    | 20          | 0    | 0    | 0    |
-
+$$
+\text{Qtr1} = 
+\begin{cases} 
+1 & \text{if Quarter 1} \\ 
+0 & \text{otherwise} 
+\end{cases}
+\quad
+\text{Qtr2} = 
+\begin{cases} 
+1 & \text{if Quarter 2} \\ 
+0 & \text{otherwise} 
+\end{cases}
+\quad
+\text{Qtr3} = 
+\begin{cases} 
+1 & \text{if Quarter 3} \\ 
+0 & \text{otherwise} 
+\end{cases}
+$$
+::: 
 :::
 
-## Regression Output
+## Seasonality Without Trend: Example
 
-::: {style="font-size: 65%;"}
+::::: columns
+::: {.column width="30%" style="text-align: center; justify-content: center; align-items: center;"}
 
-**Summary Output**
+::: {style="font-size: 50%;"}
 
-| Regression Statistics   |            |
-|--------------|------------|
-| Multiple R   | 0.894      |
-| R Square     | 0.799      |
-| Adjusted R Square | 0.761 |
-| Standard Error | 11.325   |
-| Observations | 20         |
-
-**ANOVA**
-
-| Source      | df | SS   | MS      | F       | Significance F |
-|-------------|----|------|---------|---------|----------------|
-| Regression  | 3  | 8150 | 2716.667 | 21.183 | 8.104E-06      |
-| Residual    | 16 | 2052 | 128.250 |         |                |
-| Total       | 19 | 10202|         |         |                |
-
-**Coefficients**
-
-|              | Coeff. | SE    | t Stat | P-value |
-|--------------|--------|-------|--------|---------|
-| Intercept    | 95     | 5.065 | 18.758 | 0.000   |
-| Qtr1         | 29     | 7.162 | 4.049  | 0.001   |
-| Qtr2         | 57     | 7.162 | 7.958  | 0.000   |
-| Qtr3         | 26     | 7.162 | 3.630  | 0.002   |
-
-**Null Hypothesis ($H_0$):** Population slopes of Qtr1, Qtr2, and Qtr3 are all zero.
-
-Seasonality is significant at $\alpha$ = 5%.
+| Year | Quarter | Qtr1 | Qtr2 | Qtr3 | Sales |
+|------|---------|------|------|------|-------|
+| 1    | 1       | 1    | 0    | 0    | 125   |
+| 1     | 2       | 0    | 1    | 0    | 153   |
+| 1   | 3       | 0    | 0    | 1    | 106   |
+| 1    | 4       | 0    | 0    | 0    | 88    |
+| 2    | 1       | 1    | 0    | 0    | 118   |
+| 2    | 2       | 0    | 1    | 0    | 161   |
+| 2    | 3       | 0    | 0    | 1    | 133   |
+| 2    | 4       | 0    | 0    | 0    | 102   |
+| 3    | 1       | 1    | 0    | 0    | 138   |
+| 3    | 2       | 0    | 1    | 0    | 144   |
+| 3   | 3       | 0    | 0    | 1    | 113   |
+| 3    | 4       | 0    | 0    | 0    | 80    |
+| 4    | 1       | 1    | 0    | 0    | 109   |
+| 4    | 2       | 0    | 1    | 0    | 137   |
+| 4    | 3       | 0    | 0    | 1    | 125   |
+| 4    | 4       | 0    | 0    | 0    | 109   |
+| 5    | 1       | 1    | 0    | 0    | 130   |
+| 5    | 2       | 0    | 1    | 0    | 165   |
+| 5    | 3       | 0    | 0    | 1    | 128   |
+| 5    | 4       | 0    | 0    | 0    | 96    |
 
 :::
+:::
+::: {.column width="70%" style="text-align: center; justify-content: center; align-items: center;"}
 
-## Seasonality Without Trend
 
-**General Form of Estimated Regression Equation**
+```{r  echo=FALSE, out.width = "90%",fig.align="center"}
+knitr::include_graphics("figs/umbrela_reg_output.png")
+```
+
+:::
+:::::
+
+
+## Seasonality Without Trend: Example
+
+::: {.nonincremental}
+
+- **General Form of Estimated Regression Equation**
 
 $$
 \hat{Y} = b_0 + b_1(Qtr1) + b_2(Qtr2) + b_3(Qtr3)
 $$
 
-**Estimated Regression Equation**
+::: {.fragment}
 
-Forecasted Sales = 95.0 + 29.0(Qtr1) + 57.0(Qtr2) + 26.0(Qtr3)
+- **Estimated Regression Equation**
 
-**Forecast of Mean Quarterly Sales in Year 6**
+$$
+\text{Forecasted Sales} = 95.0 + 29.0(Qtr1) + 57.0(Qtr2) + 26.0(Qtr3)
+$$
 
-- Quarter 1: Sales = 95 + 29(1) + 57(0) + 26(0) = 124
-- Quarter 2: Sales = 95 + 29(0) + 57(1) + 26(0) = 152
-- Quarter 3: Sales = 95 + 29(0) + 57(0) + 26(1) = 121
-- Quarter 4: Sales = 95 + 29(0) + 57(0) + 26(0) = 95
+:::
+::: {.fragment}
+
+- **Forecast of Mean Quarterly Sales in Year 6**
+
+    - Quarter 1: Sales = 95 + 29(1) + 57(0) + 26(0) = 124
+    - Quarter 2: Sales = 95 + 29(0) + 57(1) + 26(0) = 152
+    - Quarter 3: Sales = 95 + 29(0) + 57(0) + 26(1) = 121
+    - Quarter 4: Sales = 95 + 29(0) + 57(0) + 26(0) = 95
+
+:::
+:::
+
+## Seasonality Without Trend: Example
+
+Note that we could have obtained the quarterly forecasts for next year simply by computing the average number of umbrellas sold in each quarter:
+
+| Year    | Quarter 1 | Quarter 2 | Quarter 3 | Quarter 4 |
+|---------|-----------|-----------|-----------|-----------|
+| 1       | 125       | 153       | 106       | 88        |
+| 2       | 118       | 161       | 133       | 102       |
+| 3       | 138       | 144       | 113       | 80        |
+| 4       | 109       | 137       | 125       | 109       |
+| 5       | 130       | 165       | 128       | 96        |
+| **Average** | **124** | **152** | **121** | **95**    |
+
+Nonetheless, the regression output provides additional information that can be used to assess the accuracy of the forecast and determine the significance of the results. 
 
 # Seasonality and Trend {background-color="#cfb991"}
 
 ## Seasonality and Trend: Example
 
-:::::: nonincremental
+::::: columns
+::: {.column width="30%" style="text-align: center; justify-content: center; align-items: center;"}
 
-**Smartphone Quarterly Sales Time Series**
+::: {style="font-size: 70%;"}
 
-- The data for smartphone sales shows seasonal patterns in the sales with an upward linear trend. We need to account for both seasonality and trend to develop accurate forecasts.
+**Smartphone Quarterly Sales Data (in Thousands)**
 
-| Year | Quarter 1 | Quarter 2 | Quarter 3 | Quarter 4 |
-|------|-----------|-----------|-----------|-----------|
-| 1    | 4.8       | 4.1       | 6.0       | 6.5       |
-| 2    | 5.8       | 5.2       | 6.8       | 7.4       |
-| 3    | 6.0       | 5.6       | 7.5       | 7.8       |
-| 4    | 6.3       | 5.9       | 8.0       | 8.4       |
+| Year | Quarter | Sales (1000s) |
+|------|---------|---------------|
+| 1    | 1       | 4.8           |
+|      | 2       | 4.1           |
+|      | 3       | 6.0           |
+|      | 4       | 6.5           |
+| 2    | 1       | 5.8           |
+|      | 2       | 5.2           |
+|      | 3       | 6.8           |
+|      | 4       | 7.4           |
+| 3    | 1       | 6.0           |
+|      | 2       | 5.6           |
+|      | 3       | 7.5           |
+|      | 4       | 7.8           |
+| 4    | 1       | 6.3           |
+|      | 2       | 5.9           |
+|      | 3       | 8.0           |
+|      | 4       | 8.4           |
 
-(Need to line up the data and use time periods $t = 1, 2, ..., 16$, instead of Year.)
+:::
+:::
+::: {.column width="70%" style="text-align: center; justify-content: center; align-items: center;"}
 
-::::::
+<br>
+
+```{r  echo=FALSE, out.width = "90%",fig.align="center"}
+knitr::include_graphics("figs/smartphone_plot.png")
+```
+
+:::
+:::::
 
 ## Seasonality and Trend: Example
 
+**Multiple Regression Equation for Seasonal Effects and Trend**
+
+The general form of the estimated multiple regression equation for modeling both the quarterly seasonal effects and the linear trend in the smartphone time series is as follows:
+
+$$
+\hat{Y}_t = b_0 + b_1 \text{Qtr1} + b_2 \text{Qtr2} + b_3 \text{Qtr3} + b_4 t
+$$
+
+**where**
+
+- $\hat{Y}_t$ = estimate or forecast of sales in period $t$
+- Qtr1 = 1 if time period $t$ corresponds to the first quarter of the year; 0 otherwise
+- Qtr2 = 1 if time period $t$ corresponds to the second quarter of the year; 0 otherwise
+- Qtr3 = 1 if time period $t$ corresponds to the third quarter of the year; 0 otherwise
+- $t$ = time period
+
+
+## Seasonality and Trend: Example
+
+::::: columns
+::: {.column width="30%" style="text-align: center; justify-content: center; align-items: center;"}
+
+::: {style="font-size: 70%;"}
+
+Quarterly Sales Data with Indicators and Period
+
+| Year | Quarter | Qtr1 | Qtr2 | Qtr3 | Period | Sales (1000s) |
+|------|---------|------|------|------|--------|---------------|
+| 1    | 1       | 1    | 0    | 0    | 1      | 4.8           |
+|      | 2       | 0    | 1    | 0    | 2      | 4.1           |
+|      | 3       | 0    | 0    | 1    | 3      | 6.0           |
+|      | 4       | 0    | 0    | 0    | 4      | 6.5           |
+| 2    | 1       | 1    | 0    | 0    | 5      | 5.8           |
+|      | 2       | 0    | 1    | 0    | 6      | 5.2           |
+|      | 3       | 0    | 0    | 1    | 7      | 6.8           |
+|      | 4       | 0    | 0    | 0    | 8      | 7.4           |
+| 3    | 1       | 1    | 0    | 0    | 9      | 6.0           |
+|      | 2       | 0    | 1    | 0    | 10     | 5.6           |
+|      | 3       | 0    | 0    | 1    | 11     | 7.5           |
+|      | 4       | 0    | 0    | 0    | 12     | 7.8           |
+| 4    | 1       | 1    | 0    | 0    | 13     | 6.3           |
+|      | 2       | 0    | 1    | 0    | 14     | 5.9           |
+|      | 3       | 0    | 0    | 1    | 15     | 8.0           |
+|      | 4       | 0    | 0    | 0    | 16     | 8.4           |
+:::
+:::
+::: {.column width="70%" style="text-align: center; justify-content: center; align-items: center;"}
+
 <br>
 
-**Smartphone Sales Time Series**
-
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/smartphone_sales.png")
+```{r  echo=FALSE, out.width = "90%",fig.align="center"}
+knitr::include_graphics("figs/umbrela_reg_output_trend.png")
 ```
 
+:::
+:::::
 
-This graph shows the time series plot of smartphone sales, where the trend and seasonality are clearly visible.
 
-<br>
+## Seasonality and Trend: Example 
 
-## Seasonality and Trend 
+::: {style="font-size: 70%;"}
 
 **General Form of Estimated Regression Equation**
 
 $$
-\hat{Y} = b_0 + b_1 \cdot t + b_2 \cdot Qtr1 + b_3 \cdot Qtr2 + b_4 \cdot Qtr3 
+\hat{Y} = b_0 + b_1 Qtr1 + b_2 \cdot Qtr2 + b_3 \cdot Qtr3 + b_4 \cdot \cdot t 
 $$
 
 Where $t$ is the time period $t = 1, 2, \ldots$
 
+::: {.fragment}
+
+<center>
 **Estimated Regression Equation**
+</center>
+
+**Forecast for Time Period 17 (Quarter 1 in Year 5)**
 
 $$
-\text{Predicted Sales} = 6.07 + 0.146t - 1.36Qtr1 - 2.03Qtr2 - 0.304Qtr3
+\text{Sales} = 6.07 - 1.36(1) - 2.03(0) - .304(0) + .146(17) = 7.19
 $$
+
+::: 
+::: {.fragment}
+
+**Forecast for Time Period 18 (Quarter 2 in Year 5)**
+
+$$
+\text{Sales} = 6.07 - 1.36(0) - 2.03(1) - .304(0) + .146(18) = 6.67
+$$
+
+::: 
+::: {.fragment}
+
+**Forecast for Time Period 19 (Quarter 3 in Year 5)**
+
+$$
+\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(1) + .146(19) = 8.54
+$$
+
+::: 
+::: {.fragment}
+
+**Forecast for Time Period 20 (Quarter 4 in Year 5)**
+
+$$
+\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(0) + .146(20) = 8.99
+$$
+
+::: 
+::: {.fragment}
+
+Thus, accounting for the seasonal effects and the linear trend in smartphone sales, the estimates of quarterly sales in year 5 are 7190, 6670, 8540, and 8990.
+
+::: 
+
+:::
 
 ## Seasonality and Trend: Example 
 
-**Forecast for Quarter 1 in Year 5 (Time period t = 17)**
+::: {style="font-size: 65%;"}
+
+The dummy variables in the estimated multiple regression equation provide four estimated multiple regression equations, one for each quarter.
 
 $$
-Sales = 6.07 + .146(17) - 1.36(1) - 2.03(0) - .304(0) = 7.19
+\text{Quarter 1: Sales} = 6.07 - 1.36(1) - 2.03(0) - .304(0) + .146t = 4.71 + .146t
+$$
+
+Similarly, if time period $t$ corresponds to quarters 2, 3, and 4, the estimates of quarterly sales are:
+
+$$
+\begin{align*}
+\text{Quarter 2: Sales} & = 6.07 - 1.36(0) - 2.03(1) - .304(0) + .146t = 4.04 + .146t \\
+\text{Quarter 3: Sales} & = 6.07 - 1.36(0) - 2.03(0) - .304(1) + .146t = 5.77 + .146t \\
+\text{Quarter 4: Sales} & = 6.07 - 1.36(0) - 2.03(0) - .304(0) + .146t = 6.07 + .146t
+\end{align*}
 $$
 
 ::: {.fragment}
 
-**Forecast for Quarter 2 in Year 5 (Time period t = 18)**
+**Interpretation of the Regression Coefficients**
+
+The slope of the trend line for each quarterly forecast equation is .146, indicating a growth in sales of about 146 smartphones per quarter. 
+
+The only difference in the four equations is that they have different intercepts. 
+
+For instance, the intercept for the quarter 1 equation is 4.71 and the intercept for the quarter 4 equation is 6.07. Thus, sales in quarter 1 are 
 
 $$
-Sales = 6.07 + .146(18) - 1.36(0) - 2.03(1) - .304(0) = 6.67
+4.71 - 6.07 = -1.36
 $$
+
+or 1360 smartphones less than in quarter 4. 
+
+In other words, the estimated regression coefficient for Qtr1 provides an estimate of the difference in sales between quarter 1 and quarter 4.
 
 :::
-
-::: {.fragment}
-
-**Forecast for Quarter 3 in Year 5 (Time period t = 19)**
-
-$$
-Sales = 6.07 + .146(19) - 1.36(0) - 2.03(0) - .304(1) = 8.54
-$$
-
-:::
-::: {.fragment}
-
-**Forecast for Quarter 4 in Year 5 (Time period t = 20)**
-
-$$
-Sales = 6.07 + .146(20) - 1.36(0) - 2.03(0) - .304(0) = 8.99
-$$
-
 :::
 
 # Time Series Decomposition {background-color="#cfb991"}
 
-## Time Series Decomposition 
+## Time Series Decomposition: Motivation
 
-- Time series decomposition can be used to separate a time series into seasonal, trend, and irregular components.
+- Understanding what is really going on with a time series often depends upon the use of deseasonalized data. 
 
-- This method can be used for forecasting or getting a better understanding of the time series.
+- For example, we might be interested in learning whether electrical power consumption is increasing in our area. 
 
-- Decomposition assumes that the time series value at time $t$ is a function of three components: trend, seasonal, and irregular.
+- Suppose we learn that electric power consumption in September is down 3% from the previous month. We must be careful with such information, because whenever a seasonal influence is present, such comparisons may be misleading if the data have not been deseasonalized. 
 
-- Deseasonalized data can provide better insight into the true nature of the time series.
+- The fact that electric power consumption is down 3% from August to September might be only the seasonal effect associated with a decrease in the use of air conditioning and not because of a long-term decline in the use of electric power. 
 
-## Time Series Decomposition 
+- Indeed, after adjusting for the seasonal effect, we might even find that the use of electric power increased. 
 
-**Additive Model**
+- Many other time series, such as unemployment statistics, home sales, and retail sales, are subject to strong seasonal influences. It is important to deseasonalize such data before making a judgment about any long-term trend.
+
+## Time Series Decomposition
+
+Time series decomposition can be used to separate or decompose a time series. It assumes that $Y_t$, the actual time series value at period $t$, is a function of three components:
+
+- A **trend** component
+- A **seasonal** component
+- An **irregular** or error component
+
+::: {.fragment}
+
+How these three components are combined to generate the observed values of the time series depends upon whether we assume the relationship is best described by an **additive** or a **multiplicative** model.
+
+:::
+
+## Choosing Between Additive and Multiplicative Models
+
+- If the seasonal fluctuations change over time, growing larger as the sales volume increases because of a long-term linear trend, then a **multiplicative model** should be used.
+  
+- Many business and economic time series follow this pattern.
+
+## Additive Decomposition Model
+
+- An additive model is appropriate in situations where the seasonal fluctuations do not depend upon the level of the time series.
+
+
+- If the sizes of the seasonal fluctuations in earlier time periods are about the same as the sizes of the seasonal fluctuations in later time periods, an additive model is appropriate.
+
+
+## Additive Decomposition Model
+
+An **additive decomposition model** takes the following form:
 
 $$
 Y_t = Trend_t + Seasonal_t + Irregular_t
 $$
 
+where
 
-where,
+- $Trend_t$ = trend value at time period $t$
+- $Seasonal_t$ = seasonal value at time period $t$
+- $Irregular_t$ = irregular value at time period $t$
 
-- $Trend_t$ = trend value at time $t$
-- $Seasonal_t$ = seasonal value at time $t$
-- $Irregular_t$ = irregular value at time $t$
+- In an additive model, the values for the three components are simply added together to obtain the actual time series value $Y_t$. 
 
-<br>
+- The irregular or error component accounts for the variability in the time series that cannot be explained by the trend and seasonal components.
 
-- An additive model is appropriate when seasonal fluctuations are independent of the time series' level.
+## Multiplicative Decomposition Model
 
-## Time Series Decomposition 
-
-**Multiplicative Model**
+A **multiplicative decomposition model** takes the following form:
 
 $$
 Y_t = Trend_t \times Seasonal_t \times Irregular_t
 $$
 
-- $Trend_t$ = trend value at time $t$
-- $Seasonal_t$ = seasonal value at time $t$
-- $Irregular_t$ = irregular value at time $t$
+where
 
-<br>
+- $Trend_t$ = trend value at time period $t$
+- $Seasonal_t$ = seasonal index at time period $t$
+- $Irregular_t$ = irregular index at time period $t$
 
-- A multiplicative model is used when seasonal fluctuations grow larger as the time series values increase.
+- The Census Bureau uses a multiplicative model in conjunction with its methodology for **deseasonalizing time series**.
 
-# Example: Smartphone Sales  {background-color="#cfb991"}
+## Multiplicative Decomposition Model
 
-## Example: Smartphone Sales  
+In this model, the trend, seasonal, and irregular components are multiplied to give the value of the time series.
 
-::: {style="font-size: 70%;"}
+- **Trend** is measured in units of the item being forecast.
 
-**Smartphone Sales Data**
+- The **seasonal** and **irregular** components are measured in relative terms:
 
-| Year | Quarter | Sales |
-|------|---------|-------|
-| 1    | 1       | 4.8   |
-| 1    | 2       | 4.1   |
-| 1    | 3       | 6.0   |
-| 1    | 4       | 6.5   |
-| 2    | 1       | 5.8   |
-| 2    | 2       | 5.2   |
-| 2    | 3       | 6.8   |
-| 2    | 4       | 7.4   |
-| 3    | 1       | 6.0   |
-| 3    | 2       | 5.6   |
-| 3    | 3       | 7.5   |
-| 3    | 4       | 7.8   |
-| 4    | 1       | 6.3   |
-| 4    | 2       | 5.9   |
-| 4    | 3       | 8.0   |
-| 4    | 4       | 8.4   |
+    - Values above 1.00 indicate effects above the trend.
+    - Values below 1.00 indicate effects below the trend.
 
-<center>
-To forecast sales for Year 5.
-</center>
+## Multiplicative Decomposition Model: Example
 
-:::
 
-# Procedures: Overview {background-color="#cfb991"}
+```{r  echo=FALSE, out.width = "90%",fig.align="center"}
+knitr::include_graphics("figs/smartphone_plot.png")
+```
 
+
+- Sales are lowest in the second quarter of each year and increase in quarters 3 and 4.
+
+ - We conclude that a seasonal pattern exists for the smartphone sales time series. 
+ 
 ## Procedures: Overview 
+
+:::: {style="font-size: 90%;"}
+
+The computational procedure to identify each quarter’s seasonal influence begins by computing a moving average to remove the combined seasonal and irregular effects from the data, leaving us with a time series that contains only trend and any remaining random variation not removed by the moving average calculations.
 
 - **Steps 1-2**: Calculate centered moving averages (Initial deseasonalized data).
 
@@ -1544,190 +2223,464 @@ To forecast sales for Year 5.
 
 - **Step 8**: Add the seasonality to the predictions.
 
-## Smartphone Sales (1000s)
+::::
 
-```{r  echo=FALSE, out.width = "80%",fig.align="center"}
-knitr::include_graphics("figs/smartphone_sales_with_box.png")
-```
+## Multiplicative Decomposition Model: Example (Step 1)
 
-## Step 1 - The Centered Moving Averages
+::: nonincremental
 
-There are four quarters (seasons) in each year. Hence, take four data values in each moving average to eliminate seasonal and irregular factors.
+**Moving Average Calculation**
 
-For example:
+- Because we are working with a quarterly series, we will use four data values in each moving average.
 
-- **First moving average**: $\frac{4.8 + 4.1 + 6.0 + 6.5}{4} = 5.35 \rightarrow$ For period 2.5
-- **Second moving average**: $\frac{4.1 + 6.0 + 6.5 + 5.8}{4} = 5.6 \rightarrow$ For period 3.5
+- The moving average calculation for the first four quarters of the smartphone sales data is:
 
-:::{.fragment}
-
-As there are an even number of values, each moving average does not correspond directly to the original quarters or the time series period.
-
-For period 3, the centered moving average is:
-
-$$ 
-\frac{5.35 + 5.6}{2} = 5.457 
+$$
+\text{First moving average} = \frac{4.8 + 4.1 + 6.0 + 6.5}{4} = \frac{21.4}{4} = 5.35
 $$
 
 :::
 
-## Step 2: Centered Moving Averages 
+## Multiplicative Decomposition Model: Example (Step 1)
 
-| Year | Quarter | Sales (1000s) | Centered MA |
-|------|---------|----------------|-------------|
-| 1    | 1       | 4.8            |             |
-| 1    | 2       | 4.1            |             |
-| 1    | 3       | 6.0            | 5.475       |
-| 1    | 4       | 6.5            | 5.738       |
-| 2    | 1       | 5.8            | 5.975       |
-| 2    | 2       | 5.2            | 6.188       |
-| 2    | 3       | 6.8            | 6.325       |
-| 2    | 4       | 7.4            | 6.400       |
+::: nonincremental
 
-## Step 2: Centered Moving Averages *(cont’d)*
+**Moving Average Calculation**
 
-| Year | Quarter | Sales (1000s) | Centered MA |
-|------|---------|----------------|-------------|
-| 3    | 1       | 6.0            | 6.538       |
-| 3    | 2       | 5.6            | 6.675       |
-| 3    | 3       | 7.5            | 6.763       |
-| 3    | 4       | 7.8            | 6.838       |
-| 4    | 1       | 6.3            | 6.938       |
-| 4    | 2       | 5.9            | 7.075       |
-| 4    | 3       | 8.0            |             |
-| 4    | 4       | 8.4            |             |
+- Note that the moving average calculation for the first four quarters yields the average quarterly sales over year 1 of the time series.
 
-- The centered moving average values tend to remove or “smooth out” both the seasonal and irregular fluctuations in the time series. 
+- Continuing the moving average calculations, we next add the 5.8 value for the first quarter of year 2 and drop the 4.8 for the first quarter of year 1.
 
-- They are deseasonalized data, representing the trend in the data and any other random variation that was not removed or smoothed out.
-
-## Step 3: The Seasonal & Irregular Factors
+Thus, the second moving average is:
 
 $$
-S_{t}I_{t} = \frac{Sales_t}{Centered \ MA_t}, \ \text{for each t} 
+\text{Second moving average} = \frac{4.1 + 6.0 + 6.5 + 5.8}{4} = \frac{22.4}{4} = 5.60
 $$
 
-| Year | Quarter | Sales (1000s) | Centered MA | Seasonal irregular value         |
-|------|---------|---------------|-------------|----------------------------------|
-| 1    | 1       | 4.8           |             |                                  |
-| 1    | 2       | 4.1           |             |                                  |
-| 1    | 3       | 6.0           | 5.475       | 6.0 / 5.475 = 1.096              |
-| 1    | 4       | 6.5           | 5.738       | 1.133                            |
-| 2    | 1       | 5.8           | 5.975       | .971                             |
-| 2    | 2       | 5.2           | 6.188       | .840                             |
-| 2    | 3       | 6.8           | 6.325       | 1.075                            |
-| 2    | 4       | 7.4           | 6.400       | 1.156                            |
+:::
 
-## Step 3: Step 3. The Seasonal & Irregular Factors *(cont’d)*
+## Multiplicative Decomposition Model: Example (Step 1)
 
-| Year | Quarter | Sales (1000s) | Centered MA | Seasonal Irregular value |
-|------|---------|---------------|-------------|--------------------------|
-| 3    | 1       | 6.0           | 6.538       | .918                     |
-| 3    | 2       | 5.6           | 6.675       | .839                     |
-| 3    | 3       | 7.5           | 6.763       | 1.109                    |
-| 3    | 4       | 7.8           | 6.838       | 1.141                    |
-| 4    | 1       | 6.3           | 6.938       | .908                     |
-| 4    | 2       | 5.9           | 7.075       | .834                     |
-| 4    | 3       | 8.0           |             |                          |
-| 4    | 4       | 8.4           |             |                          |
+**Moving Average Calculation**
 
-**Note.** Centered $MA_t = \frac{Sales_t}{S_t I_t}$.
+Similarly, the third moving average calculation is:
 
-## Step 4: The Average Seasonal Factors
-
-Averaging all $S_{t t}$ values corresponding to that season to obtain Seasonal Index $S_t$.
-
-| Quarter | Seasonal-Irregular Values | Seasonal Index |
-|---------|----------------------------|----------------|
-| 1       | 0.971, 0.918, 0.908        | 0.93           |
-| 2       | 0.840, 0.839, 0.834        | 0.84           |
-| 3       | 1.096, 1.075, 1.109        | 1.09           |
-| 4       | 1.133, 1.156, 1.141        | 1.14           |
-| **Total**       |        | 4           |
+$$
+(6.0 + 6.5 + 5.8 + 5.2) / 4 = 5.875
+$$
 
 
-## Step 5: Deseasonalizing Time Series
+## Multiplicative Decomposition Model: Example (Step 1)
 
-Divide the data point values, $Y_t$, by its Seasonal Index $S_t$.
+Before we proceed with the moving average calculations for the entire time series, let us return to the first moving average calculation, which resulted in a value of **5.35**.
 
-| Year | Quarter | Sales (1000s) | Seasonal Index | Deseasonalized Sales |
-|------|---------|----------------|----------------|----------------------|
-| 1    | 1       | 4.8            | 0.93           | 5.16 (= 4.8/0.93)                 |
-| 1    | 2       | 4.1            | 0.84           | 4.88                 |
-| 1    | 3       | 6.0            | 1.09           | 5.50                 |
-| 1    | 4       | 6.5            | 1.14           | 5.70                 |
-| 2    | 1       | 5.8            | 0.93           | 6.24                 |
-| 2    | 2       | 5.2            | 0.84           | 6.19                 |
-| 2    | 3       | 6.8            | 1.09           | 6.24                 |
-| 2    | 4       | 7.4            | 1.14           | 6.49                 |
+- The 5.35 value is the average quarterly sales volume for year 1.
 
-## Step 5: Deseasonalizing Time Series *(cont’d)*
+- As we look back at the calculation of the 5.35 value, associating 5.35 with the "middle" of the moving average group makes sense.
 
-| Year | Quarter | Sales (1000s) | Seasonal Index | Deseasonalized sales |
-|------|---------|---------------|----------------|----------------------|
-| 3    | 1       | 6.0           | 0.93           | 6.45                 |
-| 3    | 2       | 5.6           | 0.84           | 6.67                 |
-| 3    | 3       | 7.5           | 1.09           | 6.88                 |
-| 3    | 4       | 7.8           | 1.14           | 6.84                 |
-| 4    | 1       | 6.3           | 0.93           | 6.77                 |
-| 4    | 2       | 5.9           | 0.84           | 7.02                 |
-| 4    | 3       | 8.0           | 1.09           | 7.34                 |
-| 4    | 4       | 8.4           | 1.14           | 7.37                 |
+## Multiplicative Decomposition Model: Example (Step 2)
+
+**Period Alignment with Moving Averages**
+
+Note that with four quarters in the moving average, there is no middle period.
+
+- The 5.35 value really corresponds to **period 2.5**, the last half of quarter 2 and the first half of quarter 3.
+
+- Similarly, if we go to the next moving average value of 5.60, the middle period corresponds to **period 3.5**, the last half of quarter 3 and the first half of quarter 4.
 
 
-## Step 6: Identify Trend
+## Multiplicative Decomposition Model: Example (Step 2)
 
-Determine a trend line of the deseasonalized data (last column).
+**Centering Moving Averages**
 
-Using the least squares regression gives:
+The two moving average values we computed do not correspond directly to the original quarters of the time series.
+
+- We can resolve this by computing the **average of the two moving averages**.
+
+- The center of the first moving average is period 2.5, and the center of the second moving average is period 3.5.
+
+- By averaging these, we center the moving average at **quarter 3**, exactly where it should be.
+
+## Multiplicative Decomposition Model: Example (Step 2)
+
+::: nonincremental
+
+**Centered Moving Average Calculation**
+
+This moving average is referred to as a **centered moving average**.
+
+- Thus, the centered moving average for period 3 is:
+
+$$
+\frac{5.35 + 5.60}{2} = 5.475
+$$
+
+:::
+
+- Similarly, the centered moving average value for period 4 is:
+
+::: {.fragment}
+
+$$
+\frac{5.60 + 5.875}{2} = 5.738
+$$
+
+:::
+
+## Multiplicative Decomposition Model: Example (Step 2)
+
+::: {style="font-size: 65%;"}
+
+**Centered Moving Average Calculations**
+
+
+Summary of the moving average and centered moving average calculations for the smartphone sales data.
+
+:::
+
+::: {style="font-size: 35%;"}
+
+| Year | Quarter | Sales (1000s) | Four-Quarter Moving Average | Centered Moving Average |
+|------|---------|---------------|-----------------------------|--------------------------|
+| 1    | 1       | 4.8           |                             |                          |
+| 1    | 2       | 4.1           |                             |                          |
+|     |        |            | 5.350                       | 5.475                    |
+| 1    | 3       | 6.0           |                        |                     |
+|     |        |            | 5.600                       | 5.738                    |
+| 1    | 4       | 6.5           |                        |                     |
+|     |        |            | 5.875                       | 5.975                    |
+| 2    | 1       | 5.8           |                        |                     |
+|     |        |            | 6.075                       | 6.188                    |
+| 2    | 2       | 5.2           |                        |                     |
+|     |        |            | 6.300                       | 6.325                    |
+| 2    | 3       | 6.8           |                        |                     |
+|     |        |            | 6.350                       | 6.400                    |
+| 2    | 4       | 7.4           |                        |                     |
+|     |        |            | 6.450                       | 6.538                    |
+| 3    | 1       | 6.0           |                        |                     |
+|     |        |            | 6.625                       | 6.675                    |
+| 3    | 2       | 5.6           |                        |                     |
+|     |        |            | 6.725                       | 6.763                    |
+| 3    | 3       | 7.5           |                        |                     |
+|     |        |            | 6.800                       | 6.838                    |
+| 3    | 4       | 7.8           |                        |                     |
+|     |        |            | 6.875                       | 6.938                    |
+| 4    | 1       | 6.3           |                        |                    |
+|     |        |            | 7.000                       | 7.075                    |
+| 4    | 2       | 5.9           |                        |                     |
+|     |        |            | 7.150                       |                          |
+| 4    | 3       | 8.0           |                        |                          |
+| 4    | 4       | 8.4           |                             |                          |
+
+:::
+
+## Multiplicative Decomposition Model: Example (Step 3)
+
+What do the centered moving averages tell us about this time series?
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/decomposition_plot.png")
+```
+
+:::: {style="font-size: 70%;"}
+
+- The Figure shows a time series plot of the actual time series values and the centered moving average values. 
+
+- Note particularly how the centered moving average values tend to "smooth out" both the seasonal and irregular fluctuations in the time series.
+
+- The centered moving averages represent the **trend** in the data and any **random variation** that was not removed by using moving averages to smooth the data.
+
+::::
+
+## Multiplicative Decomposition Model: Example (Step 4)
+
+The multiplicative decomposition model is:
+
+$$
+Y_t = Trend_t \times Seasonal_t \times Irregular_t
+$$
+
+By dividing each side of this equation by the trend component $T_t$, we can identify the combined seasonal-irregular effect in the time series.
+
+$$
+\frac{Y_t}{Trend_t} = \frac{Trend_t \times Seasonal_t \times Irregular_t}{Trend_t} = Seasonal_t \times Irregular_t
+$$
+
+
+## Multiplicative Decomposition Model: Example (Step 4)
+
+For example, the third quarter of year 1 shows a trend value of 5.475 (the centered moving average). 
+
+So:
+
+$$
+\frac{6.0}{5.475} = 1.096
+$$
+
+This is the combined seasonal-irregular value.
+
+
+## Multiplicative Decomposition Model: Example (Step 4)
+
+::: {style="font-size: 65%;"}
+
+Seasonal-irregular values for the entire time series.
+
+| Year | Quarter | Sales (1000s) | Centered Moving Average | Seasonal-Irregular Value |
+|------|---------|---------------|-------------------------|--------------------------|
+| 1    | 1       | 4.8           |                         |                          |
+| 1    | 2       | 4.1           |                         |                          |
+| 1    | 3       | 6.0           | 5.475                   | 1.096                    |
+| 1    | 4       | 6.5           | 5.738                   | 1.133                    |
+| 2    | 1       | 5.8           | 5.975                   | 0.971                    |
+| 2    | 2       | 5.2           | 6.188                   | 0.840                    |
+| 2    | 3       | 6.8           | 6.325                   | 1.075                    |
+| 2    | 4       | 7.4           | 6.400                   | 1.156                    |
+| 3    | 1       | 6.0           | 6.538                   | 0.918                    |
+| 3    | 2       | 5.6           | 6.675                   | 0.839                    |
+| 3    | 3       | 7.5           | 6.763                   | 1.109                    |
+| 3    | 4       | 7.8           | 6.838                   | 1.141                    |
+| 4    | 1       | 6.3           | 6.938                   | 0.908                    |
+| 4    | 2       | 5.9           | 7.075                   | 0.834                    |
+| 4    | 3       | 8.0           |                         |                          |
+| 4    | 4       | 8.4           |                         |                          |
+
+:::
+
+## Multiplicative Decomposition Model: Example (Step 4)
+
+**Seasonal-Irregular Values for Third Quarter**
+
+Consider the seasonal-irregular values for the third quarter: **1.096**, **1.075**, and **1.109**.
+
+- Seasonal-irregular values greater than 1.00 indicate effects above the trend estimate, while values below 1.00 indicate effects below the trend estimate.
+
+- The three seasonal-irregular values for quarter 3 show an above-average effect in the third quarter.
+
+## Multiplicative Decomposition Model: Example (Step 4)
+
+**Averaging to Estimate Seasonal Influence**
+
+Since the year-to-year fluctuations in the seasonal-irregular values are primarily due to random error, we can average the computed values to eliminate the irregular influence and obtain an estimate of the third-quarter seasonal influence.
+
+$$
+\text{Seasonal effect of quarter 3} = \frac{1.096 + 1.075 + 1.109}{3} = 1.09
+$$
+
+## Multiplicative Decomposition Model: Example (Step 4)
+
+**Seasonal-Irregular Values and Seasonal Indexes**
+
+| Quarter | Seasonal-Irregular Values       | Seasonal Index |
+|---------|---------------------------------|----------------|
+| 1       | 0.971, 0.918, 0.908             | 0.93           |
+| 2       | 0.840, 0.839, 0.834             | 0.84           |
+| 3       | 1.096, 1.075, 1.109             | 1.09           |
+| 4       | 1.133, 1.156, 1.141             | 1.14           |
+
+- The seasonal indexes for the four quarters are **0.93**, **0.84**, **1.09**, and **1.14**.
+
+- The best sales quarter is the **fourth quarter**, with sales averaging **14% above the trend estimate**.
+
+- The worst, or slowest, sales quarter is the **second quarter**; its seasonal index of **0.84** shows that the sales average is **16% below the trend estimate**.
+
+- The seasonal component corresponds clearly to the intuitive expectation that smartphone sales increase when a new school year begins (quarter 3) and for the holiday season (quarter 4).
+
+## Multiplicative Decomposition Model: Example (Step 4)
+
+One final adjustment is sometimes necessary in obtaining the seasonal indexes.
+
+- The **multiplicative model** requires that the average seasonal index equal **1.00**, so the sum of the four seasonal indexes must equal **4.00**.
+
+- In other words, the seasonal effects must even out over the year.
+
+- The average of the seasonal indexes in our example is equal to 1.00, so this type of adjustment is not necessary.
+
+## Multiplicative Decomposition Model: Example (Step 4)
+
+::: nonincremental
+
+**Making Adjustments (If Required)**
+
+In cases where adjustment is necessary:
+
+- Multiply each seasonal index by the number of seasons divided by the sum of the unadjusted seasonal indexes.
+
+For quarterly data, this means:
+
+$$
+\text{Adjusted Seasonal Index} = \frac{4}{\text{sum of the unadjusted seasonal indexes}}
+$$
+
+:::
+
+## Deseasonalizing the Time Series (Step 5)
+
+::: nonincremental
+
+A time series that has had the seasonal effects removed is referred to as a **deseasonalized time series**, and the process of using the seasonal indexes to remove the seasonal effects from a time series is referred to as **deseasonalizing the time series**.
+
+- Using a multiplicative decomposition model, we deseasonalize a time series by dividing each observation by its corresponding seasonal index.
+
+- The multiplicative decomposition model is:
+
+$$
+Y_t = Trend_t \times Seasonal_t \times Irregular_t
+$$
+
+When we divide each time series observation $Y_t$ by its corresponding seasonal index, the resulting data show only trend and random variability (the irregular component).
+
+:::
+
+## Deseasonalized Sales Data Table  (Step 5)
+
+:::: {style="font-size: 70%;"}
+
+| Year | Quarter | Time Period | Sales (1000s) | Seasonal Index | Deseasonalized Sales |
+|------|---------|-------------|---------------|----------------|-----------------------|
+| 1    | 1       | 1           | 4.8           | 0.93           | 5.16                  |
+| 1    | 2       | 2           | 4.1           | 0.84           | 4.88                  |
+| 1    | 3       | 3           | 6.0           | 1.09           | 5.50                  |
+| 1    | 4       | 4           | 6.5           | 1.14           | 5.70                  |
+| 2    | 1       | 5           | 5.8           | 0.93           | 6.24                  |
+| 2    | 2       | 6           | 5.2           | 0.84           | 6.19                  |
+| 2    | 3       | 7           | 6.8           | 1.09           | 6.24                  |
+| 2    | 4       | 8           | 7.4           | 1.14           | 6.49                  |
+| 3    | 1       | 9           | 6.0           | 0.93           | 6.45                  |
+| 3    | 2       | 10          | 5.6           | 0.84           | 6.67                  |
+| 3    | 3       | 11          | 7.5           | 1.09           | 6.88                  |
+| 3    | 4       | 12          | 7.8           | 1.14           | 6.84                  |
+| 4    | 1       | 13          | 6.3           | 0.93           | 6.77                  |
+| 4    | 2       | 14          | 5.9           | 0.84           | 7.02                  |
+| 4    | 3       | 15          | 8.0           | 1.09           | 7.34                  |
+| 4    | 4       | 16          | 8.4           | 1.14           | 7.37                  |
+
+::::
+
+## Deseasonalized Sales Plot  (Step 5)
+
+<br>
+
+```{r  echo=FALSE, out.width = "80%",fig.align="center"}
+knitr::include_graphics("figs/deseasonalized_plot.png")
+```
+
+<br>
+
+<br>
+
+## Deseasonalizing the Time Series  (Step 5)
+
+**Identifying Trend in Deseasonalized Data**
+
+The graph of the deseasonalized smartphone sales time series shown in **Figure 17.25** appears to have an upward linear trend.
+
+- To identify this trend, we will fit a linear trend equation to the deseasonalized time series.
+
+- The only difference is that we will be fitting a trend line to the deseasonalized data instead of the original data.
+
+## Deseasonalizing the Time Series: Linear Trend Equation  (Step 6)
+
+Recall that for a linear trend, the estimated regression equation can be written as:
 
 $$
 T_t = b_0 + b_1 t
 $$
 
- <br>
+where
+
+- $T_t$: linear trend forecast in period $t$
+- $b_0$: intercept of the linear trend line
+- $b_1$: slope of the trend line
+- $t$: time period
+
+## Deseasonalizing the Time Series: Fitting a Linear Trend Line   (Step 6)
+
+To fit a linear trend line to the deseasonalized data, the only change is that the deseasonalized time series values are used instead of the observed values $Y_t$ in computing $b_0$ and $b_1$.
+
+Using Excel’s Regression tool, the estimated linear trend equation is:
 
 $$
-\text{Predicted Sales}_t = 5.10 + 0.148 t
+\text{Deseasonalized Sales} = 5.10 + 0.148t
+$$
+
+## Deseasonalizing the Time Series: Interpretation of the Slope   (Step 6)
+
+- The slope of 0.148 indicates that over the past 16 quarters, the firm averaged a deseasonalized growth in sales of about 148 smartphones per quarter.
+
+- If we assume that the past 16-quarter trend in sales data is a reasonably good indicator of the future, this equation can be used to develop a trend projection for future quarters.
+
+## Deseasonalizing the Time Series: Example Projection  (Step 7)
+
+Substituting $t = 17$ into the equation yields next quarter’s deseasonalized trend projection, $T_{17}$:
+
+$$
+T_{17} = 5.10 + 0.148(17) = 7.616
+$$
+
+Thus, using the deseasonalized data, the linear trend forecast for next quarter (period 17) is **7616 smartphones**.
+
+Similarly, the deseasonalized trend forecasts for the next three quarters (periods 18, 19, and 20) are **7764**, **7912**, and **8060** smartphones, respectively.
+
+## Seasonal Adjustments  (Step 8)
+
+::: nonincremental
+
+The final step in developing the forecast when both trend and seasonal components are present is to use the seasonal indexes to adjust the deseasonalized trend projections.
+
+- For the smartphone sales example, we have a deseasonalized trend projection for the next four quarters.
+
+- Now, we must adjust the forecast for the seasonal effect.
+
+The seasonal index for the first quarter of year 5 ($t = 17$) is 0.93, so we obtain the quarterly forecast by multiplying the deseasonalized forecast based on trend $(T_{17} = 7616)$ by the seasonal index (0.93). Thus, the forecast for the next quarter is $7616 \times 0.93 = 7083$.
+
+:::
+
+## Seasonal Adjustments: Quarterly Forecasts Table  (Step 8)
+
+
+| Year | Quarter | Deseasonalized Trend Forecast | Seasonal Index | Quarterly Forecast           |
+|------|---------|-------------------------------|----------------|------------------------------|
+| 5    | 1       | 7616                          | 0.93           | $7616 \times 0.93 = 7083$ |
+| 5    | 2       | 7764                          | 0.84           | $7764 \times 0.84 = 6522$ |
+| 5    | 3       | 7912                          | 1.09           | $7912 \times 1.09 = 8624$ |
+| 5    | 4       | 8060                          | 1.14           | $8060 \times 1.14 = 9188$ |
+
+<br>
+
+The high-volume fourth quarter has a 9188-unit forecast, and the low-volume second quarter has a 6522-unit forecast.
+
+## Cyclical Component
+
+::: nonincremental
+
+Mathematically, the multiplicative model can be expanded to include a cyclical component.
+
+$$
+Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
 $$
 
 
-## Step 7: The Deseasonalized Predictions 
+- The cyclical component, like the seasonal component, is expressed as a percentage of trend.
 
-For **Year 5** (a new year with $t = 17, 18, 19, 20$), the least squares linear trend forecast:
+- This component is attributable to multiyear cycles in the time series.
 
-$$
-T_{17} = 5.10 + 0.148(17) = 7.616 \ \text{(7,616 smartphones)}
-$$
+It is analogous to the seasonal component but over a longer period. However, due to the length of time involved, obtaining enough relevant data to estimate the cyclical component is often difficult.
 
-$$
-T_{18} = 5.10 + 0.148(18) = 7.764
-$$
+:::
 
-$$
-T_{19} = 5.10 + 0.148(19) = 7.912
-$$
+## Cyclical Component: Challenges
 
-$$
-T_{20} = 5.10 + 0.148(20) = 8.060
-$$
+- Cycles usually vary in length, making it difficult to identify or separate cyclical effects from long-term trend effects.
 
-## Step 8: Add the Seasonality
+- In practice, these effects are often combined and referred to as a **combined trend-cycle component**.
 
-Multiply each deseasonalized prediction by its Seasonal Index (SI) to give the following forecasts for **Year 5**:
-
-| Quarter | Deseasonalized Trend Forecast | Seasonal Index (SI) | Quarterly Forecast |
-|---------|-------------------------------|---------------------|--------------------|
-| 1       | 7.616                         | 0.93                | 7.083              |
-| 2       | 7.764                         | 0.84                | 6.522              |
-| 3       | 7.912                         | 1.09                | 8.624              |
-| 4       | 8.060                         | 1.14                | 9.188              |
 
 # Summary {background-color="#cfb991"}
 
 ## Summary
 
-:::: {style="font-size: 70%;"}
+:::: {style="font-size: 90%;"}
 ::: nonincremental
 Some key takeaways from this session:
 
