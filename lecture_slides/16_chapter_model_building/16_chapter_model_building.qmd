@@ -716,9 +716,10 @@ knitr::include_graphics("figs/transformation_power.png")
 | 4 | [**AIC**](https://en.wikipedia.org/wiki/Akaike_information_criterion){target="_blank"} or [**BIC**](https://en.wikipedia.org/wiki/Bayesian_information_criterion){target="_blank"} | Balances model fit and complexity | If AIC/BIC decreases | If AIC/BIC increases |
 | 5 | [**Stepwise Regression**](https://openintro-ims.netlify.app/model-mlr#sec-model-selection){target="_blank"} | Automated selection procedure based on statistical contribution | Add variables with high statistical contribution | Remove variables with low contribution |
 | 6 | **Multicollinearity ([VIF](https://online.stat.psu.edu/stat462/node/180/){target="_blank"})** | The Variance Inflation Factor detects multicollinearity between independent variables | Use the full model | If VIF \> 10 |
-| 7 | [**Cross-Validation**](https://openintro-ims.netlify.app/inf-model-mlr#sec-inf-mult-reg-cv){target="_blank"} | Assesses model performance across different data subsets | If cross-validation performance improves | If cross-validation performance worsens |
-| 8 | [**Good vs Bad Controls**](https://ftp.cs.ucla.edu/pub/stat_ser/r493.pdf){target="_blank"} | For causal inference purposes | Add good controls that help block non-causal paths | Remove bad controls that open new spurious paths |
-| 9 | **Theoretical Justification** | Adds or removes variables based on theory, domain knowledge, or experience | Add based on theory or domain knowledge | Remove variables that are irrelevant, regardless of statistical significance |
+| 7 | **Best Subset Selection** | Compares all possible combinations of predictors to identify the best model | Adds the combination of predictors with the best performance based on chosen criteria (e.g., adjusted $R^2$) | N/A; evaluates models by selecting the best subset |
+| 8 | [**Cross-Validation**](https://openintro-ims.netlify.app/inf-model-mlr#sec-inf-mult-reg-cv){target="_blank"} | Assesses model performance across different data subsets | If cross-validation performance improves | If cross-validation performance worsens |
+| 9 | [**Good vs Bad Controls**](https://ftp.cs.ucla.edu/pub/stat_ser/r493.pdf){target="_blank"} | For causal inference purposes | Add good controls that help block non-causal paths | Remove bad controls that open new spurious paths |
+| 10 | **Theoretical Justification** | Adds or removes variables based on theory, domain knowledge, or experience | Add based on theory or domain knowledge | Remove variables that are irrelevant, regardless of statistical significance |
 :::
 
 ## Adding or Removing Variables

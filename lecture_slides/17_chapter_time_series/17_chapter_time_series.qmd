@@ -2108,7 +2108,9 @@ In other words, the estimated regression coefficient for Qtr1 provides an estima
 
 - For example, we might be interested in learning whether electrical power consumption is increasing in our area. 
 
-- Suppose we learn that electric power consumption in September is down 3% from the previous month. We must be careful with such information, because whenever a seasonal influence is present, such comparisons may be misleading if the data have not been deseasonalized. 
+- Suppose we learn that electric power consumption in September is down 3% from the previous month. **Is it correct to conclude that the electric power consumption is decreasing?**
+
+- We must be careful with such information, because whenever a seasonal influence is present, such comparisons may be misleading if the data have not been deseasonalized. 
 
 - The fact that electric power consumption is down 3% from August to September might be only the seasonal effect associated with a decrease in the use of air conditioning and not because of a long-term decline in the use of electric power. 
 
