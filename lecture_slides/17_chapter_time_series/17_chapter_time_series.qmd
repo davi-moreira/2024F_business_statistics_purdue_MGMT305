@@ -2006,7 +2006,7 @@ knitr::include_graphics("figs/umbrela_reg_output_trend.png")
 **General Form of Estimated Regression Equation**
 
 $$
-\hat{Y} = b_0 + b_1 Qtr1 + b_2 \cdot Qtr2 + b_3 \cdot Qtr3 + b_4 \cdot \cdot t 
+\hat{Y} = b_0 + b_1 Qtr1 + b_2 \cdot Qtr2 + b_3 \cdot Qtr3 + b_4 \cdot t 
 $$
 
 Where $t$ is the time period $t = 1, 2, \ldots$

@@ -506,10 +506,10 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
 <p><strong>Example</strong>: Butler Trucking Company - <code>Butler.xlsx</code></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 23%">
 <col style="width: 24%">
-<col style="width: 23%">
-<col style="width: 28%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 27%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -802,11 +802,11 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <h2>Multiple Coefficient of Determination</h2>
 <div style="font-size: 80%;">
 <p>Relationship Among SST, SSR, SSE</p>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 23%">
-<col style="width: 28%">
-<col style="width: 23%">
+<col style="width: 24%">
+<col style="width: 27%">
+<col style="width: 24%">
 <col style="width: 24%">
 </colgroup>
 <thead>
@@ -1027,12 +1027,12 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 <p><strong>ANOVA Output</strong></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 26%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 17%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1057,7 +1057,7 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 <td>Residual</td>
 <td><span class="math inline">\(n-p-1\)</span></td>
 <td>SSE</td>
-<td><span class="math inline">\(MSE=\frac{SSE}{p}\)</span></td>
+<td><span class="math inline">\(MSE=\frac{SSE}{n-p-1}\)</span></td>
 <td></td>
 <td></td>
 </tr>
@@ -1265,12 +1265,12 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <section id="categorical-independent-variables-4" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc</strong></p>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 21%">
-<col style="width: 31%">
-<col style="width: 21%">
-<col style="width: 24%">
+<col style="width: 23%">
+<col style="width: 29%">
+<col style="width: 23%">
+<col style="width: 23%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1347,12 +1347,12 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <section id="categorical-independent-variables-5" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc</strong>: Now with a <em>dummy</em> or <em>indicator variable</em>.</p>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 21%">
-<col style="width: 31%">
-<col style="width: 21%">
-<col style="width: 24%">
+<col style="width: 23%">
+<col style="width: 29%">
+<col style="width: 23%">
+<col style="width: 23%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1476,9 +1476,9 @@ E(y|electrical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = (\beta_0 + \beta_2) 
 <section id="interpretation-of-beta_2" class="slide level2 center">
 <h2>Interpretation of <span class="math inline">\(\beta_2\)</span></h2>
 <ul>
-<li class="fragment"><p><strong>If <span class="math inline">\(\beta_2\)</span> is positive</strong>: The mean repair time for an electrical repair is greater than for a mechanical repair.</p></li>
-<li class="fragment"><p><strong>If <span class="math inline">\(\beta_2\)</span> is negative</strong>: The mean repair time for an electrical repair is less than for a mechanical repair.</p></li>
-<li class="fragment"><p><strong>If <span class="math inline">\(\beta_2 = 0\)</span></strong>: There is no difference in the mean repair time between electrical and mechanical repairs, indicating that the type of repair is not related to repair time.</p></li>
+<li class="fragment"><p><strong>If</strong> <span class="math inline">\(\beta_2\)</span> is positive: The mean repair time for an electrical repair is greater than for a mechanical repair.</p></li>
+<li class="fragment"><p><strong>If</strong> <span class="math inline">\(\beta_2\)</span> is negative: The mean repair time for an electrical repair is less than for a mechanical repair.</p></li>
+<li class="fragment"><p><strong>If</strong> <span class="math inline">\(\beta_2 = 0\)</span>: There is no difference in the mean repair time between electrical and mechanical repairs, indicating that the type of repair is not related to repair time.</p></li>
 <li class="fragment"><p>In effect, the use of the dummy variable for type of repair provides two estimated regression equations that can be used to predict the repair time.</p></li>
 </ul>
 </section>
@@ -1664,7 +1664,7 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
 y = \beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p + \epsilon
 \]</span></p>
 <ol type="1">
-<li class="fragment"><strong>The error term <span class="math inline">\(\epsilon\)</span> is a random variable with <span class="math inline">\(E(\epsilon) = 0\)</span>.</strong></li>
+<li class="fragment"><strong>The error term</strong> <span class="math inline">\(\epsilon\)</span> is a random variable with <span class="math inline">\(E(\epsilon) = 0\)</span>.</li>
 </ol>
 <ul>
 <li class="fragment"><strong>Implication</strong>: For given values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>, the expected, or average, value of <span class="math inline">\(y\)</span> is given by:</li>
@@ -1678,7 +1678,7 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p
 <li class="fragment"><strong>Validation</strong>: Residuals vs.&nbsp;Predicted Values Plot or the Standardized Residuals vs.&nbsp;Predicted Values Plot</li>
 </ul>
 <ol start="2" type="1">
-<li class="fragment"><strong>The variance of <span class="math inline">\(\epsilon\)</span> is denoted by <span class="math inline">\(\sigma^2\)</span> and is the same for all values of the independent variables <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>.</strong></li>
+<li class="fragment"><strong>The variance of</strong> <span class="math inline">\(\epsilon\)</span> is denoted by <span class="math inline">\(\sigma^2\)</span> and is the same for all values of the independent variables <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>.</li>
 </ol>
 <ul>
 <li class="fragment"><p><strong>Implication</strong>: The variance of <span class="math inline">\(y\)</span> about the regression line equals <span class="math inline">\(\sigma^2\)</span> and is the same for all values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>.</p></li>
@@ -1688,12 +1688,12 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p
 <section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2" class="slide level2 center">
 <h2>Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
 <ol start="3" type="1">
-<li class="fragment"><p><strong>The values of <span class="math inline">\(\epsilon\)</span> are independent.</strong></p>
+<li class="fragment"><p><strong>The values of</strong> <span class="math inline">\(\epsilon\)</span> are independent.</p>
 <ul>
 <li class="fragment"><p><strong>Implication</strong>: The value of <span class="math inline">\(\epsilon\)</span> for a particular set of values for the independent variables is not related to the value of <span class="math inline">\(\epsilon\)</span> for any other set of values.</p></li>
 <li class="fragment"><p><strong>Validation</strong>: Standardized Residuals vs.&nbsp;Predicted Values Plot</p></li>
 </ul></li>
-<li class="fragment"><p><strong>The error term <span class="math inline">\(\epsilon\)</span> is a normally distributed random variable reflecting the deviation between the <span class="math inline">\(y\)</span> value and the expected value of <span class="math inline">\(y\)</span>.</strong></p>
+<li class="fragment"><p><strong>The error term</strong> <span class="math inline">\(\epsilon\)</span> is a normally distributed random variable reflecting the deviation between the <span class="math inline">\(y\)</span> value and the expected value of <span class="math inline">\(y\)</span>.</p>
 <ul>
 <li class="fragment"><p><strong>Implication</strong>: Because <span class="math inline">\(\beta_0, \beta_1, \ldots, \beta_p\)</span> are constants for the given values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>, the dependent variable <span class="math inline">\(y\)</span> is also a normally distributed random variable.</p></li>
 <li class="fragment"><p><strong>Validation</strong>: Normal Probability Plot or Q-Q Plot (Quantile-Quantile Plot) of Residuals.</p></li>
@@ -1895,15 +1895,11 @@ $H_0: \beta_2 = 0$ (i.e., $\mu_B - \mu_C = 0$)
 
 <br>
 
-
-
 ::: {.cell layout-align="center"}
 ::: {.cell-output-display}
 ![](figs/chemitech_experiment_excel_output.png){fig-align='center' width=95%}
 :::
 :::
-
-
 
 <br>
 
@@ -1932,15 +1928,11 @@ where $3.8853 = F_{0.05} = F.INV(0.95, 2, 12)$ is the 5% upper critical value.
 ::: {style="font-size: 90%;"}
 <br>
 
-
-
 ::: {.cell layout-align="center"}
 ::: {.cell-output-display}
 ![](figs/chemitech_experiment_pvalue.png){fig-align='center' width=60%}
 :::
 :::
-
-
 
 Where,
 

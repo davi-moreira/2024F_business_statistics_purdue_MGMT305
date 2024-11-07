@@ -4855,7 +4855,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Overall Significance: \\(F\\) Test",
-    "text": "Testing for Overall Significance: \\(F\\) Test\nANOVA Output\n\n\n\n\n\n\n\n\n\n\n\nSource\ndf\nSS\nMS\nF\nSignificance F\n\n\n\n\nRegression\n\\(p\\)\nSSR\n\\(MSR=\\frac{SSR}{p}\\)\n\\(F=\\frac{MSR}{MSE}\\)\n\\(p-value\\)\n\n\nResidual\n\\(n-p-1\\)\nSSE\n\\(MSE=\\frac{SSE}{p}\\)\n\n\n\n\nTotal\n\\(n-1\\)\nSST"
+    "text": "Testing for Overall Significance: \\(F\\) Test\nANOVA Output\n\n\n\n\n\n\n\n\n\n\n\nSource\ndf\nSS\nMS\nF\nSignificance F\n\n\n\n\nRegression\n\\(p\\)\nSSR\n\\(MSR=\\frac{SSR}{p}\\)\n\\(F=\\frac{MSR}{MSE}\\)\n\\(p-value\\)\n\n\nResidual\n\\(n-p-1\\)\nSSE\n\\(MSE=\\frac{SSE}{n-p-1}\\)\n\n\n\n\nTotal\n\\(n-1\\)\nSST"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test",
@@ -8089,7 +8089,7 @@
     "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Seasonality and Trend: Example",
-    "text": "Seasonality and Trend: Example\n\nGeneral Form of Estimated Regression Equation\n\\[\n\\hat{Y} = b_0 + b_1 Qtr1 + b_2 \\cdot Qtr2 + b_3 \\cdot Qtr3 + b_4 \\cdot \\cdot t\n\\]\nWhere \\(t\\) is the time period \\(t = 1, 2, \\ldots\\)\n\n\nEstimated Regression Equation\n\nForecast for Time Period 17 (Quarter 1 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(1) - 2.03(0) - .304(0) + .146(17) = 7.19\n\\]\n\n\nForecast for Time Period 18 (Quarter 2 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(0) - 2.03(1) - .304(0) + .146(18) = 6.67\n\\]\n\n\nForecast for Time Period 19 (Quarter 3 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(1) + .146(19) = 8.54\n\\]\n\n\nForecast for Time Period 20 (Quarter 4 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(0) + .146(20) = 8.99\n\\]\n\n\nThus, accounting for the seasonal effects and the linear trend in smartphone sales, the estimates of quarterly sales in year 5 are 7190, 6670, 8540, and 8990."
+    "text": "Seasonality and Trend: Example\n\nGeneral Form of Estimated Regression Equation\n\\[\n\\hat{Y} = b_0 + b_1 Qtr1 + b_2 \\cdot Qtr2 + b_3 \\cdot Qtr3 + b_4 \\cdot t\n\\]\nWhere \\(t\\) is the time period \\(t = 1, 2, \\ldots\\)\n\n\nEstimated Regression Equation\n\nForecast for Time Period 17 (Quarter 1 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(1) - 2.03(0) - .304(0) + .146(17) = 7.19\n\\]\n\n\nForecast for Time Period 18 (Quarter 2 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(0) - 2.03(1) - .304(0) + .146(18) = 6.67\n\\]\n\n\nForecast for Time Period 19 (Quarter 3 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(1) + .146(19) = 8.54\n\\]\n\n\nForecast for Time Period 20 (Quarter 4 in Year 5)\n\\[\n\\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(0) + .146(20) = 8.99\n\\]\n\n\nThus, accounting for the seasonal effects and the linear trend in smartphone sales, the estimates of quarterly sales in year 5 are 7190, 6670, 8540, and 8990."
   },
   {
     "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#seasonality-and-trend-example-4",
