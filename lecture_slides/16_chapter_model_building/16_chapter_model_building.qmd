@@ -705,6 +705,126 @@ knitr::include_graphics("figs/transformation_power.png")
 
 # When to Add or Delete Variables {background-color="#cfb991"}
 
+## Overview of Predictor Evaluation
+
+- **Statistical Significance**: Indicates whether the relationship between a predictor and the dependent variable is unlikely to have occurred by chance.
+
+- **Effectiveness**: Reflects the practical impact or importance of the predictor on the dependent variable.
+  - Assessed by observing changes in **adjusted R-squared** when the predictor is included.
+  - Statistical significance is evaluated using the **p-value**.
+
+## Four Scenarios for Predictors
+
+<br>
+
+|                        | **Statistically Significant**<br>(e.g. p-value < 0.05) | **Not Statistically Significant**<br>(e.g. p-value ≥ 0.05) |
+|:------------------------:|:------------------------------------------------:|:----------------------------------------------------:|
+| **Effective** (Adjusted R-squared increases significantly) | Scenario 1<br>Predictor is both statistically significant and effective. | Scenario 3<br>Effective but not statistically significant. |
+| **Not Effective** (Adjusted R-squared does not increase significantly) | Scenario 2<br>Statistically significant but not effective. | Scenario 4<br>Not statistically significant nor effective. |
+
+
+## Scenario 1: Statistically Significant and Effective
+
+**Characteristics**
+
+- **p-value** below chosen significance level (e.g., $p < 0.05$)
+
+- **Adjusted R-squared** increases meaningfully when the predictor is included
+
+:::{.fragment}
+
+**Interpretation**
+
+- Predictor reliably contributes to the dependent variable's variance.
+
+- Both statistically and practically meaningful.
+
+:::
+:::{.fragment}
+
+**Example**
+
+- **Healthcare**: Adding "age" as a predictor in a model for blood pressure yields a **p-value of $p < 0.001$** and increases the adjusted R-squared from 0.30 to **0.45**.
+
+- Age is both a statistically significant and effective predictor of blood pressure.
+
+:::
+
+## Scenario 2: Statistically Significant but Not Effective
+
+**Characteristics**
+
+- **p-value** below the significance threshold
+
+- **Minimal change in adjusted R-squared**: negligible improvement in the model's explanatory power
+
+:::{.fragment}
+
+**Interpretation**
+
+- Statistically reliable but lacks practical impact.
+- Common in large samples where even small effects become significant.
+
+:::
+:::{.fragment}
+
+**Example**
+
+- **Economics**: Adding "hair color" as a predictor of income yields **p = 0.02**, but increases adjusted R-squared from 0.25 to **0.251**.
+- Hair color is statistically significant but not practically effective.
+
+:::
+
+## Scenario 3: Not Statistically Significant but Effective
+
+**Characteristics**
+
+- **p-value** exceeds the significance level (e.g., $p > 0.05$)
+- **Substantial increase in adjusted R-squared**
+
+:::{.fragment}
+
+**Interpretation**
+
+- Meaningful effect, but lacks statistical support.
+- May need a larger sample size or further refinement.
+
+:::
+:::{.fragment}
+
+**Example**
+
+- **Education**: Adding "hours of sleep" as a predictor of student performance increases adjusted R-squared from 0.40 to **0.50** but yields **p = 0.08**.
+
+- "Hours of sleep" has a practical impact but isn’t statistically significant.
+
+:::
+
+## Scenario 4: Not Statistically Significant and Not Effective
+
+**Characteristics**
+
+- **p-value** above the significance threshold
+- **No increase in adjusted R-squared**
+
+:::{.fragment}
+
+**Interpretation**
+
+- Predictor lacks both statistical and practical value.
+- Likely safe to exclude from the model.
+
+:::
+:::{.fragment}
+
+**Example**
+
+- **Marketing**: Adding "shoe size" to predict customer satisfaction yields **p = 0.60** and decreases adjusted R-squared from 0.35 to **0.34**.
+
+:::
+
+# Strategies for Adding or Removing Variables {background-color="#cfb991"}
+
 ## Strategies for Adding or Removing Variables
 
 ::: {style="font-size: 70%;"}
@@ -1128,6 +1248,7 @@ The criterion used in determining which estimated regression equations are best 
     -   However, this would be very inefficient as each approach would potentially require several steps in which various models based on what was learned in the previous step would have to be estimated.
 
     -   Most statistical software (including `R`) are capable of implementing each of these algorithms automatically.
+
 
 # Summary {background-color="#cfb991"}
 

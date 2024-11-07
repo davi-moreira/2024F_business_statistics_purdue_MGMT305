@@ -994,7 +994,140 @@ y = e^{4.5} \approx 90.02
 <h1>When to Add or Delete Variables</h1>
 
 </section>
-<section id="strategies-for-adding-or-removing-variables" class="slide level2 center">
+<section id="overview-of-predictor-evaluation" class="slide level2 center">
+<h2>Overview of Predictor Evaluation</h2>
+<ul>
+<li class="fragment"><p><strong>Statistical Significance</strong>: Indicates whether the relationship between a predictor and the dependent variable is unlikely to have occurred by chance.</p></li>
+<li class="fragment"><p><strong>Effectiveness</strong>: Reflects the practical impact or importance of the predictor on the dependent variable.</p>
+<ul>
+<li class="fragment">Assessed by observing changes in <strong>adjusted R-squared</strong> when the predictor is included.</li>
+<li class="fragment">Statistical significance is evaluated using the <strong>p-value</strong>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="four-scenarios-for-predictors" class="slide level2 center">
+<h2>Four Scenarios for Predictors</h2>
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 38%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><strong>Statistically Significant</strong><br>(e.g.&nbsp;p-value &lt; 0.05)</th>
+<th style="text-align: center;"><strong>Not Statistically Significant</strong><br>(e.g.&nbsp;p-value ≥ 0.05)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Effective</strong> (Adjusted R-squared increases significantly)</td>
+<td style="text-align: center;">Scenario 1<br>Predictor is both statistically significant and effective.</td>
+<td style="text-align: center;">Scenario 3<br>Effective but not statistically significant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Not Effective</strong> (Adjusted R-squared does not increase significantly)</td>
+<td style="text-align: center;">Scenario 2<br>Statistically significant but not effective.</td>
+<td style="text-align: center;">Scenario 4<br>Not statistically significant nor effective.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="scenario-1-statistically-significant-and-effective" class="slide level2 center">
+<h2>Scenario 1: Statistically Significant and Effective</h2>
+<p><strong>Characteristics</strong></p>
+<ul>
+<li class="fragment"><p><strong>p-value</strong> below chosen significance level (e.g., <span class="math inline">\(p &lt; 0.05\)</span>)</p></li>
+<li class="fragment"><p><strong>Adjusted R-squared</strong> increases meaningfully when the predictor is included</p></li>
+</ul>
+<div class="fragment">
+<p><strong>Interpretation</strong></p>
+<ul>
+<li class="fragment"><p>Predictor reliably contributes to the dependent variable’s variance.</p></li>
+<li class="fragment"><p>Both statistically and practically meaningful.</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p><strong>Example</strong></p>
+<ul>
+<li class="fragment"><p><strong>Healthcare</strong>: Adding “age” as a predictor in a model for blood pressure yields a <strong>p-value of <span class="math inline">\(p &lt; 0.001\)</span></strong> and increases the adjusted R-squared from 0.30 to <strong>0.45</strong>.</p></li>
+<li class="fragment"><p>Age is both a statistically significant and effective predictor of blood pressure.</p></li>
+</ul>
+</div>
+</section>
+<section id="scenario-2-statistically-significant-but-not-effective" class="slide level2 center">
+<h2>Scenario 2: Statistically Significant but Not Effective</h2>
+<p><strong>Characteristics</strong></p>
+<ul>
+<li class="fragment"><p><strong>p-value</strong> below the significance threshold</p></li>
+<li class="fragment"><p><strong>Minimal change in adjusted R-squared</strong>: negligible improvement in the model’s explanatory power</p></li>
+</ul>
+<div class="fragment">
+<p><strong>Interpretation</strong></p>
+<ul>
+<li class="fragment">Statistically reliable but lacks practical impact.</li>
+<li class="fragment">Common in large samples where even small effects become significant.</li>
+</ul>
+</div>
+<div class="fragment">
+<p><strong>Example</strong></p>
+<ul>
+<li class="fragment"><strong>Economics</strong>: Adding “hair color” as a predictor of income yields <strong>p = 0.02</strong>, but increases adjusted R-squared from 0.25 to <strong>0.251</strong>.</li>
+<li class="fragment">Hair color is statistically significant but not practically effective.</li>
+</ul>
+</div>
+</section>
+<section id="scenario-3-not-statistically-significant-but-effective" class="slide level2 center">
+<h2>Scenario 3: Not Statistically Significant but Effective</h2>
+<p><strong>Characteristics</strong></p>
+<ul>
+<li class="fragment"><strong>p-value</strong> exceeds the significance level (e.g., <span class="math inline">\(p &gt; 0.05\)</span>)</li>
+<li class="fragment"><strong>Substantial increase in adjusted R-squared</strong></li>
+</ul>
+<div class="fragment">
+<p><strong>Interpretation</strong></p>
+<ul>
+<li class="fragment">Meaningful effect, but lacks statistical support.</li>
+<li class="fragment">May need a larger sample size or further refinement.</li>
+</ul>
+</div>
+<div class="fragment">
+<p><strong>Example</strong></p>
+<ul>
+<li class="fragment"><p><strong>Education</strong>: Adding “hours of sleep” as a predictor of student performance increases adjusted R-squared from 0.40 to <strong>0.50</strong> but yields <strong>p = 0.08</strong>.</p></li>
+<li class="fragment"><p>“Hours of sleep” has a practical impact but isn’t statistically significant.</p></li>
+</ul>
+</div>
+</section>
+<section id="scenario-4-not-statistically-significant-and-not-effective" class="slide level2 center">
+<h2>Scenario 4: Not Statistically Significant and Not Effective</h2>
+<p><strong>Characteristics</strong></p>
+<ul>
+<li class="fragment"><strong>p-value</strong> above the significance threshold</li>
+<li class="fragment"><strong>No increase in adjusted R-squared</strong></li>
+</ul>
+<div class="fragment">
+<p><strong>Interpretation</strong></p>
+<ul>
+<li class="fragment">Predictor lacks both statistical and practical value.</li>
+<li class="fragment">Likely safe to exclude from the model.</li>
+</ul>
+</div>
+<div class="fragment">
+<p><strong>Example</strong></p>
+<ul>
+<li class="fragment"><strong>Marketing</strong>: Adding “shoe size” to predict customer satisfaction yields <strong>p = 0.60</strong> and decreases adjusted R-squared from 0.35 to <strong>0.34</strong>.</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="strategies-for-adding-or-removing-variables" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Strategies for Adding or Removing Variables</h1>
+
+</section>
+<section id="strategies-for-adding-or-removing-variables-1" class="slide level2 center">
 <h2>Strategies for Adding or Removing Variables</h2>
 <div style="font-size: 70%;">
 <table class="caption-top">
@@ -1052,20 +1185,27 @@ y = e^{4.5} \approx 90.02
 </tr>
 <tr class="odd">
 <td>7</td>
+<td><strong>Best Subset Selection</strong></td>
+<td>Compares all possible combinations of predictors to identify the best model</td>
+<td>Adds the combination of predictors with the best performance based on chosen criteria (e.g., adjusted <span class="math inline">\(R^2\)</span>)</td>
+<td>N/A; evaluates models by selecting the best subset</td>
+</tr>
+<tr class="even">
+<td>8</td>
 <td><a href="https://openintro-ims.netlify.app/inf-model-mlr#sec-inf-mult-reg-cv" target="_blank"><strong>Cross-Validation</strong></a></td>
 <td>Assesses model performance across different data subsets</td>
 <td>If cross-validation performance improves</td>
 <td>If cross-validation performance worsens</td>
 </tr>
-<tr class="even">
-<td>8</td>
+<tr class="odd">
+<td>9</td>
 <td><a href="https://ftp.cs.ucla.edu/pub/stat_ser/r493.pdf" target="_blank"><strong>Good vs Bad Controls</strong></a></td>
 <td>For causal inference purposes</td>
 <td>Add good controls that help block non-causal paths</td>
 <td>Remove bad controls that open new spurious paths</td>
 </tr>
-<tr class="odd">
-<td>9</td>
+<tr class="even">
+<td>10</td>
 <td><strong>Theoretical Justification</strong></td>
 <td>Adds or removes variables based on theory, domain knowledge, or experience</td>
 <td>Add based on theory or domain knowledge</td>
