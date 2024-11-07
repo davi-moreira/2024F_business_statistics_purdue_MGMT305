@@ -2680,6 +2680,7 @@ It is analogous to the seasonal component but over a longer period. However, due
 
 # Summary {background-color="#cfb991"}
 
+
 ## Summary
 
 :::: {style="font-size: 90%;"}
@@ -2696,5 +2697,32 @@ Some key takeaways from this session:
 
 :::
 ::::
+
+## Summary
+
+:::: {style="font-size: 70%;"}
+::: nonincremental
+
+**Important**: The following table is not exhaustive; it merely illustrates the examples discussed in the lecture. Remember that within the General Linear Model framework, these methods can be combined and adapted based on the specific objectives of the analysis.
+
+<br>
+
+| Forecasting Method / Pattern              | Horizontal | Linear Trend | Non-linear Trend | Seasonal | Seasonal + Trend |
+|----------------------------------|:------------:|:--------------:|:------------------:|:----------:|:-------------------:|
+| 1. Naive Forecast                | X          |              |                  |          |                   |
+| 2. Hist. Data Average Method     | X          |              |                  |          |                   |
+| 3. Moving Average ($k$ and $1/k$)            | X          |              |                  |          |                   |
+| 4. Weighted Moving Average ($k$, weights should sum to 1)       | X          |              |                  |          |                   |
+| 5. Exponential Smoothing ($\alpha$)     | X          |             |                  |          |                   |
+| 6. Linear Regression Model: Lag Variable  |            |      X        | X                |     X     |         X          |
+| 7. Linear Regression Model: Time as Independent Variable |     | X           |                 |          |                   |
+| 8. Linear Regression Model: Time as Independent Variable with Transformation                |            |              |       X           |         |                   |
+| 9. Linear Regression Model: Season as Independent Variable |          |              |                  | X        |                   |
+| 10. Linear Regression Model: Time and Season as Independent Variables | |             |                  |          | X                 |
+
+:::
+::::
+
+
 
 # Thank you! {background-color="#cfb991"}

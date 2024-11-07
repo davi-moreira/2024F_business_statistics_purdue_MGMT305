@@ -8944,5 +8944,12 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Scenario 4: Not Statistically Significant and Not Effective",
     "text": "Scenario 4: Not Statistically Significant and Not Effective\nCharacteristics\n\np-value above the significance threshold\nNo increase in adjusted R-squared\n\n\nInterpretation\n\nPredictor lacks both statistical and practical value.\nLikely safe to exclude from the model.\n\n\n\nExample\n\nMarketing: Adding “shoe size” to predict customer satisfaction yields p = 0.60 and decreases adjusted R-squared from 0.35 to 0.34."
+  },
+  {
+    "objectID": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#summary-2",
+    "href": "lecture_slides/17_chapter_time_series/17_chapter_time_series.html#summary-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary",
+    "text": "Summary\n\n\nImportant: The following table is not exhaustive; it merely illustrates the examples discussed in the lecture. Remember that within the General Linear Model framework, these methods can be combined and adapted based on the specific objectives of the analysis.\n\n\n\n\n\n\n\n\n\n\n\n\nForecasting Method / Pattern\nHorizontal\nLinear Trend\nNon-linear Trend\nSeasonal\nSeasonal + Trend\n\n\n\n\n1. Naive Forecast\nX\n\n\n\n\n\n\n2. Hist. Data Average Method\nX\n\n\n\n\n\n\n3. Moving Average (\\(k\\) and \\(1/k\\))\nX\n\n\n\n\n\n\n4. Weighted Moving Average (\\(k\\), weights should sum to 1)\nX\n\n\n\n\n\n\n5. Exponential Smoothing (\\(\\alpha\\))\nX\n\n\n\n\n\n\n6. Linear Regression Model: Lag Variable\n\nX\nX\nX\nX\n\n\n7. Linear Regression Model: Time as Independent Variable\n\nX\n\n\n\n\n\n8. Linear Regression Model: Time as Independent Variable with Transformation\n\n\nX\n\n\n\n\n9. Linear Regression Model: Season as Independent Variable\n\n\n\nX\n\n\n\n10. Linear Regression Model: Time and Season as Independent Variables\n\n\n\n\nX"
   }
 ]

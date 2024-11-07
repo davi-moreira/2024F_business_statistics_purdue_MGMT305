@@ -4991,6 +4991,117 @@ Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
 </ul>
 </div>
 </div>
+</section>
+<section id="summary-2" class="slide level2 center">
+<h2>Summary</h2>
+<div style="font-size: 70%;">
+<div>
+<p><strong>Important</strong>: The following table is not exhaustive; it merely illustrates the examples discussed in the lecture. Remember that within the General Linear Model framework, these methods can be combined and adapted based on the specific objectives of the analysis.</p>
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 11%">
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 10%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Forecasting Method / Pattern</th>
+<th style="text-align: center;">Horizontal</th>
+<th style="text-align: center;">Linear Trend</th>
+<th style="text-align: center;">Non-linear Trend</th>
+<th style="text-align: center;">Seasonal</th>
+<th style="text-align: center;">Seasonal + Trend</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Naive Forecast</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>2. Hist. Data Average Method</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>3. Moving Average (<span class="math inline">\(k\)</span> and <span class="math inline">\(1/k\)</span>)</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>4. Weighted Moving Average (<span class="math inline">\(k\)</span>, weights should sum to 1)</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>5. Exponential Smoothing (<span class="math inline">\(\alpha\)</span>)</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>6. Linear Regression Model: Lag Variable</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="odd">
+<td>7. Linear Regression Model: Time as Independent Variable</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>8. Linear Regression Model: Time as Independent Variable with Transformation</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>9. Linear Regression Model: Season as Independent Variable</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>10. Linear Regression Model: Time and Season as Independent Variables</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section></section>
 <section id="thank-you" class="title-slide slide level1 center" data-background-color="#cfb991">
 <h1>Thank you!</h1>
