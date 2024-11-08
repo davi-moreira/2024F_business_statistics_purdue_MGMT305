@@ -1166,9 +1166,7 @@ where the predictor is the Lag 4 variable.
 
 ## Forecast with Lag Variables: Excel
 
-
-
-:::: {style="font-size: 60%;"}
+:::: {style="font-size: 55%;"}
 <center>
 **Important!<br>Do not include empty cells or fill empty cells with zeros in Step 2.** 
 </center>
@@ -1520,7 +1518,7 @@ $$
 
 ## Regression Output: Example Excel
 
-::: {style="font-size: 80%;"}
+::: {style="font-size: 70%;"}
 
 :::::: nonincremental
 ::::: columns
@@ -2179,6 +2177,8 @@ In other words, the estimated regression coefficient for Qtr1 provides an estima
 
 ## Time Series Decomposition: Motivation
 
+::: {style="font-size: 80%;"}
+
 - Understanding what is really going on with a time series often depends upon the use of deseasonalized data. 
 
 - For example, we might be interested in learning whether electrical power consumption is increasing in our area. 
@@ -2192,6 +2192,8 @@ In other words, the estimated regression coefficient for Qtr1 provides an estima
 - Indeed, after adjusting for the seasonal effect, we might even find that the use of electric power increased. 
 
 - Many other time series, such as unemployment statistics, home sales, and retail sales, are subject to strong seasonal influences. It is important to deseasonalize such data before making a judgment about any long-term trend.
+
+:::
 
 ## Time Series Decomposition
 
@@ -2650,7 +2652,7 @@ knitr::include_graphics("figs/deseasonalized_plot.png")
 
 **Identifying Trend in Deseasonalized Data**
 
-The graph of the deseasonalized smartphone sales time series shown in **Figure 17.25** appears to have an upward linear trend.
+The graph of the deseasonalized smartphone sales time series shown in the Figure appears to have an upward linear trend.
 
 - To identify this trend, we will fit a linear trend equation to the deseasonalized time series.
 
