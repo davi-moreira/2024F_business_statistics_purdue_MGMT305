@@ -2393,6 +2393,71 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 \]</span></p>
 <p>where the predictor is the Lag 4 variable.</p>
 </div>
+</section>
+<section id="forecast-with-lag-variables-excel" class="slide level2 center">
+<h2>Forecast with Lag Variables: Excel</h2>
+<div style="font-size: 60%;">
+<center>
+<strong>Important!<br>Do not include empty cells or fill empty cells with zeros in Step 2.</strong>
+</center>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:45%;">
+<center>
+<strong>Step 1: Set Up Your Data in Excel</strong>
+</center>
+<ol type="1">
+<li class="fragment"><p><strong>Organize Your Data</strong></p>
+<ul>
+<li class="fragment">Place your main variable (e.g., <span class="math inline">\(Y\)</span>) in one column (e.g., <strong>A</strong>) with the header “Y”.</li>
+<li class="fragment">Create two new columns for the lagged versions of <span class="math inline">\(Y\)</span>:
+<ul>
+<li class="fragment"><strong>“Y_lag1”</strong> for the first lag, containing values of <span class="math inline">\(Y\)</span> shifted down by one row.</li>
+<li class="fragment"><strong>“Y_lag2”</strong> for the second lag, containing values of <span class="math inline">\(Y\)</span> shifted down by two rows.</li>
+</ul></li>
+</ul></li>
+<li class="fragment"><p><strong>Create the Lagged Variables</strong></p>
+<ul>
+<li class="fragment">In <strong>B3</strong> (under “Y_lag1”), enter the formula <code>=A2</code> to reference the previous row’s value of <span class="math inline">\(Y\)</span>.</li>
+<li class="fragment">In <strong>C4</strong> (under “Y_lag2”), enter the formula <code>=A2</code> to reference the value of <span class="math inline">\(Y\)</span> two rows above.
+<ul>
+<li class="fragment">Copy these formulas down the columns to match the length of the <span class="math inline">\(Y\)</span> column.</li>
+<li class="fragment">Leave the first two rows empty in the lagged variable columns, as there are no lagged values for the initial observations.</li>
+</ul></li>
+</ul></li>
+<li class="fragment"><p><strong>Prepare Data for Regression</strong></p>
+<ul>
+<li class="fragment">Removing the first two rows from your analysis since they lack lagged values in an option, but it is not recommended. Start analysis from row 4 onward.</li>
+</ul></li>
+</ol>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<center>
+<strong>Step 2: Run the Regression</strong>
+</center>
+<p><br></p>
+<ol type="1">
+<li class="fragment"><p><strong>Open the Data Analysis Tool</strong></p>
+<ul>
+<li class="fragment"><p>Go to the <strong>Data</strong> tab &gt; <strong>Data Analysis</strong>.</p></li>
+<li class="fragment"><p>If <strong>Data Analysis</strong> isn’t visible, enable it via <strong>File</strong> &gt; <strong>Options</strong> &gt; <strong>Add-Ins</strong> &gt; <strong>Excel Add-ins</strong> &gt; <strong>Analysis ToolPak</strong>.</p></li>
+</ul></li>
+<li class="fragment"><p><strong>Select Regression</strong>: Choose <strong>Regression</strong> in the <strong>Data Analysis</strong> dialog and click <strong>OK</strong>.</p></li>
+<li class="fragment"><p><strong>Specify the Input Range</strong></p>
+<ul>
+<li class="fragment"><p><strong>Input Y Range</strong>: Select the range of <span class="math inline">\(Y\)</span> values, excluding the first two rows (e.g., <strong>A4:A20</strong>). Do not fill empty cells with zeros.</p></li>
+<li class="fragment"><p><strong>Input X Range</strong>: Select both lagged variable ranges (e.g., <strong>B4:C20</strong>). Do not fill empty cells with zeros.</p></li>
+</ul></li>
+<li class="fragment"><p><strong>Set Up Additional Options</strong></p>
+<ul>
+<li class="fragment"><p>Check <strong>Labels</strong> if headers were included in your input ranges.</p></li>
+<li class="fragment"><p>Choose the output location for the regression results.</p></li>
+</ul></li>
+<li class="fragment"><p><strong>Run the Regression</strong>: Click <strong>OK</strong> to run. Excel will generate the regression output.</p></li>
+</ol>
+</div></div>
+</div>
 <!---
 ## Moving Averages and Stock Charts
 
@@ -5059,7 +5124,7 @@ Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td>6. Linear Regression Model: Lag Variable</td>
+<td>6. Regression Model: Lag Variable</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">X</td>
 <td style="text-align: center;">X</td>
@@ -5067,7 +5132,7 @@ Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
 <td style="text-align: center;">X</td>
 </tr>
 <tr class="odd">
-<td>7. Linear Regression Model: Time as Independent Variable</td>
+<td>7. Regression Model: Time as Independent Variable</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">X</td>
 <td style="text-align: center;"></td>
@@ -5075,7 +5140,7 @@ Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td>8. Linear Regression Model: Time as Independent Variable with Transformation</td>
+<td>8. Regression Model: Time as Independent Variable with Transformation</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">X</td>
@@ -5083,7 +5148,7 @@ Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
 <td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
-<td>9. Linear Regression Model: Season as Independent Variable</td>
+<td>9. Regression Model: Season as Independent Variable</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
@@ -5091,7 +5156,7 @@ Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td>10. Linear Regression Model: Time and Season as Independent Variables</td>
+<td>10. Regression Model: Time and Season as Independent Variables</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>

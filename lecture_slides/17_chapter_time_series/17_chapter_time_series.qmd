@@ -1164,6 +1164,81 @@ where the predictor is the Lag 4 variable.
 
 :::
 
+## Forecast with Lag Variables: Excel
+
+
+
+:::: {style="font-size: 60%;"}
+<center>
+**Important!<br>Do not include empty cells or fill empty cells with zeros in Step 2.** 
+</center>
+<br>
+
+:::: {.columns}
+::: {.column width="45%"}
+
+<center>
+**Step 1: Set Up Your Data in Excel**
+</center>
+
+1. **Organize Your Data**
+
+   - Place your main variable (e.g., $Y$) in one column (e.g., **A**) with the header "Y".
+   - Create two new columns for the lagged versions of $Y$:
+       - **"Y_lag1"** for the first lag, containing values of $Y$ shifted down by one row.
+       - **"Y_lag2"** for the second lag, containing values of $Y$ shifted down by two rows.
+
+2. **Create the Lagged Variables**
+
+   - In **B3** (under "Y_lag1"), enter the formula `=A2` to reference the previous row’s value of $Y$.
+   - In **C4** (under "Y_lag2"), enter the formula `=A2` to reference the value of $Y$ two rows above.
+       - Copy these formulas down the columns to match the length of the $Y$ column.
+       - Leave the first two rows empty in the lagged variable columns, as there are no lagged values for the initial observations.
+
+3. **Prepare Data for Regression**  
+
+   - Removing the first two rows from your analysis since they lack lagged values in an option, but it is not recommended. Start analysis from row 4 onward.
+
+
+:::
+::: {.column width="10%"}
+:::
+::: {.column width="45%"}
+
+<center>
+**Step 2: Run the Regression**
+</center>
+<br>
+
+1. **Open the Data Analysis Tool**
+
+   - Go to the **Data** tab > **Data Analysis**.
+  
+   - If **Data Analysis** isn’t visible, enable it via **File** > **Options** > **Add-Ins** > **Excel Add-ins** > **Analysis ToolPak**.
+
+2. **Select Regression**: Choose **Regression** in the **Data Analysis** dialog and click **OK**.
+
+3. **Specify the Input Range**
+   
+   - **Input Y Range**: Select the range of $Y$ values, excluding the first two rows (e.g., **A4:A20**). Do not fill empty cells with zeros.
+
+   - **Input X Range**: Select both lagged variable ranges (e.g., **B4:C20**). Do not fill empty cells with zeros.
+
+4. **Set Up Additional Options**
+
+   - Check **Labels** if headers were included in your input ranges.
+  
+   - Choose the output location for the regression results.
+
+5. **Run the Regression**: Click **OK** to run. Excel will generate the regression output.
+
+:::
+::::
+::::
+
+
+
+
 <!---
 ## Moving Averages and Stock Charts
 
@@ -2714,11 +2789,11 @@ Some key takeaways from this session:
 | 3. Moving Average ($k$ and $1/k$)            | X          |              |                  |          |                   |
 | 4. Weighted Moving Average ($k$, weights should sum to 1)       | X          |              |                  |          |                   |
 | 5. Exponential Smoothing ($\alpha$)     | X          |             |                  |          |                   |
-| 6. Linear Regression Model: Lag Variable  |            |      X        | X                |     X     |         X          |
-| 7. Linear Regression Model: Time as Independent Variable |     | X           |                 |          |                   |
-| 8. Linear Regression Model: Time as Independent Variable with Transformation                |            |              |       X           |         |                   |
-| 9. Linear Regression Model: Season as Independent Variable |          |              |                  | X        |                   |
-| 10. Linear Regression Model: Time and Season as Independent Variables | |             |                  |          | X                 |
+| 6. Regression Model: Lag Variable  |            |      X        | X                |     X     |         X          |
+| 7. Regression Model: Time as Independent Variable |     | X           |                 |          |                   |
+| 8. Regression Model: Time as Independent Variable with Transformation                |            |              |       X           |         |                   |
+| 9. Regression Model: Season as Independent Variable |          |              |                  | X        |                   |
+| 10. Regression Model: Time and Season as Independent Variables | |             |                  |          | X                 |
 
 :::
 ::::
