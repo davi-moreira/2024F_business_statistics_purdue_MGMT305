@@ -81,7 +81,7 @@ editor: visual
 | Nov 22  | Decision Analysis (cont’d)                | 20.3                                         |.  |.  |.  |
 | Nov 22  | Decision Analysis (cont’d)                | 20.4                                         |.  |.  |.  |
 | **Nov 27-30** | **Thanksgiving Break**                    | **No Class**                                          |.  |.  |.  |
-| **Dec 1**   | **Homework 8 due date**                     | **Decision Analysis and Quality Control**             |.  |.  |.  |
+| **Dec 1**   | **Homework 8 due date**                     | **Quality Control and Decision Analysis**             |.  |.  |.  |
 | Dec 2   | Final Exam Review I                     | Cumulative                                        |.  |.  |.  |
 | Dec 4   | Final Exam Review II                    | Cumulative                                        |.  |.  |.  |
 | **Dec 6**   | **Final Exam Preparation**                  | **No Class**                                          |.  |.  |.  |
