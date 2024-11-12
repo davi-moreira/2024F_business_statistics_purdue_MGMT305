@@ -274,7 +274,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Date\nTopic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\nAug 19\nIntro. & Basic Stat. & Prob. Rvw.\nSyl., 1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years- IMS: Introduction to data\n\n\nAug 21\nBasic Stat. & Prob. Rvw. (cont’d)\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics: Observations, Variable, and Data Matrices- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data-IMS: Exploratory data analysis\n\n\nAug 23\nBasic Stat. & Prob. Rvw. (cont’d)\n6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\nAug 26\nInt. Est. Rvw.\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates and Sampling Variability - Video: Confidence Intervals- Video: Inferences for Proportions- Video: t-distribution- Video: Inference for one mean- IMS: Inference with mathematical models- IMS: Confidence intervals with bootstrapping - IMS: Inference for a single proportion -IMS: Inference for a single mean\n\n\nAug 28\nHyp. Testing Rvw.\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals - IMS: Hypothesis testing with randomization- MD: Hypothesis Testing\n\n\nAug 30\nHyp. Testing Rvw. (cont’d)\n11.1, 11.2\nslides\ndata\n- Blog: There is Still Only One Test - Nature: Statisticians issue warning over misuse of P-values - ASA: Statement on Statistical Significance and p-values\n\n\nSep 1\nHomework 1 due date\nBasic Stat. & Prob. Rvw.\n.\n.\n.\n\n\nSep 2\nLabor Day\nNo class\n.\n.\n.\n\n\nSep 3\nQuiz 1\nReview Material (Chs. 1 – 12)\n.\n.\n.\n\n\nSep 4\nNo class\nNo class\n.\n.\n.\n\n\nSep 6\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction - Video: Conditions for ANOVA - Video: Multiple comparisons -IMS: Inference for comparing many means\n\n\nSep 8\nHomework 2 due date\nInt. Est. & Hyp. Testing Rvw.\n.\n.\n.\n\n\nSep 9\nSimple Regression\n14.1\nslides\ndata\n- Video: Line Fitting, Residuals, and Correlation - Video: Fitting a Line with Least Squares Regression - Video: Least Squares Regression - Video: Types of Outliers in Linear Regression - Video: Inference for Linear Regression -IMS: Linear regression with a single predictor -IMS: Inference for linear regression with a single predictor\n\n\nSep 11\nSimple Regression (cont’d)\n14.2, 14.3\nslides\n.\n.\n\n\nSep 13\nSimple Regression (cont’d)\n14.4, 14.5\nslides\n.\n.\n\n\nSep 16\nSimple Regression (cont’d)\n14.6, 14.7\nslides\n.\n.\n\n\nSep 18\nSimple Regression (cont’d)\n14.8\nslides\n.\n.\n\n\nSep 20\nSimple Regression (cont’d)\n14.9\nslides\n.\n.\n\n\nSep 22\nHomework 3 due date\nSimple Regression\n\n\n\n\n\n.\n.\n.\n\n\n\n\n\nSep 23\nMultiple Regression\n15.1\nslides\ndata\n- Video: Introduction to Multiple Regression- Video: Model Selection in Multiple Regression- Video: Checking Multiple Regression Diagnostics Using Graphs-IMS: Linear regression with multiple predictors-IMS: Inference for linear regression with multiple predictors\n\n\nSep 25\nMultiple Regression\n15.2\nslides\n.\n.\n\n\nSep 27\nMultiple Regression (cont’d)\nMidterm 1 Review\n.\n.\n.\n\n\nSep 30\nMidterm 1 (6:30 pm – 7:30 pm, UC 114)\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\nOct 2\nMultiple Regression (cont’d)\n15.3, 15.4\nslides\n.\n.\n\n\nOct 4\nMultiple Regression (cont’d)\n15.5, 15.6\nslides\n.\n.\n\n\nOct 6\nHomework 4 due date\nMultiple Regression Pt. 1\n.\n.\n.\n\n\nOct 7-8\nOct Break\nNo Class\n.\n.\n.\n\n\nOct 9\nMultiple Regression (cont’d)\n15.7\nslides\n.\n.\n\n\nOct 11\nMultiple Regression (cont’d)\n15.8\nslides\n.\n.\n\n\nOct 14\nQuiz 2\nMultiple Regression\n.\n.\n.\n\n\nOct 16\nModel Building\n16.1\nslides\ndata\n- Video: Model Selection in Multiple Regression- IMS: Model Selection- IMS: Multicollinearity- IMS: Cross-validation for prediction error\n\n\nOct 18\nModel Building (cont’d)\n16.2\nslides\n.\n.\n\n\nOct 21\nModel Building (cont’d)\n16.3, 16.4\nslides\n.\n.\n\n\nOct 23\nHomework 5 due date\nMultiple Regression Pt. 2\n.\n.\n.\n\n\nOct 23\nLogistic Regression\nSupplement in Brightspace and Slides\nslides\n.\n- Video: Basic Ideas of Logistic Regression- IMS: Logistic regression- IMS: Inference for logistic regression\n\n\nOct 25\nLogistic Regression (cont’d)\nSupplement in Brightspace and Slides\nslides\n.\n.\n\n\nOct 28\nMidterm 2 Review\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nOct 29\nHomework 6 due date\nLogistic Regression\n.\n.\n.\n\n\n31\nMidterm 2 (6:30 pm – 7:30 pm, UC 114)\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nNov 1\nTime Series\n17.1\nslides\ndata\nVideo: Time Series Forecast Using Forecast Sheet in Excel\n\n\nNov 4\nTime Series (cont’d)\n17.2, 17.3\nslides\n.\n.\n\n\nNov 6\nTime Series (cont’d)\n17.4, 17.5\nslides\n.\n.\n\n\nNov 8\nTime Series (cont’d)\n17.6\nslides\n.\n.\n\n\nNov 10\nHomework 7 due date\nTime Series\n.\n.\n.\n\n\nNov 11\nNo class\nNo class\n.\n.\n.\n\n\nNov 12\nQuiz 3\nTime Series\n.\n.\n.\n\n\nNov 13\nDecision Analysis\n19.1, 19.2\n.\n.\n.\n\n\nNov 15\nDecision Analysis (cont’d)\n19.3\n.\n.\n.\n\n\nNov 18\nQuality Control\n20.1, 20.2\n.\n.\n.\n\n\nNov 20\nQuality Control (cont’d)\n20.3, 20.4\n.\n.\n.\n\n\nNov 22\nQuality Control (cont’d)\nApplications\n.\n.\n.\n\n\nNov 27-30\nThanksgiving Break\nNo Class\n.\n.\n.\n\n\nDec 1\nHomework 8 due date\nDecision Analysis and Quality Control\n.\n.\n.\n\n\nDec 2\nFinal Exam Review I\nCumulative\n.\n.\n.\n\n\nDec 4\nFinal Exam Review II\nCumulative\n.\n.\n.\n\n\nDec 6\nFinal Exam Preparation\nNo Class\n.\n.\n.\n\n\nTBD\nFinal Exam\nCumulative\n.\n.\n.\n\n\n\n\n*Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
+    "text": "Date\nTopic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\nAug 19\nIntro. & Basic Stat. & Prob. Rvw.\nSyl., 1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years- IMS: Introduction to data\n\n\nAug 21\nBasic Stat. & Prob. Rvw. (cont’d)\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics: Observations, Variable, and Data Matrices- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data-IMS: Exploratory data analysis\n\n\nAug 23\nBasic Stat. & Prob. Rvw. (cont’d)\n6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\nAug 26\nInt. Est. Rvw.\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates and Sampling Variability - Video: Confidence Intervals- Video: Inferences for Proportions- Video: t-distribution- Video: Inference for one mean- IMS: Inference with mathematical models- IMS: Confidence intervals with bootstrapping - IMS: Inference for a single proportion -IMS: Inference for a single mean\n\n\nAug 28\nHyp. Testing Rvw.\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals - IMS: Hypothesis testing with randomization- MD: Hypothesis Testing\n\n\nAug 30\nHyp. Testing Rvw. (cont’d)\n11.1, 11.2\nslides\ndata\n- Blog: There is Still Only One Test - Nature: Statisticians issue warning over misuse of P-values - ASA: Statement on Statistical Significance and p-values\n\n\nSep 1\nHomework 1 due date\nBasic Stat. & Prob. Rvw.\n.\n.\n.\n\n\nSep 2\nLabor Day\nNo class\n.\n.\n.\n\n\nSep 3\nQuiz 1\nReview Material (Chs. 1 – 12)\n.\n.\n.\n\n\nSep 4\nNo class\nNo class\n.\n.\n.\n\n\nSep 6\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction - Video: Conditions for ANOVA - Video: Multiple comparisons -IMS: Inference for comparing many means\n\n\nSep 8\nHomework 2 due date\nInt. Est. & Hyp. Testing Rvw.\n.\n.\n.\n\n\nSep 9\nSimple Regression\n14.1\nslides\ndata\n- Video: Line Fitting, Residuals, and Correlation - Video: Fitting a Line with Least Squares Regression - Video: Least Squares Regression - Video: Types of Outliers in Linear Regression - Video: Inference for Linear Regression -IMS: Linear regression with a single predictor -IMS: Inference for linear regression with a single predictor\n\n\nSep 11\nSimple Regression (cont’d)\n14.2, 14.3\nslides\n.\n.\n\n\nSep 13\nSimple Regression (cont’d)\n14.4, 14.5\nslides\n.\n.\n\n\nSep 16\nSimple Regression (cont’d)\n14.6, 14.7\nslides\n.\n.\n\n\nSep 18\nSimple Regression (cont’d)\n14.8\nslides\n.\n.\n\n\nSep 20\nSimple Regression (cont’d)\n14.9\nslides\n.\n.\n\n\nSep 22\nHomework 3 due date\nSimple Regression\n\n\n\n\n\n.\n.\n.\n\n\n\n\n\nSep 23\nMultiple Regression\n15.1\nslides\ndata\n- Video: Introduction to Multiple Regression- Video: Model Selection in Multiple Regression- Video: Checking Multiple Regression Diagnostics Using Graphs-IMS: Linear regression with multiple predictors-IMS: Inference for linear regression with multiple predictors\n\n\nSep 25\nMultiple Regression\n15.2\nslides\n.\n.\n\n\nSep 27\nMultiple Regression (cont’d)\nMidterm 1 Review\n.\n.\n.\n\n\nSep 30\nMidterm 1 (6:30 pm – 7:30 pm, UC 114)\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\nOct 2\nMultiple Regression (cont’d)\n15.3, 15.4\nslides\n.\n.\n\n\nOct 4\nMultiple Regression (cont’d)\n15.5, 15.6\nslides\n.\n.\n\n\nOct 6\nHomework 4 due date\nMultiple Regression Pt. 1\n.\n.\n.\n\n\nOct 7-8\nOct Break\nNo Class\n.\n.\n.\n\n\nOct 9\nMultiple Regression (cont’d)\n15.7\nslides\n.\n.\n\n\nOct 11\nMultiple Regression (cont’d)\n15.8\nslides\n.\n.\n\n\nOct 14\nQuiz 2\nMultiple Regression\n.\n.\n.\n\n\nOct 16\nModel Building\n16.1\nslides\ndata\n- Video: Model Selection in Multiple Regression- IMS: Model Selection- IMS: Multicollinearity- IMS: Cross-validation for prediction error\n\n\nOct 18\nModel Building (cont’d)\n16.2\nslides\n.\n.\n\n\nOct 21\nModel Building (cont’d)\n16.3, 16.4\nslides\n.\n.\n\n\nOct 23\nHomework 5 due date\nMultiple Regression Pt. 2\n.\n.\n.\n\n\nOct 23\nLogistic Regression\nSupplement in Brightspace and Slides\nslides\n.\n- Video: Basic Ideas of Logistic Regression- IMS: Logistic regression- IMS: Inference for logistic regression\n\n\nOct 25\nLogistic Regression (cont’d)\nSupplement in Brightspace and Slides\nslides\n.\n.\n\n\nOct 28\nMidterm 2 Review\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nOct 29\nHomework 6 due date\nLogistic Regression\n.\n.\n.\n\n\n31\nMidterm 2 (6:30 pm – 7:30 pm, UC 114)\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nNov 1\nTime Series\n17.1\nslides\ndata\nVideo: Time Series Forecast Using Forecast Sheet in Excel\n\n\nNov 4\nTime Series (cont’d)\n17.2, 17.3\nslides\n.\n.\n\n\nNov 6\nTime Series (cont’d)\n17.4, 17.5\nslides\n.\n.\n\n\nNov 8\nTime Series (cont’d)\n17.6\nslides\n.\n.\n\n\nNov 10\nHomework 7 due date\nTime Series\n.\n.\n.\n\n\nNov 11\nNo class\nNo class\n.\n.\n.\n\n\nNov 12\nQuiz 3\nTime Series\n.\n.\n.\n\n\nNov 13\nQuality Control\n19.1\nslides\n.\n.\n\n\nNov 15\nQuality Control (cont’d)\n19.2\nslides\n.\n.\n\n\nNov 18\nQuality Control (cont’d)\n19.3\nslides\n.\n.\n\n\nNov 20\nDecision Analysis\n20.1, 20.2\n.\n.\n.\n\n\nNov 22\nDecision Analysis (cont’d)\n20.3\n.\n.\n.\n\n\nNov 22\nDecision Analysis (cont’d)\n20.4\n.\n.\n.\n\n\nNov 27-30\nThanksgiving Break\nNo Class\n.\n.\n.\n\n\nDec 1\nHomework 8 due date\nDecision Analysis and Quality Control\n.\n.\n.\n\n\nDec 2\nFinal Exam Review I\nCumulative\n.\n.\n.\n\n\nDec 4\nFinal Exam Review II\nCumulative\n.\n.\n.\n\n\nDec 6\nFinal Exam Preparation\nNo Class\n.\n.\n.\n\n\nTBD\nFinal Exam\nCumulative\n.\n.\n.\n\n\n\n\n*Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
     "crumbs": [
       "Schedule and Material"
     ]
@@ -8958,5 +8958,740 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Forecast with Lag Variables: Excel",
     "text": "Forecast with Lag Variables: Excel\n\n\nImportant!Do not include empty cells or fill empty cells with zeros in Step 2.\n\n\n\n\n\nStep 1: Set Up Your Data in Excel\n\n\nOrganize Your Data\n\nPlace your main variable (e.g., \\(Y\\)) in one column (e.g., A) with the header “Y”.\nCreate two new columns for the lagged versions of \\(Y\\):\n\n“Y_lag1” for the first lag, containing values of \\(Y\\) shifted down by one row.\n“Y_lag2” for the second lag, containing values of \\(Y\\) shifted down by two rows.\n\n\nCreate the Lagged Variables\n\nIn B3 (under “Y_lag1”), enter the formula =A2 to reference the previous row’s value of \\(Y\\).\nIn C4 (under “Y_lag2”), enter the formula =A2 to reference the value of \\(Y\\) two rows above.\n\nCopy these formulas down the columns to match the length of the \\(Y\\) column.\nLeave the first two rows empty in the lagged variable columns, as there are no lagged values for the initial observations.\n\n\nPrepare Data for Regression\n\nRemoving the first two rows from your analysis since they lack lagged values in an option, but it is not recommended. Start analysis from row 4 onward.\n\n\n\n\n\n\nStep 2: Run the Regression\n\n\n\nOpen the Data Analysis Tool\n\nGo to the Data tab &gt; Data Analysis.\nIf Data Analysis isn’t visible, enable it via File &gt; Options &gt; Add-Ins &gt; Excel Add-ins &gt; Analysis ToolPak.\n\nSelect Regression: Choose Regression in the Data Analysis dialog and click OK.\nSpecify the Input Range\n\nInput Y Range: Select the range of \\(Y\\) values, excluding the first two rows (e.g., A4:A20). Do not fill empty cells with zeros.\nInput X Range: Select both lagged variable ranges (e.g., B4:C20). Do not fill empty cells with zeros.\n\nSet Up Additional Options\n\nCheck Labels if headers were included in your input ranges.\nChoose the output location for the regression results.\n\nRun the Regression: Click OK to run. Excel will generate the regression output."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#overview",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#overview",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nPhilosophies and frameworks\nStatistical Process Control (SPC) with Control Charts for\n\nProcess mean (\\(\\mu\\))\nProcess variability (Range, R)\nProcess proportion of defectives (\\(p\\))\nProcess expected number of defectives (\\(np\\)) in a sample of size \\(n\\)\n\n\n\n\nAcceptance Sampling\nMultiple Sampling Plans"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-methods-for-quality",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-methods-for-quality",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Statistical Methods for Quality",
+    "text": "Statistical Methods for Quality\n\nStatistical Design of Experiments (DOEs): For process and product design.\n\nOne-factor ANOVA (Chapter 13).\nFactorial design, etc.\n\nStatistical Process Control (SPC): Monitoring and controlling process for stability over time.\nAcceptance Sampling: Sorting products into conforming or nonconforming products, and lot sentencing."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality",
+    "text": "Quality\nThe American Society for Quality (ASQ) defines quality as:\n\n\n“the characteristics of a product or service that bear on its ability to satisfy stated or implied needs.”\n\n\n\nU.S. Organizations recognize that they must strive for high levels of quality (Car industry in 1980’s).\nIn addition to managerial philosophy, they have increased the emphasis on statistical methods for monitoring and maintaining quality."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#total-quality",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#total-quality",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Total Quality",
+    "text": "Total Quality\n\nTotal Quality (TQ) is a people-focused management system that aims at continual increase in customer satisfaction at continually lower real cost.\n\nTQ is a total system approach (not a separate work program) and an integral part of high-level strategy. TQ works horizontally across functions (Concurrent engineering).\nTQ involves all employees, top to bottom, and extends backward and forward to include both the supply and customer chains.\nTQ stresses learning and continuous improvement as keys to organizational success.\n\nLearning -&gt; Improve quality -&gt; Increased productivity -&gt; Lower cost -&gt; Gain in market share -&gt; Stay in business -&gt; Responsibility to society."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-1-of-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-1-of-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Gurus and Philosophies (1 of 3)",
+    "text": "Quality Gurus and Philosophies (1 of 3)\nDr. Walter A. Shewhart\n\nDeveloped a set of principles that are the basis for what is known today as process control.\nConstructed a diagram that would now be recognized as a statistical control chart.\nBrought together the disciplines of statistics, engineering, and economics and changed the course of industrial history.\nRecognized as the father of statistical quality control."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-2-of-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-2-of-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Gurus and Philosophies (2 of 3)",
+    "text": "Quality Gurus and Philosophies (2 of 3)\nDr. W. Edwards Deming\n\nHelped educate the Japanese on quality management shortly after World War II.\nFather of modern Total Quality Management: Stressed that the focus on quality must be led by managers.\nDeveloped a list of 14 points he believed represent the key responsibilities of managers.\nJapan named its national quality award the Deming Prize in his honor."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-3-of-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-3-of-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Gurus and Philosophies (3 of 3)",
+    "text": "Quality Gurus and Philosophies (3 of 3)\nJoseph Juran\n\nHelped educate the Japanese on quality management shortly after World War II.\nProposed a simple definition of quality: fitness for use\nHis approach to quality focused on three quality processes: quality planning, quality control, and quality improvement."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-1-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-1-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks (1 of 7)",
+    "text": "Quality Frameworks (1 of 7)\nMalcolm Baldrige National Quality Award\n\nEstablished in 1987 and given by the U.S. president to organizations that judged to be outstanding in:\n\nLeadership\nStrategy\nCustomer measurement, analysis, and knowledge management\nWorkforce\nOperations\nResults"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-2-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-2-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks (2 of 7)",
+    "text": "Quality Frameworks (2 of 7)\nMalcolm Baldrige National Quality Award (continued)\n\nThe first awards were presented in 1988.\nThe Award is named for Malcolm Baldrige, who was U.S. Secretary of Commerce from 1981 to 1987.\nThe U.S. Commerce Department’s National Institute of Standards and Technology (NIST) manages the Award."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-3-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-3-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks (3 of 7)",
+    "text": "Quality Frameworks (3 of 7)\n**ISO 9000 series - A series of five standards published in 1987 by the International Organization for Standardization in Geneva, Switzerland. - The standards describe the need for: - an effective quality system, - ensuring that measuring and testing equipment is calibrated regularly, - maintaining an adequate record-keeping system. - ISO 9000 registration determines whether a company complies with its own quality system."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-4-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-4-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks (4 of 7)",
+    "text": "Quality Frameworks (4 of 7)\n**Six Sigma\n\nEmphasizes the importance of taking measurements on critical quality characteristics.\nFocuses more on the process variation than the process mean.\nA process is a Six Sigma process if its mean is centered, and the distances between the mean and Upper and Lower Specifications are six times the process’s standard deviation (σ).\nSix sigma level of quality means that for every million opportunities, no more than 3.4 defects will occur if the process mean drifts or shifts slightly.\nThe methodology created to reach this quality goal is referred to as Six Sigma."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-5-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-5-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks (5 of 7)",
+    "text": "Quality Frameworks (5 of 7)\n\nSix Sigma aims for defects to be so minimal that only 3.4 per million occur.\nThe target is represented as a bell curve centered at the mean (\\(\\mu\\)) with six standard deviations (σ) between the mean and the specification limits.\n\n(Note: Replace with actual path or include the figure directly if possible)\n\nDefective Rate = NORM.S.DIST(-6, TRUE) + {1 - NORM.S.DIST(6, TRUE)} ≈ 0"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-6-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-6-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks (6 of 7)",
+    "text": "Quality Frameworks (6 of 7)\n\nWith Six Sigma, shifts in the process mean are accommodated.\n\nA shift of 1.5σ still maintains low defect rates.\nThis shift leads to a defect rate of approximately 3.4 per million produced.\n\n\n\n\nDefective Rate for Shifted Mean\n\n\n\nDefective Rate = NORM.S.DIST(-7.5, TRUE) + {1 - NORM.S.DIST(4.5, TRUE)} ≈ 0.0000034 = 3.4 per million produced"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-7-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-7-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks (7 of 7)",
+    "text": "Quality Frameworks (7 of 7)\n**Quality in the Service Sector\n\nQuality control is critical in service businesses (e.g., law firms, hotels, airlines, restaurants, and banks).\nFocus on customer satisfaction and improving the customer experience.\nServices are often intangible, making customer satisfaction subjective and quality measurement challenging."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-1-of-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-1-of-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart for Process Mean (1 of 3)",
+    "text": "\\(\\bar{X}\\) Chart for Process Mean (1 of 3)\n\nAssume the in-control process mean and standard deviation are known.\n\nExample: KJW Packaging\nWhen KJW’s cereal carton filling process is in control, the weight of cartons of cereal filled by the process is normally distributed with a mean of 16.05 ounces and a standard deviation of 0.10 ounces.\nQuestion: What should be the control limits for \\(\\bar{X}\\) based on a sample of n = 10 observations?"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-2-of-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-2-of-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart for Process Mean (2 of 3)",
+    "text": "\\(\\bar{X}\\) Chart for Process Mean (2 of 3)\n\nAssume in-control process mean is \\(\\mu_0\\) and standard deviation is \\(\\sigma\\):\n\\[\n\\text{UCL} = \\mu_0 + 3 \\frac{\\sigma}{\\sqrt{n}}\n\\]\n\\[\n\\text{CL} = \\mu_0\n\\]\n\\[\n\\text{LCL} = \\mu_0 - 3 \\frac{\\sigma}{\\sqrt{n}}\n\\]\nwhere \\(\\frac{\\sigma}{\\sqrt{n}}\\) is the standard deviation of \\(\\bar{X}_j\\) with a sample size of n.\n3 is the z-multiplier with 99.97% confidence level, or a false alarm rate of \\(\\alpha = 0.27\\%\\)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-3-of-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-3-of-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart for Process Mean (3 of 3)",
+    "text": "\\(\\bar{X}\\) Chart for Process Mean (3 of 3)\nExample: KJW Packaging\n\\[\n\\mu_0 = 16.05, \\quad \\sigma = 0.10, \\quad n = 10\n\\] \\[\n\\frac{\\sigma}{\\sqrt{n}} = \\frac{0.10}{\\sqrt{10}} = 0.032\n\\] \\[\n\\text{UCL} = 16.05 + 3(0.032) = 16.146\n\\] \\[\n\\text{CL} = 16.05\n\\] \\[\n\\text{LCL} = 16.05 - 3(0.032) = 15.954\n\\]\nA sample mean based on n observations outside the limits indicates the process mean is out of control."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-in-control-process-mean-and-standard-deviation-unknown-1-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-in-control-process-mean-and-standard-deviation-unknown-1-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart for Process Mean: In-control Process Mean and Standard Deviation Unknown (1 of 7)",
+    "text": "\\(\\bar{X}\\) Chart for Process Mean: In-control Process Mean and Standard Deviation Unknown (1 of 7)\n\nAssume the in-control process mean and standard deviation are unknown. They need to be estimated from an in-control process.\n\nExample: Jensen Computer Supplies Problem\nJCS manufactures 3.5-inch-diameter solid state drives. It wants to develop an X-bar (for process mean) and Range charts (for process variability) based on twenty samples of 5 drives each."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-3-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-3-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart for Process Mean (3 of 7)",
+    "text": "\\(\\bar{X}\\) Chart for Process Mean (3 of 7)\n\\[\n  \\text{UCL} = \\bar{X} + A_2 \\bar{R}\n  \\] \\[\n  \\text{CL} = \\bar{X}\n  \\] \\[\n  \\text{LCL} = \\bar{X} - A_2 \\bar{R}\n  \\]\nwhere: - \\(\\bar{X}\\) = overall sample mean (e.g., 3.4995) - \\(\\bar{R}\\) = average range (e.g., 0.0253) - \\(A_2\\) = constant depending on n (from “Factors for Control Charts” table)"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-5-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-5-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart for Process Mean (5 of 7)",
+    "text": "\\(\\bar{X}\\) Chart for Process Mean (5 of 7)\nGiven: - \\(\\bar{X} = 3.4995\\), \\(\\bar{R} = 0.0253\\), \\(n = 5\\)\nCalculations: \\[\n\\text{UCL} = \\bar{X} + A_2 \\bar{R} = 3.4995 + 0.577(0.0253) = 3.514\n\\] \\[\n\\text{CL} = \\bar{X} = 3.4995\n\\] \\[\n\\text{LCL} = \\bar{X} - A_2 \\bar{R} = 3.4995 - 0.577(0.0253) = 3.485\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-6-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-6-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart for Process Mean (6 of 7)",
+    "text": "\\(\\bar{X}\\) Chart for Process Mean (6 of 7)\n\nGraph showing the \\(\\bar{X}\\) chart with control limits at 3.485 and 3.514.\nConclusion: Process mean was in control in each time period."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-7-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-for-process-mean-7-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart for Process Mean (7 of 7)",
+    "text": "\\(\\bar{X}\\) Chart for Process Mean (7 of 7)\n\nIn case the process is out-of-control for some samples, exclude these samples and re-calculate the CL, UCL, and LCL to re-check the process.\nThis approach applies to other types of control charts as well.\n\ntitle: “R Chart for Process Variability” format: revealjs"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#attributes-control-charts",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#attributes-control-charts",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Attributes Control Charts",
+    "text": "Attributes Control Charts\nAn attributes control chart is used if the quality of the output is measured in terms of discrete/counting data such as the number of defective units (\\(X\\)) in a sample, etc.\n\n\\(X\\) is assumed to follow a Binomial distribution with a defective rate (proportion of “success”), \\(p\\). The expected value of \\(X\\) is \\(np\\).\np Chart: Used to monitor \\(p\\). The monitoring statistic at time \\(j\\) is the sample proportion \\(\\overline{p_j}\\).\nnp Chart: Used to monitor the expected number of defectives in a sample of size \\(n\\), \\(np\\). The monitoring statistic at time \\(j\\) is \\(X_j\\)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-1-of-4",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-1-of-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "p Chart for Process Proportion (1 of 4)",
+    "text": "p Chart for Process Proportion (1 of 4)\nAssume the in-control process proportion is known as \\(p_0\\).\n\nUCL = \\(p_0 + 3\\sigma_{\\overline{p}}\\)\nCL = \\(p_0\\)\nLCL = \\(p_0 - 3\\sigma_{\\overline{p}}\\)\n\nwhere\n\\[\n\\sigma_{\\overline{p_j}} \\approx \\sqrt{\\frac{p_0(1 - p_0)}{n}}\n\\]\nassuming \\(np_0 \\geq 5\\) and \\(n(1 - p_0) \\geq 5\\).\nNote: If computed LCL is negative, set LCL = 0."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-2-of-4",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-2-of-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "p Chart for Process Proportion (2 of 4)",
+    "text": "p Chart for Process Proportion (2 of 4)\nAssume the in-control process proportion is unknown.\nExample: Automated mail-sorting process.\nThe automated mail sorting process in a post office scans the zip codes on the letters and diverts them to the proper carrier route. Suppose a sample of 200 letters is selected each hour for 24 hours to establish control limits for a p chart, where \\(p\\) is the proportion of incorrectly sorted letters."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#sample-data",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#sample-data",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Sample Data",
+    "text": "Sample Data\n\n\n\nSample\nSample Size\nNumber of Incorrects\nSample Proportion\n\n\n\n\n1\n200\n6\n0.03\n\n\n2\n200\n2\n0.01\n\n\n…\n…\n…\n…\n\n\n24\n200\n2\n0.01\n\n\n\n\\(\\overline{p} =\\) Estimated overall defective rate\n\\[\n\\overline{p} = \\frac{\\text{Total number of incorrects}}{\\text{Total sample size}} = \\frac{104}{4800} = 0.0217\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-3-of-4",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-3-of-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "p Chart for Process Proportion (3 of 4)",
+    "text": "p Chart for Process Proportion (3 of 4)\nExample: Automated mail-sorting process\n\\(\\overline{p} = 0.0217\\)\n\\[\n\\sigma_{\\overline{p_j}} \\approx \\sqrt{\\frac{\\overline{p}(1 - \\overline{p})}{n}} = \\sqrt{\\frac{0.0217(1 - 0.0217)}{200}} = 0.0103\n\\]\n\nUCL = \\(\\overline{p} + 3\\sigma_{\\overline{p}} = 0.0217 + 3(0.0103) = 0.0526\\)\nCL = \\(\\overline{p} = 0.0217\\)\nLCL = \\(\\overline{p} - 3\\sigma_{\\overline{p}} = 0.0217 - 3(0.0103) = -0.0092 \\rightarrow 0\\)"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-4-of-4",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-4-of-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "p Chart for Process Proportion (4 of 4)",
+    "text": "p Chart for Process Proportion (4 of 4)\n\nP Chart of Number of IncorrectsThe process is out-of-control in Hour 8."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#np-chart-for-expected-number-of-defectives",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#np-chart-for-expected-number-of-defectives",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "np Chart for Expected Number of Defectives",
+    "text": "np Chart for Expected Number of Defectives\n\nUCL = \\(np + 3\\sqrt{np(1 - \\overline{p})}\\)\nCL = \\(np\\)\nLCL = \\(np - 3\\sqrt{np(1 - \\overline{p})}\\)\n\nassuming \\(np \\geq 5\\) and \\(n(1 - \\overline{p}) \\geq 5\\).\nNote: If computed LCL is negative, set LCL = 0."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#interpretation-of-control-charts",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#interpretation-of-control-charts",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Interpretation of Control Charts",
+    "text": "Interpretation of Control Charts\n\nThe location and pattern of points in a control chart enable us to determine, with a small probability of error, whether a process is in statistical control.\nA primary indication that a process may be out of control is a data point outside the control limits.\nCertain patterns of points within the control limits can be warning signals of quality problems (Nelson’s 8 rules):\n\nA large number of points on one side of the center line (9 points).\nSix or seven points in a row that indicate either an increasing or decreasing trend."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#lot-acceptance-sampling",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#lot-acceptance-sampling",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Lot Acceptance Sampling",
+    "text": "Lot Acceptance Sampling\n\nAcceptance sampling is a statistical method that enables us to base the accept-reject decision on the results of inspection of a sample of items from the lot.\nThe items of interest can be incoming shipments of raw materials or purchased parts as well as finished goods from final assembly (End-of-line inspection).\nAcceptance sampling has advantages over 100% inspection including:\n\nUsually less expensive.\nLess product damage due to less handling.\nFewer inspectors required.\nProvides the only approach possible if destructive testing must be used."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#lot-acceptance-simple-sampling-procedure",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#lot-acceptance-simple-sampling-procedure",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Lot Acceptance Simple Sampling Procedure",
+    "text": "Lot Acceptance Simple Sampling Procedure\ngraph TD;\n    A[Lot received] --&gt; B[Sample selected];\n    B --&gt; C[Sample inspected for quality];\n    C --&gt; D[Results compared with specified quality characteristics];\n    D --&gt; E[Quality is satisfactory] --&gt; F[Accept the lot] --&gt; G[Send to production or customer];\n    D --&gt; H[Quality is not satisfactory] --&gt; I[Reject the lot] --&gt; J[Decide on disposition of the lot];"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#lot-acceptance-sampling-vs-ht",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#lot-acceptance-sampling-vs-ht",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Lot Acceptance Sampling vs HT",
+    "text": "Lot Acceptance Sampling vs HT\n\nAcceptance sampling is based on hypothesis-testing methodology.\nH₀: Good-quality lot vs. Hₐ: Poor-quality lot"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#hypothesis-testing-in-acceptance-sampling",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#hypothesis-testing-in-acceptance-sampling",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Hypothesis Testing in Acceptance Sampling",
+    "text": "Hypothesis Testing in Acceptance Sampling\nState of the Lot | H₀ True  (Good-Quality Lot) | H₀ False  (Poor-Quality Lot) |\n|-||–| | Accept the Lot | Correct decision | Type II error  (accepting a poor-quality lot)  Consumer Risk | | Reject the Lot | Type I error  (rejecting a good-quality lot)  Producer Risk | Correct decision |"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#recall-binomial-distribution",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#recall-binomial-distribution",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Recall: Binomial Distribution",
+    "text": "Recall: Binomial Distribution\n\n\n\n\n\n\n\nBinomial Probability Function for Acceptance Sampling\n\n\n\n\\[\nX \\sim \\text{Binomial}(n, p)\n\\]\n\\[\nP(X = x) = f(x) = \\frac{n!}{x!(n - x)!} p^x (1 - p)^{(n - x)}\n\\]\n\\[\nP(X \\leq x) = f(0) + \\dots + f(x)\n\\]\nwhere\n\n\\(n\\) = the sample size\n\\(p\\) = the proportion of defective items in the lot\n\\(x\\) = the number of defective items in the sample \\(n\\)\n\\(f(x)\\) = the probability of \\(x\\) defective items in the sample"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#example-1-of-7-kali-inc.",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#example-1-of-7-kali-inc.",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example (1 of 7): KALI, Inc.",
+    "text": "Example (1 of 7): KALI, Inc.\nKALI, Inc. manufactures home appliances and uses acceptance sampling to monitor quality. Suppose a sample of 15 items is selected from each incoming shipment. The policy is to accept a lot if at most one defective item is found.\nFind the probability of accepting the lot when the defective rate of the incoming lot is 5%."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#example-2-of-7-calculation",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#example-2-of-7-calculation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example (2 of 7): Calculation",
+    "text": "Example (2 of 7): Calculation\n\nn = 15, c = 1\np = 0.05\n\n\\[\nP(\\text{Accept Lot}) = P(X \\leq 1) = f(0) + f(1) = 0.8290 \\quad \\text{(using Binom.dist(1, 15, 0.05, 1))}\n\\]\n\\[\nP(\\text{Reject Lot}) = 1 - 0.8290 = 0.1710\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-3-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-3-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Selecting an Acceptance Sampling Plan (3 of 7)",
+    "text": "Selecting an Acceptance Sampling Plan (3 of 7)\nManagers must consider the following:\n\nProducer’s risk: Probability of rejecting a lot with an acceptable defective rate.\nConsumer’s risk: Probability of accepting a lot with an unacceptable defective rate."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#example-4-of-7-acceptance-probability-table",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#example-4-of-7-acceptance-probability-table",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example (4 of 7): Acceptance Probability Table",
+    "text": "Example (4 of 7): Acceptance Probability Table\n\n\n\np\nAcceptance Probability\n\n\n\n\n0.0\n1.0000\n\n\n0.05\n0.8290\n\n\n0.1\n0.5490\n\n\n0.15\n0.3186\n\n\n…\n…\n\n\n1.0\n0.0000\n\n\n\n\nUse Binom.dist function in Excel to calculate probabilities."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-5-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-5-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Selecting an Acceptance Sampling Plan (5 of 7)",
+    "text": "Selecting an Acceptance Sampling Plan (5 of 7)\nDefine parameters for the plan:\n\np₀: Maximum acceptable defective rate (under H₀)\n\nα: Probability that a lot with defective rate p₀ will be rejected (Producer’s risk)\n\np₁: Minimum unacceptable defective rate (under Hₐ)\n\nβ: Probability that a lot with defective rate p₁ will be accepted (Consumer’s risk)"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#example-6-of-7-sample-plan-requirements",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#example-6-of-7-sample-plan-requirements",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example (6 of 7): Sample Plan Requirements",
+    "text": "Example (6 of 7): Sample Plan Requirements\nSuppose we require: - p₀ = 0.03, α = 8% (Producer’s Risk) - p₁ = 0.15, β = 4% (Consumer’s Risk)\nIs (n, c) = (15, 0) an acceptable plan?"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#is-n-c-15-0-acceptable-7-of-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#is-n-c-15-0-acceptable-7-of-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Is (n, c) = (15, 0) Acceptable? (7 of 7)",
+    "text": "Is (n, c) = (15, 0) Acceptable? (7 of 7)\n\nProducer’s risk: \\[\nP(\\text{Reject the lot} \\mid p = 0.03) = 1 - \\text{Binom.dist}(0, 15, 0.03, 1) = 0.367 \\quad \\text{(Too high)}\n\\]\nConsumer’s risk: \\[\nP(\\text{Accept the lot} \\mid p = 0.15) = \\text{Binom.dist}(0, 15, 0.15, 1) = 0.087 \\quad \\text{(Close)}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#multiple-sampling-plans",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#multiple-sampling-plans",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiple Sampling Plans",
+    "text": "Multiple Sampling Plans\n\nA multiple sampling plan uses two or more stages of sampling.\nAt each stage, decisions include:\n\nStopping and accepting the lot,\nStopping and rejecting the lot,\nContinuing sampling.\n\nMultiple sampling plans can reduce total sample size while maintaining Type I and Type II error levels.\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx\nXXX Há dois slides aqui no final XXXX Checar XXX\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#summary-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#summary-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary",
+    "text": "Summary\n\n\nSome key takeaways from this session:\n\nImportance of Quality Control: Quality control is essential for ensuring products meet customer expectations and can enhance a company’s competitiveness. Tools like control charts, SPC, and acceptance sampling are critical.\nStatistical Process Control (SPC): SPC uses control charts to monitor and maintain process stability by identifying common and assignable causes of variation.\nControl Charts: Used to monitor different quality metrics, such as the mean (\\(\\bar{X}\\)), variability (R-chart), and defect proportion (p-chart). Control limits are established to detect out-of-control conditions and require adjustments only for assignable causes.\nAcceptance Sampling: Provides a practical method for lot quality decisions without inspecting every item. It balances producer’s and consumer’s risks by setting limits on acceptable defect rates.\nMultiple Sampling Plans: These plans, including the two-stage acceptance sampling plan, can minimize sample size while maintaining error controls, improving efficiency over single-stage plans."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Gurus and Philosophies",
+    "text": "Quality Gurus and Philosophies\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Walter A. Shewhart\n\n\nDeveloped a set of principles that are the basis for what is known today as process control.\nConstructed a diagram that would now be recognized as a statistical control chart.\nBrought together the disciplines of statistics, engineering, and economics and changed the course of industrial history.\nRecognized as the father of statistical quality control."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-2",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Gurus and Philosophies",
+    "text": "Quality Gurus and Philosophies\n\n\n\n\n\n\n\n\n\n\n\n\nDr. W. Edwards Deming\n\n\n“Without data, you’re just another person with an opinion.”\n\n\n\n\nHelped educate the Japanese on quality management shortly after World War II.\nFather of modern Total Quality Management: Stressed that the focus on quality must be led by managers.\nDeveloped a list of 14 points he believed represent the key responsibilities of managers.\nJapan named its national quality award the Deming Prize in his honor."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-gurus-and-philosophies-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Gurus and Philosophies",
+    "text": "Quality Gurus and Philosophies\n\n\n\n\n\n\n\n\n\n\n\n\nJoseph Juran\n\n\nHelped educate the Japanese on quality management shortly after World War II.\nProposed a simple definition of quality: fitness for use\nHis approach to quality focused on three quality processes: quality planning, quality control, and quality improvement."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-malcolm-baldrige-national-quality-award",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-malcolm-baldrige-national-quality-award",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks: Malcolm Baldrige National Quality Award",
+    "text": "Quality Frameworks: Malcolm Baldrige National Quality Award\n\nEstablished in 1987 and given by the U.S. president to organizations that judged to be outstanding in:\n\nLeadership\nStrategy\nCustomer measurement, analysis, and knowledge management\nWorkforce\nOperations\nResults\n\nThe first awards were presented in 1988.\nThe Award is named for Malcolm Baldrige, who was U.S. Secretary of Commerce from 1981 to 1987.\nThe U.S. Commerce Department’s National Institute of Standards and Technology (NIST) manages the Award."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-iso-9000-series",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-iso-9000-series",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks: ISO 9000 series",
+    "text": "Quality Frameworks: ISO 9000 series\n\nA series of five standards published in 1987 by the International Organization for Standardization in Geneva, Switzerland.\nThe standards describe the need for:\n\nan effective quality system,\nensuring that measuring and testing equipment is calibrated regularly,\nmaintaining an adequate record-keeping system.\n\nISO 9000 registration determines whether a company complies with its own quality system."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-six-sigma",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-six-sigma",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks: Six Sigma",
+    "text": "Quality Frameworks: Six Sigma\n\nEmphasizes the importance of taking measurements on critical quality characteristics.\nFocuses more on the process variation than the process mean.\nA process is a Six Sigma process if its mean is centered, and the distances between the mean and Upper and Lower Specifications are six times the process’s standard deviation (σ).\nSix sigma level of quality means that for every million opportunities, no more than 3.4 defects will occur if the process mean drifts or shifts slightly.\nThe methodology created to reach this quality goal is referred to as Six Sigma."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-six-sigma-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-six-sigma-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks: Six Sigma",
+    "text": "Quality Frameworks: Six Sigma\n\n\n\nSix Sigma aims for defects to be so minimal that only 3.4 per million occur.\nThe target is represented as a bell curve centered at the mean (\\(\\mu\\)) with six standard deviations (\\(\\sigma\\)) between the mean and the specification limits.\n\n\n\\[\n\\text{Defective Rate} = \\text{Total Tail Areas}\n\\] \\[\n\\text{Defective Rate} = \\text{NORM.S.DIST(-6, TRUE) + {1 - NORM.S.DIST(6, TRUE)}} \\approx 0\n\\]\n\nWith Six Sigma, shifts in the process mean are accommodated.\n\nA shift of 1.5\\(\\sigma\\) still maintains low defect rates.\nThis shift leads to a defect rate of approximately 3.4 per million produced."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-service-sector",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-frameworks-service-sector",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Frameworks: Service Sector",
+    "text": "Quality Frameworks: Service Sector\n\nQuality control is critical in service businesses (e.g., law firms, hotels, airlines, restaurants, and banks).\nFocus on customer satisfaction and improving the customer experience.\nServices are often intangible, making customer satisfaction subjective and quality measurement challenging."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-terminology-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#quality-terminology-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Quality Terminology",
+    "text": "Quality Terminology\n\nQuality assurance refers to the entire system of policies, procedures, and guidelines established by an organization to achieve and maintain quality.\nQuality assurance consists of two functions:\n\nQuality engineering - its objective is to include quality in the design of products and processes and to identify potential quality problems prior to production.\nQuality control consists of making a series of inspections and measurements to determine whether quality standards are being met."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-methods-for-quality-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-methods-for-quality-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Statistical Methods for Quality",
+    "text": "Statistical Methods for Quality\n\nStatistical Design of Experiments (DOEs): For process and product design.\n\nOne-factor ANOVA.\nFactorial design, etc.\n\nStatistical Process Control (SPC): Monitoring and controlling process for stability over time.\nAcceptance Sampling: Sorting products into conforming or nonconforming products, and lot sentencing."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Statistical Process Control (SPC)",
+    "text": "Statistical Process Control (SPC)\n\nCritical process quality characteristic is inspected and measured.\n\nThere will always be variation in the unit-to-unit measurements.\nTwo types of causes of variation: Common Causes and Assignable Causes.\nCommon causes are allowed for the time being, but assignable causes need to be removed immediately.\nAdjusting a process with only common cause variations will increase process variation. (The Deming’s funnel experiment.)\n\nThe goal of SPC is to detect and eliminate the assignable causes as soon as possible, based on samples from the process over time."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-common-causes",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-common-causes",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Statistical Process Control (SPC): Common Causes",
+    "text": "Statistical Process Control (SPC): Common Causes\n\nRandomly occurring variations in materials, humidity, temperature, etc.\nVariation is natural and unexplained.\nAffecting all units/outputs.\nVariations the producer cannot control (in the short-term).\nProcess is in statistical control and hence, does not need adjustment."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-assignable-causes",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-assignable-causes",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Statistical Process Control (SPC): Assignable Causes",
+    "text": "Statistical Process Control (SPC): Assignable Causes\n\nNon-random and identifiable (significant) variations in output due to tools wearing out, operator error, incorrect machine settings of a few machines, poor quality raw material from certain vendors, etc.\nAffecting certain or individual outputs.\nProcess is out of control, and the producer can and must control (immediately).\nCorrective action should be taken."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-applications",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-applications",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Statistical Process Control (SPC): Applications",
+    "text": "Statistical Process Control (SPC): Applications\n\n\nTemperature of a die\nWeights of bags of potato chips of a filling process\nWeekly sales figures\nCustomer complaints\nProduct responses\nInventory level\nAbsenteeism\nAccidents\nAccount receivables\nProcess defective rate"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#spc-vs.-hypothesis-testing",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#spc-vs.-hypothesis-testing",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "SPC vs. Hypothesis Testing",
+    "text": "SPC vs. Hypothesis Testing\nWe use SPC to monitor and control the parameters (mean, variability, or proportion) of a process at each time and over time. Based on hypothesis-testing methodology, we have:\n\\[\nH_0: \\text{Process is in control } (\\mu = \\mu_0, \\text{ or } R = R_0)\n\\]\n\\[\nH_a: \\text{Process is out of control}\n\\]\n\nThe test statistic is the monitoring statistic in SPC: \\(\\overline{x}\\) for process mean, \\(\\overline{p}\\) for process proportion, etc."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-decisions-and-errors",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-decisions-and-errors",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Statistical Process Control (SPC): Decisions and Errors",
+    "text": "Statistical Process Control (SPC): Decisions and Errors\n\n\n\n\n\n\n\n\n\nDecision\nState of Production Process\n\n\n\n\n\n\nH0 True Process in Control\nH0 False Process Out of Control\n\n\nContinue Process\nCorrect decision\nType II error (allowing an out-of-control process to continue)\n\n\nAdjust Process\nType I error (adjusting an in-control process)\nCorrect decision\n\n\n\n\n\nControl the Probability of a False Alarm at \\(\\alpha\\) (the significance level)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-control-charts",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-control-charts",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Statistical Process Control (SPC): Control Charts",
+    "text": "Statistical Process Control (SPC): Control Charts\n\nSPC uses graphical displays known as control charts to monitor a production process (mean, variability, or percent defectives).\n\n\n\n\n\n\n\n\n\n\nThe Center Line (CL) represents what the process parameter value should be when the process is in control (denoted by \\(\\mu_0\\) or \\(R_0\\)).\nThe Upper Control Limit (UCL) and Lower Control Limit (LCL) are the two-sided critical values for the monitoring statistic.\n\nThey are chosen so that when the process is in control, there will be a high probability that the monitoring statistic value will be between the two lines.\nThey are chosen to allow common causes variation in the process and hence in the monitoring statistic.\nValues outside of the control limits provide strong evidence that the process is out of control."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-control-charts-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#statistical-process-control-spc-control-charts-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Statistical Process Control (SPC): Control Charts",
+    "text": "Statistical Process Control (SPC): Control Charts\n\nThe CL represents what the process parameter value should be when the process is in control (denoted by \\(\\mu_0\\) or \\(R_0\\)).\nThe UCL and LCL are the two-sided critical values for the monitoring statistic.\n\nThey are chosen so that when the process is in control, there will be a high probability that the monitoring statistic value will be between the two lines.\nThey are chosen to allow common causes variation in the process and hence in the monitoring statistic.\nValues outside of the control limits provide strong evidence that the process is out of control."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-known-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-known-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Known",
+    "text": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Known\nExample: KJW Packaging\nWhen KJW’s cereal carton filling process is in control, the weight of cartons of cereal filled by the process is normally distributed with a mean of 16.05 ounces and a standard deviation of 0.10 ounces.\n\nQuestion: What should be the control limits for \\(\\bar{X}\\) based on a sample of n = 10 observations?"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-known-2",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-known-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Known",
+    "text": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Known\nAssume in-control process mean is \\(\\mu_0\\) and standard deviation is \\(\\sigma\\).\nFor each \\(\\bar{X}_j\\),\n\\[\n  \\text{UCL} = \\mu_0 + 3 \\frac{\\sigma}{\\sqrt{n}}\n  \\]\n\\[\n  \\text{CL} = \\mu_0\n  \\]\n\\[\n  \\text{LCL} = \\mu_0 - 3 \\frac{\\sigma}{\\sqrt{n}}\n  \\]\nwhere \\(\\frac{\\sigma}{\\sqrt{n}}\\) is the standard deviation of \\(\\bar{X}_j\\) with a sample size of n.\n\n3 is the z-multiplier with 99.97% confidence level, or a false alarm rate of \\(\\alpha = 0.27\\%\\)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-known-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-known-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Known",
+    "text": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Known\nExample: KJW Packaging\n\\[\n\\mu_0 = 16.05, \\quad \\sigma = 0.10, \\quad n = 10\n\\]\n\\[\n\\frac{\\sigma}{\\sqrt{n}} = \\frac{0.10}{\\sqrt{10}} = 0.032\n\\] \\[\n\\text{UCL} = 16.05 + 3(0.032) = 16.146\n\\]\n\\[\n\\text{CL} = 16.05\n\\] \\[\n\\text{LCL} = 16.05 - 3(0.032) = 15.954\n\\]\nA sample mean based on \\(n\\) observations outside the limits indicates the process mean is out of control."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-known-4",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-known-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Known",
+    "text": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Known\nExample: KJW Packaging\n\n\nNote that the fifth sample shows there is strong evidence that the process is out of control.\nIt indicates that assignable causes of output variation are present and that underfilling is occurring."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown",
+    "text": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown\n\nAssume the in-control process mean and standard deviation are unknown.\n\nThey need to be estimated from an in-control process.\n\n\n\nExample: Jensen Computer Supplies Problem\nJCS manufactures 3.5-inch-diameter solid state drives. It wants to develop an X-bar (for process mean) and Range charts (for process variability) based on twenty samples of 5 drives each."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-2",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown",
+    "text": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown\nExample: Jensen Computer Supplies Problem\nData and Sample Summary Statistics\n\n\n\n\n\n\n\n\n\n\n\n\n\nSample\nObservation 1\nObservation 2\nObservation 3\nObservation 4\nObservation 5\nMean\nRange\n\n\n\n\n1\n3.5056\n3.5086\n3.5144\n3.5009\n3.5030\n3.5065\n0.0135\n\n\n2\n3.4882\n3.5085\n3.4884\n3.5250\n3.5031\n3.5026\n0.0368\n\n\n3\n3.4897\n3.4898\n3.4995\n3.5130\n3.4969\n3.4978\n0.0233\n\n\n…\n…\n…\n…\n…\n…\n…\n…\n\n\n18\n3.4959\n3.4823\n3.4964\n3.5082\n3.4871\n3.4940\n0.0259\n\n\n19\n3.4878\n3.4864\n3.4960\n3.5070\n3.4894\n3.4933\n0.0259\n\n\n20\n3.4969\n3.5144\n3.5053\n3.4985\n3.4885\n3.5007\n0.0259\n\n\n\n\n\n\n\nAverage\n3.4995\n0.0253\n\n\n\n\nTable of sample observations with 5 observations per sample and calculated means and ranges."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown",
+    "text": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown\nFor each \\(\\bar{X}_j\\),\n\\[\n\\text{UCL} = \\bar{\\bar{X}} + A_2 \\bar{R}\n\\]\n\\[\n  \\text{CL} = \\bar{\\bar{X}}\n\\]\n\\[\n  \\text{LCL} = \\bar{\\bar{X}} - A_2 \\bar{R}\n\\]\nwhere:\n\n\\(\\bar{\\bar{X}}\\) = overall sample mean (e.g., 3.4995)\n\\(\\bar{R}\\) = average range (e.g., 0.0253)\n\\(A_2\\) = constant depending on \\(n\\) (from the “Factors for Control Charts” table)"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#factors-for-barx-control-chart",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#factors-for-barx-control-chart",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Factors for \\(\\bar{X}\\) Control Chart",
+    "text": "Factors for \\(\\bar{X}\\) Control Chart\n\nThe American Society for Testing and Materials Manual on Presentation of Data and Control Chart Analysis provides valuses for \\(d_2\\) for different sample sizes (\\(n\\)) as shown below:\n\n\n\nn\n\\(d_2\\)\n\\(A_2\\)\n\\(d_3\\)\n\\(D_3\\)\n\\(D_4\\)\n\n\n\n\n…\n…\n…\n…\n…\n…\n\n\n5\n2.326\n0.577\n0.864\n0\n2.114\n\n\n6\n2.534\n0.483\n0.848\n0\n2.004\n\n\n7\n2.704\n0.419\n0.833\n0.076\n1.924\n\n\n8\n2.847\n0.373\n0.820\n0.136\n1.864\n\n\n9\n2.970\n0.337\n0.808\n0.184\n1.816\n\n\n10\n3.078\n0.308\n0.797\n0.223\n1.777\n\n\n…\n…\n…\n…\n…\n…\n\n\n\n\n\\(d_2\\) and \\(d_3\\): Constants used for range calculations.\n\\(A_2\\): Used in \\(\\bar{X}\\) charts for control limits.\n\\(D_3\\) and \\(D_4\\): Constants for the R-chart control limits."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#factors-for-barx-control-chart-explanation",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#factors-for-barx-control-chart-explanation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Factors for \\(\\bar{X}\\) Control Chart: Explanation",
+    "text": "Factors for \\(\\bar{X}\\) Control Chart: Explanation\n\n\nn: The sample size, or the number of observations within each subgroup.\n\\(d_2\\): A constant used to estimate the mean of the range (\\(\\bar{R}\\)) when the sample size \\(n\\) is known.\n\\(A_2\\): A constant for calculating control limits for the \\(\\bar{X}\\) (X-bar) chart:\n\n\n\\[\n   \\text{UCL} = \\bar{\\bar{X}} + A_2 \\bar{R}\n\\]\nand\n\\[\n   \\text{LCL} = \\bar{\\bar{X}} - A_2 \\bar{R}\n\\]\nwhere \\(\\bar{\\bar{X}}\\) is the mean of sample means, and \\(\\bar{R}\\) is the average range.\n\n\n\\(d_3\\): A constant related to the standard deviation of the range distribution, useful for control limits on range charts.\n\\(D_3\\): Used for the Lower Control Limit (LCL) on the R-chart:\n\n\n\\[\n   \\text{LCL} = D_3 \\times \\bar{R}\n\\]\nFor small sample sizes, \\(D_3\\) is often zero, indicating no lower control limit.\n\n\n\\(D_4\\): Used for the Upper Control Limit (UCL) on the R-chart:\n\n\n\\[\n   \\text{UCL} = D_4 \\times \\bar{R}\n\\]\nAdjusts the upper limit based on sample size, providing a threshold for large ranges."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-4",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown",
+    "text": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown\n\nGiven \\(\\bar{X} = 3.4995\\), \\(\\bar{R} = 0.0253\\), \\(n = 5\\),\n\\[\n\\text{UCL} = \\bar{X} + A_2 \\bar{R} = 3.4995 + 0.577(0.0253) = 3.514\n\\]\n\\[\n\\text{CL} = \\bar{X} = 3.4995\n\\]\n\\[\n\\text{LCL} = \\bar{X} - A_2 \\bar{R} = 3.4995 - 0.577(0.0253) = 3.485\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-5",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown",
+    "text": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown\n\n\n\n\n\n\n\n\n\n\n\nGraph showing the \\(\\bar{X}\\) chart with control limits at 3.485 and 3.514.\nConclusion: Process mean was in control in each time period."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-6",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#barx-chart-process-mean-and-standard-deviation-unknown-6",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown",
+    "text": "\\(\\bar{X}\\) Chart: Process Mean and Standard Deviation Unknown\n\nIn case the process is out-of-control for some samples, exclude these samples and re-calculate the CL, UCL, and LCL to re-check the process.\nThis approach applies to other types of control charts as well."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#r-chart-for-process-variability-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#r-chart-for-process-variability-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(R\\) Chart for Process Variability",
+    "text": "\\(R\\) Chart for Process Variability\n\nAssume the in-control process mean and standard deviation are unknown.\nBecause the control limits for the \\(\\bar{X}\\) chart depend on the value of the average range (\\(\\bar{R}\\)), these limits will not have much meaning unless the process range is in control.\nIn practice, the \\(R\\) chart is usually constructed before the \\(\\bar{X}\\) chart.\n\nIf the \\(R\\) chart indicates that the process variability is in control, then the \\(\\bar{R}\\) is used when constructing the \\(\\bar{X}\\) chart.\n\nThe plotting statistic is the Sample Range, \\(R_j\\) (the last column on slide 29)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#r-chart-for-process-variability-2",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#r-chart-for-process-variability-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(R\\) Chart for Process Variability",
+    "text": "\\(R\\) Chart for Process Variability\nFor each \\(R_j\\),\n\\[\n\\text{UCL} = D_4 \\bar{R}\n\\]\n\\[\n\\text{CL} = \\bar{R}\n\\]\n\\[\n\\text{LCL} = D_3 \\bar{R}\n\\]\nwhere:\n\n\\(\\bar{R}\\) = average range\n\\(D_3, D_4\\) = constants that depend on \\(n\\); refer to the “Factors for Control Charts” table."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#r-chart-for-process-variability-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#r-chart-for-process-variability-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(R\\) Chart for Process Variability",
+    "text": "\\(R\\) Chart for Process Variability\nExample: Jensen Computer Supplies Problem\nGiven: - \\(\\bar{\\bar{X}} = 3.4995\\), \\(\\bar{R} = 0.0253\\), \\(n = 5\\)\nCalculations:\n\\[\n\\text{UCL} = D_4 \\bar{R} = 2.114(0.0253) = 0.053\n\\]\n\\[\n\\text{CL} = \\bar{R} = 0.0253\n\\]\n\\[\n\\text{LCL} = D_3 \\bar{R} = 0(0.0253) = 0\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#r-chart-for-process-variability-4",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#r-chart-for-process-variability-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(R\\) Chart for Process Variability",
+    "text": "\\(R\\) Chart for Process Variability\n\n\n\n\n\n\n\n\n\n\n\nConclusion: The process variability was in control in each sample."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#attributes-control-charts-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#attributes-control-charts-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Attributes Control Charts",
+    "text": "Attributes Control Charts\nAn attributes control chart is used if the quality of the output is measured in terms of discrete/counting data such as the number of defective units (\\(X\\)) in a sample, etc.\n\n\\(X\\) is assumed to follow a Binomial distribution with a defective rate (proportion of “success”), \\(p\\). The expected value of \\(X\\) is \\(np\\).\n\\(p\\) Chart: Used to monitor \\(p\\). The monitoring statistic at time \\(j\\) is the sample proportion \\(\\overline{p_j}\\).\n\\(np\\) Chart: Used to monitor the expected number of defectives in a sample of size \\(n\\), \\(np\\). The monitoring statistic at time \\(j\\) is \\(X_j\\)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(p\\) Chart for Process Proportion",
+    "text": "\\(p\\) Chart for Process Proportion\nAssume the in-control process proportion is known as \\(p_0\\).\nFor each \\(\\bar{p}_j\\), \\[\n\\text{UCL} = p_0 + 3\\sigma_{\\overline{p}}\n\\]\n\\[\n\\text{CL} = p_0\n\\]\n\\[\n\\text{LCL} = p_0 - 3\\sigma_{\\overline{p}}\n\\]\nwhere\n\\[\n\\sigma_{\\overline{p_j}} \\approx \\sqrt{\\frac{p_0(1 - p_0)}{n}}\n\\]\nassuming \\(np_0 \\geq 5\\) and \\(n(1 - p_0) \\geq 5\\).\n\nNote: If computed LCL is negative, set LCL = 0."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-2",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(p\\) Chart for Process Proportion",
+    "text": "\\(p\\) Chart for Process Proportion\nAssume the in-control process proportion is unknown.\nExample: Automated mail-sorting process.\nThe automated mail sorting process in a post office scans the zip codes on the letters and diverts them to the proper carrier route. Suppose a sample of 200 letters is selected each hour for 24 hours to establish control limits for a p chart, where \\(p\\) is the proportion of incorrectly sorted letters."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(p\\) Chart for Process Proportion",
+    "text": "\\(p\\) Chart for Process Proportion\n\nSample Data\n\n\n\n\n\n\n\n\n\nSample\nSample Size\nNumber of Incorrects (\\(X_j\\))\nSample Proportion (\\(\\bar{P}_j\\))\n\n\n\n\n1\n200\n6\n0.03\n\n\n2\n200\n2\n0.01\n\n\n3\n200\n0\n0.00\n\n\n…\n…\n…\n…\n\n\n22\n200\n2\n0.01\n\n\n23\n200\n0\n0.00\n\n\n24\n200\n2\n0.01\n\n\nTotal\n4800\n104\n\n\n\n\n\nSample: Identifies each sample in the sequence.\nSample Size (\\(n\\)): Total number of observations in each sample. Here, each sample size is 200.\nNumber of Incorrects (\\(X_j\\)): Number of incorrect observations in each sample.\nSample Proportion (\\(\\bar{P}_j\\)): Proportion of incorrect observations in each sample, calculated as \\(X_j / n\\).\n\n\n\\[\n\\text{Estimated overall defective rate} = \\overline{p} = \\frac{\\text{Total number of incorrects}}{\\text{Total sample size}} = \\frac{104}{4800} = 0.0217\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-4",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(p\\) Chart for Process Proportion",
+    "text": "\\(p\\) Chart for Process Proportion\nExample: Automated mail-sorting process\n\\(\\overline{p} = 0.0217\\)\n\\[\n\\sigma_{\\overline{p_j}} \\approx \\sqrt{\\frac{\\overline{p}(1 - \\overline{p})}{n}} = \\sqrt{\\frac{0.0217(1 - 0.0217)}{200}} = 0.0103\n\\]\n\nUCL = \\(\\overline{p} + 3\\sigma_{\\overline{p}} = 0.0217 + 3(0.0103) = 0.0526\\)\nCL = \\(\\overline{p} = 0.0217\\)\nLCL = \\(\\overline{p} - 3\\sigma_{\\overline{p}} = 0.0217 - 3(0.0103) = -0.0092 \\rightarrow 0\\)"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-5",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#p-chart-for-process-proportion-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(p\\) Chart for Process Proportion",
+    "text": "\\(p\\) Chart for Process Proportion\n\nThe process is out-of-control in Hour 8."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#np-chart-for-expected-number-of-defectives-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#np-chart-for-expected-number-of-defectives-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "\\(np\\) Chart for Expected Number of Defectives",
+    "text": "\\(np\\) Chart for Expected Number of Defectives\nAn \\(np\\) chart is a control chart developed for the number of defective items in a sample. In this case, \\(n\\) is the sample size and \\(p\\) is the probability of observing a defective item when the process is in control.\nFor each \\(X_j\\), \\[\nUCL = np + 3\\sqrt{np(1 - \\overline{p})}\n\\]\n\\[\nCL = np\n\\]\n\\[\nLCL = np - 3\\sqrt{np(1 - \\overline{p})}\n\\]\nassuming \\(np \\geq 5\\) and \\(n(1 - \\overline{p}) \\geq 5\\).\nNote: If computed LCL is negative, set LCL = 0."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling",
+    "text": "Acceptance Sampling\n\nAcceptance sampling is a statistical method that enables us to base the accept-reject decision on the results of inspection of a sample of items from the lot.\nThe items of interest can be incoming shipments of raw materials or purchased parts as well as finished goods from final assembly (End-of-line inspection).\nAcceptance sampling has advantages over 100% inspection including:\n\nUsually less expensive.\nLess product damage due to less handling.\nFewer inspectors required.\nProvides the only approach possible if destructive testing must be used."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-procedure",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-procedure",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling Procedure",
+    "text": "Acceptance Sampling Procedure"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-vs-ht",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-vs-ht",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling vs HT",
+    "text": "Acceptance Sampling vs HT\n\n\nAcceptance sampling is based on hypothesis-testing methodology.\n\n\\[\nH_0: \\text{Good-quality lot}\n\\] \\[\nH_a: \\text{Poor-quality lot}\n\\]\n\n\n\n\n\n\n\n\nDecision/State of the Lot\n\\(H_0\\) True Good-Quality Lot\n\\(H_0\\) False Poor-Quality Lot\n\n\nAccept the Lot\nCorrect decision\nType II error (accepting a poor-quality lot)\n\n\nReject the Lot\nType I error (rejecting a good-quality lot)\nCorrect decision"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling: Example KALI, Inc.",
+    "text": "Acceptance Sampling: Example KALI, Inc.\nKALI, Inc. manufactures home appliances that are marketed under a variety of trade names. It uses acceptance sampling plan to monitor the quality of overload protectors. Suppose a sample of 15 items is selected from each incoming shipment or lot and the policy is to accept a lot if at most one defective item is found in the sample.\n\nFind the probability of accepting the lot when the defective rate of the incoming lot is 5%."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling: Example KALI, Inc.",
+    "text": "Acceptance Sampling: Example KALI, Inc.\n\nA simple lot acceptance sampling plan is determined by \\((n, c)\\), where \\(n\\) is the sample size, and \\(c\\) is the acceptance number such that if the number of defectives in the sample is less than or equal to \\(c\\) (i.e., \\(X \\leq c\\)), the entire lot is accepted.\n\\[\nn = 15, \\quad c = 1.\n\\]\nWhen the defective rate of the incoming lot is 5%, \\(p = 0.05\\), the probability of accepting the lot is:\n\\[\n\\begin{align*}\nP(\\text{Accept Lot}) & = P(X \\leq 1) = f(0) + f(1)\\\\\n& = \\frac{15!}{0!(15 - 0)!} \\cdot 0.05^0 (1 - 0.05)^{15 - 0} + \\frac{15!}{1!(15 - 1)!} \\cdot 0.05^1 (1 - 0.05)^{15 - 1}\\\\\n& = 0.4633 + 0.3658 \\\\\n& = 0.8290\n\\end{align*}\n\\]\nFor its turn, the the probability of rejecting the lot is:\n\\[\nP(\\text{Reject Lot}) = 1 - 0.8290 = 0.1710\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-2",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling: Example KALI, Inc.",
+    "text": "Acceptance Sampling: Example KALI, Inc.\nSelecting an Acceptance Sampling Plan\nIs \\((n, c) = (15, 0)\\) an acceptable plan?\nFor \\((n, c) = (15, 0)\\):\n\\[\n\\begin{align*}\n\\text{Producer's risk} & = P(\\text{Reject the lot} \\mid p = 0.03) = P(X &gt; 0 \\mid p = 0.03) \\\\\n& = 1 - P(X \\leq 0 \\mid p = 0.03) \\\\\n&  = 1 - \\text{Bin}(15, 0.03) = 1 - 0.633 = 0.367 \\quad \\text{(Too high)}\n\\end{align*}\n\\]\n\\[\n\\begin{align*}\n\\text{Consumer's risk} & = P(\\text{Accept the lot} \\mid p = 0.15) = P(X \\leq 0 \\mid p = 0.15) \\\\\n& = \\text{Bin}(15, 0.15) = 0.087 \\quad \\text{(Close)}\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling: Example KALI, Inc.",
+    "text": "Acceptance Sampling: Example KALI, Inc.\nSelecting an Acceptance Sampling Plan\nIs \\((n, c) = (15, 0)\\) an acceptable plan?\n\nProducer’s Risk: The calculated producer’s risk is 36.7%, which is significantly higher than the acceptable level of 8%. This means there is a high probability that a lot with an acceptable defect rate (\\(p_0 = 0.03\\)) will be incorrectly rejected, resulting in an unacceptably high risk for the producer.\nConsumer’s Risk: The consumer’s risk is 8.7%, which is close to the acceptable level of 4%. This indicates that the plan is nearly adequate in terms of the consumer’s risk, but it is still slightly above the target.\n\nConclusion: The acceptance sampling plan \\((n, c) = (15, 0)\\) is not acceptable because it does not adequately meet the producer’s risk requirement. The producer’s risk is too high, resulting in a high probability of rejecting acceptable lots.\nRecommendation: Adjustments to the sampling plan are needed to better balance both the producer’s and consumer’s risk requirements. This may involve increasing the acceptance number \\(c\\) or adjusting the sample size \\(n\\)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-4",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling: Example KALI, Inc.",
+    "text": "Acceptance Sampling: Example KALI, Inc.\nSelecting an Acceptance Sampling Plan\nIn formulating a plan, managers must specify the following:\n\\[\n\\begin{cases}\np_0 = \\text{Maximum acceptable defective rate (under $H_0$)} \\\\\n\\alpha = \\text{the probability that a lot with defective rate $p_0$ will be rejected} \\\\\n\\quad \\text{(the producer's risk)}\n\\end{cases}\n\\]\n\\[\n\\begin{cases}\np_1 = \\text{Minimum unacceptable defective rate (under $H_a$)} \\\\\n\\beta = \\text{the probability that a lot with defective rate $p_1$ will be accepted} \\\\\n\\quad \\text{(the consumer's risk)}\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-5",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling: Example KALI, Inc.",
+    "text": "Acceptance Sampling: Example KALI, Inc.\nSelecting an Acceptance Sampling Plan\nA simple sampling plan with \\((n, c)\\) is selected when it comes close to meeting both the \\(\\alpha\\) and \\(\\beta\\) requirements specified.\nExample: For the purpose of illustration, suppose we require:\n\nIf \\(p_0 = 0.03\\), \\(\\alpha = \\Pr(\\text{Reject the lot} \\mid p_0 = 0.03) = 8\\%\\) (Producer’s Risk)\nIf \\(p_1 = 0.15\\), \\(\\beta = \\Pr(\\text{Accept the lot} \\mid p_1 = 0.15) = 4\\%\\) (Consumer’s Risk)\n\nIs \\((n, c) = (15, 0)\\) an acceptable plan?"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-6",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-6",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling: Example KALI, Inc.",
+    "text": "Acceptance Sampling: Example KALI, Inc.\nSelecting an Acceptance Sampling Plan\nIs \\((n, c) = (15, 0)\\) an acceptable plan?\nFor \\((n, c) = (15, 0)\\):\n\\[\n\\begin{align*}\n\\text{Producer's risk} & = P(\\text{Reject the lot} \\mid p = 0.03) = P(X &gt; 0 \\mid p = 0.03) \\\\\n& = 1 - P(X \\leq 0 \\mid p = 0.03) \\\\\n&  = 1 - \\text{Bin}(15, 0.03) = 1 - 0.633 = 0.367 \\quad \\text{(Too high)}\n\\end{align*}\n\\]\n\\[\n\\begin{align*}\n\\text{Consumer's risk} & = P(\\text{Accept the lot} \\mid p = 0.15) = P(X \\leq 0 \\mid p = 0.15) \\\\\n& = \\text{Bin}(15, 0.15) = 0.087 \\quad \\text{(Close)}\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-7",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#acceptance-sampling-example-kali-inc.-7",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Acceptance Sampling: Example KALI, Inc.",
+    "text": "Acceptance Sampling: Example KALI, Inc.\nSelecting an Acceptance Sampling Plan\nIs \\((n, c) = (15, 0)\\) an acceptable plan?\n\nProducer’s Risk: The calculated producer’s risk is 36.7%, which is significantly higher than the acceptable level of 8%. This means there is a high probability that a lot with an acceptable defect rate (\\(p_0 = 0.03\\)) will be incorrectly rejected, resulting in an unacceptably high risk for the producer.\nConsumer’s Risk: The consumer’s risk is 8.7%, which is close to the acceptable level of 4%. This indicates that the plan is nearly adequate in terms of the consumer’s risk, but it is still slightly above the target.\n\nConclusion: The acceptance sampling plan \\((n, c) = (15, 0)\\) is not acceptable because it does not adequately meet the producer’s risk requirement. The producer’s risk is too high, resulting in a high probability of rejecting acceptable lots.\nRecommendation: Adjustments to the sampling plan are needed to better balance both the producer’s and consumer’s risk requirements. This may involve increasing the acceptance number \\(c\\) or adjusting the sample size \\(n\\)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#multiple-sampling-plans-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#multiple-sampling-plans-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiple Sampling Plans",
+    "text": "Multiple Sampling Plans\n\nA multiple sampling plan uses two or more stages of sampling.\nAt each stage, decisions include:\n\nStopping and accepting the lot,\nStopping and rejecting the lot,\nContinuing sampling.\n\nMultiple sampling plans can reduce total sample size while maintaining Type I and Type II error levels."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#multiple-sampling-plans-2",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#multiple-sampling-plans-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiple Sampling Plans",
+    "text": "Multiple Sampling Plans\n\n\n\n\nTwo Stage Acceptance Sampling Plan Procedure\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStage 1:\n\nTake an initial sample of \\(n_1\\) items.\nFind the number of defectives \\(x_1\\) in this sample.\nDecision criteria:\n\nIf \\(x_1 \\leq c_1\\): Accept the lot.\nIf \\(x_1 \\geq c_2\\): Reject the lot.\nIf \\(c_1 &lt; x_1 &lt; c_2\\): Proceed to Stage 2.\n\n\nStage 2:\n\nTake an additional sample of \\(n_2\\) items.\nFind the number of defectives \\(x_2\\) in this second sample.\nDecision criteria:\n\nIf \\(x_1 + x_2 \\leq c_3\\): Accept the lot.\nIf \\(x_1 + x_2 &gt; c_3\\): Reject the lot.\n\n\nAcceptance Criteria: The lot is accepted if the defectives in Stage 1 are within \\(c_1\\), or if the combined defectives in both stages are within \\(c_3\\).\nRejection Criteria: The lot is rejected if the defectives in Stage 1 exceed \\(c_2\\), or if the combined defectives in both stages exceed \\(c_3\\)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.",
+    "text": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.\n\nIn formulating a plan, managers must consider the following:\n\nProducer’s risk: Probability of rejecting a lot with an acceptable defective rate.\nConsumer’s risk: Probability of accepting a lot with an unacceptable defective rate."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.-1",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.",
+    "text": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.\n\n\n\n\n\n\np\nAcceptance Probability\n\n\n\n\n0.00\n1.0000\n\n\n0.05\n0.8290\n\n\n0.10\n0.5490\n\n\n0.15\n0.3186\n\n\n0.20\n0.1671\n\n\n0.25\n0.0802\n\n\n0.30\n0.0353\n\n\n0.35\n0.0142\n\n\n0.40\n0.0052\n\n\n0.45\n0.0017\n\n\n0.50\n0.0005\n\n\n0.55\n0.0001\n\n\n0.60\n0.0000\n\n\n0.65\n0.0000\n\n\n0.70\n0.0000\n\n\n0.75\n0.0000\n\n\n0.80\n0.0000\n\n\n0.85\n0.0000\n\n\n0.90\n0.0000\n\n\n0.95\n0.0000\n\n\n1.00\n0.0000\n\n\n\n\n\nAcceptance Probability Plot\n\n\n\n\n\n\n\n\n\nThe plot presents the probability of accepting the lot (y-axis) based on the percent of defective items in the lot (x-axis)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.-2",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.",
+    "text": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.\n\nIn formulating a plan, managers must specify the following:\n\\[\n\\begin{cases}\np_0 = \\text{Maximum acceptable defective rate (under $H_0$)} \\\\\n\\alpha = \\text{The Producer's Risk: }\\text{the probability that a lot with defective rate $p_0$ will be rejected} \\\\\n\\quad\n\\end{cases}\n\\]\n\\[\n\\begin{cases}\np_1 = \\text{Minimum unacceptable defective rate (under $H_a$)} \\\\\n\\beta = \\text{The Consumer's Risk: } \\text{the probability that a lot with defective rate $p_1$ will be accepted} \\\\\n\\quad\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.-3",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.-3",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.",
+    "text": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.\n\nA simple sampling plan with \\((n, c)\\) is selected when it comes close to meeting both the \\(\\alpha\\) and \\(\\beta\\) requirements specified.\nExample: For the purpose of illustration, suppose we require:\n\nIf \\(p_0 = 0.03\\), \\(\\alpha = \\Pr(\\text{Reject the lot} \\mid p_0 = 0.03) = 8\\%\\) (Producer’s Risk)\nIf \\(p_1 = 0.15\\), \\(\\beta = \\Pr(\\text{Accept the lot} \\mid p_1 = 0.15) = 4\\%\\) (Consumer’s Risk)\n\n\n\n\nIs \\((n, c) = (15, 0)\\) an acceptable plan?"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.-4",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.-4",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.",
+    "text": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.\n\n\nIs \\((n, c) = (15, 0)\\) an acceptable plan?\n\nFor \\((n, c) = (15, 0)\\):\n\\[\n\\begin{align*}\n\\text{Producer's risk} & = P(\\text{Reject the lot} \\mid p = 0.03) = P(X &gt; 0 \\mid p = 0.03) \\\\\n& = 1 - P(X \\leq 0 \\mid p = 0.03) \\\\\n&  = 1 - \\text{Bin}(15, 0.03) = 1 - 0.633 = 0.367 \\quad \\text{(Too high)}\n\\end{align*}\n\\]\n\n\\[\n\\begin{align*}\n\\text{Consumer's risk} & = P(\\text{Accept the lot} \\mid p = 0.15) = P(X \\leq 0 \\mid p = 0.15) \\\\\n& = \\text{Bin}(15, 0.15) = 0.087 \\quad \\text{(Close)}\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.-5",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#selecting-an-acceptance-sampling-plan-example-kali-inc.-5",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.",
+    "text": "Selecting an Acceptance Sampling Plan: Example KALI, Inc.\n\n\n\nIs \\((n, c) = (15, 0)\\) an acceptable plan?\n\n\n\nProducer’s Risk: The calculated producer’s risk is 36.7%, which is significantly higher than the acceptable level of 8%. This means there is a high probability that a lot with an acceptable defect rate (\\(p_0 = 0.03\\)) will be incorrectly rejected, resulting in an unacceptably high risk for the producer.\nConsumer’s Risk: The consumer’s risk is 8.7%, which is close to the acceptable level of 4%. This indicates that the plan is nearly adequate in terms of the consumer’s risk, but it is still slightly above the target.\nConclusion: The acceptance sampling plan \\((n, c) = (15, 0)\\) is not acceptable because it does not adequately meet the producer’s risk requirement. The producer’s risk is too high, resulting in a high probability of rejecting acceptable lots.\nRecommendation: Adjustments to the sampling plan are needed to better balance both the producer’s and consumer’s risk requirements. This may involve increasing the acceptance number \\(c\\) or adjusting the sample size \\(n\\)."
+  },
+  {
+    "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#multiple-sampling-plans-two-stage-acceptance-sampling-plan-procedure",
+    "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#multiple-sampling-plans-two-stage-acceptance-sampling-plan-procedure",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Multiple Sampling Plans: Two Stage Acceptance Sampling Plan Procedure",
+    "text": "Multiple Sampling Plans: Two Stage Acceptance Sampling Plan Procedure\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStage 1:\n\nTake an initial sample of \\(n_1\\) items.\nFind the number of defectives \\(x_1\\) in this sample.\nDecision criteria:\n\nIf \\(x_1 \\leq c_1\\): Accept the lot.\nIf \\(x_1 \\geq c_2\\): Reject the lot.\nIf \\(c_1 &lt; x_1 &lt; c_2\\): Proceed to Stage 2.\n\n\nStage 2:\n\nTake an additional sample of \\(n_2\\) items.\nFind the number of defectives \\(x_2\\) in this second sample.\nDecision criteria:\n\nIf \\(x_1 + x_2 \\leq c_3\\): Accept the lot.\nIf \\(x_1 + x_2 &gt; c_3\\): Reject the lot.\n\n\nAcceptance Criteria: The lot is accepted if the defectives in Stage 1 are within \\(c_1\\), or if the combined defectives in both stages are within \\(c_3\\).\nRejection Criteria: The lot is rejected if the defectives in Stage 1 exceed \\(c_2\\), or if the combined defectives in both stages exceed \\(c_3\\)."
   }
 ]

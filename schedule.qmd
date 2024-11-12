@@ -74,11 +74,12 @@ editor: visual
 | **Nov 10**  | **Homework 7 due date**                     | **Time Series**                                       |.  |.  |.  |
 | **Nov 11**  | **No class**                                | **No class**                                          |.  |.  |.  |
 | **Nov 12**  | **Quiz 3**                                  | **Time Series**                                       |.  |.  |.  |
-| Nov 13  | Decision Analysis                       | 19.1, 19.2                                         |.  |.  |.  |
-| Nov 15  | Decision Analysis (cont’d)              | 19.3                                              |.  |.  |.  |
-| Nov 18  | Quality Control                         | 20.1, 20.2                                         |.  |.  |.  |
-| Nov 20  | Quality Control (cont’d)                | 20.3, 20.4                                         |.  |.  |.  |
-| Nov 22  | Quality Control (cont’d)                | Applications                                      |.  |.  |.  |
+| Nov 13  | Quality Control                       | 19.1                                         |[slides](/lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html){target="_blank"}  |.  |.  |
+| Nov 15  | Quality Control (cont’d)              | 19.2                                             |[slides](/lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html){target="_blank"}    |.  |.  |
+| Nov 18  | Quality Control (cont’d)                         | 19.3                                         |[slides](/lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html){target="_blank"}    |.  |.  |
+| Nov 20  | Decision Analysis                 | 20.1, 20.2                                          |.  |.  |.  |
+| Nov 22  | Decision Analysis (cont’d)                | 20.3                                         |.  |.  |.  |
+| Nov 22  | Decision Analysis (cont’d)                | 20.4                                         |.  |.  |.  |
 | **Nov 27-30** | **Thanksgiving Break**                    | **No Class**                                          |.  |.  |.  |
 | **Dec 1**   | **Homework 8 due date**                     | **Decision Analysis and Quality Control**             |.  |.  |.  |
 | Dec 2   | Final Exam Review I                     | Cumulative                                        |.  |.  |.  |
