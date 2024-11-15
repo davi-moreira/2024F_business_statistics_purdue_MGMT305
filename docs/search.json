@@ -274,7 +274,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Date\nTopic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\nAug 19\nIntro. & Basic Stat. & Prob. Rvw.\nSyl., 1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years- IMS: Introduction to data\n\n\nAug 21\nBasic Stat. & Prob. Rvw. (cont’d)\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics: Observations, Variable, and Data Matrices- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data-IMS: Exploratory data analysis\n\n\nAug 23\nBasic Stat. & Prob. Rvw. (cont’d)\n6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\nAug 26\nInt. Est. Rvw.\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates and Sampling Variability - Video: Confidence Intervals- Video: Inferences for Proportions- Video: t-distribution- Video: Inference for one mean- IMS: Inference with mathematical models- IMS: Confidence intervals with bootstrapping - IMS: Inference for a single proportion -IMS: Inference for a single mean\n\n\nAug 28\nHyp. Testing Rvw.\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals - IMS: Hypothesis testing with randomization- MD: Hypothesis Testing\n\n\nAug 30\nHyp. Testing Rvw. (cont’d)\n11.1, 11.2\nslides\ndata\n- Blog: There is Still Only One Test - Nature: Statisticians issue warning over misuse of P-values - ASA: Statement on Statistical Significance and p-values\n\n\nSep 1\nHomework 1 due date\nBasic Stat. & Prob. Rvw.\n.\n.\n.\n\n\nSep 2\nLabor Day\nNo class\n.\n.\n.\n\n\nSep 3\nQuiz 1\nReview Material (Chs. 1 – 12)\n.\n.\n.\n\n\nSep 4\nNo class\nNo class\n.\n.\n.\n\n\nSep 6\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction - Video: Conditions for ANOVA - Video: Multiple comparisons -IMS: Inference for comparing many means\n\n\nSep 8\nHomework 2 due date\nInt. Est. & Hyp. Testing Rvw.\n.\n.\n.\n\n\nSep 9\nSimple Regression\n14.1\nslides\ndata\n- Video: Line Fitting, Residuals, and Correlation - Video: Fitting a Line with Least Squares Regression - Video: Least Squares Regression - Video: Types of Outliers in Linear Regression - Video: Inference for Linear Regression -IMS: Linear regression with a single predictor -IMS: Inference for linear regression with a single predictor\n\n\nSep 11\nSimple Regression (cont’d)\n14.2, 14.3\nslides\n.\n.\n\n\nSep 13\nSimple Regression (cont’d)\n14.4, 14.5\nslides\n.\n.\n\n\nSep 16\nSimple Regression (cont’d)\n14.6, 14.7\nslides\n.\n.\n\n\nSep 18\nSimple Regression (cont’d)\n14.8\nslides\n.\n.\n\n\nSep 20\nSimple Regression (cont’d)\n14.9\nslides\n.\n.\n\n\nSep 22\nHomework 3 due date\nSimple Regression\n\n\n\n\n\n.\n.\n.\n\n\n\n\n\nSep 23\nMultiple Regression\n15.1\nslides\ndata\n- Video: Introduction to Multiple Regression- Video: Model Selection in Multiple Regression- Video: Checking Multiple Regression Diagnostics Using Graphs-IMS: Linear regression with multiple predictors-IMS: Inference for linear regression with multiple predictors\n\n\nSep 25\nMultiple Regression\n15.2\nslides\n.\n.\n\n\nSep 27\nMultiple Regression (cont’d)\nMidterm 1 Review\n.\n.\n.\n\n\nSep 30\nMidterm 1 (6:30 pm – 7:30 pm, UC 114)\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\nOct 2\nMultiple Regression (cont’d)\n15.3, 15.4\nslides\n.\n.\n\n\nOct 4\nMultiple Regression (cont’d)\n15.5, 15.6\nslides\n.\n.\n\n\nOct 6\nHomework 4 due date\nMultiple Regression Pt. 1\n.\n.\n.\n\n\nOct 7-8\nOct Break\nNo Class\n.\n.\n.\n\n\nOct 9\nMultiple Regression (cont’d)\n15.7\nslides\n.\n.\n\n\nOct 11\nMultiple Regression (cont’d)\n15.8\nslides\n.\n.\n\n\nOct 14\nQuiz 2\nMultiple Regression\n.\n.\n.\n\n\nOct 16\nModel Building\n16.1\nslides\ndata\n- Video: Model Selection in Multiple Regression- IMS: Model Selection- IMS: Multicollinearity- IMS: Cross-validation for prediction error\n\n\nOct 18\nModel Building (cont’d)\n16.2\nslides\n.\n.\n\n\nOct 21\nModel Building (cont’d)\n16.3, 16.4\nslides\n.\n.\n\n\nOct 23\nHomework 5 due date\nMultiple Regression Pt. 2\n.\n.\n.\n\n\nOct 23\nLogistic Regression\nSupplement in Brightspace and Slides\nslides\n.\n- Video: Basic Ideas of Logistic Regression- IMS: Logistic regression- IMS: Inference for logistic regression\n\n\nOct 25\nLogistic Regression (cont’d)\nSupplement in Brightspace and Slides\nslides\n.\n.\n\n\nOct 28\nMidterm 2 Review\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nOct 29\nHomework 6 due date\nLogistic Regression\n.\n.\n.\n\n\n31\nMidterm 2 (6:30 pm – 7:30 pm, UC 114)\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nNov 1\nTime Series\n17.1\nslides\ndata\nVideo: Time Series Forecast Using Forecast Sheet in Excel\n\n\nNov 4\nTime Series (cont’d)\n17.2, 17.3\nslides\n.\n.\n\n\nNov 6\nTime Series (cont’d)\n17.4, 17.5\nslides\n.\n.\n\n\nNov 8\nTime Series (cont’d)\n17.6\nslides\n.\n.\n\n\nNov 10\nHomework 7 due date\nTime Series\n.\n.\n.\n\n\nNov 11\nNo class\nNo class\n.\n.\n.\n\n\nNov 12\nQuiz 3\nTime Series\n.\n.\n.\n\n\nNov 13\nQuality Control\n19.1\nslides\n.\n.\n\n\nNov 15\nQuality Control (cont’d)\n19.2\nslides\n.\n.\n\n\nNov 18\nQuality Control (cont’d)\n19.3\nslides\n.\n.\n\n\nNov 20\nDecision Analysis\n20.1, 20.2\n.\n.\n.\n\n\nNov 22\nDecision Analysis (cont’d)\n20.3\n.\n.\n.\n\n\nNov 22\nDecision Analysis (cont’d)\n20.4\n.\n.\n.\n\n\nNov 27-30\nThanksgiving Break\nNo Class\n.\n.\n.\n\n\nDec 1\nHomework 8 due date\nDecision Analysis and Quality Control\n.\n.\n.\n\n\nDec 2\nFinal Exam Review I\nCumulative\n.\n.\n.\n\n\nDec 4\nFinal Exam Review II\nCumulative\n.\n.\n.\n\n\nDec 6\nFinal Exam Preparation\nNo Class\n.\n.\n.\n\n\nTBD\nFinal Exam\nCumulative\n.\n.\n.\n\n\n\n\n*Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
+    "text": "Date\nTopic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\nAug 19\nIntro. & Basic Stat. & Prob. Rvw.\nSyl., 1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years- IMS: Introduction to data\n\n\nAug 21\nBasic Stat. & Prob. Rvw.\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics: Observations, Variable, and Data Matrices- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data-IMS: Exploratory data analysis\n\n\nAug 23\nBasic Stat. & Prob. Rvw.\n6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\nAug 26\nInt. Est. Rvw.\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates and Sampling Variability - Video: Confidence Intervals- Video: Inferences for Proportions- Video: t-distribution- Video: Inference for one mean- IMS: Inference with mathematical models- IMS: Confidence intervals with bootstrapping - IMS: Inference for a single proportion -IMS: Inference for a single mean\n\n\nAug 28\nHyp. Testing Rvw.\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals - IMS: Hypothesis testing with randomization- MD: Hypothesis Testing\n\n\nAug 30\nHyp. Testing Rvw.\n11.1, 11.2\nslides\ndata\n- Blog: There is Still Only One Test - Nature: Statisticians issue warning over misuse of P-values - ASA: Statement on Statistical Significance and p-values\n\n\nSep 1\nHomework 1 due date\nBasic Stat. & Prob. Rvw.\n.\n.\n.\n\n\nSep 2\nLabor Day\nNo class\n.\n.\n.\n\n\nSep 3\nQuiz 1\nReview Material (Chs. 1 – 12)\n.\n.\n.\n\n\nSep 4\nNo class\nNo class\n.\n.\n.\n\n\nSep 6\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction - Video: Conditions for ANOVA - Video: Multiple comparisons -IMS: Inference for comparing many means\n\n\nSep 8\nHomework 2 due date\nInt. Est. & Hyp. Testing Rvw.\n.\n.\n.\n\n\nSep 9\nSimple Regression\n14.1\nslides\ndata\n- Video: Line Fitting, Residuals, and Correlation - Video: Fitting a Line with Least Squares Regression - Video: Least Squares Regression - Video: Types of Outliers in Linear Regression - Video: Inference for Linear Regression -IMS: Linear regression with a single predictor -IMS: Inference for linear regression with a single predictor\n\n\nSep 11\nSimple Regression\n14.2, 14.3\nslides\n.\n.\n\n\nSep 13\nSimple Regression\n14.4, 14.5\nslides\n.\n.\n\n\nSep 16\nSimple Regression\n14.6, 14.7\nslides\n.\n.\n\n\nSep 18\nSimple Regression\n14.8\nslides\n.\n.\n\n\nSep 20\nSimple Regression\n14.9\nslides\n.\n.\n\n\nSep 22\nHomework 3 due date\nSimple Regression\n\n\n\n\n\n.\n.\n.\n\n\n\n\n\nSep 23\nMultiple Regression\n15.1\nslides\ndata\n- Video: Introduction to Multiple Regression- Video: Model Selection in Multiple Regression- Video: Checking Multiple Regression Diagnostics Using Graphs-IMS: Linear regression with multiple predictors-IMS: Inference for linear regression with multiple predictors\n\n\nSep 25\nMultiple Regression\n15.2\nslides\n.\n.\n\n\nSep 27\nMultiple Regression\nMidterm 1 Review\n.\n.\n.\n\n\nSep 30\nMidterm 1 (6:30 pm – 7:30 pm, UC 114)\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\nOct 2\nMultiple Regression\n15.3, 15.4\nslides\n.\n.\n\n\nOct 4\nMultiple Regression\n15.5, 15.6\nslides\n.\n.\n\n\nOct 6\nHomework 4 due date\nMultiple Regression Pt. 1\n.\n.\n.\n\n\nOct 7-8\nOct Break\nNo Class\n.\n.\n.\n\n\nOct 9\nMultiple Regression\n15.7\nslides\n.\n.\n\n\nOct 11\nMultiple Regression\n15.8\nslides\n.\n.\n\n\nOct 14\nQuiz 2\nMultiple Regression\n.\n.\n.\n\n\nOct 16\nModel Building\n16.1\nslides\ndata\n- Video: Model Selection in Multiple Regression- IMS: Model Selection- IMS: Multicollinearity- IMS: Cross-validation for prediction error\n\n\nOct 18\nModel Building\n16.2\nslides\n.\n.\n\n\nOct 21\nModel Building\n16.3, 16.4\nslides\n.\n.\n\n\nOct 23\nHomework 5 due date\nMultiple Regression Pt. 2\n.\n.\n.\n\n\nOct 23\nLogistic Regression\nSupplement in Brightspace and Slides\nslides\n.\n- Video: Basic Ideas of Logistic Regression- IMS: Logistic regression- IMS: Inference for logistic regression\n\n\nOct 25\nLogistic Regression\nSupplement in Brightspace and Slides\nslides\n.\n.\n\n\nOct 28\nMidterm 2 Review\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nOct 29\nHomework 6 due date\nLogistic Regression\n.\n.\n.\n\n\n31\nMidterm 2 (6:30 pm – 7:30 pm, UC 114)\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nNov 1\nTime Series\n17.1\nslides\ndata\nVideo: Time Series Forecast Using Forecast Sheet in Excel\n\n\nNov 4\nTime Series\n17.2, 17.3\nslides\n.\n.\n\n\nNov 6\nTime Series\n17.4, 17.5\nslides\n.\n.\n\n\nNov 8\nTime Series\n17.6\nslides\n.\n.\n\n\nNov 10\nHomework 7 due date\nTime Series\n.\n.\n.\n\n\nNov 11\nNo class\nNo class\n.\n.\n.\n\n\nNov 12\nQuiz 3\nTime Series\n.\n.\n.\n\n\nNov 13\nQuality Control\n19.1\nslides\n.\n.\n\n\nNov 15\nQuality Control\n19.2, 19.3\nslides\n.\n.\n\n\nNov 18\nDecision Analysis\n20.1\nslides\n.\n.\n\n\nNov 20\nDecision Analysis\n20.2\nslides\n.\n.\n\n\nNov 22\nDecision Analysis\nVideo or set of videos and activity.\nTBP\n.\n.\n\n\nNov 25\nApplications - Asynchronous Class\n20.4\nslides\n.\n.\n\n\nNov 27-30\nThanksgiving Break\nNo Class\n.\n.\n.\n\n\nDec 1\nHomework 8 due date\nQuality Control and Decision Analysis\n.\n.\n.\n\n\nDec 2\nFinal Exam Review I\nCumulative\n.\n.\n.\n\n\nDec 4\nFinal Exam Review II\nCumulative\n.\n.\n.\n\n\nDec 6\nFinal Exam Preparation\nNo Class\n.\n.\n.\n\n\nTBD\nFinal Exam\nCumulative\n.\n.\n.\n\n\n\n\n*Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
     "crumbs": [
       "Schedule and Material"
     ]
@@ -9482,7 +9482,7 @@
     "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#r-chart-for-process-variability-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "\\(R\\) Chart for Process Variability",
-    "text": "\\(R\\) Chart for Process Variability\n\nAssume the in-control process mean and standard deviation are unknown.\nBecause the control limits for the \\(\\bar{X}\\) chart depend on the value of the average range (\\(\\bar{R}\\)), these limits will not have much meaning unless the process range is in control.\nIn practice, the \\(R\\) chart is usually constructed before the \\(\\bar{X}\\) chart.\n\nIf the \\(R\\) chart indicates that the process variability is in control, then the \\(\\bar{R}\\) is used when constructing the \\(\\bar{X}\\) chart.\n\nThe plotting statistic is the Sample Range, \\(R_j\\) (the last column on slide 29)."
+    "text": "\\(R\\) Chart for Process Variability\n\nAssume the in-control process mean and standard deviation are unknown.\nBecause the control limits for the \\(\\bar{X}\\) chart depend on the value of the average range (\\(\\bar{R}\\)), these limits will not have much meaning unless the process range is in control.\nIn practice, the \\(R\\) chart is usually constructed before the \\(\\bar{X}\\) chart.\n\nIf the \\(R\\) chart indicates that the process variability is in control, then the \\(\\bar{R}\\) is used when constructing the \\(\\bar{X}\\) chart.\n\nThe plotting statistic is the Sample Range, \\(R_j\\)."
   },
   {
     "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#r-chart-for-process-variability-2",
@@ -9693,5 +9693,481 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Multiple Sampling Plans: Two Stage Acceptance Sampling Plan Procedure",
     "text": "Multiple Sampling Plans: Two Stage Acceptance Sampling Plan Procedure\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStage 1:\n\nTake an initial sample of \\(n_1\\) items.\nFind the number of defectives \\(x_1\\) in this sample.\nDecision criteria:\n\nIf \\(x_1 \\leq c_1\\): Accept the lot.\nIf \\(x_1 \\geq c_2\\): Reject the lot.\nIf \\(c_1 &lt; x_1 &lt; c_2\\): Proceed to Stage 2.\n\n\nStage 2:\n\nTake an additional sample of \\(n_2\\) items.\nFind the number of defectives \\(x_2\\) in this second sample.\nDecision criteria:\n\nIf \\(x_1 + x_2 \\leq c_3\\): Accept the lot.\nIf \\(x_1 + x_2 &gt; c_3\\): Reject the lot.\n\n\nAcceptance Criteria: The lot is accepted if the defectives in Stage 1 are within \\(c_1\\), or if the combined defectives in both stages are within \\(c_3\\).\nRejection Criteria: The lot is rejected if the defectives in Stage 1 exceed \\(c_2\\), or if the combined defectives in both stages exceed \\(c_3\\)."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#overview",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#overview",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nProblem formulation.\nChance Events and States of Nature.\nPayoff tables.\nDecision trees.\n\n\n\nDecision Making with Probabilities.\n\nExpected Value Approach\nExpected Value of Perfect Information (EVPI)\nExpected Value with Sample Information (EVPI)\n\nBayes’ theorem to compute branch probabilities for decision trees."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-analysis-overview",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-analysis-overview",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Analysis Overview",
+    "text": "Decision Analysis Overview\nDecision analysis can be used to develop an optimal decision strategy when a decision maker is faced with several decision alternatives and an uncertain or risk-filled pattern of future events.\nTopics we will cover:\n\nPayoff tables: to provide a structure for decision problems.\nDecision trees: to show the sequential nature of the problems and to identify an optimal sequence of decisions, referred to as an optimal decision strategy.\nBayes’ theorem: to compute branch probabilities for decision trees."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#problem-formulation",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#problem-formulation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Problem Formulation",
+    "text": "Problem Formulation\n\nThe first step in the decision analysis process is problem formulation.\n\nIt can be a verbal statement of the problem. Then, we identify the decision alternatives, the uncertain future events, referred to as chance events, and the consequences associated with each decision alternative and each chance event outcome."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-pittsburgh-development-corporation-pdc",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-pittsburgh-development-corporation-pdc",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Pittsburgh Development Corporation (PDC)",
+    "text": "Example: Pittsburgh Development Corporation (PDC)\n\nPittsburgh Development Corporation (PDC) has purchased land to develop a luxury condominium complex with individual units priced between $300,000 and $1,400,000.\n\nDecision Problem: PDC’s primary decision challenge is to determine the optimal size of the condominium project that will maximize profits, considering the uncertainty of future demand for these units.\nProject Options: PDC has commissioned architectural plans for three potential project sizes:\n\nSmall Complex: 30 condominiums\nMedium Complex: 60 condominiums\nLarge Complex: 90 condominiums\n\nKey Considerations: The financial viability and success of the project depend on:\n\nThe selected project size (small, medium, or large)\nFuture demand for the condominiums, an uncertain factor influencing profitability\n\n\n\nPDC must analyze both the scale of the project and demand uncertainty to make an informed, profitable decision."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-decision-alternatives",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-decision-alternatives",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Decision Alternatives",
+    "text": "Example: Decision Alternatives\nIt is clear that the decision is to select the best size for the condominium complex. PDC has the following three decision alternatives:\n\\[\nd_1 = \\text{a small complex with 30 condominiums}\n\\]\n\\[\nd_2 = \\text{a medium complex with 60 condominiums}\n\\]\n\\[\nd_3 = \\text{a large complex with 90 condominiums}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-chance-events-and-states-of-nature",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-chance-events-and-states-of-nature",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Chance Events and States of Nature",
+    "text": "Example: Chance Events and States of Nature\n\nA key factor in PDC’s decision-making process is the uncertainty surrounding demand for the condominiums.\n\nLet’s assume that PDC’s CEO considered a range of demand scenarios but identified two primary outcomes to focus on:\n\nStrong Demand\nWeak Demand"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#chance-events-in-decision-analysis",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#chance-events-in-decision-analysis",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Chance Events in Decision Analysis",
+    "text": "Chance Events in Decision Analysis\nIn decision analysis, uncertain future events like demand levels are known as chance events.\nThe possible outcomes of these events are called states of nature, with only one state ultimately occurring."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-states-of-nature-for-the-pdc-project",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-states-of-nature-for-the-pdc-project",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: States of Nature for the PDC Project",
+    "text": "Example: States of Nature for the PDC Project\n\nA key factor in PDC’s decision-making process is the uncertainty surrounding demand for the condominiums.\n\nFor PDC’s condominium project, the two relevant states of nature regarding demand are:\n\\[\ns_1 = \\text{Strong demand for the condominiums}\n\\]\n\\[\ns_2 = \\text{Weak demand for the condominiums}\n\\]\nBy defining these states of nature, PDC can structure its decision-making process to account for demand uncertainty and evaluate the impact of each demand scenario on project profitability."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-sequence-of-decisions-and-consequences",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-sequence-of-decisions-and-consequences",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Sequence of Decisions and Consequences",
+    "text": "Example: Sequence of Decisions and Consequences\nThe decision analysis process follows a structured sequence to ensure optimal decision-making:\n\nSelect a Decision Alternative: Management begins by choosing a project size (complex size) from the available options (small, medium, or large complex).\nState of Nature Occurs: After the decision, an uncertain demand scenario—known as the state of nature—will materialize. In this case, it could be: Strong Demand or Weak Demand.\nObserve the Consequence: Based on the chosen project size and the actual demand, a consequence will occur. For PDC, the consequence is represented as profit or loss from the project.\n\n\nBy following this sequence, PDC can better understand potential outcomes and make informed decisions to maximize profitability."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#payoff-tables-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#payoff-tables-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Payoff Tables",
+    "text": "Payoff Tables\nTo determine the optimal complex size, PDC must evaluate the consequence of each decision alternative under different demand scenarios. For the purpose of choosing the best Payoff, we use Payoff Tables.\n\nKey Concepts\nPayoff: The result (profit or loss) from a specific combination of a decision alternative (complex size) and a state of nature (demand).\nPayoff Table: A table that organizes payoffs for all possible combinations of decision alternatives and states of nature, providing a structured view of potential outcomes.\n\n\nBy analyzing the payoff table, PDC can make an informed decision that aligns with their profitability goals.\n\n\nGiven the three decision alternatives and the two states of nature, which complex size should PDC choose?"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#payoff-tables-2",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#payoff-tables-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Payoff Tables",
+    "text": "Payoff Tables\nTo determine the optimal complex size, PDC must evaluate the consequence of each decision alternative under different demand scenarios. For the purpose of choosing the best Payoff, we use Payoff Tables.\nKey Concepts\n\nPayoff: The result (profit or loss) from a specific combination of a decision alternative (complex size) and a state of nature (demand).\nPayoff Table: A table that organizes payoffs for all possible combinations of decision alternatives and states of nature, providing a structured view of potential outcomes.\n\nBy analyzing the payoff table, PDC can make an informed decision that aligns with their profitability goals.\nGiven the three decision alternatives and the two states of nature, which complex size should PDC choose?"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#payoff-table-for-the-pdc-condominium-project-payoffs-in-millions",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#payoff-table-for-the-pdc-condominium-project-payoffs-in-millions",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Payoff Table for the PDC Condominium Project (Payoffs in $ Millions)",
+    "text": "Payoff Table for the PDC Condominium Project (Payoffs in $ Millions)\nThe payoff table will show projected profits (in millions of dollars) for each combination of decision alternative (complex size) and state of nature (demand).\n\n\n\n\n\n\n\n\nDecision Alternative\nState of Nature\n\n\n\n\n\n\nStrong Demand \\(s_1\\)\nWeak Demand \\(s_2\\)\n\n\nSmall complex \\(d_1\\)\n8\n7\n\n\nMedium complex \\(d_2\\)\n14\n5\n\n\nLarge complex \\(d_3\\)\n20\n-9"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-interpreting-payoffs",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-interpreting-payoffs",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Interpreting Payoffs",
+    "text": "Example: Interpreting Payoffs\nSince PDC’s goal is to maximize profit, profit is used as the payoff measure in this case.\n\nNotation: We use \\(V_{ij}\\) to denote the payoff for decision alternative \\(i\\) under state of nature \\(j\\).\n\n\nFrom the Payoff Table:\n\n\\(V_{31} = 20\\): A payoff of $20 million occurs if PDC builds a large complex (\\(d_3\\)) and demand is strong (\\(s_1\\)).\n\\(V_{32} = -9\\): A loss of $9 million occurs if PDC builds a large complex (\\(d_3\\)) and demand is weak (\\(s_2\\)).\n\n\n\nThese payoff values help PDC evaluate the potential financial outcomes of each decision under different demand scenarios, guiding them toward the most profitable choice."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-trees-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-trees-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Trees",
+    "text": "Decision Trees\n\n\n\nA decision tree graphically shows the sequential nature of the decision-making process.\n\nThe Figure presents a decision tree for the PDC problem, demonstrating the natural or logical progression that will occur over time.\n\nFirst, PDC must make a decision regarding the size of the condominium complex (\\(d_1\\), \\(d_2\\), or \\(d_3\\)).\nThen, after the decision is implemented, either state of nature \\(s_1\\) or \\(s_2\\) will occur.\n\n\n\nThe number at each end point of the tree indicates the payoff associated with a particular sequence. For example:\n\nThe topmost payoff of 8 indicates an $8 million profit if PDC constructs a small condominium complex (\\(d_1\\)) and demand is strong (\\(s_1\\)).\nThe next payoff of 7 indicates an anticipated profit of $7 million if PDC constructs a small condominium complex (\\(d_1\\)) and demand is weak (\\(s_2\\)).\n\n\n\nThus, the decision tree shows the sequences of decision alternatives and states of nature, providing the six possible payoffs."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#explanation-of-the-decision-tree",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#explanation-of-the-decision-tree",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Explanation of the Decision Tree",
+    "text": "Explanation of the Decision Tree\n\n\n\nThe decision tree has four nodes, numbered 1–4, representing decisions and chance events:\n\nDecision nodes (squares): Represent points where a decision must be made. Node 1 is the decision node.\nChance nodes (circles): Represent points where the outcome depends on chance. Nodes 2, 3, and 4 are chance nodes.\nBranches: Branches leaving the decision node correspond to decision alternatives (small, medium, or large complex).\nBranches: Branches leaving each chance node correspond to the states of nature (strong or weak demand).\nPayoffs: are shown at the end of each branch.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow can the decision maker use the information in the payoff table or the decision tree to select the best decision alternative?"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-making-with-probabilities",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-making-with-probabilities",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Making with Probabilities",
+    "text": "Decision Making with Probabilities\n\nWith the decision alternatives and the states of nature established, our next step is to determine the probabilities for each state of nature.\nThere are several methods to assign probabilities:\n\nClassical method: Based on logical analysis, typically used when outcomes are equally likely.\nRelative frequency method: Uses historical or empirical data to estimate probabilities.\nSubjective method: Relies on expert judgment or intuition when data is scarce or unavailable.\n\n\nWith these probabilities in hand, we apply the expected value approach to calculate the expected payoff for each decision alternative by weighting possible outcomes according to their probabilities.\n\n\nThe decision alternative with the highest expected value is then identified as the best or recommended choice for the problem."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-approach",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-approach",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Expected Value Approach",
+    "text": "Expected Value Approach\n\nThe probabilities for the states of nature must satisfy the basic requirements for assigning probabilities.\nWe begin by defining the expected value of a decision alternative. Let:\n\n\\(N\\) = the number of states of nature\n\\(P(s_j)\\) = the probability of state of nature \\(s_j\\)\n\n\nBecause one and only one of the \\(N\\) states of nature can occur, the probabilities must satisfy two conditions:\n\nNon-negativity: \\[\nP(s_j) \\geq 0 \\quad \\text{for all states of nature}\n\\]\nTotal probability: \\[\n\\sum_{j=1}^{N} P(s_j) = P(s_1) + P(s_2) + \\cdots + P(s_N) = 1\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-calculation",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-calculation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Expected Value Calculation",
+    "text": "Expected Value Calculation\nThe expected value (EV) of decision alternative \\(d_i\\) is as follows:\n\\[\n\\text{EV}(d_i) = \\sum_{j=1}^{N} P(s_j) V_{ij}\n\\]\nwhere:\n\n\\(V_{ij}\\) = the value of the payoff for decision alternative \\(d_i\\) and state of nature \\(s_j\\).\n\n\nIn words, the expected value of a decision alternative is the sum of weighted payoffs for the decision alternative. The weight for a payoff is the probability of the associated state of nature and therefore the probability that the payoff will occur."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-calculation-of-expected-value",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-calculation-of-expected-value",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Calculation of Expected Value",
+    "text": "Example: Calculation of Expected Value\n\nPDC is optimistic about the potential demand for its luxury high-rise condominium complex. Based on this optimism, PDC assigns subjective probabilities to represent the likelihood of each demand scenario:\n\nProbability of strong demand (\\(s_1\\)): \\(P(s_1) = 0.8\\)\nProbability of weak demand (\\(s_2\\)): \\(P(s_2) = 0.2\\)\n\n\nUsing these probabilities and the associated payoffs, we calculate the expected value (EV) for each decision alternative:\n\nSmall complex (\\(d_1\\)): \\[\n\\text{EV}(d_1) = 0.8(8) + 0.2(7) = 7.8\n\\]\nMedium complex (\\(d_2\\)): \\[\n\\text{EV}(d_2) = 0.8(14) + 0.2(5) = 12.2\n\\]\nLarge complex (\\(d_3\\)): \\[\n\\text{EV}(d_3) = 0.8(20) + 0.2(-9) = 14.2\n\\]\n\n\n\nBy comparing the expected values, we find that the large complex (\\(d_3\\)) yields the highest expected value of $14.2 million. Therefore, according to the expected value approach, the large complex is the recommended decision."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-tree-with-state-of-nature-probabilities",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-tree-with-state-of-nature-probabilities",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Tree with State-of-Nature Probabilities",
+    "text": "Decision Tree with State-of-Nature Probabilities\nThe calculations required to identify the decision alternative with the best expected value can be conveniently carried out on a decision tree.\n\nThe Figure shows the decision tree for the PDC problem with state-of-nature branch probabilities."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#applying-the-expected-value-approach-using-decision-trees",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#applying-the-expected-value-approach-using-decision-trees",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Applying the Expected Value Approach Using Decision Trees",
+    "text": "Applying the Expected Value Approach Using Decision Trees\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe calculations required to identify the decision alternative with the best expected value can be conveniently carried out on a decision tree.\nWorking backward through the decision tree, we first compute the expected value at each chance node; that is, at each chance node, we weight each possible payoff by its probability of occurrence. By doing so, we obtain the expected values for nodes 2, 3, and 4."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#summary-of-expected-value-approach-using-decision-trees",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#summary-of-expected-value-approach-using-decision-trees",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary of Expected Value Approach Using Decision Trees",
+    "text": "Summary of Expected Value Approach Using Decision Trees\n\nThe decision maker controls the choice at each decision node aiming to maximize the expected profit. At decision node 1, the expected value approach identifies the best decision alternative as:\n\nDecision \\(d_3\\): Constructing the large condominium complex, which yields an expected value of $14.2 million.\n\n\nThis recommendation of \\(d_3\\) is consistent with both the decision tree analysis and the expected value calculations derived from the payoff table.\nUsing the expected value approach in conjunction with the decision tree provides a clear and structured framework for selecting the optimal decision based on projected profits."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-perfect-information-evpi",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-perfect-information-evpi",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Expected Value of Perfect Information (EVPI)",
+    "text": "Expected Value of Perfect Information (EVPI)\n\n\nWhat if PDC has the opportunity to conduct a market research study to gauge buyer interest in the condominium project?\n\n\nThis study could provide valuable information to refine the probability assessments for the different states of nature (e.g., strong or weak demand).\n\n\nTo understand the potential value of this information, we assume the study could yield perfect information — meaning PDC would know, with certainty, which state of nature will occur before making a decision.\n\n\nGiven this perfect information, we can develop an optimal decision strategy.\nBy calculating the Expected Value of Perfect Information (EVPI), we can quantify how much PDC should be willing to pay for this perfect information, as it would enable PDC to make the most informed and profitable decision possible."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-strategy-with-perfect-information",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-strategy-with-perfect-information",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Strategy with Perfect Information",
+    "text": "Decision Strategy with Perfect Information\n\nWith perfect information about the states of nature, PDC can tailor its decision strategy to maximize profits based on certainty about demand:\n\nIf PDC knows with certainty that strong demand (\\(s_1\\)) will occur:\n\n\nThe optimal decision is to select the large complex (\\(d_3\\)), resulting in a payoff of $20 million.\n\n\nIf PDC knows with certainty that weak demand (\\(s_2\\)) will occur:\n\n\nThe optimal decision is to select the small complex (\\(d_1\\)), resulting in a payoff of $7 million.\n\n\nThis decision strategy demonstrates the value of perfect information by showing how it would enable PDC to make the most profitable choice in each scenario.\n\n\n\nWhat is the expected value for this decision strategy?"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-this-decision-strategy",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-this-decision-strategy",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Expected Value of this Decision Strategy",
+    "text": "Expected Value of this Decision Strategy\n\nWhat is the expected value for this decision strategy?\n\n\nTo compute the expected value with perfect information, we return to the original probabilities for the states of nature:\n\n\\(P(s_1) = 0.8\\)\n\\(P(s_2) = 0.2\\)\n\n\n\nSo, the expected value of the decision strategy based on perfect information is:\n\\[\n0.8(20) + 0.2(7) = 17.4\n\\]\nWe refer to the expected value of $17.4 million as the expected value with perfect information (EVwPI)."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#payoff-table-for-the-pdc-condominium-project-millions",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#payoff-table-for-the-pdc-condominium-project-millions",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Payoff Table for the PDC Condominium Project ($ Millions)",
+    "text": "Payoff Table for the PDC Condominium Project ($ Millions)\n\n\n\n\n\n\n\n\n\nDecision Alternative\nStrong Demand \\(s_1\\)\nWeak Demand \\(s_2\\)\n\n\n\n\nSmall complex, \\(d_1\\)\n8\n7\n\n\nMedium complex, \\(d_2\\)\n14\n5\n\n\nLarge complex, \\(d_3\\)\n20\n-9"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#branch-probabilities-for-the-pdc-condominium-project-based-on-a-favorable-market-research-report",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#branch-probabilities-for-the-pdc-condominium-project-based-on-a-favorable-market-research-report",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Branch Probabilities for the PDC Condominium Project Based on a Favorable Market Research Report",
+    "text": "Branch Probabilities for the PDC Condominium Project Based on a Favorable Market Research Report\n\n\n\n\n\n\n\n\n\n\nStates of Nature \\(s_j\\)\nPrior Probabilities \\(P(s_j)\\)\nConditional Probabilities \\(P(F | s_j)\\)\nJoint Probabilities \\(P(F \\cap s_j)\\)\nPosterior Probabilities \\(P(s_j | F)\\)\n\n\n\n\n\\(s_1\\)\n0.8\n0.90\n0.72\n0.94\n\n\n\\(s_2\\)\n0.2\n0.25\n0.05\n0.06\n\n\nTotal\n1.0\n\n\\(P(F) = 0.77\\)\n1.00"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#formula-for-expected-value-of-perfect-information-evpi",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#formula-for-expected-value-of-perfect-information-evpi",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Formula for Expected Value of Perfect Information (EVPI)",
+    "text": "Formula for Expected Value of Perfect Information (EVPI)\nIn general, the expected value of perfect information (EVPI) is computed as follows:\n\\[\n\\text{EVPI} = | \\text{EVwPI} - \\text{EVwoPI} |\n\\]\nwhere: - EVPI = expected value of perfect information - EVwPI = expected value with perfect information about the states of nature - EVwoPI = expected value without perfect information about the states of nature\nNote the role of the absolute value. For minimization problems, information helps reduce or lower cost; thus, the expected value with perfect information is less than or equal to the expected value without perfect information. In this case, EVPI is the magnitude of the difference between EVwPI and EVwoPI."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#calculating-the-expected-value-of-perfect-information-evpi",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#calculating-the-expected-value-of-perfect-information-evpi",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Calculating the Expected Value of Perfect Information (EVPI)",
+    "text": "Calculating the Expected Value of Perfect Information (EVPI)\nThe expected value with perfect information is $17.4 million, and the expected value without perfect information (EVwoPI) is $14.2 million. Therefore, the expected value of perfect information (EVPI) is:\n\\[\n17.4 - 14.2 = 3.2\n\\]\nIn other words, $3.2 million represents the additional expected value that can be obtained if perfect information were available about the states of nature.\nGiven the EVPI of $3.2 million, PDC might seriously consider a market survey as a way to obtain more information about the states of nature."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-analysis-with-sample-information",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-analysis-with-sample-information",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Analysis with Sample Information",
+    "text": "Decision Analysis with Sample Information\nWith the expected value approach, we saw how probability assessments for the states of nature influence expected value calculations and, ultimately, decision recommendations.\nTypically, decision makers start with preliminary assessments, known as prior probabilities, which reflect the best estimates available at the time.\nTo improve decision accuracy, decision makers may seek additional information to refine these probabilities. This new data can help revise or update prior probabilities, leading to more accurate assessments of the states of nature."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-analysis-with-sample-information-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-analysis-with-sample-information-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Analysis with Sample Information",
+    "text": "Decision Analysis with Sample Information\nAdditional information is often obtained through sample information, which provides insights into the likely states of nature. Common sources of sample information include:\n\nRaw material sampling\nProduct testing\nMarket research studies\n\n\nUsing sample information, decision makers can update their prior probability estimates. These revised probabilities, adjusted based on new data, are referred to as posterior probabilities."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#market-research-study-for-pdc",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#market-research-study-for-pdc",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Market Research Study for PDC",
+    "text": "Market Research Study for PDC\nLet’s assume that PDC manager is considering a six-month market research study designed to learn more about potential market acceptance of the PDC condominium project.\nShe anticipates that the market research study will provide one of the following two results:\n\nFavorable report: A significant number of the individuals contacted express interest in purchasing a PDC condominium.\nUnfavorable report: Very few of the individuals contacted express interest in purchasing a PDC condominium."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-tree-with-market-research-study",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-tree-with-market-research-study",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Tree with Market Research Study",
+    "text": "Decision Tree with Market Research Study\n\n\nThe decision tree for the PDC problem with sample information shows the logical sequence for the decisions and the chance events.\n\nPDC’s management must decide whether the market research should be conducted.\nIf it is conducted, PDC’s management must be prepared to make a decision about the size of the condominium project if:\n\nthe market research report is favorable or\nthe market research report is unfavorable."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#analysis-of-decision-tree-structure",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#analysis-of-decision-tree-structure",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Analysis of Decision Tree Structure",
+    "text": "Analysis of Decision Tree Structure\n\n\n\nIn the decision tree diagram:\n\nSquares represent decision nodes, where PDC actively makes a choice.\nCircles represent chance nodes, where the outcome is determined by probability rather than a decision.\n\n\nKey Nodes in the Decision Tree\n\nDecision Node 1:\n\nPDC must decide whether to conduct a market research study.\n\nChance Node 2:\n\nIf the study is conducted, the outcome—favorable or unfavorable report—is determined by chance, as PDC has no control over this result.\n\nDecision Node 3:\n\nIf the report is favorable, PDC must choose the size of the complex (small, medium, or large) based on this information.\n\nDecision Node 4:\n\nIf the report is unfavorable, PDC again chooses the size of the complex (small, medium, or large), this time with the knowledge of an unfavorable market assessment.\n\nChance Nodes 6 to 14:\n\nThese nodes represent the final demand outcomes (strong or weak) for each decision path. Here, the actual state of nature—strong demand or weak demand—is determined by chance."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#probabilities-for-market-research-study",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#probabilities-for-market-research-study",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Probabilities for Market Research Study",
+    "text": "Probabilities for Market Research Study\n\n\n\nPDC developed the following branch probabilities.\n\nIf the market research study is undertaken,\n\\[\nP(\\text{Favorable report}) = P(F) = 0.77\n\\]\n\\[\nP(\\text{Unfavorable report}) = P(U) = 0.23\n\\]\nIf the market research report is favorable,\n\\[\nP(\\text{Strong demand given a favorable report}) = P(s_1 | F) = 0.94\n\\]\n\\[\nP(\\text{Weak demand given a favorable report}) = P(s_2 | F) = 0.06\n\\]\nIf the market research report is unfavorable,\n\\[\nP(\\text{Strong demand given an unfavorable report}) = P(s_1 | U) = 0.35\n\\]\n\\[\nP(\\text{Weak demand given an unfavorable report}) = P(s_2 | U) = 0.65\n\\]\nIf the market research report is not undertaken, the prior probabilities are applicable:\n\\[\nP(\\text{Strong demand}) = P(s_1) = 0.80\n\\]\n\\[\nP(\\text{Weak demand}) = P(s_2) = 0.20\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-strategy",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-strategy",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Strategy",
+    "text": "Decision Strategy\n\nThe approach used to determine the optimal decision strategy is based on a backward pass through the decision tree using the following steps:\n\nAt chance nodes, compute the expected value by multiplying the payoff at the end of each branch by the corresponding branch probability.\nAt decision nodes, select the decision branch that leads to the best expected value. This expected value becomes the expected value at the decision node."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-strategy-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-strategy-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Strategy",
+    "text": "Decision Strategy\n\n\n\n\n\nStarting the backward pass calculations by computing the expected values at chance nodes 6 to 14 provides the following results:\n\n\\[\n\\begin{align*}\n\\text{EV(Node 6)} &= 0.94(8) + 0.06(7) = 7.94 \\\\\n\\text{EV(Node 7)} &= 0.94(14) + 0.06(5) = 13.46 \\\\\n\\text{EV(Node 8)} &= 0.94(20) + 0.06(-9) = 18.26 \\\\\n\\text{EV(Node 9)} &= 0.35(8) + 0.65(7) = 7.35 \\\\\n\\text{EV(Node 10)} &= 0.35(14) + 0.65(5) = 8.15 \\\\\n\\text{EV(Node 11)} &= 0.35(20) + 0.65(-9) = 1.15 \\\\\n\\text{EV(Node 12)} &= 0.80(8) + 0.20(7) = 7.80 \\\\\n\\text{EV(Node 13)} &= 0.80(14) + 0.20(5) = 12.20 \\\\\n\\text{EV(Node 14)} &= 0.80(20) + 0.20(-9) = 14.20 \\\\\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#selecting-best-decisions",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#selecting-best-decisions",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Selecting Best Decisions",
+    "text": "Selecting Best Decisions\n\n\n\nNext, move to decision nodes 3, 4, and 5. For each of these nodes, select the decision alternative branch that leads to the best expected value.\n\nAt node 3, the choices are:\n\nSmall complex branch: EV(Node 6) = 7.94\nMedium complex branch: EV(Node 7) = 13.46\nLarge complex branch: EV(Node 8) = 18.26\n\n\n\nThe best decision is the large complex, with EV(Node 3) = 18.26.\n\nAt node 4, we select the best expected value from nodes 9, 10, and 11. The best decision is the medium complex, with EV(Node 4) = 8.15.\nFor node 5, we select the best expected value from nodes 12, 13, and 14. The best decision is the large complex, with EV(Node 5) = 14.20.\n\n\n\nPDC Decision Tree After Choosing Best Decisions at Nodes 3, 4, and 5"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#selecting-best-decisions-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#selecting-best-decisions-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Selecting Best Decisions",
+    "text": "Selecting Best Decisions\n\n\n\n\nThe expected value at chance node 2 can now be computed as follows:\n\\[\n\\begin{align*}\n\\text{EV(Node 2)} &= 0.77 \\times \\text{EV(Node 3)} + 0.23 \\times \\text{EV(Node 4)} \\\\\n&= 0.77(18.26) + 0.23(8.15) = 15.93\n\\end{align*}\n\\]\nThis calculation reduces the decision tree to one involving only the two decision branches from node 1.\n\nPDC Decision Tree Reduced to Two Decision Branches"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#final-decision-strategy",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#final-decision-strategy",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Final Decision Strategy",
+    "text": "Final Decision Strategy\n\n\n\n\nAt decision node 1, PDC can determine the optimal choice by comparing the expected values from nodes 2 and 5.\n\nThe highest expected value is 15.93, which supports the decision to conduct the market research study.\n\n\nThe Optimal Decision Strategy for PDC is to conduct the market research study and then carry out the following decision strategy:\n\nIf the market research is favorable: Construct the large condominium complex to maximize profits (\\(d_3\\)).\nIf the market research is unfavorable: Construct the medium condominium complex as a safer choice under lower demand expectations (\\(d_2\\)).\n\n\n\nPDC Decision Tree After Choosing Best Decisions at Nodes 3, 4, and 5"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#summary-of-decision-tree-analysis",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#summary-of-decision-tree-analysis",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary of Decision Tree Analysis",
+    "text": "Summary of Decision Tree Analysis\n\nWork backward through the tree to calculate expected values at each chance node.\nSelect the optimal decision branch at each decision node based on these expected values.\nThe resulting sequence of optimal branches forms the final decision strategy for maximizing expected profit.\n\n\nBy systematically calculating expected values and selecting the best options at each node, PDC arrives at a data-driven decision strategy that adapts based on the information received from the market research study."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-sample-information-formula",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-sample-information-formula",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Expected Value of Sample Information Formula",
+    "text": "Expected Value of Sample Information Formula\n\\[\n\\text{EVSI} = |\\text{EVwSI} - \\text{EVwoSI}|\n\\]\nwhere:\n\nEVSI = expected value of sample information\nEVwSI = expected value with sample information about the states of nature\nEVwoSI = expected value without sample information about the states of nature\n\n\n\nNote the role of the absolute value. For minimization problems, the expected value with sample information is always less than or equal to the expected value without sample information."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-sample-information-evsi",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-sample-information-evsi",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Expected Value of Sample Information (EVSI)",
+    "text": "Expected Value of Sample Information (EVSI)\nThe expected value associated with the market research study is $15.93.\nBefore, we saw that the best expected value if the market research study is not undertaken is $14.20. Thus, we can conclude that the difference:\n\\[\n15.93 - 14.20 = 1.73\n\\]\nthat is the expected value of sample information (EVSI).\nConducting the market research study adds $1.73 million to the PDC expected value.\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#computing-branch-probabilities-using-bayes-theorem-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#computing-branch-probabilities-using-bayes-theorem-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Computing Branch Probabilities Using Bayes’ Theorem",
+    "text": "Computing Branch Probabilities Using Bayes’ Theorem\n\nThe branch probabilities for the PDC decision tree chance nodes were specified in the problem description, with no computations initially required.\n\n\nPDC developed the following branch probabilities.\n\nIf the market research study is undertaken,\n\\[\nP(\\text{Favorable report}) = P(F) = 0.77\n\\]\n\\[\nP(\\text{Unfavorable report}) = P(U) = 0.23\n\\]\nIf the market research report is favorable,\n\\[\nP(\\text{Strong demand given a favorable report}) = P(s_1 | F) = 0.94\n\\]\n\\[\nP(\\text{Weak demand given a favorable report}) = P(s_2 | F) = 0.06\n\\]\nIf the market research report is unfavorable,\n\\[\nP(\\text{Strong demand given an unfavorable report}) = P(s_1 | U) = 0.35\n\\]\n\\[\nP(\\text{Weak demand given an unfavorable report}) = P(s_2 | U) = 0.65\n\\]\nIf the market research report is not undertaken, the prior probabilities are applicable:\n\\[\nP(\\text{Strong demand}) = P(s_1) = 0.80\n\\]\n\\[\nP(\\text{Weak demand}) = P(s_2) = 0.20\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#bayes-theorem-in-decision-trees",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#bayes-theorem-in-decision-trees",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Bayes’ Theorem in Decision Trees",
+    "text": "Bayes’ Theorem in Decision Trees\n\n\n\nDefinitions\nLet:\n\n\\(F\\): Favorable market research report\n\\(U\\): Unfavorable market research report\n\\(s_1\\): Strong demand (state of nature 1)\n\\(s_2\\): Weak demand (state of nature 2)\n\n\nKey Branch Probabilities\n\nAt Chance Node 2: Determine probabilities of a favorable or unfavorable report: \\(P(F)\\) and \\(P(U)\\).\nAt Chance Nodes 6, 7, and 8: Calculate conditional probabilities for demand given a favorable report:\n\n\\(P(s_1 | F)\\): Probability of strong demand given a favorable report.\n\\(P(s_2 | F)\\): Probability of weak demand given a favorable report.\n\n\n\n\nThese are posterior probabilities, reflecting updated likelihoods based on favorable market research.\n\n\nAt Chance Nodes 9, 10, and 11: Calculate conditional probabilities for demand given an unfavorable report:\n\n\\(P(s_1 | U)\\): Probability of strong demand given an unfavorable report.\n\\(P(s_2 | U)\\): Probability of weak demand given an unfavorable report.\n\nAt Chance Nodes 12, 13, and 14: Use prior probabilities \\(P(s_1)\\) and \\(P(s_2)\\) if the market research study is not conducted.\n\n\n\nThe PDC Decision Tree"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#conditional-probability-calculations",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#conditional-probability-calculations",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Conditional Probability Calculations",
+    "text": "Conditional Probability Calculations\n\nTo perform the probability computations, we need two main sets of probabilities:\n\nPrior Probabilities: PDC’s initial assessment of the likelihood of each state of nature:\n\n\\(P(s_1)\\): Probability of strong demand.\n\\(P(s_2)\\): Probability of weak demand.\n\nConditional Probabilities: Likelihood of specific market research outcomes (sample information) given each state of nature.\n\n\nKey Conditional Probabilities\nFor example:\n\n\\(P(F | s_1)\\): Probability of receiving a favorable market research report given that strong demand exists.\n\n\n\nTo complete the probability calculations, we require all conditional probabilities for each sample outcome given each state of nature.\n\nFavorable Report:\n\n\\(P(F | s_1)\\): Probability of favorable report given strong demand.\n\\(P(F | s_2)\\): Probability of favorable report given weak demand.\n\nUnfavorable Report:\n\n\\(P(U | s_1)\\): Probability of unfavorable report given strong demand.\n\\(P(U | s_2)\\): Probability of unfavorable report given weak demand.\n\n\n\n\nThese conditional probabilities allow us to use Bayes’ theorem to update prior probabilities based on market research outcomes, leading to more informed decision-making."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#market-research-probabilities-table",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#market-research-probabilities-table",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Market Research Probabilities Table",
+    "text": "Market Research Probabilities Table\n\nWe assume that the following assessments are available for these conditional probabilities. This is the key piece of information that we use to compute the branches probabilities.\n\n\n\n\n\n\n\n\n\nState of Nature / Market Research\nFavorable, \\(F\\)\nUnfavorable, \\(U\\)\n\n\n\n\nStrong demand, \\(s_1\\)\n\\(P(F|s_1) = 0.90\\)\n\\(P(U|s_1) = 0.10\\)\n\n\nWeak demand, \\(s_2\\)\n\\(P(F|s_2) = 0.25\\)\n\\(P(U|s_2) = 0.75\\)\n\n\n\n\nNote: These probability assessments provide a reasonable degree of confidence in the market research study:\n\nIf \\(s_1\\) is true, \\(P(F|s_1) = 0.90\\) and \\(P(U|s_1) = 0.10\\).\nIf \\(s_2\\) is true, \\(P(F|s_2) = 0.25\\) and \\(P(U|s_2) = 0.75\\)."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#steps-for-tabular-probability-computation",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#steps-for-tabular-probability-computation",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Steps for Tabular Probability Computation",
+    "text": "Steps for Tabular Probability Computation\n\nStep 1: In column 1, enter the states of nature. In column 2, enter the prior probabilities. In column 3, enter the conditional probabilities of a favorable report \\(F\\) given each state of nature.\nStep 2: In column 4, compute the joint probabilities by multiplying the prior probability values in column 2 by the corresponding conditional probabilities in column 3.\nStep 3: Sum the joint probabilities in column 4 to obtain the probability of a favorable report, \\(P(F)\\).\nStep 4: Divide each joint probability in column 4 by \\(P(F) = 0.77\\) to obtain the revised or posterior probabilities, \\(P(s_1|F)\\) and \\(P(s_2|F)\\)."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#conclusion",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#conclusion",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Conclusion",
+    "text": "Conclusion\nUsing Bayes’ theorem within the decision tree allows PDC to incorporate market research data into decision-making, thereby refining prior probability estimates with sample information.\n\nBy recalculating probabilities at each chance node based on new data, PDC can adjust its decision strategy dynamically.\nThe resulting posterior probabilities provide a clearer understanding of potential outcomes, enabling PDC to select the optimal path based on updated insights.\nOverall, Bayes’ theorem enhances decision-making by leveraging both initial assessments and new information, leading to more accurate, data-driven decisions.\nThe use of Bayes’ theorem in decision trees showcases the value of combining probability updates with structured decision-making to support informed, strategic choices.\nThis structure provides a logical flow from theory (Bayes’ theorem) to application (calculating probabilities) and concludes with a summary of the strategic benefits."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#computing-branch-probabilities-using-bayes-theorem-2",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#computing-branch-probabilities-using-bayes-theorem-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Computing Branch Probabilities Using Bayes’ Theorem",
+    "text": "Computing Branch Probabilities Using Bayes’ Theorem\nNow, we will see how Bayes’ theorem can be used to compute branch probabilities for decision trees.\nBayes’ theorem is expressed as:\n\\[\nP(s_j | F) = \\frac{P(F | s_j) \\cdot P(s_j)}{P(F)}\n\\]\nwhere:\n\n\\(P(s_j | F)\\) is the posterior probability of state \\(s_j\\) given a favorable report \\(F\\).\n\\(P(F | s_j)\\) is the conditional probability of receiving a favorable report given state \\(s_j\\).\n\\(P(s_j)\\) is the prior probability of state \\(s_j\\).\n\\(P(F)\\) is the total probability of receiving a favorable report."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#bayes-theorem-in-decision-trees-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#bayes-theorem-in-decision-trees-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Bayes’ Theorem in Decision Trees",
+    "text": "Bayes’ Theorem in Decision Trees\n\n\nDefinitions\nLet: - \\(F\\): Favorable market research report - \\(U\\): Unfavorable market research report - \\(s_1\\): Strong demand (state of nature 1) - \\(s_2\\): Weak demand (state of nature 2)\nKey Branch Probabilities\n\nAt Chance Node 2: Determine the probabilities of receiving a favorable or unfavorable report: \\(P(F)\\) and \\(P(U)\\).\nAt Chance Nodes 6, 7, and 8: Calculate conditional probabilities for demand given a favorable report:\n\n\\(P(s_1 | F)\\): Probability of strong demand given a favorable report.\n\\(P(s_2 | F)\\): Probability of weak demand given a favorable report.\n\nThese are posterior probabilities, reflecting the updated likelihoods based on favorable market research.\nAt Chance Nodes 9, 10, and 11: Calculate conditional probabilities for demand given an unfavorable report:\n\n\\(P(s_1 | U)\\): Probability of strong demand given an unfavorable report.\n\\(P(s_2 | U)\\): Probability of weak demand given an unfavorable report.\n\nAt Chance Nodes 12, 13, and 14: Use prior probabilities \\(P(s_1)\\) and \\(P(s_2)\\) if the market research study is not conducted.\n\n\nThe PDC Decision Tree"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#conditional-probability-calculations-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#conditional-probability-calculations-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Conditional Probability Calculations",
+    "text": "Conditional Probability Calculations\nTo perform the probability computations, we need two main sets of probabilities:\n\nPrior Probabilities: PDC’s initial assessment of the likelihood of each state of nature:\n\n\\(P(s_1)\\): Probability of strong demand.\n\\(P(s_2)\\): Probability of weak demand.\n\nConditional Probabilities: The likelihood of specific market research outcomes (sample information) given each state of nature. These probabilities help update our understanding based on the market study results.\n\nKey Conditional Probabilities\nFor example:\n\n\\(P(F | s_1)\\): Probability of receiving a favorable market research report given that strong demand exists.\n\nTo complete the probability calculations, we require all conditional probabilities for the sample outcomes given each state of nature: - Favorable Report:\n\n\\(P(F | s_1)\\): Probability of favorable report given strong demand.\n\\(P(F | s_2)\\): Probability of favorable report given weak demand.\nUnfavorable Report:\n\n\\(P(U | s_1)\\): Probability of unfavorable report given strong demand.\n\\(P(U | s_2)\\): Probability of unfavorable report given weak demand.\n\n\nThese conditional probabilities allow us to use Bayes’ theorem to update the prior probabilities based on the market research outcomes, leading to more informed decision-making."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#market-research-probabilities-table-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#market-research-probabilities-table-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Market Research Probabilities Table",
+    "text": "Market Research Probabilities Table\n\n\n\nState of Nature\nFavorable, \\(F\\)\nUnfavorable, \\(U\\)\n\n\n\n\nStrong demand, \\(s_1\\)\n\\(P(F|s_1) = 0.90\\)\n\\(P(U|s_1) = 0.10\\)\n\n\nWeak demand, \\(s_2\\)\n\\(P(F|s_2) = 0.25\\)\n\\(P(U|s_2) = 0.75\\)\n\n\n\nNote: These probability assessments provide a reasonable degree of confidence in the market research study:\n\nIf \\(s_1\\) is true, \\(P(F|s_1) = 0.90\\) and \\(P(U|s_1) = 0.10\\).\nIf \\(s_2\\) is true, \\(P(F|s_2) = 0.25\\) and \\(P(U|s_2) = 0.75\\)."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#steps-for-tabular-probability-computation-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#steps-for-tabular-probability-computation-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Steps for Tabular Probability Computation",
+    "text": "Steps for Tabular Probability Computation\nStep 1: In column 1, enter the states of nature. In column 2, enter the prior probabilities. In column 3, enter the conditional probabilities of a favorable report \\(F\\) given each state of nature.\nStep 2: In column 4, compute the joint probabilities by multiplying the prior probability values in column 2 by the corresponding conditional probabilities in column 3.\nStep 3: Sum the joint probabilities in column 4 to obtain the probability of a favorable report, \\(P(F)\\).\nStep 4: Divide each joint probability in column 4 by \\(P(F) = 0.77\\) to obtain the revised or posterior probabilities, \\(P(s_1|F)\\) and \\(P(s_2|F)\\)."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#market-research-probabilities-table-2",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#market-research-probabilities-table-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Market Research Probabilities Table",
+    "text": "Market Research Probabilities Table\n\n\n\nState of Nature\nFavorable, \\(F\\)\nUnfavorable, \\(U\\)\n\n\n\n\nStrong demand, \\(s_1\\)\n\\(P(F|s_1) = 0.90\\)\n\\(P(U|s_1) = 0.10\\)\n\n\nWeak demand, \\(s_2\\)\n\\(P(F|s_2) = 0.25\\)\n\\(P(U|s_2) = 0.75\\)\n\n\n\nNote: These probability assessments provide a reasonable degree of confidence in the market research study:\n\nIf \\(s_1\\) is true, \\(P(F|s_1) = 0.90\\) and \\(P(U|s_1) = 0.10\\).\nIf \\(s_2\\) is true, \\(P(F|s_2) = 0.25\\) and \\(P(U|s_2) = 0.75\\)."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#branch-probabilities-for-favorable-report",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#branch-probabilities-for-favorable-report",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Branch Probabilities for Favorable Report",
+    "text": "Branch Probabilities for Favorable Report\n\n\n\n\n\n\n\n\n\n\n\nStates of Nature \\(s_j\\)\nPrior Probabilities \\(P(s_j)\\)\nConditional Probabilities \\(P(F | s_j)\\)\nJoint Probabilities \\(P(F \\cap s_j)\\)\nPosterior Probabilities \\(P(s_j | F)\\)\n\n\n\n\n\\(s_1\\)\n0.8\n0.90\n0.72\n0.94\n\n\n\\(s_2\\)\n0.2\n0.25\n0.05\n0.06\n\n\nTotal\n1.0\n\n\\(P(F) = 0.77\\)\n1.00\n\n\n\n\nThe Table shows that the probability of obtaining a favorable report is \\(P(F) = 0.77\\).\n\nIn addition:\n\n\\(P(s_1|F) = 0.94\\)\n\\(P(s_2|F) = 0.06\\)\n\n\n\nNote that a favorable report prompts a posterior probability of 0.94 that demand will be strong (\\(s_1\\))."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#branch-probabilities-for-unfavorable-report",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#branch-probabilities-for-unfavorable-report",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Branch Probabilities for Unfavorable Report",
+    "text": "Branch Probabilities for Unfavorable Report\n\nThe tabular probability computation procedure must be repeated for each possible sample information outcome.\n\nBranch probabilities based on an unfavorable market research report\n\n\n\n\n\n\n\n\n\n\n\n\nStates of Nature \\(s_j\\)\nPrior Probabilities \\(P(s_j)\\)\nConditional Probabilities \\(P(U | s_j)\\)\nJoint Probabilities \\(P(U \\cap s_j)\\)\nPosterior Probabilities \\(P(s_j | U)\\)\n\n\n\n\n\\(s_1\\)\n0.8\n0.10\n0.08\n0.35\n\n\n\\(s_2\\)\n0.2\n0.75\n0.15\n0.65\n\n\nTotal\n1.0\n\n\\(P(U) = 0.23\\)\n1.00\n\n\n\nThe probability of an unfavorable report is \\(P(U) = 0.23\\).\n\nWith an unfavorable report:\n\n\\(P(s_1|U) = 0.35\\)\n\\(P(s_2|U) = 0.65\\)"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#summary-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#summary-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary",
+    "text": "Summary\n\n\nSome key takeaways from this session:\n\nDecision Analysis Structure: A structured approach using payoff tables and decision trees allows for organized, strategic decision-making, particularly in uncertain conditions.\nExpected Value Approach: By calculating expected values across different states of nature, we can identify optimal decisions based on probabilistic outcomes, maximizing potential profits.\nValue of Information:\n\nExpected Value of Perfect Information (EVPI): Quantifies the benefit of having certainty about future states, guiding decision-makers on how much to invest in obtaining information.\nExpected Value of Sample Information (EVSI): Measures the potential benefit of additional data (e.g., market research), providing insight on the value of partial or imperfect information.\n\nBayes’ Theorem in Decision Trees: Allows for updating probabilities based on new evidence (e.g., favorable or unfavorable reports) to make more informed, dynamic decisions.\nDecision Trees with Probabilities: Decision trees not only display possible decisions and outcomes but, with added probabilities, allow for more precise expected value calculations.\nOptimal Decision Strategy: Analyzing decision trees and recalculating with updated probabilities leads to a final strategy that maximizes expected outcomes based on the best available information."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#summary-2",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#summary-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary",
+    "text": "Summary\n\n\n\n\n\n\n\n\n\nTerm\nDefinition\nPurpose\nExample\n\n\n\n\nPayoff\nQuantitative value of profit/loss for a decision-state combination\nUsed to evaluate and compare decision alternatives\nBuilding a large complex yields $20 million if demand is high.\n\n\nResults\nActual effects observed after decision and state of nature occur\nEvaluate real-world effectiveness of decision\nMedium complex yields a realized profit of $14 million.\n\n\nOutputs\nImmediate, measurable consequences from the decision\nProvide operational metrics\nNumber of units built, time to completion, occupancy rate.\n\n\nOutcomes\nBroader end results, often aligned with goals/objectives\nAssess decision’s success in achieving goals\nProfit, market reputation, customer satisfaction, future demand"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#motivation-example-pittsburgh-development-corporation-pdc",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#motivation-example-pittsburgh-development-corporation-pdc",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Motivation Example: Pittsburgh Development Corporation (PDC)",
+    "text": "Motivation Example: Pittsburgh Development Corporation (PDC)\n\nPittsburgh Development Corporation (PDC) has purchased land to develop a luxury condominium complex with individual units priced between $300,000 and $1,400,000.\n\nDecision Problem: PDC’s primary decision challenge is to determine the optimal size of the condominium project that will maximize profits, considering the uncertainty of future demand for these units.\nProject Options: PDC has commissioned architectural plans for three potential project sizes:\n\nSmall Complex: 30 condominiums\nMedium Complex: 60 condominiums\nLarge Complex: 90 condominiums\n\nKey Considerations: The financial viability and success of the project depend on:\n\nThe selected project size (small, medium, or large)\nFuture demand for the condominiums, an uncertain factor influencing profitability\n\n\n\nPDC must analyze both the scale of the project and demand uncertainty to make an informed, profitable decision."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-pdcs-decision-alternatives",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-pdcs-decision-alternatives",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: PDC’s Decision Alternatives",
+    "text": "Example: PDC’s Decision Alternatives\nIt is clear that the decision is to select the best size for the condominium complex.\n\nPDC has the following three decision alternatives:\n\\[\nd_1 = \\text{a small complex with 30 condominiums}\n\\]\n\\[\nd_2 = \\text{a medium complex with 60 condominiums}\n\\]\n\\[\nd_3 = \\text{a large complex with 90 condominiums}\n\\]"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#chance-events-and-states-of-nature-in-decision-analysis",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#chance-events-and-states-of-nature-in-decision-analysis",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Chance Events and States of Nature in Decision Analysis",
+    "text": "Chance Events and States of Nature in Decision Analysis\nIn decision analysis, uncertain future events like demand levels are known as chance events.\nThe possible outcomes of these events are called states of nature, with only one state ultimately occurring."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-payoff-table",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-payoff-table",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Payoff Table",
+    "text": "Example: Payoff Table\n\nThe payoff table will show projected profits (in millions of dollars) for each combination of decision alternative (complex size) and state of nature (demand).\n\n\n\n\n\n\n\n\nDecision Alternative / State of Nature\nStrong Demand(\\(s_1\\))\nWeak Demand(\\(s_2\\))\n\n\nSmall complex (\\(d_1\\))\n8\n7\n\n\nMedium complex (\\(d_2\\))\n14\n5\n\n\nLarge complex (\\(d_3\\))\n20\n-9"
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-making-with-probabilities-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#decision-making-with-probabilities-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Decision Making with Probabilities",
+    "text": "Decision Making with Probabilities\n\nWith the decision alternatives and the states of nature established, our next step is to determine the probabilities for each state of nature.\nThere are several methods to assign probabilities:\n\nClassical method: Based on logical analysis, typically used when outcomes are equally likely.\nRelative frequency method: Uses historical or empirical data to estimate probabilities.\nSubjective method: Relies on expert judgment or intuition when data is scarce or unavailable.\n\n\nWith these probabilities in hand, we apply the expected value approach to calculate the expected payoff for each decision alternative by weighting possible outcomes according to their probabilities.\n\n\nThe decision alternative with the highest expected value is then identified as the best or recommended choice for the problem."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-perfect-information-evpi-1",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-perfect-information-evpi-1",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Expected Value of Perfect Information (EVPI)",
+    "text": "Expected Value of Perfect Information (EVPI)\n\n\nWhat if PDC has the opportunity to conduct a market research study to gauge buyer interest in the condominium project?\n\n\nThis study could provide valuable information to refine the probability assessments for the different states of nature (e.g., strong or weak demand).\n\n\nTo understand the potential value of this information, we assume the study could yield perfect information — meaning PDC would know, with certainty, which state of nature will occur before making a decision.\n\n\nGiven this perfect information, we can develop an optimal decision strategy.\n\n\nWe can quantify how much PDC should be willing to pay for this perfect information by calculating the Expected Value of Perfect Information (EVPI)."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-perfect-information-evpi-2",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#expected-value-of-perfect-information-evpi-2",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Expected Value of Perfect Information (EVPI)",
+    "text": "Expected Value of Perfect Information (EVPI)\nIn general, the expected value of perfect information (EVPI) is computed as follows:\n\\[\n\\text{EVPI} = | \\text{EVwPI} - \\text{EVwoPI} |\n\\]\nwhere:\n\nEVPI = expected value of perfect information\nEVwPI = expected value with perfect information about the states of nature\nEVwoPI = expected value without perfect information about the states of nature\n\n\n\nNote the role of the absolute value. For minimization problems, information helps reduce or lower cost; thus, the expected value with perfect information is less than or equal to the expected value without perfect information. In this case, EVPI is the magnitude of the difference between EVwPI and EVwoPI."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-expected-value-of-perfect-information-evpi",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-expected-value-of-perfect-information-evpi",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Expected Value of Perfect Information (EVPI)",
+    "text": "Example: Expected Value of Perfect Information (EVPI)\nThe expected value with perfect information is $17.4 million, and the expected value without perfect information (EVwoPI) is $14.2 million. Therefore, the expected value of perfect information (EVPI) is:\n\\[\n\\text{EVPI} = 17.4 - 14.2 = 3.2\n\\]\n\nIn other words, $3.2 million represents the additional expected value that can be obtained if perfect information were available about the states of nature.\n\n\nGiven the EVPI of $3.2 million, PDC might seriously consider a market survey as a way to obtain more information about the states of nature."
+  },
+  {
+    "objectID": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-expected-value-of-sample-information-evsi",
+    "href": "lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html#example-expected-value-of-sample-information-evsi",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Example: Expected Value of Sample Information (EVSI)",
+    "text": "Example: Expected Value of Sample Information (EVSI)\nThe expected value associated with the market research study is $15.93.\nBefore, we saw that the best expected value if the market research study is not undertaken is $14.20. Thus, we can conclude that the difference is:\n\\[\n\\text{EVSI} = 15.93 - 14.20 = 1.73\n\\]\nthat is the expected value of sample information (EVSI).\nTo conclude, conducting the market research study adds $1.73 million to the PDC expected value."
   }
 ]

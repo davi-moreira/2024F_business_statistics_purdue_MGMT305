@@ -680,7 +680,7 @@ knitr::include_graphics("figs/x_bar_chart_jensen_computer.png")
 
     - If the $R$ chart indicates that the process variability is in control, then the $\bar{R}$ is used when constructing the $\bar{X}$ chart.
 
-- The plotting statistic is the Sample Range, $R_j$ (the last column on slide 29).
+- The plotting statistic is the Sample Range, $R_j$.
 
 ## $R$ Chart for Process Variability 
 
