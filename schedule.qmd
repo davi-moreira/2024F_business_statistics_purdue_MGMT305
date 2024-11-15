@@ -78,12 +78,12 @@ editor: visual
 | Nov 15  | Quality Control               | 19.2, 19.3                                             |[slides](/lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html){target="_blank"}    |.  |.  |
 | Nov 18  | Decision Analysis                         | 20.1                                          |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}    |.  |.  |
 | Nov 20  | Decision Analysis                 | 20.2                                          |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}  |.  |.  |
-| Nov 22  | Decision Analysis                 | Video or set of videos and activity.                                     | TBP  |.  |.  |
-| Nov 25  | Applications - Asynchronous Class                 | 20.4                                         |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}  |.  |.  |
+| Nov 22  | Decision Analysis                               | 20.3, 20.4                             |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}  |.  |.  | 
+| Nov 25  | Asynchronous Class |  Video or set of videos and activity.                                     | TBP  |.  |.  |
 | **Nov 27-30** | **Thanksgiving Break**                    | **No Class**                                          |.  |.  |.  |
 | **Dec 1**   | **Homework 8 due date**                     | **Quality Control and Decision Analysis**             |.  |.  |.  |
-| Dec 2   | Final Exam Review I                     | Cumulative                                        |.  |.  |.  |
-| Dec 4   | Final Exam Review II                    | Cumulative                                        |.  |.  |.  |
+| Dec 2   | Final Exam Review                      | Cumulative                                        |.  |.  |.  |
+| Dec 4   | Final Exam Review                     | Cumulative                                        |.  |.  |.  |
 | **Dec 6**   | **Final Exam Preparation**                  | **No Class**                                          |.  |.  |.  |
 | **TBD**          | **Final Exam**                              | **Cumulative**                                        |.  |.  |.  |
 </div>
