@@ -1196,19 +1196,7 @@ To perform the probability computations, we need two main sets of probabilities:
 2. **Conditional Probabilities**: Likelihood of specific market research outcomes (sample information) given each state of nature.
 
 :::{.fragment}
-
-**Key Conditional Probabilities**
-
-For example:
-
-- $P(F | s_1)$: Probability of receiving a **favorable market research report** given that **strong demand** exists.
-
-:::
-
-:::{.fragment}
   
-To complete the probability calculations, we require all conditional probabilities for each sample outcome given each state of nature.
-
 - **Favorable Report**:
 
   - $P(F | s_1)$: Probability of favorable report given strong demand.
