@@ -359,7 +359,7 @@ Professor<br>Davi Moreira<br>
 <ul>
 <li>Expected Value Approach</li>
 <li>Expected Value of Perfect Information (EVPI)</li>
-<li>Expected Value with Sample Information (EVPI)</li>
+<li>Expected Value with Sample Information (EVSI)</li>
 </ul></li>
 <li><p>Bayes’ theorem to compute branch probabilities for decision trees.</p></li>
 </ul>
@@ -1391,18 +1391,19 @@ The PDC Decision Tree
 <li class="fragment">If <span class="math inline">\(s_2\)</span> is true, <span class="math inline">\(P(F|s_2) = 0.25\)</span> and <span class="math inline">\(P(U|s_2) = 0.75\)</span>.</li>
 </ul>
 </section>
-<section id="steps-for-tabular-probability-computation" class="slide level2 center">
-<h2>Steps for Tabular Probability Computation</h2>
+<section id="tabular-computation-branch-probabilities-for-favorable-report" class="slide level2 center">
+<h2>Tabular Computation: Branch Probabilities for Favorable Report</h2>
+<div style="font-size: 70%;">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Steps for Tabular Probability Computation</strong></p>
 <ul>
 <li class="fragment"><p><strong>Step 1</strong>: In column 1, enter the states of nature. In column 2, enter the prior probabilities. In column 3, enter the conditional probabilities of a favorable report <span class="math inline">\(F\)</span> given each state of nature.</p></li>
 <li class="fragment"><p><strong>Step 2</strong>: In column 4, compute the joint probabilities by multiplying the prior probability values in column 2 by the corresponding conditional probabilities in column 3.</p></li>
 <li class="fragment"><p><strong>Step 3</strong>: Sum the joint probabilities in column 4 to obtain the probability of a favorable report, <span class="math inline">\(P(F)\)</span>.</p></li>
 <li class="fragment"><p><strong>Step 4</strong>: Divide each joint probability in column 4 by <span class="math inline">\(P(F) = 0.77\)</span> to obtain the revised or posterior probabilities, <span class="math inline">\(P(s_1|F)\)</span> and <span class="math inline">\(P(s_2|F)\)</span>.</p></li>
 </ul>
-</section>
-<section id="branch-probabilities-for-favorable-report" class="slide level2 center">
-<h2>Branch Probabilities for Favorable Report</h2>
-<div style="font-size: 90%;">
+</div><div class="column" style="width:70%;">
 <table class="caption-top">
 <colgroup>
 <col style="width: 14%">
@@ -1456,16 +1457,23 @@ The PDC Decision Tree
 <div class="fragment">
 <p>Note that a favorable report prompts a <strong>posterior probability</strong> of 0.94 that demand will be strong (<span class="math inline">\(s_1\)</span>).</p>
 </div>
+</div></div>
 </div>
 </section>
-<section id="branch-probabilities-for-unfavorable-report" class="slide level2 center">
-<h2>Branch Probabilities for Unfavorable Report</h2>
-<div style="font-size: 90%;">
+<section id="tabular-computation-branch-probabilities-for-unfavorable-report" class="slide level2 center">
+<h2>Tabular Computation: Branch Probabilities for Unfavorable Report</h2>
+<div style="font-size: 70%;">
 <p>The tabular probability computation procedure must be repeated for each possible sample information outcome.</p>
-<center>
-Branch probabilities based on an unfavorable market research report
-</center>
-<p><br></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Steps for Tabular Probability Computation</strong></p>
+<ul>
+<li class="fragment"><p><strong>Step 1</strong>: In column 1, enter the states of nature. In column 2, enter the prior probabilities. In column 3, enter the conditional probabilities of an unfavorable report <span class="math inline">\(U\)</span> given each state of nature.</p></li>
+<li class="fragment"><p><strong>Step 2</strong>: In column 4, compute the joint probabilities by multiplying the prior probability values in column 2 by the corresponding conditional probabilities in column 3.</p></li>
+<li class="fragment"><p><strong>Step 3</strong>: Sum the joint probabilities in column 4 to obtain the probability of an unfavorable report, <span class="math inline">\(P(U)\)</span>.</p></li>
+<li class="fragment"><p><strong>Step 4</strong>: Divide each joint probability in column 4 by <span class="math inline">\(P(U) = 0.23\)</span> to obtain the revised or posterior probabilities, <span class="math inline">\(P(s_1|U)\)</span> and <span class="math inline">\(P(s_2|U)\)</span>.</p></li>
+</ul>
+</div><div class="column" style="width:70%;">
 <table class="caption-top">
 <colgroup>
 <col style="width: 14%">
@@ -1515,6 +1523,7 @@ Branch probabilities based on an unfavorable market research report
 <li class="fragment"><p><span class="math inline">\(P(s_2|U) = 0.65\)</span></p></li>
 </ul>
 </div>
+</div></div>
 </div>
 </section>
 <section id="conclusion" class="slide level2 center">
@@ -1525,7 +1534,6 @@ Branch probabilities based on an unfavorable market research report
 <li class="fragment"><p>The resulting <strong>posterior probabilities</strong> provide a clearer understanding of potential outcomes, enabling PDC to select the optimal path based on updated insights.</p></li>
 <li class="fragment"><p>Overall, Bayes’ theorem enhances decision-making by leveraging both initial assessments and new information, leading to more accurate, data-driven decisions.</p></li>
 <li class="fragment"><p>The use of Bayes’ theorem in decision trees showcases the value of combining probability updates with structured decision-making to support informed, strategic choices.</p></li>
-<li class="fragment"><p>This structure provides a logical flow from theory (Bayes’ theorem) to application (calculating probabilities) and concludes with a summary of the strategic benefits.</p></li>
 </ul>
 </section></section>
 <section>

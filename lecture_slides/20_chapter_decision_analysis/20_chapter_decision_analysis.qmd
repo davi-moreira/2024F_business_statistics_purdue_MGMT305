@@ -77,7 +77,7 @@ library(here)
 
     - Expected Value Approach
     - Expected Value of Perfect Information (EVPI)
-    - Expected Value with Sample Information (EVPI)
+    - Expected Value with Sample Information (EVSI)
 
 - Bayes’ theorem to compute branch probabilities for decision trees.
 
@@ -1251,8 +1251,14 @@ Note: These probability assessments provide a reasonable degree of confidence in
 - If $s_2$ is true, $P(F|s_2) = 0.25$ and $P(U|s_2) = 0.75$.
 
 
+## Tabular Computation: Branch Probabilities for Favorable Report 
 
-## Steps for Tabular Probability Computation
+:::: {style="font-size: 70%;"}
+
+:::{.columns}
+::: {.column width="30%"}
+
+**Steps for Tabular Probability Computation**
 
 - **Step 1**: In column 1, enter the states of nature. In column 2, enter the prior probabilities. In column 3, enter the conditional probabilities of a favorable report $F$ given each state of nature.
 
@@ -1262,10 +1268,9 @@ Note: These probability assessments provide a reasonable degree of confidence in
 
 - **Step 4**: Divide each joint probability in column 4 by $P(F) = 0.77$ to obtain the revised or posterior probabilities, $P(s_1|F)$ and $P(s_2|F)$.
 
+:::
+::: {.column width="70%"}
 
-## Branch Probabilities for Favorable Report 
-
-:::: {style="font-size: 90%;"}
 
 | States of Nature $s_j$ | Prior Probabilities $P(s_j)$ | Conditional Probabilities $P(F | s_j)$ | Joint Probabilities $P(F \cap s_j)$ | Posterior Probabilities $P(s_j | F)$ |
 |----------------------------|----------------------------------|--------------------------------------------|------------------------------------------|-------------------------------------------|
@@ -1295,18 +1300,32 @@ Note that a favorable report prompts a **posterior probability** of 0.94 that de
 
 ::::
 
+:::
+:::
 
-## Branch Probabilities for Unfavorable Report 
 
-:::: {style="font-size: 90%;"}
+## Tabular Computation: Branch Probabilities for Unfavorable Report 
+
+:::: {style="font-size: 70%;"}
 
 The tabular probability computation procedure must be repeated for each possible sample information outcome. 
 
-<center>
-Branch probabilities based on an unfavorable market research report
-</center>
+:::{.columns}
+::: {.column width="30%"}
 
-<br>
+**Steps for Tabular Probability Computation**
+
+- **Step 1**: In column 1, enter the states of nature. In column 2, enter the prior probabilities. In column 3, enter the conditional probabilities of an unfavorable report $U$ given each state of nature.
+
+- **Step 2**: In column 4, compute the joint probabilities by multiplying the prior probability values in column 2 by the corresponding conditional probabilities in column 3.
+
+- **Step 3**: Sum the joint probabilities in column 4 to obtain the probability of an unfavorable report, $P(U)$.
+
+- **Step 4**: Divide each joint probability in column 4 by $P(U) = 0.23$ to obtain the revised or posterior probabilities, $P(s_1|U)$ and $P(s_2|U)$.
+
+:::
+::: {.column width="70%"}
+
 
 | States of Nature $s_j$ | Prior Probabilities $P(s_j)$ | Conditional Probabilities $P(U | s_j)$ | Joint Probabilities $P(U \cap s_j)$ | Posterior Probabilities $P(s_j | U)$ |
 |----------------------------|----------------------------------|--------------------------------------------|------------------------------------------|-------------------------------------------|
@@ -1328,6 +1347,10 @@ With an unfavorable report:
 
 ::::
 
+:::
+:::
+
+
 ## Conclusion
 
 Using Bayes' theorem within the decision tree allows PDC to incorporate market research data into decision-making, thereby refining prior probability estimates with sample information.
@@ -1339,8 +1362,6 @@ Using Bayes' theorem within the decision tree allows PDC to incorporate market r
 - Overall, Bayes' theorem enhances decision-making by leveraging both initial assessments and new information, leading to more accurate, data-driven decisions.
 
 - The use of Bayes’ theorem in decision trees showcases the value of combining probability updates with structured decision-making to support informed, strategic choices.
-
-- This structure provides a logical flow from theory (Bayes’ theorem) to application (calculating probabilities) and concludes with a summary of the strategic benefits.
 
 # Summary {background-color="#cfb991"}
 
