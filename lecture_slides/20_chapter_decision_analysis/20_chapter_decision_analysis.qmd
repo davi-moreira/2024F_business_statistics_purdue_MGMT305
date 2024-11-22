@@ -1193,6 +1193,8 @@ To perform the probability computations, we need two main sets of probabilities:
    - $P(s_1)$: Probability of strong demand.
    - $P(s_2)$: Probability of weak demand.
 
+<br>
+
 2. **Conditional Probabilities**: Likelihood of specific market research outcomes (sample information) given each state of nature.
 
 :::{.fragment}
@@ -1329,6 +1331,7 @@ With an unfavorable report:
 
 - $P(s_2|U) = 0.65$
 
+- Note that an unfavorable report prompts a **posterior probability** of 0.65 that demand will be weak ($s_2$). 
 :::
 
 ::::
@@ -1339,15 +1342,15 @@ With an unfavorable report:
 
 ## Conclusion
 
-Using Bayes' theorem within the decision tree allows PDC to incorporate market research data into decision-making, thereby refining prior probability estimates with sample information.
+- The resulting **posterior probabilities** provide a clearer understanding of potential outcomes, enabling PDC to select the optimal path based on updated insights. To recap from previous slides:
+  
+    - **The Optimal Decision Strategy for PDC** is to conduct the market research study and then carry out the following decision strategy, with EV = 15.93:
 
-- By recalculating probabilities at each chance node based on new data, PDC can adjust its decision strategy dynamically.
+      - **If the market research is favorable**: Construct the **large condominium complex** to maximize profits ($d_3$) with EV = 18.26.
 
-- The resulting **posterior probabilities** provide a clearer understanding of potential outcomes, enabling PDC to select the optimal path based on updated insights.
+      - **If the market research is unfavorable**: Construct the **medium condominium complex** as a safer choice under lower demand expectations ($d_2$) with EV = 8.15.
 
-- Overall, Bayes' theorem enhances decision-making by leveraging both initial assessments and new information, leading to more accurate, data-driven decisions.
 
-- The use of Bayes’ theorem in decision trees showcases the value of combining probability updates with structured decision-making to support informed, strategic choices.
 
 # Summary {background-color="#cfb991"}
 
