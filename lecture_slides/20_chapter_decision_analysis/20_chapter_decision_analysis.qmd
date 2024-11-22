@@ -1149,7 +1149,7 @@ Let:
 
 - **At Chance Node 2**: Determine probabilities of a favorable or unfavorable report: $P(F)$ and $P(U)$.
 
-- **At Chance Nodes 6, 7, and 8**: Calculate conditional probabilities for demand given a favorable report:
+- **At Chance Nodes 6, 7, and 8**: Calculate **posterior probabilities** for demand given a favorable report:
 
   - $P(s_1 | F)$: Probability of strong demand given a favorable report.
   - $P(s_2 | F)$: Probability of weak demand given a favorable report.
@@ -1157,11 +1157,9 @@ Let:
 :::
 :::{.fragment}
 
-These are **posterior probabilities**, reflecting updated likelihoods based on favorable market research.
-
 :::
 
-- **At Chance Nodes 9, 10, and 11**: Calculate conditional probabilities for demand given an unfavorable report:
+- **At Chance Nodes 9, 10, and 11**: Calculate **posterior probabilities** for demand given an unfavorable report:
 
   - $P(s_1 | U)$: Probability of strong demand given an unfavorable report.
   - $P(s_2 | U)$: Probability of weak demand given an unfavorable report.
