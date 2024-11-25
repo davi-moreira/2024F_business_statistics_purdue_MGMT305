@@ -76,7 +76,7 @@ editor: visual
 | **Nov 12**  | **Quiz 3**                                  | **Time Series**                                       |.  |.  |.  |
 | Nov 13  | Quality Control                       | 19.1                                         |[slides](/lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html){target="_blank"}  |.  |.  |
 | Nov 15  | Quality Control               | 19.2, 19.3                                             |[slides](/lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html){target="_blank"}    |.  |.  |
-| Nov 18  | Decision Analysis                         | 20.1                                          |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}    |.  |.  |
+| Nov 18  | Decision Analysis                         | 20.1                                          |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}    |.  |[**Video**: Bayes theorem, the geometry of changing beliefs](https://www.youtube.com/watch?v=HZGCoVF3YvM){target="_blank"}  |
 | Nov 20  | Decision Analysis                 | 20.2                                          |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}  |.  |.  |
 | Nov 22  | Decision Analysis                               | 20.3, 20.4                             |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}  |.  |.  | 
 | Nov 25  | Asynchronous Class |  Video or set of videos and activity.                                     | TBP  |.  |.  |
