@@ -79,7 +79,7 @@ editor: visual
 | Nov 18  | Decision Analysis                         | 20.1                                          |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}    |.  |[**Video**: Bayes theorem, the geometry of changing beliefs](https://www.youtube.com/watch?v=HZGCoVF3YvM){target="_blank"}  |
 | Nov 20  | Decision Analysis                 | 20.2                                          |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}  |.  |.  |
 | Nov 22  | Decision Analysis                               | 20.3, 20.4                             |[slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"}  |.  |.  | 
-| Nov 25  | Asynchronous Class |  Video or set of videos and activity.                                     | TBP  |.  |.  |
+| Nov 25  | Asynchronous Class |  Video or set of videos and activity.                                     | Posted at Brightspace.  |.  |.  |
 | **Nov 27-30** | **Thanksgiving Break**                    | **No Class**                                          |.  |.  |.  |
 | **Dec 1**   | **Homework 8 due date**                     | **Quality Control and Decision Analysis**             |.  |.  |.  |
 | Dec 2   | Final Exam Review                      | Cumulative                                        |.  |.  |.  |
