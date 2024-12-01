@@ -9202,7 +9202,7 @@
     "href": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#recall-binomial-distribution",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Recall: Binomial Distribution",
-    "text": "Recall: Binomial Distribution\n\n\n\n\n\n\n\nBinomial Probability Function for Acceptance Sampling\n\n\n\n\\[\nX \\sim \\text{Binomial}(n, p)\n\\]\n\\[\nP(X = x) = f(x) = \\frac{n!}{x!(n - x)!} p^x (1 - p)^{(n - x)}\n\\]\n\\[\nP(X \\leq x) = f(0) + \\dots + f(x)\n\\]\nwhere\n\n\\(n\\) = the sample size\n\\(p\\) = the proportion of defective items in the lot\n\\(x\\) = the number of defective items in the sample \\(n\\)\n\\(f(x)\\) = the probability of \\(x\\) defective items in the sample"
+    "text": "Recall: Binomial Distribution\n\n\n\n\n\n\n\nBinomial Probability Function for Acceptance Sampling\n\n\n\n\\[\nX \\sim \\text{Binomial}(n, p)\n\\]\n\\[\nP(X = x) = f(x) = \\frac{n!}{x!(n - x)!} p^x (1 - p)^{(n - x)}\n\\]\n\\[\nP(X \\leq x) = f(0) + \\dots + f(x)\n\\]\nwhere\n\n\\(n\\) = the sample size\n\\(p\\) = the proportion of defective items in the lot\n\\(x\\) = the number of defective items in the sample \\(n\\)\n\\(f(x)\\) = the probability of \\(x\\) defective items in the sample\nExcel Formula: =BINOM.DIST(# successes trials, # trials, probability of success, TRUE)"
   },
   {
     "objectID": "lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html#example-1-of-7-kali-inc.",

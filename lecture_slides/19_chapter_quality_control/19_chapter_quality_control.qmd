@@ -947,7 +947,7 @@ where
 - $p$ = the proportion of defective items in the lot
 - $x$ = the number of defective items in the sample $n$
 - $f(x)$ = the probability of $x$ defective items in the sample
-
+- Excel Formula: `=BINOM.DIST(# successes trials, # trials, probability of success, TRUE)`
 ::: 
 ::: 
 
